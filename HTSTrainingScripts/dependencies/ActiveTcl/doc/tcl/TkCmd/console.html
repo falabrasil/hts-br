@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="console.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>console manual page - Tk Built-In Commands</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tk Commands, version 8.6.7</a> <small>&gt;</small> console</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="console.html#M2" NAME="L456">NAME</A>
+<DL><DD>console &mdash; Control the console on systems without a real console</DD></DL>
+<DD><A HREF="console.html#M3" NAME="L457">SYNOPSIS</A>
+<DL>
+</DL>
+<DD><A HREF="console.html#M4" NAME="L458">DESCRIPTION</A>
+<DL class="description">
+<DD><A HREF="console.html#M5" NAME="L459"><B>console eval </B><I>script</I></A>
+<DD><A HREF="console.html#M6" NAME="L460"><B>console hide</B></A>
+<DD><A HREF="console.html#M7" NAME="L461"><B>console show</B></A>
+<DD><A HREF="console.html#M8" NAME="L462"><B>console title </B>?<I>string</I>?</A>
+</DL>
+<DD><A HREF="console.html#M9" NAME="L463">ACCESS TO THE MAIN INTERPRETER</A>
+<DL class="access to the main interpreter">
+<DD><A HREF="console.html#M10" NAME="L464"><B>consoleinterp eval </B><I>script</I></A>
+<DD><A HREF="console.html#M11" NAME="L465"><B>consoleinterp record </B><I>script</I></A>
+</DL>
+<DD><A HREF="console.html#M12" NAME="L466">ADDITIONAL TRAP CALLS</A>
+<DD><A HREF="console.html#M13" NAME="L467">DEFAULT BINDINGS</A>
+<OL class="default bindings">
+</OL>
+<DD><A HREF="console.html#M14" NAME="L468">EXAMPLE</A>
+<DD><A HREF="console.html#M15" NAME="L469">SEE ALSO</A>
+<DD><A HREF="console.html#M16" NAME="L470">KEYWORDS</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+console &mdash; Control the console on systems without a real console
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+<B>console</B> <I>subcommand</I> ?<I>arg ...</I>?<BR>
+<H3><A NAME="M4">DESCRIPTION</A></H3>
+The console window is a replacement for a real console to allow input
+and output on the standard I/O channels on platforms that do not have
+a real console.  It is implemented as a separate interpreter with the
+Tk toolkit loaded, and control over this interpreter is given through
+the <B>console</B> command.  The behaviour of the console window is
+defined mainly through the contents of the <I>console.tcl</I> file in
+the Tk library. Except for TkAqua, this command is not available when
+Tk is loaded into a tclsh interpreter with
+&#8220;<B>package require Tk</B>&#8221;,
+as a conventional terminal is expected to be present in that case.
+In TkAqua, this command is only available when stdin is <B>/dev/null</B>
+(as is the case e.g. when the application embedding Tk is started
+from the Mac OS X Finder).
+<P>
+<P>
+<DL class="description">
+<DT><A NAME="M5"><B>console eval </B><I>script</I></A><DD>
+Evaluate the <I>script</I> argument as a Tcl script in the console
+interpreter.  The normal interpreter is accessed through the
+<B>consoleinterp</B> command in the console interpreter.
+<P><DT><A NAME="M6"><B>console hide</B></A><DD>
+Hide the console window from view.  Precisely equivalent to
+withdrawing the <B>.</B> window in the console interpreter.
+<P><DT><A NAME="M7"><B>console show</B></A><DD>
+Display the console window.  Precisely equivalent to deiconifying the
+<B>.</B> window in the console interpreter.
+<P><DT><A NAME="M8"><B>console title </B>?<I>string</I>?</A><DD>
+Query or modify the title of the console window.  If <I>string</I> is
+not specified, queries the title of the console window, and sets the
+title of the console window to <I>string</I> otherwise.  Precisely
+equivalent to using the <B><A HREF="wm.html">wm title</A></B> command in the console
+interpreter.
+<P></DL>
+<H3><A NAME="M9">ACCESS TO THE MAIN INTERPRETER</A></H3>
+The <B>consoleinterp</B> command in the console interpreter allows
+scripts to be evaluated in the main interpreter.  It supports two
+subcommands: <B>eval</B> and <B>record</B>.
+<P>
+<P>
+<DL class="access to the main interpreter">
+<DT><A NAME="M10"><B>consoleinterp eval </B><I>script</I></A><DD>
+Evaluates <I>script</I> as a Tcl script at the global level in the main
+interpreter.
+<P><DT><A NAME="M11"><B>consoleinterp record </B><I>script</I></A><DD>
+Records and evaluates <I>script</I> as a Tcl script at the global level
+in the main interpreter as if <I>script</I> had been typed in at the
+console.
+<P></DL>
+<H3><A NAME="M12">ADDITIONAL TRAP CALLS</A></H3>
+There are several additional commands in the console interpreter that
+are called in response to activity in the main interpreter.
+<I>These are documented here for completeness only; they form part of
+the internal implementation of the console and are likely to change or
+be modified without warning.</I>
+<P>
+Output to the console from the main interpreter via the stdout and
+stderr channels is handled by invoking the <B>tk::ConsoleOutput</B>
+command in the console interpreter with two arguments.  The first
+argument is the name of the channel being written to, and the second
+argument is the string being written to the channel (after encoding
+and end-of-line translation processing has been performed.)
+<P>
+When the <B>.</B> window of the main interpreter is destroyed, the
+<B>tk::ConsoleExit</B> command in the console interpreter is called
+(assuming the console interpreter has not already been deleted itself,
+that is.)
+<H3><A NAME="M13">DEFAULT BINDINGS</A></H3>
+The default script creates a console window (implemented using a text
+widget) that has the following behaviour:
+<P>
+<OL class="default bindings">
+<LI value="1">
+Pressing the tab key inserts a TAB character (as defined by the Tcl
+&#92;t escape.)
+<P><LI value="2">
+Pressing the return key causes the current line (if complete by the
+rules of <B><A HREF="../TclCmd/info.html">info complete</A></B>) to be passed to the main interpreter for
+evaluation.
+<P><LI value="3">
+Pressing the delete key deletes the selected text (if any text is
+selected) or the character to the right of the cursor (if not at the
+end of the line.)
+<P><LI value="4">
+Pressing the backspace key deletes the selected text (if any text is
+selected) or the character to the left of the cursor (of not at the
+start of the line.)
+<P><LI value="5">
+Pressing either Control+A or the home key causes the cursor to go to
+the start of the line (but after the prompt, if a prompt is present on
+the line.)
+<P><LI value="6">
+Pressing either Control+E or the end key causes the cursor to go to
+the end of the line.
+<P><LI value="7">
+Pressing either Control+P or the up key causes the previous entry in
+the command history to be selected.
+<P><LI value="8">
+Pressing either Control+N or the down key causes the next entry in the
+command history to be selected.
+<P><LI value="9">
+Pressing either Control+B or the left key causes the cursor to move
+one character backward as long as the cursor is not at the prompt.
+<P><LI value="10">
+Pressing either Control+F or the right key causes the cursor to move
+one character forward.
+<P><LI value="11">
+Pressing F9 rebuilds the console window by destroying all its children
+and reloading the Tcl script that defined the console's behaviour.
+<P></OL>
+<P>
+Most other behaviour is the same as a conventional text widget except
+for the way that the <I>&lt;&lt;Cut&gt;&gt;</I> event is handled identically to the
+<I>&lt;&lt;Copy&gt;&gt;</I> event.
+<H3><A NAME="M14">EXAMPLE</A></H3>
+Not all platforms have the <B>console</B> command, so debugging code
+often has the following code fragment in it so output produced by
+<B><A HREF="../TclCmd/puts.html">puts</A></B> can be seen while during development:
+<PRE>catch {<B>console show</B>}</PRE>
+<H3><A NAME="M15">SEE ALSO</A></H3>
+<B><A HREF="destroy.html">destroy</A></B>, <B><A HREF="../TclCmd/fconfigure.html">fconfigure</A></B>, <B><A HREF="../TclCmd/history.html">history</A></B>, <B><A HREF="../TclCmd/interp.html">interp</A></B>, <B><A HREF="../TclCmd/puts.html">puts</A></B>, <B><A HREF="text.html">text</A></B>, <B><A HREF="wm.html">wm</A></B>
+<H3><A NAME="M16">KEYWORDS</A></H3>
+<A href="../Keywords/C.html#console">console</A>, <A href="../Keywords/I.html#interpreter">interpreter</A>, <A href="../Keywords/W.html#window">window</A>, <A href="../Keywords/I.html#interactive">interactive</A>, <A href="../Keywords/O.html#output channels">output channels</A>
+<div class="copy">Copyright &copy; 2001 Donal K. Fellows
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

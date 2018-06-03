@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="Limit.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>Tcl_LimitCheck manual page - Tcl Library Procedures</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tcl C API, version 8.6.7</a> <small>&gt;</small> Limit</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="../TkCmd/contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="Limit.html#M2" NAME="L436">NAME</A>
+<DL><DD>Tcl_LimitAddHandler, Tcl_LimitCheck, Tcl_LimitExceeded, Tcl_LimitGetCommands, Tcl_LimitGetGranularity, Tcl_LimitGetTime, Tcl_LimitReady, Tcl_LimitRemoveHandler, Tcl_LimitSetCommands, Tcl_LimitSetGranularity, Tcl_LimitSetTime, Tcl_LimitTypeEnabled, Tcl_LimitTypeExceeded, Tcl_LimitTypeReset, Tcl_LimitTypeSet &mdash; manage and check resource limits on interpreters</DD></DL>
+<DD><A HREF="Limit.html#M3" NAME="L437">SYNOPSIS</A>
+<DL>
+<DD><B>#include &lt;tcl.h&gt;</B>
+<DD>int
+<DD><B>Tcl_LimitCheck</B>(<I>interp</I>)
+<DD>int
+<DD><B>Tcl_LimitReady</B>(<I>interp</I>)
+<DD>int
+<DD><B>Tcl_LimitExceeded</B>(<I>interp</I>)
+<DD>int
+<DD><B>Tcl_LimitTypeExceeded</B>(<I>interp, type</I>)
+<DD>int
+<DD><B>Tcl_LimitTypeEnabled</B>(<I>interp, type</I>)
+<DD>void
+<DD><B>Tcl_LimitTypeSet</B>(<I>interp, type</I>)
+<DD>void
+<DD><B>Tcl_LimitTypeReset</B>(<I>interp, type</I>)
+<DD>int
+<DD><B>Tcl_LimitGetCommands</B>(<I>interp</I>)
+<DD>void
+<DD><B>Tcl_LimitSetCommands</B>(<I>interp, commandLimit</I>)
+<DD>void
+<DD><B>Tcl_LimitGetTime</B>(<I>interp, timeLimitPtr</I>)
+<DD>void
+<DD><B>Tcl_LimitSetTime</B>(<I>interp, timeLimitPtr</I>)
+<DD>int
+<DD><B>Tcl_LimitGetGranularity</B>(<I>interp, type</I>)
+<DD>void
+<DD><B>Tcl_LimitSetGranularity</B>(<I>interp, type, granularity</I>)
+<DD>void
+<DD><B>Tcl_LimitAddHandler</B>(<I>interp, type, handlerProc, clientData, deleteProc</I>)
+<DD>void
+<DD><B>Tcl_LimitRemoveHandler</B>(<I>interp, type, handlerProc, clientData</I>)
+</DL>
+<DD><A HREF="Limit.html#M4" NAME="L438">ARGUMENTS</A>
+<DL class="arguments">
+</DL>
+<DD><A HREF="Limit.html#M5" NAME="L439">DESCRIPTION</A>
+<DD><A HREF="Limit.html#M6" NAME="L440">LIMIT CHECKING API</A>
+<DD><A HREF="Limit.html#M7" NAME="L441">LIMIT CONFIGURATION</A>
+<DD><A HREF="Limit.html#M8" NAME="L442">LIMIT CALLBACKS</A>
+<DD><A HREF="Limit.html#M9" NAME="L443">KEYWORDS</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+Tcl_LimitAddHandler, Tcl_LimitCheck, Tcl_LimitExceeded, Tcl_LimitGetCommands, Tcl_LimitGetGranularity, Tcl_LimitGetTime, Tcl_LimitReady, Tcl_LimitRemoveHandler, Tcl_LimitSetCommands, Tcl_LimitSetGranularity, Tcl_LimitSetTime, Tcl_LimitTypeEnabled, Tcl_LimitTypeExceeded, Tcl_LimitTypeReset, Tcl_LimitTypeSet &mdash; manage and check resource limits on interpreters
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+<B>#include &lt;tcl.h&gt;</B><BR>
+int<BR>
+<B>Tcl_LimitCheck</B>(<I>interp</I>)<BR>
+int<BR>
+<B>Tcl_LimitReady</B>(<I>interp</I>)<BR>
+int<BR>
+<B>Tcl_LimitExceeded</B>(<I>interp</I>)<BR>
+int<BR>
+<B>Tcl_LimitTypeExceeded</B>(<I>interp, type</I>)<BR>
+int<BR>
+<B>Tcl_LimitTypeEnabled</B>(<I>interp, type</I>)<BR>
+void<BR>
+<B>Tcl_LimitTypeSet</B>(<I>interp, type</I>)<BR>
+void<BR>
+<B>Tcl_LimitTypeReset</B>(<I>interp, type</I>)<BR>
+int<BR>
+<B>Tcl_LimitGetCommands</B>(<I>interp</I>)<BR>
+void<BR>
+<B>Tcl_LimitSetCommands</B>(<I>interp, commandLimit</I>)<BR>
+void<BR>
+<B>Tcl_LimitGetTime</B>(<I>interp, timeLimitPtr</I>)<BR>
+void<BR>
+<B>Tcl_LimitSetTime</B>(<I>interp, timeLimitPtr</I>)<BR>
+int<BR>
+<B>Tcl_LimitGetGranularity</B>(<I>interp, type</I>)<BR>
+void<BR>
+<B>Tcl_LimitSetGranularity</B>(<I>interp, type, granularity</I>)<BR>
+void<BR>
+<B>Tcl_LimitAddHandler</B>(<I>interp, type, handlerProc, clientData, deleteProc</I>)<BR>
+void<BR>
+<B>Tcl_LimitRemoveHandler</B>(<I>interp, type, handlerProc, clientData</I>)<BR>
+<H3><A NAME="M4">ARGUMENTS</A></H3>
+<DL class="arguments">
+<DT><A HREF="Interp.html">Tcl_Interp</A> <B>*interp</B> (in)<DD>
+Interpreter that the limit being managed applies to or that will have
+its limits checked.
+<P><DT>int <B>type</B> (in)<DD>
+The type of limit that the operation refers to.  This must be either
+<B>TCL_LIMIT_COMMANDS</B> or <B>TCL_LIMIT_TIME</B>.
+<P><DT>int <B>commandLimit</B> (in)<DD>
+The maximum number of commands (as reported by <B><A HREF="../TclCmd/info.html">info cmdcount</A></B>)
+that may be executed in the interpreter.
+<P><DT><A HREF="GetTime.html">Tcl_Time</A> <B>*timeLimitPtr</B> (in/out)<DD>
+A pointer to a structure that will either have the new time limit read
+from (<B>Tcl_LimitSetTime</B>) or the current time limit written to
+(<B>Tcl_LimitGetTime</B>).
+<P><DT>int <B>granularity</B> (in)<DD>
+Divisor that indicates how often a particular limit should really be
+checked.  Must be at least 1.
+<P><DT>Tcl_LimitHandlerProc <B>*handlerProc</B> (in)<DD>
+Function to call when a particular limit is exceeded.  If the
+<I>handlerProc</I> removes or raises the limit during its processing,
+the limited interpreter will be permitted to continue to process after
+the handler returns.  Many handlers may be attached to the same
+interpreter limit; their order of execution is not defined, and they
+must be identified by <I>handlerProc</I> and <I>clientData</I> when they
+are deleted.
+<P><DT>ClientData <B>clientData</B> (in)<DD>
+Arbitrary pointer-sized word used to pass some context to the
+<I>handlerProc</I> function.
+<P><DT>Tcl_LimitHandlerDeleteProc <B>*deleteProc</B> (in)<DD>
+Function to call whenever a handler is deleted.  May be NULL if the
+<I>clientData</I> requires no deletion.
+<P></DL>
+<H3><A NAME="M5">DESCRIPTION</A></H3>
+Tcl's interpreter resource limit subsystem allows for close control
+over how much computation time a script may use, and is useful for
+cases where a program is divided into multiple pieces where some parts
+are more trusted than others (e.g. web application servers).
+<P>
+Every interpreter may have a limit on the wall-time for execution, and
+a limit on the number of commands that the interpreter may execute.
+Since checking of these limits is potentially expensive (especially
+the time limit), each limit also has a checking granularity, which is
+a divisor for an internal count of the number of points in the core
+where a check may be performed (which is immediately before executing
+a command and at an unspecified frequency between running commands,
+which can happen in empty-bodied <B><A HREF="../TclCmd/while.html">while</A></B> loops).
+<P>
+The final component of the limit engine is a callback scheme which
+allows for notifications of when a limit has been exceeded.  These
+callbacks can just provide logging, or may allocate more resources to
+the interpreter to permit it to continue processing longer.
+<P>
+When a limit is exceeded (and the callbacks have run; the order of
+execution of the callbacks is unspecified) execution in the limited
+interpreter is stopped by raising an error and setting a flag that
+prevents the <B><A HREF="../TclCmd/catch.html">catch</A></B> command in that interpreter from trapping
+that error.  It is up to the context that started execution in that
+interpreter (typically a master interpreter) to handle the error.
+<H3><A NAME="M6">LIMIT CHECKING API</A></H3>
+To check the resource limits for an interpreter, call
+<B>Tcl_LimitCheck</B>, which returns <B><A HREF="../TclCmd/catch.html">TCL_OK</A></B> if the limit was not
+exceeded (after processing callbacks) and <B><A HREF="../TclCmd/catch.html">TCL_ERROR</A></B> if the limit was
+exceeded (in which case an error message is also placed in the
+interpreter result).  That function should only be called when
+<B>Tcl_LimitReady</B> returns non-zero so that granularity policy is
+enforced.  This API is designed to be similar in usage to
+<B><A HREF="Async.html">Tcl_AsyncReady</A></B> and <B><A HREF="Async.html">Tcl_AsyncInvoke</A></B>.
+<P>
+When writing code that may behave like <B><A HREF="../TclCmd/catch.html">catch</A></B> in respect of
+errors, you should only trap an error if <B>Tcl_LimitExceeded</B>
+returns zero.  If it returns non-zero, the interpreter is in a
+limit-exceeded state and errors should be allowed to propagate to the
+calling context.  You can also check whether a particular type of
+limit has been exceeded using <B>Tcl_LimitTypeExceeded</B>.
+<H3><A NAME="M7">LIMIT CONFIGURATION</A></H3>
+To check whether a limit has been set (but not whether it has actually
+been exceeded) on an interpreter, call <B>Tcl_LimitTypeEnabled</B> with
+the type of limit you want to check.  To enable a particular limit
+call <B>Tcl_LimitTypeSet</B>, and to disable a limit call
+<B>Tcl_LimitTypeReset</B>.
+<P>
+The level of a command limit may be set using
+<B>Tcl_LimitSetCommands</B>, and retrieved using
+<B>Tcl_LimitGetCommands</B>.  Similarly for a time limit with
+<B>Tcl_LimitSetTime</B> and <B>Tcl_LimitGetTime</B> respectively, but
+with that API the time limit is copied from and to the <A HREF="GetTime.html">Tcl_Time</A>
+structure that the <I>timeLimitPtr</I> argument points to.
+<P>
+The checking granularity for a particular limit may be set using
+<B>Tcl_LimitSetGranularity</B> and retrieved using
+<B>Tcl_LimitGetGranularity</B>.  Note that granularities must always be
+positive.
+<H4><A NAME="M8">LIMIT CALLBACKS</A></H4>
+To add a handler callback to be invoked when a limit is exceeded, call
+<B>Tcl_LimitAddHandler</B>.  The <I>handlerProc</I> argument describes
+the function that will actually be called; it should have the
+following prototype:
+<P>
+<PRE>typedef void <B>Tcl_LimitHandlerProc</B>(
+        ClientData <I>clientData</I>,
+        <A HREF="Interp.html">Tcl_Interp</A> *<I>interp</I>);</PRE>
+<P>
+The <I>clientData</I> argument to the handler will be whatever is
+passed to the <I>clientData</I> argument to <B>Tcl_LimitAddHandler</B>,
+and the <I>interp</I> is the interpreter that had its limit exceeded.
+<P>
+The <I>deleteProc</I> argument to <B>Tcl_LimitAddHandler</B> is a
+function to call to delete the <I>clientData</I> value.  It may be
+<B>TCL_STATIC</B> or NULL if no deletion action is necessary, or
+<B>TCL_DYNAMIC</B> if all that is necessary is to free the structure with
+<B><A HREF="Alloc.html">Tcl_Free</A></B>.  Otherwise, it should refer to a function with the
+following prototype:
+<P>
+<PRE>typedef void <B>Tcl_LimitHandlerDeleteProc</B>(
+        ClientData <I>clientData</I>);</PRE>
+<P>
+A limit handler may be deleted using <B>Tcl_LimitRemoveHandler</B>; the
+handler removed will be the first one found (out of the handlers added
+with <B>Tcl_LimitAddHandler</B>) with exactly matching <I>type</I>,
+<I>handlerProc</I> and <I>clientData</I> arguments.  This function
+always invokes the <I>deleteProc</I> on the <I>clientData</I> (unless
+the <I>deleteProc</I> was NULL or <B>TCL_STATIC</B>).
+<H3><A NAME="M9">KEYWORDS</A></H3>
+<A href="../Keywords/I.html#interpreter">interpreter</A>, <A href="../Keywords/R.html#resource">resource</A>, <A href="../Keywords/L.html#limit">limit</A>, <A href="../Keywords/C.html#commands">commands</A>, <A href="../Keywords/T.html#time">time</A>, <A href="../Keywords/C.html#callback">callback</A>
+<div class="copy">Copyright &copy; 2004 Donal K. Fellows
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

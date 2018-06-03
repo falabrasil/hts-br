@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="tkcon.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org">
+<meta name='Author' content='ActiveState'>
+
+<title>tkcon: tkcon procedure</title>
+<link rel="STYLESHEET" type="text/css" href="http://localhost:1313/tcl/tkcon/style.css">
+</head>
+<body>
+<table  border="0" cellspacing="2" cellpadding="0"
+>
+<tr>
+<td><!-- start header info -->
+<table  border="0" cellspacing="0" cellpadding="0"
+bgcolor="#FFFFFF">
+<tr>
+<th><font size="+3">tkcon: <code>tkcon</code> procedure</font></th>
+</tr>
+</table>
+
+<!-- end header info -->
+</td>
+</tr>
+
+<tr>
+<td><!-- start main navigation table -->
+<table border="1" cellpadding="2" cellspacing="2" bgcolor="#CCCCCC"
+>
+<tr>
+<th class="hi"><a href="index.html" class=
+"hi">Documentation</a></th>
+<th><a href="purpose.html">Purpose &amp; Features</a></th>
+<th><a href="limits.html">Limitations</a></th>
+<th><a href="todo.html">To&nbsp;Do</a></th>
+
+</tr>
+
+<tr>
+<th colspan="2"><a href="plugin.html">Online Demo</a> (requires <a
+href="http://tcl.activestate.com/software/plugin/">Tk
+plugin</a>)</th>
+<th colspan="3"><a href="nontcl.html">Using TkCon with other Tk
+Languages</a></th>
+</tr>
+</table>
+
+<!-- end main navigation table -->
+</td>
+</tr>
+
+<tr>
+<td><!-- start secondary navigation table -->
+<table border="1" cellpadding="2" cellspacing="2" bgcolor="#BBBBBB"
+>
+<tr>
+<th><a href="start.html">Getting Started</a></th>
+<th><a href="bindings.html">Special Bindings</a></th>
+<th><a href="procs.html">Procedures</a></th>
+<th><a href="http://localhost:1313/tcl/tkcon/demopic.png">Screenshot</a></th>
+</tr>
+
+<tr>
+<th><a href="dump.html"><code>dump</code></a></th>
+<th class="hi2"><a href="tkcon.html" class=
+"hi2"><code>tkcon</code></a></th>
+<th><a href="idebug.html"><code>idebug</code></a></th>
+<th><a href="observe.html"><code>observe</code></a></th>
+</tr>
+</table>
+
+<!-- end secondary navigation table -->
+</td>
+</tr>
+
+<tr>
+<td bgcolor="#FFFFFF">
+<div class="indent">
+<p>This provides lots of useful control over a console:</p>
+
+<dl>
+<dt><code>tkcon <b>attach</b></code> <i>interpreter</i></dt>
+
+<dd>Attaches tkcon to the named interpreter. The name must be that
+returned by <code>[tk appname]</code> or a valid path to a slave
+interpreter. It's best to use this via the <code>Console-&gt;Attach
+Console</code> menu.</dd>
+
+<dt><code>tkcon <b>buffer</b></code> ?<i>size</i>?</dt>
+
+<dd>Sets or queries the allowed size of the console text widget in
+lines. The text widget will automatically delete leading lines once
+this number has been exceeded (read: this is the scroll buffer
+size).</dd>
+
+<dt><code>tkcon <b>bgerror</b></code> ?<i>msg errorInfo</i>?</dt>
+
+<dd>Does bgerror stuff in the tkcon master interpreter.</dd>
+
+<dt><code>tkcon <b>close</b></code> or <code>tkcon
+<b>destroy</b></code></dt>
+
+<dd>Destroys this tkcon widget.</dd>
+
+<dt><code>tkcon <b>congets</b></code></dt>
+
+<dd>Behaves like the traditional Tcl <code>gets</code>, but instead
+of using <code>stdin</code>, it uses the tkcon console window. By
+default, tkcon replaces the standard gets with this command. This
+behavior can be controlled by altering the
+<code>::tkcon::OPT(gets)</code> parameter at startup. This should
+not be called directly - instead rely on the overloaded
+<code>gets</code>, which has support for the optional varName
+parameter.</dd>
+
+<dt><code>tkcon <b>console</b></code> <i>args</i></dt>
+
+<dd>Passes the args to the tkcon text widget (the console).</dd>
+
+<dt><code>tkcon <b>error</b></code></dt>
+
+<dd>Pops up a dialog that gives the user a full trace of the last
+error received in the tkcon console.</dd>
+
+<dt><code>tkcon <b>find</b></code> <i>string ?-case TCL_BOOLEAN
+-regexp TCL_BOOLEAN?</i></dt>
+
+<dd>Highlights all instances of <i>string</i> in the console. If
+the string is empty, it clears any previous highlighting.</dd>
+
+<dt><code>tkcon <b>font</b></code> ?<i>fontname</i>?</dt>
+
+<dd>Sets or returns the font used by tkcon text widgets.</dd>
+
+<dt><code>tkcon <b>gets</b></code></dt>
+
+<dd>Behaves like the traditional Tcl <code>gets</code>, but instead
+of needing <code>stdin</code>, it pops a dialog box up for the
+user. The overloaded <code>gets</code> has support for the optional
+varName parameter.</dd>
+
+<dt><code>tkcon <b>getcommand</b></code></dt>
+
+<dd>A variation of the <code><b>congets</b></code> method that
+requires a full command to be input before returning.</dd>
+
+<dt><code>tkcon <b>hide</b></code></dt>
+
+<dd>Withdraw the tkcon display from the screen (make sure you have
+a way to get it back).</dd>
+
+<dt><code>tkcon <b>history</b></code> ?<i>-newline</i>?</dt>
+
+<dd>Displays the tkcon history in sourceable form. If
+<i>-newline</i> is specified, it separates each command by an extra
+newline.</dd>
+
+<dt><code>tkcon <b>iconify</b></code></dt>
+
+<dd>Iconifies the tkcon display.</dd>
+
+<dt><code>tkcon <b>linelength</b></code> ?<i>value</i>?</dt>
+
+<dd>Sets or displays the number that specifies the limit of long
+result lines. True result is still captured in $_ (and 'puts $_'
+works).</dd>
+
+<dt><code>tkcon <b>load</b></code> <i>filename</i></dt>
+
+<dd>Sources named file into the slave interpreter. If no filename
+is given, it will attempt to call <code>tk_getOpenFile</code> to
+pop up the file select box.</dd>
+
+<dt><code>tkcon <b>main</b></code> ?<i>arg arg ...</i>?</dt>
+
+<dd>Passes the args to the main tkcon interpreter to be evaluated
+and returns the result.</dd>
+
+<dt><code>tkcon <b>master</b></code> <i>args</i></dt>
+
+<dd>Passes the args to the master interpreter to be evaluated and
+returns the result.</dd>
+
+<dt><code>tkcon <b>new</b></code></dt>
+
+<dd>Creates a new tkcon widget.</dd>
+
+<dt><code>tkcon <b>resultfilter</b></code> ?<i>command</i>?</dt>
+
+<dd>Specify a command to process the results before outputting it
+to the console window. The command receives one argument (the
+result string) and the string returned is placed in the
+console.</dd>
+
+<dt><code>tkcon <b>save</b></code> ?<i>filename</i>
+?<i>type</i>??</dt>
+
+<dd>Saves the console buffer to the given filename. If no filename
+is given, it will attempt to call <code>tk_getSaveFile</code> to
+pop up the file select box. If no type is given, a dialog will ask
+you to specify what portion of the text you want to save.</dd>
+
+<dt><code>tkcon <b>set</b></code> <i>var ?value?</i></dt>
+
+<dd>Queries or sets a master interpreter variable.</dd>
+
+<dt><code>tkcon <b>append</b></code> <i>var ?value?</i></dt>
+
+<dd>Like set, but uses <code>append</code> on the variable.</dd>
+
+<dt><code>tkcon <b>lappend</b></code> <i>var ?value?</i></dt>
+
+<dd>Like set, but uses <code>lappend</code> on the variable.</dd>
+
+<dt><code>tkcon <b>show</b></code> or <code>tkcon
+deiconify</code></dt>
+
+<dd>Redisplays tkcon on the screen.</dd>
+
+<dt><code>tkcon <b>slave</b></code> ?<i>slavename ?arg arg
+...?</i>?</dt>
+
+<dd>If called with no args, it returns the name of all the tkcon
+interpreters. Otherwise given an interp name it passes the args to
+the named interpreter to be evaluated and returns the result. If no
+args are passed, then it returns the <code>[tk appname]</code> of
+that interpreter.</dd>
+
+<dt><code>tkcon <b>title</b></code> ?<i>title</i>?</dt>
+
+<dd>Sets or returns the title for tkcon.</dd>
+
+<dt><code>tkcon <b>version</b></code></dt>
+
+<dd>Returns of version of tkcon.</dd>
+</dl>
+</div>
+</td>
+</tr>
+</table>
+
+<hr noshade size="1">
+<address><font size="2">&copy; Jeffrey Hobbs</font></address>
+</body>
+</html>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

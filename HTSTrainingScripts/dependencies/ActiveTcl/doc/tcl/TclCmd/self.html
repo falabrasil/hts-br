@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="self.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>self manual page - TclOO Commands</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tcl Commands, version 8.6.7</a> <small>&gt;</small> self</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="contents.html">Tcl Commands</A> | <A HREF="../TkCmd/contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="self.html#M2" NAME="L1713">NAME</A>
+<DL><DD>self &mdash; method call internal introspection</DD></DL>
+<DD><A HREF="self.html#M3" NAME="L1714">SYNOPSIS</A>
+<DL>
+</DL>
+<DD><A HREF="self.html#M4" NAME="L1715">DESCRIPTION</A>
+<DL class="description">
+<DD><A HREF="self.html#M5" NAME="L1716"><B>self call</B></A>
+<DD><A HREF="self.html#M6" NAME="L1717"><B>self caller</B></A>
+<DD><A HREF="self.html#M7" NAME="L1718"><B>self class</B></A>
+<DD><A HREF="self.html#M8" NAME="L1719"><B>self filter</B></A>
+<DD><A HREF="self.html#M9" NAME="L1720"><B>self method</B></A>
+<DD><A HREF="self.html#M10" NAME="L1721"><B>self namespace</B></A>
+<DD><A HREF="self.html#M11" NAME="L1722"><B>self next</B></A>
+<DD><A HREF="self.html#M12" NAME="L1723"><B>self object</B></A>
+<DD><A HREF="self.html#M13" NAME="L1724"><B>self target</B></A>
+</DL>
+<DD><A HREF="self.html#M14" NAME="L1725">EXAMPLES</A>
+<DD><A HREF="self.html#M15" NAME="L1726">SEE ALSO</A>
+<DD><A HREF="self.html#M16" NAME="L1727">KEYWORDS</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+self &mdash; method call internal introspection
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+package require TclOO<BR>
+<BR>
+<B>self</B> ?<I>subcommand</I>?<BR>
+<H3><A NAME="M4">DESCRIPTION</A></H3>
+The <B>self</B> command, which should only be used from within the context of a
+call to a method (i.e. inside a method, constructor or destructor body) is
+used to allow the method to discover information about how it was called. It
+takes an argument, <I>subcommand</I>, that tells it what sort of information is
+actually desired; if omitted the result will be the same as if <B>self
+object</B> was invoked. The supported subcommands are:
+<P>
+<DL class="description">
+<DT><A NAME="M5"><B>self call</B></A><DD>
+This returns a two-element list describing the method implementations used to
+implement the current call chain. The first element is the same as would be
+reported by <B><A HREF="info.html">info object</A></B> <B>call</B> for the current method (except that this
+also reports useful values from within constructors and destructors, whose
+names are reported as <B>&lt;constructor&gt;</B> and <B>&lt;destructor&gt;</B>
+respectively), and the second element is an index into the first element's
+list that indicates which actual implementation is currently executing (the
+first implementation to execute is always at index 0).
+<P><DT><A NAME="M6"><B>self caller</B></A><DD>
+When the method was invoked from inside another object method, this subcommand
+returns a three element list describing the containing object and method. The
+first element describes the declaring object or class of the method, the
+second element is the name of the object on which the containing method was
+invoked, and the third element is the name of the method (with the strings
+<B>&lt;constructor&gt;</B> and <B>&lt;destructor&gt;</B> indicating constructors and
+destructors respectively).
+<P><DT><A NAME="M7"><B>self class</B></A><DD>
+This returns the name of the class that the current method was defined within.
+Note that this will change as the chain of method implementations is traversed
+with <B><A HREF="next.html">next</A></B>, and that if the method was defined on an object then this
+will fail.
+<P>
+If you want the class of the current object, you need to use this other
+construct:
+<P>
+<PRE>info object class [<B>self object</B>]</PRE>
+<P><DT><A NAME="M8"><B>self filter</B></A><DD>
+When invoked inside a filter, this subcommand returns a three element list
+describing the filter. The first element gives the name of the object or class
+that declared the filter (note that this may be different from the object or
+class that provided the implementation of the filter), the second element is
+either <B>object</B> or <B>class</B> depending on whether the declaring entity
+was an object or class, and the third element is the name of the filter.
+<P><DT><A NAME="M9"><B>self method</B></A><DD>
+This returns the name of the current method (with the strings
+<B>&lt;constructor&gt;</B> and <B>&lt;destructor&gt;</B> indicating constructors and
+destructors respectively).
+<P><DT><A NAME="M10"><B>self namespace</B></A><DD>
+This returns the name of the unique namespace of the object that the method
+was invoked upon.
+<P><DT><A NAME="M11"><B>self next</B></A><DD>
+When invoked from a method that is not at the end of a call chain (i.e. where
+the <B><A HREF="next.html">next</A></B> command will invoke an actual method implementation), this
+subcommand returns a two element list describing the next element in the
+method call chain; the first element is the name of the class or object that
+declares the next part of the call chain, and the second element is the name
+of the method (with the strings <B>&lt;constructor&gt;</B> and <B>&lt;destructor&gt;</B>
+indicating constructors and destructors respectively). If invoked from a
+method that is at the end of a call chain, this subcommand returns the empty
+string.
+<P><DT><A NAME="M12"><B>self object</B></A><DD>
+This returns the name of the object that the method was invoked upon.
+<P><DT><A NAME="M13"><B>self target</B></A><DD>
+When invoked inside a filter implementation, this subcommand returns a two
+element list describing the method being filtered. The first element will be
+the name of the declarer of the method, and the second element will be the
+actual name of the method.
+<P></DL>
+<H3><A NAME="M14">EXAMPLES</A></H3>
+This example shows basic use of <B>self</B> to provide information about the
+current object:
+<P>
+<PRE>oo::class create c {
+    method foo {} {
+        puts &quot;this is the [<B>self</B>] object&quot;
+    }
+}
+c create a
+c create b
+a foo                <I><font size="+1">&#8594;</font> prints &quot;this is the ::a object&quot;</I>
+b foo                <I><font size="+1">&#8594;</font> prints &quot;this is the ::b object&quot;</I></PRE>
+<P>
+This demonstrates what a method call chain looks like, and how traversing
+along it changes the index into it:
+<P>
+<PRE>oo::class create c {
+    method x {} {
+        puts &quot;Cls: [<B>self call</B>]&quot;
+    }
+}
+c create a
+oo::objdefine a {
+    method x {} {
+        puts &quot;Obj: [<B>self call</B>]&quot;
+        next
+        puts &quot;Obj: [<B>self call</B>]&quot;
+    }
+}
+a x     <I><font size="+1">&#8594;</font> Obj: {{method x object method} {method x ::c method}} 0</I>
+        <I><font size="+1">&#8594;</font> Cls: {{method x object method} {method x ::c method}} 1</I>
+        <I><font size="+1">&#8594;</font> Obj: {{method x object method} {method x ::c method}} 0</I></PRE>
+<H3><A NAME="M15">SEE ALSO</A></H3>
+<B><A HREF="info.html">info</A></B>, <B><A HREF="next.html">next</A></B>
+<H3><A NAME="M16">KEYWORDS</A></H3>
+<A href="../Keywords/C.html#call">call</A>, <A href="../Keywords/I.html#introspection">introspection</A>, <A href="../Keywords/O.html#object">object</A>
+<div class="copy">Copyright &copy; 2007 Donal K. Fellows
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

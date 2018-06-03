@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="Tcl43.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta name='Author' content='ActiveState' />
+
+<meta name="generator" content="HTML Tidy, see www.w3.org" />
+<title>Child interpreters</title>
+<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 class="title">Child interpreters</h1>
+
+<div class="nav"><a href="Tcl42.html">Previous lesson</a> | <a
+href="tcltutorial.html">Index</a></div>
+
+<p>For most applications, a single interpreter and subroutines are
+quite sufficient. However, if you are building a client-server
+system (for example) you may need to have several interpreters
+talking to different clients, and maintaining their state. You can
+do this with state variables, naming conventions, or swapping state
+to and from disk, but that gets messy.</p>
+
+<p>The <code class="command">interp</code> command creates new
+child interpreters within an existing interpreter. The child
+interpreters can have their own sets of variables, commands and
+open files, or they can be given access to items in the parent
+interpreter.</p>
+
+<p>If the child is created with the <code class="arg">-safe</code>
+option, it will not be able to access the file system, or otherwise
+damage your system. This feature allows a script to evaluate code
+from an unknown (and untrusted) source.</p>
+
+<p>The names of child interpreters are a hierarchical list. If
+interpreter <code class="keyword">foo</code> is a child of
+interpreter <code class="keyword">bar</code>, then it can be
+accessed from the toplevel interpreter as <code class=
+"keyword">{bar foo}</code>.</p>
+
+<p>The primary interpreter (what you get when you type tclsh) is
+the empty list <code class="keyword">{}</code>.</p>
+
+<p>The <code class="command">interp</code> command has several
+subcommands and options. A critical subset is:</p>
+
+<dl>
+<dt><code class="command">interp create</code> <code class=
+"optarg">-safe</code> <code class="optarg">name</code></dt>
+
+<dd>Creates a new interpreter and returns the name. If the <code
+class="optarg">-safe</code> option is used, the new interpreter
+will be unable to access certain dangerous system facilities.</dd>
+
+<dt><code class="command">interp delete</code> <code class=
+"optarg">name</code></dt>
+
+<dd>Deletes the named child interpreter.</dd>
+
+<dt><code class="command">interp eval</code> <code class=
+"optarg">args</code></dt>
+
+<dd>This is similar to the regular <code class=
+"command">eval</code> command, except that it evaluates the script
+in the child interpreter instead of the primary interpreter. The
+<code class="command">interp eval</code> command concatenates the
+args into a string, and ships that line to the child interpreter to
+evaluate.</dd>
+
+<dt><code class="command">interp alias</code> <code class=
+"reqarg">srcPath srcCmd targetPath targetCmd</code> <code class=
+"optarg">arg arg</code></dt>
+
+<dd>The <code class="command">interp alias</code> command allows a
+script to share procedures between child interpreters or between a
+child and the primary interpreter.</dd>
+</dl>
+
+<p>Note that slave interpreters have a separate state and
+namespace, but do <em>not</em> have separate event loops. These are
+not threads, and they will not execute independently. If one slave
+interpreter gets stopped by a blocking I/O request, for instance,
+no other interpreters will be processed until it has unblocked.</p>
+
+<p>The example below shows two child interpreters being created
+under the primary interpreter <code class="keyword">{}</code>. Each
+of these interpreters is given a variable <code class=
+"keyword">name</code> which contains the name of the
+interpreter.</p>
+
+<p>Note that the alias command causes the procedure to be evaluated
+in the interpreter in which the procedure was defined, not the
+interpreter in which it was evaluated. If you need a procedure to
+exist within an interpreter, you must <code class="command">interp
+eval</code> a <code class="keyword">proc</code> command within that
+interpreter. If you want an interpreter to be able to call back to
+the primary interpreter (or other interpreter) you can use the
+<code class="command">interp alias</code> command.</p>
+
+<hr />
+<h2>Example</h2>
+
+<pre class="example">
+set i1 [interp create firstChild]
+set i2 [interp create secondChild]
+
+puts "first child interp:  $i1"
+puts "second child interp: $i2\n"
+
+# Set a variable "name" in each child interp, and
+#  create a procedure within each interp
+#  to return that value
+foreach int [list $i1 $i2] {
+    interp eval $int [list set name $int]
+    interp eval $int {proc nameis {} {global name; return "nameis: $name";} }
+}
+
+foreach int [list $i1 $i2] {
+    interp eval $int "puts \"EVAL IN $int: name is \$name\""
+    puts "Return from 'nameis' is: [interp eval $int nameis]"
+}
+
+#
+# A short program to return the value of "name"
+#
+proc rtnName {} {
+    global name
+    return "rtnName is: $name"
+}
+
+#
+# Alias that procedure to a proc in $i1
+interp alias $i1 rtnName {} rtnName
+
+puts ""
+
+# This is an error.  The alias causes the evaluation
+#  to happen in the {} interpreter, where name is
+#  not defined.
+puts "firstChild reports [interp eval $i1 rtnName]"
+</pre>
+
+<br />
+<br />
+
+
+<div class="nav"><a href="Tcl42.html">Previous lesson</a> | <a
+href="tcltutorial.html">Index</a></div>
+</body>
+</html>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

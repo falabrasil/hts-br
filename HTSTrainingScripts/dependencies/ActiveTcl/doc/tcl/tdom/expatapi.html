@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="expatapi.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			---
+
+---
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org">
+<meta name='Author' content='ActiveState'>
+<title>tDOM manual: expatapi</title>
+<meta name="xsl-processor" content=
+"Jochen Loewer et. al. (loewerj@hotmail.com)">
+<meta name="generator" content="$RCSfile$ $Revision$">
+</head>
+<body>
+<div class="header">
+<div class="navbar" align="center"><a href="expatapi.html#SECTnode8831">NAME</a>
+&middot; <a href="expatapi.html#SECTnode8840">SYNOPSIS</a> &middot; <a href=
+"expatapi.html#SECTnode8918">ARGUMENTS</a> &middot; <a href=
+"expatapi.html#SECTnode8999">DESCRIPTION</a> &middot; <a href=
+"expatapi.html#SECTnode9184">SEE ALSO</a> &middot; <a href=
+"expatapi.html#SECTnode9190">KEYWORDS</a></div>
+
+<hr class="navsep">
+</div>
+
+<div class="body">
+<h2><a name="SECTnode8831">NAME</a></h2>
+
+<p class="namesection"><b class="names">CheckExpatParserObj,
+CHandlerSetInstall, CHandlerSetRemove, CHandlerSetCreate,
+CHandlerSetGetUserData, GetExpatInfo -</b><br>
+Functions to create, install and remove expat parser object
+extensions.</p>
+
+<h2><a name="SECTnode8840">SYNOPSIS</a></h2>
+
+<pre class="syntax">
+#include &lt;tclexpat.h&gt;
+
+int
+<b class="fun">CheckExpatParserObj</b> (<a href=
+"expatapi.html#ARG-interp"><i>interp</i></a>, <a href=
+"expatapi.html#ARG-nameObj"><i>nameObj</i></a>)
+
+int
+<b class="fun">CHandlerSetInstall</b> (<a href=
+"expatapi.html#ARG-interp"><i>interp</i></a>, <a href=
+"expatapi.html#ARG-expatObj"><i>expatObj</i></a>, <a href=
+"expatapi.html#ARG-handlerSet"><i>handlerSet</i></a>)
+
+int
+<b class="fun">CHandlerSetRemove</b> (<a href=
+"expatapi.html#ARG-interp"><i>interp</i></a>, <a href=
+"expatapi.html#ARG-expatObj"><i>expatObj</i></a>, <a href=
+"expatapi.html#ARG-handlerSetName"><i>handlerSetName</i></a>)
+
+CHandlerSet*
+<b class="fun">CHandlerSetCreate</b> (<a href=
+"expatapi.html#ARG-handlerSetName"><i>handlerSetName</i></a>)
+
+CHandlerSet*
+<b class="fun">CHandlerSetGet</b> (<a href=
+"expatapi.html#ARG-interp"><i>interp</i></a>, <a href=
+"expatapi.html#ARG-expatObj"><i>expatObj</i></a>, <a href=
+"expatapi.html#ARG-handlerSetName"><i>handlerSetName</i></a>)
+
+void*
+<b class="fun">CHandlerSetGetUserData</b> (<a href=
+"expatapi.html#ARG-interp"><i>interp</i></a>, <a href=
+"expatapi.html#ARG-expatObj"><i>expatObj</i></a>, <a href=
+"expatapi.html#ARG-handlerSetName"><i>handlerSetName</i></a>)
+
+TclGenExpatInfo*
+<b class="fun">GetExpatInfo</b> (<a href=
+"expatapi.html#ARG-interp"><i>interp</i></a>, <a href=
+"expatapi.html#ARG-expatObj"><i>expatObj</i></a>)
+</pre>
+
+<h2><a name="SECTnode8918">ARGUMENTS</a></h2>
+
+<div class="arglist">
+<table width="100%" rules="none" cellpadding="5%">
+<thead>
+<tr class="heading">
+<th width="20%">Type</th>
+<th width="70%">Name</th>
+<th width="10%">Mode</th>
+</tr>
+</thead>
+
+<tr class="syntax">
+<td class="type" width="20%" align="left">Tcl_Interp</td>
+<td class="name" width="70%" align="left"><a name=
+"ARG-interp">*interp</a></td>
+<td class="mode" width="10%" align="center">in</td>
+</tr>
+
+<tr class="desc">
+<td class="padding" width="20%">&Acirc;&nbsp;</td>
+<td class="argdesc" width="80%" align="left" colspan="2">
+Interpreter with the expat parser object.</td>
+</tr>
+
+<tr class="syntax">
+<td class="type" width="20%" align="left">Tcl_Obj</td>
+<td class="name" width="70%" align="left"><a name=
+"ARG-expatObj">*expatObj</a></td>
+<td class="mode" width="10%" align="center">in</td>
+</tr>
+
+<tr class="desc">
+<td class="padding" width="20%">&Acirc;&nbsp;</td>
+<td class="argdesc" width="80%" align="left" colspan="2">A Tcl
+Object containing the command name of the expat parser object to be
+queried or modified.</td>
+</tr>
+
+<tr class="syntax">
+<td class="type" width="20%" align="left">char</td>
+<td class="name" width="70%" align="left"><a name=
+"ARG-handlerSetName">*handlerSetName</a></td>
+<td class="mode" width="10%" align="center">in</td>
+</tr>
+
+<tr class="desc">
+<td class="padding" width="20%">&Acirc;&nbsp;</td>
+<td class="argdesc" width="80%" align="left" colspan="2">Identifier
+of the handler set.</td>
+</tr>
+
+<tr class="syntax">
+<td class="type" width="20%" align="left">CHandlerSet</td>
+<td class="name" width="70%" align="left"><a name=
+"ARG-handlerSet">*handlerSet</a></td>
+<td class="mode" width="10%" align="center">in</td>
+</tr>
+
+<tr class="desc">
+<td class="padding" width="20%">&Acirc;&nbsp;</td>
+<td class="argdesc" width="80%" align="left" colspan="2">Pointer to
+a C handler set.</td>
+</tr>
+
+<tr class="syntax">
+<td class="type" width="20%" align="left">Tcl_Obj</td>
+<td class="name" width="70%" align="left"><a name=
+"ARG-nameObj">*nameObj</a></td>
+<td class="mode" width="10%" align="center"></td>
+</tr>
+
+<tr class="desc">
+<td class="padding" width="20%">&Acirc;&nbsp;</td>
+<td class="argdesc" width="80%" align="left" colspan="2">A Tcl
+Object containing the name of a expat parser object</td>
+</tr>
+</table>
+</div>
+
+<h2><a name="SECTnode8999">DESCRIPTION</a></h2>
+
+<p>The functions described in this manual allows to add C level
+coded event handler to an tDOM Tcl expat parser objects. A tDOM Tcl
+expat parser object is able to have several Tcl scripts and C
+functions associated with an specific event. If the event occurs,
+first the Tcl scripts then the C functions associated with the
+event are called in turn.</p>
+
+<p>A tDOM Tcl expat parser extension is an ordinary Tcl extension
+and loaded like every other Tcl extension. It must install at least
+one new Tcl Level command, that manipulates a tDOM Tcl expat parser
+object.</p>
+
+<p>A C level handler set is a data structure like this:</p>
+
+<pre class="example">
+typedef struct CHandlerSet {
+    struct CHandlerSet *nextHandlerSet;
+    char *name;                     /* refname of the handler set */
+    int ignoreWhiteCDATAs;          /* ignore 'white' CDATA sections */
+
+    void *userData;                 /* Handler set specific Data Structure;
+                                       the C handler set extention has to
+                                       malloc the needed structure in his
+                                       init func and has to provide a
+                                       cleanup func (to free it). */
+
+    CHandlerSet_userDataReset        resetProc;
+    CHandlerSet_userDataFree         freeProc;
+
+    /* C func for element start */
+    XML_StartElementHandler          elementstartcommand;
+    /* C func for element end */
+    XML_EndElementHandler            elementendcommand;
+    /* C func for character data */
+    XML_CharacterDataHandler         datacommand;
+    /* C func for namespace decl start */
+    XML_StartNamespaceDeclHandler    startnsdeclcommand;
+    /* C func for namespace decl end */
+    XML_EndNamespaceDeclHandler      endnsdeclcommand;
+    /* C func for processing instruction */
+    XML_ProcessingInstructionHandler picommand;
+    /* C func for default data */
+    XML_DefaultHandler               defaultcommand;
+    /* C func for unparsed entity declaration */
+    XML_NotationDeclHandler          notationcommand;
+    /* C func for external entity */
+    XML_ExternalEntityRefHandler     externalentitycommand;
+    /* C func for unknown encoding */
+    XML_UnknownEncodingHandler       unknownencodingcommand;
+    /* C func for comments */
+    XML_CommentHandler               commentCommand;
+    /* C func for "not standalone" docs */
+    XML_NotStandaloneHandler         notStandaloneCommand;
+    /* C func for CDATA section start */
+    XML_StartCdataSectionHandler     startCdataSectionCommand;
+    /* C func for CDATA section end */
+    XML_EndCdataSectionHandler       endCdataSectionCommand;
+    /* C func for !ELEMENT decl's */
+    XML_ElementDeclHandler           elementDeclCommand;
+    /* C func for !ATTLIST decl's */
+    XML_AttlistDeclHandler           attlistDeclCommand;
+    /* C func for !DOCTYPE decl's */
+    XML_StartDoctypeDeclHandler      startDoctypeDeclCommand;
+    /* C func for !DOCTYPE decl ends */
+    XML_EndDoctypeDeclHandler        endDoctypeDeclCommand;
+    /* C func for !ENTITY decls's */
+    XML_EntityDeclHandler            entityDeclCommand;
+} CHandlerSet;
+</pre>
+
+<p>The types and the arguments of the event functions (XML_*) are
+exactly the same like the expat lib handler functions and described
+in detail in expat.h, see there. The extension has only to provided
+the handler functions needed; it's perfectly OK to leave unused
+handler slots as the are (they are initialized to NULL by
+CHandlerSetCreate).</p>
+
+<p>The <i class="m">name</i> of this structure is used to identify
+the handler set.</p>
+
+<p>If the flag <i class="m">ignoreWhiteCDATAs</i> is set, element
+content which contain only whitespace isn't reported with the
+datacommand.</p>
+
+<p>The <i class="m">userData</i> element points to the handler set
+specific data. The event handler functions are called with this
+pointer as userData argument.</p>
+
+<p><i class="m">resetProc</i> and <i class="m">freeProc</i> must
+have arguments that match the type</p>
+
+<pre class="syntax">
+void (Tcl_Interp *interp, void *userData)
+</pre>
+
+<p><i class="m">resetProc</i> is called in case the parser is
+reseted with <tt class="samp">&lt;parserObj&gt; reset</tt> and
+should do any necessary cleanup and reinitializing to prepare the C
+handler set for a new XML document. The <i class="m">freeProc</i>
+is called, if the parser is deleted and should do memory cleanup
+etc.</p>
+
+<p><i class="m">CHandlerSetCreate</i> create a C handler set, gives
+it the name <i class="m">name</i> and initializes any other element
+with NULL.</p>
+
+<p><i class="m">CHandlerSetInstall</i> adds the <i class=
+"m">handlerSet</i> to the parser <i class="m">expatObj</i>. The
+parser has to be a tDOM Tcl expat parser object in the interpreter
+<i class="m">interp</i>. The name of the C handler set has to be
+unique for the parser. Returns 0 in case of success. Returns 1 if
+<i class="m">expatObj</i> isn't a parser object in the interpreter
+<i class="m">interp</i>. Returns 2 if this parser has already a C
+handler set with the handlerSet name.</p>
+
+<p><i class="m">CHandlerSetRemove</i> removes the C handler set
+referenced by the <i class="m">handlerSetName</i> from the parser
+<i class="m">expatObj</i>. The parser has to be a tDOM Tcl expat
+parser object in the interpreter <i class="m">interp</i>. <i class=
+"m">CHandlerSetRemove</i> calls the freeProc function of the C
+handler set structure, removes the handler set from the C handler
+set list and frees the handler structure. Returns 0 in case of
+success. Returns 1 if <i class="m">expatObj</i> isn't a parser
+object in the interpreter <i class="m">interp</i>. Returns 2 if
+this parser hasn't a C handler set named <i class=
+"m">handlerSetName</i>.</p>
+
+<p><i class="m">CheckExpatParserObj</i> returns 1, if <i class=
+"m">nameObj</i> is a tDOM Tcl expat parser object in the
+interpreter <i class="m">interp</i>, otherwise it returns 0.
+Example:</p>
+
+<pre class="example">
+int
+TclExampleObjCmd(dummy, interp, objc, objv)
+     ClientData dummy;
+     Tcl_Interp *interp;
+     int objc;
+     Tcl_Obj *CONST objv[];
+{
+    char          *method;
+    CHandlerSet   *handlerSet;
+    int            methodIndex, result;
+    simpleCounter *counter;
+
+
+    static char *exampleMethods[] = {
+        "enable", "getresult", "remove",
+        NULL
+    };
+    enum exampleMethod {
+        m_enable, m_getresult, m_remove
+    };
+
+    if (objc != 3) {
+        Tcl_WrongNumArgs (interp, 1, objv, example_usage);
+        return TCL_ERROR;
+    }
+
+    if (!CheckExpatParserObj (interp, objv[1])) {
+        Tcl_SetResult (interp, "First argument has to be a expat parser object", NULL);
+        return TCL_ERROR;
+    }
+    /* ... */
+</pre>
+
+<p><i class="m">CHandlerSetGet</i> returns a pointer to the C
+handler Set referenced by the name <i class="m">handlerSetName</i>
+of the parser object <i class="m">expatObj</i>. <i class=
+"m">expatObj</i> has to be an expat parser object in the
+interpreter <i class="m">interp</i>. Returns NULL in case of
+error.</p>
+
+<p><i class="m">CHandlerSetGetUserData</i> returns a pointer to the
+userData of the C handler set referenced by the name <i class=
+"m">handlerSetName</i> of the parser object <i class=
+"m">expatObj</i>. <i class="m">expatObj</i> has to be an expat
+parser object in the interpreter <i class="m">interp</i>. Returns
+NULL in case of error.</p>
+
+<p><i class="m">GetExpatInfo</i> Is a helper function that returns
+a pointer to the TclGenExpatInfo structure of the tDOM Tcl expat
+parser object <i class="m">expatObj</i>. The <i class=
+"m">expatObj</i> has to be a tDOM Tcl expat parser object in the
+interpreter <i class="m">interp</i>. This is most useful, to set
+the application status of the parser object.</p>
+
+<p>See the simple but full functionally example in the
+extensions/example dir or the more complex example tnc in the
+extensions/tnc dir (a simple DTD validation extension).</p>
+
+<h2><a name="SECTnode9184">SEE ALSO</a></h2>
+
+<p class="seealso"><a href="expat.html">expat</a></p>
+
+<h2><a name="SECTnode9190">KEYWORDS</a></h2>
+
+<p class="keywords"><a class="keyword" href=
+"keyword-index.html#KW-Chandlerset">C handler set</a></p>
+</div>
+
+<div class="footer">
+<hr class="navsep">
+<!-- footer.html: Standard navigational footer -->
+<div class="navbar" align="center"><a class="navaid" href=
+"index.html">Table of Contents</a> &middot; <a class="navaid" href=
+"category-index.html">Index</a> &middot; <a class="navaid" href=
+"keyword-index.html">Keywords</a></div>
+</div>
+</body>
+</html>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

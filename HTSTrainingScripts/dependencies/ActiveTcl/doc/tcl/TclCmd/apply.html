@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="apply.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>apply manual page - Built-In Commands</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tcl Commands, version 8.6.7</a> <small>&gt;</small> apply</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="contents.html">Tcl Commands</A> | <A HREF="../TkCmd/contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<H3><A NAME="M2">NAME</A></H3>
+apply &mdash; Apply an anonymous function
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+<B>apply </B><I>func</I> ?<I>arg1 arg2 ...</I>?<BR>
+<H3><A NAME="M4">DESCRIPTION</A></H3>
+The command <B>apply</B> applies the function <I>func</I> to the arguments
+<I>arg1 arg2 ...</I> and returns the result.
+<P>
+The function <I>func</I> is a two element list <I>{args body}</I> or a three
+element list <I>{args body namespace}</I> (as if the
+<B><A HREF="list.html">list</A></B> command had been used).
+The first element <I>args</I> specifies the formal arguments to
+<I>func</I>. The specification of the formal arguments <I>args</I>
+is shared with the <B><A HREF="proc.html">proc</A></B> command, and is described in detail in the
+corresponding manual page.
+<P>
+The contents of <I>body</I> are executed by the Tcl interpreter
+after the local variables corresponding to the formal arguments are given
+the values of the actual parameters <I>arg1 arg2 ...</I>.
+When <I>body</I> is being executed, variable names normally refer to
+local variables, which are created automatically when referenced and
+deleted when <B>apply</B> returns.  One local variable is automatically
+created for each of the function's arguments.
+Global variables can only be accessed by invoking
+the <B><A HREF="global.html">global</A></B> command or the <B><A HREF="upvar.html">upvar</A></B> command.
+Namespace variables can only be accessed by invoking
+the <B><A HREF="variable.html">variable</A></B> command or the <B><A HREF="upvar.html">upvar</A></B> command.
+<P>
+The invocation of <B>apply</B> adds a call frame to Tcl's evaluation stack
+(the stack of frames accessed via <B><A HREF="uplevel.html">uplevel</A></B>). The execution of <I>body</I>
+proceeds in this call frame, in the namespace given by <I>namespace</I> or
+in the global namespace if none was specified. If given, <I>namespace</I> is
+interpreted relative to the global namespace even if its name does not start
+with
+&#8220;::&#8221;.
+<P>
+The semantics of <B>apply</B> can also be described by:
+<P>
+<PRE>proc apply {fun args} {
+    set len [llength $fun]
+    if {($len &lt; 2) || ($len &gt; 3)} {
+         error &quot;can't interpret &#92;&quot;$fun&#92;&quot; as anonymous function&quot;
+    }
+    lassign $fun argList body ns
+    set name ::$ns::[getGloballyUniqueName]
+    set body0 {
+         rename [lindex [info level 0] 0] {}
+    }
+    proc $name $argList ${body0}$body
+    set code [catch {uplevel 1 $name $args} res opt]
+    return -options $opt $res
+}</PRE>
+<H3><A NAME="M5">EXAMPLES</A></H3>
+This shows how to make a simple general command that applies a transformation
+to each element of a list.
+<P>
+<PRE>proc map {lambda list} {
+    set result {}
+    foreach item $list {
+        lappend result [<B>apply</B> $lambda $item]
+    }
+    return $result
+}
+map {x {return [string length $x]:$x}} {a bb ccc dddd}
+      <I><font size="+1">&#8594;</font> 1:a 2:bb 3:ccc 4:dddd</I>
+map {x {expr {$x**2 + 3*$x - 2}}} {-4 -3 -2 -1 0 1 2 3 4}
+      <I><font size="+1">&#8594;</font> 2 -2 -4 -4 -2 2 8 16 26</I></PRE>
+<P>
+The <B>apply</B> command is also useful for defining callbacks for use in the
+<B><A HREF="trace.html">trace</A></B> command:
+<P>
+<PRE>set vbl &quot;123abc&quot;
+trace add variable vbl write {<B>apply</B> {{v1 v2 op} {
+    upvar 1 $v1 v
+    puts &quot;updated variable to &#92;&quot;$v&#92;&quot;&quot;
+}}}
+set vbl 123
+set vbl abc</PRE>
+<H3><A NAME="M6">SEE ALSO</A></H3>
+<B><A HREF="proc.html">proc</A></B>, <B><A HREF="uplevel.html">uplevel</A></B>
+<H3><A NAME="M7">KEYWORDS</A></H3>
+<A href="../Keywords/A.html#anonymous function">anonymous function</A>, <A href="../Keywords/A.html#argument">argument</A>, <A href="../Keywords/L.html#lambda">lambda</A>, <A href="../Keywords/P.html#procedure">procedure</A>, <A href="http://localhost:1313/tcl/Keywords/.html#"></A>
+<div class="copy">Copyright &copy; 2006 Miguel Sofer
+<BR>Copyright &copy; 2006 Donal K. Fellows
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

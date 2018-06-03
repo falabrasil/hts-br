@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="ParseArgs.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>Tcl_ParseArgsObjv manual page - Tcl Library Procedures</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tcl C API, version 8.6.7</a> <small>&gt;</small> ParseArgs</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="../TkCmd/contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="ParseArgs.html#M2" NAME="L590">NAME</A>
+<DL><DD>Tcl_ParseArgsObjv &mdash; parse arguments according to a tabular description</DD></DL>
+<DD><A HREF="ParseArgs.html#M3" NAME="L591">SYNOPSIS</A>
+<DL>
+<DD><B>#include &lt;tcl.h&gt;</B>
+<DD>int
+<DD><B>Tcl_ParseArgsObjv</B>(<I>interp, argTable, objcPtr, objv, remObjv</I>)
+</DL>
+<DD><A HREF="ParseArgs.html#M4" NAME="L592">ARGUMENTS</A>
+<DL class="arguments">
+</DL>
+<DD><A HREF="ParseArgs.html#M5" NAME="L593">DESCRIPTION</A>
+<DL class="description">
+<DD><A HREF="ParseArgs.html#M6" NAME="L594"><B>TCL_ARGV_AUTO_HELP</B></A>
+<DD><A HREF="ParseArgs.html#M7" NAME="L595"><B>TCL_ARGV_AUTO_REST</B></A>
+<DD><A HREF="ParseArgs.html#M8" NAME="L596"><B>TCL_ARGV_TABLE_END</B></A>
+</DL>
+<DD><A HREF="ParseArgs.html#M9" NAME="L597">ARGUMENT DESCRIPTOR ENTRIES</A>
+<DL class="argument descriptor entries">
+<DD><A HREF="ParseArgs.html#M10" NAME="L598"><B>TCL_ARGV_CONSTANT</B></A>
+<DD><A HREF="ParseArgs.html#M11" NAME="L599"><B>TCL_ARGV_END</B></A>
+<DD><A HREF="ParseArgs.html#M12" NAME="L600"><B>TCL_ARGV_FLOAT</B></A>
+<DD><A HREF="ParseArgs.html#M13" NAME="L601"><B>TCL_ARGV_FUNC</B></A>
+<DD><A HREF="ParseArgs.html#M14" NAME="L602"><B>TCL_ARGV_GENFUNC</B></A>
+<DD><A HREF="ParseArgs.html#M15" NAME="L603"><B>TCL_ARGV_HELP</B></A>
+<DD><A HREF="ParseArgs.html#M16" NAME="L604"><B>TCL_ARGV_INT</B></A>
+<DD><A HREF="ParseArgs.html#M17" NAME="L605"><B>TCL_ARGV_REST</B></A>
+<DD><A HREF="ParseArgs.html#M18" NAME="L606"><B>TCL_ARGV_STRING</B></A>
+</DL>
+<DD><A HREF="ParseArgs.html#M19" NAME="L607">SEE ALSO</A>
+<DD><A HREF="ParseArgs.html#M20" NAME="L608">KEYWORDS</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+Tcl_ParseArgsObjv &mdash; parse arguments according to a tabular description
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+<B>#include &lt;tcl.h&gt;</B><BR>
+int<BR>
+<B>Tcl_ParseArgsObjv</B>(<I>interp, argTable, objcPtr, objv, remObjv</I>)<BR>
+<H3><A NAME="M4">ARGUMENTS</A></H3>
+<DL class="arguments">
+<DT><A HREF="Interp.html">Tcl_Interp</A> <B>*interp</B> (out)<DD>
+Where to store error messages.
+<P><DT>const Tcl_ArgvInfo <B>*argTable</B> (in)<DD>
+Pointer to array of option descriptors.
+<P><DT>int <B>*objcPtr</B> (in/out)<DD>
+A pointer to variable holding number of arguments in <I>objv</I>. Will be
+modified to hold number of arguments left in the unprocessed argument list
+stored in <I>remObjv</I>.
+<P><DT><A HREF="Object.html">Tcl_Obj</A> *const <B>*objv</B> (in)<DD>
+The array of arguments to be parsed.
+<P><DT><A HREF="Object.html">Tcl_Obj</A> <B>***remObjv</B> (out)<DD>
+Pointer to a variable that will hold the array of unprocessed arguments.
+Should be NULL if no return of unprocessed arguments is required. If
+<I>objcPtr</I> is updated to a non-zero value, the array returned through this
+must be deallocated using <B><A HREF="Alloc.html">ckfree</A></B>.
+<P></DL>
+<H3><A NAME="M5">DESCRIPTION</A></H3>
+The <B>Tcl_ParseArgsObjv</B> function provides a system for parsing argument
+lists of the form
+&#8220;<B>-someName </B><I>someValue</I> ...&#8221;.
+Such argument lists are commonly found both in the arguments to a program and
+in the arguments to an individual Tcl command. This parser assumes that the
+order of the arguments does not matter, other than in so far as later copies
+of a duplicated option overriding earlier ones.
+<P>
+The argument array is described by the <I>objcPtr</I> and <I>objv</I>
+parameters, and an array of unprocessed arguments is returned through the
+<I>objcPtr</I> and <I>remObjv</I> parameters; if no return of unprocessed
+arguments is desired, the <I>remObjv</I> parameter should be NULL. If any
+problems happen, including if the
+&#8220;generate help&#8221;
+option is selected, an error message is left in the interpreter result and
+TCL_ERROR is returned. Otherwise, the interpreter result is left unchanged and
+TCL_OK is returned.
+<P>
+The collection of arguments to be parsed is described by the <I>argTable</I>
+parameter. This points to a table of descriptor structures that is terminated
+by an entry with the <I>type</I> field set to TCL_ARGV_END. As convenience, the
+following prototypical entries are provided:
+<P>
+<DL class="description">
+<DT><A NAME="M6"><B>TCL_ARGV_AUTO_HELP</B></A><DD>
+Enables the argument processor to provide help when passed the argument
+&#8220;<B>-help</B>&#8221;.
+<P><DT><A NAME="M7"><B>TCL_ARGV_AUTO_REST</B></A><DD>
+Instructs the argument processor that arguments after
+&#8220;<B>--</B>&#8221;
+are to be unprocessed.
+<P><DT><A NAME="M8"><B>TCL_ARGV_TABLE_END</B></A><DD>
+Marks the end of the table of argument descriptors.
+<P></DL>
+<H4><A NAME="M9">ARGUMENT DESCRIPTOR ENTRIES</A></H4>
+Each entry of the argument descriptor table must be a structure of type
+<B>Tcl_ArgvInfo</B>. The structure is defined as this:
+<P>
+<PRE>typedef struct {
+    int <I>type</I>;
+    const char *<I>keyStr</I>;
+    void *<I>srcPtr</I>;
+    void *<I>dstPtr</I>;
+    const char *<I>helpStr</I>;
+    ClientData <I>clientData</I>;
+} <B>Tcl_ArgvInfo</B>;</PRE>
+<P>
+The <I>keyStr</I> field contains the name of the option; by convention, this
+will normally begin with a
+&#8220;<B>-</B>&#8221;
+character. The <I>type</I>, <I>srcPtr</I>, <I>dstPtr</I> and <I>clientData</I>
+fields describe the interpretation of the value of the argument, as described
+below. The <I>helpStr</I> field gives some text that is used to provide help to
+users when they request it.
+<P>
+As noted above, the <I>type</I> field is used to describe the interpretation of
+the argument's value. The following values are acceptable values for
+<I>type</I>:
+<P>
+<DL class="argument descriptor entries">
+<DT><A NAME="M10"><B>TCL_ARGV_CONSTANT</B></A><DD>
+The argument does not take any following value argument. If this argument is
+present, the int pointed to by the <I>srcPtr</I> field is copied to the
+<I>dstPtr</I> field. The <I>clientData</I> field is ignored.
+<P><DT><A NAME="M11"><B>TCL_ARGV_END</B></A><DD>
+This value marks the end of all option descriptors in the table. All other
+fields are ignored.
+<P><DT><A NAME="M12"><B>TCL_ARGV_FLOAT</B></A><DD>
+This argument takes a following floating point value argument. The value (once
+parsed by <B><A HREF="DoubleObj.html">Tcl_GetDoubleFromObj</A></B>) will be stored as a double-precision
+value in the variable pointed to by the <I>dstPtr</I> field. The <I>srcPtr</I>
+and <I>clientData</I> fields are ignored.
+<P><DT><A NAME="M13"><B>TCL_ARGV_FUNC</B></A><DD>
+This argument optionally takes a following value argument; it is up to the
+handler callback function passed in <I>srcPtr</I> to decide. That function will
+have the following signature:
+<P>
+<PRE>typedef int (<B>Tcl_ArgvFuncProc</B>)(
+        ClientData <I>clientData</I>,
+        <A HREF="Object.html">Tcl_Obj</A> *<I>objPtr</I>,
+        void *<I>dstPtr</I>);</PRE>
+<P>The result is a boolean value indicating whether to consume the following
+argument. The <I>clientData</I> is the value from the table entry, the
+<I>objPtr</I> is the value that represents the following argument or NULL if
+there are no following arguments at all, and the <I>dstPtr</I> argument to the
+<B>Tcl_ArgvFuncProc</B> is the location to write the parsed value to.
+<P><DT><A NAME="M14"><B>TCL_ARGV_GENFUNC</B></A><DD>
+This argument takes zero or more following arguments; the handler callback
+function passed in <I>srcPtr</I> returns how many (or a negative number to
+signal an error, in which case it should also set the interpreter result). The
+function will have the following signature:
+<P>
+<PRE>typedef int (<B>Tcl_ArgvGenFuncProc</B>)(
+        ClientData <I>clientData</I>,
+        <A HREF="Interp.html">Tcl_Interp</A> *<I>interp</I>,
+        int <I>objc</I>,
+        <A HREF="Object.html">Tcl_Obj</A> *const *<I>objv</I>,
+        void *<I>dstPtr</I>);</PRE>
+<P>The <I>clientData</I> is the value from the table entry, the <I>interp</I> is
+where to store any error messages, the <I>keyStr</I> is the name of the
+argument, <I>objc</I> and <I>objv</I> describe an array of all the remaining
+arguments, and <I>dstPtr</I> argument to the <B>Tcl_ArgvGenFuncProc</B> is the
+location to write the parsed value (or values) to.
+<P><DT><A NAME="M15"><B>TCL_ARGV_HELP</B></A><DD>
+This special argument does not take any following value argument, but instead
+causes <B>Tcl_ParseArgsObjv</B> to generate an error message describing the
+arguments supported. All other fields except the <I>helpStr</I> field are
+ignored.
+<P><DT><A NAME="M16"><B>TCL_ARGV_INT</B></A><DD>
+This argument takes a following integer value argument. The value (once parsed
+by <B><A HREF="IntObj.html">Tcl_GetIntFromObj</A></B>) will be stored as an int in the variable pointed
+to by the <I>dstPtr</I> field. The <I>srcPtr</I> field is ignored.
+<P><DT><A NAME="M17"><B>TCL_ARGV_REST</B></A><DD>
+This special argument does not take any following value argument, but instead
+marks all following arguments to be left unprocessed. The <I>srcPtr</I>,
+<I>dstPtr</I> and <I>clientData</I> fields are ignored.
+<P><DT><A NAME="M18"><B>TCL_ARGV_STRING</B></A><DD>
+This argument takes a following string value argument. A pointer to the string
+will be stored at <I>dstPtr</I>; the string inside will have a lifetime linked
+to the lifetime of the string representation of the argument value that it
+came from, and so should be copied if it needs to be retained. The
+<I>srcPtr</I> and <I>clientData</I> fields are ignored.
+<P></DL>
+<H3><A NAME="M19">SEE ALSO</A></H3>
+<B><A HREF="GetIndex.html">Tcl_GetIndexFromObj</A></B>, <B><A HREF="Tcl_Main.html">Tcl_Main</A></B>, <B><A HREF="CrtObjCmd.html">Tcl_CreateObjCommand</A></B>
+<H3><A NAME="M20">KEYWORDS</A></H3>
+<A href="../Keywords/A.html#argument">argument</A>, <A href="../Keywords/P.html#parse">parse</A>
+<div class="copy">Copyright &copy; 2008 Donal K. Fellows
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="ttk_combobox.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>ttk::combobox manual page - Tk Themed Widget</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tk Commands, version 8.6.7</a> <small>&gt;</small> ttk_combobox</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="ttk_combobox.html#M2" NAME="L1770">NAME</A>
+<DL><DD>ttk::combobox &mdash; text field with popdown selection list</DD></DL>
+<DD><A HREF="ttk_combobox.html#M3" NAME="L1771">SYNOPSIS</A>
+<DL>
+</DL>
+<DD><A HREF="ttk_combobox.html#M4" NAME="L1772">DESCRIPTION</A>
+<DD><A HREF="ttk_combobox.html#M5" NAME="L1773">STANDARD OPTIONS</A>
+<DL>
+<DD><A HREF="ttk_widget.html#M-class">-class, undefined, undefined</A>
+<DD><A HREF="ttk_widget.html#M-cursor">-cursor, cursor, Cursor</A>
+<DD><A HREF="ttk_widget.html#M-style">-style, style, Style</A>
+<DD><A HREF="ttk_widget.html#M-takefocus">-takefocus, takeFocus, TakeFocus</A>
+</DL>
+<DD><A HREF="ttk_combobox.html#M6" NAME="L1774">WIDGET-SPECIFIC OPTIONS</A>
+<DL>
+<DD><A HREF="ttk_combobox.html#M7" NAME="L1775">-exportselection, exportSelection, ExportSelection</A>
+<DD><A HREF="ttk_combobox.html#M8" NAME="L1776">-justify, justify, Justify</A>
+<DD><A HREF="ttk_combobox.html#M9" NAME="L1777">-height, height, Height</A>
+<DD><A HREF="ttk_combobox.html#M10" NAME="L1778">-postcommand, postCommand, PostCommand</A>
+<DD><A HREF="ttk_combobox.html#M11" NAME="L1779">-state, state, State</A>
+<DD><A HREF="ttk_combobox.html#M12" NAME="L1780">-textvariable, textVariable, TextVariable</A>
+<DD><A HREF="ttk_combobox.html#M13" NAME="L1781">-values, values, Values</A>
+<DD><A HREF="ttk_combobox.html#M14" NAME="L1782">-width, width, Width</A>
+</DL>
+<DD><A HREF="ttk_combobox.html#M15" NAME="L1783">WIDGET COMMAND</A>
+<DL class="widget command">
+<DD><A HREF="ttk_combobox.html#M16" NAME="L1784"><I>pathName </I><B>current</B> ?<I>newIndex</I>?</A>
+<DD><A HREF="ttk_combobox.html#M17" NAME="L1785"><I>pathName </I><B>get</B></A>
+<DD><A HREF="ttk_combobox.html#M18" NAME="L1786"><I>pathName </I><B>set</B> <I>value</I></A>
+</DL>
+<DD><A HREF="ttk_combobox.html#M19" NAME="L1787">VIRTUAL EVENTS</A>
+<DD><A HREF="ttk_combobox.html#M20" NAME="L1788">SEE ALSO</A>
+<DD><A HREF="ttk_combobox.html#M21" NAME="L1789">KEYWORDS</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+ttk::combobox &mdash; text field with popdown selection list
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+<B>ttk::combobox</B> <I>pathName </I>?<I>options</I>?<BR>
+<H3><A NAME="M4">DESCRIPTION</A></H3>
+A <B>ttk::combobox</B> combines a text field with a pop-down list of values;
+the user may select the value of the text field from among the
+values in the list.
+<H3><A NAME="M5">STANDARD OPTIONS</A></H3>
+<DL>
+<DT><B><A HREF="ttk_widget.html#M-class">-class, undefined, undefined</A></B>
+<DT><B><A HREF="ttk_widget.html#M-cursor">-cursor, cursor, Cursor</A></B>
+<DT><B><A HREF="ttk_widget.html#M-style">-style, style, Style</A></B>
+<DT><B><A HREF="ttk_widget.html#M-takefocus">-takefocus, takeFocus, TakeFocus</A></B>
+</DL>
+<H3><A NAME="M6">WIDGET-SPECIFIC OPTIONS</A></H3>
+<DL>
+<DT>Command-Line Name: <B><A NAME="M7">-exportselection</A></B>
+<DT>Database Name: <B>exportSelection</B>
+<DT>Database Class: <B>ExportSelection</B>
+<DD>Boolean value.
+If set, the widget selection is linked to the X selection.
+<P><DT>Command-Line Name: <B><A NAME="M8">-justify</A></B>
+<DT>Database Name: <B>justify</B>
+<DT>Database Class: <B>Justify</B>
+<DD>Specifies how the text is aligned within the widget.
+Must be one of <B>left</B>, <B>center</B>, or <B>right</B>.
+<P><DT>Command-Line Name: <B><A NAME="M9">-height</A></B>
+<DT>Database Name: <B>height</B>
+<DT>Database Class: <B>Height</B>
+<DD>Specifies the height of the pop-down listbox, in rows.
+<P><DT>Command-Line Name: <B><A NAME="M10">-postcommand</A></B>
+<DT>Database Name: <B>postCommand</B>
+<DT>Database Class: <B>PostCommand</B>
+<DD>A Tcl script to evaluate immediately before displaying the listbox.
+The <B>-postcommand</B> script may specify the <B>-values</B> to display.
+<P><DT>Command-Line Name: <B><A NAME="M11">-state</A></B>
+<DT>Database Name: <B>state</B>
+<DT>Database Class: <B>State</B>
+<DD>One of <B>normal</B>, <B>readonly</B>, or <B>disabled</B>.
+In the <B>readonly</B> state,
+the value may not be edited directly, and
+the user can only select one of the <B>-values</B> from the
+dropdown list.
+In the <B>normal</B> state,
+the text field is directly editable.
+In the <B>disabled</B> state, no interaction is possible.
+<P><DT>Command-Line Name: <B><A NAME="M12">-textvariable</A></B>
+<DT>Database Name: <B>textVariable</B>
+<DT>Database Class: <B>TextVariable</B>
+<DD>Specifies the name of a global variable whose value is linked
+to the widget value.
+Whenever the variable changes value the widget value is updated,
+and vice versa.
+<P><DT>Command-Line Name: <B><A NAME="M13">-values</A></B>
+<DT>Database Name: <B>values</B>
+<DT>Database Class: <B>Values</B>
+<DD>Specifies the list of values to display in the drop-down listbox.
+<P><DT>Command-Line Name: <B><A NAME="M14">-width</A></B>
+<DT>Database Name: <B>width</B>
+<DT>Database Class: <B>Width</B>
+<DD>Specifies an integer value indicating the desired width of the entry window,
+in average-size characters of the widget's font.
+</DL>
+<H3><A NAME="M15">WIDGET COMMAND</A></H3>
+The following subcommands are possible for combobox widgets:
+<P>
+<DL class="widget command">
+<DT><A NAME="M16"><I>pathName </I><B>current</B> ?<I>newIndex</I>?</A><DD>
+If <I>newIndex</I> is supplied, sets the combobox value
+to the element at position <I>newIndex</I> in the list of <B>-values</B>.
+Otherwise, returns the index of the current value in the list of
+<B>-values</B> or <B>-1</B> if the current value does not appear in the list.
+<P><DT><A NAME="M17"><I>pathName </I><B>get</B></A><DD>
+Returns the current value of the combobox.
+<P><DT><A NAME="M18"><I>pathName </I><B>set</B> <I>value</I></A><DD>
+Sets the value of the combobox to <I>value</I>.
+<P></DL>
+<P>
+The combobox widget also supports the following <B><A HREF="ttk_entry.html">ttk::entry</A></B>
+widget subcommands (see <I>ttk::entry(n)</I> for details):
+<dl><dd><table border="0"><tr><td><p class="tablecell"><B>bbox</B><td><p class="tablecell"><B>delete</B><td><p class="tablecell"><B>icursor</B><tr><td><p class="tablecell"><B>index</B><td><p class="tablecell"><B>insert</B><td><p class="tablecell"><B>selection</B><tr><td><p class="tablecell"><B>xview</B></table></dl>
+The combobox widget also supports the following generic <B><A HREF="ttk_widget.html">ttk::widget</A></B>
+widget subcommands (see <I>ttk::widget(n)</I> for details):
+<dl><dd><table border="0"><tr><td><p class="tablecell"><B>cget</B><td><p class="tablecell"><B>configure</B><td><p class="tablecell"><B>identify</B><tr><td><p class="tablecell"><B>instate</B><td><p class="tablecell"><B>state</B></table></dl>
+<H3><A NAME="M19">VIRTUAL EVENTS</A></H3>
+The combobox widget generates a <B>&lt;&lt;ComboboxSelected&gt;&gt;</B> virtual event
+when the user selects an element from the list of values.
+If the selection action unposts the listbox,
+this event is delivered after the listbox is unposted.
+<H3><A NAME="M20">SEE ALSO</A></H3>
+<B><A HREF="ttk_widget.html">ttk::widget</A></B>, <B><A HREF="ttk_entry.html">ttk::entry</A></B>
+<H3><A NAME="M21">KEYWORDS</A></H3>
+<A href="../Keywords/C.html#choice">choice</A>, <A href="../Keywords/E.html#entry">entry</A>, <A href="../Keywords/L.html#list box">list box</A>, <A href="../Keywords/T.html#text box">text box</A>, <A href="../Keywords/W.html#widget">widget</A>
+<div class="copy">Copyright &copy; 2004 Joe English
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

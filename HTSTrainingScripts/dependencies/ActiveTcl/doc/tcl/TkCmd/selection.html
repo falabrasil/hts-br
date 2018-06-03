@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="selection.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>selection manual page - Tk Built-In Commands</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tk Commands, version 8.6.7</a> <small>&gt;</small> selection</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="selection.html#M2" NAME="L1355">NAME</A>
+<DL><DD>selection &mdash; Manipulate the X selection</DD></DL>
+<DD><A HREF="selection.html#M3" NAME="L1356">SYNOPSIS</A>
+<DL>
+</DL>
+<DD><A HREF="selection.html#M4" NAME="L1357">DESCRIPTION</A>
+<DL class="description">
+<DD><A HREF="selection.html#M5" NAME="L1358"><B>selection clear</B> ?<B>-displayof</B> <I>window</I>? ?<B>-selection</B> <I>selection</I>?</A>
+<DD><A HREF="selection.html#M6" NAME="L1359"><B>selection get</B> ?<B>-displayof</B> <I>window</I>? ?<B>-selection</B> <I>selection</I>? ?<B>-type</B> <I>type</I>?</A>
+<DD><A HREF="selection.html#M7" NAME="L1360"><B>selection handle</B> ?<B>-selection</B> <I>s</I>? ?<B>-type</B> <I>t</I>? ?<B>-format</B> <I>f</I>? <I>window command</I></A>
+<DD><A HREF="selection.html#M8" NAME="L1361"><B>selection own</B> ?<B>-displayof</B> <I>window</I>? ?<B>-selection</B> <I>selection</I>?</A>
+<DD><A HREF="selection.html#M9" NAME="L1362"><B>selection own</B> ?<B>-command</B> <I>command</I>? ?<B>-selection</B> <I>selection</I>? <I>window</I></A>
+</DL>
+<DD><A HREF="selection.html#M10" NAME="L1363">EXAMPLES</A>
+<DD><A HREF="selection.html#M11" NAME="L1364">SEE ALSO</A>
+<DD><A HREF="selection.html#M12" NAME="L1365">KEYWORDS</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+selection &mdash; Manipulate the X selection
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+<B>selection </B><I>option</I> ?<I>arg arg ...</I>?<BR>
+<H3><A NAME="M4">DESCRIPTION</A></H3>
+This command provides a Tcl interface to the X selection mechanism and
+implements the full selection functionality described in the
+X Inter-Client Communication Conventions Manual (ICCCM).
+<P>
+Note that for management of the <B>CLIPBOARD</B> selection (see below), the
+<B><A HREF="clipboard.html">clipboard</A></B> command may also be used.
+<P>
+The first argument to <B>selection</B> determines the format of the
+rest of the arguments and the behavior of the command.  The following
+forms are currently supported:
+<P>
+<DL class="description">
+<DT><A NAME="M5"><B>selection clear</B> ?<B>-displayof</B> <I>window</I>? ?<B>-selection</B> <I>selection</I>?</A><DD>
+If <I>selection</I> exists anywhere on <I>window</I>'s display, clear it
+so that no window owns the selection anymore.  <I>Selection</I>
+specifies the X selection that should be cleared, and should be an
+atom name such as <B>PRIMARY</B> or <B>CLIPBOARD</B>; see the Inter-Client
+Communication Conventions Manual for complete details.
+<I>Selection</I> defaults to <B>PRIMARY</B> and <I>window</I> defaults to
+&#8220;.&#8221;.
+Returns an empty string.
+<P><DT><A NAME="M6"><B>selection get</B> ?<B>-displayof</B> <I>window</I>? ?<B>-selection</B> <I>selection</I>? ?<B>-type</B> <I>type</I>?</A><DD>
+Retrieves the value of <I>selection</I> from <I>window</I>'s display and
+returns it as a result.  <I>Selection</I> defaults to <B>PRIMARY</B> and
+<I>window</I> defaults to
+&#8220;.&#8221;.
+<I>Type</I> specifies the form in which the selection is to be returned
+(the desired
+&#8220;target&#8221;
+for conversion, in ICCCM terminology), and
+should be an atom name such as <B>STRING</B> or <B>FILE_NAME</B>; see the
+Inter-Client Communication Conventions Manual for complete details.
+<I>Type</I> defaults to <B>STRING</B>.  The selection owner may choose to
+return the selection in any of several different representation
+formats, such as <B>STRING</B>, <B>UTF8_STRING</B>, <B>ATOM</B>,
+<B>INTEGER</B>, etc. (this format is different
+than the selection type; see the ICCCM for all the confusing details).
+If the selection is returned in a non-string format, such as <B>INTEGER</B>
+or <B>ATOM</B>, the <B>selection</B> command converts it to string format as a
+collection of fields separated by spaces: atoms are converted to their
+textual names, and anything else is converted to hexadecimal integers.
+Note that <B>selection get</B> does not retrieve the selection in the
+<B>UTF8_STRING</B> format unless told to.
+<P><DT><A NAME="M7"><B>selection handle</B> ?<B>-selection</B> <I>s</I>? ?<B>-type</B> <I>t</I>? ?<B>-format</B> <I>f</I>? <I>window command</I></A><DD>
+Creates a handler for selection requests, such that <I>command</I> will
+be executed whenever selection <I>s</I> is owned by <I>window</I> and
+someone attempts to retrieve it in the form given by type <I>t</I>
+(e.g. <I>t</I> is specified in the <B>selection get</B> command).
+<I>S</I> defaults to <B>PRIMARY</B>, <I>t</I> defaults to <B>STRING</B>, and
+<I>f</I> defaults to <B>STRING</B>.  If <I>command</I> is an empty string
+then any existing handler for <I>window</I>, <I>t</I>, and
+<I>s</I> is removed.
+Note that when the selection is handled as type <B>STRING</B> it is also
+automatically handled as type <B>UTF8_STRING</B> as well.
+<P>
+When <I>selection</I> is requested, <I>window</I> is the selection owner,
+and <I>type</I> is the requested type, <I>command</I> will be executed
+as a Tcl command with two additional numbers appended to it
+(with space separators).
+The two additional numbers
+are <I>offset</I> and <I>maxChars</I>:  <I>offset</I> specifies a starting
+character position in the selection and <I>maxChars</I> gives the maximum
+number of characters to retrieve.  The command should return a value consisting
+of at most <I>maxChars</I> of the selection, starting at position
+<I>offset</I>.  For very large selections (larger than <I>maxChars</I>)
+the selection will be retrieved using several invocations of <I>command</I>
+with increasing <I>offset</I> values.  If <I>command</I> returns a string
+whose length is less than <I>maxChars</I>, the return value is assumed to
+include all of the remainder of the selection;  if the length of
+<I>command</I>'s result is equal to <I>maxChars</I> then
+<I>command</I> will be invoked again, until it eventually
+returns a result shorter than <I>maxChars</I>.  The value of <I>maxChars</I>
+will always be relatively large (thousands of characters).
+<P>
+If <I>command</I> returns an error then the selection retrieval is rejected
+just as if the selection did not exist at all.
+<P>
+The <I>format</I> argument specifies the representation that should be
+used to transmit the selection to the requester (the second column of
+Table 2 of the ICCCM), and defaults to <B>STRING</B>.  If <I>format</I> is
+<B>STRING</B>, the selection is transmitted as 8-bit ASCII characters (i.e.
+just in the form returned by <I>command</I>, in the system <B><A HREF="../TclCmd/encoding.html">encoding</A></B>;
+the <B>UTF8_STRING</B> format always uses UTF-8 as its encoding).
+If <I>format</I> is
+<B>ATOM</B>, then the return value from <I>command</I> is divided into fields
+separated by white space;  each field is converted to its atom value,
+and the 32-bit atom value is transmitted instead of the atom name.
+For any other <I>format</I>, the return value from <I>command</I> is
+divided into fields separated by white space and each field is
+converted to a 32-bit integer;  an array of integers is transmitted
+to the selection requester.
+<P>The <I>format</I> argument is needed only for compatibility with
+selection requesters that do not use Tk.  If Tk is being
+used to retrieve the selection then the value is converted back to
+a string at the requesting end, so <I>format</I> is
+irrelevant.
+<P><DT><A NAME="M8"><B>selection own</B> ?<B>-displayof</B> <I>window</I>? ?<B>-selection</B> <I>selection</I>?</A><DD>
+<P><DT><A NAME="M9"><B>selection own</B> ?<B>-command</B> <I>command</I>? ?<B>-selection</B> <I>selection</I>? <I>window</I></A><DD>
+The first form of <B>selection own</B> returns the path name of the
+window in this application that owns <I>selection</I> on the display
+containing <I>window</I>, or an empty string if no window in this
+application owns the selection.  <I>Selection</I> defaults to <B>PRIMARY</B> and
+<I>window</I> defaults to
+&#8220;.&#8221;.
+<P>
+The second form of <B>selection own</B> causes <I>window</I> to become
+the new owner of <I>selection</I> on <I>window</I>'s display, returning
+an empty string as result. The existing owner, if any, is notified
+that it has lost the selection.
+If <I>command</I> is specified, it is a Tcl script to execute when
+some other window claims ownership of the selection away from
+<I>window</I>.  <I>Selection</I> defaults to PRIMARY.
+<P></DL>
+<H3><A NAME="M10">EXAMPLES</A></H3>
+On X11 platforms, one of the standard selections available is the
+<B>SECONDARY</B> selection. Hardly anything uses it, but here is how to read
+it using Tk:
+<P>
+<PRE>set selContents [<B>selection get</B> -selection SECONDARY]</PRE>
+<P>
+Many different types of data may be available for a selection; the
+special type <B>TARGETS</B> allows you to get a list of available types:
+<P>
+<PRE>foreach type [<B>selection get</B> -type TARGETS] {
+   puts &quot;Selection PRIMARY supports type $type&quot;
+}</PRE>
+<P>
+To claim the selection, you must first set up a handler to supply the
+data for the selection. Then you have to claim the selection...
+<PRE># Set up the data handler ready for incoming requests
+set foo &quot;This is a string with some data in it... blah blah&quot;
+<B>selection handle</B> -selection SECONDARY . getData
+proc getData {offset maxChars} {
+   puts &quot;Retrieving selection starting at $offset&quot;
+   return [string range $::foo $offset [expr {$offset+$maxChars-1}]]
+}
+
+# Now we grab the selection itself
+puts &quot;Claiming selection&quot;
+<B>selection own</B> -command lost -selection SECONDARY .
+proc lost {} {
+   puts &quot;Lost selection&quot;
+}</PRE>
+<H3><A NAME="M11">SEE ALSO</A></H3>
+<B><A HREF="clipboard.html">clipboard</A></B>
+<H3><A NAME="M12">KEYWORDS</A></H3>
+<A href="../Keywords/C.html#clear">clear</A>, <A href="../Keywords/F.html#format">format</A>, <A href="../Keywords/H.html#handler">handler</A>, <A href="../Keywords/I.html#ICCCM">ICCCM</A>, <A href="../Keywords/O.html#own">own</A>, <A href="../Keywords/S.html#selection">selection</A>, <A href="../Keywords/T.html#target">target</A>, <A href="../Keywords/T.html#type">type</A>
+<div class="copy">Copyright &copy; 1990-1994 The Regents of the University of California.
+<BR>Copyright &copy; 1994-1996 Sun Microsystems, Inc.
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

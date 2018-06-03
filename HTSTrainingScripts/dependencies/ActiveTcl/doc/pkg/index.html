@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="index.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../fonts/icon.eot');
+        src: url('../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../fonts/icon.woff')
+               format('woff'),
+             url('../fonts/icon.ttf')
+               format('truetype'),
+             url('../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../stylesheets/application.css">
+    <link rel="stylesheet" href="../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../stylesheets/as_custom.css">
+    
+    <script src="../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a class="current" title="Package Reference" href="index.html">
+	
+	Package Reference
+</a>
+
+
+<ul id="scrollspy">
+</ul>
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../tcl/contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1>Additional community packages in ActiveTcl </h1>
+
+			
+
+<p>The ActiveTcl distribution includes a set of additional community packages that are installed and ready to use in your programming projects. This page includes a complete list of packages and versions, categorized by the type of development area they are intended for.</p>
+
+<ul>
+<li><a href="index.html#developer-utilities">Developer utilities</a></li>
+<li><a href="index.html#user-interfaces">User interfaces</a></li>
+<li><a href="index.html#command-line">Command line</a></li>
+<li><a href="index.html#database-access">Database access</a></li>
+<li><a href="index.html#machine-learning">Machine learning</a></li>
+<li><a href="index.html#text-and-markup-processing">Text and markup processing</a></li>
+</ul>
+
+<h2 id="developer-utilities">Developer utilities</h2>
+
+<table>
+<thead>
+<tr>
+<th>Package</th>
+<th>Version</th>
+<th>Description</th>
+<th>Details</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>bzip2</td>
+<td>1.0.6</td>
+<td>File compression package, built on top of libbzip2, a library for handling compressed data in the bzip2 format.</td>
+<td><a href="http://www.bzip.org/docs.html" target="\_blank">docs</a></td>
+</tr>
+
+<tr>
+<td>critcl</td>
+<td>3.1.17</td>
+<td>Tcl extension for embedding C language code in Tcl.</td>
+<td><a href="http://andreas-kupries.github.io/critcl/" target="\_blank">docs</a></td>
+</tr>
+
+<tr>
+<td>fontconfig</td>
+<td>2.12.4</td>
+<td>Library for configuring and customizing font access.</td>
+<td><a href="https://www.freedesktop.org/software/fontconfig/fontconfig-devel/" target="\_blank">docs</a></td>
+</tr>
+
+<tr>
+<td>freetype2</td>
+<td>2.6.5</td>
+<td>Free and portable TrueType font rendering engine.</td>
+<td><a href="https://www.freetype.org/freetype2/docs/documentation.html" target="\_blank">docs</a></td>
+</tr>
+
+<tr>
+<td>Img</td>
+<td>1.4.6</td>
+<td>Tk extension that adds support for a variety of image formats (.png, .jpg, .gif, etc.).</td>
+<td><a href="../tcl/img/toc.html">docs</a></td>
+</tr>
+
+<tr>
+<td>itcl</td>
+<td>3.4.3</td>
+<td>Object-oriented extensions to TCL.</td>
+<td><a href="../tcl/itcl/contents.html">docs</a></td>
+</tr>
+
+<tr>
+<td>itk</td>
+<td>4.1.0</td>
+<td>Framework for building mega-widgets in Tcl/TK.</td>
+<td><a href="http://incrtcl.sourceforge.net/itk/itk.html" target="\_blank">docs</a></td>
+</tr>
+
+<tr>
+<td>libgd</td>
+<td>2.24</td>
+<td>Graphics library for fast image creation.</td>
+<td><a href="https://libgd.github.io/manuals/2.2.4/files/preamble-txt.html" target="\_blank">docs</a></td>
+</tr>
+
+<tr>
+<td>libiconv</td>
+<td>1.15</td>
+<td>Converts text from one encoding to another encoding.</td>
+<td><a href="https://www.gnu.org/software/libiconv/" target="\_blank">docs</a></td>
+</tr>
+
+<tr>
+<td>libjpeg</td>
+<td>9.0.2</td>
+<td>The Independent JPEG Group&rsquo;s JPEG software</td>
+<td></td>
+</tr>
+
+<tr>
+<td>libpng</td>
+<td>1.6.34</td>
+<td>Portable Network Graphics library</td>
+<td></td>
+</tr>
+
+<tr>
+<td>nsf</td>
+<td>2.1.0</td>
+<td>Next Scripting Framework</td>
+<td><a href="https://next-scripting.org/xowiki/docs/index" target="\_blank">docs</a></td>
+</tr>
+
+<tr>
+<td>openssl</td>
+<td>1.10.0.6</td>
+<td>Open Secure Sockets Layer general cryptography library.</td>
+<td></td>
+</tr>
+
+<tr>
+<td>snack</td>
+<td>2.2.10</td>
+<td>Snack Sound Toolkit</td>
+<td><a href="../tcl/snack/tcl-man.html" target="\_blank">docs</a></td>
+</tr>
+
+<tr>
+<td>tbcload</td>
+<td>1.7.1</td>
+<td>A package for loading precompiled bytecodes.</td>
+<td></td>
+</tr>
+
+<tr>
+<td>tclvfs</td>
+<td>1.4.2</td>
+<td>File System Management in TCL</td>
+<td><a href="../tcl/tclvfs/toc.html" target="\_blank">docs</a></td>
+</tr>
+
+<tr>
+<td>tclx</td>
+<td>8.4.1</td>
+<td>Library for writing C language extensions to Tcl.</td>
+<td><a href="../tcl/tclx/index.html">docs</a></td>
+</tr>
+
+<tr>
+<td>tls and tls-fips</td>
+<td>1.7.13</td>
+<td>Binding to OpenSSL toolkit.</td>
+<td><a href="http://tls.sourceforge.net/tls.htm" target="\_blank">docs</a></td>
+</tr>
+
+<tr>
+<td>Trf</td>
+<td>2.1.4</td>
+<td>Tcl extension based upon the principle of stacked channels.</td>
+<td><a href="https://wiki.tcl-lang.org/479" target="\_blank">docs</a></td>
+</tr>
+
+<tr>
+<td>trofs</td>
+<td>0.4.9</td>
+<td>TCL read-only filesystem.</td>
+<td><a href="http://math.nist.gov/~DPorter/tcltk/trofs/" target="\_blank">docs</a></td>
+</tr>
+
+<tr>
+<td>thread</td>
+<td>2.7.2</td>
+<td>Tcl extension that allows script level manipulation of data shared between threads.</td>
+<td><a href="../tcl/thread/toc.html">docs</a></td>
+</tr>
+
+<tr>
+<td>twapi</td>
+<td>4.1.27</td>
+<td>TCL Windows API extension</td>
+<td><a href="http://twapi.magicsplat.com/v4.1/" target="\_blank">docs</a></td>
+</tr>
+
+<tr>
+<td>win_iconv</td>
+<td>0.0.1</td>
+<td>iconv using the Win32 API</td>
+<td></td>
+</tr>
+
+<tr>
+<td>wub</td>
+<td>5.0.0</td>
+<td>HTTP web-server written in Tcl.</td>
+<td><a href="http://wiki.tcl.tk/15781" target="\_blank">docs</a></td>
+</tr>
+
+<tr>
+<td>XOTcl</td>
+<td>1.6.8</td>
+<td>Combines the ideas of scripting and object orientation.</td>
+<td><a href="http://media.wu-wien.ac.at/doc/index.html" target="\_blank">docs</a></td>
+</tr>
+
+<tr>
+<td>zlib</td>
+<td>1.2.11</td>
+<td>General purpose data compression library.</td>
+<td><a href="https://www.zlib.net/manual.html" target="\_blank">docs</a></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="user-interfaces">User interfaces</h2>
+
+<table>
+<thead>
+<tr>
+<th>Package</th>
+<th>Version</th>
+<th>Description</th>
+<th>Details</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>bwidget</td>
+<td>1.9.11</td>
+<td>A high-level widget set for Tcl/Tk that does not require a compiled extension library.</td>
+<td><a href="../tcl/bwidget/contents.html">docs</a></td>
+</tr>
+
+<tr>
+<td>iwidgets</td>
+<td>4.1</td>
+<td>An object-oriented mega-widget set which extends Tcl/Tk.</td>
+<td><a href="http://incrtcl.sourceforge.net/iwidgets/" target="\_blank">docs</a></td>
+</tr>
+
+<tr>
+<td>tklib</td>
+<td>0.6.1</td>
+<td>A companion to Tcllib, for Tk related packages.</td>
+<td><a href="http://core.tcl.tk/tklib/doc/trunk/embedded/www/toc.html" target="\_blank">docs</a></td>
+</tr>
+
+<tr>
+<td>tktable</td>
+<td>2.11</td>
+<td>Create and manipulate tables.</td>
+<td><a href="http://tktable.sourceforge.net/tktable/doc/tkTable.html" target="\_blank">docs</a></td>
+</tr>
+
+<tr>
+<td>treectrl</td>
+<td>2.4.1</td>
+<td>Create and manipulate hierarchical multicolumn widgets</td>
+<td><a href="http://tktreectrl.sourceforge.net/treectrl.html" target="\_blank">docs</a></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="command-line">Command line</h2>
+
+<table>
+<thead>
+<tr>
+<th>Package</th>
+<th>Version</th>
+<th>Description</th>
+<th>Details</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>expect</td>
+<td>5.45.3</td>
+<td>A tool for automating interactive applications.</td>
+<td><a href="../tcl/expect/index.html">docs</a></td>
+</tr>
+
+<tr>
+<td>tkcon</td>
+<td>2.7</td>
+<td>A replacement for the standard console that comes with Tk.</td>
+<td><a href="../tcl/tkcon/index.html">docs</a> and <a href="../tcl/tkcon/ref/toc.html">reference</a></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="database-access">Database access</h2>
+
+<table>
+<thead>
+<tr>
+<th>Package</th>
+<th>Version</th>
+<th>Description</th>
+<th>Details</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>metakit</td>
+<td>2.4.9.7.1</td>
+<td>An embeddable database for storing data efficiently and portably, without requiring complex runtime installation.</td>
+<td><a href="https://equi4.com/metakit/tcl.html" target="\_blank">docs</a></td>
+</tr>
+
+<tr>
+<td>oracle-instantclient</td>
+<td>12.2.0.1</td>
+<td>Oracle Instant Client</td>
+<td></td>
+</tr>
+
+<tr>
+<td>postgres</td>
+<td>9.6.3</td>
+<td>An object-relational database system.</td>
+<td></td>
+</tr>
+
+<tr>
+<td>sqlite3</td>
+<td>3.20.1</td>
+<td>Tcl interface to the SQLite library.</td>
+<td><a href="https://sqlite.org/tclsqlite.html" target="\_blank">docs</a></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="machine-learning">Machine learning</h2>
+
+<table>
+<thead>
+<tr>
+<th>Package</th>
+<th>Version</th>
+<th>Description</th>
+<th>Details</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>libtensorflow</td>
+<td>1.1.0</td>
+<td>An open-source software library for Machine Intelligence.</td>
+<td><a href="https://www.tensorflow.org/get_started/" target="\_blank">docs</a></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="text-and-markup-processing">Text and markup processing</h2>
+
+<table>
+<thead>
+<tr>
+<th>Package</th>
+<th>Version</th>
+<th>Description</th>
+<th>Details</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>expat</td>
+<td>2.2.4</td>
+<td>XML Parser Toolkit</td>
+<td><a href="http://tdom.github.io/expat.html" target="\_blank">docs</a></td>
+</tr>
+
+<tr>
+<td>libiconv</td>
+<td>1.15</td>
+<td>Library for converting between encodings.</td>
+<td><a href="http://www.gnu.org/software/libiconv/" target="\_blank">docs</a></td>
+</tr>
+
+<tr>
+<td>libxml2</td>
+<td>2.9.6</td>
+<td>XML C parser and toolkit.</td>
+<td><a href="http://xmlsoft.org/html/index.html" target="\_blank">docs</a></td>
+</tr>
+
+<tr>
+<td>libxslt</td>
+<td>1.1.31</td>
+<td>XSLT C library for XML parsing, tree manipulation, and XPath support.</td>
+<td><a href="http://xmlsoft.org/XSLT/html/libxslt-lib.html#LIBXSLT-LIB" target="\_blank">docs</a></td>
+</tr>
+
+<tr>
+<td>Tcllib</td>
+<td>1.18</td>
+<td>Collection of utility modules that provide a wide variety of functionality, from implementations of standard data structures to implementations of common networking protocols.</td>
+<td><a href="https://core.tcl.tk/tcllib/doc/trunk/embedded/www/toc.html" target="\_blank">docs</a></td>
+</tr>
+
+<tr>
+<td>TclSOAP</td>
+<td>1.6.8.1</td>
+<td>Package to provide Tcl commands for SOAP remote procedure calls.</td>
+<td><a href="http://tclsoap.sourceforge.net/" target="\_blank">docs</a></td>
+</tr>
+
+<tr>
+<td>tclxml</td>
+<td>3.2</td>
+<td>XML parser API</td>
+<td><a href="http://tclxml.sourceforge.net/tclxml/3.2/tclxml.html" target="\_blank">docs</a></td>
+</tr>
+
+<tr>
+<td>tdom</td>
+<td>0.8.3</td>
+<td>Create an in-memory DOM tree from XML.</td>
+<td><a href="../tcl/tdom/index.html" target="\_blank">docs</a></td>
+</tr>
+</tbody>
+</table>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

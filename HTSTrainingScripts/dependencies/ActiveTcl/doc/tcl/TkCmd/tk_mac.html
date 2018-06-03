@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="tk_mac.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>tk::mac manual page - Tk Built-In Commands</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tk Commands, version 8.6.7</a> <small>&gt;</small> tk_mac</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="tk_mac.html#M2" NAME="L1667">NAME</A>
+<DL><DD>tk::mac &mdash; Access Mac-Specific Functionality on OS X from Tk</DD></DL>
+<DD><A HREF="tk_mac.html#M3" NAME="L1668">SYNOPSIS</A>
+<DL>
+</DL>
+<DD><A HREF="tk_mac.html#M4" NAME="L1669">EVENT HANDLER CALLBACKS</A>
+<DL class="event handler callbacks">
+<DD><A HREF="tk_mac.html#M5" NAME="L1670"><B>::tk::mac::ShowPreferences</B></A>
+<DD><A HREF="tk_mac.html#M6" NAME="L1671"><B>::tk::mac::OpenApplication</B></A>
+<DD><A HREF="tk_mac.html#M7" NAME="L1672"><B>::tk::mac::ReopenApplication</B></A>
+<DD><A HREF="tk_mac.html#M8" NAME="L1673"><B>::tk::mac::OpenDocument </B><I>file...</I></A>
+<DD><A HREF="tk_mac.html#M9" NAME="L1674"><B>::tk::mac::PrintDocument </B><I>file...</I></A>
+<DD><A HREF="tk_mac.html#M10" NAME="L1675"><B>::tk::mac::Quit</B></A>
+<DD><A HREF="tk_mac.html#M11" NAME="L1676"><B>::tk::mac::OnHide</B></A>
+<DD><A HREF="tk_mac.html#M12" NAME="L1677"><B>::tk::mac::OnShow</B></A>
+<DD><A HREF="tk_mac.html#M13" NAME="L1678"><B>::tk::mac::ShowHelp</B></A>
+</DL>
+<DD><A HREF="tk_mac.html#M14" NAME="L1679">ADDITIONAL DIALOGS</A>
+<DL class="additional dialogs">
+<DD><A HREF="tk_mac.html#M15" NAME="L1680"><B>::tk::mac::standardAboutPanel</B></A>
+</DL>
+<DD><A HREF="tk_mac.html#M16" NAME="L1681">SYSTEM CONFIGURATION</A>
+<DL class="system configuration">
+<DD><A HREF="tk_mac.html#M17" NAME="L1682"><B>::tk::mac::useCompatibilityMetrics </B><I>boolean</I></A>
+<DD><A HREF="tk_mac.html#M18" NAME="L1683"><B>::tk::mac::CGAntialiasLimit </B><I>limit</I></A>
+<DD><A HREF="tk_mac.html#M19" NAME="L1684"><B>::tk::mac::antialiasedtext </B><I>number</I></A>
+<DD><A HREF="tk_mac.html#M20" NAME="L1685"><B>::tk::mac::useThemedToplevel </B><I>boolean</I></A>
+</DL>
+<DD><A HREF="tk_mac.html#M21" NAME="L1686">SUPPORT COMMANDS</A>
+<DL class="support commands">
+<DD><A HREF="tk_mac.html#M22" NAME="L1687"><B>::tk::mac::iconBitmap </B><I>name width height -kind value</I></A>
+<UL class="support commands">
+</UL>
+<DL class="support commands">
+<DD><A HREF="tk_mac.html#M23" NAME="L1688"><B>-file</B></A>
+<DD><A HREF="tk_mac.html#M24" NAME="L1689"><B>-fileType</B></A>
+<DD><A HREF="tk_mac.html#M25" NAME="L1690"><B>-osType</B></A>
+<DD><A HREF="tk_mac.html#M26" NAME="L1691"><B>-systemType</B></A>
+<DD><A HREF="tk_mac.html#M27" NAME="L1692"><B>-namedImage</B></A>
+<DD><A HREF="tk_mac.html#M28" NAME="L1693"><B>-imageFile</B></A>
+</DL>
+</DL>
+<DD><A HREF="tk_mac.html#M29" NAME="L1694">SEE ALSO</A>
+<DD><A HREF="tk_mac.html#M30" NAME="L1695">KEYWORDS</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+tk::mac &mdash; Access Mac-Specific Functionality on OS X from Tk
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+<B>::tk::mac::ShowPreferences</B><BR>
+<B>::tk::mac::OpenApplication</B><BR>
+<B>::tk::mac::ReopenApplication</B><BR>
+<B>::tk::mac::OpenDocument </B><I>file...</I><BR>
+<B>::tk::mac::PrintDocument </B><I>file...</I><BR>
+<B>::tk::mac::Quit</B><BR>
+<B>::tk::mac::OnHide</B><BR>
+<B>::tk::mac::OnShow</B><BR>
+<B>::tk::mac::ShowHelp</B><BR>
+<BR>
+<B>::tk::mac::standardAboutPanel</B><BR>
+<BR>
+<B>::tk::mac::useCompatibilityMetrics </B><I>boolean</I><BR>
+<B>::tk::mac::CGAntialiasLimit </B><I>limit</I><BR>
+<B>::tk::mac::antialiasedtext </B><I>number</I><BR>
+<B>::tk::mac::useThemedToplevel </B><I>boolean</I><BR>
+<BR>
+<B>::tk::mac::iconBitmap </B><I>name width height -kind value</I><BR>
+<H3><A NAME="M4">EVENT HANDLER CALLBACKS</A></H3>
+The Aqua/Mac OS X application environment defines a number of additional
+events that applications should respond to. These events are mapped by Tk to
+calls to commands in the <B>::tk::mac</B> namespace; unless otherwise noted, if
+the command is absent, no action will be taken.
+<P>
+<DL class="event handler callbacks">
+<DT><A NAME="M5"><B>::tk::mac::ShowPreferences</B></A><DD>
+The default Apple Event handler for kAEShowPreferences,
+&#8220;pref&#8221;.
+The application menu
+&#8220;Preferences&#8221;
+menu item is only enabled when this proc is defined. Typically this command is
+used to wrap a specific own preferences command, which pops up a preferences
+window. Something like:
+<P>
+<PRE>proc ::tk::mac::ShowPreferences {} {
+    setPref
+}</PRE>
+<P><DT><A NAME="M6"><B>::tk::mac::OpenApplication</B></A><DD>
+If a proc of this name is defined, this proc fill fire when your application
+is intially opened. It is the default Apple Event handler for
+kAEOpenApplication,
+&#8220;oapp&#8221;.
+<P><DT><A NAME="M7"><B>::tk::mac::ReopenApplication</B></A><DD>
+If a proc of this name is defined it is the default Apple Event handler for
+kAEReopenApplication,
+&#8220;rapp&#8221;,
+the Apple Event sent when your application is opened when it is already
+running (e.g. by clicking its icon in the Dock). Here is a sample that raises
+a minimized window when the Dock icon is clicked:
+<P>
+<PRE>proc ::tk::mac::ReopenApplication {} {
+    if {[wm state .] eq &quot;withdrawn&quot;} {
+        wm state . normal
+    } else {
+        wm deiconify .
+    }
+    raise .
+}</PRE>
+<P><DT><A NAME="M8"><B>::tk::mac::OpenDocument </B><I>file...</I></A><DD>
+If a proc of this name is defined it is the default Apple Event handler for
+kAEOpenDocuments,
+&#8220;odoc&#8221;,
+the Apple Event sent when your application is asked to open one or more
+documents (e.g., by drag &amp; drop onto the app or by opening a document of a
+type associated to the app). The proc should take as arguments paths to the
+files to be opened, like so:
+<P>
+<PRE>proc ::tk::mac::OpenDocument {args} {
+    foreach f $args {my_open_document $f}
+}</PRE>
+<P><DT><A NAME="M9"><B>::tk::mac::PrintDocument </B><I>file...</I></A><DD>
+If a proc of this name is defined it is the default Apple Event handler for
+kAEPrintDocuments,
+&#8220;pdoc&#8221;,
+the Apple Event sent when your application is asked to print one or more
+documents (e.g., via the Print menu item in the Finder).  It works the same
+way as <B>tk::mac::OpenDocument</B> in terms of arguments.
+<P><DT><A NAME="M10"><B>::tk::mac::Quit</B></A><DD>
+If a proc of this name is defined it is the default Apple Event handler for
+kAEQuitApplication,
+&#8220;quit&#8221;,
+the Apple Event sent when your application is asked to be quit, e.g. via the
+quit menu item in the application menu, the quit menu item in the Dock menu,
+or during a logout/restart/shutdown etc. If this is not defined, <B><A HREF="../TclCmd/exit.html">exit</A></B> is
+called instead.
+<P><DT><A NAME="M11"><B>::tk::mac::OnHide</B></A><DD>
+If defined, this is called when your application receives a kEventAppHidden
+event, e.g. via the hide menu item in the application or Dock menus.
+<P><DT><A NAME="M12"><B>::tk::mac::OnShow</B></A><DD>
+If defined, this is called when your application receives a kEventAppShown
+event, e.g. via the show all menu item in the application menu, or by clicking
+the Dock icon of a hidden application.
+<P><DT><A NAME="M13"><B>::tk::mac::ShowHelp</B></A><DD>
+Customizes behavior of Apple Help menu; if this procedure is not defined, the
+platform-specific standard Help menu item
+&#8220;YourApp Help&#8221;
+performs the default Cocoa action of showing the Help Book configured in the
+application's Info.plist (or displaying an alert if no Help Book is set).
+<P></DL>
+<H3><A NAME="M14">ADDITIONAL DIALOGS</A></H3>
+The Aqua/Mac OS X defines additional dialogs that applications should
+support.
+<P>
+<DL class="additional dialogs">
+<DT><A NAME="M15"><B>::tk::mac::standardAboutPanel</B></A><DD>
+Brings the standard Cocoa about panel to the front, with all its information
+filled in from your application bundle files (standard about panel with no
+options specified). See Apple Technote TN2179 and the AppKit documentation for
+-[NSApplication orderFrontStandardAboutPanelWithOptions:] for details on the
+Info.plist keys and app bundle files used by the about panel.
+<P></DL>
+<H3><A NAME="M16">SYSTEM CONFIGURATION</A></H3>
+There are a number of additional global configuration options that control the
+details of how Tk renders by default.
+<P>
+<DL class="system configuration">
+<DT><A NAME="M17"><B>::tk::mac::useCompatibilityMetrics </B><I>boolean</I></A><DD>
+Preserves compatibility with older Tk/Aqua metrics; set to <B>false</B> for
+more native spacing.
+<P><DT><A NAME="M18"><B>::tk::mac::CGAntialiasLimit </B><I>limit</I></A><DD>
+Sets the antialiasing limit; lines thinner that <I>limit</I> pixels will not be
+antialiased. Integer, set to 0 by default, making all lines be antialiased.
+<P><DT><A NAME="M19"><B>::tk::mac::antialiasedtext </B><I>number</I></A><DD>
+Sets anti-aliased text.  Controls text antialiasing, possible values for
+<I>number</I> are -1 (default, use system default for text AA), 0 (no text AA),
+1 (use text AA).
+<P><DT><A NAME="M20"><B>::tk::mac::useThemedToplevel </B><I>boolean</I></A><DD>
+Sets toplevel windows to draw with the modern grayish/ pinstripe Mac
+background. Equivalent to configuring the toplevel with
+&#8220;<B>-background systemWindowHeaderBackground</B>&#8221;,
+or to using a <B><A HREF="ttk_frame.html">ttk::frame</A></B>.
+<P></DL>
+<H3><A NAME="M21">SUPPORT COMMANDS</A></H3>
+<DL class="support commands">
+<DT><A NAME="M22"><B>::tk::mac::iconBitmap </B><I>name width height -kind value</I></A><DD>
+Renders native icons and bitmaps in Tk applications (including any image file
+readable by NSImage). A native bitmap name is interpreted as follows (in
+order):
+<P>
+<UL class="support commands">
+<LI>
+predefined builtin 32x32 icon name (<B>stop</B>, <B>caution</B>, <B>document</B>,
+etc.)
+<P><LI>
+<I>name</I>, as defined by <B>tk::mac::iconBitmap</B>
+<P><LI>
+NSImage named image name
+<P><LI>
+NSImage url string
+<P><LI>
+4-char OSType of IconServices icon
+<P></UL>
+<DL><DD>
+<P>
+The <I>width</I> and <I>height</I> arguments to <B>tk::mac::iconBitmap</B> define
+the dimensions of the image to create, and <I>-kind</I> must be one of:
+<P>
+<DL class="support commands">
+<DT><A NAME="M23"><B>-file</B></A><DD>
+icon of file at given path
+<P><DT><A NAME="M24"><B>-fileType</B></A><DD>
+icon of given file type
+<P><DT><A NAME="M25"><B>-osType</B></A><DD>
+icon of given 4-char OSType file type
+<P><DT><A NAME="M26"><B>-systemType</B></A><DD>
+icon for given IconServices 4-char OSType
+<P><DT><A NAME="M27"><B>-namedImage</B></A><DD>
+named NSImage for given name
+<P><DT><A NAME="M28"><B>-imageFile</B></A><DD>
+image at given path
+<P></DL>
+</DL>
+<P></DL>
+<H3><A NAME="M29">SEE ALSO</A></H3>
+<B><A HREF="bind.html">bind</A></B>, <B><A HREF="wm.html">wm</A></B>
+<H3><A NAME="M30">KEYWORDS</A></H3>
+<A href="../Keywords/A.html#about dialog">about dialog</A>, <A href="../Keywords/A.html#antialiasing">antialiasing</A>, <A href="../Keywords/A.html#Apple event">Apple event</A>, <A href="../Keywords/I.html#icon">icon</A>, <A href="../Keywords/N.html#NSImage">NSImage</A>
+<div class="copy">Copyright &copy; 2011 Kevin Walzer.
+<BR>Copyright &copy; 2011 Donal K. Fellows.
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

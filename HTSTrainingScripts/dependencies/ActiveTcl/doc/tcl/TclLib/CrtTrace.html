@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="CrtTrace.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>Tcl_CreateTrace manual page - Library Procedures</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tcl C API, version 8.6.7</a> <small>&gt;</small> CrtTrace</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="../TkCmd/contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="CrtTrace.html#M2" NAME="L192">NAME</A>
+<DL><DD>Tcl_CreateTrace, Tcl_CreateObjTrace, Tcl_DeleteTrace &mdash; arrange for command execution to be traced</DD></DL>
+<DD><A HREF="CrtTrace.html#M3" NAME="L193">SYNOPSIS</A>
+<DL>
+<DD><B>#include &lt;tcl.h&gt;</B>
+<DD>Tcl_Trace
+<DD><B>Tcl_CreateTrace</B>(<I>interp, level, proc, clientData</I>)
+<DD>Tcl_Trace
+<DD><B>Tcl_CreateObjTrace</B>(<I>interp, level, flags, objProc, clientData, deleteProc</I>)
+<DD><B>Tcl_DeleteTrace</B>(<I>interp, trace</I>)
+</DL>
+<DD><A HREF="CrtTrace.html#M4" NAME="L194">ARGUMENTS</A>
+<DL class="arguments">
+</DL>
+<DD><A HREF="CrtTrace.html#M5" NAME="L195">DESCRIPTION</A>
+<DD><A HREF="CrtTrace.html#M6" NAME="L196">KEYWORDS</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+Tcl_CreateTrace, Tcl_CreateObjTrace, Tcl_DeleteTrace &mdash; arrange for command execution to be traced
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+<B>#include &lt;tcl.h&gt;</B><BR>
+Tcl_Trace<BR>
+<B>Tcl_CreateTrace</B>(<I>interp, level, proc, clientData</I>)<BR>
+Tcl_Trace<BR>
+<B>Tcl_CreateObjTrace</B>(<I>interp, level, flags, objProc, clientData, deleteProc</I>)<BR>
+<B>Tcl_DeleteTrace</B>(<I>interp, trace</I>)<BR>
+<H3><A NAME="M4">ARGUMENTS</A></H3>
+<DL class="arguments">
+<DT><A HREF="Interp.html">Tcl_Interp</A> <B>*interp</B> (in)<DD>
+Interpreter containing command to be traced or untraced.
+<P><DT>int <B>level</B> (in)<DD>
+Only commands at or below this nesting level will be traced unless
+0 is specified.  1 means
+top-level commands only, 2 means top-level commands or those that are
+invoked as immediate consequences of executing top-level commands
+(procedure bodies, bracketed commands, etc.) and so on.
+A value of 0 means that commands at any level are traced.
+<P><DT>int <B>flags</B> (in)<DD>
+Flags governing the trace execution.  See below for details.
+<P><DT>Tcl_CmdObjTraceProc <B>*objProc</B> (in)<DD>
+Procedure to call for each command that is executed.  See below for
+details of the calling sequence.
+<P><DT>Tcl_CmdTraceProc <B>*proc</B> (in)<DD>
+Procedure to call for each command that is executed.  See below for
+details on the calling sequence.
+<P><DT>ClientData <B>clientData</B> (in)<DD>
+Arbitrary one-word value to pass to <I>objProc</I> or <I>proc</I>.
+<P><DT>Tcl_CmdObjTraceDeleteProc <B>*deleteProc</B> (in)<DD>
+Procedure to call when the trace is deleted.  See below for details of
+the calling sequence.  A NULL pointer is permissible and results in no
+callback when the trace is deleted.
+<P><DT>Tcl_Trace <B><A HREF="../TclCmd/trace.html">trace</A></B> (in)<DD>
+Token for trace to be removed (return value from previous call
+to <B>Tcl_CreateTrace</B>).
+<P></DL>
+<H3><A NAME="M5">DESCRIPTION</A></H3>
+<B>Tcl_CreateObjTrace</B> arranges for command tracing.  After it is
+called, <I>objProc</I> will be invoked before the Tcl interpreter calls
+any command procedure when evaluating commands in <I>interp</I>.
+The return value from <B>Tcl_CreateObjTrace</B> is a token for the trace,
+which may be passed to <B>Tcl_DeleteTrace</B> to remove the trace.
+There may be many traces in effect simultaneously for the same
+interpreter.
+<P>
+<I>objProc</I> should have arguments and result that match the type,
+<B>Tcl_CmdObjTraceProc</B>:
+<P>
+<PRE>typedef int <B>Tcl_CmdObjTraceProc</B>(
+        <B>ClientData</B> <I>clientData</I>,
+        <B><A HREF="Interp.html">Tcl_Interp</A></B>* <I>interp</I>,
+        int <I>level</I>,
+        const char *<I>command</I>,
+        <B><A HREF="CrtObjCmd.html">Tcl_Command</A></B> <I>commandToken</I>,
+        int <I>objc</I>,
+        <B><A HREF="Object.html">Tcl_Obj</A></B> *const <I>objv</I>[]);</PRE>
+<P>
+The <I>clientData</I> and <I>interp</I> parameters are copies of the
+corresponding arguments given to <B>Tcl_CreateTrace</B>.
+<I>ClientData</I> typically points to an application-specific data
+structure that describes what to do when <I>objProc</I> is invoked.  The
+<I>level</I> parameter gives the nesting level of the command (1 for
+top-level commands passed to <B><A HREF="Eval.html">Tcl_Eval</A></B> by the application, 2 for
+the next-level commands passed to <B><A HREF="Eval.html">Tcl_Eval</A></B> as part of parsing or
+interpreting level-1 commands, and so on). The <I>command</I> parameter
+points to a string containing the text of the command, before any
+argument substitution.  The <I>commandToken</I> parameter is a Tcl
+command token that identifies the command to be invoked.  The token
+may be passed to <B><A HREF="CrtObjCmd.html">Tcl_GetCommandName</A></B>,
+<B><A HREF="CrtObjCmd.html">Tcl_GetCommandInfoFromToken</A></B>, or <B><A HREF="CrtObjCmd.html">Tcl_SetCommandInfoFromToken</A></B> to
+manipulate the definition of the command. The <I>objc</I> and <I>objv</I>
+parameters designate the final parameter count and parameter vector
+that will be passed to the command, and have had all substitutions
+performed.
+<P>
+The <I>objProc</I> callback is expected to return a standard Tcl status
+return code.  If this code is <B><A HREF="../TclCmd/catch.html">TCL_OK</A></B> (the normal case), then
+the Tcl interpreter will invoke the command.  Any other return code
+is treated as if the command returned that status, and the command is
+<I>not</I> invoked.
+<P>
+The <I>objProc</I> callback must not modify <I>objv</I> in any way.  It
+is, however, permissible to change the command by calling
+<B>Tcl_SetCommandTokenInfo</B> prior to returning.  Any such change
+takes effect immediately, and the command is invoked with the new
+information.
+<P>
+Tracing will only occur for commands at nesting level less than
+or equal to the <I>level</I> parameter (i.e. the <I>level</I>
+parameter to <I>objProc</I> will always be less than or equal to the
+<I>level</I> parameter to <B>Tcl_CreateTrace</B>).
+<P>
+Tracing has a significant effect on runtime performance because it
+causes the bytecode compiler to refrain from generating in-line code
+for Tcl commands such as <B><A HREF="../TclCmd/if.html">if</A></B> and <B><A HREF="../TclCmd/while.html">while</A></B> in order that they
+may be traced.  If traces for the built-in commands are not required,
+the <I>flags</I> parameter may be set to the constant value
+<B>TCL_ALLOW_INLINE_COMPILATION</B>.  In this case, traces on built-in
+commands may or may not result in trace callbacks, depending on the
+state of the interpreter, but run-time performance will be improved
+significantly.  (This functionality is desirable, for example, when
+using <B>Tcl_CreateObjTrace</B> to implement an execution time
+profiler.)
+<P>
+Calls to <I>objProc</I> will be made by the Tcl parser immediately before
+it calls the command procedure for the command (<I>cmdProc</I>).  This
+occurs after argument parsing and substitution, so tracing for
+substituted commands occurs before tracing of the commands
+containing the substitutions.  If there is a syntax error in a
+command, or if there is no command procedure associated with a
+command name, then no tracing will occur for that command.  If a
+string passed to <A HREF="Eval.html">Tcl_Eval</A> contains multiple commands (bracketed, or
+on different lines) then multiple calls to <I>objProc</I> will occur,
+one for each command.
+<P>
+<B>Tcl_DeleteTrace</B> removes a trace, so that no future calls will be
+made to the procedure associated with the trace.  After <B>Tcl_DeleteTrace</B>
+returns, the caller should never again use the <I>trace</I> token.
+<P>
+When <B>Tcl_DeleteTrace</B> is called, the interpreter invokes the
+<I>deleteProc</I> that was passed as a parameter to
+<B>Tcl_CreateObjTrace</B>.  The <I>deleteProc</I> must match the type,
+<B>Tcl_CmdObjTraceDeleteProc</B>:
+<P>
+<PRE>typedef void <B>Tcl_CmdObjTraceDeleteProc</B>(
+        <B>ClientData</B> <I>clientData</I>);</PRE>
+<P>
+The <I>clientData</I> parameter will be the same as the
+<I>clientData</I> parameter that was originally passed to
+<B>Tcl_CreateObjTrace</B>.
+<P>
+<B>Tcl_CreateTrace</B> is an alternative interface for command tracing,
+<I>not recommended for new applications</I>.  It is provided for backward
+compatibility with code that was developed for older versions of the
+Tcl interpreter.  It is similar to <B>Tcl_CreateObjTrace</B>, except
+that its <I>proc</I> parameter should have arguments and result that
+match the type <B>Tcl_CmdTraceProc</B>:
+<P>
+<PRE>typedef void <B>Tcl_CmdTraceProc</B>(
+        ClientData <I>clientData</I>,
+        <A HREF="Interp.html">Tcl_Interp</A> *<I>interp</I>,
+        int <I>level</I>,
+        char *<I>command</I>,
+        <A HREF="CrtObjCmd.html">Tcl_CmdProc</A> *<I>cmdProc</I>,
+        ClientData <I>cmdClientData</I>,
+        int <I>argc</I>,
+        const char *<I>argv</I>[]);</PRE>
+<P>
+The parameters to the <I>proc</I> callback are similar to those of the
+<I>objProc</I> callback above. The <I>commandToken</I> is
+replaced with <I>cmdProc</I>, a pointer to the (string-based) command
+procedure that will be invoked; and <I>cmdClientData</I>, the client
+data that will be passed to the procedure.  The <I>objc</I> parameter
+is replaced with an <I>argv</I> parameter, that gives the arguments to
+the command as character strings.
+<I>Proc</I> must not modify the <I>command</I> or <I>argv</I> strings.
+<P>
+If a trace created with <B>Tcl_CreateTrace</B> is in effect, inline
+compilation of Tcl commands such as <B><A HREF="../TclCmd/if.html">if</A></B> and <B><A HREF="../TclCmd/while.html">while</A></B> is always
+disabled.  There is no notification when a trace created with
+<B>Tcl_CreateTrace</B> is deleted.
+There is no way to be notified when the trace created by
+<B>Tcl_CreateTrace</B> is deleted.  There is no way for the <I>proc</I>
+associated with a call to <B>Tcl_CreateTrace</B> to abort execution of
+<I>command</I>.
+<H3><A NAME="M6">KEYWORDS</A></H3>
+<A href="../Keywords/C.html#command">command</A>, <A href="../Keywords/C.html#create">create</A>, <A href="../Keywords/D.html#delete">delete</A>, <A href="../Keywords/I.html#interpreter">interpreter</A>, <A href="../Keywords/T.html#trace">trace</A>
+<div class="copy">Copyright &copy; 1989-1993 The Regents of the University of California.
+<BR>Copyright &copy; 1994-1996 Sun Microsystems, Inc.
+<BR>Copyright &copy; 2002 by Kevin B. Kenny &lt;kennykb(at)acm.org&gt;. All rights reserved.
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

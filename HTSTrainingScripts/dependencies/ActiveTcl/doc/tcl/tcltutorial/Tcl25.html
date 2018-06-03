@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="Tcl25.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org">
+<meta name='Author' content='ActiveState'>
+
+<title>Information about Files - file, glob</title>
+<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 class="title">Information about Files - file, glob</h1>
+
+<div class="nav"><a href="Tcl24.html">Previous lesson</a> | <a
+href="tcltutorial.html">Index</a> | <a href="Tcl26.html">Next
+lesson</a></div>
+
+There are two commands that provide information about the file
+system, <code class="keyword">glob</code> and <code class=
+"keyword">file</code>. <br>
+<br>
+<p><code class="keyword">glob</code> provides the access to the
+names of files in a directory. It uses a name matching mechanism
+similar to the UNIX <b>ls</b> command or the Windows (DOS)
+<b>dir</b> command, to return a list of names that match a
+pattern.</p>
+
+<p><code class="keyword">file</code> provides three sets of
+functionality:</p>
+
+<ul compact>
+<li>String manipulation appropriate to parsing file names 
+
+<ul compact>
+<li><code class="arg">dirname</code> ........ Returns directory
+portion of path</li>
+
+<li><code class="arg">extension</code> ........ Returns file name
+extension</li>
+
+<li><code class="arg">join</code> ........ Join directories and the
+file name to one string</li>
+
+<li><code class="arg">nativename</code> ....... Returns the
+<i>native</i> name of the file/directory</li>
+
+<li><code class="arg">rootname</code> ....... Returns file name
+without extension</li>
+
+<li><code class="arg">split</code> ........ Split the string into
+directory and file names</li>
+
+<li><code class="arg">tail</code> .................... Returns
+filename without directory</li>
+</ul>
+</li>
+
+<li>Information about an entry in a directory: 
+
+<ul compact>
+<li><code class="arg">atime</code> ................ Returns time of
+last access</li>
+
+<li><code class="arg">executable</code> ..... Returns 1 if file is
+executable by user</li>
+
+<li><code class="arg">exists</code> ................ Returns 1 if
+file exists</li>
+
+<li><code class="arg">isdirectory</code> ...... Returns 1 if entry
+is a directory</li>
+
+<li><code class="arg">isfile</code> .................. Returns 1 if
+entry is a regular file</li>
+
+<li><code class="arg">lstat</code> ................... Returns
+array of file status information</li>
+
+<li><code class="arg">mtime</code> ............... Returns time of
+last data modification</li>
+
+<li><code class="arg">owned</code> ................ Returns 1 if
+file is owned by user</li>
+
+<li><code class="arg">readable</code> ............ Returns 1 if
+file is readable by user</li>
+
+<li><code class="arg">readlink</code> ............. Returns name of
+file pointed to by a symbolic link</li>
+
+<li><code class="arg">size</code> ..................... Returns
+file size in bytes</li>
+
+<li><code class="arg">stat</code> ..................... Returns
+array of file status information</li>
+
+<li><code class="arg">type</code> .................... Returns type
+of file</li>
+
+<li><code class="arg">writable</code> ............ Returns 1 if
+file is writeable by user</li>
+</ul>
+</li>
+
+<li>Manipulating the files and directories themselves: 
+
+<ul compact>
+<li><code class="arg">copy</code> ................ Copy a file or a
+directory</li>
+
+<li><code class="arg">delete</code> ................ Delete a file
+or a directory</li>
+
+<li><code class="arg">mkdir</code> ................ Create a new
+directory</li>
+
+<li><code class="arg">rename</code> ................ Rename or move
+a file or directory</li>
+</ul>
+</li>
+</ul>
+
+<p>Between these two commands, a program can obtain most of the
+information that it may need and manipulate the files and
+directories.</p>
+
+<p>While retrieving information about what files are present and
+what properties they have is usually a highly platform-dependent
+matter, Tcl provides an interface that hides almost all details
+that are specific to the platform (but are irrelevant to the
+programmer).</p>
+
+<p>To take advantage of this feature, always manipulate file names
+via the <code class="keyword">file</code> <code class=
+"arg">join</code>, <code class="keyword">file</code> <code class=
+"arg">split</code> commands and the others in the first
+category.</p>
+
+<p>For instance to refer to a file in a directory upwards of the
+current one:</p>
+
+<pre class="example">
+set upfile [file join ".." "myfile.out"]
+# upfile will have the value "../myfile.out"
+</pre>
+
+<p>(The ".." indicates the "parent directory")</p>
+
+Because external commands may not always deal gracefully with the
+uniform representation that Tcl employs (with forward slashes as
+directory separators), Tcl also provides a command to turn the
+string into one that is native to the platform: <br>
+<br>
+ 
+
+<pre class="example">
+#
+# On Windows the name becomes "..\myfile.out"
+#
+set newname [file nativename [file join ".." "myfile.out"]]
+</pre>
+
+<p>Retrieving all the files with extension ".tcl" in the current
+directory:</p>
+
+<pre class="example">
+set tclfiles [glob *.tcl]
+puts "Name - date of last modification"
+foreach f $tclfiles {
+    puts "$f - [clock format [file mtime $f] -format %x]"
+}
+</pre>
+
+(The clock command turns the number of seconds returned by the
+<code class="keyword">file</code> <code class="arg">mtime</code>
+command into a simple date string, like "12/22/04") 
+
+<dl>
+<dt><code class="keyword">glob</code> <code class=
+"arg">?switches?</code> <code class="arg">pattern</code> <code
+class="arg">?patternN?</code></dt>
+
+<dd>returns a list of file names that match <code class=
+"arg">pattern</code> or <code class="arg">patternN</code><br>
+<br>
+<p><code class="arg">switches</code> may be one of the following
+(there are more switches available):</p>
+
+<dl>
+<dt><code class="arg">-nocomplain</code></dt>
+
+<dd>Allows <code class="keyword">glob</code> to return an empty
+list without causing an error. Without this flag, an error would be
+generated when the empty list was returned.</dd>
+
+<dt><code class="arg">-types</code> <code class=
+"arg">typeList</code></dt>
+
+<dd>Selects which type of files/directory the command should
+return. The <code class="arg">typeList</code> may consist of type
+letters, like a "d" for directories and "f" for ordinary files as
+well as letters and keywords indicating the user's permissions ("r"
+for files/directories that can be read for instance).</dd>
+
+<dt><code class="arg">--</code></dt>
+
+<dd>Marks the end of switches. This allows the use of "-" in a
+pattern without confusing the glob parser.</dd>
+</dl>
+
+<br>
+<br>
+<p><code class="arg">pattern</code> follows the same matching rules
+as the string match globbing rules with these exceptions:</p>
+
+<ul>
+<li><b>{a,b,...}</b> Matches any of the strings a,b, etc.</li>
+
+<li>A "." at the beginning of a filename must match a "." in the
+filename. The "." is only a wildcard if it is not the first
+character in a name.</li>
+
+<li>All "/" must match exactly.</li>
+
+<li>If the first two characters in <code class="arg">pattern</code>
+are <b>~/</b>, then the <b>~</b> is replaced by the value of the
+<b>HOME</b> environment variable.</li>
+
+<li>If the first character in <code class="arg">pattern</code> is a
+<b>~</b>, followed by a login id, then the <b>~loginid</b> is
+replaced by the path of loginid's home directory.</li>
+</ul>
+
+<br>
+<br>
+<p>Note that the filenames that match <code class=
+"arg">pattern</code> are returned in an arbitrary order (that is,
+do not expect them to be sorted in alphabetical order, for
+instance).</p>
+</dd>
+
+<dt><code class="keyword">file</code> <code class=
+"arg">atime</code> <code class="arg">name</code></dt>
+
+<dd>Returns the number of seconds since some system-dependent start
+date, also known as the "epoch" (frequently 1/1/1970) when the file
+<code class="arg">name</code> was last accessed. Generates an error
+if the file doesn't exist, or the access time cannot be
+queried.</dd>
+
+<dt><code class="keyword">file</code> <code class="arg">copy</code>
+<code class="arg">?-force?</code> <code class="arg">name</code>
+<code class="arg">target</code></dt>
+
+<dd>Copy the file/directory <code class="arg">name</code> to a new
+file <code class="arg">target</code> (or to an existing directory
+with that name)<br>
+The switch <code class="arg">-force</code> allows you to overwrite
+existing files.</dd>
+
+<dt><code class="keyword">file</code> <code class=
+"arg">delete</code> <code class="arg">?-force?</code> <code class=
+"arg">name</code></dt>
+
+<dd>Delete the file/directory <code class="arg">name</code>.<br>
+The switch <code class="arg">-force</code> allows you to delete
+non-empty directories.</dd>
+
+<dt><code class="keyword">file</code> <code class=
+"arg">dirname</code> <code class="arg">name</code></dt>
+
+<dd>Returns the directory portion of a path/filename string. If
+<code class="arg">name</code> contains no slashes, <code class=
+"keyword">file</code> <code class="arg">dirname</code> returns a
+".". If the last "/" in <code class="arg">name</code> is also the
+first character, it returns a "/".</dd>
+
+<dt><code class="keyword">file</code> <code class=
+"arg">executable</code> <code class="arg">name</code></dt>
+
+<dd>Returns 1 if file <code class="arg">name</code> is executable
+by the current user, otherwise returns 0.</dd>
+
+<dt><code class="keyword">file</code> <code class=
+"arg">exists</code> <code class="arg">name</code></dt>
+
+<dd>Returns 1 if the file <code class="arg">name</code> exists, and
+the user has search access in all the directories leading to the
+file. Otherwise, 0 is returned.</dd>
+
+<dt><code class="keyword">file</code> <code class=
+"arg">extension</code> <code class="arg">name</code></dt>
+
+<dd>Returns the file extension.</dd>
+
+<dt><code class="keyword">file</code> <code class=
+"arg">isdirectory</code> <code class="arg">name</code></dt>
+
+<dd>Returns 1 if file name is a directory, otherwise returns
+0.</dd>
+
+<dt><code class="keyword">file</code> <code class=
+"arg">isfile</code> <code class="arg">name</code></dt>
+
+<dd>Returns 1 if file name is a regular file, otherwise returns
+0.</dd>
+
+<dt><code class="keyword">file</code> <code class=
+"arg">lstat</code> <code class="arg">name</code> <code class=
+"arg">varName</code></dt>
+
+<dd>This returns the same information returned by the system call
+<b>lstat</b>. The results are placed in the associative array <code
+class="arg">varName</code>. The indexes in <code class=
+"arg">varName</code> are: 
+
+<ul compact>
+<li><code class="arg">atime</code>.......time of last access</li>
+
+<li><code class="arg">ctime</code>.......time of last file status
+change</li>
+
+<li><code class="arg">dev</code>...........inode's device</li>
+
+<li><code class="arg">gid</code>............group ID of the file's
+group</li>
+
+<li><code class="arg">ino</code>............inode's number</li>
+
+<li><code class="arg">mode</code>.......inode protection mode</li>
+
+<li><code class="arg">mtime</code>.....time of last data
+modification</li>
+
+<li><code class="arg">nlink</code>........number of hard links</li>
+
+<li><code class="arg">size</code>...........file size, in
+bytes</li>
+
+<li><code class="arg">type</code>..........Type of File</li>
+
+<li><code class="arg">uid</code>.............user ID of the file's
+owner</li>
+</ul>
+
+Because this calls <b>lstat</b>, if <code class="arg">name</code>
+is a symbolic link, the values in <code class="arg">varName</code>
+will refer to the link, not the file that is linked to. (See also
+the <code class="arg">stat</code> subcommand)</dd>
+
+<dt><code class="keyword">file</code> <code class=
+"arg">mkdir</code> <code class="arg">name</code></dt>
+
+<dd>Create a new directory <code class="arg">name</code>.</dd>
+
+<dt><code class="keyword">file</code> <code class=
+"arg">mtime</code> <code class="arg">name</code></dt>
+
+<dd>Returns the time of the last modification in seconds since Jan
+1, 1970 or whatever start date the system uses.</dd>
+
+<dt><code class="keyword">file</code> <code class=
+"arg">owned</code> <code class="arg">name</code></dt>
+
+<dd>Returns 1 if the file is owned by the current user, otherwise
+returns 0.</dd>
+
+<dt><code class="keyword">file</code> <code class=
+"arg">readable</code> <code class="arg">name</code></dt>
+
+<dd>Returns 1 if the file is readable by the current user,
+otherwise returns 0.</dd>
+
+<dt><code class="keyword">file</code> <code class=
+"arg">readlink</code> <code class="arg">name</code></dt>
+
+<dd>Returns the name of the file a symlink is pointing to. If <code
+class="arg">name</code> isn't a symlink, or can't be read, an error
+is generated.</dd>
+
+<dt><code class="keyword">file</code> <code class=
+"arg">rename</code> <code class="arg">?-force?</code> <code class=
+"arg">name</code> <code class="arg">target</code></dt>
+
+<dd>Rename file/directory <code class="arg">name</code> to the new
+name <code class="arg">target</code> (or to an existing directory
+with that name)<br>
+The switch <code class="arg">-force</code> allows you to overwrite
+existing files.</dd>
+
+<dt><code class="keyword">file</code> <code class=
+"arg">rootname</code> <code class="arg">name</code></dt>
+
+<dd>Returns all the characters in <code class="arg">name</code> up
+to but not including the last ".". Returns <code class=
+"arg">$name</code> if <code class="arg">name</code> doesn't include
+a ".".</dd>
+
+<dt><code class="keyword">file</code> <code class="arg">size</code>
+<code class="arg">name</code></dt>
+
+<dd>Returns the size of <code class="arg">name</code> in
+bytes.</dd>
+
+<dt><code class="keyword">file</code> <code class="arg">stat</code>
+<code class="arg">name</code> <code class="arg">varName</code></dt>
+
+<dd>This returns the same information returned by the system call
+<b>stat</b>. The results are placed in the associative array <code
+class="arg">varName</code>. The indexes in <code class=
+"arg">varName</code> are: 
+
+<ul compact>
+<li><code class="arg">atime</code>.......time of last access</li>
+
+<li><code class="arg">ctime</code>.......time of last file status
+change</li>
+
+<li><code class="arg">dev</code>...........inode's device</li>
+
+<li><code class="arg">gid</code>............group ID of the file's
+group</li>
+
+<li><code class="arg">ino</code>............inode's number</li>
+
+<li><code class="arg">mode</code>.......inode protection mode</li>
+
+<li><code class="arg">mtime</code>.....time of last data
+modification</li>
+
+<li><code class="arg">nlink</code>........number of hard links</li>
+
+<li><code class="arg">size</code>...........file size in bytes</li>
+
+<li><code class="arg">type</code>..........Type of file</li>
+
+<li><code class="arg">uid</code>.............user ID of the file's
+owner</li>
+</ul>
+</dd>
+
+<dt><code class="keyword">file</code> <code class="arg">tail</code>
+<code class="arg">name</code></dt>
+
+<dd>Returns all of the characters in <code class="arg">name</code>
+after the last slash. Returns the name if <code class=
+"arg">name</code> contains no slashes.</dd>
+
+<dt><code class="keyword">file</code> <code class="arg">type</code>
+<code class="arg">name</code></dt>
+
+<dd>Returns a string giving the type of file name, which will be
+one of: 
+
+<ul compact>
+<li><code class=
+"arg">file</code>...................................Normal
+file</li>
+
+<li><code class=
+"arg">directory</code>........................Directory</li>
+
+<li><code class="arg">characterSpecial</code>.......Character
+oriented device</li>
+
+<li><code class="arg">blockSpecial</code>.............. Block
+oriented device</li>
+
+<li><code class=
+"arg">fifo</code>...................................Named pipe</li>
+
+<li><code class=
+"arg">link</code>..................................Symbolic
+link</li>
+
+<li><code class="arg">socket</code>...........................Named
+socket</li>
+</ul>
+</dd>
+
+<dt><code class="keyword">file</code> <code class=
+"arg">writable</code> <code class="arg">name</code></dt>
+
+<dd>Returns 1 if file name is writable by the current user,
+otherwise returns 0.</dd>
+</dl>
+
+<p><i>Note:</i> The overview given above does not cover all the
+details of the various subcommands, nor does it list all
+subcommands. Please check the man pages for these.</p>
+
+<hr>
+<h2>Example</h2>
+
+<pre class="example">
+#
+# Report all the files and subdirectories in the current directory
+# For files: show the size
+# For directories: show that they _are_ directories
+#
+
+set dirs [glob -nocomplain -type d *]
+if { $dirs != {} } {
+    puts "Directories:"
+    foreach d [lsort $dirs] {
+        puts "    $d"
+    }
+} else {
+    puts "(no subdirectories)"
+}
+
+set files [glob -nocomplain -type f *]
+if { $files != {} } {
+    puts "Files:"
+    foreach f [lsort $files] {
+        puts "    [file size $f] - $f"
+    }
+} else {
+    puts "(no files)"
+}
+</pre>
+
+<div class="nav"><a href="Tcl24.html">Previous lesson</a> | <a
+href="tcltutorial.html">Index</a> | <a href="Tcl26.html">Next
+lesson</a></div>
+</body>
+</html>
+
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

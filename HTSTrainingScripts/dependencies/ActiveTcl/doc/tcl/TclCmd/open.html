@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="open.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>open manual page - Tcl Built-In Commands</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tcl Commands, version 8.6.7</a> <small>&gt;</small> open</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="contents.html">Tcl Commands</A> | <A HREF="../TkCmd/contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="open.html#M2" NAME="L1288">NAME</A>
+<DL><DD>open &mdash; Open a file-based or command pipeline channel</DD></DL>
+<DD><A HREF="open.html#M3" NAME="L1289">SYNOPSIS</A>
+<DL>
+</DL>
+<DD><A HREF="open.html#M4" NAME="L1290">DESCRIPTION</A>
+<DL class="description">
+<DD><A HREF="open.html#M5" NAME="L1291"><B>r</B></A>
+<DD><A HREF="open.html#M6" NAME="L1292"><B>r+</B></A>
+<DD><A HREF="open.html#M7" NAME="L1293"><B>w</B></A>
+<DD><A HREF="open.html#M8" NAME="L1294"><B>w+</B></A>
+<DD><A HREF="open.html#M9" NAME="L1295"><B>a</B></A>
+<DD><A HREF="open.html#M10" NAME="L1296"><B>a+</B></A>
+</DL>
+<DL class="description">
+<DD><A HREF="open.html#M11" NAME="L1297"><B>RDONLY</B></A>
+<DD><A HREF="open.html#M12" NAME="L1298"><B>WRONLY</B></A>
+<DD><A HREF="open.html#M13" NAME="L1299"><B>RDWR</B></A>
+<DD><A HREF="open.html#M14" NAME="L1300"><B>APPEND</B></A>
+<DD><A HREF="open.html#M15" NAME="L1301"><B>BINARY</B></A>
+<DD><A HREF="open.html#M16" NAME="L1302"><B>CREAT</B></A>
+<DD><A HREF="open.html#M17" NAME="L1303"><B>EXCL</B></A>
+<DD><A HREF="open.html#M18" NAME="L1304"><B>NOCTTY</B></A>
+<DD><A HREF="open.html#M19" NAME="L1305"><B>NONBLOCK</B></A>
+<DD><A HREF="open.html#M20" NAME="L1306"><B>TRUNC</B></A>
+</DL>
+<DD><A HREF="open.html#M21" NAME="L1307">COMMAND PIPELINES</A>
+<DD><A HREF="open.html#M22" NAME="L1308">SERIAL COMMUNICATIONS</A>
+<DL class="serial communications">
+<DD><A HREF="open.html#M23" NAME="L1309"><B>-mode</B> <I>baud</I><B>,</B><I>parity</I><B>,</B><I>data</I><B>,</B><I>stop</I></A>
+<DD><A HREF="open.html#M24" NAME="L1310"><B>-handshake</B> <I>type</I></A>
+<DD><A HREF="open.html#M25" NAME="L1311"><B>-queue</B></A>
+<DD><A HREF="open.html#M26" NAME="L1312"><B>-timeout</B> <I>msec</I></A>
+<DD><A HREF="open.html#M27" NAME="L1313"><B>-ttycontrol</B> <I>{signal boolean signal boolean ...}</I></A>
+<DD><A HREF="open.html#M28" NAME="L1314"><B>-ttystatus</B></A>
+<DD><A HREF="open.html#M29" NAME="L1315"><B>-xchar</B> <I>{xonChar xoffChar}</I></A>
+<DD><A HREF="open.html#M30" NAME="L1316"><B>-pollinterval</B> <I>msec</I></A>
+<DD><A HREF="open.html#M31" NAME="L1317"><B>-sysbuffer</B> <I>inSize</I></A>
+<DD><A HREF="open.html#M32" NAME="L1318"><B>-sysbuffer</B> <I>{inSize outSize}</I></A>
+<DD><A HREF="open.html#M33" NAME="L1319"><B>-lasterror</B></A>
+</DL>
+<DD><A HREF="open.html#M34" NAME="L1320">SERIAL PORT SIGNALS</A>
+<DL class="serial port signals">
+<DD><A HREF="open.html#M35" NAME="L1321"><B>TXD</B>(output)</A>
+<DD><A HREF="open.html#M36" NAME="L1322"><B>RXD</B>(input)</A>
+<DD><A HREF="open.html#M37" NAME="L1323"><B>RTS</B>(output)</A>
+<DD><A HREF="open.html#M38" NAME="L1324"><B>CTS</B>(input)</A>
+<DD><A HREF="open.html#M39" NAME="L1325"><B>DTR</B>(output)</A>
+<DD><A HREF="open.html#M40" NAME="L1326"><B>DSR</B>(input)</A>
+<DD><A HREF="open.html#M41" NAME="L1327"><B>DCD</B>(input)</A>
+<DD><A HREF="open.html#M42" NAME="L1328"><B>RI</B>(input)</A>
+<DD><A HREF="open.html#M43" NAME="L1329"><B>BREAK</B></A>
+</DL>
+<DD><A HREF="open.html#M44" NAME="L1330">ERROR CODES (Windows only)</A>
+<DL class="error codes (windows only)">
+<DD><A HREF="open.html#M45" NAME="L1331"><B>RXOVER</B></A>
+<DD><A HREF="open.html#M46" NAME="L1332"><B>TXFULL</B></A>
+<DD><A HREF="open.html#M47" NAME="L1333"><B>OVERRUN</B></A>
+<DD><A HREF="open.html#M48" NAME="L1334"><B>RXPARITY</B></A>
+<DD><A HREF="open.html#M49" NAME="L1335"><B>FRAME</B></A>
+<DD><A HREF="open.html#M50" NAME="L1336"><B>BREAK</B></A>
+</DL>
+<DD><A HREF="open.html#M51" NAME="L1337">PORTABILITY ISSUES</A>
+<DL class="portability issues">
+<DD><A HREF="open.html#M52" NAME="L1338"><B>Windows </B></A>
+</DL>
+<DL class="portability issues">
+<DD><A HREF="open.html#M53" NAME="L1339"><B>Unix</B></A>
+</DL>
+<DD><A HREF="open.html#M54" NAME="L1340">EXAMPLE</A>
+<DD><A HREF="open.html#M55" NAME="L1341">SEE ALSO</A>
+<DD><A HREF="open.html#M56" NAME="L1342">KEYWORDS</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+open &mdash; Open a file-based or command pipeline channel
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+<B>open </B><I>fileName</I><BR>
+<B>open </B><I>fileName access</I><BR>
+<B>open </B><I>fileName access permissions</I><BR>
+<H3><A NAME="M4">DESCRIPTION</A></H3>
+This command opens a file, serial port, or command pipeline and returns a
+channel identifier that may be used in future invocations of commands like
+<B><A HREF="read.html">read</A></B>, <B><A HREF="puts.html">puts</A></B>, and <B><A HREF="close.html">close</A></B>.
+If the first character of <I>fileName</I> is not <B>|</B> then
+the command opens a file:
+<I>fileName</I> gives the name of the file to open, and it must conform to the
+conventions described in the <B><A HREF="filename.html">filename</A></B> manual entry.
+<P>
+The <I>access</I> argument, if present, indicates the way in which the file
+(or command pipeline) is to be accessed.
+In the first form <I>access</I> may have any of the following values:
+<P>
+<DL class="description">
+<DT><A NAME="M5"><B>r</B></A><DD>
+Open the file for reading only; the file must already exist. This is the
+default value if <I>access</I> is not specified.
+<P><DT><A NAME="M6"><B>r+</B></A><DD>
+Open the file for both reading and writing; the file must
+already exist.
+<P><DT><A NAME="M7"><B>w</B></A><DD>
+Open the file for writing only.  Truncate it if it exists.  If it does not
+exist, create a new file.
+<P><DT><A NAME="M8"><B>w+</B></A><DD>
+Open the file for reading and writing.  Truncate it if it exists.
+If it does not exist, create a new file.
+<P><DT><A NAME="M9"><B>a</B></A><DD>
+Open the file for writing only.  If the file does not exist,
+create a new empty file.
+Set the file pointer to the end of the file prior to each write.
+<P><DT><A NAME="M10"><B>a+</B></A><DD>
+Open the file for reading and writing.  If the file does not exist,
+create a new empty file.
+Set the initial access position  to the end of the file.
+<P></DL>
+<P>
+All of the legal <I>access</I> values above may have the character
+<B>b</B> added as the second or third character in the value to
+indicate that the opened channel should be configured as if with the
+<B><A HREF="fconfigure.html">fconfigure</A></B> <B>-translation binary</B> option, making the channel suitable for
+reading or writing of binary data.
+<P>
+In the second form, <I>access</I> consists of a list of any of the
+following flags, all of which have the standard POSIX meanings.
+One of the flags must be either <B>RDONLY</B>, <B>WRONLY</B> or <B>RDWR</B>.
+<P>
+<DL class="description">
+<DT><A NAME="M11"><B>RDONLY</B></A><DD>
+Open the file for reading only.
+<P><DT><A NAME="M12"><B>WRONLY</B></A><DD>
+Open the file for writing only.
+<P><DT><A NAME="M13"><B>RDWR</B></A><DD>
+Open the file for both reading and writing.
+<P><DT><A NAME="M14"><B>APPEND</B></A><DD>
+Set the file pointer to the end of the file prior to each write.
+<P><DT><A NAME="M15"><B>BINARY</B></A><DD>
+Configure the opened channel with the <B>-translation binary</B> option.
+<P><DT><A NAME="M16"><B>CREAT</B></A><DD>
+Create the file if it does not already exist (without this flag it
+is an error for the file not to exist).
+<P><DT><A NAME="M17"><B>EXCL</B></A><DD>
+If <B>CREAT</B> is also specified, an error is returned if the
+file already exists.
+<P><DT><A NAME="M18"><B>NOCTTY</B></A><DD>
+If the file is a terminal device, this flag prevents the file from
+becoming the controlling terminal of the process.
+<P><DT><A NAME="M19"><B>NONBLOCK</B></A><DD>
+Prevents the process from blocking while opening the file, and
+possibly in subsequent I/O operations.  The exact behavior of
+this flag is system- and device-dependent;  its use is discouraged
+(it is better to use the <B><A HREF="fconfigure.html">fconfigure</A></B> command to put a file
+in nonblocking mode).
+For details refer to your system documentation on the <B>open</B> system
+call's <B>O_NONBLOCK</B> flag.
+<P><DT><A NAME="M20"><B>TRUNC</B></A><DD>
+If the file exists it is truncated to zero length.
+<P></DL>
+<P>
+If a new file is created as part of opening it, <I>permissions</I>
+(an integer) is used to set the permissions for the new file in
+conjunction with the process's file mode creation mask.
+<I>Permissions</I> defaults to 0666.
+<H3><A NAME="M21">COMMAND PIPELINES</A></H3>
+If the first character of <I>fileName</I> is
+&#8220;<B>|</B>&#8221;
+then the
+remaining characters of <I>fileName</I> are treated as a list of arguments
+that describe a command pipeline to invoke, in the same style as the
+arguments for <B><A HREF="exec.html">exec</A></B>.
+In this case, the channel identifier returned by <B>open</B> may be used
+to write to the command's input pipe or read from its output pipe,
+depending on the value of <I>access</I>.
+If write-only access is used (e.g. <I>access</I> is
+&#8220;<B>w</B>&#8221;),
+then standard output for the pipeline is directed to the current standard
+output unless overridden by the command.
+If read-only access is used (e.g. <I>access</I> is
+&#8220;<B>r</B>&#8221;),
+standard input for the pipeline is taken from the current standard
+input unless overridden by the command.
+The id of the spawned process is accessible through the <B><A HREF="pid.html">pid</A></B>
+command, using the channel id returned by <B>open</B> as argument.
+<P>
+If the command (or one of the commands) executed in the command
+pipeline returns an error (according to the definition in <B><A HREF="exec.html">exec</A></B>),
+a Tcl error is generated when <B><A HREF="close.html">close</A></B> is called on the channel
+unless the pipeline is in non-blocking mode then no exit status is
+returned (a silent <B><A HREF="close.html">close</A></B> with -blocking 0).
+<P>
+It is often useful to use the <B><A HREF="fileevent.html">fileevent</A></B> command with pipelines
+so other processing may happen at the same time as running the command
+in the background.
+<H3><A NAME="M22">SERIAL COMMUNICATIONS</A></H3>
+If <I>fileName</I> refers to a serial port, then the specified serial port
+is opened and initialized in a platform-dependent manner.  Acceptable
+values for the <I>fileName</I> to use to open a serial port are described in
+the PORTABILITY ISSUES section.
+<P>
+The <B><A HREF="fconfigure.html">fconfigure</A></B> command can be used to query and set additional
+configuration options specific to serial ports (where supported):
+<P>
+<DL class="serial communications">
+<DT><A NAME="M23"><B>-mode</B> <I>baud</I><B>,</B><I>parity</I><B>,</B><I>data</I><B>,</B><I>stop</I></A><DD>
+This option is a set of 4 comma-separated values: the baud rate, parity,
+number of data bits, and number of stop bits for this serial port.  The
+<I>baud</I> rate is a simple integer that specifies the connection speed.
+<I>Parity</I> is one of the following letters: <B>n</B>, <B>o</B>, <B>e</B>,
+<B>m</B>, <B>s</B>; respectively signifying the parity options of
+&#8220;none&#8221;,
+&#8220;odd&#8221;,
+&#8220;even&#8221;,
+&#8220;mark&#8221;,
+or
+&#8220;space&#8221;.
+<I>Data</I> is the number of
+data bits and should be an integer from 5 to 8, while <I>stop</I> is the
+number of stop bits and should be the integer 1 or 2.
+<P><DT><A NAME="M24"><B>-handshake</B> <I>type</I></A><DD>
+(Windows and Unix). This option is used to setup automatic handshake
+control. Note that not all handshake types maybe supported by your operating
+system. The <I>type</I> parameter is case-independent.
+<P>
+If <I>type</I> is <B>none</B> then any handshake is switched off.
+<B>rtscts</B> activates hardware handshake. Hardware handshake signals
+are described below.
+For software handshake <B>xonxoff</B> the handshake characters can be redefined
+with <B>-xchar</B>.
+An additional hardware handshake <B>dtrdsr</B> is available only under Windows.
+There is no default handshake configuration, the initial value depends
+on your operating system settings.
+The <B>-handshake</B> option cannot be queried.
+<P><DT><A NAME="M25"><B>-queue</B></A><DD>
+(Windows and Unix). The <B>-queue</B> option can only be queried.
+It returns a list of two integers representing the current number
+of bytes in the input and output queue respectively.
+<P><DT><A NAME="M26"><B>-timeout</B> <I>msec</I></A><DD>
+(Windows and Unix). This option is used to set the timeout for blocking
+read operations. It specifies the maximum interval between the
+reception of two bytes in milliseconds.
+For Unix systems the granularity is 100 milliseconds.
+The <B>-timeout</B> option does not affect write operations or
+nonblocking reads.
+This option cannot be queried.
+<P><DT><A NAME="M27"><B>-ttycontrol</B> <I>{signal boolean signal boolean ...}</I></A><DD>
+(Windows and Unix). This option is used to setup the handshake
+output lines (see below) permanently or to send a BREAK over the serial line.
+The <I>signal</I> names are case-independent.
+<B>{RTS 1 DTR 0}</B> sets the RTS output to high and the DTR output to low.
+The BREAK condition (see below) is enabled and disabled with <B>{BREAK 1}</B> and
+<B>{BREAK 0}</B> respectively.
+It is not a good idea to change the <B>RTS</B> (or <B>DTR</B>) signal
+with active hardware handshake <B>rtscts</B> (or <B>dtrdsr</B>).
+The result is unpredictable.
+The <B>-ttycontrol</B> option cannot be queried.
+<P><DT><A NAME="M28"><B>-ttystatus</B></A><DD>
+(Windows and Unix). The <B>-ttystatus</B> option can only be
+queried.  It returns the current modem status and handshake input signals
+(see below).
+The result is a list of signal,value pairs with a fixed order,
+e.g. <B>{CTS 1 DSR 0 RING 1 DCD 0}</B>.
+The <I>signal</I> names are returned upper case.
+<P><DT><A NAME="M29"><B>-xchar</B> <I>{xonChar xoffChar}</I></A><DD>
+(Windows and Unix). This option is used to query or change the software
+handshake characters. Normally the operating system default should be
+DC1 (0x11) and DC3 (0x13) representing the ASCII standard
+XON and XOFF characters.
+<P><DT><A NAME="M30"><B>-pollinterval</B> <I>msec</I></A><DD>
+(Windows only). This option is used to set the maximum time between
+polling for fileevents.
+This affects the time interval between checking for events throughout the Tcl
+interpreter (the smallest value always wins).  Use this option only if
+you want to poll the serial port more or less often than 10 msec
+(the default).
+<P><DT><A NAME="M31"><B>-sysbuffer</B> <I>inSize</I></A><DD>
+<P><DT><A NAME="M32"><B>-sysbuffer</B> <I>{inSize outSize}</I></A><DD>
+(Windows only). This option is used to change the size of Windows
+system buffers for a serial channel. Especially at higher communication
+rates the default input buffer size of 4096 bytes can overrun
+for latent systems. The first form specifies the input buffer size,
+in the second form both input and output buffers are defined.
+<P><DT><A NAME="M33"><B>-lasterror</B></A><DD>
+(Windows only). This option is query only.
+In case of a serial communication error, <B><A HREF="read.html">read</A></B> or <B><A HREF="puts.html">puts</A></B>
+returns a general Tcl file I/O error.
+<B><A HREF="fconfigure.html">fconfigure</A></B> <B>-lasterror</B> can be called to get a list of error details.
+See below for an explanation of the various error codes.
+<P></DL>
+<H3><A NAME="M34">SERIAL PORT SIGNALS</A></H3>
+RS-232 is the most commonly used standard electrical interface for serial
+communications. A negative voltage (-3V..-12V) define a mark (on=1) bit and
+a positive voltage (+3..+12V) define a space (off=0) bit (RS-232C).  The
+following signals are specified for incoming and outgoing data, status
+lines and handshaking. Here we are using the terms <I>workstation</I> for
+your computer and <I>modem</I> for the external device, because some signal
+names (DCD, RI) come from modems. Of course your external device may use
+these signal lines for other purposes.
+<P>
+<DL class="serial port signals">
+<DT><A NAME="M35"><B>TXD</B>(output)</A><DD>
+<B>Transmitted Data:</B> Outgoing serial data.
+<P><DT><A NAME="M36"><B>RXD</B>(input)</A><DD>
+<B>Received Data:</B>Incoming serial data.
+<P><DT><A NAME="M37"><B>RTS</B>(output)</A><DD>
+<B>Request To Send:</B> This hardware handshake line informs the modem that
+your workstation is ready to receive data. Your workstation may
+automatically reset this signal to indicate that the input buffer is full.
+<P><DT><A NAME="M38"><B>CTS</B>(input)</A><DD>
+<B>Clear To Send:</B> The complement to RTS. Indicates that the modem is
+ready to receive data.
+<P><DT><A NAME="M39"><B>DTR</B>(output)</A><DD>
+<B>Data Terminal Ready:</B> This signal tells the modem that the workstation
+is ready to establish a link. DTR is often enabled automatically whenever a
+serial port is opened.
+<P><DT><A NAME="M40"><B>DSR</B>(input)</A><DD>
+<B>Data Set Ready:</B> The complement to DTR. Tells the workstation that the
+modem is ready to establish a link.
+<P><DT><A NAME="M41"><B>DCD</B>(input)</A><DD>
+<B>Data Carrier Detect:</B> This line becomes active when a modem detects a
+&#8220;Carrier&#8221;
+signal.
+<P><DT><A NAME="M42"><B>RI</B>(input)</A><DD>
+<B>Ring Indicator:</B> Goes active when the modem detects an incoming call.
+<P><DT><A NAME="M43"><B>BREAK</B></A><DD>
+A BREAK condition is not a hardware signal line, but a logical zero on the
+TXD or RXD lines for a long period of time, usually 250 to 500
+milliseconds.  Normally a receive or transmit data signal stays at the mark
+(on=1) voltage until the next character is transferred. A BREAK is sometimes
+used to reset the communications line or change the operating mode of
+communications hardware.
+<P></DL>
+<H3><A NAME="M44">ERROR CODES (Windows only)</A></H3>
+A lot of different errors may occur during serial read operations or during
+event polling in background. The external device may have been switched
+off, the data lines may be noisy, system buffers may overrun or your mode
+settings may be wrong.  That is why a reliable software should always
+<B><A HREF="catch.html">catch</A></B> serial read operations.  In cases of an error Tcl returns a
+general file I/O error.  Then <B><A HREF="fconfigure.html">fconfigure</A></B> <B>-lasterror</B> may help to
+locate the problem.  The following error codes may be returned.
+<P>
+<DL class="error codes (windows only)">
+<DT><A NAME="M45"><B>RXOVER</B></A><DD>
+Windows input buffer overrun. The data comes faster than your scripts reads
+it or your system is overloaded. Use <B><A HREF="fconfigure.html">fconfigure</A></B> <B>-sysbuffer</B> to avoid a
+temporary bottleneck and/or make your script faster.
+<P><DT><A NAME="M46"><B>TXFULL</B></A><DD>
+Windows output buffer overrun. Complement to RXOVER. This error should
+practically not happen, because Tcl cares about the output buffer status.
+<P><DT><A NAME="M47"><B>OVERRUN</B></A><DD>
+UART buffer overrun (hardware) with data lost.
+The data comes faster than the system driver receives it.
+Check your advanced serial port settings to enable the FIFO (16550) buffer
+and/or setup a lower(1) interrupt threshold value.
+<P><DT><A NAME="M48"><B>RXPARITY</B></A><DD>
+A parity error has been detected by your UART.
+Wrong parity settings with <B><A HREF="fconfigure.html">fconfigure</A></B> <B>-mode</B> or a noisy data line (RXD)
+may cause this error.
+<P><DT><A NAME="M49"><B>FRAME</B></A><DD>
+A stop-bit error has been detected by your UART.
+Wrong mode settings with <B><A HREF="fconfigure.html">fconfigure</A></B> <B>-mode</B> or a noisy data line (RXD)
+may cause this error.
+<P><DT><A NAME="M50"><B>BREAK</B></A><DD>
+A BREAK condition has been detected by your UART (see above).
+<P></DL>
+<H3><A NAME="M51">PORTABILITY ISSUES</A></H3>
+<DL class="portability issues">
+<DT><A NAME="M52"><B>Windows </B></A><DD>
+Valid values for <I>fileName</I> to open a serial port are of the form
+<B>com</B><I>X</I><B></B>, where <I>X</I> is a number, generally from 1 to 9.
+A legacy form accepted as well is <B>com</B><I>X</I><B>:</B>. This notation only
+works for serial ports from 1 to 9.  An attempt to open a serial port that
+does not exist or has a number greater than 9 will fail.  An alternate
+form of opening serial ports is to use the filename <B>//./comX</B>,
+where X is any number that corresponds to a serial port.
+<P></DL>
+<P>
+<DL><DD>
+When running Tcl interactively, there may be some strange interactions
+between the real console, if one is present, and a command pipeline that uses
+standard input or output.  If a command pipeline is opened for reading, some
+of the lines entered at the console will be sent to the command pipeline and
+some will be sent to the Tcl evaluator.  If a command pipeline is opened for
+writing, keystrokes entered into the console are not visible until the
+pipe is closed.  These problems only occur because both Tcl and the child
+application are competing for the console at the same time.  If the command
+pipeline is started from a script, so that Tcl is not accessing the console,
+or if the command pipeline does not use standard input or output, but is
+redirected from or to a file, then the above problems do not occur.
+</DL>
+<P>
+<DL class="portability issues">
+<DT><A NAME="M53"><B>Unix</B></A><DD>
+Valid values for <I>fileName</I> to open a serial port are generally of the
+form <B>/dev/tty</B><I>X</I>, where <I>X</I> is <B>a</B> or <B>b</B>, but the name
+of any pseudo-file that maps to a serial port may be used.
+Advanced configuration options are only supported for serial ports
+when Tcl is built to use the POSIX serial interface.
+<P>
+When running Tcl interactively, there may be some strange interactions
+between the console, if one is present, and a command pipeline that uses
+standard input.  If a command pipeline is opened for reading, some
+of the lines entered at the console will be sent to the command pipeline and
+some will be sent to the Tcl evaluator.  This problem only occurs because
+both Tcl and the child application are competing for the console at the
+same time.  If the command pipeline is started from a script, so that Tcl is
+not accessing the console, or if the command pipeline does not use standard
+input, but is redirected from a file, then the above problem does not occur.
+<P></DL>
+<P>
+See the <B><A HREF="open.html#M51">PORTABILITY ISSUES</A></B> section of the <B><A HREF="exec.html">exec</A></B> command for
+additional information not specific to command pipelines about executing
+applications on the various platforms
+<H3><A NAME="M54">EXAMPLE</A></H3>
+Open a command pipeline and catch any errors:
+<P>
+<PRE>set fl [<B>open</B> &quot;| ls this_file_does_not_exist&quot;]
+set data [read $fl]
+if {[catch {close $fl} err]} {
+    puts &quot;ls command failed: $err&quot;
+}</PRE>
+<H3><A NAME="M55">SEE ALSO</A></H3>
+<B><A HREF="file.html">file</A></B>, <B><A HREF="close.html">close</A></B>, <B><A HREF="filename.html">filename</A></B>, <B><A HREF="fconfigure.html">fconfigure</A></B>, <B><A HREF="gets.html">gets</A></B>, <B><A HREF="read.html">read</A></B>, <B><A HREF="puts.html">puts</A></B>, <B><A HREF="exec.html">exec</A></B>, <B><A HREF="pid.html">pid</A></B>, <B>fopen</B>
+<H3><A NAME="M56">KEYWORDS</A></H3>
+<A href="../Keywords/A.html#access mode">access mode</A>, <A href="../Keywords/A.html#append">append</A>, <A href="../Keywords/C.html#create">create</A>, <A href="../Keywords/F.html#file">file</A>, <A href="../Keywords/N.html#non-blocking">non-blocking</A>, <A href="../Keywords/O.html#open">open</A>, <A href="../Keywords/P.html#permissions">permissions</A>, <A href="../Keywords/P.html#pipeline">pipeline</A>, <A href="../Keywords/P.html#process">process</A>, <A href="../Keywords/S.html#serial">serial</A>
+<div class="copy">Copyright &copy; 1993 The Regents of the University of California.
+<BR>Copyright &copy; 1994-1996 Sun Microsystems, Inc.
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

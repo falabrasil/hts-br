@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="Tcl3.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org">
+<meta name='Author' content='ActiveState'>
+
+<title>Evaluation &amp; Substitutions 1: Grouping arguments with
+""</title>
+<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 class="title">Evaluation &amp; Substitutions 1: Grouping
+arguments with ""</h1>
+
+<div class="nav"><a href="Tcl2.html">Previous lesson</a> | <a href=
+"tcltutorial.html">Index</a> | <a href="Tcl4.html">Next
+lesson</a></div>
+
+<p>This lesson is the first of three which discuss the way Tcl
+handles substitution during command evaluation.</p>
+
+<p>In Tcl, the evaluation of a command is done in 2 phases. The
+first phase is a single pass of substitutions. The second phase is
+the evaluation of the resulting command. Note that only <i>one</i>
+pass of substitutions is made. Thus in the command</p>
+
+<pre>
+<code>puts $varName</code>
+</pre>
+
+<p>the contents of the proper variable are substituted for <code
+class="arg">$varName</code>, and then the command is executed.
+Assuming we have set <code class="arg">varName</code> to <code
+class="arg">"Hello World"</code>, the sequence would look like
+this: <code>puts <span style=
+"background-color: #ffff33">$varName</span></code> &rArr;
+<code>puts <span style="background-color: #ffff33">"Hello
+World"</span></code>, which is then executed and prints out
+<code>Hello World</code>.</p>
+
+<p>During the substitution phase, several types of substitutions
+occur.</p>
+
+<p>A command within square brackets ([]) is replaced with the
+result of the execution of that command. (This will be explained
+more fully in the lesson "Results of a Command - Math 101.")</p>
+
+<p>Words within double quotes or braces are grouped into a single
+argument. However, double quotes and braces cause different
+behavior during the substitution phase. In this lesson, we will
+concentrate on the behavior of double quotes during the
+substitution phase.</p>
+
+<p>Grouping words within double quotes allows substitutions to
+occur within the quotations - or, in fancier terms,
+"interpolation". The substituted group is then evaluated as a
+single argument. Thus, in the command:</p>
+
+<pre>
+<code>puts "The current stock value is $varName"</code>
+</pre>
+
+<p>the current contents of varName are substituted for $varName,
+and then the entire string is printed to the output device, just
+like the example above.</p>
+
+<p>In general, the backslash (\) disables substitution for the
+single character immediately following the backslash. Any character
+immediately following the backslash will stand without
+substitution.</p>
+
+<p>However, there are specific "Backslash Sequence" strings which
+are replaced by specific values during the substitution phase. The
+following backslash strings will be substituted as shown below.</p>
+
+<table>
+<thead>
+<tr>
+<th>String</th>
+<th>Output</th>
+<th>Hex Value</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>\a</td>
+<td>Audible Bell</td>
+<td>0x07</td>
+</tr>
+
+<tr>
+<td>\b</td>
+<td>Backspace</td>
+<td>0x08</td>
+</tr>
+
+<tr>
+<td>\f</td>
+<td>Form Feed (clear screen)</td>
+<td>0x0c</td>
+</tr>
+
+<tr>
+<td>\n</td>
+<td>New Line</td>
+<td>0x0a</td>
+</tr>
+
+<tr>
+<td>\r</td>
+<td>Carriage Return</td>
+<td>0x0d</td>
+</tr>
+
+<tr>
+<td>\t</td>
+<td>Tab</td>
+<td>0x09</td>
+</tr>
+
+<tr>
+<td>\v</td>
+<td>Vertical Tab</td>
+<td>0x0b</td>
+</tr>
+
+<tr>
+<td>\0dd</td>
+<td>Octal Value</td>
+<td>d is a digit from 0-7</td>
+</tr>
+
+<tr>
+<td>\uHHHH</td>
+<td>H is a hex digit 0-9,A-F,a-f. This represents a 16-bit Unicode
+character.</td>
+</tr>
+
+<tr>
+<td>\xHH....</td>
+<td>Hex Value</td>
+<td>H is a hex digit 0-9,A-F,a-f. <strong>Note</strong> that the \x
+substitution "keeps going" as long as it has hex digits, and only
+uses the last two, meaning that \xaa and \xaaaa are equal, and that
+\xaaAnd anyway will "eat" the A of "And". Using the \u notation is
+probably a better idea.</td>
+</tr>
+</tbody>
+</table>
+
+<p>The final exception is the backslash at the end of a line of
+text. This causes the interpreter to ignore the newline, and treat
+the text as a single line of text. The interpreter will insert a
+blank space at the location of the ending backslash.</p>
+
+<hr>
+<h2>Example</h2>
+
+<pre class="example">
+set Z Albany
+set Z_LABEL "The Capitol of New York is: "
+
+puts "$Z_LABEL $Z"   ;# Prints the value of Z
+puts "$Z_LABEL \$Z"  ;# Prints a literal $Z instead of the value of Z
+
+puts "\nBen Franklin is on the \$100.00 bill"
+
+set a 100.00
+puts "Washington is not on the $a bill"    ;# This is not what you want
+puts "Lincoln is not on the $$a bill"      ;# This is OK
+puts "Hamilton is not on the \$a bill"     ;# This is not what you want
+puts "Ben Franklin is on the \$$a bill"    ;# But, this is OK
+
+puts "\n................. examples of escape strings"
+puts "Tab\tTab\tTab"
+puts "This string prints out \non two lines"
+puts "This string comes out\
+on a single line"
+</pre>
+
+<div class="nav"><a href="Tcl2.html">Previous lesson</a> | <a href=
+"tcltutorial.html">Index</a> | <a href="Tcl4.html">Next
+lesson</a></div>
+</body>
+</html>
+
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

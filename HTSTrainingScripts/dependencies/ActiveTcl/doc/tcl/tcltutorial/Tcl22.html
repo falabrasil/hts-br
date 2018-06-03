@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="Tcl22.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org">
+<meta name='Author' content='ActiveState'>
+
+<title>Associative Arrays</title>
+<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 class="title">Associative Arrays.</h1>
+
+<div class="nav"><a href="Tcl21.html">Previous lesson</a> | <a
+href="tcltutorial.html">Index</a> | <a href="Tcl23.html">Next
+lesson</a></div>
+
+<p>Languages like C, BASIC, FORTRAN and Java support arrays in
+which the index value is an integer. Tcl, like most scripting
+languages (Perl, Python, PHP, etc...) supports associative arrays
+(also known as "hash tables") in which the index value is a
+string.</p>
+
+<p>The syntax for an associative array is to put the index within
+parentheses:</p>
+
+<pre class="example">
+set name(first) "Mary"
+set name(last)  "Poppins"
+
+puts "Full name: $name(first) $name(last)"
+</pre>
+
+<p>There are several array commands aside from simply accessing and
+creating arrays which will be discussed in this and the next
+lesson.</p>
+
+<dl>
+<dt><code class="keyword">array exists</code> <code class=
+"arg">arrayName</code></dt>
+
+<dd>Returns 1 if <code class="arg">arrayName</code> is an array
+variable. Returns 0 if <code class="arg">arrayName</code> is a
+scalar variable, proc, or does not exist.</dd>
+
+<dt><code class="keyword">array names</code> <code class=
+"arg">arrayName</code> <code class="arg">?pattern</code></dt>
+
+<dd>Returns a list of the indices for the associative array <code
+class="arg">arrayName</code>. If <code class="arg">pattern</code>
+is supplied, only those indices that match <code class=
+"arg">pattern</code> are returned. The match is done using the
+globbing technique from <code class="arg">string match</code>.</dd>
+
+<dt><code class="keyword">array size</code> <code class=
+"arg">arrayName</code></dt>
+
+<dd>Returns the number of elements in array <code class=
+"arg">arrayName</code>.</dd>
+
+<dt><code class="keyword">array get</code> <code class=
+"arg">arrayName</code></dt>
+
+<dd>Returns a list in which each odd member of the list (1, 3, 5,
+etc) is an index into the associative array. The list element
+following a name is the value of that array member.</dd>
+
+<dt><code class="keyword">array set</code> <code class=
+"arg">arrayName dataList</code></dt>
+
+<dd>Converts a list into an associative array. <code class=
+"arg">DataList</code> is a list in the format of that returned by
+<code class="arg">array get</code>. Each odd member of the list (1,
+3, 5, etc) is an index into the associative array, and the list
+element following that is the value of that array member.</dd>
+
+<dt><code class="keyword">array unset</code> <code class=
+"arg">arrayName ?pattern?</code></dt>
+
+<dd>Unsets all of the elements in the array. If <code class=
+"arg">pattern</code> exists, only the elements that match pattern
+are unset.</dd>
+</dl>
+
+<p>When an associative array name is given as the argument to the
+<code class="keyword">global</code> command, all the elements of
+the associative array become available to that proc. For this
+reason, <i>Brent Welch</i> recommends (in <i>Practical Programming
+in Tcl and Tk</i>) using an associative array for the state
+structure in a package.</p>
+
+<p>This method makes it simpler to share data between many procs
+that are working together, and doesn't pollute the global namespace
+as badly as using separate globals for all shared data items.</p>
+
+<p>Another common use for arrays is to store tables of data. In the
+example below we use an array to store a simple database of
+names.</p>
+
+<hr>
+<h2>Example</h2>
+
+<pre class="example">
+proc addname {first last} {
+    global name
+
+    # Create a new ID (stored in the name array too for easy access)
+
+    incr name(ID)
+    set id $name(ID)
+
+    set name($id,first) $first   ;# The index is simply a string!
+    set name($id,last)  $last    ;# So we can use both fixed and
+                                 ;# varying parts
+}
+
+#
+# Initialise the array and add a few names
+#
+global name
+set name(ID) 0
+
+addname Mary Poppins
+addname Uriah Heep
+addname Rene Descartes
+addname Leonardo "da Vinci"
+
+#
+# Check the contents of our database
+# The parray command is a quick way to
+# print it
+#
+parray name
+
+#
+# Some array commands
+#
+array set array1 [list {123} {Abigail Aardvark} \
+                       {234} {Bob Baboon} \
+                       {345} {Cathy Coyote} \
+                       {456} {Daniel Dog} ]
+
+puts "Array1 has [array size array1] entries\n"
+
+puts "Array1 has the following entries: \n [array names array1] \n"
+
+puts "ID Number 123 belongs to $array1(123)\n"
+
+if {[array exist array1]} {
+    puts "array1 is an array"
+} else {
+    puts "array1 is not an array"
+}
+
+if {[array exist array2]} {
+    puts "array2 is an array"
+} else {
+    puts "array2 is not an array"
+}
+
+proc existence {variable} {
+    upvar $variable testVar
+    if { [info exists testVar] } {
+    puts "$variable Exists"
+    } else {
+    puts "$variable Does Not Exist"
+    }
+}
+
+puts "\ntesting unsetting a member of an array"
+existence a(0)
+puts "a0 has been unset"
+unset a(0)
+existence a(0)
+
+puts "\ntesting unsetting several members of an array, with an error"
+existence a(3)
+existence a(4)
+catch {unset a(3) a(0) a(4)}
+puts "\nAfter attempting to delete a(3), a(0) and a(4)"
+existence a(3)
+existence a(4)
+
+puts "\nUnset all the array's elements"
+existence a
+array unset a *
+
+puts "\ntesting unsetting an array"
+existence a
+puts "a has been unset"
+unset a
+existence a
+</pre>
+
+<div class="nav"><a href="Tcl21.html">Previous lesson</a> | <a
+href="tcltutorial.html">Index</a> | <a href="Tcl23.html">Next
+lesson</a></div>
+</body>
+</html>
+
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

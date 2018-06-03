@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="WindowId.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>Tk_WindowId manual page - Tk Library Procedures</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tk C API, version 8.6.7</a> <small>&gt;</small> WindowId</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="../TkCmd/contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="WindowId.html#M2" NAME="L647">NAME</A>
+<DL><DD>Tk_WindowId, Tk_Parent, Tk_Display, Tk_DisplayName, Tk_ScreenNumber, Tk_Screen, Tk_X, Tk_Y, Tk_Width, Tk_Height, Tk_Changes, Tk_Attributes, Tk_IsContainer, Tk_IsEmbedded, Tk_IsMapped, Tk_IsTopLevel, Tk_ReqWidth, Tk_ReqHeight, Tk_MinReqWidth, Tk_MinReqHeight, Tk_InternalBorderLeft, Tk_InternalBorderRight, Tk_InternalBorderTop, Tk_InternalBorderBottom, Tk_Visual, Tk_Depth, Tk_Colormap, Tk_Interp &mdash; retrieve information from Tk's local data structure</DD></DL>
+<DD><A HREF="WindowId.html#M3" NAME="L648">SYNOPSIS</A>
+<DL>
+<DD><B>#include &lt;tk.h&gt;</B>
+<DD>Window
+<DD><B>Tk_WindowId</B>(<I>tkwin</I>)
+<DD>Tk_Window
+<DD><B>Tk_Parent</B>(<I>tkwin</I>)
+<DD>Display *
+<DD><B>Tk_Display</B>(<I>tkwin</I>)
+<DD>const char *
+<DD><B>Tk_DisplayName</B>(<I>tkwin</I>)
+<DD>int
+<DD><B>Tk_ScreenNumber</B>(<I>tkwin</I>)
+<DD>Screen *
+<DD><B>Tk_Screen</B>(<I>tkwin</I>)
+<DD>int
+<DD><B>Tk_X</B>(<I>tkwin</I>)
+<DD>int
+<DD><B>Tk_Y</B>(<I>tkwin</I>)
+<DD>int
+<DD><B>Tk_Width</B>(<I>tkwin</I>)
+<DD>int
+<DD><B>Tk_Height</B>(<I>tkwin</I>)
+<DD>XWindowChanges *
+<DD><B>Tk_Changes</B>(<I>tkwin</I>)
+<DD>XSetWindowAttributes *
+<DD><B>Tk_Attributes</B>(<I>tkwin</I>)
+<DD>int
+<DD><B>Tk_IsContainer</B>(<I>tkwin</I>)
+<DD>int
+<DD><B>Tk_IsEmbedded</B>(<I>tkwin</I>)
+<DD>int
+<DD><B>Tk_IsMapped</B>(<I>tkwin</I>)
+<DD>int
+<DD><B>Tk_IsTopLevel</B>(<I>tkwin</I>)
+<DD>int
+<DD><B>Tk_ReqWidth</B>(<I>tkwin</I>)
+<DD>int
+<DD><B>Tk_ReqHeight</B>(<I>tkwin</I>)
+<DD>int
+<DD><B>Tk_MinReqWidth</B>(<I>tkwin</I>)
+<DD>int
+<DD><B>Tk_MinReqHeight</B>(<I>tkwin</I>)
+<DD>int
+<DD><B>Tk_InternalBorderLeft</B>(<I>tkwin</I>)
+<DD>int
+<DD><B>Tk_InternalBorderRight</B>(<I>tkwin</I>)
+<DD>int
+<DD><B>Tk_InternalBorderTop</B>(<I>tkwin</I>)
+<DD>int
+<DD><B>Tk_InternalBorderBottom</B>(<I>tkwin</I>)
+<DD>Visual *
+<DD><B>Tk_Visual</B>(<I>tkwin</I>)
+<DD>int
+<DD><B>Tk_Depth</B>(<I>tkwin</I>)
+<DD>Colormap
+<DD><B>Tk_Colormap</B>(<I>tkwin</I>)
+<DD>Tcl_Interp *
+<DD><B>Tk_Interp</B>(<I>tkwin</I>)
+</DL>
+<DD><A HREF="WindowId.html#M4" NAME="L649">ARGUMENTS</A>
+<DL class="arguments">
+</DL>
+<DD><A HREF="WindowId.html#M5" NAME="L650">DESCRIPTION</A>
+<DD><A HREF="WindowId.html#M6" NAME="L651">KEYWORDS</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+Tk_WindowId, Tk_Parent, Tk_Display, Tk_DisplayName, Tk_ScreenNumber, Tk_Screen, Tk_X, Tk_Y, Tk_Width, Tk_Height, Tk_Changes, Tk_Attributes, Tk_IsContainer, Tk_IsEmbedded, Tk_IsMapped, Tk_IsTopLevel, Tk_ReqWidth, Tk_ReqHeight, Tk_MinReqWidth, Tk_MinReqHeight, Tk_InternalBorderLeft, Tk_InternalBorderRight, Tk_InternalBorderTop, Tk_InternalBorderBottom, Tk_Visual, Tk_Depth, Tk_Colormap, Tk_Interp &mdash; retrieve information from Tk's local data structure
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+<B>#include &lt;tk.h&gt;</B><BR>
+Window<BR>
+<B>Tk_WindowId</B>(<I>tkwin</I>)<BR>
+Tk_Window<BR>
+<B>Tk_Parent</B>(<I>tkwin</I>)<BR>
+Display *<BR>
+<B>Tk_Display</B>(<I>tkwin</I>)<BR>
+const char *<BR>
+<B>Tk_DisplayName</B>(<I>tkwin</I>)<BR>
+int<BR>
+<B>Tk_ScreenNumber</B>(<I>tkwin</I>)<BR>
+Screen *<BR>
+<B>Tk_Screen</B>(<I>tkwin</I>)<BR>
+int<BR>
+<B>Tk_X</B>(<I>tkwin</I>)<BR>
+int<BR>
+<B>Tk_Y</B>(<I>tkwin</I>)<BR>
+int<BR>
+<B>Tk_Width</B>(<I>tkwin</I>)<BR>
+int<BR>
+<B>Tk_Height</B>(<I>tkwin</I>)<BR>
+XWindowChanges *<BR>
+<B>Tk_Changes</B>(<I>tkwin</I>)<BR>
+XSetWindowAttributes *<BR>
+<B>Tk_Attributes</B>(<I>tkwin</I>)<BR>
+int<BR>
+<B>Tk_IsContainer</B>(<I>tkwin</I>)<BR>
+int<BR>
+<B>Tk_IsEmbedded</B>(<I>tkwin</I>)<BR>
+int<BR>
+<B>Tk_IsMapped</B>(<I>tkwin</I>)<BR>
+int<BR>
+<B>Tk_IsTopLevel</B>(<I>tkwin</I>)<BR>
+int<BR>
+<B>Tk_ReqWidth</B>(<I>tkwin</I>)<BR>
+int<BR>
+<B>Tk_ReqHeight</B>(<I>tkwin</I>)<BR>
+int<BR>
+<B>Tk_MinReqWidth</B>(<I>tkwin</I>)<BR>
+int<BR>
+<B>Tk_MinReqHeight</B>(<I>tkwin</I>)<BR>
+int<BR>
+<B>Tk_InternalBorderLeft</B>(<I>tkwin</I>)<BR>
+int<BR>
+<B>Tk_InternalBorderRight</B>(<I>tkwin</I>)<BR>
+int<BR>
+<B>Tk_InternalBorderTop</B>(<I>tkwin</I>)<BR>
+int<BR>
+<B>Tk_InternalBorderBottom</B>(<I>tkwin</I>)<BR>
+Visual *<BR>
+<B>Tk_Visual</B>(<I>tkwin</I>)<BR>
+int<BR>
+<B>Tk_Depth</B>(<I>tkwin</I>)<BR>
+Colormap<BR>
+<B>Tk_Colormap</B>(<I>tkwin</I>)<BR>
+<A HREF="../TclLib/Interp.html">Tcl_Interp</A> *<BR>
+<B>Tk_Interp</B>(<I>tkwin</I>)<BR>
+<H3><A NAME="M4">ARGUMENTS</A></H3>
+<DL class="arguments">
+<DT>Tk_Window <B>tkwin</B> (in)<DD>
+Token for window.
+<P></DL>
+<H3><A NAME="M5">DESCRIPTION</A></H3>
+<B>Tk_WindowId</B> and the other names listed above are
+all macros that return fields from Tk's local data structure
+for <I>tkwin</I>.  None of these macros requires any
+interaction with the server;  it is safe to assume that
+all are fast.
+<P>
+<B>Tk_WindowId</B> returns the X identifier for <I>tkwin</I>,
+or <B>NULL</B> if no X window has been created for <I>tkwin</I>
+yet.
+<P>
+<B>Tk_Parent</B> returns Tk's token for the logical parent of
+<I>tkwin</I>.  The parent is the token that was specified when
+<I>tkwin</I> was created, or NULL for main windows.
+<P>
+<B>Tk_Interp</B> returns the Tcl interpreter associated with a
+<I>tkwin</I> or NULL if there is an error.
+<P>
+<B>Tk_Display</B> returns a pointer to the Xlib display structure
+corresponding to <I>tkwin</I>.  <B>Tk_DisplayName</B> returns an
+ASCII string identifying <I>tkwin</I>'s display.  <B>Tk_ScreenNumber</B>
+returns the index of <I>tkwin</I>'s screen among all the screens
+of <I>tkwin</I>'s display.  <B>Tk_Screen</B> returns a pointer to
+the Xlib structure corresponding to <I>tkwin</I>'s screen.
+<P>
+<B>Tk_X</B>, <B>Tk_Y</B>, <B>Tk_Width</B>, and <B>Tk_Height</B>
+return information about <I>tkwin's</I> location within its
+parent and its size.  The location information refers to the
+upper-left pixel in the window, or its border if there is one.
+The width and height information refers to the interior size
+of the window, not including any border.  <B>Tk_Changes</B>
+returns a pointer to a structure containing all of the above
+information plus a few other fields.  <B>Tk_Attributes</B>
+returns a pointer to an XSetWindowAttributes structure describing
+all of the attributes of the <I>tkwin</I>'s window, such as background
+pixmap, event mask, and so on (Tk keeps track of all this information
+as it is changed by the application).  Note: it is essential that
+applications use Tk procedures like <B><A HREF="ConfigWind.html">Tk_ResizeWindow</A></B> instead
+of X procedures like <B>XResizeWindow</B>, so that Tk can keep its
+data structures up-to-date.
+<P>
+<B>Tk_IsContainer</B> returns a non-zero value if <I>tkwin</I>
+is a container, and that some other application may be embedding
+itself inside <I>tkwin</I>.
+<P>
+<B>Tk_IsEmbedded</B> returns a non-zero value if <I>tkwin</I>
+is not a free-standing window, but rather is embedded in some
+other application.
+<P>
+<B>Tk_IsMapped</B> returns a non-zero value if <I>tkwin</I>
+is mapped and zero if <I>tkwin</I> is not mapped.
+<P>
+<B>Tk_IsTopLevel</B> returns a non-zero value if <I>tkwin</I>
+is a top-level window (its X parent is the root window of the
+screen) and zero if <I>tkwin</I> is not a top-level window.
+<P>
+<B>Tk_ReqWidth</B> and <B>Tk_ReqHeight</B> return information about
+the window's requested size.  These values correspond to the last
+call to <B><A HREF="GeomReq.html">Tk_GeometryRequest</A></B> for <I>tkwin</I>.
+<P>
+<B>Tk_MinReqWidth</B> and <B>Tk_MinReqHeight</B> return information about
+the window's minimum requested size.  These values correspond to the last
+call to <B><A HREF="GeomReq.html">Tk_SetMinimumRequestSize</A></B> for <I>tkwin</I>.
+<P>
+<B>Tk_InternalBorderLeft</B>, <B>Tk_InternalBorderRight</B>,
+<B>Tk_InternalBorderTop</B> and <B>Tk_InternalBorderBottom</B>
+return the width of one side of the internal border
+that has been requested for <I>tkwin</I>, or 0 if no internal border was
+requested.  The return value is simply the last value passed to
+<B><A HREF="GeomReq.html">Tk_SetInternalBorder</A></B> or <B><A HREF="GeomReq.html">Tk_SetInternalBorderEx</A></B> for <I>tkwin</I>.
+<P>
+<B>Tk_Visual</B>, <B>Tk_Depth</B>, and <B>Tk_Colormap</B> return
+information about the visual characteristics of a window.
+<B>Tk_Visual</B> returns the visual type for
+the window, <B>Tk_Depth</B> returns the number of bits per pixel,
+and <B>Tk_Colormap</B> returns the current
+colormap for the window.  The visual characteristics are
+normally set from the defaults for the window's screen, but
+they may be overridden by calling <B><A HREF="SetVisual.html">Tk_SetWindowVisual</A></B>.
+<H3><A NAME="M6">KEYWORDS</A></H3>
+<A href="../Keywords/A.html#attributes">attributes</A>, <A href="../Keywords/C.html#colormap">colormap</A>, <A href="../Keywords/D.html#depth">depth</A>, <A href="../Keywords/D.html#display">display</A>, <A href="../Keywords/H.html#height">height</A>, <A href="../Keywords/G.html#geometry manager">geometry manager</A>, <A href="../Keywords/I.html#identifier">identifier</A>, <A href="../Keywords/M.html#mapped">mapped</A>, <A href="../Keywords/R.html#requested size">requested size</A>, <A href="../Keywords/S.html#screen">screen</A>, <A href="../Keywords/T.html#top-level">top-level</A>, <A href="../Keywords/V.html#visual">visual</A>, <A href="../Keywords/W.html#width">width</A>, <A href="../Keywords/W.html#window">window</A>, <A href="../Keywords/X.html#x">x</A>, <A href="../Keywords/Y.html#y">y</A>
+<div class="copy">Copyright &copy; 1990-1993 The Regents of the University of California.
+<BR>Copyright &copy; 1994-1997 Sun Microsystems, Inc.
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

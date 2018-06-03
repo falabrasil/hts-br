@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="frame.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>frame manual page - Tk Built-In Commands</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tk Commands, version 8.6.7</a> <small>&gt;</small> frame</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="frame.html#M2" NAME="L727">NAME</A>
+<DL><DD>frame &mdash; Create and manipulate 'frame' simple container widgets</DD></DL>
+<DD><A HREF="frame.html#M3" NAME="L728">SYNOPSIS</A>
+<DL>
+</DL>
+<DD><A HREF="frame.html#M4" NAME="L729">STANDARD OPTIONS</A>
+<DL>
+<DD><A HREF="options.html#M-borderwidth">-borderwidth or -bd, borderWidth, BorderWidth</A>
+<DD><A HREF="options.html#M-cursor">-cursor, cursor, Cursor</A>
+<DD><A HREF="options.html#M-highlightbackground">-highlightbackground, highlightBackground, HighlightBackground</A>
+<DD><A HREF="options.html#M-highlightcolor">-highlightcolor, highlightColor, HighlightColor</A>
+<DD><A HREF="options.html#M-highlightthickness">-highlightthickness, highlightThickness, HighlightThickness</A>
+<DD><A HREF="options.html#M-padx">-padx, padX, Pad</A>
+<DD><A HREF="options.html#M-pady">-pady, padY, Pad</A>
+<DD><A HREF="options.html#M-relief">-relief, relief, Relief</A>
+<DD><A HREF="options.html#M-takefocus">-takefocus, takeFocus, TakeFocus</A>
+</DL>
+<DD><A HREF="frame.html#M5" NAME="L730">WIDGET-SPECIFIC OPTIONS</A>
+<DL>
+<DD><A HREF="frame.html#M6" NAME="L731">-background, background, Background</A>
+<DD><A HREF="frame.html#M7" NAME="L732">-class, class, Class</A>
+<DD><A HREF="frame.html#M8" NAME="L733">-colormap, colormap, Colormap</A>
+<DD><A HREF="frame.html#M9" NAME="L734">-container, container, Container</A>
+<DD><A HREF="frame.html#M10" NAME="L735">-height, height, Height</A>
+<DD><A HREF="frame.html#M11" NAME="L736">-visual, visual, Visual</A>
+<DD><A HREF="frame.html#M12" NAME="L737">-width, width, Width</A>
+</DL>
+<DD><A HREF="frame.html#M13" NAME="L738">DESCRIPTION</A>
+<DD><A HREF="frame.html#M14" NAME="L739">WIDGET COMMAND</A>
+<DL class="widget command">
+<DD><A HREF="frame.html#M15" NAME="L740"><I>pathName </I><B>cget</B> <I>option</I></A>
+<DD><A HREF="frame.html#M16" NAME="L741"><I>pathName </I><B>configure</B> ?<I>option</I>? <I>?value option value ...</I>?</A>
+</DL>
+<DD><A HREF="frame.html#M17" NAME="L742">BINDINGS</A>
+<DD><A HREF="frame.html#M18" NAME="L743">SEE ALSO</A>
+<DD><A HREF="frame.html#M19" NAME="L744">KEYWORDS</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+frame &mdash; Create and manipulate 'frame' simple container widgets
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+<B>frame</B> <I>pathName</I> ?<I>options</I>?<BR>
+<H3><A NAME="M4">STANDARD OPTIONS</A></H3>
+<DL>
+<DT><B><A HREF="options.html#M-borderwidth">-borderwidth or -bd, borderWidth, BorderWidth</A></B>
+<DT><B><A HREF="options.html#M-cursor">-cursor, cursor, Cursor</A></B>
+<DT><B><A HREF="options.html#M-highlightbackground">-highlightbackground, highlightBackground, HighlightBackground</A></B>
+<DT><B><A HREF="options.html#M-highlightcolor">-highlightcolor, highlightColor, HighlightColor</A></B>
+<DT><B><A HREF="options.html#M-highlightthickness">-highlightthickness, highlightThickness, HighlightThickness</A></B>
+<DT><B><A HREF="options.html#M-padx">-padx, padX, Pad</A></B>
+<DT><B><A HREF="options.html#M-pady">-pady, padY, Pad</A></B>
+<DT><B><A HREF="options.html#M-relief">-relief, relief, Relief</A></B>
+<DT><B><A HREF="options.html#M-takefocus">-takefocus, takeFocus, TakeFocus</A></B>
+</DL>
+<H3><A NAME="M5">WIDGET-SPECIFIC OPTIONS</A></H3>
+<DL>
+<DT>Command-Line Name: <B><A NAME="M6">-background</A></B>
+<DT>Database Name: <B>background</B>
+<DT>Database Class: <B>Background</B>
+<DD>This option is the same as the standard <B>-background</B> option
+except that its value may also be specified as an empty string.
+In this case, the widget will display no background or border, and
+no colors will be consumed from its colormap for its background
+and border.
+<P><DT>Command-Line Name: <B><A NAME="M7">-class</A></B>
+<DT>Database Name: <B>class</B>
+<DT>Database Class: <B>Class</B>
+<DD>Specifies a class for the window.
+This class will be used when querying the option database for
+the window's other options, and it will also be used later for
+other purposes such as bindings.
+The <B>-class</B> option may not be changed with the <B>configure</B>
+widget command.
+<P><DT>Command-Line Name: <B><A NAME="M8">-colormap</A></B>
+<DT>Database Name: <B>colormap</B>
+<DT>Database Class: <B>Colormap</B>
+<DD>Specifies a colormap to use for the window.
+The value may be either <B>new</B>, in which case a new colormap is
+created for the window and its children, or the name of another
+window (which must be on the same screen and have the same visual
+as <I>pathName</I>), in which case the new window will use the colormap
+from the specified window.
+If the <B>-colormap</B> option is not specified, the new window
+uses the same colormap as its parent.
+This option may not be changed with the <B>configure</B>
+widget command.
+<P><DT>Command-Line Name: <B><A NAME="M9">-container</A></B>
+<DT>Database Name: <B>container</B>
+<DT>Database Class: <B>Container</B>
+<DD>The value must be a boolean.  If true, it means that this window will
+be used as a container in which some other application will be embedded
+(for example, a Tk toplevel can be embedded using the <B>-use</B> option).
+The window will support the appropriate window manager protocols for
+things like geometry requests.  The window should not have any
+children of its own in this application.
+This option may not be changed with the <B>configure</B>
+widget command.
+Note that <B>-borderwidth</B>, <B>-padx</B> and <B>-pady</B> are ignored when
+configured as a container since a container has no border.
+<P><DT>Command-Line Name: <B><A NAME="M10">-height</A></B>
+<DT>Database Name: <B>height</B>
+<DT>Database Class: <B>Height</B>
+<DD>Specifies the desired height for the window in any of the forms
+acceptable to <B><A HREF="../TkLib/GetPixels.html">Tk_GetPixels</A></B>.  If this option is less than or equal
+to zero then the window will not request any size at all.  Note that this
+sets the total height of the frame, any <B>-borderwidth</B> or similar is
+not added.  Normally <B>-height</B> should not be used if a propagating
+geometry manager, such as <B><A HREF="grid.html">grid</A></B> or <B><A HREF="pack.html">pack</A></B>, is used within the
+frame since the geometry manager will override the height of the frame.
+<P><DT>Command-Line Name: <B><A NAME="M11">-visual</A></B>
+<DT>Database Name: <B>visual</B>
+<DT>Database Class: <B>Visual</B>
+<DD>Specifies visual information for the new window in any of the
+forms accepted by <B><A HREF="../TkLib/GetVisual.html">Tk_GetVisual</A></B>.
+If this option is not specified, the new window will use the same
+visual as its parent.
+The <B>-visual</B> option may not be modified with the <B>configure</B>
+widget command.
+<P><DT>Command-Line Name: <B><A NAME="M12">-width</A></B>
+<DT>Database Name: <B>width</B>
+<DT>Database Class: <B>Width</B>
+<DD>Specifies the desired width for the window in any of the forms
+acceptable to <B><A HREF="../TkLib/GetPixels.html">Tk_GetPixels</A></B>.  If this option is less than or equal
+to zero then the window will not request any size at all.  Note that this
+sets the total width of the frame, any <B>-borderwidth</B> or similar is
+not added.  Normally <B>-width</B> should not be used if a propagating
+geometry manager, such as <B><A HREF="grid.html">grid</A></B> or <B><A HREF="pack.html">pack</A></B>, is used within the
+frame since the geometry manager will override the width of the frame.
+</DL>
+<H3><A NAME="M13">DESCRIPTION</A></H3>
+The <B>frame</B> command creates a new window (given by the
+<I>pathName</I> argument) and makes it into a frame widget.
+Additional
+options, described above, may be specified on the command line
+or in the option database
+to configure aspects of the frame such as its background color
+and relief.  The <B>frame</B> command returns the
+path name of the new window.
+<P>
+A frame is a simple widget.  Its primary purpose is to act as a
+spacer or container for complex window layouts.  The only features
+of a frame are its background color and an optional 3-D border to make the
+frame appear raised or sunken.
+<H3><A NAME="M14">WIDGET COMMAND</A></H3>
+The <B>frame</B> command creates a new Tcl command whose
+name is the same as the path name of the frame's window.  This
+command may be used to invoke various
+operations on the widget.  It has the following general form:
+<PRE><I>pathName option </I>?<I>arg arg ...</I>?</PRE>
+<I>PathName</I> is the name of the command, which is the same as
+the frame widget's path name.  <I>Option</I> and the <I>arg</I>s
+determine the exact behavior of the command.  The following
+commands are possible for frame widgets:
+<P>
+<DL class="widget command">
+<DT><A NAME="M15"><I>pathName </I><B>cget</B> <I>option</I></A><DD>
+Returns the current value of the configuration option given
+by <I>option</I>.
+<I>Option</I> may have any of the values accepted by the <B>frame</B>
+command.
+<P><DT><A NAME="M16"><I>pathName </I><B>configure</B> ?<I>option</I>? <I>?value option value ...</I>?</A><DD>
+Query or modify the configuration options of the widget.
+If no <I>option</I> is specified, returns a list describing all of
+the available options for <I>pathName</I> (see <B><A HREF="../TkLib/ConfigWidg.html">Tk_ConfigureInfo</A></B> for
+information on the format of this list).  If <I>option</I> is specified
+with no <I>value</I>, then the command returns a list describing the
+one named option (this list will be identical to the corresponding
+sublist of the value returned if no <I>option</I> is specified).  If
+one or more <I>option-value</I> pairs are specified, then the command
+modifies the given widget option(s) to have the given value(s);  in
+this case the command returns an empty string.
+<I>Option</I> may have any of the values accepted by the <B>frame</B>
+command.
+<P></DL>
+<H3><A NAME="M17">BINDINGS</A></H3>
+When a new frame is created, it has no default event bindings:
+frames are not intended to be interactive.
+<H3><A NAME="M18">SEE ALSO</A></H3>
+<B><A HREF="labelframe.html">labelframe</A></B>, <B><A HREF="toplevel.html">toplevel</A></B>, <B><A HREF="ttk_frame.html">ttk::frame</A></B>
+<H3><A NAME="M19">KEYWORDS</A></H3>
+<A href="../Keywords/F.html#frame">frame</A>, <A href="../Keywords/W.html#widget">widget</A>
+<div class="copy">Copyright &copy; 1990-1994 The Regents of the University of California.
+<BR>Copyright &copy; 1994-1996 Sun Microsystems, Inc.
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

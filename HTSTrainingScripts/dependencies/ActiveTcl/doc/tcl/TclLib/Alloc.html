@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="Alloc.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>Tcl_Alloc manual page - Tcl Library Procedures</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tcl C API, version 8.6.7</a> <small>&gt;</small> Alloc</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="../TkCmd/contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="Alloc.html#M2" NAME="L15">NAME</A>
+<DL><DD>Tcl_Alloc, Tcl_Free, Tcl_Realloc, Tcl_AttemptAlloc, Tcl_AttemptRealloc, ckalloc, ckfree, ckrealloc, attemptckalloc, attemptckrealloc &mdash; allocate or free heap memory</DD></DL>
+<DD><A HREF="Alloc.html#M3" NAME="L16">SYNOPSIS</A>
+<DL>
+<DD><B>#include &lt;tcl.h&gt;</B>
+<DD>char *
+<DD><B>Tcl_Alloc</B>(<I>size</I>)
+<DD>void
+<DD><B>Tcl_Free</B>(<I>ptr</I>)
+<DD>char *
+<DD><B>Tcl_Realloc</B>(<I>ptr, size</I>)
+<DD>char *
+<DD><B>Tcl_AttemptAlloc</B>(<I>size</I>)
+<DD>char *
+<DD><B>Tcl_AttemptRealloc</B>(<I>ptr, size</I>)
+<DD>char *
+<DD><B>ckalloc</B>(<I>size</I>)
+<DD>void
+<DD><B>ckfree</B>(<I>ptr</I>)
+<DD>char *
+<DD><B>ckrealloc</B>(<I>ptr, size</I>)
+<DD>char *
+<DD><B>attemptckalloc</B>(<I>size</I>)
+<DD>char *
+<DD><B>attemptckrealloc</B>(<I>ptr, size</I>)
+</DL>
+<DD><A HREF="Alloc.html#M4" NAME="L17">ARGUMENTS</A>
+<DL class="arguments">
+</DL>
+<DD><A HREF="Alloc.html#M5" NAME="L18">DESCRIPTION</A>
+<DD><A HREF="Alloc.html#M6" NAME="L19">KEYWORDS</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+Tcl_Alloc, Tcl_Free, Tcl_Realloc, Tcl_AttemptAlloc, Tcl_AttemptRealloc, ckalloc, ckfree, ckrealloc, attemptckalloc, attemptckrealloc &mdash; allocate or free heap memory
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+<B>#include &lt;tcl.h&gt;</B><BR>
+char *<BR>
+<B>Tcl_Alloc</B>(<I>size</I>)<BR>
+void<BR>
+<B>Tcl_Free</B>(<I>ptr</I>)<BR>
+char *<BR>
+<B>Tcl_Realloc</B>(<I>ptr, size</I>)<BR>
+char *<BR>
+<B>Tcl_AttemptAlloc</B>(<I>size</I>)<BR>
+char *<BR>
+<B>Tcl_AttemptRealloc</B>(<I>ptr, size</I>)<BR>
+char *<BR>
+<B>ckalloc</B>(<I>size</I>)<BR>
+void<BR>
+<B>ckfree</B>(<I>ptr</I>)<BR>
+char *<BR>
+<B>ckrealloc</B>(<I>ptr, size</I>)<BR>
+char *<BR>
+<B>attemptckalloc</B>(<I>size</I>)<BR>
+char *<BR>
+<B>attemptckrealloc</B>(<I>ptr, size</I>)<BR>
+<H3><A NAME="M4">ARGUMENTS</A></H3>
+<DL class="arguments">
+<DT>unsigned int <B>size</B> (in)<DD>
+Size in bytes of the memory block to allocate.
+<P><DT>char <B>*ptr</B> (in)<DD>
+Pointer to memory block to free or realloc.
+<P></DL>
+<H3><A NAME="M5">DESCRIPTION</A></H3>
+These procedures provide a platform and compiler independent interface
+for memory allocation.  Programs that need to transfer ownership of
+memory blocks between Tcl and other modules should use these routines
+rather than the native <B>malloc()</B> and <B>free()</B> routines
+provided by the C run-time library.
+<P>
+<B>Tcl_Alloc</B> returns a pointer to a block of at least <I>size</I>
+bytes suitably aligned for any use.
+<P>
+<B>Tcl_Free</B> makes the space referred to by <I>ptr</I> available for
+further allocation.
+<P>
+<B>Tcl_Realloc</B> changes the size of the block pointed to by
+<I>ptr</I> to <I>size</I> bytes and returns a pointer to the new block.
+The contents will be unchanged up to the lesser of the new and old
+sizes.  The returned location may be different from <I>ptr</I>.  If
+<I>ptr</I> is NULL, this is equivalent to calling <B>Tcl_Alloc</B> with
+just the <I>size</I> argument.
+<P>
+<B>Tcl_AttemptAlloc</B> and <B>Tcl_AttemptRealloc</B> are identical in
+function to <B>Tcl_Alloc</B> and <B>Tcl_Realloc</B>, except that
+<B>Tcl_AttemptAlloc</B> and <B>Tcl_AttemptRealloc</B> will not cause the Tcl
+interpreter to <B>panic</B> if the memory allocation fails.  If the
+allocation fails, these functions will return NULL.  Note that on some
+platforms, but not all, attempting to allocate a zero-sized block of
+memory will also cause these functions to return NULL.
+<P>
+The procedures <B>ckalloc</B>, <B>ckfree</B>, <B>ckrealloc</B>,
+<B>attemptckalloc</B>, and <B>attemptckrealloc</B> are implemented
+as macros.  Normally, they are synonyms for the corresponding
+procedures documented on this page.  When Tcl and all modules
+calling Tcl are compiled with <B>TCL_MEM_DEBUG</B> defined, however,
+these macros are redefined to be special debugging versions
+of these procedures.  To support Tcl's memory debugging within a
+module, use the macros rather than direct calls to <B>Tcl_Alloc</B>, etc.
+
+<H3><A NAME="M6">KEYWORDS</A></H3>
+<A href="../Keywords/A.html#alloc">alloc</A>, <A href="../Keywords/A.html#allocation">allocation</A>, <A href="../Keywords/F.html#free">free</A>, <A href="../Keywords/M.html#malloc">malloc</A>, <A href="../Keywords/M.html#memory">memory</A>, <A href="../Keywords/R.html#realloc">realloc</A>, <A href="../Keywords/T.html#TCL_MEM_DEBUG">TCL_MEM_DEBUG</A>
+<div class="copy">Copyright &copy; 1995-1996 Sun Microsystems, Inc.
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

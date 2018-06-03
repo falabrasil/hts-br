@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="tkvars.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>tkvars manual page - Tk Built-In Commands</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tk Commands, version 8.6.7</a> <small>&gt;</small> tkvars</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="tkvars.html#M2" NAME="L1700">NAME</A>
+<DL><DD>geometry, tk_library, tk_patchLevel, tk_strictMotif, tk_version &mdash; Variables used or set by Tk</DD></DL>
+<DD><A HREF="tkvars.html#M3" NAME="L1701">DESCRIPTION</A>
+<DL class="description">
+<DD><A HREF="tkvars.html#M4" NAME="L1702"><B>tk_library</B></A>
+<DD><A HREF="tkvars.html#M5" NAME="L1703"><B>tk_patchLevel</B></A>
+<DD><A HREF="tkvars.html#M6" NAME="L1704"><B>tk_strictMotif</B></A>
+<DD><A HREF="tkvars.html#M7" NAME="L1705"><B>tk_version</B></A>
+</DL>
+<DD><A HREF="tkvars.html#M8" NAME="L1706">INTERNAL AND DEBUGGING VARIABLES</A>
+<DL class="internal and debugging variables">
+<DD><A HREF="tkvars.html#M9" NAME="L1707"><B>tk::Priv</B></A>
+<DD><A HREF="tkvars.html#M10" NAME="L1708"><B>tk_textRedraw</B></A>
+<DD><A HREF="tkvars.html#M11" NAME="L1709"><B>tk_textRelayout</B></A>
+</DL>
+<DD><A HREF="tkvars.html#M12" NAME="L1710">OTHER GLOBAL VARIABLES</A>
+<DL class="other global variables">
+<DD><A HREF="tkvars.html#M13" NAME="L1711"><B>geometry</B></A>
+</DL>
+<DD><A HREF="tkvars.html#M14" NAME="L1712">SEE ALSO</A>
+<DD><A HREF="tkvars.html#M15" NAME="L1713">KEYWORDS</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+geometry, tk_library, tk_patchLevel, tk_strictMotif, tk_version &mdash; Variables used or set by Tk
+<H3><A NAME="M3">DESCRIPTION</A></H3>
+The following Tcl variables are either set or used by Tk at various times
+in its execution:
+<P>
+<DL class="description">
+<DT><A NAME="M4"><B>tk_library</B></A><DD>
+This variable holds the file name for a directory containing a library
+of Tcl scripts related to Tk.  These scripts include an initialization
+file that is normally processed whenever a Tk application starts up,
+plus other files containing procedures that implement default behaviors
+for widgets.
+<P>
+The initial value of <B><A HREF="../TclCmd/tclvars.html">tcl_library</A></B> is set when Tk is added to
+an interpreter;  this is done by searching several different directories
+until one is found that contains an appropriate Tk startup script.
+If the <B>TK_LIBRARY</B> environment variable exists, then
+the directory it names is checked first.
+If <B>TK_LIBRARY</B> is not set or does not refer to an appropriate
+directory, then Tk checks several other directories based on a
+compiled-in default location, the location of the Tcl library directory,
+the location of the binary containing the application, and the current
+working directory.
+<P>The variable can be modified by an application to switch to a different
+library.
+<P><DT><A NAME="M5"><B>tk_patchLevel</B></A><DD>
+Contains a dot-separated sequence of decimal integers giving the
+current patch level for Tk.
+The patch level is incremented for each new release or patch, and
+it uniquely identifies an official version of Tk.
+<P>
+This value is normally the same as the result of
+&#8220;<B><A HREF="../TclCmd/package.html">package require</A></B> <B>Tk</B>&#8221;.
+<P><DT><A NAME="M6"><B>tk_strictMotif</B></A><DD>
+This variable is set to zero by default.
+If an application sets it to one, then Tk attempts to adhere as
+closely as possible to Motif look-and-feel standards.
+For example, active elements such as buttons and scrollbar
+sliders will not change color when the pointer passes over them.
+Modern applications should not normally set this variable.
+<P><DT><A NAME="M7"><B>tk_version</B></A><DD>
+Tk sets this variable in the interpreter for each application.
+The variable holds the current version number of the Tk
+library in the form <I>major</I>.<I>minor</I>.  <I>Major</I> and
+<I>minor</I> are integers.  The major version number increases in
+any Tk release that includes changes that are not backward compatible
+(i.e. whenever existing Tk applications and scripts may have to change to
+work with the new release).  The minor version number increases with
+each new release of Tk, except that it resets to zero whenever the
+major version number changes.
+<P></DL>
+<H4><A NAME="M8">INTERNAL AND DEBUGGING VARIABLES</A></H4>
+These variables should not normally be set by user code.
+<P>
+<DL class="internal and debugging variables">
+<DT><A NAME="M9"><B>tk::Priv</B></A><DD>
+This variable is an array containing several pieces of information
+that are private to Tk.  The elements of <B>tk::Priv</B> are used by
+Tk library procedures and default bindings.
+They should not be accessed by any code outside Tk.
+<P><DT><A NAME="M10"><B>tk_textRedraw</B></A><DD>
+<P><DT><A NAME="M11"><B>tk_textRelayout</B></A><DD>
+These variables are set by text widgets when they have debugging
+turned on.  The values written to these variables can be used to
+test or debug text widget operations.  These variables are mostly
+used by Tk's test suite.
+<P></DL>
+<H3><A NAME="M12">OTHER GLOBAL VARIABLES</A></H3>
+The following variables are only guaranteed to exist in <B><A HREF="../UserCmd/wish.html">wish</A></B>
+executables; the Tk library does not define them itself but many Tk
+environments do.
+<P>
+<DL class="other global variables">
+<DT><A NAME="M13"><B>geometry</B></A><DD>
+If set, contains the user-supplied geometry specification to use for
+the main Tk window.
+<P></DL>
+<H3><A NAME="M14">SEE ALSO</A></H3>
+<B><A HREF="../TclCmd/package.html">package</A></B>, <B><A HREF="../TclCmd/tclvars.html">tclvars</A></B>, <B><A HREF="../UserCmd/wish.html">wish</A></B>
+<H3><A NAME="M15">KEYWORDS</A></H3>
+<A href="../Keywords/E.html#environment">environment</A>, <A href="../Keywords/T.html#text">text</A>, <A href="../Keywords/V.html#variables">variables</A>, <A href="../Keywords/V.html#version">version</A>
+<div class="copy">Copyright &copy; 1990-1994 The Regents of the University of California.
+<BR>Copyright &copy; 1994-1996 Sun Microsystems, Inc.
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

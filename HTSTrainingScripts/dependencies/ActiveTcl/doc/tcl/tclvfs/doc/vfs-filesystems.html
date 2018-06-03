@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="vfs-filesystems.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../../fonts/icon.eot');
+        src: url('../../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../../fonts/icon.woff')
+               format('woff'),
+             url('../../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../../stylesheets/as_custom.css">
+    
+    <script src="../../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org">
+<title>vfs-filesystems - Tcl-level Virtual Filesystems</title>
+<meta name='Author' content='ActiveState'>
+
+</head>
+<body>
+<div class="doctools">
+
+
+<hr>
+[ <a
+href="../toc.html">TclVFS Table Of Contents</a> | <a href=
+"../index.html">TclVFS Index</a> ]
+
+<hr>
+<h1 class="title">vfs-filesystems(n) 1.0 "Tcl-level Virtual
+Filesystems"</h1>
+
+<div id="name" class="section">
+<h2><a name="name">Name</a></h2>
+
+<p>vfs-filesystems - Filesystems provided by tclvfs</p>
+</div>
+
+<div id="toc" class="section">
+<h2><a name="toc">Table Of Contents</a></h2>
+
+<ul class="toc">
+<li class="section"><a href="vfs-filesystems.html#toc">Table Of Contents</a></li>
+
+<li class="section"><a href="vfs-filesystems.html#synopsis">Synopsis</a></li>
+
+<li class="section"><a href="vfs-filesystems.html#section1">Description</a></li>
+
+<li class="section"><a href="vfs-filesystems.html#section2">SUPPORTED VFS
+TYPES</a></li>
+
+<li class="section"><a href="vfs-filesystems.html#section3">LIMITATIONS</a></li>
+
+<li class="section"><a href="vfs-filesystems.html#see-also">See Also</a></li>
+
+<li class="section"><a href="vfs-filesystems.html#keywords">Keywords</a></li>
+
+<li class="section"><a href="vfs-filesystems.html#copyright">Copyright</a></li>
+</ul>
+</div>
+
+<div id="synopsis" class="section">
+<h2><a name="synopsis">Synopsis</a></h2>
+
+<div class="synopsis">
+<ul class="requirements">
+<li>package require <b class="pkgname">Tcl 8.4</b></li>
+
+<li>package require <b class="pkgname">vfs <span class=
+"opt">?1.2.1?</span></b></li>
+
+<li>package require <b class="pkgname">vfs::zip <span class=
+"opt">?1.0?</span></b></li>
+
+<li>package require <b class="pkgname">vfs::mk4 <span class=
+"opt">?1.6?</span></b></li>
+
+<li>package require <b class="pkgname">vfs::tar <span class=
+"opt">?0.9?</span></b></li>
+
+<li>package require <b class="pkgname">vfs::ftp <span class=
+"opt">?1.0?</span></b></li>
+
+<li>package require <b class="pkgname">vfs::ns <span class=
+"opt">?1.0?</span></b></li>
+
+<li>package require <b class="pkgname">vfs::webdav <span class=
+"opt">?0.1?</span></b></li>
+
+<li>package require <b class="pkgname">vfs::http <span class=
+"opt">?0.5?</span></b></li>
+
+<li>package require <b class="pkgname">vfs::urltype <span class=
+"opt">?1.0?</span></b></li>
+</ul>
+
+<ul class="syntax">
+<li><a href="vfs-filesystems.html#1"><b class="cmd">vfs::zip::Mount</b> <i class=
+"arg">path</i> <i class="arg">to</i></a></li>
+
+<li><a href="vfs-filesystems.html#2"><b class="cmd">vfs::mk4::Mount</b> <i class=
+"arg">path</i> <i class="arg">to</i></a></li>
+
+<li><a href="vfs-filesystems.html#3"><b class="cmd">vfs::tar::Mount</b> <i class=
+"arg">path</i> <i class="arg">to</i></a></li>
+
+<li><a href="vfs-filesystems.html#4"><b class="cmd">vfs::ftp::Mount</b> <i class=
+"arg">path</i> <i class="arg">to</i></a></li>
+
+<li><a href="vfs-filesystems.html#5"><b class="cmd">vfs::ns::Mount</b> <i class=
+"arg">path</i> <i class="arg">to</i></a></li>
+
+<li><a href="vfs-filesystems.html#6"><b class="cmd">vfs::webdav::Mount</b> <i class=
+"arg">path</i> <i class="arg">to</i></a></li>
+
+<li><a href="vfs-filesystems.html#7"><b class="cmd">vfs::http::Mount</b> <i class=
+"arg">path</i> <i class="arg">to</i></a></li>
+
+<li><a href="vfs-filesystems.html#8"><b class="cmd">vfs::urltype::Mount</b> <i class=
+"arg">path</i> <i class="arg">to</i></a></li>
+</ul>
+</div>
+</div>
+
+<div id="section1" class="section">
+<h2><a name="section1">Description</a></h2>
+
+<p>The package <b class="package"><a href="vfs.html">vfs</a></b>
+provides not only the means to implement a virtual filesystem at
+the tcl level, but also a number of ready to be used filesystems as
+well.</p>
+
+<p>Each of these filesystem exists as its own package, and can be
+accessed through <b class="cmd">package require vfs::NAME</b>. The
+whole set of these virtual filesystems is known informally as '<i
+class="term"><a href="../index.html#key8">vfslib</a></i>'.</p>
+</div>
+
+<div id="section2" class="section">
+<h2><a name="section2">SUPPORTED VFS TYPES</a></h2>
+
+<p>Currently supported are ftp, tar, http, zip, mk4, ns, and
+webdav. In addition there is the ability to mount any 'urltype' as
+a new directory, provided an appropriate vfs is supported. This
+means that you can treat urls based on the schemes <em>ftp://</em>,
+<em>http://</em> and <em>file://</em> as files. To do this, simply
+evaluate the command <b class="cmd">vfs::urltype::Mount ftp</b> for
+example. Any access inside the new volume will result in an attempt
+to require a package through <b class="cmd">package require
+vfs::${type}</b>, which must therefore exist, or errors will be
+thrown. If a filesystem is loaded, use the associated command
+listed below to mount a source for that filesystem as a tcl
+directory.</p>
+
+<dl class="definitions">
+<dt><a name="1"><b class="cmd">vfs::zip::Mount</b> <i class=
+"arg">path</i> <i class="arg">to</i></a></dt>
+
+<dd>
+<p>Mount the zip file <i class="arg">path</i> as directory <i
+class="arg">to</i>.</p>
+</dd>
+
+<dt><a name="2"><b class="cmd">vfs::mk4::Mount</b> <i class=
+"arg">path</i> <i class="arg">to</i></a></dt>
+
+<dd>
+<p>Mount the metakit database file file <i class="arg">path</i> as
+directory <i class="arg">to</i>.</p>
+</dd>
+
+<dt><a name="3"><b class="cmd">vfs::tar::Mount</b> <i class=
+"arg">path</i> <i class="arg">to</i></a></dt>
+
+<dd>
+<p>Mount the tar file <i class="arg">path</i> as directory <i
+class="arg">to</i>.</p>
+</dd>
+
+<dt><a name="4"><b class="cmd">vfs::ftp::Mount</b> <i class=
+"arg">path</i> <i class="arg">to</i></a></dt>
+
+<dd>
+<p>Mount the ftp url <i class="arg">path</i> as directory <i class=
+"arg">to</i>.</p>
+</dd>
+
+<dt><a name="5"><b class="cmd">vfs::ns::Mount</b> <i class=
+"arg">path</i> <i class="arg">to</i></a></dt>
+
+<dd>
+<p>Mount the tcl namespace <i class="arg">path</i> as directory <i
+class="arg">to</i>.</p>
+</dd>
+
+<dt><a name="6"><b class="cmd">vfs::webdav::Mount</b> <i class=
+"arg">path</i> <i class="arg">to</i></a></dt>
+
+<dd>
+<p>Mount the webdav url <i class="arg">path</i> as directory <i
+class="arg">to</i>.</p>
+</dd>
+
+<dt><a name="7"><b class="cmd">vfs::http::Mount</b> <i class=
+"arg">path</i> <i class="arg">to</i></a></dt>
+
+<dd>
+<p>Mount the http url <i class="arg">path</i> as directory <i
+class="arg">to</i>.</p>
+</dd>
+
+<dt><a name="8"><b class="cmd">vfs::urltype::Mount</b> <i class=
+"arg">path</i> <i class="arg">to</i></a></dt>
+
+<dd>
+<p>Mount the url <i class="arg">path</i>, of type <i class=
+"arg">urltype</i> as directory <i class="arg">to</i>.</p>
+</dd>
+</dl>
+</div>
+
+<div id="section3" class="section">
+<h2><a name="section3">LIMITATIONS</a></h2>
+
+<p>Most of the vfs types listed above have not been very well
+debugged as yet. Please test them!</p>
+</div>
+
+<div id="see-also" class="section">
+<h2><a name="see-also">See Also</a></h2>
+
+<p><a href="vfs.html">vfs</a>, <a href=
+"vfs-fsapi.html">vfs-fsapi</a></p>
+</div>
+
+<div id="keywords" class="section">
+<h2><a name="keywords">Keywords</a></h2>
+
+<p><a href="../index.html#key0">file</a>, <a href=
+"../index.html#key1">filesystem</a>, <a href=
+"../index.html#key2">ftp</a>, <a href=
+"../index.html#key3">http</a>, <a href=
+"../index.html#key4">metakit</a>, <a href=
+"../index.html#key5">namespace</a>, <a href=
+"../index.html#key6">tar</a>, <a href="../index.html#key7">vfs</a>,
+<a href="../index.html#key8">vfslib</a>, <a href=
+"../index.html#key9">webdav</a>, <a href=
+"../index.html#key10">zip</a></p>
+</div>
+
+<div id="copyright" class="section">
+<h2><a name="copyright">Copyright</a></h2>
+
+<p>Copyright &copy; 2001-2003 Vince Darley
+&lt;vincentdarley@users.sourceforge.net&gt;<br>
+Copyright &copy; 2003 Andreas Kupries
+&lt;andreas_kupries@users.sourceforge.net&gt;</p>
+</div>
+
+<h4>Copyright &copy; 2015 <a href="http://www.activestate.com">for
+compilation: ActiveState</a></h4>
+</div>
+<script data-no-instant>document.write('<script src="../../../livereload.js?port=1313&amp;mindelay=10"></' + 'script>')</script></body>
+</html>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

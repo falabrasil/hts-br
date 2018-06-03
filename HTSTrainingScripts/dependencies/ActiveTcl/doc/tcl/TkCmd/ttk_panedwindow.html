@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="ttk_panedwindow.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>ttk::panedwindow manual page - Tk Themed Widget</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tk Commands, version 8.6.7</a> <small>&gt;</small> ttk_panedwindow</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="ttk_panedwindow.html#M2" NAME="L1963">NAME</A>
+<DL><DD>ttk::panedwindow &mdash; Multi-pane container window</DD></DL>
+<DD><A HREF="ttk_panedwindow.html#M3" NAME="L1964">SYNOPSIS</A>
+<DL>
+</DL>
+<DD><A HREF="ttk_panedwindow.html#M4" NAME="L1965">DESCRIPTION</A>
+<DD><A HREF="ttk_panedwindow.html#M5" NAME="L1966">STANDARD OPTIONS</A>
+<DL>
+<DD><A HREF="ttk_widget.html#M-class">-class, undefined, undefined</A>
+<DD><A HREF="ttk_widget.html#M-cursor">-cursor, cursor, Cursor</A>
+<DD><A HREF="ttk_widget.html#M-style">-style, style, Style</A>
+<DD><A HREF="ttk_widget.html#M-takefocus">-takefocus, takeFocus, TakeFocus</A>
+</DL>
+<DD><A HREF="ttk_panedwindow.html#M6" NAME="L1967">WIDGET-SPECIFIC OPTIONS</A>
+<DL>
+<DD><A HREF="ttk_panedwindow.html#M7" NAME="L1968">-orient, orient, Orient</A>
+<DD><A HREF="ttk_panedwindow.html#M8" NAME="L1969">-width, width, Width</A>
+<DD><A HREF="ttk_panedwindow.html#M9" NAME="L1970">-height, height, Height</A>
+</DL>
+<DD><A HREF="ttk_panedwindow.html#M10" NAME="L1971">PANE OPTIONS</A>
+<DL>
+<DD><A HREF="ttk_panedwindow.html#M11" NAME="L1972">-weight, weight, Weight</A>
+</DL>
+<DD><A HREF="ttk_panedwindow.html#M12" NAME="L1973">WIDGET COMMAND</A>
+<DL class="widget command">
+<DD><A HREF="ttk_panedwindow.html#M13" NAME="L1974"><I>pathname </I><B>add </B><I>subwindow options...</I></A>
+<DD><A HREF="ttk_panedwindow.html#M14" NAME="L1975"><I>pathname </I><B>forget </B><I>pane</I></A>
+<DD><A HREF="ttk_panedwindow.html#M15" NAME="L1976"><I>pathname </I><B>identify </B><I>component x y</I></A>
+<DL class="widget command">
+<DD><A HREF="ttk_panedwindow.html#M16" NAME="L1977"><I>pathname </I><B>identify element </B><I>x y</I></A>
+<DD><A HREF="ttk_panedwindow.html#M17" NAME="L1978"><I>pathname </I><B>identify sash </B><I>x y</I></A>
+</DL>
+<DD><A HREF="ttk_panedwindow.html#M18" NAME="L1979"><I>pathname </I><B>insert </B><I>pos subwindow options...</I></A>
+<DD><A HREF="ttk_panedwindow.html#M19" NAME="L1980"><I>pathname </I><B>pane </B><I>pane -option </I>?<I>value </I>?<I>-option value...</I></A>
+<DD><A HREF="ttk_panedwindow.html#M20" NAME="L1981"><I>pathname </I><B>panes</B></A>
+<DD><A HREF="ttk_panedwindow.html#M21" NAME="L1982"><I>pathname </I><B>sashpos </B><I>index</I> ?<I>newpos</I>?</A>
+</DL>
+<DD><A HREF="ttk_panedwindow.html#M22" NAME="L1983">VIRTUAL EVENTS</A>
+<DD><A HREF="ttk_panedwindow.html#M23" NAME="L1984">SEE ALSO</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+ttk::panedwindow &mdash; Multi-pane container window
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+<B>ttk::panedwindow</B> <I>pathname </I>?<I>options</I>?<BR>
+<I>pathname </I><B>add</B> <I>window</I> ?<I>options...</I>?<BR>
+<I>pathname </I><B>insert</B> <I>index</I> <I>window</I> ?<I>options...</I>?<BR>
+<H3><A NAME="M4">DESCRIPTION</A></H3>
+A <B>ttk::panedwindow</B> widget displays a number of subwindows,
+stacked either vertically or horizontally.
+The user may adjust the relative sizes of the subwindows
+by dragging the sash between panes.
+<H3><A NAME="M5">STANDARD OPTIONS</A></H3>
+<DL>
+<DT><B><A HREF="ttk_widget.html#M-class">-class, undefined, undefined</A></B>
+<DT><B><A HREF="ttk_widget.html#M-cursor">-cursor, cursor, Cursor</A></B>
+<DT><B><A HREF="ttk_widget.html#M-style">-style, style, Style</A></B>
+<DT><B><A HREF="ttk_widget.html#M-takefocus">-takefocus, takeFocus, TakeFocus</A></B>
+</DL>
+<H3><A NAME="M6">WIDGET-SPECIFIC OPTIONS</A></H3>
+<DL>
+<DT>Command-Line Name: <B><A NAME="M7">-orient</A></B>
+<DT>Database Name: <B>orient</B>
+<DT>Database Class: <B>Orient</B>
+<DD>Specifies the orientation of the window.
+If <B>vertical</B>, subpanes are stacked top-to-bottom;
+if <B>horizontal</B>, subpanes are stacked left-to-right.
+<P><DT>Command-Line Name: <B><A NAME="M8">-width</A></B>
+<DT>Database Name: <B>width</B>
+<DT>Database Class: <B>Width</B>
+<DD>If present and greater than zero,
+specifies the desired width of the widget in pixels.
+Otherwise, the requested width is determined by the width
+of the managed windows.
+<P><DT>Command-Line Name: <B><A NAME="M9">-height</A></B>
+<DT>Database Name: <B>height</B>
+<DT>Database Class: <B>Height</B>
+<DD>If present and greater than zero,
+specifies the desired height of the widget in pixels.
+Otherwise, the requested height is determined by the height
+of the managed windows.
+</DL>
+<H3><A NAME="M10">PANE OPTIONS</A></H3>
+The following options may be specified for each pane:
+<DL>
+<DT>Command-Line Name: <B><A NAME="M11">-weight</A></B>
+<DT>Database Name: <B>weight</B>
+<DT>Database Class: <B>Weight</B>
+<DD>An integer specifying the relative stretchability of the pane.
+When the paned window is resized, the extra space is added
+or subtracted to each pane proportionally to its <B>-weight</B>.
+</DL>
+<H3><A NAME="M12">WIDGET COMMAND</A></H3>
+Supports the standard <B>configure</B>, <B>cget</B>, <B>state</B>,
+and <B>instate</B> commands; see <I>ttk::widget(n)</I> for details.
+Additional commands:
+<P>
+<DL class="widget command">
+<DT><A NAME="M13"><I>pathname </I><B>add </B><I>subwindow options...</I></A><DD>
+Adds a new pane to the window.
+See <B><A HREF="ttk_panedwindow.html#M10">PANE OPTIONS</A></B> for the list of available options.
+<P><DT><A NAME="M14"><I>pathname </I><B>forget </B><I>pane</I></A><DD>
+Removes the specified subpane from the widget.
+<I>pane</I> is either an integer index or the name of a managed subwindow.
+<P><DT><A NAME="M15"><I>pathname </I><B>identify </B><I>component x y</I></A><DD>
+Returns the name of the element under the point given by <I>x</I> and <I>y</I>,
+or the empty string if no component is present at that location.
+If <I>component</I> is omitted, it defaults to <B>sash</B>.
+The following subcommands are supported:
+<P>
+<DL class="widget command">
+<DT><A NAME="M16"><I>pathname </I><B>identify element </B><I>x y</I></A><DD>
+Returns the name of the element at the specified location.
+<P><DT><A NAME="M17"><I>pathname </I><B>identify sash </B><I>x y</I></A><DD>
+Returns the index of the sash at the specified location.
+<P></DL>
+<P><DT><A NAME="M18"><I>pathname </I><B>insert </B><I>pos subwindow options...</I></A><DD>
+Inserts a pane at the specified position.
+<I>pos</I> is either the string <B>end</B>, an integer index,
+or the name of a managed subwindow.
+If <I>subwindow</I> is already managed by the paned window,
+moves it to the specified position.
+See <B><A HREF="ttk_panedwindow.html#M10">PANE OPTIONS</A></B> for the list of available options.
+<P><DT><A NAME="M19"><I>pathname </I><B>pane </B><I>pane -option </I>?<I>value </I>?<I>-option value...</I></A><DD>
+Query or modify the options of the specified <I>pane</I>,
+where <I>pane</I> is either an integer index or the name of a managed subwindow.
+If no <I>-option</I> is specified, returns a dictionary of the pane
+option values.
+If one <I>-option</I> is specified, returns the value of that <I>option</I>.
+Otherwise, sets the <I>-option</I>s to the corresponding <I>value</I>s.
+<P><DT><A NAME="M20"><I>pathname </I><B>panes</B></A><DD>
+Returns the list of all windows managed by the widget, in the index order of
+their associated panes.
+<P><DT><A NAME="M21"><I>pathname </I><B>sashpos </B><I>index</I> ?<I>newpos</I>?</A><DD>
+If <I>newpos</I> is specified, sets the position
+of sash number <I>index</I>.
+May adjust the positions of adjacent sashes
+to ensure that positions are monotonically increasing.
+Sash positions are further constrained to be between 0
+and the total size of the widget.
+Returns the new position of sash number <I>index</I>.
+<P></DL>
+<H3><A NAME="M22">VIRTUAL EVENTS</A></H3>
+The panedwindow widget generates an <B>&lt;&lt;EnteredChild&gt;&gt;</B> virtual event on
+LeaveNotify/NotifyInferior events, because Tk does not execute binding scripts
+for &lt;Leave&gt; events when the pointer crosses from a parent to a child. The
+panedwindow widget needs to know when that happens.
+<H3><A NAME="M23">SEE ALSO</A></H3>
+<B><A HREF="ttk_widget.html">ttk::widget</A></B>, <B><A HREF="ttk_notebook.html">ttk::notebook</A></B>, <B><A HREF="panedwindow.html">panedwindow</A></B>
+<div class="copy">Copyright &copy; 2005 Joe English
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

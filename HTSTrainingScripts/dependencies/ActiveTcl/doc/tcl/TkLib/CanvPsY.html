@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="CanvPsY.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>Tk_CanvasPs manual page - Tk Library Procedures</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tk C API, version 8.6.7</a> <small>&gt;</small> CanvPsY</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="../TkCmd/contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="CanvPsY.html#M2" NAME="L21">NAME</A>
+<DL><DD>Tk_CanvasPsY, Tk_CanvasPsBitmap, Tk_CanvasPsColor, Tk_CanvasPsFont, Tk_CanvasPsPath, Tk_CanvasPsStipple &mdash; utility procedures for generating Postscript for canvases</DD></DL>
+<DD><A HREF="CanvPsY.html#M3" NAME="L22">SYNOPSIS</A>
+<DL>
+<DD><B>#include &lt;tk.h&gt;</B>
+<DD>double
+<DD><B>Tk_CanvasPsY</B>(<I>canvas, canvasY</I>)
+<DD>int
+<DD><B>Tk_CanvasPsBitmap</B>(<I>interp, canvas, bitmap, x, y, width, height</I>)
+<DD>int
+<DD><B>Tk_CanvasPsColor</B>(<I>interp, canvas, colorPtr</I>)
+<DD>int
+<DD><B>Tk_CanvasPsFont</B>(<I>interp, canvas, tkFont</I>)
+<DD><B>Tk_CanvasPsPath</B>(<I>interp, canvas, coordPtr, numPoints</I>)
+<DD>int
+<DD><B>Tk_CanvasPsStipple</B>(<I>interp, canvas, bitmap</I>)
+</DL>
+<DD><A HREF="CanvPsY.html#M4" NAME="L23">ARGUMENTS</A>
+<DL class="arguments">
+</DL>
+<DD><A HREF="CanvPsY.html#M5" NAME="L24">DESCRIPTION</A>
+<DD><A HREF="CanvPsY.html#M6" NAME="L25">KEYWORDS</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+Tk_CanvasPsY, Tk_CanvasPsBitmap, Tk_CanvasPsColor, Tk_CanvasPsFont, Tk_CanvasPsPath, Tk_CanvasPsStipple &mdash; utility procedures for generating Postscript for canvases
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+<B>#include &lt;tk.h&gt;</B><BR>
+double<BR>
+<B>Tk_CanvasPsY</B>(<I>canvas, canvasY</I>)<BR>
+int<BR>
+<B>Tk_CanvasPsBitmap</B>(<I>interp, canvas, bitmap, x, y, width, height</I>)<BR>
+int<BR>
+<B>Tk_CanvasPsColor</B>(<I>interp, canvas, colorPtr</I>)<BR>
+int<BR>
+<B>Tk_CanvasPsFont</B>(<I>interp, canvas, tkFont</I>)<BR>
+<B>Tk_CanvasPsPath</B>(<I>interp, canvas, coordPtr, numPoints</I>)<BR>
+int<BR>
+<B>Tk_CanvasPsStipple</B>(<I>interp, canvas, bitmap</I>)<BR>
+<H3><A NAME="M4">ARGUMENTS</A></H3>
+<DL class="arguments">
+<DT>Tk_Canvas <B><A HREF="../TkCmd/canvas.html">canvas</A></B> (in)<DD>
+A token that identifies a canvas widget for which Postscript is
+being generated.
+<P><DT>double <B>canvasY</B> (in)<DD>
+Y-coordinate in the space of the canvas.
+<P><DT><A HREF="../TclLib/Interp.html">Tcl_Interp</A> <B>*interp</B> (in/out)<DD>
+A Tcl interpreter;  Postscript is appended to its result, or the
+result may be replaced with an error message.
+<P><DT>Pixmap <B><A HREF="../TkCmd/bitmap.html">bitmap</A></B> (in)<DD>
+Bitmap to use for generating Postscript.
+<P><DT>int <B>x</B> (in)<DD>
+X-coordinate within <I>bitmap</I> of left edge of region to output.
+<P><DT>int <B>y</B> (in)<DD>
+Y-coordinate within <I>bitmap</I> of top edge of region to output.
+<P><DT>int <B>width</B> (in)<DD>
+Width of region of bitmap to output, in pixels.
+<P><DT>int <B>height</B> (in)<DD>
+Height of region of bitmap to output, in pixels.
+<P><DT>XColor <B>*colorPtr</B> (in)<DD>
+Information about color value to set in Postscript.
+<P><DT><A HREF="GetFont.html">Tk_Font</A> <B>tkFont</B> (in)<DD>
+Font for which Postscript is to be generated.
+<P><DT>double <B>*coordPtr</B> (in)<DD>
+Pointer to an array of coordinates for one or more
+points specified in canvas coordinates.
+The order of values in <I>coordPtr</I> is x1, y1, x2, y2, x3, y3,
+and so on.
+<P><DT>int <B>numPoints</B> (in)<DD>
+Number of points at <I>coordPtr</I>.
+<P></DL>
+<H3><A NAME="M5">DESCRIPTION</A></H3>
+These procedures are called by canvas type managers to carry out
+common functions related to generating Postscript.
+Most of the procedures take a <I>canvas</I> argument, which
+refers to a canvas widget for which Postscript is being
+generated.
+<P>
+<B>Tk_CanvasPsY</B> takes as argument a y-coordinate in the space of
+a canvas and returns the value that should be used for that point
+in the Postscript currently being generated for <I>canvas</I>.
+Y coordinates require transformation because Postscript uses an
+origin at the lower-left corner whereas X uses an origin at the
+upper-left corner.
+Canvas x coordinates can be used directly in Postscript without
+transformation.
+<P>
+<B>Tk_CanvasPsBitmap</B> generates Postscript to describe a region
+of a bitmap.
+The Postscript is generated in proper image data format for Postscript,
+i.e., as data between angle brackets, one bit per pixel.
+The Postscript is appended to the result of interpreter <I>interp</I>
+and <B><A HREF="../TclCmd/catch.html">TCL_OK</A></B> is returned unless an error occurs, in which case
+<B><A HREF="../TclCmd/catch.html">TCL_ERROR</A></B> is returned and the interpreter result is overwritten
+with an error message.
+<P>
+<B>Tk_CanvasPsColor</B> generates Postscript to set the current color
+to correspond to its <I>colorPtr</I> argument, taking into account any
+color map specified in the <B>postscript</B> command.
+It appends the Postscript to the interpreter <I>interp</I>'s result and returns
+<B><A HREF="../TclCmd/catch.html">TCL_OK</A></B> unless an error occurs, in which case <B><A HREF="../TclCmd/catch.html">TCL_ERROR</A></B> is
+returned and the interpreter's result is overwritten with an error message.
+<P>
+<B>Tk_CanvasPsFont</B> generates Postscript that sets the current font
+to match <I>tkFont</I> as closely as possible.
+<B>Tk_CanvasPsFont</B> takes into account any font map specified
+in the <B>postscript</B> command, and it does
+the best it can at mapping X fonts to Postscript fonts.
+It appends the Postscript to interpreter <I>interp</I>'s result and
+returns <B><A HREF="../TclCmd/catch.html">TCL_OK</A></B> unless an error occurs, in which case
+<B><A HREF="../TclCmd/catch.html">TCL_ERROR</A></B> is returned and the interpreter's result is
+overwritten with an error message.
+<P>
+<B>Tk_CanvasPsPath</B> generates Postscript to set the current path
+to the set of points given by <I>coordPtr</I> and <I>numPoints</I>.
+It appends the resulting Postscript to the result of interpreter <I>interp</I>.
+<P>
+<B>Tk_CanvasPsStipple</B> generates Postscript that will fill the
+current path in stippled fashion.
+It uses <I>bitmap</I> as the stipple pattern and the current Postscript
+color;  ones in the stipple bitmap are drawn in the current color, and
+zeroes are not drawn at all.
+The Postscript is appended to interpreter <I>interp</I>'s result and
+<B><A HREF="../TclCmd/catch.html">TCL_OK</A></B> is returned, unless an error occurs, in which case
+<B><A HREF="../TclCmd/catch.html">TCL_ERROR</A></B> is returned and the interpreter's result is
+overwritten with an error message.
+<H3><A NAME="M6">KEYWORDS</A></H3>
+<A href="../Keywords/B.html#bitmap">bitmap</A>, <A href="../Keywords/C.html#canvas">canvas</A>, <A href="../Keywords/C.html#color">color</A>, <A href="../Keywords/F.html#font">font</A>, <A href="../Keywords/P.html#path">path</A>, <A href="../Keywords/P.html#Postscript">Postscript</A>, <A href="../Keywords/S.html#stipple">stipple</A>
+<div class="copy">Copyright &copy; 1994-1996 Sun Microsystems, Inc.
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

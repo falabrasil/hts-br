@@ -1,0 +1,10 @@
+* For Compile demo
+
+ javac -cp ".:UFPAT2S.jar" Demo.java
+
+* For Execute
+
+ java -cp ".:UFPAT2S.jar" Demo
+
+
+

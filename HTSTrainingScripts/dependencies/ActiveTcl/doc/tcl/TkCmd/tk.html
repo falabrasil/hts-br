@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="tk.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>tk manual page - Tk Built-In Commands</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tk Commands, version 8.6.7</a> <small>&gt;</small> tk</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="tk.html#M2" NAME="L1654">NAME</A>
+<DL><DD>tk &mdash; Manipulate Tk internal state</DD></DL>
+<DD><A HREF="tk.html#M3" NAME="L1655">SYNOPSIS</A>
+<DL>
+</DL>
+<DD><A HREF="tk.html#M4" NAME="L1656">DESCRIPTION</A>
+<DL class="description">
+<DD><A HREF="tk.html#M5" NAME="L1657"><B>tk appname </B>?<I>newName</I>?</A>
+<DD><A HREF="tk.html#M6" NAME="L1658"><B>tk busy </B><I>subcommand</I> ...</A>
+<DD><A HREF="tk.html#M7" NAME="L1659"><B>tk caret </B><I>window </I>?<B>-x </B><I>x</I>? ?<B>-y </B><I>y</I>? ?<B>-height </B><I>height</I>?</A>
+<DD><A HREF="tk.html#M8" NAME="L1660"><B>tk inactive </B>?<B>-displayof </B><I>window</I>? ?<B>reset</B>?</A>
+<DD><A HREF="tk.html#M9" NAME="L1661"><B>tk fontchooser </B><I>subcommand</I> ...</A>
+<DD><A HREF="tk.html#M10" NAME="L1662"><B>tk scaling </B>?<B>-displayof </B><I>window</I>? ?<I>number</I>?</A>
+<DD><A HREF="tk.html#M11" NAME="L1663"><B>tk useinputmethods </B>?<B>-displayof </B><I>window</I>? ?<I>boolean</I>?</A>
+<DD><A HREF="tk.html#M12" NAME="L1664"><B>tk windowingsystem</B></A>
+</DL>
+<DD><A HREF="tk.html#M13" NAME="L1665">SEE ALSO</A>
+<DD><A HREF="tk.html#M14" NAME="L1666">KEYWORDS</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+tk &mdash; Manipulate Tk internal state
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+<B>tk</B> <I>option </I>?<I>arg arg ...</I>?<BR>
+<H3><A NAME="M4">DESCRIPTION</A></H3>
+The <B>tk</B> command provides access to miscellaneous
+elements of Tk's internal state.
+Most of the information manipulated by this command pertains to the
+application as a whole, or to a screen or display, rather than to a
+particular window.
+The command can take any of a number of different forms
+depending on the <I>option</I> argument.  The legal forms are:
+<P>
+<DL class="description">
+<DT><A NAME="M5"><B>tk appname </B>?<I>newName</I>?</A><DD>
+If <I>newName</I> is not specified, this command returns the name
+of the application (the name that may be used in <B><A HREF="send.html">send</A></B>
+commands to communicate with the application).
+If <I>newName</I> is specified, then the name of the application
+is changed to <I>newName</I>.
+If the given name is already in use, then a suffix of the form
+&#8220;<B> #2</B>&#8221;
+or
+&#8220;<B> #3</B>&#8221;
+is appended in order to make the name unique.
+The command's result is the name actually chosen.
+<I>newName</I> should not start with a capital letter.
+This will interfere with option processing, since names starting with
+capitals are assumed to be classes;  as a result, Tk may not
+be able to find some options for the application.
+If sends have been disabled by deleting the <B><A HREF="send.html">send</A></B> command,
+this command will reenable them and recreate the <B><A HREF="send.html">send</A></B>
+command.
+<P><DT><A NAME="M6"><B>tk busy </B><I>subcommand</I> ...</A><DD>
+This command controls the marking of window hierarchies as
+&#8220;busy&#8221;,
+rendering them non-interactive while some other operation is proceeding. For
+more details see the <B><A HREF="busy.html">busy</A></B> manual page.
+<P><DT><A NAME="M7"><B>tk caret </B><I>window </I>?<B>-x </B><I>x</I>? ?<B>-y </B><I>y</I>? ?<B>-height </B><I>height</I>?</A><DD>
+Sets and queries the caret location for the display of the specified
+Tk window <I>window</I>.  The caret is the per-display cursor location
+used for indicating global focus (e.g. to comply with Microsoft
+Accessibility guidelines), as well as for location of the over-the-spot
+XIM (X Input Methods) or Windows IME windows.  If no options are specified,
+the last values used for setting the caret are return in option-value pair
+format.  <B>-x</B> and <B>-y</B> represent window-relative coordinates, and
+<B>-height</B> is the height of the current cursor location, or the height
+of the specified <I>window</I> if none is given.
+<P><DT><A NAME="M8"><B>tk inactive </B>?<B>-displayof </B><I>window</I>? ?<B>reset</B>?</A><DD>
+Returns a positive integer, the number of milliseconds since the last
+time the user interacted with the system. If the <B>-displayof</B>
+option is given then the return value refers to the display of
+<I>window</I>; otherwise it refers to the display of the application's
+main window.
+<P>
+<B>tk inactive</B> will return -1, if querying the user inactive time
+is not supported by the system, and in safe interpreters.
+<P>If the literal string <B>reset</B> is given as an additional argument,
+the timer is reset and an empty string is returned. Resetting the
+inactivity time is forbidden in safe interpreters and will throw an
+error if tried.
+<P><DT><A NAME="M9"><B>tk fontchooser </B><I>subcommand</I> ...</A><DD>
+Controls the Tk font selection dialog. For more details see the
+<B><A HREF="fontchooser.html">fontchooser</A></B> manual page.
+<P><DT><A NAME="M10"><B>tk scaling </B>?<B>-displayof </B><I>window</I>? ?<I>number</I>?</A><DD>
+Sets and queries the current scaling factor used by Tk to convert between
+physical units (for example, points, inches, or millimeters) and pixels.  The
+<I>number</I> argument is a floating point number that specifies the number of
+pixels per point on <I>window</I>'s display.  If the <I>window</I> argument is
+omitted, it defaults to the main window.  If the <I>number</I> argument is
+omitted, the current value of the scaling factor is returned.
+<P>
+A
+&#8220;point&#8221;
+is a unit of measurement equal to 1/72 inch.  A scaling factor
+of 1.0 corresponds to 1 pixel per point, which is equivalent to a standard
+72 dpi monitor.  A scaling factor of 1.25 would mean 1.25 pixels per point,
+which is the setting for a 90 dpi monitor; setting the scaling factor to
+1.25 on a 72 dpi monitor would cause everything in the application to be
+displayed 1.25 times as large as normal.  The initial value for the scaling
+factor is set when the application starts, based on properties of the
+installed monitor, but it can be changed at any time.  Measurements made
+after the scaling factor is changed will use the new scaling factor, but it
+is undefined whether existing widgets will resize themselves dynamically to
+accommodate the new scaling factor.
+<P><DT><A NAME="M11"><B>tk useinputmethods </B>?<B>-displayof </B><I>window</I>? ?<I>boolean</I>?</A><DD>
+Sets and queries the state of whether Tk should use XIM (X Input Methods)
+for filtering events.  The resulting state is returned.  XIM is used in
+some locales (i.e., Japanese, Korean), to handle special input devices. This
+feature is only significant on X.  If XIM support is not available, this
+will always return 0.  If the <I>window</I> argument is omitted, it defaults
+to the main window.  If the <I>boolean</I> argument is omitted, the current
+state is returned.  This is turned on by default for the main display.
+<P><DT><A NAME="M12"><B>tk windowingsystem</B></A><DD>
+Returns the current Tk windowing system, one of
+<B>x11</B> (X11-based), <B>win32</B> (MS Windows),
+or <B>aqua</B> (Mac OS X Aqua).
+<P></DL>
+<H3><A NAME="M13">SEE ALSO</A></H3>
+<B><A HREF="busy.html">busy</A></B>, <B><A HREF="fontchooser.html">fontchooser</A></B>, <B><A HREF="send.html">send</A></B>, <B><A HREF="winfo.html">winfo</A></B>
+<H3><A NAME="M14">KEYWORDS</A></H3>
+<A href="../Keywords/A.html#application name">application name</A>, <A href="../Keywords/S.html#send">send</A>
+<div class="copy">Copyright &copy; 1992 The Regents of the University of California.
+<BR>Copyright &copy; 1994-1996 Sun Microsystems, Inc.
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

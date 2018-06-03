@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="ensemble.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>ensemble manual page - [incr Tcl]</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">[incr Tcl] Package Commands, version 4.1.0</a> <small>&gt;</small> ensemble</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="../TkCmd/contents.html">Tk Commands</A> | <A HREF="contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<H3><A NAME="M2">NAME</A></H3>
+itcl::ensemble &mdash; create or modify a composite command
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+<B>itcl::ensemble </B><I>ensName</I> ?<I>command arg arg...</I>?<BR>
+or<BR>
+<B>ensemble </B><I>ensName</I> {<BR>
+<TT>&nbsp;&nbsp;&nbsp;&nbsp;</TT><B>part </B><I>partName args body</I><BR>
+<TT>&nbsp;&nbsp;&nbsp;&nbsp;</TT><I>...</I><BR>
+<TT>&nbsp;&nbsp;&nbsp;&nbsp;</TT><B>ensemble </B><I>partName</I> {<BR>
+<TT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TT><B>part </B><I>subPartName args body</I><BR>
+<TT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TT><B>part </B><I>subPartName args body</I><BR>
+<TT>&nbsp;&nbsp;&nbsp;&nbsp;</TT><I>...</I><BR>
+<TT>&nbsp;&nbsp;&nbsp;&nbsp;</TT>}<BR>
+}<BR>
+<H3><A NAME="M4">DESCRIPTION</A></H3>
+The <B>ensemble</B> command is used to create or modify a composite
+command.  See the section <B><A HREF="ensemble.html#M5">WHAT IS AN ENSEMBLE?</A></B> below for a
+brief overview of ensembles.
+<P>
+If the <B>ensemble</B> command finds an existing ensemble called
+<I>ensName</I>, it updates that ensemble.  Otherwise, it creates an
+ensemble called <I>ensName</I>.  If the <I>ensName</I> is a simple name
+like &quot;foo&quot;, then an ensemble command named &quot;foo&quot; is added to the
+current namespace context.  If a command named &quot;foo&quot; already exists
+in that context, then it is deleted.  If the <I>ensName</I> contains
+namespace qualifiers like &quot;a::b::foo&quot;, then the namespace path is
+resolved, and the ensemble command is added that namespace context.
+Parent namespaces like &quot;a&quot; and &quot;b&quot; are created automatically, as needed.
+<P>
+If the <I>ensName</I> contains spaces like &quot;a::b::foo bar baz&quot;, then
+additional words like &quot;bar&quot; and &quot;baz&quot; are treated as sub-ensembles.
+Sub-ensembles are merely parts within an ensemble; they do not have
+a Tcl command associated with them.  An ensemble like &quot;foo&quot; can
+have a sub-ensemble called &quot;foo bar&quot;, which in turn can have a
+sub-ensemble called &quot;foo bar baz&quot;.  In this case, the sub-ensemble
+&quot;foo bar&quot; must be created before the sub-ensemble &quot;foo bar baz&quot;
+that resides within it.
+<P>
+If there are any arguments following <I>ensName</I>, then they are
+treated as commands, and they are executed to update the ensemble.
+The following commands are recognized in this context:  <B>part</B>
+and <B>ensemble</B>.
+<P>
+The <B>part</B> command defines a new part for the ensemble.
+Its syntax is identical to the usual <B><A HREF="../TclCmd/proc.html">proc</A></B> command, but
+it defines a part within an ensemble, instead of a Tcl command.
+If a part called <I>partName</I> already exists within the ensemble,
+then the <B>part</B> command returns an error.
+<P>
+The <B>ensemble</B> command can be nested inside another <B>ensemble</B>
+command to define a sub-ensemble.
+
+<H3><A NAME="M5">WHAT IS AN ENSEMBLE?</A></H3>
+The usual &quot;info&quot; command is a composite command--the command name
+<B><A HREF="../TclCmd/info.html">info</A></B> must be followed by a sub-command like <B>body</B> or <B>globals</B>.
+We will refer to a command like <B><A HREF="../TclCmd/info.html">info</A></B> as an <I>ensemble</I>, and to
+sub-commands like <B>body</B> or <B>globals</B> as its <I>parts</I>.
+<P>
+Ensembles can be nested.  For example, the <B><A HREF="../TclCmd/info.html">info</A></B> command has
+an ensemble <B><A HREF="../TclCmd/info.html">info namespace</A></B> within it.  This ensemble has parts
+like <B>info namespace all</B> and <B>info namespace children</B>.
+<P>
+With ensembles, composite commands can be created and extended
+in an automatic way.  Any package can find an existing ensemble
+and add new parts to it.  So extension writers can add their
+own parts, for example, to the <B><A HREF="../TclCmd/info.html">info</A></B> command.
+<P>
+The ensemble facility manages all of the part names and keeps
+track of unique abbreviations.  Normally, you can abbreviate
+<B><A HREF="../TclCmd/info.html">info complete</A></B> to <B><A HREF="../TclCmd/info.html">info comp</A></B>.  But if an extension adds the
+part <B><A HREF="../TclCmd/info.html">info complexity</A></B>, the minimum abbreviation for <B><A HREF="../TclCmd/info.html">info complete</A></B>
+becomes <B><A HREF="../TclCmd/info.html">info complet</A></B>.
+<P>
+The ensemble facility not only automates the construction of
+composite commands, but it automates the error handling as well.
+If you invoke an ensemble command without specifying a part name,
+you get an automatically generated error message that summarizes
+the usage information.  For example, when the <B><A HREF="../TclCmd/info.html">info</A></B> command
+is invoked without any arguments, it produces the following error
+message:
+<P>
+<PRE>wrong # args: should be one of...
+  info args procname
+  info body procname
+  info cmdcount
+  info commands ?pattern?
+  info complete command
+  info context
+  info default procname arg varname
+  info exists varName
+  info globals ?pattern?
+  info level ?number?
+  info library
+  info locals ?pattern?
+  info namespace option ?arg arg ...?
+  info patchlevel
+  info procs ?pattern?
+  info protection ?-command? ?-variable? name
+  info script
+  info tclversion
+  info vars ?pattern?
+  info which ?-command? ?-variable? ?-namespace? name</PRE>
+<P>
+You can also customize the way an ensemble responds to errors.
+When an ensemble encounters an unspecified or ambiguous part
+name, it looks for a part called <B>@error</B>.  If it exists,
+then it is used to handle the error.  This part will receive all
+of the arguments on the command line starting with the offending
+part name.  It can find another way of resolving the command,
+or generate its own error message.
+
+<H3><A NAME="M6">EXAMPLE</A></H3>
+We could use an ensemble to clean up the syntax of the various
+&quot;wait&quot; commands in Tcl/Tk.  Instead of using a series of
+strange commands like this:
+<P>
+<PRE>vwait x
+tkwait visibility .top
+tkwait window .</PRE>
+<P>
+we could use commands with a uniform syntax, like this:
+<P>
+<PRE>wait variable x
+wait visibility .top
+wait window .</PRE>
+<P>
+The Tcl package could define the following ensemble:
+<P>
+<PRE>itcl::ensemble wait part variable {name} {
+    uplevel vwait $name
+}</PRE>
+<P>
+The Tk package could add some options to this ensemble, with a
+command like this:
+<P>
+<PRE>itcl::ensemble wait {
+    part visibility {name} {
+        tkwait visibility $name
+    }
+    part window {name} {
+        tkwait window $name
+    }
+}</PRE>
+<P>
+Other extensions could add their own parts to the <B>wait</B> command
+too.
+
+<H3><A NAME="M7">KEYWORDS</A></H3>
+<A href="../Keywords/E.html#ensemble">ensemble</A>, <A href="../Keywords/P.html#part">part</A>, <A href="../Keywords/I.html#info">info</A>
+<div class="copy">Copyright &copy; 1993-1998 Lucent Technologies, Inc.
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

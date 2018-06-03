@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="ComboBox.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<HTML>
+<HEAD><TITLE>ComboBox</TITLE></HEAD>
+<BODY BGCOLOR=white>
+<DL><DT><I><A HREF="ComboBox.html#descr">NAME</A></I></DT>
+<DD><B>ComboBox</B>
+ - ComboBox widget
+</DD></DL>
+<DL>
+<DT><I>CREATION</I></DT>
+<DD><A HREF="ComboBox.html#descr"><B>ComboBox</B></A> <I>pathName</I> ?<I>option value...</I>?</DD>
+</DL>
+<DL>
+<DT><I><A HREF="ArrowButton.html">OPTIONS from <B>ArrowButton</B></A></I></DT>
+<DD><TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0>
+<TR>
+<TD>&nbsp;&nbsp;-background or -bg</TD>
+<TD>&nbsp;&nbsp;-disabledforeground</TD>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;-foreground or -fg</TD>
+<TD>&nbsp;&nbsp;-state</TD>
+</TR>
+</TABLE></DD>
+</DL>
+<DL>
+<DT><I><A HREF="Entry.html">OPTIONS from <B>Entry</B></A></I></DT>
+<DD><TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0>
+<TR>
+<TD>&nbsp;&nbsp;-command</TD>
+<TD>&nbsp;&nbsp;-disabledforeground</TD>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;-dragenabled</TD>
+<TD>&nbsp;&nbsp;-dragendcmd</TD>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;-dragevent</TD>
+<TD>&nbsp;&nbsp;-draginitcmd</TD>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;-dragtype</TD>
+<TD>&nbsp;&nbsp;-dropcmd</TD>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;-dropenabled</TD>
+<TD>&nbsp;&nbsp;-dropovercmd</TD>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;-droptypes</TD>
+<TD>&nbsp;&nbsp;-editable</TD>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;-entrybg (see <B>-background</B>)</TD>
+<TD>&nbsp;&nbsp;-entryfg (see <B>-foreground</B>)</TD>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;-exportselection</TD>
+<TD>&nbsp;&nbsp;-font</TD>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;-helptext</TD>
+<TD>&nbsp;&nbsp;-helptype</TD>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;-helpvar</TD>
+<TD>&nbsp;&nbsp;-highlightbackground</TD>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;-highlightcolor</TD>
+<TD>&nbsp;&nbsp;-highlightthickness</TD>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;-insertbackground</TD>
+<TD>&nbsp;&nbsp;-insertborderwidth</TD>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;-insertofftime</TD>
+<TD>&nbsp;&nbsp;-insertontime</TD>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;-insertwidth</TD>
+<TD>&nbsp;&nbsp;-justify</TD>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;-selectbackground</TD>
+<TD>&nbsp;&nbsp;-selectborderwidth</TD>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;-selectforeground</TD>
+<TD>&nbsp;&nbsp;-show</TD>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;-state</TD>
+<TD>&nbsp;&nbsp;-takefocus</TD>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;-text</TD>
+<TD>&nbsp;&nbsp;-textvariable</TD>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;-width</TD>
+<TD>&nbsp;&nbsp;-xscrollcommand</TD>
+</TR>
+</TABLE></DD>
+</DL>
+<DL>
+<DT><I><A HREF="ComboBox.html#wso">WIDGET-SPECIFIC OPTIONS</A></I></DT>
+<DD><TABLE CELLSPACING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD>&nbsp;&nbsp;<A HREF="ComboBox.html#-autocomplete">-autocomplete</A></TD>
+<TD>&nbsp;&nbsp;<A HREF="ComboBox.html#-autopost">-autopost</A></TD>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;<A HREF="ComboBox.html#-bwlistbox">-bwlistbox</A></TD>
+<TD>&nbsp;&nbsp;<A HREF="ComboBox.html#-expand">-expand</A></TD>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;<A HREF="ComboBox.html#-height">-height</A></TD>
+<TD>&nbsp;&nbsp;<A HREF="ComboBox.html#-hottrack">-hottrack</A></TD>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;<A HREF="ComboBox.html#-images">-images</A></TD>
+<TD>&nbsp;&nbsp;<A HREF="ComboBox.html#-listboxwidth">-listboxwidth</A></TD>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;<A HREF="ComboBox.html#-modifycmd">-modifycmd</A></TD>
+<TD>&nbsp;&nbsp;<A HREF="ComboBox.html#-postcommand">-postcommand</A></TD>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;<A HREF="ComboBox.html#-values">-values</A></TD>
+</TR>
+</TABLE></DD>
+</DL>
+<DL>
+<DT><I><A HREF="ComboBox.html#wc">WIDGET COMMAND</A></I></DT>
+<DD><I>pathName</I> <A HREF="ComboBox.html#bind"><B>bind</B></A>
+ ?<I>arg...</I>?
+</DD>
+<DD><I>pathName</I> <A HREF="ComboBox.html#cget"><B>cget</B></A>
+ <I>option</I>
+</DD>
+<DD><I>pathName</I> <A HREF="ComboBox.html#clearvalue"><B>clearvalue</B></A>
+</DD>
+<DD><I>pathName</I> <A HREF="ComboBox.html#configure"><B>configure</B></A>
+ ?<I>option</I>? ?<I>value</I> <I>option</I> <I>value</I> ...?
+</DD>
+<DD><I>pathName</I> <A HREF="ComboBox.html#get"><B>get</B></A></DD>
+<DD><I>pathName</I> <A HREF="ComboBox.html#getentry"><B>getentry</B></A></DD>
+<DD><I>pathName</I> <A HREF="ComboBox.html#getlistbox"><B>getlistbox</B></A></DD>
+<DD><I>pathName</I> <A HREF="ComboBox.html#getvalue"><B>getvalue</B></A></DD>
+<DD><I>pathName</I> <A HREF="ComboBox.html#icursor"><B>icursor</B></A>
+<I>index</I>
+</DD>
+<DD><I>pathName</I> <A HREF="ComboBox.html#post"><B>post</B></A></DD>
+<DD><I>pathName</I> <A HREF="ComboBox.html#setvalue"><B>setvalue</B></A>
+ <I>index</I>
+</DD>
+<DD><I>pathName</I> <A HREF="ComboBox.html#unpost"><B>unpost</B></A></DD>
+</DL>
+<BR><HR WIDTH="100%"><BR>
+<B><A NAME="descr"></A>DESCRIPTION</B><BR>
+<P>
+
+ComboBox widget enables the user to select a value among a list given by
+the <B>values</B> option.  The list of possible values can be popped by
+pressing the ArrowButton or by clicking in the entry when <B>editable</B>
+value of the ComboBox is <B>false</B>.<BR> If <B>editable</B> value of the
+ComboBox is <B>true</B> and the entry has the focus, the user can press the
+top and bottom arrow keys to modify its value. If the current value exactly
+match a value in the list, then the previous (for top arrow key) or then
+next (for bottom arrow key) value in the list is displayed.  If the current
+value match the beginning of a value in the list, then this value is
+displayed.  If the current value doesnt match anything, then the first
+value is displayed.
+
+</P>
+<BR><HR WIDTH="50%"><BR>
+<B><A NAME="wso">WIDGET-SPECIFIC OPTIONS</A></B><BR>
+<DL>
+    <DT><A NAME="-autocomplete"><B>-autocomplete</B></A></DT>
+    <DD>
+    Specifies whether or not the combobox should attempt to auto-complete
+    the value in the entry field as the user types.  If true, the combobox
+    will fill in a value that it finds in its value list as the user types
+    into the entry.
+    </DD>
+</DL>
+
+<DL>
+    <DT><A NAME="-autopost"><B>-autopost</B></A></DT>
+    <DD>
+    Specifies whether or not the combobox should post the drop down as
+    the user types.  If true, the combobox will post and scroll to the
+    entry that most closely matches the user entry.
+    </DD>
+</DL>
+
+<DL>
+    <DT><A NAME="-bwlistbox"><B>-bwlistbox</B></A></DT>
+    <DD>
+    Specifies that the combobox should use a BWidget listbox in its drop
+    down instead of the standard Tk option.  This option is enabled by
+    default if the <b>-images</b> option is not empty.
+    </DD>
+</DL>
+
+<DL><DT><A NAME="-expand"><B>-expand</B></A></DT>
+<DD>
+
+Specifies the value expansion behavior for the window. It must be
+<B>none</B> (default) or <B>tab</B>. If <B>tab</B> is specified, then
+a Tab binding is added to attempt to expand the current value based on
+the other values in <B>-values</B>.
+</DD>
+</DL>
+
+<DL><DT><A NAME="-height"><B>-height</B></A></DT>
+<DD>
+
+Specifies the desired height for the window, in lines. If zero or less,
+then the desired height for the window is made just large enough to hold
+all the elements in the listbox.
+</DD>
+
+<DL>
+    <DT><A NAME="-hottrack"><B>-hottrack</B></A></DT>
+    <DD>
+    The selection in the drop down listbox will follow the mouse cursor
+    as it moves.
+    </DD>
+</DL>
+
+<DL>
+    <DT><A NAME="-images"><B>-images</B></A></DT>
+    <DD>
+    A list of images that correspond to the <b>-values</b> option.  Each
+    image will be drawn next to its value in the drop down.  This option
+    enables the <b>-bwlistbox</b> by default as it is needed to display
+    images.
+    </DD>
+</DL>
+
+<DL>
+    <DT><A NAME="-listboxwidth"><B>-listboxwidth</B></A></DT>
+    <DD>
+    Specifies the width of the listbox in the drop down.  Defaults to the
+    same size as the combobox.
+    </DD>
+</DL>
+
+</DL>
+<DL><DT><A NAME="-modifycmd"><B>-modifycmd</B></A></DT>
+<DD>
+
+Specifies a Tcl command called when the user modify the value of the ComboBox by selecting it in the listbox or pressing arrow key.
+</DD>
+</DL>
+<DL><DT><A NAME="-postcommand"><B>-postcommand</B></A></DT>
+<DD>
+
+Specifies a Tcl command called before the listbox of the ComboBox is mapped.
+</DD>
+</DL>
+<DL><DT><A NAME="-values"><B>-values</B></A></DT>
+<DD>
+
+Specifies the values to display in the listbox of the ComboBox.
+</DD>
+</DL>
+<HR WIDTH="50%"><BR>
+<B><A NAME="wc">WIDGET COMMAND</A></B><BR>
+<DL><DT><A NAME="bind"><I>pathName</I> <B>bind</B></A>
+ ?<I>arg...</I>?
+</DT><DD>
+
+Set bindings on the entry widget.
+
+</DD></DL>
+<DL><DT><A NAME="cget"><I>pathName</I> <B>cget</B></A>
+ <I>option</I>
+</DT><DD>
+
+Returns the current value of the configuration option given by <I>option</I>.
+<I>Option</I> may have any of the values accepted by the creation command.
+
+</DD></DL>
+
+<DL><DT><A NAME="clearvalue"><I>pathName</I> <B>clearvalue</B></A>
+</DT><DD>
+
+Clears the current text of the ComboBox.
+
+</DD></DL>
+
+<DL><DT><A NAME="configure"><I>pathName</I> <B>configure</B></A>
+ ?<I>option</I>? ?<I>value</I> <I>option</I> <I>value</I> ...?
+</DT><DD>
+
+Query or modify the configuration options of the widget. If no
+<I>option</I> is specified, returns a list describing all of the available
+options for <I>pathName</I>.  If <I>option</I> is specified with no
+<I>value</I>, then the command returns a list describing the one named
+<I>option</I> (this list will be identical to the corresponding sublist of
+the value returned if no <I>option</I> is specified). If one or more
+<I>option-value</I> pairs are specified, then the command modifies the
+given widget option(s) to have the given value(s); in this case the command
+returns an empty string.  <I>Option</I> may have any of the values accepted
+by the creation command.  Read-only options are not be modified.
+
+</DD></DL>
+
+<DL><DT><A NAME="get"><I>pathName</I> <B>get</B></A>
+</DT><DD>
+
+Returns the current contents of the entry.
+
+</DD></DL>
+
+<DL><DT><A NAME="getentry"><I>pathName</I> <B>getentry</B></A>
+</DT><DD>
+
+Returns the path to the contained entry widget.
+
+</DD></DL>
+
+<DL><DT><A NAME="getlistbox"><I>pathName</I> <B>getlistbox</B></A>
+</DT><DD>
+
+Returns the path to the listbox in the drop down.
+
+</DD></DL>
+
+<DL><DT><A NAME="getvalue"><I>pathName</I> <B>getvalue</B></A>
+</DT><DD>
+
+Returns the index of the current text of the ComboBox in the list of values,
+or -1 if it doesn't match any value.
+
+</DD></DL>
+
+<DL><DT><A NAME="icursor"><I>pathName</I> <B>icursor</B></A>
+ <I>index</I>
+</DT><DD>
+
+Arrange for the insertion cursor to be displayed just before the
+character given by <i>index</i>.  Returns an empty string.
+
+</DD></DL>
+
+<DL><DT><A NAME="post"><I>pathName</I> <B>post</B></A>
+</DT><DD>
+
+Post the drop down.
+
+</DD></DL>
+
+<DL><DT><A NAME="setvalue"><I>pathName</I> <B>setvalue</B></A>
+ <I>index</I>
+</DT><DD>
+
+Set the text of the ComboBox to the value indicated by <I>index</I> in the list of values.
+<I>index</I> may be specified in any of the following forms:
+<P>
+<DL COMPACT>
+<DT>
+<B>last</B>
+<DD>
+Specifies the last element of the list of values.
+<DT><B>first</B>
+<DD>
+Specifies the first element of the list of values.
+<DT>
+<B>next</B>
+<DD>
+Specifies the element following the current (ie returned by <B>getvalue</B>) in the list
+of values.
+<DT><B>previous</B>
+<DD>
+Specifies the element preceding the current (ie returned by <B>getvalue</B>) in the list
+of values.
+<DT>
+@<I>number</I>
+<DD>
+Specifies the integer index in the list of values.
+</DL>
+
+</DD></DL>
+
+<DL><DT><A NAME="unpost"><I>pathName</I> <B>unpost</B></A>
+</DT><DD>
+
+Unpost the drop down.
+
+</DD></DL>
+
+<HR><BR><B>BINDINGS</B><BR><BR>
+
+When Entry of the ComboBox has the input focus, it has the following bindings, in addition
+to the default Entry bindings:
+<UL>
+<LI>Page up set the value of the ComboBox to the first value.
+<LI>Page down set the value of the ComboBox to the last value.
+<LI>Arrow up set the value of the ComboBox to the previous value.
+<LI>Arrow down set the value of the ComboBox to the next value.
+<LI>If <B>-autopost</B> is enabled, Escape unposts the listbox.
+</UL>
+If the listbox is not mapped and ComboBox is not editable or disabled,
+mouse button 1 on the Entry cause the listbox to popup, as if the user press the ArrowButton.
+
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

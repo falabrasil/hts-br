@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="Exit.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>Tcl_Exit manual page - Tcl Library Procedures</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tcl C API, version 8.6.7</a> <small>&gt;</small> Exit</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="../TkCmd/contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="Exit.html#M2" NAME="L288">NAME</A>
+<DL><DD>Tcl_Exit, Tcl_Finalize, Tcl_CreateExitHandler, Tcl_DeleteExitHandler, Tcl_ExitThread, Tcl_FinalizeThread, Tcl_CreateThreadExitHandler, Tcl_DeleteThreadExitHandler, Tcl_SetExitProc &mdash; end the application or thread (and invoke exit handlers)</DD></DL>
+<DD><A HREF="Exit.html#M3" NAME="L289">SYNOPSIS</A>
+<DL>
+<DD><B>#include &lt;tcl.h&gt;</B>
+<DD><B>Tcl_Exit</B>(<I>status</I>)
+<DD><B>Tcl_Finalize</B>()
+<DD><B>Tcl_CreateExitHandler</B>(<I>proc, clientData</I>)
+<DD><B>Tcl_DeleteExitHandler</B>(<I>proc, clientData</I>)
+<DD><B>Tcl_ExitThread</B>(<I>status</I>)
+<DD><B>Tcl_FinalizeThread</B>()
+<DD><B>Tcl_CreateThreadExitHandler</B>(<I>proc, clientData</I>)
+<DD><B>Tcl_DeleteThreadExitHandler</B>(<I>proc, clientData</I>)
+<DD>Tcl_ExitProc *
+<DD><B>Tcl_SetExitProc</B>(<I>proc</I>)
+</DL>
+<DD><A HREF="Exit.html#M4" NAME="L290">ARGUMENTS</A>
+<DL class="arguments">
+</DL>
+<DD><A HREF="Exit.html#M5" NAME="L291">DESCRIPTION</A>
+<DD><A HREF="Exit.html#M6" NAME="L292">SEE ALSO</A>
+<DD><A HREF="Exit.html#M7" NAME="L293">KEYWORDS</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+Tcl_Exit, Tcl_Finalize, Tcl_CreateExitHandler, Tcl_DeleteExitHandler, Tcl_ExitThread, Tcl_FinalizeThread, Tcl_CreateThreadExitHandler, Tcl_DeleteThreadExitHandler, Tcl_SetExitProc &mdash; end the application or thread (and invoke exit handlers)
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+<B>#include &lt;tcl.h&gt;</B><BR>
+<B>Tcl_Exit</B>(<I>status</I>)<BR>
+<B>Tcl_Finalize</B>()<BR>
+<B>Tcl_CreateExitHandler</B>(<I>proc, clientData</I>)<BR>
+<B>Tcl_DeleteExitHandler</B>(<I>proc, clientData</I>)<BR>
+<B>Tcl_ExitThread</B>(<I>status</I>)<BR>
+<B>Tcl_FinalizeThread</B>()<BR>
+<B>Tcl_CreateThreadExitHandler</B>(<I>proc, clientData</I>)<BR>
+<B>Tcl_DeleteThreadExitHandler</B>(<I>proc, clientData</I>)<BR>
+Tcl_ExitProc *<BR>
+<B>Tcl_SetExitProc</B>(<I>proc</I>)<BR>
+<H3><A NAME="M4">ARGUMENTS</A></H3>
+<DL class="arguments">
+<DT>int <B>status</B> (in)<DD>
+Provides information about why the application or thread exited.
+Exact meaning may
+be platform-specific.  0 usually means a normal exit, any nonzero value
+usually means that an error occurred.
+<P><DT>Tcl_ExitProc <B>*proc</B> (in)<DD>
+Procedure to invoke before exiting application, or (for
+<B>Tcl_SetExitProc</B>) NULL to uninstall the current application exit
+procedure.
+<P><DT>ClientData <B>clientData</B> (in)<DD>
+Arbitrary one-word value to pass to <I>proc</I>.
+<P></DL>
+<H3><A NAME="M5">DESCRIPTION</A></H3>
+The procedures described here provide a graceful mechanism to end the
+execution of a <B><A HREF="../TclCmd/Tcl.html">Tcl</A></B> application. Exit handlers are invoked to cleanup the
+application's state before ending the execution of <B><A HREF="../TclCmd/Tcl.html">Tcl</A></B> code.
+<P>
+Invoke <B>Tcl_Exit</B> to end a <B><A HREF="../TclCmd/Tcl.html">Tcl</A></B> application and to exit from this
+process. This procedure is invoked by the <B><A HREF="../TclCmd/exit.html">exit</A></B> command, and can be
+invoked anyplace else to terminate the application.
+No-one should ever invoke the <B><A HREF="../TclCmd/exit.html">exit</A></B> system procedure directly;  always
+invoke <B>Tcl_Exit</B> instead, so that it can invoke exit handlers.
+Note that if other code invokes <B><A HREF="../TclCmd/exit.html">exit</A></B> system procedure directly, or
+otherwise causes the application to terminate without calling
+<B>Tcl_Exit</B>, the exit handlers will not be run.
+<B>Tcl_Exit</B> internally invokes the <B><A HREF="../TclCmd/exit.html">exit</A></B> system call, thus it never
+returns control to its caller.
+If an application exit handler has been installed (see
+<B>Tcl_SetExitProc</B>), that handler is invoked with an argument
+consisting of the exit status (cast to ClientData); the application
+exit handler should not return control to Tcl.
+<P>
+<B>Tcl_Finalize</B> is similar to <B>Tcl_Exit</B> except that it does not
+exit from the current process.
+It is useful for cleaning up when a process is finished using <B><A HREF="../TclCmd/Tcl.html">Tcl</A></B> but
+wishes to continue executing, and when <B><A HREF="../TclCmd/Tcl.html">Tcl</A></B> is used in a dynamically
+loaded extension that is about to be unloaded.
+Your code should always invoke <B>Tcl_Finalize</B> when <B><A HREF="../TclCmd/Tcl.html">Tcl</A></B> is being
+unloaded, to ensure proper cleanup. <B>Tcl_Finalize</B> can be safely called
+more than once.
+<P>
+<B>Tcl_ExitThread</B> is used to terminate the current thread and invoke
+per-thread exit handlers.  This finalization is done by
+<B>Tcl_FinalizeThread</B>, which you can call if you just want to clean
+up per-thread state and invoke the thread exit handlers.
+<B>Tcl_Finalize</B> calls <B>Tcl_FinalizeThread</B> for the current
+thread automatically.
+<P>
+<B>Tcl_CreateExitHandler</B> arranges for <I>proc</I> to be invoked
+by <B>Tcl_Finalize</B> and <B>Tcl_Exit</B>.
+<B>Tcl_CreateThreadExitHandler</B> arranges for <I>proc</I> to be invoked
+by <B>Tcl_FinalizeThread</B> and <B>Tcl_ExitThread</B>.
+This provides a hook for cleanup operations such as flushing buffers
+and freeing global memory.
+<I>Proc</I> should match the type <B>Tcl_ExitProc</B>:
+<P>
+<PRE>typedef void <B>Tcl_ExitProc</B>(
+        ClientData <I>clientData</I>);</PRE>
+<P>
+The <I>clientData</I> parameter to <I>proc</I> is a
+copy of the <I>clientData</I> argument given to
+<B>Tcl_CreateExitHandler</B> or <B>Tcl_CreateThreadExitHandler</B> when
+the callback
+was created.  Typically, <I>clientData</I> points to a data
+structure containing application-specific information about
+what to do in <I>proc</I>.
+<P>
+<B>Tcl_DeleteExitHandler</B> and <B>Tcl_DeleteThreadExitHandler</B> may be
+called to delete a
+previously-created exit handler.  It removes the handler
+indicated by <I>proc</I> and <I>clientData</I> so that no call
+to <I>proc</I> will be made.  If no such handler exists then
+<B>Tcl_DeleteExitHandler</B> or <B>Tcl_DeleteThreadExitHandler</B> does nothing.
+<P>
+<B>Tcl_Finalize</B> and <B>Tcl_Exit</B> execute all registered exit handlers,
+in reverse order from the order in which they were registered.
+This matches the natural order in which extensions are loaded and unloaded;
+if extension <B>A</B> loads extension <B>B</B>, it usually
+unloads <B>B</B> before it itself is unloaded.
+If extension <B>A</B> registers its exit handlers before loading extension
+<B>B</B>, this ensures that any exit handlers for <B>B</B> will be executed
+before the exit handlers for <B>A</B>.
+<P>
+<B>Tcl_Finalize</B> and <B>Tcl_Exit</B> call <B>Tcl_FinalizeThread</B>
+and the thread exit handlers <I>after</I>
+the process-wide exit handlers.  This is because thread finalization shuts
+down the I/O channel system, so any attempt at I/O by the global exit
+handlers will vanish into the bitbucket.
+<P>
+<B>Tcl_SetExitProc</B> installs an application exit handler, returning
+the previously-installed application exit handler or NULL if no
+application handler was installed.  If an application exit handler is
+installed, that exit handler takes over complete responsibility for
+finalization of Tcl's subsystems via <B>Tcl_Finalize</B> at an
+appropriate time.  The argument passed to <I>proc</I> when it is
+invoked will be the exit status code (as passed to <B>Tcl_Exit</B>)
+cast to a ClientData value.
+<H3><A NAME="M6">SEE ALSO</A></H3>
+<B><A HREF="../TclCmd/exit.html">exit</A></B>
+<H3><A NAME="M7">KEYWORDS</A></H3>
+<A href="../Keywords/A.html#abort">abort</A>, <A href="../Keywords/C.html#callback">callback</A>, <A href="../Keywords/C.html#cleanup">cleanup</A>, <A href="../Keywords/D.html#dynamic loading">dynamic loading</A>, <A href="../Keywords/E.html#end application">end application</A>, <A href="../Keywords/E.html#exit">exit</A>, <A href="../Keywords/U.html#unloading">unloading</A>, <A href="../Keywords/T.html#thread">thread</A>
+<div class="copy">Copyright &copy; 1995-1996 Sun Microsystems, Inc.
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

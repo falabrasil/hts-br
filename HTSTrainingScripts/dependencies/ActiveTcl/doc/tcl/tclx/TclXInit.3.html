@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="TclXInit.3.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- manual page source format generated by PolyglotMan v3.0.8+X.Org, -->
+<!-- available at http://polyglotman.sourceforge.net/ -->
+<html>
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org">
+<meta name='Author' content='ActiveState'>
+
+<title>TclX TclXInit</title>
+</head>
+<body>
+<a href='TclXInit.3.html#toc'>Table of Contents</a> 
+
+<h2><a name='sect0' href='TclXInit.3.html#toc0'>Name</a></h2>
+
+<p>Tclx_Init, Tclxcmd_Init, TclX_Main, Tkx_Init, TkX_Main -
+Extended Tcl initialization.</p>
+
+<h2><a name='sect1' href='TclXInit.3.html#toc1'><b>Synopsis</b></a></h2>
+
+<p>-ltclx -ltcl</p>
+
+<p>#include tclExtend.h"</p>
+
+<p>int<br>
+ Tclx_Init (Tcl_Interp *interp);</p>
+
+<p>int<br>
+ Tclxcmd_Init (Tcl_Interp *interp);</p>
+
+<p>int<br>
+ void<br>
+</p>
+
+<dl>
+<dt>TclX_Main (int</dt>
+
+<dd>argc,</dd>
+
+<dt>char</dt>
+
+<dd>**argv, Tcl_AppInitProc *appInitProc);</dd>
+</dl>
+
+<p>int<br>
+ Tkx_Init (Tcl_Interp *interp);</p>
+
+<p>void<br>
+</p>
+
+<dl>
+<dt>TkX_Main (int</dt>
+
+<dd>argc,</dd>
+
+<dt>char</dt>
+
+<dd>**argv, Tcl_AppInitProc *appInitProc);</dd>
+</dl>
+
+<p>void<br>
+</p>
+
+<dl>
+<dt>TclX_SetAppInfo (int</dt>
+
+<dd>defaultValues, char *appName, char *appLongName, char
+*appVersion, int appPatchlevel);</dd>
+</dl>
+
+<h2><a name='sect2' href='TclXInit.3.html#toc2'><b>Description</b></a></h2>
+
+<p>These functions are used to initialize Extended Tcl and
+applications based on Extended Tcl. This manual page also discusses
+various issues and approaches of integrating TclX into other
+applications.</p>
+
+<p><b>Tclx_Init</b><br>
+ Initializes Extended Tcl, adding the extended command set to the
+inter-preter. This is called from <b>Tcl_AppInit</b>. This function
+must be called after the <b>Tcl_Init</b> function. In addition to
+the standard command set, it enables use of tlib packages libraries
+and makes the standard TclX library available.</p>
+
+<p>Parameters<br>
+ <b>o</b> <i>interp</i> - A pointer to the interpreter to add the
+commands to.</p>
+
+<p>Returns:<br>
+ <b>TCL_OK</b> if all is ok, <b>TCL_ERROR</b> if an error
+occurred.</p>
+
+<p><b>Tclxcmd_Init</b><br>
+ Add the TclX command set to the interpreter, with the exception of
+the TclX library management commands. This is normally called by
+<b>Tclx_Init</b> and should only be used if you
+don&acirc;&euro;&trade;t want the TclX library handling.</p>
+
+<p>Parameters<br>
+ <b>o</b> <i>interp</i> - A pointer to the interpreter to add the
+commands to.</p>
+
+<p>Returns:<br>
+ <b>TCL_OK</b> if all is ok, <b>TCL_ERROR</b> if an error
+occurred.</p>
+
+<p><b>TclX_Main</b><br>
+ This function parses the command line according to the TclX shell
+spec-ification (Unix shell compatible). It creates an interpreter
+and calls the specified function <b>appInitProc</b> to initialize
+any application spe-cific commands. It then either evaluates the
+command of script speci-fied on the command line or enters an
+interactive command loop. This procedure never returns, it exits
+the process when it&acirc;&euro;&trade;s done. Using the TclX shell
+also gives you SIGINT handling in interactive shells.</p>
+
+<p><b>Tkx_Init</b><br>
+ Initializes Extended Tcl Tk environment. This is called from
+<b>Tcl_AppInit</b> after the <b>Tk_Init</b> function.</p>
+
+<p>Parameters<br>
+ <b>o</b> <i>interp</i> - A pointer to the interpreter to add the
+commands to.</p>
+
+<p>Returns:<br>
+ <b>TCL_OK</b> if all is ok, <b>TCL_ERROR</b> if an error
+occurred.</p>
+
+<p><b>TkX_Main</b><br>
+ This function parses the command line according to the wish shell
+spec-ification. It creates an interpreter and calls the specified
+function <b>appInitProc</b> to initialize any application specific
+commands. It then either evaluates the command of script specified
+on the command line or enters an interactive command loop. This
+procedure never returns, it exits the process when
+it&acirc;&euro;&trade;s done. Using the TclX wish shell gives you
+SIGINT handling in interactive shells, otherwise it is identical to
+standard wish.</p>
+
+<p><b>TclX_SetAppInfo</b><br>
+ Store the application information returned by infox.</p>
+
+<p>Parameters<br>
+ <b>o</b> <i>defaultValues</i> - If true, then the values are
+assigned only if they are not already defined (defaulted). If
+false, the values are always set.<br>
+ <b>o</b> <i>appName</i> - Application symbolic name. <b>o</b>
+<i>appLongName</i> - Long, natural language application name.
+<b>o</b> <i>appVersion</i> - Version number of the application.
+<b>o</b> <i>appPatchlevel</i> - Patch level of the application. If
+less than zero, don&acirc;&euro;&trade;t change.</p>
+
+<p>String pointers are saved without copying,
+don&acirc;&euro;&trade;t release the memory. If the arguments are
+NULL, don&acirc;&euro;&trade;t change the values.</p>
+
+<h2><a name='sect3' href='TclXInit.3.html#toc3'><b>Dynamic</b> <b>Loading</b>
+<b>of</b> <b>Tclx</b></a></h2>
+
+<p>TclX can be dynamically loaded on systems that support shared
+libraries and the load command. This can be done using either the
+<b>load</b> or the <b>package</b> <b>require</b> commands. If
+<b>package</b> <b>require</b> is to be used, a <b>pkgIn-dex,tcl</b>
+must be constructed. The <b>pkg_mkIndex</b> does not generate a
+pkgIndex.tcl file that works with TclX. Instead a command similar
+to</p>
+
+<p>package ifneeded Tclx 7.5.0 load $dir/libtclx.so"</p>
+
+<p>should be placed in the directory containing the TclX shared
+library. A prototype <b>pkgIndex,tcl</b> file is build by TclX and
+is installed in the run time directory under the name
+<b>pkgIndex,proto</b>. This file can&acirc;&euro;&trade;t be used
+as-is, but should be renamed and copied or combined with an
+exist-ing <b>pkgIndex,tcl</b> in the directory containing the
+shared library.</p>
+
+<p>There is no need to dynamically load <b>libtkx.so</b>, since it
+only contains support for <b>wishx</b>.</p>
+
+<h2><a name='sect4' href='TclXInit.3.html#toc4'><b>Integrating</b> <b>Tclx</b>
+<b>with</b> <b>Other</b> <b>Extensions</b> <b>and</b>
+<b>Applications</b></a></h2>
+
+<p>The main aspects to integrating TclX with into an application is
+to decide if the application is based on the standard Tcl/Tk shells
+or the TclX shells. If the standard shells are desired, then all
+that is nec-essary is to call <b>Tclx_Init</b> after
+<b>Tcl_Init</b> and <b>Tkx_Init</b> after <b>Tk_Init</b>. This
+functionality may also be dynamically loaded.</p>
+
+<p>To get the TclX shell in a Tcl only application, with the
+<b>tcl</b> command functionality, call <b>TclX_Main</b> from the
+<b>main</b> function instead of <b>Tcl_Main</b>. This shell has
+arguments conforming to other Unix shells and SIGINT signal
+handling when interactive,.</p>
+
+<p>To get the Tclx shell in a Tk application, with the <b>wishx</b>
+command func-tionality, call <b>TkX_Main</b> from the <b>main</b>
+function instead of <b>Tk_Main</b>. This shell has SIGINT signal
+handling when interactive,</p>
+
+<h2><a name='sect5' href='TclXInit.3.html#toc5'>Tcl TclXInit(TCL)</a></h2>
+
+<hr>
+<p><a name='toc'><b>Table of Contents</b></a></p>
+
+<ul>
+<li><a name='toc0' href='TclXInit.3.html#sect0'>Name</a></li>
+
+<li><a name='toc1' href='TclXInit.3.html#sect1'>Synopsis</a></li>
+
+<li><a name='toc2' href='TclXInit.3.html#sect2'>Description</a></li>
+
+<li><a name='toc3' href='TclXInit.3.html#sect3'>Dynamic Loading of Tclx</a></li>
+
+<li><a name='toc4' href='TclXInit.3.html#sect4'>Integrating Tclx with Other
+Extensions and Applications</a></li>
+
+<li><a name='toc5' href='TclXInit.3.html#sect5'>Tcl TclXInit(TCL)</a></li>
+</ul>
+</body>
+</html>
+
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

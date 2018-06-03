@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="class.n.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			---
+   
+---
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org">
+<meta name='Author' content='ActiveState'>
+
+<title>itcl - class (n)</title>
+</head>
+<body>
+<center>
+<h1>[incr\ Tcl]</h1>
+</center>
+
+<h3>NAME</h3>
+
+class - create a class of objects 
+
+<h3>SYNOPSIS</h3>
+
+<b>itcl::class</b> <i>className</i> <b>{<br>
+ inherit</b> <i>baseClass</i> ?<i>baseClass</i>...? <br>
+ <b>constructor</b> <i>args</i> ?<i>init</i>? <i>body</i> <br>
+ <b>destructor</b> <i>body</i> <br>
+ <b>method</b> <i>name</i> ?<i>args</i>? ?<i>body</i>? <br>
+ <b>proc</b> <i>name ?args</i>? ?<i>body</i>? <br>
+ <b>variable</b> <i>varName</i> ?<i>init</i>? ?<i>config</i>? <br>
+ <b>common</b> <i>varName</i> ?<i>init</i>? <br>
+ <b>public</b> <i>command</i> ?<i>arg arg ...</i>? <br>
+ <b>protected</b> <i>command</i> ?<i>arg arg ...</i>? <br>
+ <b>private</b> <i>command</i> ?<i>arg arg ...</i>? <br>
+ <b>set</b> <i>varName</i> ?<i>value</i>? <br>
+ <b>array</b> <i>option</i> ?<i>arg arg ...</i>? <br>
+<b>}</b> <br>
+<i>className objName</i> ?<i>arg arg ...</i>? <br>
+<i>objName method</i> ?<i>arg arg ...</i>? <br>
+<i>className::proc ?arg arg ...</i>? 
+
+<h3>DESCRIPTION</h3>
+
+<p>The fundamental construct in <b>[incrTcl]</b> is the class
+definition. Each class acts as a template for actual objects that
+can be created. The class itself is a namespace which contains
+things common to all objects. Each object has its own unique bundle
+of data which contains instances of the "variables" defined in the
+class definition. Each object also has a built-in variable named
+"this", which contains the name of the object. Classes can also
+have "common" data members that are shared by all objects in a
+class.</p>
+
+<p>Two types of functions can be included in the class definition.
+"Methods" are functions which operate on a specific object, and
+therefore have access to both "variables" and "common" data
+members. "Procs" are ordinary procedures in the class namespace,
+and only have access to "common" data members.</p>
+
+<p>If the body of any method or proc starts with "<b>@</b>", it is
+treated as the symbolic name for a C procedure. Otherwise, it is
+treated as a Tcl code script. See below for details on registering
+and using C procedures.</p>
+
+<p>A class can only be defined once, although the bodies of class
+methods and procs can be defined again and again for interactive
+debugging. See the <b><a href="body.n.html">body</a></b> and <b><a
+href="configbody.n.html">configbody</a></b> commands for
+details.</p>
+
+<p>Each namespace can have its own collection of objects and
+classes. The list of classes available in the current context can
+be queried using the "<b>itcl::find classes</b>" command, and the
+list of objects, with the "<b>itcl::find objects</b>" command.</p>
+
+<p>A class can be deleted using the "<b>delete class</b>" command.
+Individual objects can be deleted using the "<b>delete object</b>"
+command.</p>
+
+<h3>CLASS DEFINITIONS</h3>
+
+<dl>
+<dt><b>class</b> <i>className definition</i></dt>
+
+<dd>Provides the definition for a class named <i>className</i>. If
+the class <i>className</i> already exists, or if a command called
+<i>className</i> exists in the current namespace context, this
+command returns an error. If the class definition is successfully
+parsed, <i>className</i> becomes a command in the current context,
+handling the creation of objects for this class.</dd>
+</dl>
+
+<p>The class <i>definition</i> is evaluated as a series of Tcl
+statements that define elements within the class. The following
+class definition commands are recognized:</p>
+
+<dl>
+<dt><b>inherit</b> <i>baseClass</i> ?<i>baseClass</i>...?</dt>
+
+<dd>Causes the current class to inherit characteristics from one or
+more base classes. Classes must have been defined by a previous
+<b>class</b> command, or must be available to the auto-loading
+facility (see "AUTO-LOADING" below). A single class definition can
+contain no more than one <b>inherit</b> command.<br>
+The order of <i>baseClass</i> names in the <b>inherit</b> list
+affects the name resolution for class members. When the same member
+name appears in two or more base classes, the base class that
+appears first in the <b>inherit</b> list takes precedence. For
+example, if classes "Foo" and "Bar" both contain the member "x",
+and if another class has the "<b>inherit</b>" statement: 
+
+<blockquote>
+<pre>
+inherit Foo Bar
+</pre>
+</blockquote>
+
+then the name "x" means "Foo::x". Other inherited members named "x"
+must be referenced with their explicit name, like "Bar::x".</dd>
+
+<dt><b>constructor</b> <i>args</i> ?<i>init</i>? <i>body</i></dt>
+
+<dd>Declares the <i>args</i> argument list and <i>body</i> used for
+the constructor, which is automatically invoked whenever an object
+is created.<br>
+Before the <i>body</i> is executed, the optional <i>init</i>
+statement is used to invoke any base class constructors that
+require arguments. Variables in the <i>args</i> specification can
+be accessed in the <i>init</i> code fragment, and passed to base
+class constructors. After evaluating the <i>init</i> statement, any
+base class constructors that have not been executed are invoked
+automatically without arguments. This ensures that all base classes
+are fully constructed before the constructor <i>body</i> is
+executed. By default, this scheme causes constructors to be invoked
+in order from least- to most-specific. This is exactly the opposite
+of the order that classes are reported by the <b>info heritage</b>
+command.<br>
+If construction is successful, the constructor always returns the
+object name-regardless of how the <i>body</i> is defined-and the
+object name becomes a command in the current namespace context. If
+construction fails, an error message is returned.</dd>
+
+<dt><b>destructor</b> <i>body</i></dt>
+
+<dd>Declares the <i>body</i> used for the destructor, which is
+automatically invoked when an object is deleted. If the destructor
+is successful, the object data is destroyed and the object name is
+removed as a command from the interpreter. If destruction fails, an
+error message is returned and the object remains.<br>
+When an object is destroyed, all destructors in its class hierarchy
+are invoked in order from most- to least-specific. This is the
+order that the classes are reported by the "<b>info heritage</b>"
+command, and it is exactly the opposite of the default constructor
+order.</dd>
+
+<dt><b>method</b> <i>name</i> ?<i>args</i>? ?<i>body</i>?</dt>
+
+<dd>Declares a method called <i>name</i>. When the method
+<i>body</i> is executed, it will have automatic access to
+object-specific variables and common data members.<br>
+If the <i>args</i> list is specified, it establishes the usage
+information for this method. The <b><a href=
+"body.n.html">body</a></b> command can be used to redefine the
+method body, but the <i>args</i> list must match this
+specification.<br>
+Within the body of another class method, a method can be invoked
+like any other command-simply by using its name. Outside of the
+class context, the method name must be prefaced an object name,
+which provides the context for the data that it manipulates.
+Methods in a base class that are redefined in the current class, or
+hidden by another base class, can be qualified using the
+"<i>className</i>::<i>method</i>" syntax.</dd>
+
+<dt><b>proc</b> <i>name</i> ?<i>args</i>? ?<i>body</i>?</dt>
+
+<dd>Declares a proc called <i>name</i>. A proc is an ordinary
+procedure within the class namespace. Unlike a method, a proc is
+invoked without referring to a specific object. When the proc
+<i>body</i> is executed, it will have automatic access only to
+common data members.<br>
+If the <i>args</i> list is specified, it establishes the usage
+information for this proc. The <b><a href=
+"body.n.html">body</a></b> command can be used to redefine the proc
+body, but the <i>args</i> list must match this specification.<br>
+Within the body of another class method or proc, a proc can be
+invoked like any other command-simply by using its name. In any
+other namespace context, the proc is invoked using a qualified name
+like "<i>className</i><b>::</b><i>proc</i>". Procs in a base class
+that are redefined in the current class, or hidden by another base
+class, can also be accessed via their qualified name.</dd>
+
+<dt><b>variable</b> <i>varName</i> ?<i>init</i>?
+?<i>config</i>?</dt>
+
+<dd>Defines an object-specific variable named <i>varName</i>. All
+object-specific variables are automatically available in class
+methods. They need not be declared with anything like the
+<b>global</b> command.<br>
+If the optional <i>init</i> string is specified, it is used as the
+initial value of the variable when a new object is created.
+Initialization forces the variable to be a simple scalar value;
+uninitialized variables, on the other hand, can be set within the
+constructor and used as arrays.<br>
+The optional <i>config</i> script is only allowed for public
+variables. If specified, this code fragment is executed whenever a
+public variable is modified by the built-in "configure" method. The
+<i>config</i> script can also be specified outside of the class
+definition using the <b><a href=
+"configbody.n.html">configbody</a></b> command.</dd>
+
+<dt><b>common</b> <i>varName</i> ?<i>init</i>?</dt>
+
+<dd>Declares a common variable named <i>varName</i>. Common
+variables reside in the class namespace and are shared by all
+objects belonging to the class. They are just like global
+variables, except that they need not be declared with the usual
+<b>global</b> command. They are automatically visible in all class
+methods and procs.<br>
+If the optional <i>init</i> string is specified, it is used as the
+initial value of the variable. Initialization forces the variable
+to be a simple scalar value; uninitialized variables, on the other
+hand, can be set with subsequent <b>set</b> and <b>array</b>
+commands and used as arrays.<br>
+Once a common data member has been defined, it can be set using
+<b>set</b> and <b>array</b> commands within the class definition.
+This allows common data members to be initialized as arrays. For
+example: 
+
+<blockquote>
+<pre>
+itcl::class Foo {
+    common boolean
+    set boolean(true) 1
+    set boolean(false) 0
+}
+</pre>
+</blockquote>
+
+Note that if common data members are initialized within the
+constructor, they get initialized again and again whenever new
+objects are created.</dd>
+
+<dt><b>public</b> <i>command</i> ?<i>arg arg ...</i>?</dt>
+
+<dt><b>protected</b> <i>command</i> ?<i>arg arg ...</i>?</dt>
+
+<dt><b>private</b> <i>command</i> ?<i>arg arg ...</i>?</dt>
+
+<dd>These commands are used to set the protection level for class
+members that are created when <i>command</i> is evaluated. The
+<i>command</i> is usually <b>method</b>, <b>proc</b>,
+<b>variable</b> or<b>common</b>, and the remaining <i>arg</i>'s
+complete the member definition. However, <i>command</i> can also be
+a script containing many different member definitions, and the
+protection level will apply to all of the members that are
+created.</dd>
+</dl>
+
+<h3>CLASS USAGE</h3>
+
+<p>Once a class has been defined, the class name can be used as a
+command to create new objects belonging to the class.</p>
+
+<dl>
+<dt><i>className objName</i> ?<i>args...</i>?</dt>
+
+<dd>Creates a new object in class <i>className</i> with the name
+<i>objName</i>. Remaining arguments are passed to the constructor
+of the most-specific class. This in turn passes arguments to base
+class constructors before invoking its own body of commands. If
+construction is successful, a command called <i>objName</i> is
+created in the current namespace context, and <i>objName</i> is
+returned as the result of this operation. If an error is
+encountered during construction, the destructors are automatically
+invoked to free any resources that have been allocated, the object
+is deleted, and an error is returned.<br>
+If <i>objName</i> contains the string "<b>#auto</b>", that string
+is replaced with an automatically generated name. Names have the
+form <i>className&lt;number&gt;</i>, where the <i>className</i>
+part is modified to start with a lowercase letter. In class
+"Toaster", for example, the "<b>#auto</b>" specification would
+produce names like toaster0, toaster1, etc. Note that
+"<b>#auto</b>" can be also be buried within an object name: 
+
+<blockquote>
+<pre>
+fileselectiondialog .foo.bar.#auto -background red
+</pre>
+</blockquote>
+
+This would generate an object named
+".foo.bar.fileselectiondialog0".</dd>
+</dl>
+
+<h3>OBJECT USAGE</h3>
+
+Once an object has been created, the object name can be used as a
+command to invoke methods that operate on the object. 
+
+<dl>
+<dt><i>objName method</i> ?<i>args...</i>?</dt>
+
+<dd>Invokes a method named <i>method</i> on an object named
+<i>objName</i>. Remaining arguments are passed to the argument list
+for the method. The method name can be "constructor", "destructor",
+any method name appearing in the class definition, or any of the
+following built-in methods.</dd>
+</dl>
+
+<h3>BUILT-IN METHODS</h3>
+
+<dl>
+<dt><i>objName</i> <b>cget option</b></dt>
+
+<dd>Provides access to public variables as configuration options.
+This mimics the behavior of the usual "cget" operation for Tk
+widgets. The <i>option</i> argument is a string of the form
+"<b>-</b><i>varName</i>", and this method returns the current value
+of the public variable <i>varName</i>.</dd>
+
+<dt><i>objName</i> <b>configure</b> ?<i>option</i>? ?<i>value
+option value ...</i>?</dt>
+
+<dd>Provides access to public variables as configuration options.
+This mimics the behavior of the usual "configure" operation for Tk
+widgets. With no arguments, this method returns a list of lists
+describing all of the public variables. Each list has three
+elements: the variable name, its initial value and its current
+value.<br>
+If a single <i>option</i> of the form "<b>-</b><i>varName</i>" is
+specified, then this method returns the information for that one
+variable.<br>
+Otherwise, the arguments are treated as <i>option</i>/<i>value</i>
+pairs assigning new values to public variables. Each variable is
+assigned its new value, and if it has any "config" code associated
+with it, it is executed in the context of the class where it was
+defined. If the "config" code generates an error, the variable is
+set back to its previous value, and the <b>configure</b> method
+returns an error.</dd>
+
+<dt><i>objName</i> <b>isa</b> <i>className</i></dt>
+
+<dd>Returns non-zero if the given <i>className</i> can be found in
+the object's heritage, and zero otherwise.</dd>
+
+<dt><i>objName</i> <b>info</b> <i>option</i> ?<i>args...</i>?</dt>
+
+<dd>Returns information related to a particular object named
+<i>objName</i>, or to its class definition. The <i>option</i>
+parameter includes the following things, as well as the options
+recognized by the usual Tcl "info" command: 
+
+<dl>
+<dt><i>objName</i> <b>info class</b></dt>
+
+<dd>Returns the name of the most-specific class for object
+<i>objName</i>.</dd>
+
+<dt><i>objName</i> <b>info inherit</b></dt>
+
+<dd>Returns the list of base classes as they were defined in the
+"<b>inherit</b>" command, or an empty string if this class has no
+base classes.</dd>
+
+<dt><i>objName</i> <b>info heritage</b></dt>
+
+<dd>Returns the current class name and the entire list of base
+classes in the order that they are traversed for member lookup and
+object destruction.</dd>
+
+<dt><i>objName</i> <b>info function</b> ?<i>cmdName</i>?
+?<b>-protection</b>? ?<b>-type</b>? ?<b>-name</b>? ?<b>-args</b>?
+?<b>-body</b>?</dt>
+
+<dd>With no arguments, this command returns a list of all class
+methods and procs. If <i>cmdName</i> is specified, it returns
+information for a specific method or proc. If no flags are
+specified, this command returns a list with the following elements:
+the protection level, the type (method/proc), the qualified name,
+the argument list and the body. Flags can be used to request
+specific elements from this list.</dd>
+
+<dt><i>objName</i> <b>info variable</b> ?<i>varName</i>?
+?<b>-protection</b>? ?<b>-type</b>? ?<b>-name</b>? ?<b>-init</b>?
+?<b>-value</b>? ?<b>-config</b>?</dt>
+
+<dd>With no arguments, this command returns a list of all
+object-specific variables and common data members. If
+<i>varName</i> is specified, it returns information for a specific
+data member. If no flags are specified, this command returns a list
+with the following elements: the protection level, the type
+(variable/common), the qualified name, the initial value, and the
+current value. If <i>varName</i> is a public variable, the "config"
+code is included on this list. Flags can be used to request
+specific elements from this list.</dd>
+</dl>
+</dd>
+</dl>
+
+<h3>CHAINING METHODS/PROCS</h3>
+
+Sometimes a base class has a method or proc that is redefined with
+the same name in a derived class. This is a way of making the
+derived class handle the same operations as the base class, but
+with its own specialized behavior. For example, suppose we have a
+Toaster class that looks like this: 
+
+<blockquote>
+<pre>
+itcl::class Toaster {
+    variable crumbs 0
+    method toast {nslices} {
+        if {$crumbs &gt; 50} {
+            error "== FIRE! FIRE! =="
+        }
+        set crumbs [expr $crumbs+4*$nslices]
+    }
+    method clean {} {
+        set crumbs 0
+    }
+}
+</pre>
+</blockquote>
+
+We might create another class like SmartToaster that redefines the
+"toast" method. If we want to access the base class method, we can
+qualify it with the base class name, to avoid ambiguity: 
+
+<blockquote>
+<pre>
+itcl::class SmartToaster {
+    inherit Toaster
+    method toast {nslices} {
+        if {$crumbs &gt; 40} {
+            clean
+        }
+        return [Toaster::toast $nslices]
+    }
+}
+</pre>
+</blockquote>
+
+Instead of hard-coding the base class name, we can use the "chain"
+command like this: 
+
+<blockquote>
+<pre>
+itcl::class SmartToaster {
+    inherit Toaster
+    method toast {nslices} {
+        if {$crumbs &gt; 40} {
+            clean
+        }
+        return [chain $nslices]
+    }
+}
+</pre>
+</blockquote>
+
+The chain command searches through the class hierarchy for a
+slightly more generic (base class) implementation of a method or
+proc, and invokes it with the specified arguments. It starts at the
+current class context and searches through base classes in the
+order that they are reported by the "info heritage" command. If
+another implementation is not found, this command does nothing and
+returns the null string. 
+
+<h3>AUTO-LOADING</h3>
+
+<p>Class definitions need not be loaded explicitly; they can be
+loaded as needed by the usual Tcl auto-loading facility. Each
+directory containing class definition files should have an
+accompanying "tclIndex" file. Each line in this file identifies a
+Tcl procedure or <b>[incrTcl]</b> class definition and the file
+where the definition can be found.</p>
+
+<p>For example, suppose a directory contains the definitions for
+classes "Toaster" and "SmartToaster". Then the "tclIndex" file for
+this directory would look like:</p>
+
+<blockquote>
+<pre>
+# Tcl autoload index file, version 2.0 for [incr Tcl]
+# This file is generated by the "auto_mkindex" command
+# and sourced to set up indexing information for one or
+# more commands.  Typically each line is a command that
+# sets an element in the auto_index array, where the
+# element name is the name of a command and the value is
+# a script that loads the command.
+
+set auto_index(::Toaster) "source $dir/Toaster.itcl"
+set auto_index(::SmartToaster) "source $dir/SmartToaster.itcl"
+<br>
+The <b>auto_mkindex</b> command is used to automatically
+generate "tclIndex" files.
+</pre>
+</blockquote>
+
+The auto-loader must be made aware of this directory by appending
+the directory name to the "auto_path" variable. When this is in
+place, classes will be auto-loaded as needed when used in an
+application. 
+
+<h3>C PROCEDURES</h3>
+
+<p>C procedures can be integrated into an <b>[incrTcl]</b> class
+definition to implement methods, procs, and the "config" code for
+public variables. Any body that starts with "<b>@</b>" is treated
+as the symbolic name for a C procedure.</p>
+
+<p>Symbolic names are established by registering procedures via
+<b>Itcl_RegisterC()</b>. This is usually done in the
+<b>Tcl_AppInit()</b> procedure, which is automatically called when
+the interpreter starts up. In the following example, the procedure
+My_FooCmd() is registered with the symbolic name "foo". This
+procedure can be referenced in the <b><a href=
+"body.n.html">body</a></b> command as "@foo".</p>
+
+<blockquote>
+<pre>
+int
+Tcl_AppInit(interp)
+    Tcl_Interp *interp;     /* Interpreter for application. */
+{
+    if (Itcl_Init(interp) == TCL_ERROR) {
+        return TCL_ERROR;
+    }
+
+    if (Itcl_RegisterC(interp, "foo", My_FooCmd) != TCL_OK) {
+        return TCL_ERROR;
+    }
+}
+</pre>
+</blockquote>
+
+C procedures are implemented just like ordinary Tcl commands. See
+the <b>CrtCommand</b> man page for details. Within the procedure,
+class data members can be accessed like ordinary variables using
+<b>Tcl_SetVar()</b>, <b>Tcl_GetVar()</b>, <b>Tcl_TraceVar()</b>,
+etc. Class methods and procs can be executed like ordinary commands
+using <b>Tcl_Eval()</b>. <b>[incrTcl]</b> makes this possible by
+automatically setting up the context before executing the C
+procedure. 
+
+<p>This scheme provides a natural migration path for code
+development. Classes can be developed quickly using Tcl code to
+implement the bodies. An entire application can be built and
+tested. When necessary, individual bodies can be implemented with C
+code to improve performance.</p>
+
+<h3>KEYWORDS</h3>
+
+class, object, object-oriented 
+
+<hr>
+[ <a href="contents.html">itcl</a> ] 
+
+<hr>
+<pre>
+Copyright &copy; 1989-1994 The Regents of the University of California.
+Copyright &copy; 1994-1996 Sun Microsystems, Inc.
+</pre>
+</body>
+</html>
+
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="ttk_progressbar.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>ttk::progressbar manual page - Tk Themed Widget</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tk Commands, version 8.6.7</a> <small>&gt;</small> ttk_progressbar</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="ttk_progressbar.html#M2" NAME="L1985">NAME</A>
+<DL><DD>ttk::progressbar &mdash; Provide progress feedback</DD></DL>
+<DD><A HREF="ttk_progressbar.html#M3" NAME="L1986">SYNOPSIS</A>
+<DL>
+</DL>
+<DD><A HREF="ttk_progressbar.html#M4" NAME="L1987">DESCRIPTION</A>
+<DD><A HREF="ttk_progressbar.html#M5" NAME="L1988">STANDARD OPTIONS</A>
+<DL>
+<DD><A HREF="ttk_widget.html#M-class">-class, undefined, undefined</A>
+<DD><A HREF="ttk_widget.html#M-cursor">-cursor, cursor, Cursor</A>
+<DD><A HREF="ttk_widget.html#M-style">-style, style, Style</A>
+<DD><A HREF="ttk_widget.html#M-takefocus">-takefocus, takeFocus, TakeFocus</A>
+</DL>
+<DD><A HREF="ttk_progressbar.html#M6" NAME="L1989">WIDGET-SPECIFIC OPTIONS</A>
+<DL>
+<DD><A HREF="ttk_progressbar.html#M7" NAME="L1990">-orient, orient, Orient</A>
+<DD><A HREF="ttk_progressbar.html#M8" NAME="L1991">-length, length, Length</A>
+<DD><A HREF="ttk_progressbar.html#M9" NAME="L1992">-mode, mode, Mode</A>
+<DD><A HREF="ttk_progressbar.html#M10" NAME="L1993">-maximum, maximum, Maximum</A>
+<DD><A HREF="ttk_progressbar.html#M11" NAME="L1994">-value, value, Value</A>
+<DD><A HREF="ttk_progressbar.html#M12" NAME="L1995">-variable, variable, Variable</A>
+<DD><A HREF="ttk_progressbar.html#M13" NAME="L1996">-phase, phase, Phase</A>
+</DL>
+<DD><A HREF="ttk_progressbar.html#M14" NAME="L1997">WIDGET COMMAND</A>
+<DL class="widget command">
+<DD><A HREF="ttk_progressbar.html#M15" NAME="L1998"><I>pathName </I><B>cget </B><I>option</I></A>
+<DD><A HREF="ttk_progressbar.html#M16" NAME="L1999"><I>pathName </I><B>configure</B> ?<I>option</I>? ?<I>value option value ...</I>?</A>
+<DD><A HREF="ttk_progressbar.html#M17" NAME="L2000"><I>pathName </I><B>identify </B><I>x y</I></A>
+<DD><A HREF="ttk_progressbar.html#M18" NAME="L2001"><I>pathName </I><B>instate </B><I>statespec</I> ?<I>script</I>?</A>
+<DD><A HREF="ttk_progressbar.html#M19" NAME="L2002"><I>pathName </I><B>start</B> ?<I>interval</I>?</A>
+<DD><A HREF="ttk_progressbar.html#M20" NAME="L2003"><I>pathName </I><B>state</B> ?<I>stateSpec</I>?</A>
+<DD><A HREF="ttk_progressbar.html#M21" NAME="L2004"><I>pathName </I><B>step</B> ?<I>amount</I>?</A>
+<DD><A HREF="ttk_progressbar.html#M22" NAME="L2005"><I>pathName </I><B>stop</B></A>
+</DL>
+<DD><A HREF="ttk_progressbar.html#M23" NAME="L2006">SEE ALSO</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+ttk::progressbar &mdash; Provide progress feedback
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+<B>ttk::progressbar</B> <I>pathName </I>?<I>options</I>?<BR>
+<H3><A NAME="M4">DESCRIPTION</A></H3>
+A <B>ttk::progressbar</B> widget shows the status of a long-running
+operation.  They can operate in two modes: <I>determinate</I> mode shows the
+amount completed relative to the total amount of work to be done, and
+<I>indeterminate</I> mode provides an animated display to let the user know
+that something is happening.
+<H3><A NAME="M5">STANDARD OPTIONS</A></H3>
+<DL>
+<DT><B><A HREF="ttk_widget.html#M-class">-class, undefined, undefined</A></B>
+<DT><B><A HREF="ttk_widget.html#M-cursor">-cursor, cursor, Cursor</A></B>
+<DT><B><A HREF="ttk_widget.html#M-style">-style, style, Style</A></B>
+<DT><B><A HREF="ttk_widget.html#M-takefocus">-takefocus, takeFocus, TakeFocus</A></B>
+</DL>
+<H3><A NAME="M6">WIDGET-SPECIFIC OPTIONS</A></H3>
+<DL>
+<DT>Command-Line Name: <B><A NAME="M7">-orient</A></B>
+<DT>Database Name: <B>orient</B>
+<DT>Database Class: <B>Orient</B>
+<DD>One of <B>horizontal</B> or <B>vertical</B>.
+Specifies the orientation of the progress bar.
+<P><DT>Command-Line Name: <B><A NAME="M8">-length</A></B>
+<DT>Database Name: <B>length</B>
+<DT>Database Class: <B>Length</B>
+<DD>Specifies the length of the long axis of the progress bar
+(width if horizontal, height if vertical).
+<P><DT>Command-Line Name: <B><A NAME="M9">-mode</A></B>
+<DT>Database Name: <B>mode</B>
+<DT>Database Class: <B>Mode</B>
+<DD>One of <B>determinate</B> or <B>indeterminate</B>.
+<P><DT>Command-Line Name: <B><A NAME="M10">-maximum</A></B>
+<DT>Database Name: <B>maximum</B>
+<DT>Database Class: <B>Maximum</B>
+<DD>A floating point number specifying the maximum <B>-value</B>.
+Defaults to 100.
+<P><DT>Command-Line Name: <B><A NAME="M11">-value</A></B>
+<DT>Database Name: <B>value</B>
+<DT>Database Class: <B>Value</B>
+<DD>The current value of the progress bar.
+In <I>determinate</I> mode, this represents the amount of work completed.
+In <I>indeterminate</I> mode, it is interpreted modulo <B>-maximum</B>;
+that is, the progress bar completes one
+&#8220;cycle&#8221;
+when the <B>-value</B> increases by <B>-maximum</B>.
+<P><DT>Command-Line Name: <B><A NAME="M12">-variable</A></B>
+<DT>Database Name: <B>variable</B>
+<DT>Database Class: <B>Variable</B>
+<DD>The name of a global Tcl variable which is linked to the <B>-value</B>.
+If specified, the <B>-value</B> of the progress bar is
+automatically set to the value of the variable whenever
+the latter is modified.
+<P><DT>Command-Line Name: <B><A NAME="M13">-phase</A></B>
+<DT>Database Name: <B>phase</B>
+<DT>Database Class: <B>Phase</B>
+<DD>Read-only option.
+The widget periodically increments the value of this option
+whenever the <B>-value</B> is greater than 0 and,
+in <I>determinate</I> mode, less than <B>-maximum</B>.
+This option may be used by the current theme
+to provide additional animation effects.
+</DL>
+<H3><A NAME="M14">WIDGET COMMAND</A></H3>
+<P>
+<DL class="widget command">
+<DT><A NAME="M15"><I>pathName </I><B>cget </B><I>option</I></A><DD>
+Returns the current value of the specified <I>option</I>; see <I>ttk::widget(n)</I>.
+<P><DT><A NAME="M16"><I>pathName </I><B>configure</B> ?<I>option</I>? ?<I>value option value ...</I>?</A><DD>
+Modify or query widget options; see <I>ttk::widget(n)</I>.
+<P><DT><A NAME="M17"><I>pathName </I><B>identify </B><I>x y</I></A><DD>
+Returns the name of the element at position <I>x</I>, <I>y</I>.
+See <I>ttk::widget(n)</I>.
+<P><DT><A NAME="M18"><I>pathName </I><B>instate </B><I>statespec</I> ?<I>script</I>?</A><DD>
+Test the widget state; see <I>ttk::widget(n)</I>.
+<P><DT><A NAME="M19"><I>pathName </I><B>start</B> ?<I>interval</I>?</A><DD>
+Begin autoincrement mode:
+schedules a recurring timer event that calls <B>step</B>
+every <I>interval</I> milliseconds.
+If omitted, <I>interval</I> defaults to 50 milliseconds (20 steps/second).
+<P><DT><A NAME="M20"><I>pathName </I><B>state</B> ?<I>stateSpec</I>?</A><DD>
+Modify or query the widget state; see <I>ttk::widget(n)</I>.
+<P><DT><A NAME="M21"><I>pathName </I><B>step</B> ?<I>amount</I>?</A><DD>
+Increments the <B>-value</B> by <I>amount</I>.
+<I>amount</I> defaults to 1.0 if omitted.
+<P><DT><A NAME="M22"><I>pathName </I><B>stop</B></A><DD>
+Stop autoincrement mode:
+cancels any recurring timer event initiated by <I>pathName </I><B>start</B>.
+<P></DL>
+<H3><A NAME="M23">SEE ALSO</A></H3>
+<B><A HREF="ttk_widget.html">ttk::widget</A></B>
+<div class="copy">Copyright &copy; 2005 Joe English
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="Handles.3.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- manual page source format generated by PolyglotMan v3.0.8+X.Org, -->
+<!-- available at http://polyglotman.sourceforge.net/ -->
+<html>
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org">
+<meta name='Author' content='ActiveState'>
+
+<title>TclX Handles</title>
+</head>
+<body>
+<a href='Handles.3.html#toc'>Table of Contents</a> 
+
+<h2><a name='sect0' href='Handles.3.html#toc0'>Name</a></h2>
+
+<p>Tcl_HandleAlloc, Tcl_HandleFree, Tcl_HandleTblInit,
+Tcl_HandleTblRe-lease, Tcl_HandleTblUseCount, Tcl_HandleWalk,
+Tcl_HandleXlate -Dynamic, handle addressable tables.</p>
+
+<h2><a name='sect1' href='Handles.3.html#toc1'><b>Synopsis</b></a></h2>
+
+<p>#include &lt;tclExtend.h&gt;</p>
+
+<p>void_pt<br>
+ Tcl_HandleTblInit (const char *handleBase,</p>
+
+<dl>
+<dt>int</dt>
+
+<dd>entrySize,</dd>
+
+<dt>int</dt>
+
+<dd>initEntries);</dd>
+</dl>
+
+<p>int<br>
+ Tcl_HandleTblUseCount (void_pt headerPtr,</p>
+
+<dl>
+<dt>int</dt>
+
+<dd>amount);</dd>
+</dl>
+
+<p>void<br>
+ Tcl_HandleTblRelease (void_pt headerPtr);</p>
+
+<p>void_pt<br>
+</p>
+
+<dl>
+<dt>Tcl_HandleAlloc (void_pt</dt>
+
+<dd>headerPtr,</dd>
+
+<dt>char</dt>
+
+<dd>*handlePtr);</dd>
+</dl>
+
+<p>void_pt<br>
+ Tcl_HandleXlate (Tcl_Interp *interp,<br>
+</p>
+
+<dl>
+<dt>void_pt</dt>
+
+<dd>headerPtr, const char *handle);</dd>
+</dl>
+
+<p>void_pt<br>
+</p>
+
+<dl>
+<dt>Tcl_HandleWalk (void_pt</dt>
+
+<dd>headerPtr,</dd>
+
+<dt>int</dt>
+
+<dd>*walkKeyPtr);</dd>
+</dl>
+
+<p>void<br>
+</p>
+
+<dl>
+<dt>Tcl_WalkKeyToHandle (void_pt</dt>
+
+<dd>headerPtr,</dd>
+
+<dt>int</dt>
+
+<dd>walkKey,</dd>
+
+<dt>char</dt>
+
+<dd>*handlePtr);</dd>
+</dl>
+
+<p>void<br>
+ Tcl_HandleFree (void_pt headerPtr,<br>
+ void_pt entryPtr);</p>
+
+<h2><a name='sect2' href='Handles.3.html#toc2'><b>Description</b></a></h2>
+
+<p>The Tcl handle facility provides a way to manage table entries
+that may be referenced by a textual handle from Tcl code. This is
+provided for applications that need to create data structures in
+one command, return a reference (i.e. pointer) to that particular
+data structure and then access that data structure in other
+commands. An example application is file handles.</p>
+
+<p>A handle consists of a base name, which is some unique,
+meaningful name, such as
+&acirc;&euro;&tilde;<b>file</b>&acirc;&euro;&trade; and a numeric
+value appended to the base name (e.g.
+&acirc;&euro;&tilde;file3&acirc;&euro;&trade;). The handle facility
+is designed to provide a standard mechanism for building Tcl
+commands that allocate and access table entries based on an entry
+index. The tables are expanded when needed, consequently pointers
+to entries should not be kept, as they will become invalid when the
+table is expanded. If the table entries are large or pointers must
+be kept to the entries, then the the entries should be allocated
+separately and pointers kept in the handle table. A use count is
+kept on the table. This use count is intended to deter-mine when a
+table shared by multiple commands is to be release.</p>
+
+<p><b>Tcl_HandleTblInit</b><br>
+ Create and initialize a Tcl dynamic handle table. The use count on
+the table is set to one.</p>
+
+<p>Parameters:<br>
+ <b>o</b> <i>handleBase</i> - The base name of the handle, the
+handle will be returned in the form baseNN", where NN is the table
+entry number. <b>o</b> <i>entrySize</i> - The size of an entry, in
+bytes. <b>o</b> <i>initEntries</i> - Initial size of the table, in
+entries.</p>
+
+<p>Returns:<br>
+ A pointer to the table header.</p>
+
+<p><b>Tcl_HandleTblUseCount</b><br>
+ Alter the handle table use count by the specified amount, which
+can be positive or negative. Amount may be zero to retrieve the use
+count.</p>
+
+<p>Parameters:<br>
+ <b>o</b> <i>headerPtr</i> - Pointer to the table header. <b>o</b>
+<i>amount</i> - The amount to alter the use count by.</p>
+
+<p>Returns:<br>
+ The resulting use count.</p>
+
+<p><b>Tcl_HandleTblRelease</b><br>
+ Decrement the use count on a Tcl dynamic handle table. If the
+count goes to zero or negative, then release the table.</p>
+
+<p>Parameters:<br>
+ <b>o</b> <i>headerPtr</i> - Pointer to the table header.</p>
+
+<p><b>Tcl_HandleAlloc</b><br>
+ Allocate an entry and associate a handle with it.</p>
+
+<p>Parameters:<br>
+ <b>o</b> <i>headerPtr</i> - A pointer to the table header.
+<b>o</b> <i>handlePtr</i> - Buffer to return handle in. It must be
+big enough to hold the name.</p>
+
+<p>Returns:<br>
+ A pointer to the allocated entry (user part).</p>
+
+<p><b>Tcl_HandleXlate</b><br>
+ Translate a handle to a entry pointer.</p>
+
+<p>Parameters:<br>
+ <b>o</b> <i>interp</i> - A error message may be returned in
+result. <b>o</b> <i>headerPtr</i> - A pointer to the table
+header.</p>
+
+<p>o <i>handle</i> - The handle assigned to the entry.</p>
+
+<p>Returns:<br>
+ A pointer to the entry, or NULL if an error occurred.</p>
+
+<p><b>Tcl_HandleWalk</b><br>
+ Walk through and find every allocated entry in a table. Entries
+may be deallocated during a walk, but should not be allocated.</p>
+
+<p>Parameters:<br>
+ <b>o</b> <i>headerPtr</i> - A pointer to the table header.
+<b>o</b> <i>walkKeyPtr</i> - Pointer to a variable to use to keep
+track of the place in the table. The variable should be initialized
+to -1 before the first call.<br>
+ Returns:<br>
+ A pointer to the next allocated entry, or NULL if there are not
+more.</p>
+
+<p><b>Tcl_WalkKeyToHandle</b><br>
+ Convert a walk key, as returned from a call to Tcl_HandleWalk into
+a handle. The Tcl_HandleWalk must have succeeded.</p>
+
+<p>Parameters:<br>
+ <b>o</b> <i>headerPtr</i> - A pointer to the table header.
+<b>o</b> <i>walkKey</i> - The walk key.<br>
+ <b>o</b> <i>handlePtr</i> - Buffer to return handle in. It must be
+big enough to hold the name.</p>
+
+<p><b>Tcl_HandleFree</b><br>
+ Frees a handle table entry.</p>
+
+<p>Parameters:<br>
+ <b>o</b> <i>headerPtr</i> - A pointer to the table header.
+<b>o</b> <i>entryPtr</i> - Entry to free.</p>
+
+<h2><a name='sect3' href='Handles.3.html#toc3'>Tcl Handles(TCL)</a></h2>
+
+<hr>
+<p><a name='toc'><b>Table of Contents</b></a></p>
+
+<ul>
+<li><a name='toc0' href='Handles.3.html#sect0'>Name</a></li>
+
+<li><a name='toc1' href='Handles.3.html#sect1'>Synopsis</a></li>
+
+<li><a name='toc2' href='Handles.3.html#sect2'>Description</a></li>
+
+<li><a name='toc3' href='Handles.3.html#sect3'>Tcl Handles(TCL)</a></li>
+</ul>
+</body>
+</html>
+
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="Tcl26.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org">
+<meta name='Author' content='ActiveState'>
+
+<title>Running other programs from Tcl - exec, open</title>
+<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 class="title">Running other programs from Tcl - exec, open</h1>
+
+<div class="nav"><a href="Tcl25.html">Previous lesson</a> | <a
+href="tcltutorial.html">Index</a> | <a href="Tcl26a.html">Next
+lesson</a></div>
+
+So far the lessons have dealt with programming within the Tcl
+interpreter. However, Tcl is also useful as a scripting language to
+tie other packages or programs together. To accomplish this
+function, Tcl has two ways to start another program: 
+
+<ul compact>
+<li><code class="keyword">open</code> ...... run a new program with
+I/O connected to a file descriptor</li>
+
+<li><code class="keyword">exec</code> ...... run a new program as a
+subprocess</li>
+</ul>
+
+<br>
+<br>
+<p>The <code class="keyword">open</code> call is the same call that
+is used to open a file. If the first character in the file name
+argument is a "pipe" symbol (<code class="arg">|</code>), then
+<code class="keyword">open</code> will treat the rest of the
+argument as a program name, and will run that program with the
+<i>standard input</i> or <i>output</i> connected to a file
+descriptor. This "pipe" connection can be used to read the output
+from that other program or to write fresh input data to it or
+both.</p>
+
+<p>If the "pipe" is opened for both reading and writing you must be
+aware that the pipes are buffered. The output from a <code class=
+"keyword">puts</code> command will be saved in an I/O buffer until
+the buffer is full, or until you execute a <code class=
+"keyword">flush</code> command to force it to be transmitted to the
+other program. The output of this other program will not be
+available to a <code class="keyword">read</code> or <code class=
+"keyword">gets</code> until its output buffer is filled up or
+flushed explicitly.</p>
+
+<p>(<i>Note:</i> as this is <i>internal</i> to this other program,
+there is no way that your Tcl script can influence that. The other
+program simply must cooperate. Well, that is not entirely true: the
+<code class="keyword">expect</code> extension actually works around
+this limitation by exploiting deep system features.)</p>
+
+<p>The <code class="keyword">exec</code> call is similar to
+invoking a program (or a set of programs piped together) from the
+prompt in an interactive shell or a DOS-box or in a UNIX/Linux
+shell script. It supports several styles of output redirection, or
+it can return the output of the other program(s) as the return
+value of the <code class="keyword">exec</code> call.</p>
+
+<dl>
+<dt><code class="keyword">open</code> <code class=
+"arg">|</code><code class="arg">progName</code> <code class=
+"arg">?access?</code></dt>
+
+<dd>Returns a file descriptor for the pipe. The <code class=
+"arg">progName</code> argument must start with the pipe symbol. If
+<code class="arg">progName</code> is enclosed in quotes or braces,
+it can include arguments to the subprocess.</dd>
+
+<dt><code class="keyword">exec</code> <code class=
+"arg">?switches?</code> <code class="arg">arg1</code> <code class=
+"arg">?arg2?</code> ... <code class="arg">?argN?</code></dt>
+
+<dd><code class="keyword">exec</code> treats its arguments as the
+names and arguments for a set of programs to run. If the first
+<code class="arg">args</code> start with a <code class=
+"arg">"-"</code>, then they are treated as <code class=
+"arg">switches</code> to the <code class="keyword">exec</code>
+command, instead of being invoked as subprocesses or subprocess
+options.<br>
+<br>
+<p><code class="arg">switches</code> are:</p>
+
+<dl>
+<dt><code class="arg">-keepnewline</code></dt>
+
+<dd>Retains a trailing newline in the pipeline's output. Normally a
+trailing newline will be deleted.</dd>
+
+<dt><code class="arg">--</code></dt>
+
+<dd>Marks the end of the switches. The next string will be treated
+as <code class="arg">arg1</code>, even if it starts with a "<code
+class="arg">-</code>"<br>
+<br>
+</dd>
+</dl>
+
+<code class="arg">arg1</code> ... <code class="arg">argN</code> can
+be one of: 
+
+<ul compact>
+<li>the name of a program to execute</li>
+
+<li>a command line argument for the subprocess</li>
+
+<li>an I/O redirection instruction.</li>
+
+<li>an instruction to put the new program in the background: 
+
+<pre class="example">
+exec myprog &amp;
+</pre>
+
+will start the program <code class="arg">myprog</code> in the
+background, and return immediately. There is no connection between
+that program and the Tcl script, both can run on independently.<br>
+The &amp; must be the last argument - you can use all other types
+of arguments in front of it. 
+
+<p>[<b>NOTE:</b> add information on how to wait for the program to
+finish?]<br>
+</p>
+</li>
+</ul>
+
+There are many I/O redirection commands. The main subset of these
+commands is: 
+
+<dl>
+<dt><code class="arg">|</code></dt>
+
+<dd>Pipes the <i>standard output</i> of the command preceding the
+pipe symbol into the <i>standard input</i> of the command following
+the pipe symbol.</dd>
+
+<dt><code class="arg">&lt; fileName</code></dt>
+
+<dd>The first program in the pipe will read input from <code class=
+"arg">fileName</code>.</dd>
+
+<dt><code class="arg">&lt;@ fileID</code></dt>
+
+<dd>The first program in the pipe will read input from the Tcl
+descriptor <code class="arg">fileID</code>. <code class=
+"arg">fileID</code> is the value returned from an <code class=
+"keyword">open</code> <code class="arg">...</code> <code class=
+"arg">"r"</code> command.</dd>
+
+<dt><code class="arg">&lt;&lt; value</code></dt>
+
+<dd>The first program in the pipe will read <code class=
+"arg">value</code> as its input.</dd>
+
+<dt><code class="arg">&gt; fileName</code></dt>
+
+<dd>The output of the last program in the pipe will be sent to
+<code class="arg">fileName</code>. Any previous contents of <code
+class="arg">fileName</code> will be lost.</dd>
+
+<dt><code class="arg">&gt;&gt; fileName</code></dt>
+
+<dd>The output of the last program in the pipe will be appended to
+<code class="arg">fileName</code>.</dd>
+
+<dt><code class="arg">2&gt; fileName</code></dt>
+
+<dd>The <i>standard error</i> from all the programs in the pipe
+will be sent to <code class="arg">fileName</code>. Any previous
+contents of <code class="arg">fileName</code> will be lost.</dd>
+
+<dt><code class="arg">2&gt;&gt; fileName</code></dt>
+
+<dd>The <i>standard error</i> from all the programs in the pipe
+will be appended to <code class="arg">fileName</code>.</dd>
+
+<dt><code class="arg">&gt;@ fileID</code></dt>
+
+<dd>The output from the last program in the pipe will be written to
+<code class="arg">fileID</code>. <code class="arg">fileID</code> is
+the value returned from an <code class="keyword">open</code> <code
+class="arg">...</code> <code class="arg">"w"</code> command.</dd>
+</dl>
+</dd>
+</dl>
+
+<br>
+<br>
+<p>If you are familiar with shell programming, there are a few
+differences to be aware of when you are writing Tcl scripts that
+use the <code class="keyword">exec</code> and <code class=
+"keyword">open</code> calls.</p>
+
+<ul compact>
+<li>You don't need the quotes that you would put around arguments
+to escape them from the shell expanding them. In the example, the
+argument to the <code class="keyword">sed</code> command is not put
+in quotes. If it were put in quotes, the quotes would be passed to
+<code class="keyword">sed</code>, instead of being stripped off (as
+the shell does), and <code class="keyword">sed</code> would report
+an error.</li>
+
+<li>If you use the <code class="keyword">open</code> <code class=
+"arg">|cmd</code> <code class="arg">"r+"</code> construct, you must
+follow each puts with a flush to force Tcl to send the command from
+its buffer to the program. The output from the program itself may
+be buffered in its output buffer.<br>
+<br>
+<p>You can sometimes force the output from the external program to
+flush by sending an <code class="keyword">exit</code> command to
+the process.</p>
+
+<p>You can also use the <code class="keyword">fconfigure</code>
+command to make a connection (channel) unbuffered.</p>
+
+<p>As already mentioned, <code class="keyword">expect</code>
+extension to Tcl provides a much better interface to other
+programs, which in particular handles the buffering problem.<br>
+[<b>NOTE:</b> add good reference to expect]<br>
+</p>
+</li>
+
+<li>If one of the commands in an <code class="keyword">open</code>
+<code class="arg">|cmd</code> fails the <code class=
+"keyword">open</code> does not return an error. However, attempting
+to read input from the file descriptor with <code class=
+"keyword">gets</code> <code class="arg">$file</code> will return an
+empty string. Using the <code class="keyword">gets</code> <code
+class="arg">$file</code> <code class="arg">input</code> construct
+will return a character count of -1.</li>
+
+<li>Tcl <i>does not expand file names</i> like the UNIX/Linux
+shells do. So: 
+
+<pre class="example">
+exec ls *.tcl
+</pre>
+
+will fail - there is most probably no file with the literal name
+"*.tcl". 
+
+<p>If you need such an expansion, you should use the <code class=
+"keyword">glob</code> command:</p>
+
+<pre class="example">
+eval exec ls [glob *.tcl]
+</pre>
+
+or, from Tcl 8.5 onwards: 
+
+<pre class="example">
+exec ls {expand}[glob *.tcl]
+</pre>
+
+where the <code class="arg">{expand}</code> prefix is used to force
+the list to become individual arguments.</li>
+
+<li>If one of the commands in an <code class="keyword">exec</code>
+call fails to execute, the <code class="keyword">exec</code> will
+return an error, and the error output will include the last line
+describing the error.</li>
+
+<li style="list-style: none">
+<p>The <code class="keyword">exec</code> treats any output to
+<i>standard error</i> to be an indication that the external program
+failed. This is simply a conservative assumption: many programs
+behave that way and they are sloppy in setting return codes.</p>
+
+<p>Some programs however write to <i>standard error</i> without
+intending this as an indication of an error. You can guard against
+this from upsetting your script by using the <code class=
+"keyword">catch</code> command:</p>
+
+<pre class="example">
+if { [catch { exec ls *.tcl } msg] } {
+   puts "Something seems to have gone wrong but we will ignore it"
+}
+</pre>
+
+<p>To inspect the return code from a program and the possible
+reason for failure, you can use the global <code class=
+"arg">errorInfo</code> variable:</p>
+
+<pre class="example">
+if { [catch { exec ls *.tcl } msg] } {
+   puts "Something seems to have gone wrong:"
+   puts "Information about it: $::errorInfo"
+}
+</pre>
+
+<hr>
+<h2>Example</h2>
+
+<pre class="example">
+#
+# Write a Tcl script to get a platform-independent program:
+#
+# Create a unique (mostly) file name for a Tcl program
+set TMPDIR "/tmp"
+if { [info exists ::env(TMP)] } {
+    set TMPDIR $::env(TMP)
+}
+set tempFileName "$TMPDIR/invert_[pid].tcl"
+
+# Open the output file, and
+# write the program to it
+
+set outfl [open $tempFileName w]
+
+puts $outfl {
+    set len [gets stdin line]
+    if {$len &lt; 5} {exit -1}
+
+    for {set i [expr {$len-1}]} {$i &gt;= 0} {incr i -1} {
+        append l2 [string range $line $i $i]
+    }
+    puts $l2
+    exit 0
+}
+
+# Flush and close the file
+flush $outfl
+close $outfl
+
+#
+# Run the new Tcl script:
+#
+# Open a pipe to the program (for both reading and writing: r+)
+#
+set io [open "|[info nameofexecutable] $tempFileName" r+]
+
+#
+# send a string to the new program
+#     *MUST FLUSH*
+puts $io "This will come back backwards."
+flush $io
+
+# Get the reply, and display it.
+set len [gets $io line]
+
+puts  "To reverse: 'This will come back backwards.'"
+puts "Reversed is: $line"
+puts "The line is $len characters long"
+
+# Run the program with input defined in an exec call
+
+set invert [exec [info nameofexecutable] $tempFileName &lt;&lt; \
+       "ABLE WAS I ERE I SAW ELBA"]
+
+# display the results
+puts "The inversion of 'ABLE WAS I ERE I SAW ELBA' is \n $invert"
+
+# Clean up
+file delete $tempFileName
+</pre>
+
+<div class="nav"><a href="Tcl25.html">Previous lesson</a> | <a
+href="tcltutorial.html">Index</a> | <a href="Tcl26a.html">Next
+lesson</a></div>
+</li>
+</ul>
+</body>
+</html>
+
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="tdbc_statement.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>tdbc::statement manual page - Tcl Database Connectivity</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">TDBC Package Commands, version 1.0.5</a> <small>&gt;</small> tdbc_statement</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="../TkCmd/contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="tdbc_statement.html#M2" NAME="L66">NAME</A>
+<DL><DD>tdbc::statement &mdash; TDBC statement object</DD></DL>
+<DD><A HREF="tdbc_statement.html#M3" NAME="L67">SYNOPSIS</A>
+<DL>
+</DL>
+<DD><A HREF="tdbc_statement.html#M4" NAME="L68">DESCRIPTION</A>
+<DL class="description">
+<DD><A HREF="tdbc_statement.html#M5" NAME="L69"><B>direction</B></A>
+<DD><A HREF="tdbc_statement.html#M6" NAME="L70"><B>type</B></A>
+<DD><A HREF="tdbc_statement.html#M7" NAME="L71"><B>precision</B></A>
+<DD><A HREF="tdbc_statement.html#M8" NAME="L72"><B>scale</B></A>
+<DD><A HREF="tdbc_statement.html#M9" NAME="L73"><B>nullable</B></A>
+</DL>
+<DD><A HREF="tdbc_statement.html#M10" NAME="L74">EXAMPLES</A>
+<DD><A HREF="tdbc_statement.html#M11" NAME="L75">SEE ALSO</A>
+<DD><A HREF="tdbc_statement.html#M12" NAME="L76">KEYWORDS</A>
+<DD><A HREF="tdbc_statement.html#M13" NAME="L77">COPYRIGHT</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+tdbc::statement &mdash; TDBC statement object
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+package require <B>tdbc 1.0</B><BR>
+package require <B>tdbc::</B><I>driver version</I><BR>
+<BR>
+<B>tdbc::</B><I>driver</I><B>::connection create </B><I>db</I> <I>?-option value</I>...?<BR>
+<BR>
+<B><A HREF="../TclCmd/set.html">set</A></B> <I>stmt</I> <B>[</B><I>db</I> <B>prepare</B> <I>sql-code</I><B>]</B><BR>
+<B><A HREF="../TclCmd/set.html">set</A></B> <I>stmt</I> <B>[</B><I>db</I> <B>preparecall</B> <I>call</I><B>]</B><BR>
+<BR>
+<I>$stmt</I> <B>params</B><BR>
+<I>$stmt</I> <B>paramtype</B> ?<I>direction</I>? <I>type</I> ?<I>precision</I>? ?<I>scale</I>?<BR>
+<I>$stmt</I> <B>execute</B> ?<I>dict</I>?<BR>
+<I>$stmt</I> <B>resultsets</B><BR>
+<I>$stmt</I> <B>allrows</B> ?<B>-as lists|dicts</B>? ?<B>-columnsvariable</B> <I>name</I>? ?<B>--</B>? ?<I>dict</I><BR>
+<I>$stmt</I> <B><A HREF="../TclCmd/foreach.html">foreach</A></B> ?<B>-as lists|dicts</B>? ?<B>-columnsvariable</B> <I>name</I>? ?<B>--</B>? <I>varName</I> ?<I>dict</I>? <I>script</I><BR>
+<I>$stmt</I> <B><A HREF="../TclCmd/close.html">close</A></B><BR>
+<H3><A NAME="M4">DESCRIPTION</A></H3>
+Every database driver for TDBC (Tcl DataBase Connectivity) implements
+a <I>statement</I> object that represents a SQL statement in a
+database. Instances of this object are created by executing the
+<B>prepare</B> or <B>preparecall</B> object command on a database
+connection. 
+<P>
+The <B>prepare</B> object command against the connection
+accepts arbitrary SQL code to be
+executed against the database. The SQL code may contain <I>bound
+variables</I>, which are strings of alphanumeric characters or
+underscores (the first character of the string may not be numeric),
+prefixed with a colon (<B>:</B>). If a bound variable appears in the
+SQL statement, and is not in a string set off by single or double
+quotes, nor in a comment introduced by <B>--</B>, it becomes a value
+that is substituted when the statement is executed. A bound variable
+becomes a single value (string or numeric) in the resulting
+statement. <I>Drivers are responsible for ensuring that the mechanism
+for binding variables prevents SQL injection.</I> 
+<P>
+The <B>preparecall</B> object command against the connection accepts a
+stylized statement in the form:
+<P>
+<PRE><I>procname</I> <B>(</B>?<B>:</B><I>varname</I>? ?<B>,:</B><I>varname</I>...?<B>)</B></PRE>
+<P>
+or
+<P>
+<PRE><I>varname</I> <B>=</B> <I>procname</I> <B>(</B>?<B>:</B><I>varname</I>? ?<B>,:</B><I>varname</I>...?<B>)</B></PRE>
+<P>
+This statement represents a call to a stored procedure <I>procname</I> in the
+database. The variable name to the left of the equal sign (if
+present), and all variable names that are parameters inside
+parentheses, become bound variables.
+<P>
+The <B>params</B> method against a statement object enumerates the
+bound variables that appear in the statement. The result returned from
+the <B>params</B> method is a dictionary whose keys are the names of
+bound variables (listed in the order in which the variables first
+appear in the statement), and whose values are dictionaries. The
+subdictionaries include at least the following keys (database drivers
+may add additional keys that are not in this list).
+<P>
+<DL class="description">
+<DT><A NAME="M5"><B>direction</B></A><DD>
+Contains one of the keywords, <B>in</B>, <B>out</B> or <B>inout</B>
+according to whether the variable is an input to or output from the
+statement. Only stored procedure calls will have <B>out</B> or
+<B>inout</B> parameters.
+<P><DT><A NAME="M6"><B>type</B></A><DD>
+Contains the data type of the column, and will generally be chosen
+from the set, 
+<B>bigint</B>, <B><A HREF="../TclCmd/binary.html">binary</A></B>, <B>bit</B>, <B>char</B>, <B>date</B>,
+<B>decimal</B>, <B>double</B>, <B>float</B>, <B>integer</B>,
+<B>longvarbinary</B>, <B>longvarchar</B>, <B>numeric</B>, <B>real</B>,
+<B><A HREF="../TclCmd/time.html">time</A></B>, <B>timestamp</B>, <B>smallint</B>, <B>tinyint</B>,
+<B>varbinary</B>, and <B>varchar</B>. (If the variable has a type that
+cannot be represented as one of the above, <B>type</B> will contain
+a driver-dependent description of the type.)
+<P><DT><A NAME="M7"><B>precision</B></A><DD>
+Contains the precision of the column in bits, decimal digits, or the
+width in characters, according to the type.
+<P><DT><A NAME="M8"><B>scale</B></A><DD>
+Contains the scale of the column (the number of digits after the radix
+point), for types that support the concept.
+<P><DT><A NAME="M9"><B>nullable</B></A><DD>
+Contains 1 if the column can contain NULL values, and 0 otherwise.
+<P></DL>
+<P>
+The <B>paramtype</B> object command allows the script to specify the
+type and direction of parameter transmission of a variable in a
+statement. (Some databases provide no method to determine this
+information automatically and place the burden on the caller to do
+so.) The <I>direction</I>, <I>type</I>, <I>precision</I>, <I>scale</I>,
+and <I>nullable</I> arguments have the same meaning as the
+corresponding dictionary values in the <B>params</B> object command.
+<P>
+The <B>execute</B> object command executes the statement. Prior to
+executing the statement, values are provided for the bound variables
+that appear in it.  If the <I>dict</I> parameter is supplied, it is
+searched for a key whose name matches the name of the bound
+variable. If the key is present, its value becomes the substituted
+variable. If not, the value of the substituted variable becomes a SQL
+NULL. If the <I>dict</I> parameter is <I>not</I> supplied, the
+<B>execute</B> object command searches for a variable in the caller's
+scope whose name matches the name of the bound variable. If one is
+found, its value becomes the bound variable's value. If none is found,
+the bound variable is assigned a SQL NULL as its value.  Once
+substitution is finished, the resulting statement is executed. The
+return value is a result set object (see <B><A HREF="tdbc_resultset.html">tdbc::resultset</A></B> for
+details).
+<P>
+The <B>resultsets</B> method returns a list of all the result sets that
+have been returned by executing the statement and have not yet been
+closed.
+<P>
+The <B>allrows</B> object command executes the statement as with the
+<B>execute</B> object command, accepting an
+optional <I>dict</I> parameter giving bind variables. After executing
+the statement,
+it uses the <I>allrows</I> object command on the result set (see
+<B><A HREF="tdbc_resultset.html">tdbc::resultset</A></B>) to construct a list of the results. Finally, 
+the result set is closed. The return value is the list of
+results. 
+<P>
+The <B><A HREF="../TclCmd/foreach.html">foreach</A></B> object command executes the statement as with the
+<B>execute</B> object command, accepting an
+optional <I>dict</I> parameter giving bind variables. After executing
+the statement,
+it uses the <I>foreach</I> object command on the result set (see
+<B><A HREF="tdbc_resultset.html">tdbc::resultset</A></B>) to evaluate the given <I>script</I> for each row of
+the results. Finally, the result set is closed, even
+if the given <I>script</I> results in a <B><A HREF="../TclCmd/return.html">return</A></B>, an error, or
+an unusual return code. 
+<P>
+The <B><A HREF="../TclCmd/close.html">close</A></B> object command removes a statement and any result sets
+that it has created. All system resources associated with the objects
+are freed.
+<H3><A NAME="M10">EXAMPLES</A></H3>
+The following code would look up a telephone number in a directory,
+assuming an appropriate SQL schema:
+<P>
+<PRE>package require tdbc::sqlite3
+tdbc::sqlite3::connection create db phonebook.sqlite3
+set statement [db prepare {
+    select phone_num from directory
+    where first_name = :firstname and last_name = :lastname
+}]
+set firstname Fred
+set lastname Flintstone
+$statement foreach row {
+    puts [dict get $row phone_num]
+}
+$statement close
+db close</PRE>
+<H3><A NAME="M11">SEE ALSO</A></H3>
+<B><A HREF="../TclCmd/encoding.html">encoding</A></B>, <B><A HREF="tdbc.html">tdbc</A></B>, <B><A HREF="tdbc_connection.html">tdbc::connection</A></B>, <B><A HREF="tdbc_resultset.html">tdbc::resultset</A></B>, <B><A HREF="tdbc_tokenize.html">tdbc::tokenize</A></B>
+<H3><A NAME="M12">KEYWORDS</A></H3>
+<A href="../Keywords/T.html#TDBC">TDBC</A>, <A href="../Keywords/S.html#SQL">SQL</A>, <A href="../Keywords/D.html#database">database</A>, <A href="../Keywords/C.html#connectivity">connectivity</A>, <A href="../Keywords/C.html#connection">connection</A>, <A href="../Keywords/R.html#resultset">resultset</A>, <A href="../Keywords/S.html#statement">statement</A>, <A href="../Keywords/B.html#bound variable">bound variable</A>, <A href="../Keywords/S.html#stored procedure">stored procedure</A>, <A href="../Keywords/C.html#call">call</A>
+<H3><A NAME="M13">COPYRIGHT</A></H3>
+Copyright (c) 2008 by Kevin B. Kenny.
+<div class="copy">Copyright &copy; 2008 by Kevin B. Kenny.
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

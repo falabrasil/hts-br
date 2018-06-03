@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="tdbc_odbc.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>tdbc::odbc manual page - Tcl Database Connectivity</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">tdbc::odbc Package Commands, version 1.0.5</a> <small>&gt;</small> tdbc_odbc</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="../TkCmd/contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="tdbc_odbc.html#M2" NAME="L2">NAME</A>
+<DL><DD>tdbc::odbc &mdash; TDBC-ODBC bridge</DD></DL>
+<DD><A HREF="tdbc_odbc.html#M3" NAME="L3">SYNOPSIS</A>
+<DL>
+</DL>
+<DD><A HREF="tdbc_odbc.html#M4" NAME="L4">DESCRIPTION</A>
+<DL class="description">
+<DD><A HREF="tdbc_odbc.html#M5" NAME="L5"><B>add</B></A>
+<DD><A HREF="tdbc_odbc.html#M6" NAME="L6"><B>add_system</B></A>
+<DD><A HREF="tdbc_odbc.html#M7" NAME="L7"><B>configure</B></A>
+<DD><A HREF="tdbc_odbc.html#M8" NAME="L8"><B>configure_system</B></A>
+<DD><A HREF="tdbc_odbc.html#M9" NAME="L9"><B>remove</B></A>
+<DD><A HREF="tdbc_odbc.html#M10" NAME="L10"><B>remove_system</B></A>
+</DL>
+<DD><A HREF="tdbc_odbc.html#M11" NAME="L11">CONNECTION OPTIONS</A>
+<DD><A HREF="tdbc_odbc.html#M12" NAME="L12">EXAMPLES</A>
+<DD><A HREF="tdbc_odbc.html#M13" NAME="L13">SEE ALSO</A>
+<DD><A HREF="tdbc_odbc.html#M14" NAME="L14">KEYWORDS</A>
+<DD><A HREF="tdbc_odbc.html#M15" NAME="L15">COPYRIGHT</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+tdbc::odbc &mdash; TDBC-ODBC bridge
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+package require <B>tdbc::odbc 1.0</B><BR>
+<B>tdbc::odbc::connection create</B> <I>db</I> <I>connectionString</I> ?<I>-option value...</I>?<BR>
+<B>tdbc::odbc::connection new</B> <I>connectionString</I> ?<I>-option value...</I>?<BR>
+<B>tdbc::odbc::datasources</B> ?<B>-system</B>|<B>-user</B>?<BR>
+<B>tdbc::odbc::drivers</B><BR>
+<B>tdbc::odbc::datasource</B> <I>command</I> <I>driverName</I> ?<I>keyword</I>-<I>value</I>?...<BR>
+<H3><A NAME="M4">DESCRIPTION</A></H3>
+The <B>tdbc::odbc</B> driver provides a database interface that conforms
+to Tcl DataBase Connectivity (TDBC) and allows a Tcl script to connect
+to any SQL database presenting an ODBC interface.  It is also provided
+as a worked example of how to write a database driver in C, so that
+driver authors have a starting point for further development.
+<P>
+Connection to an ODBC database is established by invoking
+<B>tdbc::odbc::connection create</B>, passing it the name to be used
+as a connection handle, followed by a standard ODBC
+connection string. As an alternative, <B>tdbc::odbc::connection new</B>
+may be used to create
+a database connection with an automatically assigned name. The return value
+from <B>tdbc::odbc::connection new</B> is the name that was chosen for the
+connection handle.
+<P>
+The connection string will include at least a
+<B>DRIVER</B> or <B>DSN</B> keyword, and may include others that are defined by a
+particular ODBC driver. (If the local ODBC system supports a graphical
+user interface, the <B>-parent</B> option (see below) may allow calling
+<B>tdbc::odbc::connection create</B> with an empty connection string.)
+<P>
+The side effect of <B>tdbc::odbc::connection create</B> is to create a
+new database connection.. See <B>tdbc::connection(n)</B> for the
+details of how to use the connection to manipulate a database.
+<P>
+In addition to a standard TDBC interface, <B>tdbc::odbc</B> supports
+three additional ccommands. The first of these,
+<B>tdbc::odbc::datasources</B>, which returns a Tcl
+list enumerating the named data sources available to the program (for
+connection with the <B>DSN</B> keyword in the connection string).
+The result of <B>tdbc::odbc::datasources</B> may be constrained to only
+system data sources or only user data sources by including the
+<B>-system</B> or <B>-user</B> options, respectively.
+<P>
+The <B>tdbc::odbc::drivers</B> command returns a dictionary whose keys
+are the names of drivers available for the <B>DRIVER</B> keyword in the
+connection string, and whose values are descriptions of the drivers.
+<P>
+The <B>tdbc::odbc::datasource</B> command allows configuration of named
+data sources on those systems that support the ODBC Installer
+application programming interface. It accepts a <I>command</I>, which
+specifies the operation to be performed, the name of a <I>driver</I>
+for the database in question, and a set of keyword-value pairs that
+are interpreted by the given driver. The <I>command</I> must be one of
+the following:
+<P>
+<DL class="description">
+<DT><A NAME="M5"><B>add</B></A><DD>
+Adds a user data source. The keyword-value pairs must include
+at least a <B>DSN</B> option naming the data source
+<P><DT><A NAME="M6"><B>add_system</B></A><DD>
+Adds a system data source. The keyword-value pairs must include
+at least a <B>DSN</B> option naming the data source
+<P><DT><A NAME="M7"><B>configure</B></A><DD>
+Configures a user data source. The keyword-value pairs will usually
+include a <B>DSN</B> option naming the data source. Some drivers will
+support other options, such as the <B>CREATE_DB</B> option to the
+Microsoft Access driver on Windows.
+<P><DT><A NAME="M8"><B>configure_system</B></A><DD>
+Configures a system data source.
+<P><DT><A NAME="M9"><B>remove</B></A><DD>
+Removes a user data source. The keyword-value pairs must include a
+<B>DSN</B> option specifying the data source to remove.
+<P><DT><A NAME="M10"><B>remove_system</B></A><DD>
+Removes a system data source. The keyword-value pairs must include a
+<B>DSN</B> option specifying the data source to remove.
+<P></DL>
+<H3><A NAME="M11">CONNECTION OPTIONS</A></H3>
+The <B>tdbc::odbc::connection create</B> object command supports the
+<B>-encoding</B>, <B>-isolation</B>, <B>-readonly</B> and <B>-timeout</B>
+options common to all TDBC drivers. The <B>-encoding</B> option will
+succeed only if the requested encoding is the same as the system
+encoding; <B>tdbc::odbc</B> does not attempt to specify alternative
+encodings to an ODBC driver. (Some drivers accept encoding
+specifications in the connection string.)
+<P>
+In addition, if Tk is present in the requesting interpreter,
+and the local system's ODBC driver manager supports a graphical user
+interface, the <B>tdbc::odbc::connection create</B> object command
+supports a <B>-parent</B> option, whose value is the path name of
+a Tk window. If this option is specified, and a connection string does
+not specify all the information needed to connect to an interface, the
+ODBC driver manager will display a dialog box to request whatever
+additional information is required. The requesting interpreter will
+block until the user dismisses the dialog, at which point the
+connection is made.
+<H3><A NAME="M12">EXAMPLES</A></H3>
+Sincs ODBC connection strings are driver specific, it is often
+difficult to find the documentation needed to compose them. The
+following examples are known to work on most Windows systems and
+provide at least a few useful things that a program can do.
+<P>
+<PRE>tdbc::odbc::connection create db &#92;
+    &quot;DSN={PAYROLL};UID={aladdin};PWD={Sesame}&quot;</PRE>
+Connects to a named data source &quot;PAYROLL&quot;, providing &quot;aladdin&quot; as a
+user name and &quot;Sesame&quot; as a password. Uses <B>db</B> as the name of the
+connection.
+<P>
+<PRE>set connString {DRIVER={Microsoft Access Driver (*.mdb)};}
+append connString {FIL={MS Access}&#92;;}
+append connString {DBQ=} &#92;
+    [file nativename [file normalize $fileName]]
+tdbc::odbc::connection create db2 -readonly 1 $connString</PRE>
+Opens a connection to a Microsoft Access database file whose
+name is in <I>$fileName</I>. The database is opened in read-only
+mode. The resulting connection is called &quot;db2&quot;.
+<P>
+<PRE>tdbc::odbc::connection create db3 &#92;
+    &quot;DRIVER=SQLite3;DATABASE=$fileName&quot;</PRE>
+Opens a connection to a SQLite3 database whose name is in &quot;$fileName&quot;.
+<P>
+<PRE>tdbc::odbc::datasource add &#92;
+    {Microsoft Access Driver (*.mdb)} &#92;
+    DSN=MyTestDatabase &#92;
+    DBQ=[file native [file normalize $fileName]]</PRE>
+Creates a new user data source with the name, &quot;MyTestDatabase&quot; bound
+to a Microsoft Access file whose path name is in &quot;$fileName&quot;. No
+connection is made to the data source until the program calls
+<B>tdbc::odbc::connection create</B>.
+<P>
+<PRE>tdbc::odbc::datasource configure &#92;
+    {Microsoft Access Driver (*.mdb)} &#92;
+    CREATE_DB=[file native [file normalize $fileName]] &#92;
+    General</PRE>
+Creates a new, empty Microsoft Access database in the file identified
+by &quot;$fileName&quot;. No connection is made to the database until the
+program calls <B>tdbc::odbc::connection create</B>.
+<H3><A NAME="M13">SEE ALSO</A></H3>
+<B><A HREF="../TdbcCmd/tdbc.html">tdbc</A></B>, <B><A HREF="../TdbcCmd/tdbc_connection.html">tdbc::connection</A></B>, <B><A HREF="../TdbcCmd/tdbc_resultset.html">tdbc::resultset</A></B>, <B><A HREF="../TdbcCmd/tdbc_statement.html">tdbc::statement</A></B>
+<H3><A NAME="M14">KEYWORDS</A></H3>
+<A href="../Keywords/T.html#TDBC">TDBC</A>, <A href="../Keywords/S.html#SQL">SQL</A>, <A href="../Keywords/O.html#ODBC">ODBC</A>, <A href="../Keywords/D.html#database">database</A>, <A href="../Keywords/C.html#connectivity">connectivity</A>, <A href="../Keywords/C.html#connection">connection</A>
+<H3><A NAME="M15">COPYRIGHT</A></H3>
+Copyright (c) 2008 by Kevin B. Kenny.
+<div class="copy"></div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

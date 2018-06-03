@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="next.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>next manual page - TclOO Commands</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tcl Commands, version 8.6.7</a> <small>&gt;</small> next</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="contents.html">Tcl Commands</A> | <A HREF="../TkCmd/contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="next.html#M2" NAME="L1262">NAME</A>
+<DL><DD>next, nextto &mdash; invoke superclass method implementations</DD></DL>
+<DD><A HREF="next.html#M3" NAME="L1263">SYNOPSIS</A>
+<DL>
+</DL>
+<DD><A HREF="next.html#M4" NAME="L1264">DESCRIPTION</A>
+<DD><A HREF="next.html#M5" NAME="L1265">THE METHOD CHAIN</A>
+<OL class="the method chain">
+</OL>
+<DD><A HREF="next.html#M6" NAME="L1266">METHOD SEARCH ORDER</A>
+<OL class="method search order">
+</OL>
+<DD><A HREF="next.html#M7" NAME="L1267">FILTERS</A>
+<DD><A HREF="next.html#M8" NAME="L1268">EXAMPLES</A>
+<DD><A HREF="next.html#M9" NAME="L1269">SEE ALSO</A>
+<DD><A HREF="next.html#M10" NAME="L1270">KEYWORDS</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+next, nextto &mdash; invoke superclass method implementations
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+package require TclOO<BR>
+<BR>
+<B>next</B> ?<I>arg ...</I>?<BR>
+<B>nextto</B><I> class</I> ?<I>arg ...</I>?<BR>
+<H3><A NAME="M4">DESCRIPTION</A></H3>
+The <B>next</B> command is used to call implementations of a method by a class,
+superclass or mixin that are overridden by the current method. It can only be
+used from within a method. It is also used within filters to indicate the
+point where a filter calls the actual implementation (the filter may decide to
+not go along the chain, and may process the results of going along the chain
+of methods as it chooses). The result of the <B>next</B> command is the result
+of the next method in the method chain; if there are no further methods in the
+method chain, the result of <B>next</B> will be an error. The arguments,
+<I>arg</I>, to <B>next</B> are the arguments to pass to the next method in the
+chain.
+<P>
+The <B>nextto</B> command is the same as the <B>next</B> command, except that it
+takes an additional <I>class</I> argument that identifies a class whose
+implementation of the current method chain (see <B><A HREF="info.html">info object</A></B> <B>call</B>) should
+be used; the method implementation selected will be the one provided by the
+given class, and it must refer to an existing non-filter invocation that lies
+further along the chain than the current implementation.
+<H3><A NAME="M5">THE METHOD CHAIN</A></H3>
+When a method of an object is invoked, things happen in several stages:
+<P>
+<OL class="the method chain">
+<LI value="1">
+The structure of the object, its class, superclasses, filters, and mixins, are
+examined to build a <I>method chain</I>, which contains a list of method
+implementations to invoke.
+<P><LI value="2">
+The first method implementation on the chain is invoked.
+<P><LI value="3">
+If that method implementation invokes the <B>next</B> command, the next method
+implementation is invoked (with its arguments being those that were passed to
+<B>next</B>).
+<P><LI value="4">
+The result from the overall method call is the result from the outermost
+method implementation; inner method implementations return their results
+through <B>next</B>.
+<P><LI value="5">
+The method chain is cached for future use.
+<P></OL>
+<H4><A NAME="M6">METHOD SEARCH ORDER</A></H4>
+When constructing the method chain, method implementations are searched for in
+the following order:
+<P>
+<OL class="method search order">
+<LI value="1">
+In the classes mixed into the object, in class traversal order. The list of
+mixins is checked in natural order.
+<P><LI value="2">
+In the classes mixed into the classes of the object, with sources of mixing in
+being searched in class traversal order. Within each class, the list of mixins
+is processed in natural order.
+<P><LI value="3">
+In the object itself.
+<P><LI value="4">
+In the object's class.
+<P><LI value="5">
+In the superclasses of the class, following each superclass in a depth-first
+fashion in the natural order of the superclass list.
+<P></OL>
+<P>
+Any particular method implementation always comes as <I>late</I> in the
+resulting list of implementations as possible; this means that if some class,
+A, is both mixed into a class, B, and is also a superclass of B, the instances
+of B will always treat A as a superclass from the perspective of inheritance.
+This is true even when the multiple inheritance is processed indirectly.
+<H4><A NAME="M7">FILTERS</A></H4>
+When an object has a list of filter names set upon it, or is an instance of a
+class (or has mixed in a class) that has a list of filter names set upon it,
+before every invocation of any method the filters are processed. Filter
+implementations are found in class traversal order, as are the lists of filter
+names (each of which is traversed in natural list order). Explicitly invoking
+a method used as a filter will cause that method to be invoked twice, once as
+a filter and once as a normal method.
+<P>
+Each filter should decide for itself whether to permit the execution to go
+forward to the proper implementation of the method (which it does by invoking
+the <B>next</B> command as filters are inserted into the front of the method
+call chain) and is responsible for returning the result of <B>next</B>.
+<P>
+Filters are invoked when processing an invokation of the <B>unknown</B>
+method because of a failure to locate a method implementation, but <I>not</I>
+when invoking either constructors or destructors. (Note however that the
+<B><A HREF="../TkCmd/destroy.html">destroy</A></B> method is a conventional method, and filters are invoked as
+normal when it is called.)
+<H3><A NAME="M8">EXAMPLES</A></H3>
+This example demonstrates how to use the <B>next</B> command to call the
+(super)class's implementation of a method. The script:
+<P>
+<PRE>oo::class create theSuperclass {
+    method example {args} {
+        puts &quot;in the superclass, args = $args&quot;
+    }
+}
+oo::class create theSubclass {
+    superclass theSuperclass
+    method example {args} {
+        puts &quot;before chaining from subclass, args = $args&quot;
+        <B>next</B> a {*}$args b
+        <B>next</B> pureSynthesis
+        puts &quot;after chaining from subclass&quot;
+    }
+}
+theSubclass create obj
+oo::objdefine obj method example args {
+    puts &quot;per-object method, args = $args&quot;
+    <B>next</B> x {*}$args y
+    <B>next</B>
+}
+obj example 1 2 3</PRE>
+<P>
+prints the following:
+<P>
+<PRE>per-object method, args = 1 2 3
+before chaining from subclass, args = x 1 2 3 y
+in the superclass, args = a x 1 2 3 y b
+in the superclass, args = pureSynthesis
+after chaining from subclass
+before chaining from subclass, args = 
+in the superclass, args = a b
+in the superclass, args = pureSynthesis
+after chaining from subclass</PRE>
+<P>
+This example demonstrates how to build a simple cache class that applies
+memoization to all the method calls of the objects it is mixed into, and shows
+how it can make a difference to computation times:
+<P>
+<PRE>oo::class create cache {
+    filter Memoize
+    method Memoize args {
+        <I># Do not filter the core method implementations</I>
+        if {[lindex [self target] 0] eq &quot;::oo::object&quot;} {
+            return [<B>next</B> {*}$args]
+        }
+
+        <I># Check if the value is already in the cache</I>
+        my variable ValueCache
+        set key [self target],$args
+        if {[info exist ValueCache($key)]} {
+            return $ValueCache($key)
+        }
+
+        <I># Compute value, insert into cache, and return it</I>
+        return [set ValueCache($key) [<B>next</B> {*}$args]]
+    }
+    method flushCache {} {
+        my variable ValueCache
+        unset ValueCache
+        <I># Skip the caching</I>
+        return -level 2 &quot;&quot;
+    }
+}
+
+oo::object create demo
+oo::objdefine demo {
+    mixin cache
+    method compute {a b c} {
+        after 3000 <I>;# Simulate deep thought</I>
+        return [expr {$a + $b * $c}]
+    }
+    method compute2 {a b c} {
+        after 3000 <I>;# Simulate deep thought</I>
+        return [expr {$a * $b + $c}]
+    }
+}
+
+puts [demo compute  1 2 3]      <I><font size="+1">&#8594;</font> prints &quot;7&quot; after delay</I>
+puts [demo compute2 4 5 6]      <I><font size="+1">&#8594;</font> prints &quot;26&quot; after delay</I>
+puts [demo compute  1 2 3]      <I><font size="+1">&#8594;</font> prints &quot;7&quot; instantly</I>
+puts [demo compute2 4 5 6]      <I><font size="+1">&#8594;</font> prints &quot;26&quot; instantly</I>
+puts [demo compute  4 5 6]      <I><font size="+1">&#8594;</font> prints &quot;34&quot; after delay</I>
+puts [demo compute  4 5 6]      <I><font size="+1">&#8594;</font> prints &quot;34&quot; instantly</I>
+puts [demo compute  1 2 3]      <I><font size="+1">&#8594;</font> prints &quot;7&quot; instantly</I>
+demo flushCache
+puts [demo compute  1 2 3]      <I><font size="+1">&#8594;</font> prints &quot;7&quot; after delay</I></PRE>
+<H3><A NAME="M9">SEE ALSO</A></H3>
+<B><A HREF="class.html">oo::class</A></B>, <B><A HREF="define.html">oo::define</A></B>, <B><A HREF="object.html">oo::object</A></B>, <B><A HREF="self.html">self</A></B>
+<H3><A NAME="M10">KEYWORDS</A></H3>
+<A href="../Keywords/C.html#call">call</A>, <A href="../Keywords/M.html#method">method</A>, <A href="../Keywords/M.html#method chain">method chain</A>
+<div class="copy">Copyright &copy; 2007 Donal K. Fellows
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

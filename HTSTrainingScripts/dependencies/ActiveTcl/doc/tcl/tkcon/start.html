@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="start.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org">
+<meta name='Author' content='ActiveState'>
+
+<title>tkcon: Getting Started</title>
+<link rel="STYLESHEET" type="text/css" href="http://localhost:1313/tcl/tkcon/style.css">
+</head>
+<body>
+<table  border="0" cellspacing="2" cellpadding="0"
+>
+<tr>
+<td><!-- start header info -->
+<table  border="0" cellspacing="0" cellpadding="0"
+bgcolor="#FFFFFF">
+<tr>
+<th><font size="+3">tkcon: Getting Started</font></th>
+</tr>
+</table>
+
+<!-- end header info -->
+</td>
+</tr>
+
+<tr>
+<td><!-- start main navigation table -->
+<table border="1" cellpadding="2" cellspacing="2" bgcolor="#CCCCCC"
+>
+<tr>
+<th class="hi"><a href="index.html" class=
+"hi">Documentation</a></th>
+<th><a href="purpose.html">Purpose &amp; Features</a></th>
+<th><a href="limits.html">Limitations</a></th>
+<th><a href="todo.html">To&nbsp;Do</a></th>
+
+</tr>
+
+<tr>
+<th colspan="2"><a href="plugin.html">Online Demo</a> (requires <a
+href="http://tcl.activestate.com/software/plugin/">Tk
+plugin</a>)</th>
+<th colspan="3"><a href="nontcl.html">Using TkCon with other Tk
+Languages</a></th>
+</tr>
+</table>
+
+<!-- end main navigation table -->
+</td>
+</tr>
+
+<tr>
+<td><!-- start secondary navigation table -->
+<table border="1" cellpadding="2" cellspacing="2" bgcolor="#BBBBBB"
+>
+<tr>
+<th class="hi2"><a href="start.html" class="hi2">Getting
+Started</a></th>
+<th><a href="bindings.html">Special Bindings</a></th>
+<th><a href="procs.html">Procedures</a></th>
+<th><a href="http://localhost:1313/tcl/tkcon/demopic.png">Screenshot</a></th>
+</tr>
+
+<tr>
+<th><a href="dump.html"><code>dump</code></a></th>
+<th><a href="tkcon.html"><code>tkcon</code></a></th>
+<th><a href="idebug.html"><code>idebug</code></a></th>
+<th><a href="observe.html"><code>observe</code></a></th>
+</tr>
+</table>
+
+<!-- end secondary navigation table -->
+</td>
+</tr>
+
+<tr>
+<td bgcolor="#FFFFFF">
+<div class="indent">
+<h3>Resource File:</h3>
+
+TkCon will search for a resource file in
+"<code>$env(HOME)/.tkconrc</code>" (Unix),
+"<code>$env(HOME)/tkcon.cfg</code>" (Windows) or
+"<code>$env(PREF_FOLDER)/tkcon.cfg</code>" (Macintosh). On DOS
+machines, "<code>$env(HOME)</code>" usually refers to
+"<code>C:\</code>". TkCon never sources the
+"<code>~/.wishrc</code>" file. The resource file is sourced by each
+new instance of the console. An example resource file is provided
+below.
+
+<h3>Command Line Arguments</h3>
+
+Except for <code>-rcfile</code>, command line arguments are handled
+after the TkCon resource file is sourced, but before the slave
+interpreter or the TkCon user interface is initialized.
+<code>-rcfile</code> is handled right before it would be sourced,
+allowing you to specify any alternate file. Command line arguments
+are passed to each new console and will be evaluated by each. To
+prevent this from happening, you have to say <code>tkcon main set
+argv {}; tkcon main set argc 0</code>.
+
+<p>For these options, any unique substring is allowed.</p>
+
+<dl>
+<dt><code>-argv</code> (also <code>--</code>)</dt>
+
+<dd>Causes TkCon to stop evaluating arguments and set the remaining
+args to be argv/argc (with <code>--</code> prepended). This carries
+over for any further consoles. This is meant only for wrapping
+TkCon around programs that require their own arguments.</dd>
+
+<dt><code>-color-&lt;color&gt;</code> <i>color</i></dt>
+
+<dd>Sets the requested color type to the specified color for tkcon.
+See the <b>Variables</b> section for the recognized
+<i>&lt;color&gt;</i> names.</dd>
+
+<dt><code>-eval</code> (also <code>-main</code> or
+<code>-e</code>)</dt>
+
+<dd>A tcl script to eval in each main interpreter. This is
+evaluated after the resource file is loaded and the slave
+interpreter is created. Multiple <code>-eval</code> switches will
+be recognized (in order).</dd>
+
+<dt><code>-exec</code> <i>slavename</i></dt>
+
+<dd>Sets the named slave that tkcon operates in. In general, this
+is only useful to set to "" (empty), indicating to tkcon to avoid
+the multi-interpreter model and operate in the main environment.
+When this is empty, any further arguments will be only used in the
+first tkcon console and not passed onto further new consoles. This
+is useful when using tkcon as a console for extended wish
+executables that don't load there commands into slave
+interpreters.</dd>
+
+<dt><code>-font</code> <i>font</i></dt>
+
+<dd>Sets the font that tkcon uses for its text windows. If this
+isn't a fixed width font, tkcon will override it.</dd>
+
+<dt><code>-nontcl</code> <i>TCL_BOOLEAN</i></dt>
+
+<dd>Sets <code>::tkcon::OPT(nontcl)</code> to <i>TCL_BOOLEAN</i>.
+Needed when attaching to non-Tcl interpreters.</dd>
+
+<dt><code>-package</code> <i>package_name</i> (also
+<code>-load</code>)</dt>
+
+<dd>Packages to automatically load into the slave interpreters (ie
+- "Tk").</dd>
+
+<dt><code>-rcfile</code> <i>filename</i></dt>
+
+<dd>Specify an alternate tkcon resource file name.</dd>
+
+<dt><code>-root</code> <i>widgetname</i></dt>
+
+<dd>Makes the named widget the root name of all consoles (ie -
+.tkcon).</dd>
+
+<dt><code>-slave</code> <i>tcl_script</i></dt>
+
+<dd>A tcl script to eval in each slave interpreter. This will
+append the one specified in the tkcon resource file, if any.</dd>
+</dl>
+
+Some examples of tkcon command line startup situations:
+
+<dl>
+<dt><code>megawish tkcon.tcl -exec "" -root .tkcon
+mainfile.tcl</code></dt>
+
+<dd>Use tkcon as a console for your megawish application. You can
+avoid starting the line with <code>megawish</code> if that is the
+default wish that tkcon would use. The <code>-root</code> ensures
+that tkcon will not conflict with the</dd>
+
+<dt><code>tkcon.tcl -font "Courier 12" -load Tk</code></dt>
+
+<dd>Use the courier font for tkcon and always load Tk in slave
+interpreters at startup.</dd>
+
+<dt><code>tkcon.tcl -rcfile ~/.wishrc -color,bg white</code></dt>
+
+<dd>Use the <code>~/.wishrc</code> file as the resource file, and a
+white background for tkcon's text widgets.</dd>
+</dl>
+
+<h3>Variables:</h3>
+
+Certain variables in TkCon can be modified to suit your needs. It's
+easiest to do this in the resource file, but you can do it when
+time the program is running (and some can be changed via the Prefs
+menu). All these are part of the master interpreter's
+<code>::tkcon</code> namespace. The modifiable array variables are
+<code>::tkcon::COLOR</code> and <code>::tkcon::OPT</code>. You can
+call '<code>tkcon set ::tkcon::COLOR</code>' when the program is
+running to check its state. Here is an explanation of certain
+variables you might change or use:
+
+<dl>
+<dt><code>::tkcon::COLOR(bg)</code></dt>
+
+<dd>The background color for tkcon text widgets. Defaults to the
+operating system default (determined at startup).</dd>
+
+<dt><code>::tkcon::COLOR(blink)</code></dt>
+
+<dd>The background color of the electric brace highlighting, if on.
+Defaults to <font color="#FFFF00">yellow</font>.</dd>
+
+<dt><code>::tkcon::COLOR(cursor)</code></dt>
+
+<dd>The background color for the insertion cursor in tkcon.
+Defaults to <font color="#000000">black</font>.</dd>
+
+<dt><code>::tkcon::COLOR(disabled)</code></dt>
+
+<dd>The foreground color for disabled menu items. Defaults to <font
+color="#4D4D4D">dark grey</font>.</dd>
+
+<dt><code>::tkcon::COLOR(proc)</code></dt>
+
+<dd>The foreground color of a recognized proc, if command
+highlighting is on. Defaults to <font color="#008800">dark
+green</font>.</dd>
+
+<dt><code>::tkcon::COLOR(var)</code></dt>
+
+<dd>The background color of a recognized var, if command
+highlighting is on. Defaults to <font color=
+"#FFC0D0">pink</font>.</dd>
+
+<dt><code>::tkcon::COLOR(prompt)</code></dt>
+
+<dd>The foreground color of the prompt as output in the console.
+Defaults to <font color="#8F4433">brown</font>.</dd>
+
+<dt><code>::tkcon::COLOR(stdin)</code></dt>
+
+<dd>The foreground color of the stdin for the console. Defaults to
+<font color="#000000">black</font>.</dd>
+
+<dt><code>::tkcon::COLOR(stdout)</code></dt>
+
+<dd>The foreground color of the stdout as output in the console.
+Defaults to <font color="#0000FF">blue</font>.</dd>
+
+<dt><code>::tkcon::COLOR(stderr)</code></dt>
+
+<dd>The foreground color of stderr as output in the console.
+Defaults to <font color="#FF0000">red</font>.</dd>
+
+<dt><code>::tkcon::OPT(autoload)</code></dt>
+
+<dd>Packages to automatically load into the slave interpreter (ie -
+'Tk'). This is a list. Defaults to {} (none).</dd>
+
+<dt><code>::tkcon::OPT(blinktime)</code></dt>
+
+<dd>The amount of time (in millisecs) that braced sections should
+<i>blink</i> for. Defaults to 500 (.5 secs), must be at least
+100.</dd>
+
+<dt><code>::tkcon::OPT(blinkrange)</code></dt>
+
+<dd>Whether to blink the entire range for electric brace matching
+or to just blink the actual matching braces (respectively 1 or 0,
+defaults to 1).</dd>
+
+<dt><code>::tkcon::OPT(buffer)</code></dt>
+
+<dd>The size of the console scroll buffer (in lines). Defaults to
+512.</dd>
+
+<dt><code>::tkcon::OPT(calcmode)</code></dt>
+
+<dd>Whether to allow <code>expr</code> commands to be run at the
+command line without prefixing them with <code>expr</code> (just a
+convenience).</dd>
+
+<dt><code>::tkcon::OPT(cols)</code></dt>
+
+<dd>Number of columns for the console to start out with. Defaults
+to 80.</dd>
+
+<dt><code>::tkcon::OPT(dead)</code></dt>
+
+<dd>What to do with dead connected interpreters. If
+<code>dead</code> is <i>leave</i>, TkCon automatically exits the
+dead interpreter. If <code>dead</code> is <i>ignore</i> then it
+remains attached waiting for the interpreter to reappear. Otherwise
+TkCon will prompt you.</dd>
+
+<dt><code>::tkcon::OPT(exec)</code></dt>
+
+<dd>This corresponds to the <code>-exec</code> option above</dd>
+
+<dt><code>::tkcon::OPT(font)</code></dt>
+
+<dd>Font to use for tkcon text widgets (also specified with -font).
+Defaults to the system default, or a fixed width equivalent.</dd>
+
+<dt><code>::tkcon::OPT(gets)</code></dt>
+
+<dd>Controls whether tkcon will overload the gets command to work
+with tkcon. The valid values are: <code>congets</code> (the
+default), which will redirect <code>stdin</code> requests to the
+tkcon window; <code>gets</code>, which will pop up a dialog to get
+input; and {} (empty string) which tells tkcon not to overload
+gets. This value must be set at startup to alter tkcon's
+behavior.</dd>
+
+<dt><code>::tkcon::OPT(history)</code></dt>
+
+<dd>The size of the history list to keep. Defaults to 48.</dd>
+
+<dt><code>::tkcon::OPT(hoterrors)</code></dt>
+
+<dd>Whether hot errors are enabled or not. When enabled, errors
+that are returned to the console are marked with a link to the
+error info that will pop up in an minimal editor. This requires
+more memory because each error that occurs will maintain bindings
+for this feature, as long as the error is in the text widget.
+Defaults to on.</dd>
+
+<dt><code>::tkcon::OPT(library)</code></dt>
+
+<dd>The path to any tcl library directories (these are appended to
+the auto_path when the after the resource file is loaded in).</dd>
+
+<dt><code>::tkcon::OPT(lightbrace)</code></dt>
+
+<dd>Whether to use the brace highlighting feature or not
+(respectively 1 or 0, defaults to 1).</dd>
+
+<dt><code>::tkcon::OPT(lightcmd)</code></dt>
+
+<dd>Whether to use the command highlighting feature or not
+(respectively 1 or 0, defaults to 1).</dd>
+
+<dt><code>::tkcon::OPT(maineval)</code></dt>
+
+<dd>A tcl script to execute in the main interpreter after the slave
+interpreter is created and the user interface is initialized.</dd>
+
+<dt><code>::tkcon::OPT(maxlinelen)</code></dt>
+
+<dd>A number that specifies the limit of long result lines. True
+result is still captured in $_ (and 'puts $_' works). Defaults to 0
+(unlimited).</dd>
+
+<dt><code>::tkcon::OPT(maxmenu)</code></dt>
+
+<dd>A number that specifies the maximum number of packages to show
+vertically in the Interp-&gt;Packages menu before breaking into
+another column. Defaults to 15.</dd>
+
+<dt><code>::tkcon::OPT(nontcl)</code></dt>
+
+<dd>For those who might be using non-Tcl based Tk attachments, set
+this to 1. It prevents TkCon from trying to evaluate its own Tcl
+code in an attached interpreter. Also see my <a href=
+"nontcl.html">notes for non-Tcl based Tk interpreters</a>.</dd>
+
+<dt><code>::tkcon::OPT(prompt1)</code></dt>
+
+<dd>Like tcl_prompt1, except it doesn't require you use
+'<code>puts</code>'. No equivalent for tcl_prompt2 is available
+(it's unnecessary IMHO).<br>
+Defaults to {([file tail [pwd]]) [history nextid] % }.</dd>
+
+<dt><code>::tkcon::OPT(rows)</code></dt>
+
+<dd>Number of rows for the console to start out with. Defaults to
+20.</dd>
+
+<dt><code>::tkcon::OPT(scollypos)</code></dt>
+
+<dd>Y scrollbar position. Valid values are <code>left</code> or
+<code>right</code>. Defaults to <code>left</code>.</dd>
+
+<dt><code>::tkcon::OPT(showmenu)</code></dt>
+
+<dd>Show the menubar on startup (1 or 0, defaults to 1).</dd>
+
+<dt><code>::tkcon::OPT(showmultiple)</code></dt>
+
+<dd>Show multiple matches for path/proc/var name expansion (1 or 0,
+defaults to 1).</dd>
+
+<dt><code>::tkcon::OPT(slaveeval)</code></dt>
+
+<dd>A tcl script to execute in each slave interpreter right after
+it's created. This allows the user to have user defined info always
+available in a slave. Example:
+
+<pre>
+   set ::tkcon::OPT(slaveeval) {
+        proc foo args { puts $args }
+        lappend auto_path .
+    }
+</pre>
+</dd>
+
+<dt><code>::tkcon::OPT(slaveexit)</code></dt>
+
+<dd>Allows the prevention of <code>exit</code> in slaves from
+exitting the entire application. If it is equal to
+<code>exit</code>, exit will exit as usual, otherwise it will just
+close down that interpreter (and any children). Defaults to
+<var>close</var>.</dd>
+
+<dt><code>::tkcon::OPT(subhistory)</code></dt>
+
+<dd>Allow history substitution to occur (0 or 1, defaults to 1).
+The history list is maintained in a single interpreter per TkCon
+console instance. Thus you have history which can range over a
+series of attached interpreters.</dd>
+</dl>
+
+<p>An <b>example TkCon resource file</b> might look like:</p>
+
+<pre style="color: #883333">
+######################################################
+## My TkCon Resource File
+
+# Use a fixed default font
+#tkcon font fixed; # valid on unix
+#tkcon font systemfixed; # valid on win
+tkcon font Courier 12; # valid everywhere
+
+# Keep 50 commands in history
+set ::tkcon::OPT(history) 50
+
+# Use a pink prompt
+set ::tkcon::COLOR(prompt) pink
+######################################################
+</pre>
+</div>
+</td>
+</tr>
+</table>
+
+<hr noshade size="1">
+<address><font size="2">&copy; Jeffrey Hobbs</font></address>
+</body>
+</html>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

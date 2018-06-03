@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="StdChannels.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>Standard manual page - Tcl Tcl Library Procedures</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tcl C API, version 8.6.7</a> <small>&gt;</small> StdChannels</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="../TkCmd/contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="StdChannels.html#M2" NAME="L765">NAME</A>
+<DL><DD>Tcl_StandardChannels &mdash; How the Tcl library deals with the standard channels</DD></DL>
+<DD><A HREF="StdChannels.html#M3" NAME="L766">DESCRIPTION</A>
+<DD><A HREF="StdChannels.html#M4" NAME="L767">APPLICATION PROGRAMMING INTERFACES</A>
+<DD><A HREF="StdChannels.html#M5" NAME="L768">INITIALIZATION OF TCL STANDARD CHANNELS</A>
+<OL class="initialization of tcl standard channels">
+<OL class="initialization of tcl standard channels">
+</OL>
+</OL>
+<DD><A HREF="StdChannels.html#M6" NAME="L769">RE-INITIALIZATION OF TCL STANDARD CHANNELS</A>
+<DD><A HREF="StdChannels.html#M7" NAME="L770">SHELL-SPECIFIC DETAILS</A>
+<DD><A HREF="StdChannels.html#M8" NAME="L771">tclsh</A>
+<DD><A HREF="StdChannels.html#M9" NAME="L772">wish</A>
+<DD><A HREF="StdChannels.html#M10" NAME="L773">SEE ALSO</A>
+<DD><A HREF="StdChannels.html#M11" NAME="L774">KEYWORDS</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+Tcl_StandardChannels &mdash; How the Tcl library deals with the standard channels
+<H3><A NAME="M3">DESCRIPTION</A></H3>
+This page explains the initialization and use of standard channels in
+the Tcl library.
+<P>
+The term <I>standard channels</I> comes out of the Unix world and
+refers to the three channels automatically opened by the OS for
+each new application. They are <B><A HREF="GetStdChan.html">stdin</A></B>, <B><A HREF="GetStdChan.html">stdout</A></B> and
+<B><A HREF="GetStdChan.html">stderr</A></B>. The first is the standard input an application can read
+from, the other two refer to writable channels, one for regular
+output and the other for error messages.
+<P>
+Tcl generalizes this concept in a cross-platform way and
+exposes standard channels to the script level.
+<H4><A NAME="M4">APPLICATION PROGRAMMING INTERFACES</A></H4>
+The public API procedures dealing directly with standard channels are
+<B><A HREF="GetStdChan.html">Tcl_GetStdChannel</A></B> and <B><A HREF="GetStdChan.html">Tcl_SetStdChannel</A></B>. Additional public
+APIs to consider are <B><A HREF="OpenFileChnl.html">Tcl_RegisterChannel</A></B>,
+<B><A HREF="CrtChannel.html">Tcl_CreateChannel</A></B> and <B><A HREF="OpenFileChnl.html">Tcl_GetChannel</A></B>.
+<H3><A NAME="M5">INITIALIZATION OF TCL STANDARD CHANNELS</A></H3>
+Standard channels are initialized by the Tcl library in three cases:
+when explicitly requested, when implicitly required before returning
+channel information, or when implicitly required during registration
+of a new channel.
+<P>
+These cases differ in how they handle unavailable platform- specific
+standard channels.  (A channel is not
+&#8220;available&#8221;
+if it could not be
+successfully opened; for example, in a Tcl application run as a
+Windows NT service.)
+<P>
+<OL class="initialization of tcl standard channels">
+<LI value="1">
+A single standard channel is initialized when it is explicitly
+specified in a call to <B><A HREF="GetStdChan.html">Tcl_SetStdChannel</A></B>.  The states of the
+other standard channels are unaffected.
+<P>
+Missing platform-specific standard channels do not matter here. This
+approach is not available at the script level.
+<P><LI value="2">
+All uninitialized standard channels are initialized to
+platform-specific default values:
+<P>
+<OL class="initialization of tcl standard channels">
+<LI value="a">
+when open channels are listed with <B><A HREF="OpenFileChnl.html">Tcl_GetChannelNames</A></B> (or the
+<B><A HREF="../TclCmd/file.html">file channels</A></B> script command), or
+<P><LI value="b">
+when information about any standard channel is requested with a call
+to <B><A HREF="GetStdChan.html">Tcl_GetStdChannel</A></B>, or with a call to <B><A HREF="OpenFileChnl.html">Tcl_GetChannel</A></B>
+which specifies one of the standard names (<B><A HREF="GetStdChan.html">stdin</A></B>, <B><A HREF="GetStdChan.html">stdout</A></B>
+and <B><A HREF="GetStdChan.html">stderr</A></B>).
+</OL><P>In case of missing platform-specific standard channels, the Tcl
+standard channels are considered as initialized and then immediately
+closed. This means that the first three Tcl channels then opened by
+the application are designated as the Tcl standard channels.<OL class="initialization of tcl standard channels">
+</OL>
+<P><LI value="3">
+All uninitialized standard channels are initialized to
+platform-specific default values when a user-requested channel is
+registered with <B><A HREF="OpenFileChnl.html">Tcl_RegisterChannel</A></B>.
+<P></OL>
+<P>
+In case of unavailable platform-specific standard channels the channel
+whose creation caused the initialization of the Tcl standard channels
+is made a normal channel.  The next three Tcl channels opened by the
+application are designated as the Tcl standard channels.  In other
+words, of the first four Tcl channels opened by the application the
+second to fourth are designated as the Tcl standard channels.
+<H3><A NAME="M6">RE-INITIALIZATION OF TCL STANDARD CHANNELS</A></H3>
+Once a Tcl standard channel is initialized through one of the methods
+above, closing this Tcl standard channel will cause the next call to
+<B><A HREF="CrtChannel.html">Tcl_CreateChannel</A></B> to make the new channel the new standard
+channel, too. If more than one Tcl standard channel was closed
+<B><A HREF="CrtChannel.html">Tcl_CreateChannel</A></B> will fill the empty slots in the order
+<B><A HREF="GetStdChan.html">stdin</A></B>, <B><A HREF="GetStdChan.html">stdout</A></B> and <B><A HREF="GetStdChan.html">stderr</A></B>.
+<P>
+<B><A HREF="CrtChannel.html">Tcl_CreateChannel</A></B> will not try to reinitialize an empty slot if
+that slot was not initialized before. It is this behavior which
+enables an application to employ method 1 of initialization, i.e. to
+create and designate their own Tcl standard channels.
+<H3><A NAME="M7">SHELL-SPECIFIC DETAILS</A></H3>
+<H4><A NAME="M8">tclsh</A></H4>
+The Tcl shell (or rather the function <B><A HREF="Tcl_Main.html">Tcl_Main</A></B>, which forms the
+core of the shell's implementation) uses method 2 to initialize
+the standard channels.
+<H4><A NAME="M9">wish</A></H4>
+The windowing shell (or rather the function <B>Tk_MainEx</B>, which
+forms the core of the shell's implementation) uses method 1 to
+initialize the standard channels (See <B><A HREF="../TkLib/CrtConsoleChan.html">Tk_InitConsoleChannels</A></B>)
+on non-Unix platforms.  On Unix platforms, <B>Tk_MainEx</B> implicitly
+uses method 2 to initialize the standard channels.
+<H3><A NAME="M10">SEE ALSO</A></H3>
+<B><A HREF="CrtChannel.html">Tcl_CreateChannel</A></B>, <B><A HREF="OpenFileChnl.html">Tcl_RegisterChannel</A></B>, <B><A HREF="OpenFileChnl.html">Tcl_GetChannel</A></B>, <B><A HREF="GetStdChan.html">Tcl_GetStdChannel</A></B>, <B><A HREF="GetStdChan.html">Tcl_SetStdChannel</A></B>, <B><A HREF="../TkLib/CrtConsoleChan.html">Tk_InitConsoleChannels</A></B>, <B><A HREF="../UserCmd/tclsh.html">tclsh</A></B>, <B><A HREF="../UserCmd/wish.html">wish</A></B>, <B><A HREF="Tcl_Main.html">Tcl_Main</A></B>, <B>Tk_MainEx</B>
+<H3><A NAME="M11">KEYWORDS</A></H3>
+<A href="../Keywords/S.html#standard channels">standard channels</A>
+<div class="copy">Copyright &copy; 2001 by ActiveState Corporation
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

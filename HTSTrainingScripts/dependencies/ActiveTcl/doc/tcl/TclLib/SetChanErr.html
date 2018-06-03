@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="SetChanErr.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>Tcl_SetChannelError manual page - Tcl Library Procedures</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tcl C API, version 8.6.7</a> <small>&gt;</small> SetChanErr</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="../TkCmd/contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="SetChanErr.html#M2" NAME="L685">NAME</A>
+<DL><DD>Tcl_SetChannelError, Tcl_SetChannelErrorInterp, Tcl_GetChannelError, Tcl_GetChannelErrorInterp &mdash; functions to create/intercept Tcl errors by channel drivers.</DD></DL>
+<DD><A HREF="SetChanErr.html#M3" NAME="L686">SYNOPSIS</A>
+<DL>
+<DD><B>#include &lt;tcl.h&gt;</B>
+<DD>void
+<DD><B>Tcl_SetChannelError</B>(<I>chan, msg</I>)
+<DD>void
+<DD><B>Tcl_SetChannelErrorInterp</B>(<I>interp, msg</I>)
+<DD>void
+<DD><B>Tcl_GetChannelError</B>(<I>chan, msgPtr</I>)
+<DD>void
+<DD><B>Tcl_GetChannelErrorInterp</B>(<I>interp, msgPtr</I>)
+</DL>
+<DD><A HREF="SetChanErr.html#M4" NAME="L687">ARGUMENTS</A>
+<DL class="arguments">
+</DL>
+<DD><A HREF="SetChanErr.html#M5" NAME="L688">DESCRIPTION</A>
+<DL class="description">
+<DD><A HREF="SetChanErr.html#M6" NAME="L689"><B>Tcl_DriverCloseProc</B></A>
+<DD><A HREF="SetChanErr.html#M7" NAME="L690"><B>Tcl_DriverInputProc</B></A>
+<DD><A HREF="SetChanErr.html#M8" NAME="L691"><B>Tcl_DriverOutputProc</B></A>
+<DD><A HREF="SetChanErr.html#M9" NAME="L692"><B>Tcl_DriverSeekProc</B></A>
+<DD><A HREF="SetChanErr.html#M10" NAME="L693"><B>Tcl_DriverWideSeekProc</B></A>
+<DD><A HREF="SetChanErr.html#M11" NAME="L694"><B>Tcl_DriverSetOptionProc</B></A>
+<DD><A HREF="SetChanErr.html#M12" NAME="L695"><B>Tcl_DriverGetOptionProc</B></A>
+<DD><A HREF="SetChanErr.html#M13" NAME="L696"><B>Tcl_DriverWatchProc</B></A>
+<DD><A HREF="SetChanErr.html#M14" NAME="L697"><B>Tcl_DriverBlockModeProc</B></A>
+<DD><A HREF="SetChanErr.html#M15" NAME="L698"><B>Tcl_DriverGetHandleProc</B></A>
+<DD><A HREF="SetChanErr.html#M16" NAME="L699"><B>Tcl_DriverHandlerProc</B></A>
+</DL>
+<DD><A HREF="SetChanErr.html#M17" NAME="L700">SEE ALSO</A>
+<DD><A HREF="SetChanErr.html#M18" NAME="L701">KEYWORDS</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+Tcl_SetChannelError, Tcl_SetChannelErrorInterp, Tcl_GetChannelError, Tcl_GetChannelErrorInterp &mdash; functions to create/intercept Tcl errors by channel drivers.
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+<B>#include &lt;tcl.h&gt;</B><BR>
+void<BR>
+<B>Tcl_SetChannelError</B>(<I>chan, msg</I>)<BR>
+void<BR>
+<B>Tcl_SetChannelErrorInterp</B>(<I>interp, msg</I>)<BR>
+void<BR>
+<B>Tcl_GetChannelError</B>(<I>chan, msgPtr</I>)<BR>
+void<BR>
+<B>Tcl_GetChannelErrorInterp</B>(<I>interp, msgPtr</I>)<BR>
+<H3><A NAME="M4">ARGUMENTS</A></H3>
+<DL class="arguments">
+<DT><A HREF="OpenFileChnl.html">Tcl_Channel</A> <B><A HREF="../TclCmd/chan.html">chan</A></B> (in)<DD>
+Refers to the Tcl channel whose bypass area is accessed.
+<P><DT><A HREF="Interp.html">Tcl_Interp</A>* <B><A HREF="../TclCmd/interp.html">interp</A></B> (in)<DD>
+Refers to the Tcl interpreter whose bypass area is accessed.
+<P><DT><A HREF="Object.html">Tcl_Obj</A>* <B>msg</B> (in)<DD>
+Error message put into a bypass area. A list of return options and values,
+followed by a string message. Both message and the option/value information
+are optional.
+<P><DT><A HREF="Object.html">Tcl_Obj</A>** <B>msgPtr</B> (out)<DD>
+Reference to a place where the message stored in the accessed bypass area can
+be stored in.
+<P></DL>
+<H3><A NAME="M5">DESCRIPTION</A></H3>
+The current definition of a Tcl channel driver does not permit the direct
+return of arbitrary error messages, except for the setting and retrieval of
+channel options. All other functions are restricted to POSIX error codes.
+<P>
+The functions described here overcome this limitation. Channel drivers are
+allowed to use <B>Tcl_SetChannelError</B> and <B>Tcl_SetChannelErrorInterp</B>
+to place arbitrary error messages in <B>bypass areas</B> defined for channels
+and interpreters. And the generic I/O layer uses <B>Tcl_GetChannelError</B> and
+<B>Tcl_GetChannelErrorInterp</B> to look for messages in the bypass areas and
+arrange for their return as errors. The POSIX error codes set by a driver are
+used now if and only if no messages are present.
+<P>
+<B>Tcl_SetChannelError</B> stores error information in the bypass area of the
+specified channel. The number of references to the <B>msg</B> value goes up by
+one. Previously stored information will be discarded, by releasing the
+reference held by the channel. The channel reference must not be NULL.
+<P>
+<B>Tcl_SetChannelErrorInterp</B> stores error information in the bypass area of
+the specified interpreter. The number of references to the <B>msg</B> value
+goes up by one. Previously stored information will be discarded, by releasing
+the reference held by the interpreter. The interpreter reference must not be
+NULL.
+<P>
+<B>Tcl_GetChannelError</B> places either the error message held in the bypass
+area of the specified channel into <I>msgPtr</I>, or NULL; and resets the
+bypass, that is, after an invocation all following invocations will return
+NULL, until an intervening invocation of <B>Tcl_SetChannelError</B> with a
+non-NULL message. The <I>msgPtr</I> must not be NULL. The reference count of
+the message is not touched.  The reference previously held by the channel is
+now held by the caller of the function and it is its responsibility to release
+that reference when it is done with the value.
+<P>
+<B>Tcl_GetChannelErrorInterp</B> places either the error message held in the
+bypass area of the specified interpreter into <I>msgPtr</I>, or NULL; and
+resets the bypass, that is, after an invocation all following invocations will
+return NULL, until an intervening invocation of
+<B>Tcl_SetChannelErrorInterp</B> with a non-NULL message. The <I>msgPtr</I> must
+not be NULL. The reference count of the message is not touched.  The reference
+previously held by the interpreter is now held by the caller of the function
+and it is its responsibility to release that reference when it is done with
+the value.
+<P>
+Which functions of a channel driver are allowed to use which bypass function
+is listed below, as is which functions of the public channel API may leave a
+messages in the bypass areas.
+<P>
+<DL class="description">
+<DT><A NAME="M6"><B>Tcl_DriverCloseProc</B></A><DD>
+May use <B>Tcl_SetChannelErrorInterp</B>, and only this function.
+<P><DT><A NAME="M7"><B>Tcl_DriverInputProc</B></A><DD>
+May use <B>Tcl_SetChannelError</B>, and only this function.
+<P><DT><A NAME="M8"><B>Tcl_DriverOutputProc</B></A><DD>
+May use <B>Tcl_SetChannelError</B>, and only this function.
+<P><DT><A NAME="M9"><B>Tcl_DriverSeekProc</B></A><DD>
+May use <B>Tcl_SetChannelError</B>, and only this function.
+<P><DT><A NAME="M10"><B>Tcl_DriverWideSeekProc</B></A><DD>
+May use <B>Tcl_SetChannelError</B>, and only this function.
+<P><DT><A NAME="M11"><B>Tcl_DriverSetOptionProc</B></A><DD>
+Has already the ability to pass arbitrary error messages. Must <I>not</I> use
+any of the new functions.
+<P><DT><A NAME="M12"><B>Tcl_DriverGetOptionProc</B></A><DD>
+Has already the ability to pass arbitrary error messages. Must
+<I>not</I> use any of the new functions.
+<P><DT><A NAME="M13"><B>Tcl_DriverWatchProc</B></A><DD>
+Must <I>not</I> use any of the new functions. Is internally called and has no
+ability to return any type of error whatsoever.
+<P><DT><A NAME="M14"><B>Tcl_DriverBlockModeProc</B></A><DD>
+May use <B>Tcl_SetChannelError</B>, and only this function.
+<P><DT><A NAME="M15"><B>Tcl_DriverGetHandleProc</B></A><DD>
+Must <I>not</I> use any of the new functions. It is only a low-level function,
+and not used by Tcl commands.
+<P><DT><A NAME="M16"><B>Tcl_DriverHandlerProc</B></A><DD>
+Must <I>not</I> use any of the new functions. Is internally called and has no
+ability to return any type of error whatsoever.
+<P></DL>
+<P>
+Given the information above the following public functions of the Tcl C API
+are affected by these changes; when these functions are called, the channel
+may now contain a stored arbitrary error message requiring processing by the
+caller.
+<dl><dd><table border="0"><tr><td><p class="tablecell"><B><A HREF="OpenFileChnl.html">Tcl_Flush</A></B><td><p class="tablecell"><B><A HREF="OpenFileChnl.html">Tcl_GetsObj</A></B><td><p class="tablecell"><B><A HREF="OpenFileChnl.html">Tcl_Gets</A></B><tr><td><p class="tablecell"><B><A HREF="OpenFileChnl.html">Tcl_ReadChars</A></B><td><p class="tablecell"><B><A HREF="OpenFileChnl.html">Tcl_ReadRaw</A></B><td><p class="tablecell"><B><A HREF="OpenFileChnl.html">Tcl_Read</A></B><tr><td><p class="tablecell"><B><A HREF="OpenFileChnl.html">Tcl_Seek</A></B><td><p class="tablecell"><B><A HREF="ChnlStack.html">Tcl_StackChannel</A></B><td><p class="tablecell"><B><A HREF="OpenFileChnl.html">Tcl_Tell</A></B><tr><td><p class="tablecell"><B><A HREF="OpenFileChnl.html">Tcl_WriteChars</A></B><td><p class="tablecell"><B><A HREF="OpenFileChnl.html">Tcl_WriteObj</A></B><td><p class="tablecell"><B><A HREF="OpenFileChnl.html">Tcl_WriteRaw</A></B><tr><td><p class="tablecell"><B><A HREF="OpenFileChnl.html">Tcl_Write</A></B></table></dl>
+<P>
+All other API functions are unchanged. In particular, the functions below
+leave all their error information in the interpreter result.
+<dl><dd><table border="0"><tr><td><p class="tablecell"><B><A HREF="OpenFileChnl.html">Tcl_Close</A></B><td><p class="tablecell"><B><A HREF="ChnlStack.html">Tcl_UnstackChannel</A></B><td><p class="tablecell"><B><A HREF="OpenFileChnl.html">Tcl_UnregisterChannel</A></B></table></dl>
+<H3><A NAME="M17">SEE ALSO</A></H3>
+<B><A HREF="OpenFileChnl.html">Tcl_Close</A></B>, <B><A HREF="OpenFileChnl.html">Tcl_OpenFileChannel</A></B>, <B><A HREF="SetErrno.html">Tcl_SetErrno</A></B>
+<H3><A NAME="M18">KEYWORDS</A></H3>
+<A href="../Keywords/C.html#channel driver">channel driver</A>, <A href="../Keywords/E.html#error messages">error messages</A>, <A href="../Keywords/C.html#channel type">channel type</A>
+<div class="copy">Copyright &copy; 2005 Andreas Kupries &lt;andreas_kupries(at)users.sourceforge.net&gt;
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

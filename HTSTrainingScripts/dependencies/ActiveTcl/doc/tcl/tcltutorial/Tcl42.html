@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="Tcl42.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org">
+<meta name='Author' content='ActiveState'>
+
+<title>More channel I/O - fblocked &amp; fconfigure</title>
+<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 class="title">More channel I/O - fblocked &amp; fconfigure</h1>
+
+<div class="nav"><a href="Tcl41.html">Previous lesson</a> | <a
+href="tcltutorial.html">Index</a> | <a href="Tcl43.html">Next
+lesson</a></div>
+
+The previous lessons have shown how to use channels with files and
+blocking sockets. Tcl also supports non-blocking reads and writes,
+and allows you to configure the sizes of the I/O buffers, and how
+lines are terminated. <br>
+<br>
+<p>A non-blocking read or write means that instead of a <b>gets</b>
+call waiting until data is available, it will return immediately.
+If there was data available, it will be read, and if no data is
+available, the <b>gets</b> call will return a 0 length.</p>
+
+<p>If you have several channels that must be checked for input, you
+can use the <b>fileevent</b> command to trigger reads on the
+channels, and then use the <b>fblocked</b> command to determine
+when all the data is read.</p>
+
+<p>The <b>fblocked</b> and <b>fconfigure</b> commands provide more
+control over the behavior of a channel.</p>
+
+<p>The <b>fblocked</b> command checks whether a channel has
+returned all available input. It is useful when you are working
+with a channel that has been set to non-blocking mode and you need
+to determine if there should be data available, or if the channel
+has been closed from the other end.</p>
+
+<p>The <b>fconfigure</b> command has many options that allow you to
+query or fine tune the behavior of a channel including whether the
+channel is blocking or non-blocking, the buffer size, the end of
+line character, etc.</p>
+
+<dl>
+<dt><b>fconfigure</b> <i>channel ?param1? ?value1? ?param2?
+?value2?</i></dt>
+
+<dd>Configures the behavior of a channel. If no <i>param</i> values
+are provided, a list of the valid configuration parameters and
+their values is returned.<br>
+<br>
+<p>If a single parameter is given on the command line, the value of
+that parameter is returned.</p>
+
+<p>If one or more pairs of <i>param/value</i> pairs are provided,
+those parameters are set to the requested value.</p>
+
+<p>Parameters that can be set include:</p>
+
+<ul>
+<li><b>-blocking</b> . . . Determines whether or not the task will
+block when data cannot be moved on a channel. (i.e. If no data is
+available on a read, or the buffer is full on a write).</li>
+
+<li><b>-buffersize</b> . . . The number of bytes that will be
+buffered before data is sent, or can be buffered before being read
+when data is received. The value must be an integer between 10 and
+1000000.</li>
+
+<li><b>-translation</b> . . . Sets how Tcl will terminate a line
+when it is output. By default, the lines are terminated with the
+newline, carriage return, or newline/carriage return that is
+appropriate to the system on which the interpreter is running.<br>
+<br>
+<p>This can be configured to be:</p>
+
+<ul>
+<li><b>auto</b> . . . Translates newline, carriage return, or
+newline/carriage return as an end of line marker. Outputs the
+correct line termination for the current platform.</li>
+
+<li><b>binary</b> . . Treats newlines as end of line markers. Does
+not add any line termination to lines being output.</li>
+
+<li><b>cr</b> . . . . Treats carriage returns as the end of line
+marker (and translates them to newline internally). Output lines
+are terminated with a carriage return. This is the Macintosh
+standard.</li>
+
+<li><b>crlf</b> . . . Treats cr/lf pairs as the end of line marker,
+and terminates output lines with a carriage return/linefeed
+combination. This is the Windows standard, and should also be used
+for all line-oriented network protocols.</li>
+
+<li><b>lf</b> . . . . Treats linefeeds as the end of line marker,
+and terminates output lines with a linefeed. This is the Unix
+standard.</li>
+</ul>
+</li>
+</ul>
+</dd>
+</dl>
+
+<br>
+<br>
+<p>The example is similar to the lesson 40 example with a client
+and server socket in the same script. It shows a server channel
+being configured to be non-blocking, and using the default
+buffering style - data is not made availalble to the script until a
+newline is present, or the buffer has filled.</p>
+
+<p>When the first write:</p>
+
+<blockquote><code class="keyword">puts -nonewline $sock "A Test
+Line"</code></blockquote>
+
+is done, the <b>fileevent</b> triggers the read, but the
+<b>gets</b> can't read characters because there is no newline. The
+<code class="keyword">gets</code> returns a -1, and <code class=
+"keyword">fblocked</code> returns a 1. When a bare newline is sent,
+the data in the input buffer will become available, and the <code
+class="keyword">gets</code> returns <code class=
+"keyword">18</code>, and <code class="keyword">fblocked</code>
+returns 0.
+
+<hr>
+<h2>Example</h2>
+
+<!-- NEM: Editorial note: This code is a bit of a mess! -->
+<pre class="example">
+proc serverOpen {channel addr port} {
+    puts "channel: $channel - from Address: $addr  Port: $port"
+    puts "The default state for blocking is: [fconfigure $channel -blocking]"
+    puts "The default buffer size is: [fconfigure $channel -buffersize ]"
+
+    # Set this channel to be non-blocking.
+    fconfigure $channel -blocking 0
+    set bl [fconfigure $channel -blocking]
+    puts "After fconfigure the state for blocking is: $bl"
+
+    # Change the buffer size to be smaller
+    fconfigure $channel -buffersize 12
+    puts "After Fconfigure buffer size is: [fconfigure $channel -buffersize ]\n"
+
+    # When input is available, read it.
+    fileevent $channel readable "readLine Server $channel"
+}
+
+proc readLine {who channel} {
+    global didRead
+    global blocked
+
+    puts "There is input for $who on $channel"
+
+    set len [gets $channel line]
+    set blocked [fblocked $channel]
+    puts "Characters Read: $len  Fblocked: $blocked"
+
+    if {$len &lt; 0} {
+        if {$blocked} {
+            puts "Input is blocked"
+        } else {
+            puts "The socket was closed - closing my end"
+            close $channel;
+        }
+    } else {
+        puts "Read $len characters:  $line"
+        puts $channel "This is a return"
+        flush $channel;
+    }
+    incr didRead;
+}
+
+set server [socket -server serverOpen 33000]
+
+after 120 update;   # This kicks MS-Windows machines for this application
+
+set sock [socket 127.0.0.1 33000]
+
+set bl [fconfigure $sock -blocking]
+set bu [fconfigure $sock -buffersize]
+puts "Original setting for sock: Sock blocking: $bl buffersize: $bu"
+
+fconfigure $sock -blocking No
+fconfigure $sock -buffersize 8;
+
+set bl [fconfigure $sock -blocking]
+set bu [fconfigure $sock -buffersize]
+puts "Modified setting for sock: Sock blocking: $bl buffersize: $bu\n"
+
+# Send a line to the server -- NOTE flush
+
+set didRead 0
+puts -nonewline $sock "A Test Line"
+flush $sock;
+
+# Loop until two reads have been done.
+
+while {$didRead &lt; 2} {
+    # Wait for didRead to be set
+    vwait didRead
+    if {$blocked} {
+        puts $sock "Newline"
+        flush $sock
+        puts "SEND NEWLINE"
+    }
+}
+
+set len [gets $sock line]
+puts "Return line: $len -- $line"
+close $sock
+vwait didRead
+catch {close $server}
+</pre>
+
+<div class="nav"><a href="Tcl41.html">Previous lesson</a> | <a
+href="tcltutorial.html">Index</a> | <a href="Tcl43.html">Next
+lesson</a></div>
+</body>
+</html>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

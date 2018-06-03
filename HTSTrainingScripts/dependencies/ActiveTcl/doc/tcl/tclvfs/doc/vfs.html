@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="vfs.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../../fonts/icon.eot');
+        src: url('../../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../../fonts/icon.woff')
+               format('woff'),
+             url('../../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../../stylesheets/as_custom.css">
+    
+    <script src="../../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org">
+<title>vfs - Tcl-level Virtual Filesystems</title>
+<meta name='Author' content='ActiveState'>
+
+</head>
+<body>
+<div class="doctools">
+
+
+<hr>
+[ <a
+href="../toc.html">TclVFS Table Of Contents</a> | <a href=
+"../index.html">TclVFS Index</a> ]
+
+<hr>
+<h1 class="title">vfs(n) 1.0 "Tcl-level Virtual Filesystems"</h1>
+
+<div id="name" class="section">
+<h2><a name="name">Name</a></h2>
+
+<p>vfs - Filesystem management in Tcl</p>
+</div>
+
+<div id="toc" class="section">
+<h2><a name="toc">Table Of Contents</a></h2>
+
+<ul class="toc">
+<li class="section"><a href="vfs.html#toc">Table Of Contents</a></li>
+
+<li class="section"><a href="vfs.html#synopsis">Synopsis</a></li>
+
+<li class="section"><a href="vfs.html#section1">Description</a></li>
+
+<li class="section"><a href="vfs.html#section2">API</a></li>
+
+<li class="section"><a href="vfs.html#section3">LIMITATIONS</a></li>
+
+<li class="section"><a href="vfs.html#see-also">See Also</a></li>
+
+<li class="section"><a href="vfs.html#keywords">Keywords</a></li>
+
+<li class="section"><a href="vfs.html#copyright">Copyright</a></li>
+</ul>
+</div>
+
+<div id="synopsis" class="section">
+<h2><a name="synopsis">Synopsis</a></h2>
+
+<div class="synopsis">
+<ul class="requirements">
+<li>package require <b class="pkgname">Tcl 8.4</b></li>
+
+<li>package require <b class="pkgname">vfs <span class=
+"opt">?1.2.1?</span></b></li>
+</ul>
+
+<ul class="syntax">
+<li><a href="vfs.html#1"><b class="cmd">vfs::filesystem</b> <b class=
+"method">mount</b> <span class="opt">?<b class=
+"option">-volume</b>?</span> <i class="arg">path</i> <i class=
+"arg">command</i></a></li>
+
+<li><a href="vfs.html#2"><b class="cmd">vfs::filesystem</b> <b class=
+"method">unmount</b> <i class="arg">path</i></a></li>
+
+<li><a href="vfs.html#3"><b class="cmd">vfs::filesystem</b> <b class=
+"method">info</b> <span class="opt">?<i class=
+"arg">path</i>?</span></a></li>
+
+<li><a href="vfs.html#4"><b class="cmd">vfs::filesystem</b> <b class=
+"method">fullynormalize</b> <i class="arg">path</i></a></li>
+
+<li><a href="vfs.html#5"><b class="cmd">vfs::filesystem</b> <b class=
+"method">posixerror</b> <i class="arg">int</i></a></li>
+
+<li><a href="vfs.html#6"><b class="cmd">vfs::filesystem</b> <b class=
+"method">internalerror</b> <i class="arg">command</i></a></li>
+</ul>
+</div>
+</div>
+
+<div id="section1" class="section">
+<h2><a name="section1">Description</a></h2>
+
+<p>The package <b class="package">vfs</b> provides commands to
+query, mount and unmount virtual filesystems implemented in Tcl.
+This is further facilitated through the provison of helper commands
+in a tcl script library. See section "HANDLER ENVIRONMENT" of <b
+class="cmd"><a href="vfs-fsapi.html">vfs-fsapi</a></b> for more
+information.</p>
+
+<p>Once a virtual filesystem is in place, the standard Tcl
+commands, like <b class="cmd"><a href=
+"../index.html#key0">file</a></b>, <b class="cmd">glob</b>, <b
+class="cmd">cd</b>, <b class="cmd">pwd</b>, <b class=
+"cmd">open</b>, including all their C APIs in the Tcl library (e.g.
+<b class="function">Tcl_FSOpenFileChannel</b>, <b class=
+"function">Tcl_FSMatchInDirectory</b>, ...), can be used within the
+filesystem (and indeed, properly written extensions such as <b
+class="package">Tk</b> which may open or read files will also
+transparently access the virtual filesystem).</p>
+
+<p>Because all of Tcl's filesystem activity passes through a single
+layer, every operation can be intercepted. This package does just
+that. This is also quite different from simply overloading the <b
+class="cmd"><a href="../index.html#key0">file</a></b> command in
+Tcl. We are actually providing replacements for C commands like <b
+class="syscmd">access</b>, <b class="syscmd">stat</b>, etc. By
+implementing a small number of low-level commands we ensure that
+all commands at higher levels will function irrespective of what is
+going on inside the filesystem layer.</p>
+
+<p>Tcl's filesystem hooks operate on a per-process basis. This
+means every Tcl interpreter in the same process/application will
+see the same filesystem, including any virtual filesystems.</p>
+
+<p>To access this package use the command <b class="cmd">package
+require vfs</b>. This automatically registers the vfs hooks into
+Tcl's filesystem and provides the command <b class=
+"cmd">vfs::filesystem</b>. The latter allows the registration of
+actual virtual filesystems. More in the upcoming section <span
+class="sectref"><a href="vfs.html#section2">API</a></span>. The hooks will
+not be removed until Tcl exits. If desired, control over this could
+be exposed to Tcl in the future. By and in itself the command above
+will have no further effect. Only after filesystem implementations
+have been registered and filesystems using them been mounted
+filesystem commands will actually be intercepted, and handled by
+the Tcl code of the mounted virtual filesystem.</p>
+</div>
+
+<div id="section2" class="section">
+<h2><a name="section2">API</a></h2>
+
+<dl class="definitions">
+<dt><a name="1"><b class="cmd">vfs::filesystem</b> <b class=
+"method">mount</b> <span class="opt">?<b class=
+"option">-volume</b>?</span> <i class="arg">path</i> <i class=
+"arg">command</i></a></dt>
+
+<dd>
+<p><i class="term">Mount</i>s a virtual filesystem at <i class=
+"arg">path</i>, making it useable. After completion of the call any
+access to a subdirectory of <i class="arg">path</i> will be handled
+by that filesystem. The filesystem is represented here by the <i
+class="arg">command</i> prefix which will be executed whenever an
+operation on a file or directory within <i class="arg">path</i> has
+to be performed.</p>
+
+<p>Whether the <i class="arg">command</i> is implemented in C or
+Tcl is of no relevance as long as it adheres to the API specified
+in <b class="cmd"><a href="vfs-fsapi.html">vfs-fsapi</a></b> and is
+present in the interpreter where the mount operation is
+executed.</p>
+
+<p>If the option <b class="option">-volume</b> is specified the new
+mount point is also registered with Tcl as a new volume and will
+therefore from then on appear in the output of the command <b
+class="cmd">file volumes</b>. This is useful (and required for
+reasonable operation) for mounts like <b class="const">ftp://</b>.
+It should not be used for paths mounted inside the native
+filesystem.</p>
+
+<p>The new filesystem mounts will be observed immediately in all
+interpreters in the current process. If the interpreter is later
+deleted, all mounts which are intercepted by it will be
+automatically removed (and will therefore affect the view of the
+filesystem seen by all interpreters).</p>
+</dd>
+
+<dt><a name="2"><b class="cmd">vfs::filesystem</b> <b class=
+"method">unmount</b> <i class="arg">path</i></a></dt>
+
+<dd>
+<p>This unmounts the virtual filesystem which was mounted at <i
+class="arg">path</i>. An error is thrown if no filesystem was
+mounted there. After the completion of the operation the filesystem
+is not visible anymore, and any previous filesystem accessible
+through this path becomes accessible again.</p>
+</dd>
+
+<dt><a name="3"><b class="cmd">vfs::filesystem</b> <b class=
+"method">info</b> <span class="opt">?<i class=
+"arg">path</i>?</span></a></dt>
+
+<dd>
+<p>A list of all filesystems mounted in all interpreters is
+returned, if no <i class="arg">path</i> argument was specified.
+Else the filesystem responsible for that <i class="arg">path</i> is
+examined and the command prefix used to handle all filesystem
+operations returned. An error is thrown if no filesystem is mounted
+for that <i class="arg">path</i>.</p>
+
+<p>There is currently no facility for examining in which
+interpreter each command will be evaluated.</p>
+</dd>
+
+<dt><a name="4"><b class="cmd">vfs::filesystem</b> <b class=
+"method">fullynormalize</b> <i class="arg">path</i></a></dt>
+
+<dd>
+<p>Performs a full expansion of <i class="arg">path</i>, (as per <b
+class="cmd">file normalize</b>). This includes the following of any
+links in the last element of <i class="arg">path</i>.</p>
+</dd>
+
+<dt><a name="5"><b class="cmd">vfs::filesystem</b> <b class=
+"method">posixerror</b> <i class="arg">int</i></a></dt>
+
+<dd>
+<p>This command can be called by filesystem implementations during
+the execution of a filesystem operation to signal the posix error
+code of a failure. See also <b class="syscmd"><a href=
+"vfs-fsapi.html">vfs-fsapi</a></b>.</p>
+</dd>
+
+<dt><a name="6"><b class="cmd">vfs::filesystem</b> <b class=
+"method">internalerror</b> <i class="arg">command</i></a></dt>
+
+<dd>
+<p>When used the specified <i class="arg">command</i> is registerd
+as the command to trap and report any internal errors thrown by
+filesystem implementations.</p>
+</dd>
+</dl>
+</div>
+
+<div id="section3" class="section">
+<h2><a name="section3">LIMITATIONS</a></h2>
+
+<p>The code of the package <b class="package">vfs</b> has only a
+few limitations.</p>
+
+<ol class="enumerated">
+<li>
+<p>One subtlety one has to be aware of is that mixing
+case-(in)sensitive filesystems and application code may yield
+unexpected results.</p>
+
+<p>For example mounting a case-sensitive virtual filesystem into a
+case-insensitive system (like the standard Windows or MacOS
+filesystems) and then using this with code relying on
+case-insensitivity problems will appear when accessing the virtual
+filesystem.</p>
+
+<p>Note that application code relying on case-insensitivity will
+not under Unix either, i.e. is inherently non-portable, and should
+be fixed.</p>
+</li>
+
+<li>
+<p>The C-API's for <b class="method">link</b> and <b class=
+"method">lstat</b> are currently not exposed to the Tcl level. This
+may be done in the future to allow virtual filesystems implemented
+in Tcl to support the reading and writing of links.</p>
+</li>
+
+<li>
+<p>The public C-API filesystem function <b class=
+"function">Tcl_FSMatchInDirectory</b> is given a variety of type
+information in a <i class="term">Tcl_GlobTypeData</i> structure.
+Currently only the <i class="term">type</i> field of said strcuture
+is exposed to the tcl-level. Fields like <i class=
+"term">permissions</i> and MacOS <i class="term">type/creator</i>
+are ignored.</p>
+</li>
+</ol>
+</div>
+
+<div id="see-also" class="section">
+<h2><a name="see-also">See Also</a></h2>
+
+<p><a href="vfs-filesystems.html">vfs-filesystems</a>, <a href=
+"vfs-fsapi.html">vfs-fsapi</a></p>
+</div>
+
+<div id="keywords" class="section">
+<h2><a name="keywords">Keywords</a></h2>
+
+<p><a href="../index.html#key0">file</a>, <a href=
+"../index.html#key1">filesystem</a>, <a href=
+"../index.html#key7">vfs</a></p>
+</div>
+
+<div id="copyright" class="section">
+<h2><a name="copyright">Copyright</a></h2>
+
+<p>Copyright &copy; 2001-2003 Vince Darley
+&lt;vincentdarley@users.sourceforge.net&gt;<br>
+Copyright &copy; 2003 Andreas Kupries
+&lt;andreas_kupries@users.sourceforge.net&gt;</p>
+</div>
+
+<h4>Copyright &copy; 2015 <a href="http://www.activestate.com">for
+compilation: ActiveState</a></h4>
+</div>
+<script data-no-instant>document.write('<script src="../../../livereload.js?port=1313&amp;mindelay=10"></' + 'script>')</script></body>
+</html>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

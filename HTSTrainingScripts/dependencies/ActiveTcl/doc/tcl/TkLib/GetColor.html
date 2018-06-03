@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="GetColor.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>Tk_AllocColorFromObj manual page - Tk Library Procedures</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tk C API, version 8.6.7</a> <small>&gt;</small> GetColor</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="../TkCmd/contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="GetColor.html#M2" NAME="L277">NAME</A>
+<DL><DD>Tk_AllocColorFromObj, Tk_GetColor, Tk_GetColorFromObj, Tk_GetColorByValue, Tk_NameOfColor, Tk_FreeColorFromObj, Tk_FreeColor &mdash; maintain database of colors</DD></DL>
+<DD><A HREF="GetColor.html#M3" NAME="L278">SYNOPSIS</A>
+<DL>
+<DD><B>#include &lt;tk.h&gt;</B>
+<DD>XColor *
+<DD><B>Tk_AllocColorFromObj(</B><I>interp, tkwin, objPtr</I><B>)</B>
+<DD>XColor *
+<DD><B>Tk_GetColor(</B><I>interp, tkwin, name</I><B>)</B>
+<DD>XColor *
+<DD><B>Tk_GetColorFromObj(</B><I>tkwin, objPtr</I><B>)</B>
+<DD>XColor *
+<DD><B>Tk_GetColorByValue(</B><I>tkwin, prefPtr</I><B>)</B>
+<DD>const char *
+<DD><B>Tk_NameOfColor(</B><I>colorPtr</I><B>)</B>
+<DD>GC
+<DD><B>Tk_GCForColor(</B><I>colorPtr, drawable</I><B>)</B>
+<DD><B>Tk_FreeColorFromObj(</B><I>tkwin, objPtr</I><B>)</B>
+<DD><B>Tk_FreeColor(</B><I>colorPtr</I><B>)</B>
+</DL>
+<DD><A HREF="GetColor.html#M4" NAME="L279">ARGUMENTS</A>
+<DL class="arguments">
+</DL>
+<DD><A HREF="GetColor.html#M5" NAME="L280">DESCRIPTION</A>
+<DL class="description">
+<DD><A HREF="GetColor.html#M6" NAME="L281"><I>colorname</I></A>
+<DD><A HREF="GetColor.html#M7" NAME="L282"><B>#</B><I>RGB</I></A>
+<DD><A HREF="GetColor.html#M8" NAME="L283"><B>#</B><I>RRGGBB</I></A>
+<DD><A HREF="GetColor.html#M9" NAME="L284"><B>#</B><I>RRRGGGBBB</I></A>
+<DD><A HREF="GetColor.html#M10" NAME="L285"><B>#</B><I>RRRRGGGGBBBB</I></A>
+</DL>
+<DD><A HREF="GetColor.html#M11" NAME="L286">KEYWORDS</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+Tk_AllocColorFromObj, Tk_GetColor, Tk_GetColorFromObj, Tk_GetColorByValue, Tk_NameOfColor, Tk_FreeColorFromObj, Tk_FreeColor &mdash; maintain database of colors
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+<B>#include &lt;tk.h&gt;</B><BR>
+XColor *<BR>
+<B>Tk_AllocColorFromObj(</B><I>interp, tkwin, objPtr</I><B>)</B><BR>
+XColor *<BR>
+<B>Tk_GetColor(</B><I>interp, tkwin, name</I><B>)</B><BR>
+XColor *<BR>
+<B>Tk_GetColorFromObj(</B><I>tkwin, objPtr</I><B>)</B><BR>
+XColor *<BR>
+<B>Tk_GetColorByValue(</B><I>tkwin, prefPtr</I><B>)</B><BR>
+const char *<BR>
+<B>Tk_NameOfColor(</B><I>colorPtr</I><B>)</B><BR>
+GC<BR>
+<B>Tk_GCForColor(</B><I>colorPtr, drawable</I><B>)</B><BR>
+<B>Tk_FreeColorFromObj(</B><I>tkwin, objPtr</I><B>)</B><BR>
+<B>Tk_FreeColor(</B><I>colorPtr</I><B>)</B><BR>
+<H3><A NAME="M4">ARGUMENTS</A></H3>
+<DL class="arguments">
+<DT><A HREF="../TclLib/Interp.html">Tcl_Interp</A> <B>*interp</B> (in)<DD>
+Interpreter to use for error reporting.
+<P><DT><A HREF="WindowId.html">Tk_Window</A> <B>tkwin</B> (in)<DD>
+Token for window in which color will be used.
+<P><DT><A HREF="../TclLib/Object.html">Tcl_Obj</A> <B>*objPtr</B> (in/out)<DD>
+String value describes desired color; internal rep will be
+modified to cache pointer to corresponding (XColor *).
+<P><DT>char <B>*name</B> (in)<DD>
+Same as <I>objPtr</I> except description of color is passed as a string and
+resulting (XColor *) is not cached.
+<P><DT>XColor <B>*prefPtr</B> (in)<DD>
+Indicates red, green, and blue intensities of desired
+color.
+<P><DT>XColor <B>*colorPtr</B> (in)<DD>
+Pointer to X color information.  Must have been allocated by previous
+call to <B>Tk_AllocColorFromObj</B>, <B>Tk_GetColor</B> or
+<B>Tk_GetColorByValue</B>, except when passed to <B>Tk_NameOfColor</B>.
+<P><DT>Drawable <B>drawable</B> (in)<DD>
+Drawable in which the result graphics context will be used.  Must have
+same screen and depth as the window for which the color was allocated.
+<P></DL>
+<H3><A NAME="M5">DESCRIPTION</A></H3>
+These procedures manage the colors being used by a Tk application.
+They allow colors to be shared whenever possible, so that colormap
+space is preserved, and they pick closest available colors when
+colormap space is exhausted.
+<P>
+Given a textual description of a color, <B>Tk_AllocColorFromObj</B>
+locates a pixel value that may be used to render the color
+in a particular window.  The desired color is specified with a
+value whose string value must have one of the following forms:
+<P>
+<DL class="description">
+<DT><A NAME="M6"><I>colorname</I></A><DD>
+Any of the valid textual names for a color defined in the
+server's color database file, such as <B>red</B> or <B>PeachPuff</B>.
+<P><DT><A NAME="M7"><B>#</B><I>RGB</I></A><DD>
+<P><DT><A NAME="M8"><B>#</B><I>RRGGBB</I></A><DD>
+<P><DT><A NAME="M9"><B>#</B><I>RRRGGGBBB</I></A><DD>
+<P><DT><A NAME="M10"><B>#</B><I>RRRRGGGGBBBB</I></A><DD>
+A numeric specification of the red, green, and blue intensities
+to use to display the color.  Each <I>R</I>, <I>G</I>, or <I>B</I>
+represents a single hexadecimal digit.  The four forms permit
+colors to be specified with 4-bit, 8-bit, 12-bit or 16-bit values.
+When fewer than 16 bits are provided for each color, they represent
+the most significant bits of the color, while the lower unfilled
+bits will be repeatedly replicated from the available higher bits.
+For example, #3a7 is the same as #3333aaaa7777.
+<P></DL>
+<P>
+<B>Tk_AllocColorFromObj</B> returns a pointer to
+an XColor structure;  the structure indicates the exact intensities of
+the allocated color (which may differ slightly from those requested,
+depending on the limitations of the screen) and a pixel value
+that may be used to draw with the color in <I>tkwin</I>.
+If an error occurs in <B>Tk_AllocColorFromObj</B> (such as an unknown
+color name) then NULL is returned and an error message is stored in
+<I>interp</I>'s result if <I>interp</I> is not NULL.
+If the colormap for <I>tkwin</I> is full, <B>Tk_AllocColorFromObj</B>
+will use the closest existing color in the colormap.
+<B>Tk_AllocColorFromObj</B> caches information about
+the return value in <I>objPtr</I>, which speeds up future calls to procedures
+such as <B>Tk_AllocColorFromObj</B> and <B>Tk_GetColorFromObj</B>.
+<P>
+<B>Tk_GetColor</B> is identical to <B>Tk_AllocColorFromObj</B> except
+that the description of the color is specified with a string instead
+of a value.  This prevents <B>Tk_GetColor</B> from caching the
+return value, so <B>Tk_GetColor</B> is less efficient than
+<B>Tk_AllocColorFromObj</B>.
+<P>
+<B>Tk_GetColorFromObj</B> returns the token for an existing color, given
+the window and description used to create the color.
+<B>Tk_GetColorFromObj</B> does not actually create the color; the color
+must already have been created with a previous call to
+<B>Tk_AllocColorFromObj</B> or <B>Tk_GetColor</B>.  The return
+value is cached in <I>objPtr</I>, which speeds up
+future calls to <B>Tk_GetColorFromObj</B> with the same <I>objPtr</I>
+and <I>tkwin</I>.
+<P>
+<B>Tk_GetColorByValue</B> is similar to <B>Tk_GetColor</B> except that
+the desired color is indicated with the <I>red</I>, <I>green</I>, and
+<I>blue</I> fields of the structure pointed to by <I>colorPtr</I>.
+<P>
+This package maintains a database
+of all the colors currently in use.
+If the same color is requested multiple times from
+<B>Tk_GetColor</B> or <B>Tk_AllocColorFromObj</B> (e.g. by different
+windows), or if the
+same intensities are requested multiple times from
+<B>Tk_GetColorByValue</B>, then existing pixel values will
+be re-used.  Re-using an existing pixel avoids any interaction
+with the window server, which makes the allocation much more
+efficient.  These procedures also provide a portable interface that
+works across all platforms.  For this reason, you should generally use
+<B>Tk_AllocColorFromObj</B>, <B>Tk_GetColor</B>, or <B>Tk_GetColorByValue</B>
+instead of lower level procedures like <B>XAllocColor</B>.
+<P>
+Since different calls to this package
+may return the same shared
+pixel value, callers should never change the color of a pixel
+returned by the procedures.
+If you need to change a color value dynamically, you should use
+<B>XAllocColorCells</B> to allocate the pixel value for the color.
+<P>
+The procedure <B>Tk_NameOfColor</B> is roughly the inverse of
+<B>Tk_GetColor</B>.  If its <I>colorPtr</I> argument was created
+by <B>Tk_AllocColorFromObj</B> or <B>Tk_GetColor</B> then the return value
+is the string that was used to create the
+color.  If <I>colorPtr</I> was created by a call to <B>Tk_GetColorByValue</B>,
+or by any other mechanism, then the return value is a string
+that could be passed to <B>Tk_GetColor</B> to return the same
+color.  Note:  the string returned by <B>Tk_NameOfColor</B> is
+only guaranteed to persist until the next call to
+<B>Tk_NameOfColor</B>.
+<P>
+<B>Tk_GCForColor</B> returns a graphics context whose <B>foreground</B>
+field is the pixel allocated for <I>colorPtr</I> and whose other fields
+all have default values.
+This provides an easy way to do basic drawing with a color.
+The graphics context is cached with the color and will exist only as
+long as <I>colorPtr</I> exists;  it is freed when the last reference
+to <I>colorPtr</I> is freed by calling <B>Tk_FreeColor</B>.
+<P>
+When a color is no longer needed <B>Tk_FreeColorFromObj</B> or
+<B>Tk_FreeColor</B> should be called to release it.
+For <B>Tk_FreeColorFromObj</B> the color to release is specified
+with the same information used to create it; for
+<B>Tk_FreeColor</B> the color to release is specified
+with a pointer to its XColor structure.
+There should be exactly one call to <B>Tk_FreeColorFromObj</B>
+or <B>Tk_FreeColor</B> for each call to <B>Tk_AllocColorFromObj</B>,
+<B>Tk_GetColor</B>, or <B>Tk_GetColorByValue</B>.
+<H3><A NAME="M11">KEYWORDS</A></H3>
+<A href="../Keywords/C.html#color">color</A>, <A href="../Keywords/I.html#intensity">intensity</A>, <A href="../Keywords/V.html#value">value</A>, <A href="../Keywords/P.html#pixel value">pixel value</A>
+<div class="copy">Copyright &copy; 1990-1991 The Regents of the University of California.
+<BR>Copyright &copy; 1994-1998 Sun Microsystems, Inc.
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

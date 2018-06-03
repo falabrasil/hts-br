@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="index.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a class="current" title="Release notes" href="index.html">
+	
+	Release notes
+</a>
+
+
+<ul id="scrollspy">
+</ul>
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../../tcl/contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1>ActiveTcl Release Notes </h1>
+
+			<ul>
+  <li><a class="doc" href="index.html#new">New in This Release</a></li>
+  <li><a class="doc" href="index.html#rel_history">Release History</a></li>
+</ul>
+
+<p><a name="new"></a>
+<h3>New in This Release</h3></p>
+
+<p>Tcl/Tk 8.6.7 Release Announcement
+August 9, 2017</p>
+
+<p>The Tcl Core Team is pleased to announce the 8.6.7 releases of the Tcl
+dynamic language and the Tk toolkit.  This is the seventh patch release
+of Tcl/Tk 8.6.  More details can be found below.  We would like to
+express our gratitude to all those who submit bug reports and patches.
+This information is invaluable in enabling us to identify and eliminate
+problems in the core.</p>
+
+<p>Where to get the new releases:</p>
+
+<p>Tcl/Tk 8.6.7 sources are freely available as open source from the
+Tcl Developer Xchange web site at: <a href="http://www.tcl.tk/software/tcltk/8.6.html">http://www.tcl.tk/software/tcltk/8.6.html</a></p>
+
+<p>This web page also contains additional information about the releases,
+including new features and notes about installing and compiling the
+releases.  Sources are always available from the Tcl SourceForge
+project&rsquo;s file distribution area: <a href="http://sourceforge.net/projects/tcl/files/">http://sourceforge.net/projects/tcl/files/</a></p>
+
+<p>Binaries for most major platforms are available from: <a href="http://www.activestate.com/Tcl">http://www.activestate.com/Tcl</a></p>
+
+<p>For additional information:</p>
+
+<p>Please visit the Tcl Developer Xchange web site: <a href="http://www.tcl.tk/">http://www.tcl.tk/</a></p>
+
+<p>This site contains a variety of information about Tcl/Tk in general, the
+core Tcl and Tk distributions, Tcl development tools, and much more.</p>
+
+<p>Summary of Changes since Tcl/Tk 8.6.6:</p>
+
+<p>This is a patch release, so it primarily includes bug fixes and corrections
+to erratic behavior.  Highlighted changes are noted below.  The changes file
+at the root of the source tree contains a more complete list.  The Timelines
+of all changes are online at <a href="http://core.tcl.tk/tcl/">http://core.tcl.tk/tcl/</a> and <a href="http://core.tcl.tk/tk/">http://core.tcl.tk/tk/</a>.</p>
+
+<ul>
+<li><a href="http://localhost:1313/get/relnotes/TclOO&#32;1.1.0">TIP 473</a> Let [oo::copy] specify target namespace</li>
+<li>[TIP 464] Support multimedia keys on Windows</li>
+<li>Revise Tcl_LinkVar to tolerate some prefixes
+    *** POTENTIAL INCOMPATIBILITY ***</li>
+<li>Allow empty command as [interp alias] target
+    *** POTENTIAL INCOMPATIBILITY ***</li>
+<li>Revise Tcl_UtfToUniChar() handling of invalid UTF-8
+    *** POTENTIAL INCOMPATIBILITY ***</li>
+<li>[clock] and [encoding] are now ensembles</li>
+<li>Several [clock] subcommands are now compiled to bytecode</li>
+<li>Fix crashes or hangs in&hellip;
+
+<ul>
+<li>[socket -async ::1 0] with no host</li>
+<li>Threaded memory allocator in thread finalization</li>
+<li>Tcl_ListObjReplace() error when passed NULL interp</li>
+<li>[binary scan a$n] when $n overflows int</li>
+<li>[lsort -unique [lrepeat [expr {1&lt;&lt;27}] 1]]</li>
+<li>Drawing many dashed canvas objects</li>
+<li>Using Tk after IME restart</li>
+<li>Warp pointer operations</li>
+<li>[[text .t] insert 0.0 \na; .t replace 2.0 3.0 b]</li>
+<li>Resource exhaustion processing corrupt GIF</li>
+</ul></li>
+<li>Fix memory leaks in&hellip;
+
+<ul>
+<li>namespace delete when unset trace revives namespace variable.</li>
+<li>Deletion of the [history] command</li>
+<li>http::geturl when keep-alive is denied</li>
+<li>TclJoinPath on a custom Tcl_Filesystem</li>
+<li>text BTree operations</li>
+</ul></li>
+<li>Update Unicode data to 10.0
+    *** POTENTIAL INCOMPATIBILITY ***</li>
+<li>Merge updates from new libtommath release; purge unused files
+    *** POTENTIAL INCOMPATIBILITY ***</li>
+<li>Update bundled zlib to release 1.2.11</li>
+<li>Remove legacy support macro panic() - conflicts with system libraries
+    *** POTENTIAL INCOMPATIBILITY ***</li>
+<li>Revise Tk font support to avoid type mismatch with recent Xft</li>
+<li>Repair cmd resolver caching, demonstrated by tests resolver-3.1*</li>
+<li>Repair zlib stream buffer flushing; zlib-7.8 and PNG writing</li>
+<li>Prevent Win thread termination during init and teardown</li>
+<li>Make KeyRelease event handling get _L and _R right</li>
+<li>Repaint ttk::button when its image changes</li>
+<li>Wrapped text don&rsquo;t start lines with whitespace</li>
+<li>Non-native themes properly display tri-state buttons</li>
+<li>File dialog repairs for -typevariable, -initialdir, -initialfile</li>
+<li>Avoid unreleasable global grab due to menu keyboard traversal</li>
+<li>Fix Win regression [event generate .e <diaeresis>]</li>
+<li>Fix [grid configure -in] to fully clear outdated info</li>
+<li>Fix ttk::combobox to use proper style with -postoffset (test combobox-3)</li>
+<li>OSX: Stop [$text bbox] returning negative width</li>
+<li>Repair autoloader fragility loading procs that call tailcall</li>
+<li>Correct parsing in [scan 0x1 %b], [scan 0x1 %o]</li>
+<li>Fix [string replace] so test stringComp-14.5 passes</li>
+<li>Invalidate VFS mounts on sytem encoding change</li>
+<li>Fix [expr {NaN &gt; &ldquo;Gran&rdquo;}] to return 1; string comparison</li>
+<li>Stop frequent Tcl_GetTime() calls creating clock drift</li>
+<li>Correct functioning of dynamic unexport of methods</li>
+<li>Fix [file join a //b] and [file join //a b]</li>
+<li>Compute correct warp cursor position on 2nd display</li>
+<li>Enable dismissal of ttk::menubutton without hover</li>
+<li>Tk_BindEvent filter events Tk ignores to avoid X11 ring buffer flood</li>
+<li>Allow [$photo read] to read files beginning with &ldquo;-&rdquo;</li>
+<li>[text] redisplay calculations corrected on OSX</li>
+<li>Fix drawing of long text lines on Windows</li>
+<li>Disabled combobox arrow appearance (danckaert)</li>
+<li>Fix {PNG -alpha} format for 16-bit color</li>
+<li>Workaround X11 drawing defects in Ubuntu 16.10+</li>
+<li>Fix calculation of ttk::notebook tab widths and tab user management</li>
+<li>Scidb race in notebook tab selection</li>
+<li>Color name parsing set to reject invalid hex color codes (#ABCZ)</li>
+<li>OSX scrollbar draw position, highlights, &amp; smooth scroll</li>
+<li>Race condition on Win clipboard cleanup</li>
+<li>Center image on button</li>
+<li>Paneconfigure get pane heights right</li>
+<li>Windows: User switch forced theme reset</li>
+<li>Updated bundled packages
+
+<ul>
+<li>Itcl 4.1.0  (incompatible with Itk 4.0, get Itk 4.1)</li>
+<li>sqlite3 3.20.0</li>
+<li>Thread 2.8.1</li>
+<li>tdbc* 1.0.5</li>
+<li>http 2.8.11</li>
+<li>tcltest 2.4.1</li>
+<li>msgcat 1.6.1</li>
+</ul></li>
+</ul>
+
+<p>Tcl Core Team and Maintainers<br />
+Don Porter, Tcl Core Release Manager</p>
+
+<p><a name="rel_history"></a>
+<h3>Release History</h3></p>
+
+<p><strong>ActiveTcl 8.6.4.1</strong> June, 2015</p>
+
+<p>This ActiveTcl release is based on the 8.6.4 Tcl core.</p>
+
+<p>This release includes:</p>
+
+<ul>
+<li>Bugfixes in the Tcl/Tk core.</li>
+
+<li>
+<dl>
+<dt>Updated (Seed repository):</dt>
+
+<dd>
+<ul>
+<li>Thread 2.7.2 / Basekit interaction</li>
+
+<li>http 2.8.9</li>
+
+<li>sqlite 3.8.10.2</li>
+
+<li>tls 1.6.5</li>
+
+<li>logger 0.9.4</li>
+
+<li>struct:pool 1.2.3</li>
+</ul>
+</dd>
+
+<dt>New:</dt>
+
+<dd>None</dd>
+
+<dt>Removed:</dt>
+</dl>
+</li>
+</ul>
+
+<p><strong>ActiveTcl 8.6.4.0</strong> April, 2015</p>
+
+<p>This ActiveTcl release is based on the 8.6.4 Tcl core.</p>
+
+<p>This release includes:</p>
+
+<ul>
+<li>Bugfixes in the Tcl/Tk core.</li>
+
+<li>
+<dl>
+<dt>Updated (Seed repository):</dt>
+
+<dd>
+<ul>
+<li>Thread 2.7.2</li>
+
+<li>Img 1.4.3</li>
+
+<li>sqlite 3.8.8.3</li>
+
+<li>tls 1.6.4</li>
+
+<li>Itcl 4.0.3</li>
+
+<li>tablelist 5.13</li>
+
+<li>tablelist::tile 5.13</li>
+</ul>
+</dd>
+
+<dt>New:</dt>
+
+<dd>None</dd>
+
+<dt>Removed:</dt>
+
+<dd>
+<ul>
+<li>Itcl 3.4</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="Tcl31.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org">
+<meta name='Author' content='ActiveState'>
+
+<title>Building reusable libraries - packages and
+namespaces</title>
+<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 class="title">Building reusable libraries - packages and
+namespaces</h1>
+
+<div class="nav"><a href="Tcl30.html">Previous lesson</a> | <a
+href="tcltutorial.html">Index</a> | <a href="Tcl32.html">Next
+lesson</a></div>
+
+<p>The previous lesson showed how the <code class=
+"keyword">source</code> command can be used to separate a program
+into multiple files, each responsible for a different area of
+functionality. This is a simple and useful technique for achieving
+modularity. However, there are a number of drawbacks to using the
+<code class="keyword">source</code> command directly. Tcl provides
+a more powerful mechanism for handling reusable units of code
+called <em>packages</em>. A package is simply a bundle of files
+implementing some functionality, along with a <em>name</em> that
+identifies the package, and a <em>version number</em> that allows
+multiple versions of the same package to be present. A package can
+be a collection of Tcl scripts, or a binary library, or a
+combination of both. Binary libraries are not discussed in this
+tutorial.</p>
+
+<h2>Using packages</h2>
+
+<p>The <code class="keyword">package</code> command provides the
+ability to use a package, compare package versions, and to register
+your own packages with an interpreter. A package is loaded by using
+the <code class="keyword">package require</code> command and
+providing the package <code class="arg">name</code> and optionally
+a <code class="arg">version</code> number. The first time a script
+requires a package Tcl builds up a database of available packages
+and versions. It does this by searching for package index files in
+all of the directories listed in the <code>tcl_pkgPath</code> and
+<code>auto_path</code> global variables, as well as any
+subdirectories of those directories. Each package provides a file
+called <code>pkgIndex.tcl</code> that tells Tcl the names and
+versions of any packages in that directory, and how to load them if
+they are needed.</p>
+
+<p>It is good style to start every script you create with a set of
+<code class="keyword">package require</code> statements to load any
+packages required. This serves two purposes: making sure that any
+missing requirements are identified as soon as possible; and,
+clearly documenting the dependencies that your code has. Tcl and Tk
+are both made available as packages and it is a good idea to
+explicitly require them in your scripts even if they are already
+loaded as this makes your scripts more portable and documents the
+version requirements of your script.</p>
+
+<h2>Creating a package</h2>
+
+<p>There are three steps involved in creating a package:</p>
+
+<ul>
+<li>Adding a <code class="keyword">package provide</code> statement
+to your script.</li>
+
+<li>Creating a <code>pkgIndex.tcl</code> file.</li>
+
+<li>Installing the package where it can be found by Tcl.</li>
+</ul>
+
+<p>The first step is to add a <code class="keyword">package
+provide</code> statement to your script. It is good style to place
+this statement at the top of your script. The <code class=
+"keyword">package provide</code> command tells Tcl the <code class=
+"arg">name</code> of your package and the <code class=
+"arg">version</code> being provided.</p>
+
+<p>The next step is to create a <code>pkgIndex.tcl</code> file.
+This file tells Tcl how to load your package. In essence the index
+file is simply a Tcl file which is loaded into the interpreter when
+Tcl searches for packages. It should use the <code class=
+"keyword">package ifneeded</code> command register a script which
+will load the package when it is required. The
+<code>pkgIndex.tcl</code> file is evaluated globally in the
+interpreter when Tcl first searches for <em>any</em> package. For
+this reason it is very bad style for an index script to do anything
+other than tell Tcl how to load a package; index scripts should not
+define procs, require packages, or perform any other action which
+may affect the state of the interpreter.</p>
+
+<p>The simplest way to create a <code>pkgIndex.tcl</code> script is
+to use the <code class="keyword">pkg_mkIndex</code> command. The
+<code class="keyword">pkg_mkIndex</code> command scans files which
+match a given <code class="arg">pattern</code> in a <code class=
+"arg">directory</code> looking for <code class="keyword">package
+provide</code> commands. From this information it generates an
+appropriate <code>pkgIndex.tcl</code> file in the directory.</p>
+
+<p>Once a package index has been created, the next step is to move
+the package to somewhere that Tcl can find it. The
+<code>tcl_pkgPath</code> and <code>auto_path</code> global
+variables contain a list of directories that Tcl searches for
+packages. The package index and all the files that implement the
+package should be installed into a subdirectory of one of these
+directories. Alternatively, the <code>auto_path</code> variable can
+be extended at run-time to tell Tcl of new places to look for
+packages.</p>
+
+<dl>
+<dt><code class="keyword">package require</code> <code class=
+"keyword">?-exact?</code> <code class="arg">name</code> <code
+class="arg">?version?</code></dt>
+
+<dd>Loads the package identified by <code class="arg">name</code>.
+If the <code class="keyword">-exact</code> switch is given along
+with a <code class="arg">version</code> number then only that exact
+package version will be accepted. If a <code class=
+"arg">version</code> number is given, without the <code class=
+"keyword">-exact</code> switch then any version equal to or greater
+than that version (but with the same major version number) will be
+accepted. If no version is specified then any version will be
+loaded. If a matching package can be found then it is loaded and
+the command returns the actual version number; otherwise it
+generates an error.</dd>
+
+<dt><code class="keyword">package provide</code> <code class=
+"arg">name</code> <code class="arg">?version?</code></dt>
+
+<dd>If a <code class="arg">version</code> is given this command
+tells Tcl that this version of the package indicated by <code
+class="arg">name</code> is loaded. If a different version of the
+same package has already been loaded then an error is generated. If
+the <code class="arg">version</code> argument is omitted, then the
+command returns the version number that is currently loaded, or the
+empty string if the package has not been loaded.</dd>
+
+<dt><code class="keyword">pkg_mkIndex ?-direct? ?-lazy?
+?-load</code> <code class="arg">pkgPat</code><code class=
+"keyword">? ?-verbose?</code> <code class="arg">dir ?pattern
+pattern ...?</code></dt>
+
+<dd>Creates a <code>pkgIndex.tcl</code> file for a package or set
+of packages. The command works by loading the files matching the
+<code class="arg">pattern</code>s in the directory, <code class=
+"arg">dir</code> and seeing what new packages and commands appear.
+The command is able to handle both Tcl script files and binary
+libraries (not discussed here).</dd>
+</dl>
+
+<h2>Namespaces</h2>
+
+<p>One problem that can occur when using packages, and particularly
+when using code written by others is that of <em>name
+collision</em>. This happens when two pieces of code try to define
+a procedure or variable with the same name. In Tcl when this occurs
+the old procedure or variable is simply overwritten. This is
+sometimes a useful feature, but more often it is the cause of bugs
+if the two definitions are not compatible. To solve this problem,
+Tcl provides a <code class="keyword">namespace</code> command to
+allow commands and variables to be partitioned into separate areas,
+called <em>namespaces</em>. Each namespace can contain commands and
+variables which are local to that namespace and cannot be
+overwritten by commands or variables in other namespaces. When a
+command in a namespace is invoked it can see all the other commands
+and variables in its namespace, as well as those in the global
+namespace. Namespaces can also contain other namespaces. This
+allows a hierarchy of namespaces to be created in a similar way to
+a file system hierarchy, or the Tk widget hierarchy. Each namespace
+itself has a name which is visible in its parent namespace. Items
+in a namespace can be accessed by creating a path to the item. This
+is done by joining the names of the items with <code>::</code>. For
+instance, to access the variable <code>bar</code> in the namespace
+<code>foo</code>, you could use the path <code>foo::bar</code>.
+This kind of path is called a relative path because Tcl will try to
+follow the path <em>relative</em> to the current namespace. If that
+fails, and the path represents a command, then Tcl will also look
+relative to the global namespace. You can make a path
+<em>fully-qualified</em> by describing its exact position in the
+hierachy from the global namespace, which is named <code>::</code>.
+For instance, if our <code>foo</code> namespace was a child of the
+global namespace, then the fully-qualified name of <code>bar</code>
+would be <code>::foo::bar</code>. It is usually a good idea to use
+fully-qualified names when referring to any item outside of the
+current namespace to avoid surprises.</p>
+
+<p>A namespace can <em>export</em> some or all of the command names
+it contains. These commands can then be <em>imported</em> into
+another namespace. This in effect creates a local command in the
+new namespace which when invoked calls the original command in the
+original namespace. This is a useful technique for creating
+short-cuts to frequently used commands from other namespaces. In
+general, a namespace should be careful about exporting commands
+with the same name as any built-in Tcl command or with a commonly
+used name.</p>
+
+<p>Some of the most important commands to use when dealing with
+namespaces are:</p>
+
+<dl>
+<dt><code class="keyword">namespace eval</code> <code class=
+"arg">path script</code></dt>
+
+<dd>This command evaluates the <code class="arg">script</code> in
+the namespace specified by <code class="arg">path</code>. If the
+namespace doesn't exist then it is created. The namespace becomes
+the current namespace while the script is executing, and any
+unqualified names will be resolved relative to that namespace.
+Returns the result of the last command in <code class=
+"arg">script</code>.</dd>
+
+<dt><code class="keyword">namespace delete</code> <code class=
+"arg">?namespace namespace ...?</code></dt>
+
+<dd>Deletes each namespace specified, along with all variables,
+commands and child namespaces it contains.</dd>
+
+<dt><code class="keyword">namespace current</code></dt>
+
+<dd>Returns the fully qualified path of the current namespace.</dd>
+
+<dt><code class="keyword">namespace export ?-clear?</code> <code
+class="arg">?pattern pattern ...?</code></dt>
+
+<dd>Adds any commands matching one of the patterns to the list of
+commands exported by the current namespace. If the <code class=
+"keyword">-clear</code> switch is given then the export list is
+cleared before adding any new commands. If no arguments are given,
+returns the currently exported command names. Each pattern is a
+glob-style pattern such as <code>*</code>, <code>[a-z]*</code>, or
+<code>*foo*</code>.</dd>
+
+<dt><code class="keyword">namespace import ?-force?</code> <code
+class="arg">?pattern pattern ...?</code></dt>
+
+<dd>Imports all commands matching any of the patterns into the
+current namespace. Each pattern is a glob-style pattern such as
+<code>foo::*</code>, or <code>foo::bar</code>.</dd>
+</dl>
+
+<h2>Using namespace with packages</h2>
+
+<p>William Duquette has an excellent guide to using namespaces and
+packages at <a href=
+"http://www.wjduquette.com/tcl/namespaces.html">http://www.wjduquette.com/tcl/namespaces.html</a>.
+In general, a package should provide a namespace as a child of the
+global namespace and put all of its commands and variables inside
+that namespace. A package shouldn't put commands or variables into
+the global namespace by default. It is also good style to give your
+package and the namespace it provides the same name, to avoid
+confusion.</p>
+
+<hr>
+<h2>Example</h2>
+
+<p>This example creates a package which provides a stack data
+structure.</p>
+
+<pre class="example">
+# Register the package
+package provide tutstack 1.0
+package require Tcl      8.5
+
+# Create the namespace
+namespace eval ::tutstack {
+    # Export commands
+    namespace export create destroy push pop peek empty
+
+    # Set up state
+    variable stack
+    variable id 0
+}
+
+# Create a new stack
+proc ::tutstack::create {} {
+    variable stack
+    variable id
+
+    set token "stack[incr id]"
+    set stack($token) [list]
+    return $token
+}
+
+# Destroy a stack
+proc ::tutstack::destroy {token} {
+    variable stack
+
+    unset stack($token)
+}
+
+# Push an element onto a stack
+proc ::tutstack::push {token elem} {
+    variable stack
+
+    lappend stack($token) $elem
+}
+
+# Check if stack is empty
+proc ::tutstack::empty {token} {
+    variable stack
+
+    set num [llength $stack($token)]
+    return [expr {$num == 0}]
+}
+
+# See what is on top of the stack without removing it
+proc ::tutstack::peek {token} {
+    variable stack
+
+    if {[empty $token]} {
+    error "stack empty"
+    }
+
+    return [lindex $stack($token) end]
+}
+
+# Remove an element from the top of the stack
+proc ::tutstack::pop {token} {
+    variable stack
+
+    set ret [peek $token]
+    set stack($token) [lrange $stack($token) 0 end-1]
+    return $ret
+}
+</pre>
+
+<p>And some code which uses it:</p>
+
+<pre class="example">
+package require tutstack 1.0
+
+set stack [tutstack::create]
+foreach num {1 2 3 4 5} { tutstack::push $stack $num }
+
+while { ![tutstack::empty $stack] } {
+    puts "[tutstack::pop $stack]"
+}
+
+tutstack::destroy $stack
+</pre>
+
+<h2>Ensembles</h2>
+
+<p>A common way of structuring related commands is to group them
+together into a single command with sub-commands. This type of
+command is called an <em>ensemble</em> command, and there are many
+examples in the Tcl standard library. For instance, the <code
+class="keyword">string</code> command is an ensemble whose
+sub-commands are <code>length</code>, <code>index</code>,
+<code>match</code> etc. Tcl 8.5 introduced a handy way of
+converting a namespace into an ensemble with the <code>namespace
+ensemble</code> command. This command is very flexible, with many
+options to specify exactly how sub-commands are mapped to commands
+within the namespace. The most basic usage is very straightforward,
+however, and simply creates an ensemble command with the same name
+as the namespace and with all exported procedures registered as
+sub-commands. To illustrate this, we will convert our stack data
+structure into an ensemble:</p>
+
+<pre class="example">
+package require tutstack 1.0
+package require Tcl      8.5
+
+namespace eval ::tutstack {
+    # Create the ensemble command
+    namespace ensemble create
+}
+
+# Now we can use our stack through the ensemble command
+set stack [tutstack create]
+foreach num {1 2 3 4 5} { tutstack push $stack $num }
+
+while { ![tutstack empty $stack] } {
+    puts "[tutstack pop $stack]"
+}
+
+tutstack destroy $stack
+</pre>
+
+<p>As well as providing a nicer syntax for accessing functionality
+in a namespace, ensemble commands also help to clearly distinguish
+the public interface of a package from the private implementation
+details, as only exported commands will be registered as
+sub-commands and the ensemble will enforce this distinction.
+Readers who are familiar with <em>object-oriented</em> programming
+(OOP) will realise that the namespace and ensemble mechanisms
+provide many of the same encapsulation advantages. Indeed, many OO
+extensions for Tcl build on top of the powerful namespace
+mechanism.</p>
+
+<div class="nav"><a href="Tcl30.html">Previous lesson</a> | <a
+href="tcltutorial.html">Index</a> | <a href="Tcl32.html">Next
+lesson</a></div>
+</body>
+</html>
+
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

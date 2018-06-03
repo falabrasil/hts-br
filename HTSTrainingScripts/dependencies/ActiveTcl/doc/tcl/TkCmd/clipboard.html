@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="clipboard.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>clipboard manual page - Tk Built-In Commands</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tk Commands, version 8.6.7</a> <small>&gt;</small> clipboard</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<H3><A NAME="M2">NAME</A></H3>
+clipboard &mdash; Manipulate Tk clipboard
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+<B>clipboard </B><I>option</I> ?<I>arg arg ...</I>?<BR>
+<H3><A NAME="M4">DESCRIPTION</A></H3>
+This command provides a Tcl interface to the Tk clipboard,
+which stores data for later retrieval using the selection mechanism
+(via the <B>-selection CLIPBOARD</B> option).
+In order to copy data into the clipboard, <B>clipboard clear</B> must
+be called, followed by a sequence of one or more calls to <B>clipboard
+append</B>.  To ensure that the clipboard is updated atomically, all
+appends should be completed before returning to the event loop.
+<P>
+The first argument to <B>clipboard</B> determines the format of the
+rest of the arguments and the behavior of the command.  The following
+forms are currently supported:
+<P>
+<DL class="description">
+<DT><A NAME="M5"><B>clipboard append</B> ?<B>-displayof</B> <I>window</I>? ?<B>-format</B> <I>format</I>? ?<B>-type</B> <I>type</I>? ?<B>--</B>? <I>data</I></A><DD>
+Appends <I>data</I> to the clipboard on <I>window</I>'s
+display in the form given by <I>type</I> with the representation given
+by <I>format</I> and claims ownership of the clipboard on <I>window</I>'s
+display.
+<P>
+<I>Type</I> specifies the form in which the selection is to be returned
+(the desired
+&#8220;target&#8221;
+for conversion, in ICCCM terminology), and
+should be an atom name such as <B>STRING</B> or <B>FILE_NAME</B>; see the
+Inter-Client Communication Conventions Manual for complete details.
+<I>Type</I> defaults to <B>STRING</B>.
+<P>
+The <I>format</I> argument specifies the representation that should be
+used to transmit the selection to the requester (the second column of
+Table 2 of the ICCCM), and defaults to <B>STRING</B>.  If <I>format</I> is
+<B>STRING</B>, the selection is transmitted as 8-bit ASCII characters.  If
+<I>format</I> is <B>ATOM</B>, then the <I>data</I> is
+divided into fields separated by white space; each field is converted
+to its atom value, and the 32-bit atom value is transmitted instead of
+the atom name.  For any other <I>format</I>,  <I>data</I> is divided
+into fields separated by white space and each
+field is converted to a 32-bit integer; an array of integers is
+transmitted to the selection requester.  Note that strings passed to
+<B>clipboard append</B> are concatenated before conversion, so the
+caller must take care to ensure appropriate spacing across string
+boundaries.  All items appended to the clipboard with the same
+<I>type</I> must have the same <I>format</I>.
+<P>
+The <I>format</I> argument is needed only for compatibility with
+clipboard requesters that do not use Tk.  If the Tk toolkit is being
+used to retrieve the <B>CLIPBOARD</B> selection then the value is
+converted back to a string at the requesting end, so <I>format</I> is
+irrelevant.
+<P>A <B>--</B> argument may be specified to mark the end of options:  the
+next argument will always be used as <I>data</I>.
+This feature may be convenient if, for example, <I>data</I> starts
+with a <B>-</B>.
+<P><DT><A NAME="M6"><B>clipboard clear</B> ?<B>-displayof</B> <I>window</I>?</A><DD>
+Claims ownership of the clipboard on <I>window</I>'s display and removes
+any previous contents.  <I>Window</I> defaults to
+&#8220;.&#8221;.
+Returns an empty string.
+<P><DT><A NAME="M7"><B>clipboard get</B> ?<B>-displayof</B> <I>window</I>? ?<B>-type</B> <I>type</I>?</A><DD>
+Retrieve data from the clipboard on <I>window</I>'s display.
+<I>Window</I> defaults to
+&#8220;.&#8221;.
+<I>Type</I> specifies the form in which
+the data is to be returned and should be an atom name such as <B>STRING</B>
+or <B>FILE_NAME</B>.  <I>Type</I> defaults to <B>STRING</B>.  This command is
+equivalent to
+&#8220;<B><A HREF="selection.html">selection get</A></B> <B>-selection CLIPBOARD</B>&#8221;.
+<P>
+Note that on modern X11 systems, the most useful type to retrieve for
+transferred strings is not <B>STRING</B>, but rather <B>UTF8_STRING</B>.
+<P></DL>
+<H3><A NAME="M8">EXAMPLES</A></H3>
+Get the current contents of the clipboard.
+<PRE>if {[catch {<B>clipboard get</B>} contents]} {
+    # There were no clipboard contents at all
+}</PRE>
+<P>
+Set the clipboard to contain a fixed string.
+<PRE><B>clipboard clear</B>
+<B>clipboard append</B> &quot;some fixed string&quot;</PRE>
+<P>
+You can put custom data into the clipboard by using a custom <B>-type</B>
+option. This is not necessarily portable, but can be very useful. The
+method of passing Tcl scripts this way is effective, but should be mixed
+with safe interpreters in production code.
+<PRE># This is a very simple canvas serializer;
+# it produces a script that recreates the item(s) when executed
+proc getItemConfig {canvas tag} {
+   set script {}
+   foreach item [$canvas find withtag $tag] {
+      append script {$canvas create } [$canvas type $item]
+      append script { } [$canvas coords $item] { }
+      foreach config [$canvas itemconf $item] {
+         lassign $config name - - - value
+         append script [list $name $value] { }
+      }
+      append script &#92;n
+   }
+   return [string trim $script]
+}
+
+# Set up a binding on a canvas to cut and paste an item
+set c [canvas .c]
+pack $c
+$c create text 150 30 -text &quot;cut and paste me&quot;
+bind $c &lt;&lt;Cut&gt;&gt; {
+   <B>clipboard clear</B>
+   <B>clipboard append -type</B> TkCanvasItem &#92;
+         [getItemConfig %W current]
+   # Delete because this is cut, not copy.
+   %W delete current
+}
+bind $c &lt;&lt;Paste&gt;&gt; {
+   catch {
+      set canvas %W
+      eval [<B>clipboard get -type</B> TkCanvasItem]
+   }
+}</PRE>
+<H3><A NAME="M9">SEE ALSO</A></H3>
+<B><A HREF="../TclCmd/interp.html">interp</A></B>, <B><A HREF="selection.html">selection</A></B>
+<H3><A NAME="M10">KEYWORDS</A></H3>
+<A href="../Keywords/C.html#clear">clear</A>, <A href="../Keywords/F.html#format">format</A>, <A href="../Keywords/C.html#clipboard">clipboard</A>, <A href="../Keywords/A.html#append">append</A>, <A href="../Keywords/S.html#selection">selection</A>, <A href="../Keywords/T.html#type">type</A>
+<div class="copy">Copyright &copy; 1994 The Regents of the University of California.
+<BR>Copyright &copy; 1994-1996 Sun Microsystems, Inc.
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="tclsh.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>tclsh manual page - Applications</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tcl/Tk Applications</a> <small>&gt;</small> tclsh</H2>
+<H3><A HREF="contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="../TkCmd/contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="tclsh.html#M2" NAME="L2">NAME</A>
+<DL><DD>tclsh &mdash; Simple shell containing Tcl interpreter</DD></DL>
+<DD><A HREF="tclsh.html#M3" NAME="L3">SYNOPSIS</A>
+<DL>
+</DL>
+<DD><A HREF="tclsh.html#M4" NAME="L4">DESCRIPTION</A>
+<DD><A HREF="tclsh.html#M5" NAME="L5">SCRIPT FILES</A>
+<DD><A HREF="tclsh.html#M6" NAME="L6">VARIABLES</A>
+<DL class="variables">
+<DD><A HREF="tclsh.html#M7" NAME="L7"><B>argc</B></A>
+<DD><A HREF="tclsh.html#M8" NAME="L8"><B>argv</B></A>
+<DD><A HREF="tclsh.html#M9" NAME="L9"><B>argv0</B></A>
+<DD><A HREF="tclsh.html#M10" NAME="L10"><B>tcl_interactive</B></A>
+</DL>
+<DD><A HREF="tclsh.html#M11" NAME="L11">PROMPTS</A>
+<DD><A HREF="tclsh.html#M12" NAME="L12">STANDARD CHANNELS</A>
+<DD><A HREF="tclsh.html#M13" NAME="L13">SEE ALSO</A>
+<DD><A HREF="tclsh.html#M14" NAME="L14">KEYWORDS</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+tclsh &mdash; Simple shell containing Tcl interpreter
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+<B>tclsh</B> ?<B>-encoding </B><I>name</I>? ?<I>fileName arg arg ...</I>?<BR>
+<H3><A NAME="M4">DESCRIPTION</A></H3>
+<B>Tclsh</B> is a shell-like application that reads Tcl commands
+from its standard input or from a file and evaluates them.
+If invoked with no arguments then it runs interactively, reading
+Tcl commands from standard input and printing command results and
+error messages to standard output.
+It runs until the <B><A HREF="../TclCmd/exit.html">exit</A></B> command is invoked or until it
+reaches end-of-file on its standard input.
+If there exists a file <B>.tclshrc</B> (or <B>tclshrc.tcl</B> on
+the Windows platforms) in the home directory of
+the user, interactive <B>tclsh</B> evaluates the file as a Tcl script
+just before reading the first command from standard input.
+<H3><A NAME="M5">SCRIPT FILES</A></H3>
+If <B>tclsh</B> is invoked with arguments then the first few arguments
+specify the name of a script file, and, optionally, the encoding of
+the text data stored in that script file. Any additional arguments
+are made available to the script as variables (see below).
+Instead of reading commands from standard input <B>tclsh</B> will
+read Tcl commands from the named file;  <B>tclsh</B> will exit
+when it reaches the end of the file.
+The end of the file may be marked either by the physical end of
+the medium, or by the character,
+&#8220;&#92;032&#8221;
+(&#8220;&#92;u001a&#8221;, control-Z).
+If this character is present in the file, the <B>tclsh</B> application
+will read text up to but not including the character.  An application
+that requires this character in the file may safely encode it as
+&#8220;&#92;032&#8221;,
+&#8220;&#92;x1a&#8221;,
+or
+&#8220;&#92;u001a&#8221;;
+or may generate it by use of commands such as <B><A HREF="../TclCmd/format.html">format</A></B> or <B><A HREF="../TclCmd/binary.html">binary</A></B>.
+There is no automatic evaluation of <B>.tclshrc</B> when the name
+of a script file is presented on the <B>tclsh</B> command
+line, but the script file can always <B><A HREF="../TclCmd/source.html">source</A></B> it if desired.
+<P>
+If you create a Tcl script in a file whose first line is
+<P>
+<PRE><B>#!/usr/local/bin/tclsh</B></PRE>
+<P>
+then you can invoke the script file directly from your shell if
+you mark the file as executable.
+This assumes that <B>tclsh</B> has been installed in the default
+location in /usr/local/bin;  if it is installed somewhere else
+then you will have to modify the above line to match.
+Many UNIX systems do not allow the <B>#!</B> line to exceed about
+30 characters in length, so be sure that the <B>tclsh</B>
+executable can be accessed with a short file name.
+<P>
+An even better approach is to start your script files with the
+following three lines:
+<P>
+<PRE><B>#!/bin/sh
+# the next line restarts using tclsh &#92;
+exec tclsh &quot;$0&quot; ${1+&quot;$@&quot;}</B></PRE>
+<P>
+This approach has three advantages over the approach in the previous
+paragraph.  First, the location of the <B>tclsh</B> binary does not have
+to be hard-wired into the script:  it can be anywhere in your shell
+search path.  Second, it gets around the 30-character file name limit
+in the previous approach.
+Third, this approach will work even if <B>tclsh</B> is
+itself a shell script (this is done on some systems in order to
+handle multiple architectures or operating systems:  the <B>tclsh</B>
+script selects one of several binaries to run).  The three lines
+cause both <B>sh</B> and <B>tclsh</B> to process the script, but the
+<B><A HREF="../TclCmd/exec.html">exec</A></B> is only executed by <B>sh</B>.
+<B>sh</B> processes the script first;  it treats the second
+line as a comment and executes the third line.
+The <B><A HREF="../TclCmd/exec.html">exec</A></B> statement cause the shell to stop processing and
+instead to start up <B>tclsh</B> to reprocess the entire script.
+When <B>tclsh</B> starts up, it treats all three lines as comments,
+since the backslash at the end of the second line causes the third
+line to be treated as part of the comment on the second line.
+<P>
+You should note that it is also common practice to install tclsh with
+its version number as part of the name.  This has the advantage of
+allowing multiple versions of Tcl to exist on the same system at once,
+but also the disadvantage of making it harder to write scripts that
+start up uniformly across different versions of Tcl.
+<H3><A NAME="M6">VARIABLES</A></H3>
+<B>Tclsh</B> sets the following global Tcl variables in addition to those
+created by the Tcl library itself (such as <B><A HREF="../TclCmd/tclvars.html">env</A></B>, which maps
+environment variables such as <B>PATH</B> into Tcl):
+<P>
+<DL class="variables">
+<DT><A NAME="M7"><B>argc</B></A><DD>
+Contains a count of the number of <I>arg</I> arguments (0 if none),
+not including the name of the script file.
+<P><DT><A NAME="M8"><B>argv</B></A><DD>
+Contains a Tcl list whose elements are the <I>arg</I> arguments,
+in order, or an empty string if there are no <I>arg</I> arguments.
+<P><DT><A NAME="M9"><B>argv0</B></A><DD>
+Contains <I>fileName</I> if it was specified.
+Otherwise, contains the name by which <B>tclsh</B> was invoked.
+<P><DT><A NAME="M10"><B>tcl_interactive</B></A><DD>
+Contains 1 if <B>tclsh</B> is running interactively (no
+<I>fileName</I> was specified and standard input is a terminal-like
+device), 0 otherwise.
+<P></DL>
+<H3><A NAME="M11">PROMPTS</A></H3>
+When <B>tclsh</B> is invoked interactively it normally prompts for each
+command with
+&#8220;<B>% </B>&#8221;.
+You can change the prompt by setting the global
+variables <B>tcl_prompt1</B> and <B>tcl_prompt2</B>.  If variable
+<B>tcl_prompt1</B> exists then it must consist of a Tcl script
+to output a prompt;  instead of outputting a prompt <B>tclsh</B>
+will evaluate the script in <B>tcl_prompt1</B>.
+The variable <B>tcl_prompt2</B> is used in a similar way when
+a newline is typed but the current command is not yet complete;
+if <B>tcl_prompt2</B> is not set then no prompt is output for
+incomplete commands.
+<H3><A NAME="M12">STANDARD CHANNELS</A></H3>
+See <B><A HREF="../TclLib/StdChannels.html">Tcl_StandardChannels</A></B> for more explanations.
+<H3><A NAME="M13">SEE ALSO</A></H3>
+<B><A HREF="../TclCmd/tclvars.html">auto_path</A></B>, <B><A HREF="../TclCmd/encoding.html">encoding</A></B>, <B><A HREF="../TclCmd/tclvars.html">env</A></B>, <B><A HREF="../TclCmd/fconfigure.html">fconfigure</A></B>
+<H3><A NAME="M14">KEYWORDS</A></H3>
+<A href="../Keywords/A.html#application">application</A>, <A href="../Keywords/A.html#argument">argument</A>, <A href="../Keywords/I.html#interpreter">interpreter</A>, <A href="../Keywords/P.html#prompt">prompt</A>, <A href="../Keywords/S.html#script file">script file</A>, <A href="../Keywords/S.html#shell">shell</A>
+<div class="copy">Copyright &copy; 1993 The Regents of the University of California.
+<BR>Copyright &copy; 1994-1996 Sun Microsystems, Inc.
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="panedwindow.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>panedwindow manual page - Tk Built-In Commands</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tk Commands, version 8.6.7</a> <small>&gt;</small> panedwindow</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="panedwindow.html#M2" NAME="L1119">NAME</A>
+<DL><DD>panedwindow &mdash; Create and manipulate 'panedwindow' split container widgets</DD></DL>
+<DD><A HREF="panedwindow.html#M3" NAME="L1120">SYNOPSIS</A>
+<DL>
+</DL>
+<DD><A HREF="panedwindow.html#M4" NAME="L1121">STANDARD OPTIONS</A>
+<DL>
+<DD><A HREF="options.html#M-background">-background or -bg, background, Background</A>
+<DD><A HREF="options.html#M-borderwidth">-borderwidth or -bd, borderWidth, BorderWidth</A>
+<DD><A HREF="options.html#M-cursor">-cursor, cursor, Cursor</A>
+<DD><A HREF="options.html#M-orient">-orient, orient, Orient</A>
+<DD><A HREF="options.html#M-relief">-relief, relief, Relief</A>
+</DL>
+<DD><A HREF="panedwindow.html#M5" NAME="L1122">WIDGET-SPECIFIC OPTIONS</A>
+<DL>
+<DD><A HREF="panedwindow.html#M6" NAME="L1123">-handlepad, handlePad, HandlePad</A>
+<DD><A HREF="panedwindow.html#M7" NAME="L1124">-handlesize, handleSize, HandleSize</A>
+<DD><A HREF="panedwindow.html#M8" NAME="L1125">-height, height, Height</A>
+<DD><A HREF="panedwindow.html#M9" NAME="L1126">-proxybackground, proxyBackground, ProxyBackground</A>
+<DD><A HREF="panedwindow.html#M10" NAME="L1127">-proxyborderwidth, proxyBorderWidth, ProxyBorderWidth</A>
+<DD><A HREF="panedwindow.html#M11" NAME="L1128">-proxyrelief, proxyRelief, ProxyRelief</A>
+<DD><A HREF="panedwindow.html#M12" NAME="L1129">-opaqueresize, opaqueResize, OpaqueResize</A>
+<DD><A HREF="panedwindow.html#M13" NAME="L1130">-sashcursor, sashCursor, SashCursor</A>
+<DD><A HREF="panedwindow.html#M14" NAME="L1131">-sashpad, sashPad, SashPad</A>
+<DD><A HREF="panedwindow.html#M15" NAME="L1132">-sashrelief, sashRelief, SashRelief</A>
+<DD><A HREF="panedwindow.html#M16" NAME="L1133">-sashwidth, sashWidth, SashWidth</A>
+<DD><A HREF="panedwindow.html#M17" NAME="L1134">-showhandle, showHandle, ShowHandle</A>
+<DD><A HREF="panedwindow.html#M18" NAME="L1135">-width, width, Width</A>
+</DL>
+<DD><A HREF="panedwindow.html#M19" NAME="L1136">DESCRIPTION</A>
+<DD><A HREF="panedwindow.html#M20" NAME="L1137">WIDGET COMMAND</A>
+<DL class="widget command">
+<DD><A HREF="panedwindow.html#M21" NAME="L1138"><I>pathName </I><B>add </B><I>window </I>?<I>window ...</I>? ?<I>option value ...</I>?</A>
+<DD><A HREF="panedwindow.html#M22" NAME="L1139"><I>pathName </I><B>cget </B><I>option</I></A>
+<DD><A HREF="panedwindow.html#M23" NAME="L1140"><I>pathName </I><B>configure </B>?<I>option</I>? ?<I>value option value ...</I>?</A>
+<DD><A HREF="panedwindow.html#M24" NAME="L1141"><I>pathName </I><B>forget </B><I>window </I>?<I>window ...</I>?</A>
+<DD><A HREF="panedwindow.html#M25" NAME="L1142"><I>pathName </I><B>identify </B><I>x y</I></A>
+<DD><A HREF="panedwindow.html#M26" NAME="L1143"><I>pathName </I><B>proxy </B>?<I>args</I>?</A>
+<DL class="widget command">
+<DD><A HREF="panedwindow.html#M27" NAME="L1144"><I>pathName </I><B>proxy coord</B></A>
+<DD><A HREF="panedwindow.html#M28" NAME="L1145"><I>pathName </I><B>proxy forget</B></A>
+<DD><A HREF="panedwindow.html#M29" NAME="L1146"><I>pathName </I><B>proxy place </B><I>x y</I></A>
+</DL>
+<DD><A HREF="panedwindow.html#M30" NAME="L1147"><I>pathName </I><B>sash </B>?<I>args</I>?</A>
+<DL class="widget command">
+<DD><A HREF="panedwindow.html#M31" NAME="L1148"><I>pathName </I><B>sash coord </B><I>index</I></A>
+<DD><A HREF="panedwindow.html#M32" NAME="L1149"><I>pathName </I><B>sash dragto </B><I>index x y</I></A>
+<DD><A HREF="panedwindow.html#M33" NAME="L1150"><I>pathName </I><B>sash mark </B><I>index x y</I></A>
+<DD><A HREF="panedwindow.html#M34" NAME="L1151"><I>pathName </I><B>sash place </B><I>index x y</I></A>
+</DL>
+<DD><A HREF="panedwindow.html#M35" NAME="L1152"><I>pathName </I><B>panecget </B><I>window option</I></A>
+<DD><A HREF="panedwindow.html#M36" NAME="L1153"><I>pathName </I><B>paneconfigure </B><I>window </I>?<I>option</I>? ?<I>value option value ...</I>?</A>
+<DL class="widget command">
+<DD><A HREF="panedwindow.html#M37" NAME="L1154"><B>-after </B><I>window</I></A>
+<DD><A HREF="panedwindow.html#M38" NAME="L1155"><B>-before </B><I>window</I></A>
+<DD><A HREF="panedwindow.html#M39" NAME="L1156"><B>-height </B><I>size</I></A>
+<DD><A HREF="panedwindow.html#M40" NAME="L1157"><B>-hide </B><I>boolean</I></A>
+<DD><A HREF="panedwindow.html#M41" NAME="L1158"><B>-minsize </B><I>n</I></A>
+<DD><A HREF="panedwindow.html#M42" NAME="L1159"><B>-padx </B><I>n</I></A>
+<DD><A HREF="panedwindow.html#M43" NAME="L1160"><B>-pady </B><I>n</I></A>
+<DD><A HREF="panedwindow.html#M44" NAME="L1161"><B>-sticky </B><I>style</I></A>
+<DD><A HREF="panedwindow.html#M45" NAME="L1162"><B>-stretch </B><I>when</I></A>
+<DL class="widget command">
+<DD><A HREF="panedwindow.html#M46" NAME="L1163"><B>always</B></A>
+<DD><A HREF="panedwindow.html#M47" NAME="L1164"><B>first</B></A>
+<DD><A HREF="panedwindow.html#M48" NAME="L1165"><B>last</B></A>
+<DD><A HREF="panedwindow.html#M49" NAME="L1166"><B>middle</B></A>
+<DD><A HREF="panedwindow.html#M50" NAME="L1167"><B>never</B></A>
+</DL>
+<DD><A HREF="panedwindow.html#M51" NAME="L1168"><B>-width </B><I>size</I></A>
+</DL>
+<DD><A HREF="panedwindow.html#M52" NAME="L1169"><I>pathName </I><B>panes</B></A>
+</DL>
+<DD><A HREF="panedwindow.html#M53" NAME="L1170">RESIZING PANES</A>
+<DD><A HREF="panedwindow.html#M54" NAME="L1171">SEE ALSO</A>
+<DD><A HREF="panedwindow.html#M55" NAME="L1172">KEYWORDS</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+panedwindow &mdash; Create and manipulate 'panedwindow' split container widgets
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+<B>panedwindow</B> <I>pathName </I>?<I>options</I>?<BR>
+<H3><A NAME="M4">STANDARD OPTIONS</A></H3>
+<DL>
+<DT><B><A HREF="options.html#M-background">-background or -bg, background, Background</A></B>
+<DT><B><A HREF="options.html#M-borderwidth">-borderwidth or -bd, borderWidth, BorderWidth</A></B>
+<DT><B><A HREF="options.html#M-cursor">-cursor, cursor, Cursor</A></B>
+<DT><B><A HREF="options.html#M-orient">-orient, orient, Orient</A></B>
+<DT><B><A HREF="options.html#M-relief">-relief, relief, Relief</A></B>
+</DL>
+<H3><A NAME="M5">WIDGET-SPECIFIC OPTIONS</A></H3>
+<DL>
+<DT>Command-Line Name: <B><A NAME="M6">-handlepad</A></B>
+<DT>Database Name: <B>handlePad</B>
+<DT>Database Class: <B>HandlePad</B>
+<DD>When sash handles are drawn, specifies the distance from the top or
+left end of the sash (depending on the orientation of the widget) at
+which to draw the handle.  May be any value accepted by <B><A HREF="../TkLib/GetPixels.html">Tk_GetPixels</A></B>.
+<P><DT>Command-Line Name: <B><A NAME="M7">-handlesize</A></B>
+<DT>Database Name: <B>handleSize</B>
+<DT>Database Class: <B>HandleSize</B>
+<DD>Specifies the side length of a sash handle.  Handles are always
+drawn as squares.  May be any value accepted by <B><A HREF="../TkLib/GetPixels.html">Tk_GetPixels</A></B>.
+<P><DT>Command-Line Name: <B><A NAME="M8">-height</A></B>
+<DT>Database Name: <B>height</B>
+<DT>Database Class: <B>Height</B>
+<DD>Specifies a desired height for the overall panedwindow widget. May be any
+value accepted by <B><A HREF="../TkLib/GetPixels.html">Tk_GetPixels</A></B>. If an empty string, the widget will be
+made high enough to allow all contained widgets to have their natural height.
+<P><DT>Command-Line Name: <B><A NAME="M9">-proxybackground</A></B>
+<DT>Database Name: <B>proxyBackground</B>
+<DT>Database Class: <B>ProxyBackground</B>
+<DD>Background color to use when drawing the proxy. If an empty string, the
+value of the <B>-background</B> option will be used.
+<P><DT>Command-Line Name: <B><A NAME="M10">-proxyborderwidth</A></B>
+<DT>Database Name: <B>proxyBorderWidth</B>
+<DT>Database Class: <B>ProxyBorderWidth</B>
+<DD>Specifies the borderwidth of the proxy. May be any value accepted by
+<B><A HREF="../TkLib/GetPixels.html">Tk_GetPixels</A></B>.
+<P><DT>Command-Line Name: <B><A NAME="M11">-proxyrelief</A></B>
+<DT>Database Name: <B>proxyRelief</B>
+<DT>Database Class: <B>ProxyRelief</B>
+<DD>Relief to use when drawing the proxy. May be any of the standard Tk
+relief values. If an empty string, the value of the <B>-sashrelief</B>
+option will be used.
+<P><DT>Command-Line Name: <B><A NAME="M12">-opaqueresize</A></B>
+<DT>Database Name: <B>opaqueResize</B>
+<DT>Database Class: <B>OpaqueResize</B>
+<DD>Specifies whether panes should be resized as a sash is moved (true),
+or if resizing should be deferred until the sash is placed (false).
+<P><DT>Command-Line Name: <B><A NAME="M13">-sashcursor</A></B>
+<DT>Database Name: <B>sashCursor</B>
+<DT>Database Class: <B>SashCursor</B>
+<DD>Mouse cursor to use when over a sash.  If null,
+<B>sb_h_double_arrow</B> will be used for horizontal panedwindows, and
+<B>sb_v_double_arrow</B> will be used for vertical panedwindows.
+<P><DT>Command-Line Name: <B><A NAME="M14">-sashpad</A></B>
+<DT>Database Name: <B>sashPad</B>
+<DT>Database Class: <B>SashPad</B>
+<DD>Specifies the amount of padding to leave of each side of a sash.  May
+be any value accepted by <B><A HREF="../TkLib/GetPixels.html">Tk_GetPixels</A></B>.
+<P><DT>Command-Line Name: <B><A NAME="M15">-sashrelief</A></B>
+<DT>Database Name: <B>sashRelief</B>
+<DT>Database Class: <B>SashRelief</B>
+<DD>Relief to use when drawing a sash.  May be any of the standard Tk
+relief values.
+<P><DT>Command-Line Name: <B><A NAME="M16">-sashwidth</A></B>
+<DT>Database Name: <B>sashWidth</B>
+<DT>Database Class: <B>SashWidth</B>
+<DD>Specifies the width of each sash.  May be any value accepted by
+<B><A HREF="../TkLib/GetPixels.html">Tk_GetPixels</A></B>.
+<P><DT>Command-Line Name: <B><A NAME="M17">-showhandle</A></B>
+<DT>Database Name: <B>showHandle</B>
+<DT>Database Class: <B>ShowHandle</B>
+<DD>Specifies whether sash handles should be shown.  May be any valid Tcl
+boolean value.
+<P><DT>Command-Line Name: <B><A NAME="M18">-width</A></B>
+<DT>Database Name: <B>width</B>
+<DT>Database Class: <B>Width</B>
+<DD>Specifies a desired width for the overall panedwindow widget. May be any
+value accepted by <B><A HREF="../TkLib/GetPixels.html">Tk_GetPixels</A></B>. If an empty string, the widget will be
+made wide enough to allow all contained widgets to have their natural width.
+</DL>
+<H3><A NAME="M19">DESCRIPTION</A></H3>
+The <B>panedwindow</B> command creates a new window (given by the
+<I>pathName</I> argument) and makes it into a panedwindow widget.
+Additional options, described above, may be specified on the command
+line or in the option database to configure aspects of the panedwindow
+such as its default background color and relief.  The
+<B>panedwindow</B> command returns the path name of the new window.
+<P>
+A panedwindow widget contains any number of panes, arranged
+horizontally or vertically, according to the value of the
+<B>-orient</B> option.  Each pane contains one widget, and each pair of
+panes is separated by a moveable (via mouse movements) sash.  Moving a
+sash causes the widgets on either side of the sash to be resized.
+<H3><A NAME="M20">WIDGET COMMAND</A></H3>
+The <B>panedwindow</B> command creates a new Tcl command whose name is
+the same as the path name of the panedwindow's window.  This command
+may be used to invoke various operations on the widget.  It has the
+following general form:
+<PRE><I>pathName option </I>?<I>arg arg ...</I>?</PRE>
+<I>PathName</I> is the name of the command, which is the same as
+the panedwindow widget's path name.  <I>Option</I> and the <I>arg</I>s
+determine the exact behavior of the command.  The following
+commands are possible for panedwindow widgets:
+<P>
+<DL class="widget command">
+<DT><A NAME="M21"><I>pathName </I><B>add </B><I>window </I>?<I>window ...</I>? ?<I>option value ...</I>?</A><DD>
+Add one or more windows to the panedwindow, each in a separate pane.
+The arguments consist of the names of one or more windows
+followed by pairs of arguments that specify how to manage the windows.
+<I>Option</I> may have any of the values accepted by the
+<B>configure</B> subcommand.
+<P><DT><A NAME="M22"><I>pathName </I><B>cget </B><I>option</I></A><DD>
+Returns the current value of the configuration option given by
+<I>option</I>.  <I>Option</I> may have any of the values accepted by the
+<B>panedwindow</B> command.
+<P><DT><A NAME="M23"><I>pathName </I><B>configure </B>?<I>option</I>? ?<I>value option value ...</I>?</A><DD>
+Query or modify the configuration options of the widget.  If no
+<I>option</I> is specified, returns a list describing all of the
+available options for <I>pathName</I> (see <B><A HREF="../TkLib/ConfigWidg.html">Tk_ConfigureInfo</A></B> for
+information on the format of this list).  If <I>option</I> is specified
+with no <I>value</I>, then the command returns a list describing the
+one named option (this list will be identical to the corresponding
+sublist of the value returned if no <I>option</I> is specified).  If
+one or more <I>option-value</I> pairs are specified, then the command
+modifies the given widget option(s) to have the given value(s);  in
+this case the command returns an empty string. <I>Option</I> may have
+any of the values accepted by the <B>panedwindow</B> command.
+<P><DT><A NAME="M24"><I>pathName </I><B>forget </B><I>window </I>?<I>window ...</I>?</A><DD>
+Remove the pane containing <I>window</I> from the panedwindow.  All
+geometry management options for <I>window</I> will be forgotten.
+<P><DT><A NAME="M25"><I>pathName </I><B>identify </B><I>x y</I></A><DD>
+Identify the panedwindow component underneath the point given by
+<I>x</I> and <I>y</I>, in window coordinates.  If the point is over a
+sash or a sash handle, the result is a two element list containing the
+index of the sash or handle, and a word indicating whether it is over
+a sash or a handle, such as {0 sash} or {2 handle}.  If the point is
+over any other part of the panedwindow, the result is an empty list.
+<P><DT><A NAME="M26"><I>pathName </I><B>proxy </B>?<I>args</I>?</A><DD>
+This command is used to query and change the position of the sash
+proxy, used for rubberband-style pane resizing. It can take any of
+the following forms:
+<P>
+<DL class="widget command">
+<DT><A NAME="M27"><I>pathName </I><B>proxy coord</B></A><DD>
+Return a list containing the x and y coordinates of the most recent
+proxy location.
+<P><DT><A NAME="M28"><I>pathName </I><B>proxy forget</B></A><DD>
+Remove the proxy from the display.
+<P><DT><A NAME="M29"><I>pathName </I><B>proxy place </B><I>x y</I></A><DD>
+Place the proxy at the given <I>x</I> and <I>y</I> coordinates.
+<P></DL>
+<P><DT><A NAME="M30"><I>pathName </I><B>sash </B>?<I>args</I>?</A><DD>
+This command is used to query and change the position of sashes in the
+panedwindow.  It can take any of the following forms:
+<P>
+<DL class="widget command">
+<DT><A NAME="M31"><I>pathName </I><B>sash coord </B><I>index</I></A><DD>
+Return the current x and y coordinate pair for the sash given by
+<I>index</I>.  <I>Index</I> must be an integer between 0 and 1 less than
+the number of panes in the panedwindow.  The coordinates given are
+those of the top left corner of the region containing the sash.
+<P><DT><A NAME="M32"><I>pathName </I><B>sash dragto </B><I>index x y</I></A><DD>
+This command computes the difference between the given coordinates and the
+coordinates given to the last <B>sash mark</B> command for the given
+sash.  It then moves that sash the computed difference.  The return
+value is the empty string.
+<P><DT><A NAME="M33"><I>pathName </I><B>sash mark </B><I>index x y</I></A><DD>
+Records <I>x</I> and <I>y</I> for the sash given by <I>index</I>; used in
+conjunction with later <B>sash dragto</B> commands to move the sash.
+<P><DT><A NAME="M34"><I>pathName </I><B>sash place </B><I>index x y</I></A><DD>
+Place the sash given by <I>index</I> at the given coordinates.
+<P></DL>
+<P><DT><A NAME="M35"><I>pathName </I><B>panecget </B><I>window option</I></A><DD>
+Query a management option for <I>window</I>.  <I>Option</I> may be any
+value allowed by the <B>paneconfigure</B> subcommand.
+<P><DT><A NAME="M36"><I>pathName </I><B>paneconfigure </B><I>window </I>?<I>option</I>? ?<I>value option value ...</I>?</A><DD>
+Query or modify the management options for <I>window</I>.  If no
+<I>option</I> is specified, returns a list describing all of the
+available options for <I>pathName</I> (see <B><A HREF="../TkLib/ConfigWidg.html">Tk_ConfigureInfo</A></B> for
+information on the format of this list).  If <I>option</I> is specified
+with no <I>value</I>, then the command returns a list describing the
+one named option (this list will be identical to the corresponding
+sublist of the value returned if no <I>option</I> is specified).  If
+one or more <I>option-value</I> pairs are specified, then the command
+modifies the given widget option(s) to have the given value(s);  in
+this case the command returns an empty string.  The following options
+are supported:
+<P>
+<DL class="widget command">
+<DT><A NAME="M37"><B>-after </B><I>window</I></A><DD>
+Insert the window after the window specified.  <I>window</I> should be the
+name of a window already managed by <I>pathName</I>.
+<P><DT><A NAME="M38"><B>-before </B><I>window</I></A><DD>
+Insert the window before the window specified.  <I>window</I> should be
+the name of a window already managed by <I>pathName</I>.
+<P><DT><A NAME="M39"><B>-height </B><I>size</I></A><DD>
+Specify a height for the window.  The height will be the outer
+dimension of the window including its border, if any.  If <I>size</I>
+is an empty string, or if <B>-height</B> is not specified, then the
+height requested internally by the window will be used initially; the
+height may later be adjusted by the movement of sashes in the
+panedwindow.  <I>Size</I> may be any value accepted by <B><A HREF="../TkLib/GetPixels.html">Tk_GetPixels</A></B>.
+<P><DT><A NAME="M40"><B>-hide </B><I>boolean</I></A><DD>
+Controls the visibility of a pane.  When the <I>boolean</I> is true
+(according to <B><A HREF="../TclLib/GetInt.html">Tcl_GetBoolean</A></B>) the pane will not be visible, but
+it will still be maintained in the list of panes.
+<P><DT><A NAME="M41"><B>-minsize </B><I>n</I></A><DD>
+Specifies that the size of the window cannot be made less than
+<I>n</I>.  This constraint only affects the size of the widget in the
+paned dimension &#8212; the x dimension for horizontal panedwindows, the y
+dimension for vertical panedwindows.  May be any value accepted by
+<B><A HREF="../TkLib/GetPixels.html">Tk_GetPixels</A></B>.
+<P><DT><A NAME="M42"><B>-padx </B><I>n</I></A><DD>
+Specifies a non-negative value indicating how much extra space to
+leave on each side of the window in the X-direction.  The value may
+have any of the forms accepted by <B><A HREF="../TkLib/GetPixels.html">Tk_GetPixels</A></B>.
+<P><DT><A NAME="M43"><B>-pady </B><I>n</I></A><DD>
+Specifies a non-negative value indicating how much extra space to
+leave on each side of the window in the Y-direction.  The value may
+have any of the forms accepted by <B><A HREF="../TkLib/GetPixels.html">Tk_GetPixels</A></B>.
+<P><DT><A NAME="M44"><B>-sticky </B><I>style</I></A><DD>
+If a window's pane is larger than the requested dimensions of the
+window, this option may be used to position (or stretch) the window
+within its pane.  <I>Style</I>  is a string that contains zero or more
+of the characters <B>n</B>, <B>s</B>, <B>e</B> or <B>w</B>.  The string
+can optionally contains spaces or commas, but they are ignored.  Each
+letter refers to a side (north, south, east, or west) that the window
+will
+&#8220;stick&#8221;
+to.  If both <B>n</B> and <B>s</B> (or <B>e</B> and <B>w</B>)
+are specified, the window will be stretched to fill the entire height
+(or width) of its cavity.
+<P><DT><A NAME="M45"><B>-stretch </B><I>when</I></A><DD>
+Controls how extra space is allocated to each of the panes.
+<I>When</I> is one of <B>always</B>, <B>first</B>, <B>last</B>,
+<B>middle</B>, and <B>never</B>.
+The panedwindow will calculate the required size of all its panes. Any
+remaining (or deficit) space will be distributed to those panes marked
+for stretching. The space will be distributed based on each panes
+current ratio of the whole.  The <I>when</I> values have the following
+definition:
+<P>
+<DL class="widget command">
+<DT><A NAME="M46"><B>always</B></A><DD>
+This pane will always stretch.
+<P><DT><A NAME="M47"><B>first</B></A><DD>
+Only if this pane is the first pane (left-most or top-most) will it
+stretch.
+<P><DT><A NAME="M48"><B>last</B></A><DD>
+Only if this pane is the last pane (right-most or bottom-most) will it
+stretch.  This is the default value.
+<P><DT><A NAME="M49"><B>middle</B></A><DD>
+Only if this pane is not the first or last pane will it stretch.
+<P><DT><A NAME="M50"><B>never</B></A><DD>
+This pane will never stretch.
+<P></DL>
+<P><DT><A NAME="M51"><B>-width </B><I>size</I></A><DD>
+Specify a width for the window.  The width will be the outer
+dimension of the window including its border, if any.  If <I>size</I>
+is an empty string, or if <B>-width</B> is not specified, then the
+width requested internally by the window will be used initially; the
+width may later be adjusted by the movement of sashes in the
+panedwindow.  <I>Size</I> may be any value accepted by <B><A HREF="../TkLib/GetPixels.html">Tk_GetPixels</A></B>.
+<P></DL>
+<P><DT><A NAME="M52"><I>pathName </I><B>panes</B></A><DD>
+Returns an ordered list of the widgets managed by <I>pathName</I>.
+<P></DL>
+<H3><A NAME="M53">RESIZING PANES</A></H3>
+A pane is resized by grabbing the sash (or sash handle if present) and
+dragging with the mouse.  This is accomplished via mouse motion
+bindings on the widget.  When a sash is moved, the sizes of the panes
+on each side of the sash, and thus the widgets in those panes, are
+adjusted.
+<P>
+When a pane is resized from outside (e.g. it is packed to expand and
+fill, and the containing toplevel is resized), space is added to the final
+(rightmost or bottommost) pane in the window.
+<P>
+Unlike slave windows managed by e.g. pack or grid, the panes managed by a
+panedwindow do not change width or height to accomodate changes in the
+requested widths or heights of the panes, once these have become mapped.
+Therefore it may be advisable, particularly when creating layouts
+interactively, to not add a pane to the panedwindow widget until after the
+geometry requests of that pane has been finalized (i.e., all components of
+the pane inserted, all options affecting geometry set to their proper
+values, etc.).
+<H3><A NAME="M54">SEE ALSO</A></H3>
+<B><A HREF="ttk_panedwindow.html">ttk::panedwindow</A></B>
+<H3><A NAME="M55">KEYWORDS</A></H3>
+<A href="../Keywords/P.html#panedwindow">panedwindow</A>, <A href="../Keywords/W.html#widget">widget</A>, <A href="../Keywords/G.html#geometry management">geometry management</A>
+<div class="copy">Copyright &copy; 1992 The Regents of the University of California.
+<BR>Copyright &copy; 1994-1996 Sun Microsystems, Inc.
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

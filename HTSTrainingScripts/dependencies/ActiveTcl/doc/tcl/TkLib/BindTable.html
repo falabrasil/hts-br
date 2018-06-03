@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="BindTable.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>Tk_CreateBindingTable manual page - Tk Library Procedures</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tk C API, version 8.6.7</a> <small>&gt;</small> BindTable</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="../TkCmd/contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="BindTable.html#M2" NAME="L16">NAME</A>
+<DL><DD>Tk_CreateBindingTable, Tk_DeleteBindingTable, Tk_CreateBinding, Tk_DeleteBinding, Tk_GetBinding, Tk_GetAllBindings, Tk_DeleteAllBindings, Tk_BindEvent &mdash; invoke scripts in response to X events</DD></DL>
+<DD><A HREF="BindTable.html#M3" NAME="L17">SYNOPSIS</A>
+<DL>
+<DD><B>#include &lt;tk.h&gt;</B>
+<DD>Tk_BindingTable
+<DD><B>Tk_CreateBindingTable(</B><I>interp</I><B>)</B>
+<DD><B>Tk_DeleteBindingTable(</B><I>bindingTable</I><B>)</B>
+<DD>unsigned long
+<DD><B>Tk_CreateBinding(</B><I>interp, bindingTable, object, eventString, script, append</I><B>)</B>
+<DD>int
+<DD><B>Tk_DeleteBinding(</B><I>interp, bindingTable, object, eventString</I><B>)</B>
+<DD>const char *
+<DD><B>Tk_GetBinding(</B><I>interp, bindingTable, object, eventString</I><B>)</B>
+<DD><B>Tk_GetAllBindings(</B><I>interp, bindingTable, object</I><B>)</B>
+<DD><B>Tk_DeleteAllBindings(</B><I>bindingTable, object</I><B>)</B>
+<DD><B>Tk_BindEvent(</B><I>bindingTable, eventPtr, tkwin, numObjects, objectPtr</I><B>)</B>
+</DL>
+<DD><A HREF="BindTable.html#M4" NAME="L18">ARGUMENTS</A>
+<DL class="arguments">
+</DL>
+<DD><A HREF="BindTable.html#M5" NAME="L19">DESCRIPTION</A>
+<DD><A HREF="BindTable.html#M6" NAME="L20">KEYWORDS</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+Tk_CreateBindingTable, Tk_DeleteBindingTable, Tk_CreateBinding, Tk_DeleteBinding, Tk_GetBinding, Tk_GetAllBindings, Tk_DeleteAllBindings, Tk_BindEvent &mdash; invoke scripts in response to X events
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+<B>#include &lt;tk.h&gt;</B><BR>
+Tk_BindingTable<BR>
+<B>Tk_CreateBindingTable(</B><I>interp</I><B>)</B><BR>
+<B>Tk_DeleteBindingTable(</B><I>bindingTable</I><B>)</B><BR>
+unsigned long<BR>
+<B>Tk_CreateBinding(</B><I>interp, bindingTable, object, eventString, script, append</I><B>)</B><BR>
+int<BR>
+<B>Tk_DeleteBinding(</B><I>interp, bindingTable, object, eventString</I><B>)</B><BR>
+const char *<BR>
+<B>Tk_GetBinding(</B><I>interp, bindingTable, object, eventString</I><B>)</B><BR>
+<B>Tk_GetAllBindings(</B><I>interp, bindingTable, object</I><B>)</B><BR>
+<B>Tk_DeleteAllBindings(</B><I>bindingTable, object</I><B>)</B><BR>
+<B>Tk_BindEvent(</B><I>bindingTable, eventPtr, tkwin, numObjects, objectPtr</I><B>)</B><BR>
+<H3><A NAME="M4">ARGUMENTS</A></H3>
+<DL class="arguments">
+<DT><A HREF="../TclLib/Interp.html">Tcl_Interp</A> <B>*interp</B> (in)<DD>
+Interpreter to use when invoking bindings in binding table.  Also
+used for returning results and errors from binding procedures.
+<P><DT>Tk_BindingTable <B>bindingTable</B> (in)<DD>
+Token for binding table;  must have been returned by some previous
+call to <B>Tk_CreateBindingTable</B>.
+<P><DT>ClientData <B>object</B> (in)<DD>
+Identifies object with which binding is associated.
+<P><DT>const char <B>*eventString</B> (in)<DD>
+String describing event sequence.
+<P><DT>const char <B>*script</B> (in)<DD>
+Tcl script to invoke when binding triggers.
+<P><DT>int <B><A HREF="../TclCmd/append.html">append</A></B> (in)<DD>
+Non-zero means append <I>script</I> to existing script for binding,
+if any; zero means replace existing script with new one.
+<P><DT>XEvent <B>*eventPtr</B> (in)<DD>
+X event to match against bindings in <I>bindingTable</I>.
+<P><DT><A HREF="WindowId.html">Tk_Window</A> <B>tkwin</B> (in)<DD>
+Identifier for any window on the display where the event occurred.
+Used to find display-related information such as key maps.
+<P><DT>int <B>numObjects</B> (in)<DD>
+Number of object identifiers pointed to by <I>objectPtr</I>.
+<P><DT>ClientData <B>*objectPtr</B> (in)<DD>
+Points to an array of object identifiers:  bindings will be considered
+for each of these objects in order from first to last.
+<P></DL>
+<H3><A NAME="M5">DESCRIPTION</A></H3>
+These procedures provide a general-purpose mechanism for creating
+and invoking bindings.
+Bindings are organized in terms of <I>binding tables</I>.
+A binding table consists of a collection of bindings plus a history
+of recent events.
+Within a binding table, bindings are associated with <I>objects</I>.
+The meaning of an object is defined by clients of the binding package.
+For example, Tk keeps uses one binding table to hold all of the bindings
+created by the <B><A HREF="../TkCmd/bind.html">bind</A></B> command.
+For this table, objects are pointers to strings such as window names, class
+names, or other binding tags such as <B>all</B>.
+Tk also keeps a separate binding table for each canvas widget, which manages
+bindings created by the canvas's <B><A HREF="../TkCmd/bind.html">bind</A></B> widget command;  within
+this table, an object is either a pointer to the internal structure for a
+canvas item or a <A HREF="GetUid.html">Tk_Uid</A> identifying a tag.
+<P>
+The procedure <B>Tk_CreateBindingTable</B> creates a new binding
+table and associates <I>interp</I> with it (when bindings in the
+table are invoked, the scripts will be evaluated in <I>interp</I>).
+<B>Tk_CreateBindingTable</B> returns a token for the table, which
+must be used in calls to other procedures such as <B>Tk_CreateBinding</B>
+or <B>Tk_BindEvent</B>.
+<P>
+<B>Tk_DeleteBindingTable</B> frees all of the state associated
+with a binding table.
+Once it returns the caller should not use the <I>bindingTable</I>
+token again.
+<P>
+<B>Tk_CreateBinding</B> adds a new binding to an existing table.
+The <I>object</I> argument identifies the object with which the
+binding is to be associated, and it may be any one-word value.
+Typically it is a pointer to a string or data structure.
+The <I>eventString</I> argument identifies the event or sequence
+of events for the binding;  see the documentation for the
+<B><A HREF="../TkCmd/bind.html">bind</A></B> command for a description of its format.
+<I>script</I> is the Tcl script to be evaluated when the binding
+triggers.
+<I>append</I> indicates what to do if there already
+exists a binding for <I>object</I> and <I>eventString</I>:  if <I>append</I>
+is zero then <I>script</I> replaces the old script;  if <I>append</I>
+is non-zero then the new script is appended to the old one.
+<B>Tk_CreateBinding</B> returns an X event mask for all the events
+associated with the bindings.
+This information may be useful to invoke <B>XSelectInput</B> to
+select relevant events, or to disallow the use of certain events
+in bindings.
+If an error occurred while creating the binding (e.g., <I>eventString</I>
+refers to a non-existent event), then 0 is returned and an error
+message is left as the result of interpreter <I>interp</I>.
+<P>
+<B>Tk_DeleteBinding</B> removes from <I>bindingTable</I> the
+binding given by <I>object</I> and <I>eventString</I>, if
+such a binding exists.
+<B>Tk_DeleteBinding</B> always returns <B><A HREF="../TclCmd/catch.html">TCL_OK</A></B>.
+In some cases it may reset the interpreter result to the default
+empty value.
+<P>
+<B>Tk_GetBinding</B> returns a pointer to the script associated
+with <I>eventString</I> and <I>object</I> in <I>bindingTable</I>.
+If no such binding exists then NULL is returned and an error
+message is left as the result of interpreter <I>interp</I>.
+<P>
+<B>Tk_GetAllBindings</B> returns in <I>interp</I>'s result a list
+of all the event strings for which there are bindings in
+<I>bindingTable</I> associated with <I>object</I>.
+If there are no bindings for <I>object</I>, the result will be an empty
+string.
+<P>
+<B>Tk_DeleteAllBindings</B> deletes all of the bindings in
+<I>bindingTable</I> that are associated with <I>object</I>.
+<P>
+<B>Tk_BindEvent</B> is called to process an event.
+It makes a copy of the event in an internal history list associated
+with the binding table, then it checks for bindings that match
+the event.
+<B>Tk_BindEvent</B> processes each of the objects pointed to
+by <I>objectPtr</I> in turn.
+For each object, it finds all the bindings that match the current
+event history, selects the most specific binding using the priority
+mechanism described in the documentation for <B><A HREF="../TkCmd/bind.html">bind</A></B>,
+and invokes the script for that binding.
+If there are no matching bindings for a particular object, then
+the object is skipped.
+<B>Tk_BindEvent</B> continues through all of the objects, handling
+exceptions such as errors, <B><A HREF="../TclCmd/break.html">break</A></B>, and <B><A HREF="../TclCmd/continue.html">continue</A></B> as
+described in the documentation for <B><A HREF="../TkCmd/bind.html">bind</A></B>.
+<H3><A NAME="M6">KEYWORDS</A></H3>
+<A href="../Keywords/B.html#binding">binding</A>, <A href="../Keywords/E.html#event">event</A>, <A href="../Keywords/O.html#object">object</A>, <A href="../Keywords/S.html#script">script</A>
+<div class="copy">Copyright &copy; 1994 The Regents of the University of California.
+<BR>Copyright &copy; 1994-1996 Sun Microsystems, Inc.
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

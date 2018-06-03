@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="send.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>send manual page - Tk Built-In Commands</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tk Commands, version 8.6.7</a> <small>&gt;</small> send</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="send.html#M2" NAME="L1366">NAME</A>
+<DL><DD>send &mdash; Execute a command in a different application</DD></DL>
+<DD><A HREF="send.html#M3" NAME="L1367">SYNOPSIS</A>
+<DL>
+</DL>
+<DD><A HREF="send.html#M4" NAME="L1368">DESCRIPTION</A>
+<DL class="description">
+<DD><A HREF="send.html#M5" NAME="L1369"><B>-async</B></A>
+<DD><A HREF="send.html#M6" NAME="L1370"><B>-displayof</B> <I>pathName</I></A>
+<DD><A HREF="send.html#M7" NAME="L1371"><B>--</B></A>
+</DL>
+<DD><A HREF="send.html#M8" NAME="L1372">APPLICATION NAMES</A>
+<DD><A HREF="send.html#M9" NAME="L1373">DISABLING SENDS</A>
+<DD><A HREF="send.html#M10" NAME="L1374">SECURITY</A>
+<DD><A HREF="send.html#M11" NAME="L1375">EXAMPLE</A>
+<DD><A HREF="send.html#M12" NAME="L1376">KEYWORDS</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+send &mdash; Execute a command in a different application
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+<B>send ?</B><I>options</I>? <I>app cmd </I>?<I>arg arg ...</I>?<BR>
+<H3><A NAME="M4">DESCRIPTION</A></H3>
+This command arranges for <I>cmd</I> (and <I>arg</I>s) to be executed in the
+application named by <I>app</I>.  It returns the result or
+error from that command execution.
+<I>App</I> may be the name of any application whose main window is
+on the display containing the sender's main window;  it need not
+be within the same process.
+If no <I>arg</I> arguments are present, then the command to be executed is
+contained entirely within the <I>cmd</I> argument.  If one or
+more <I>arg</I>s are present, they are concatenated to form the
+command to be executed, just as for the <B><A HREF="../TclCmd/eval.html">eval</A></B> command.
+<P>
+If the initial arguments of the command begin with
+&#8220;-&#8221;
+they are treated as options.  The following options are currently defined:
+<P>
+<DL class="description">
+<DT><A NAME="M5"><B>-async</B></A><DD>
+Requests asynchronous invocation.  In this case the <B>send</B>
+command will complete immediately without waiting for <I>cmd</I>
+to complete in the target application;  no result will be available
+and errors in the sent command will be ignored.
+If the target application is in the same process as the sending
+application then the <B>-async</B> option is ignored.
+<P><DT><A NAME="M6"><B>-displayof</B> <I>pathName</I></A><DD>
+Specifies that the target application's main window is on the display
+of the window given by <I>pathName</I>, instead of the display containing
+the application's main window.
+<P><DT><A NAME="M7"><B>--</B></A><DD>
+Serves no purpose except to terminate the list of options.  This
+option is needed only if <I>app</I> could contain a leading
+&#8220;-&#8221;
+character.
+<P></DL>
+<H3><A NAME="M8">APPLICATION NAMES</A></H3>
+The name of an application is set initially from the name of the
+program or script that created the application.
+You can query and change the name of an application with the
+<B><A HREF="tk.html">tk appname</A></B> command.
+<H3><A NAME="M9">DISABLING SENDS</A></H3>
+If the <B>send</B> command is removed from an application (e.g.
+with the command <B><A HREF="../TclCmd/rename.html">rename</A></B> <B>send {}</B>) then the application
+will not respond to incoming send requests anymore,  nor will it
+be able to issue outgoing requests.
+Communication can be reenabled by invoking the <B><A HREF="tk.html">tk appname</A></B>
+command.
+<H3><A NAME="M10">SECURITY</A></H3>
+The <B>send</B> command is potentially a serious security loophole. On Unix,
+any application that can connect to your X server can send
+scripts to your applications.
+These incoming scripts can use Tcl to read and
+write your files and invoke subprocesses under your name.
+Host-based access control such as that provided by <B>xhost</B>
+is particularly insecure, since it allows anyone with an account
+on particular hosts to connect to your server, and if disabled it
+allows anyone anywhere to connect to your server.
+In order to provide at least a small amount of
+security, Tk checks the access control being used by the server
+and rejects incoming sends unless (a) <B>xhost</B>-style access control
+is enabled (i.e. only certain hosts can establish connections) and (b) the
+list of enabled hosts is empty.
+This means that applications cannot connect to your server unless
+they use some other form of authorization
+such as that provide by <B>xauth</B>.
+Under Windows, <B>send</B> is currently disabled.  Most of the
+functionality is provided by the <B><A HREF="../TclCmd/dde.html">dde</A></B> command instead.
+<H3><A NAME="M11">EXAMPLE</A></H3>
+This script fragment can be used to make an application that only runs
+once on a particular display.
+<PRE>if {[tk appname FoobarApp] ne &quot;FoobarApp&quot;} {
+    <B>send</B> -async FoobarApp RemoteStart $argv
+    exit
+}
+# The command that will be called remotely, which raises
+# the application main window and opens the requested files
+proc RemoteStart args {
+    raise .
+    foreach filename $args {
+        OpenFile $filename
+    }
+}</PRE>
+<H3><A NAME="M12">KEYWORDS</A></H3>
+<A href="../Keywords/A.html#application">application</A>, <A href="../Keywords/D.html#dde">dde</A>, <A href="../Keywords/N.html#name">name</A>, <A href="../Keywords/R.html#remote execution">remote execution</A>, <A href="../Keywords/S.html#security">security</A>, <A href="../Keywords/S.html#send">send</A>
+<div class="copy">Copyright &copy; 1990-1994 The Regents of the University of California.
+<BR>Copyright &copy; 1994-1996 Sun Microsystems, Inc.
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

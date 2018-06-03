@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="ttk_image.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>ttk_image manual page - Tk Themed Widget</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tk Commands, version 8.6.7</a> <small>&gt;</small> ttk_image</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="ttk_image.html#M2" NAME="L1864">NAME</A>
+<DL><DD>ttk_image &mdash; Define an element based on an image</DD></DL>
+<DD><A HREF="ttk_image.html#M3" NAME="L1865">SYNOPSIS</A>
+<DL>
+</DL>
+<DD><A HREF="ttk_image.html#M4" NAME="L1866">DESCRIPTION</A>
+<DD><A HREF="ttk_image.html#M5" NAME="L1867">OPTIONS</A>
+<DL class="options">
+<DD><A HREF="ttk_image.html#M6" NAME="L1868"><B>-border</B> <I>padding</I></A>
+<DD><A HREF="ttk_image.html#M7" NAME="L1869"><B>-height </B><I>height</I></A>
+<DD><A HREF="ttk_image.html#M8" NAME="L1870"><B>-padding</B> <I>padding</I></A>
+<DD><A HREF="ttk_image.html#M9" NAME="L1871"><B>-sticky</B> <I>spec</I></A>
+<DD><A HREF="ttk_image.html#M10" NAME="L1872"><B>-width </B><I>width</I></A>
+</DL>
+<DD><A HREF="ttk_image.html#M11" NAME="L1873">IMAGE STRETCHING</A>
+<DD><A HREF="ttk_image.html#M12" NAME="L1874">EXAMPLE</A>
+<DD><A HREF="ttk_image.html#M13" NAME="L1875">SEE ALSO</A>
+<DD><A HREF="ttk_image.html#M14" NAME="L1876">KEYWORDS</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+ttk_image &mdash; Define an element based on an image
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+<B>ttk::style element create </B><I>name</I> <B><A HREF="image.html">image</A></B> <I>imageSpec</I> ?<I>options</I>?<BR>
+<H3><A NAME="M4">DESCRIPTION</A></H3>
+The <I>image</I> element factory creates a new element
+in the current theme whose visual appearance is determined
+by Tk images.
+<I>imageSpec</I> is a list of one or more elements.
+The first element is the default image name.
+The rest of the list is a sequence of <I>statespec / value</I>
+pairs specifying other images to use when the element is
+in a particular state or combination of states.
+<H3><A NAME="M5">OPTIONS</A></H3>
+Valid <I>options</I> are:
+<P>
+<DL class="options">
+<DT><A NAME="M6"><B>-border</B> <I>padding</I></A><DD>
+<I>padding</I> is a list of up to four integers, specifying
+the left, top, right, and bottom borders, respectively.
+If fewer than four elements are specified,
+<I>bottom</I> defaults to <I>top</I>,
+<I>right</I> defaults to <I>left</I>, and
+<I>top</I> defaults to <I>left</I>.
+In other words, a list of three numbers specify the left, vertical, and right border;
+a list of two numbers specify the horizontal and the vertical border;
+a single number specifies the same border all the way around the element.
+See <B><A HREF="ttk_image.html#M11">IMAGE STRETCHING</A></B>, below.
+<P><DT><A NAME="M7"><B>-height </B><I>height</I></A><DD>
+Specifies a minimum height for the element.
+If less than zero, the base image's height is used as a default.
+<P><DT><A NAME="M8"><B>-padding</B> <I>padding</I></A><DD>
+Specifies the element's interior padding.
+The padding is a list of up to four length specifications
+<I>left top right bottom</I>.
+If fewer than four elements are specified,
+<I>bottom</I> defaults to <I>top</I>,
+<I>right</I> defaults to <I>left</I>, and
+<I>top</I> defaults to <I>left</I>.
+In other words, a list of three numbers specify the left, vertical, and right padding;
+a list of two numbers specify the horizontal and the vertical padding;
+a single number specifies the same padding all the way around the widget.
+Defaults to <B>-border</B> if not specified.
+<P><DT><A NAME="M9"><B>-sticky</B> <I>spec</I></A><DD>
+Specifies how the image is placed within the final parcel.
+<I>spec</I> contains zero or more characters
+&#8220;n&#8221;,
+&#8220;s&#8221;,
+&#8220;w&#8221;,
+or
+&#8220;e&#8221;.
+<P><DT><A NAME="M10"><B>-width </B><I>width</I></A><DD>
+Specifies a minimum width for the element.
+If less than zero, the base image's width is used as a default.
+<P></DL>
+<H3><A NAME="M11">IMAGE STRETCHING</A></H3>
+If the element's allocated parcel is larger than the image,
+the image will be placed in the parcel based on the <B>-sticky</B> option.
+If the image needs to stretch horizontally (i.e., <B>-sticky ew</B>)
+or vertically (<B>-sticky ns</B>),
+subregions of the image are replicated to fill the parcel
+based on the <B>-border</B> option.
+The <B>-border</B> divides the image into 9 regions:
+four fixed corners, top and left edges (which may be tiled horizontally),
+left and right edges (which may be tiled vertically),
+and the central area (which may be tiled in both directions).
+<H3><A NAME="M12">EXAMPLE</A></H3>
+<PRE>set img1 [image create photo -file button.png]
+set img2 [image create photo -file button-pressed.png]
+set img3 [image create photo -file button-active.png]
+style element create Button.button image &#92;
+    [list $img1  pressed $img2  active $img3] &#92;
+    -border {2 4} -sticky we</PRE>
+<H3><A NAME="M13">SEE ALSO</A></H3>
+<B><A HREF="ttk_intro.html">ttk::intro</A></B>, <B><A HREF="ttk_style.html">ttk::style</A></B>, <B><A HREF="ttk_vsapi.html">ttk_vsapi</A></B>, <B><A HREF="image.html">image</A></B>, <B><A HREF="photo.html">photo</A></B>
+<H3><A NAME="M14">KEYWORDS</A></H3>
+<A href="../Keywords/S.html#style">style</A>, <A href="../Keywords/T.html#theme">theme</A>, <A href="../Keywords/A.html#appearance">appearance</A>, <A href="../Keywords/P.html#pixmap theme">pixmap theme</A>, <A href="../Keywords/I.html#image">image</A>
+<div class="copy">Copyright &copy; 2004 Joe English
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

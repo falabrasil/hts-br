@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="index.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org">
+<title>Img</title>
+<meta name='Author' content='ActiveState'>
+
+</head>
+<body>
+
+
+<hr>
+[ <a
+href="toc.html">Img Table Of Contents</a> | Img Index ] 
+
+<hr>
+<h3>Img</h3>
+
+<hr>
+<div class="#idxnav"><a href="index.html#c1">B</a> &middot; <a href=
+"index.html#c2">D</a> &middot; <a href="index.html#c3">G</a> &middot; <a href=
+"index.html#c4">I</a> &middot; <a href="index.html#c5">J</a> &middot; <a href=
+"index.html#c6">P</a> &middot; <a href="index.html#c7">R</a> &middot; <a href=
+"index.html#c8">S</a> &middot; <a href="index.html#c9">T</a> &middot; <a href=
+"index.html#c10">W</a> &middot; <a href="index.html#c11">X</a></div>
+
+<hr>
+<table class="#idx" width="100%">
+<tr class="#idxheader">
+<th colspan="2"><a name="c1">Keywords: B</a> </th>
+</tr>
+
+<tr class="#idxeven" valign="top">
+<td class="#idxleft" width="35%"><a name="key11">bmp</a> </td>
+<td class="#idxright" width="65%"><a href=
+"doc/img-bmp.html">img-bmp</a> &middot; <a href=
+"doc/img.html">img-intro</a> </td>
+</tr>
+
+<tr class="#idxheader">
+<th colspan="2"><a name="c2">Keywords: D</a> </th>
+</tr>
+
+<tr class="#idxodd" valign="top">
+<td class="#idxleft" width="35%"><a name="key12">dted</a> </td>
+<td class="#idxright" width="65%"><a href=
+"doc/img-dted.html">img-dted</a> </td>
+</tr>
+
+<tr class="#idxheader">
+<th colspan="2"><a name="c3">Keywords: G</a> </th>
+</tr>
+
+<tr class="#idxeven" valign="top">
+<td class="#idxleft" width="35%"><a name="key13">ghostscript</a>
+</td>
+<td class="#idxright" width="65%"><a href=
+"doc/img-ps.html">img-ps</a> </td>
+</tr>
+
+<tr class="#idxodd" valign="top">
+<td class="#idxleft" width="35%"><a name="key14">gif</a> </td>
+<td class="#idxright" width="65%"><a href=
+"doc/img-gif.html">img-gif</a> &middot; <a href=
+"doc/img.html">img-intro</a> </td>
+</tr>
+
+<tr class="#idxeven" valign="top">
+<td class="#idxleft" width="35%"><a name="key15">gs</a> </td>
+<td class="#idxright" width="65%"><a href=
+"doc/img-ps.html">img-ps</a> </td>
+</tr>
+
+<tr class="#idxheader">
+<th colspan="2"><a name="c4">Keywords: I</a> </th>
+</tr>
+
+<tr class="#idxodd" valign="top">
+<td class="#idxleft" width="35%"><a name="key16">ico</a> </td>
+<td class="#idxright" width="65%"><a href=
+"doc/img-ico.html">img-ico</a> &middot; <a href=
+"doc/img.html">img-intro</a> </td>
+</tr>
+
+<tr class="#idxeven" valign="top">
+<td class="#idxleft" width="35%"><a name="key17">image handling</a>
+</td>
+<td class="#idxright" width="65%"><a href=
+"doc/img-bmp.html">img-bmp</a> &middot; <a href=
+"doc/img-dted.html">img-dted</a> &middot; <a href=
+"doc/img-gif.html">img-gif</a> &middot; <a href=
+"doc/img-ico.html">img-ico</a> &middot; <a href=
+"doc/img-jpeg.html">img-jpeg</a> &middot; <a href=
+"doc/img-pcx.html">img-pcx</a> &middot; <a href=
+"doc/img-pixmap.html">img-pixmap</a> &middot; <a href=
+"doc/img-png.html">img-png</a> &middot; <a href=
+"doc/img-ppm.html">img-ppm</a> &middot; <a href=
+"doc/img-ps.html">img-ps</a> &middot; <a href=
+"doc/img-raw.html">img-raw</a> &middot; <a href=
+"doc/img-sgi.html">img-sgi</a> &middot; <a href=
+"doc/img-sun.html">img-sun</a> &middot; <a href=
+"doc/img-tga.html">img-tga</a> &middot; <a href=
+"doc/img-tiff.html">img-tiff</a> &middot; <a href=
+"doc/img-window.html">img-window</a> &middot; <a href=
+"doc/img-xbm.html">img-xbm</a> &middot; <a href=
+"doc/img-xpm.html">img-xpm</a> &middot; <a href=
+"doc/img.html">img-intro</a> </td>
+</tr>
+
+<tr class="#idxheader">
+<th colspan="2"><a name="c5">Keywords: J</a> </th>
+</tr>
+
+<tr class="#idxodd" valign="top">
+<td class="#idxleft" width="35%"><a name="key18">jpeg</a> </td>
+<td class="#idxright" width="65%"><a href=
+"doc/img-jpeg.html">img-jpeg</a> &middot; <a href=
+"doc/img.html">img-intro</a> </td>
+</tr>
+
+<tr class="#idxheader">
+<th colspan="2"><a name="c6">Keywords: P</a> </th>
+</tr>
+
+<tr class="#idxeven" valign="top">
+<td class="#idxleft" width="35%"><a name="key19">pcx</a> </td>
+<td class="#idxright" width="65%"><a href=
+"doc/img-pcx.html">img-pcx</a> &middot; <a href=
+"doc/img.html">img-intro</a> </td>
+</tr>
+
+<tr class="#idxodd" valign="top">
+<td class="#idxleft" width="35%"><a name="key20">pdf</a> </td>
+<td class="#idxright" width="65%"><a href=
+"doc/img-ps.html">img-ps</a> &middot; <a href=
+"doc/img.html">img-intro</a> </td>
+</tr>
+
+<tr class="#idxeven" valign="top">
+<td class="#idxleft" width="35%"><a name="key21">pixmap</a> </td>
+<td class="#idxright" width="65%"><a href=
+"doc/img-pixmap.html">img-pixmap</a> &middot; <a href=
+"doc/img.html">img-intro</a> </td>
+</tr>
+
+<tr class="#idxodd" valign="top">
+<td class="#idxleft" width="35%"><a name="key22">png</a> </td>
+<td class="#idxright" width="65%"><a href=
+"doc/img-png.html">img-png</a> &middot; <a href=
+"doc/img.html">img-intro</a> </td>
+</tr>
+
+<tr class="#idxeven" valign="top">
+<td class="#idxleft" width="35%"><a name="key23">postscript</a>
+</td>
+<td class="#idxright" width="65%"><a href=
+"doc/img-ps.html">img-ps</a> &middot; <a href=
+"doc/img.html">img-intro</a> </td>
+</tr>
+
+<tr class="#idxodd" valign="top">
+<td class="#idxleft" width="35%"><a name="key24">ppm</a> </td>
+<td class="#idxright" width="65%"><a href=
+"doc/img-ppm.html">img-ppm</a> &middot; <a href=
+"doc/img.html">img-intro</a> </td>
+</tr>
+
+<tr class="#idxeven" valign="top">
+<td class="#idxleft" width="35%"><a name="key25">ps</a> </td>
+<td class="#idxright" width="65%"><a href=
+"doc/img-ps.html">img-ps</a> &middot; <a href=
+"doc/img.html">img-intro</a> </td>
+</tr>
+
+<tr class="#idxheader">
+<th colspan="2"><a name="c7">Keywords: R</a> </th>
+</tr>
+
+<tr class="#idxodd" valign="top">
+<td class="#idxleft" width="35%"><a name="key26">raw</a> </td>
+<td class="#idxright" width="65%"><a href=
+"doc/img-raw.html">img-raw</a> </td>
+</tr>
+
+<tr class="#idxheader">
+<th colspan="2"><a name="c8">Keywords: S</a> </th>
+</tr>
+
+<tr class="#idxeven" valign="top">
+<td class="#idxleft" width="35%"><a name="key27">sgi</a> </td>
+<td class="#idxright" width="65%"><a href=
+"doc/img-sgi.html">img-sgi</a> &middot; <a href=
+"doc/img.html">img-intro</a> </td>
+</tr>
+
+<tr class="#idxodd" valign="top">
+<td class="#idxleft" width="35%"><a name="key28">sun</a> </td>
+<td class="#idxright" width="65%"><a href=
+"doc/img-sun.html">img-sun</a> &middot; <a href=
+"doc/img.html">img-intro</a> </td>
+</tr>
+
+<tr class="#idxheader">
+<th colspan="2"><a name="c9">Keywords: T</a> </th>
+</tr>
+
+<tr class="#idxeven" valign="top">
+<td class="#idxleft" width="35%"><a name="key29">tga</a> </td>
+<td class="#idxright" width="65%"><a href=
+"doc/img-tga.html">img-tga</a> &middot; <a href=
+"doc/img.html">img-intro</a> </td>
+</tr>
+
+<tr class="#idxodd" valign="top">
+<td class="#idxleft" width="35%"><a name="key30">tiff</a> </td>
+<td class="#idxright" width="65%"><a href=
+"doc/img-tiff.html">img-tiff</a> &middot; <a href=
+"doc/img.html">img-intro</a> </td>
+</tr>
+
+<tr class="#idxeven" valign="top">
+<td class="#idxleft" width="35%"><a name="key31">tk</a> </td>
+<td class="#idxright" width="65%"><a href=
+"doc/img-bmp.html">img-bmp</a> &middot; <a href=
+"doc/img-dted.html">img-dted</a> &middot; <a href=
+"doc/img-gif.html">img-gif</a> &middot; <a href=
+"doc/img-ico.html">img-ico</a> &middot; <a href=
+"doc/img-jpeg.html">img-jpeg</a> &middot; <a href=
+"doc/img-pcx.html">img-pcx</a> &middot; <a href=
+"doc/img-pixmap.html">img-pixmap</a> &middot; <a href=
+"doc/img-png.html">img-png</a> &middot; <a href=
+"doc/img-ppm.html">img-ppm</a> &middot; <a href=
+"doc/img-ps.html">img-ps</a> &middot; <a href=
+"doc/img-raw.html">img-raw</a> &middot; <a href=
+"doc/img-sgi.html">img-sgi</a> &middot; <a href=
+"doc/img-sun.html">img-sun</a> &middot; <a href=
+"doc/img-tga.html">img-tga</a> &middot; <a href=
+"doc/img-tiff.html">img-tiff</a> &middot; <a href=
+"doc/img-window.html">img-window</a> &middot; <a href=
+"doc/img-xbm.html">img-xbm</a> &middot; <a href=
+"doc/img-xpm.html">img-xpm</a> &middot; <a href=
+"doc/img.html">img-intro</a> </td>
+</tr>
+
+<tr class="#idxheader">
+<th colspan="2"><a name="c10">Keywords: W</a> </th>
+</tr>
+
+<tr class="#idxodd" valign="top">
+<td class="#idxleft" width="35%"><a name="key32">window</a> </td>
+<td class="#idxright" width="65%"><a href=
+"doc/img-window.html">img-window</a> &middot; <a href=
+"doc/img.html">img-intro</a> </td>
+</tr>
+
+<tr class="#idxheader">
+<th colspan="2"><a name="c11">Keywords: X</a> </th>
+</tr>
+
+<tr class="#idxeven" valign="top">
+<td class="#idxleft" width="35%"><a name="key33">xbm</a> </td>
+<td class="#idxright" width="65%"><a href=
+"doc/img-xbm.html">img-xbm</a> &middot; <a href=
+"doc/img.html">img-intro</a> </td>
+</tr>
+
+<tr class="#idxodd" valign="top">
+<td class="#idxleft" width="35%"><a name="key34">xpm</a> </td>
+<td class="#idxright" width="65%"><a href=
+"doc/img-xpm.html">img-xpm</a> &middot; <a href=
+"doc/img.html">img-intro</a> </td>
+</tr>
+</table>
+
+<hr>
+<h4>Copyright &copy; 2015 <a href="http://www.activestate.com">for
+compilation: ActiveState</a></h4>
+</body>
+</html>
+
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

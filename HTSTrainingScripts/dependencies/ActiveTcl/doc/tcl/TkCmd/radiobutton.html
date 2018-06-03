@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="radiobutton.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>radiobutton manual page - Tk Built-In Commands</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tk Commands, version 8.6.7</a> <small>&gt;</small> radiobutton</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="radiobutton.html#M2" NAME="L1256">NAME</A>
+<DL><DD>radiobutton &mdash; Create and manipulate 'radiobutton' pick-one widgets</DD></DL>
+<DD><A HREF="radiobutton.html#M3" NAME="L1257">SYNOPSIS</A>
+<DL>
+</DL>
+<DD><A HREF="radiobutton.html#M4" NAME="L1258">STANDARD OPTIONS</A>
+<DL>
+<DD><A HREF="options.html#M-activebackground">-activebackground, activeBackground, Foreground</A>
+<DD><A HREF="options.html#M-activeforeground">-activeforeground, activeForeground, Background</A>
+<DD><A HREF="options.html#M-anchor">-anchor, anchor, Anchor</A>
+<DD><A HREF="options.html#M-background">-background or -bg, background, Background</A>
+<DD><A HREF="options.html#M-bitmap">-bitmap, bitmap, Bitmap</A>
+<DD><A HREF="options.html#M-borderwidth">-borderwidth or -bd, borderWidth, BorderWidth</A>
+<DD><A HREF="options.html#M-compound">-compound, compound, Compound</A>
+<DD><A HREF="options.html#M-cursor">-cursor, cursor, Cursor</A>
+<DD><A HREF="options.html#M-disabledforeground">-disabledforeground, disabledForeground, DisabledForeground</A>
+<DD><A HREF="options.html#M-font">-font, font, Font</A>
+<DD><A HREF="options.html#M-foreground">-foreground or -fg, foreground, Foreground</A>
+<DD><A HREF="options.html#M-highlightbackground">-highlightbackground, highlightBackground, HighlightBackground</A>
+<DD><A HREF="options.html#M-highlightcolor">-highlightcolor, highlightColor, HighlightColor</A>
+<DD><A HREF="options.html#M-highlightthickness">-highlightthickness, highlightThickness, HighlightThickness</A>
+<DD><A HREF="options.html#M-image">-image, image, Image</A>
+<DD><A HREF="options.html#M-justify">-justify, justify, Justify</A>
+<DD><A HREF="options.html#M-padx">-padx, padX, Pad</A>
+<DD><A HREF="options.html#M-pady">-pady, padY, Pad</A>
+<DD><A HREF="options.html#M-relief">-relief, relief, Relief</A>
+<DD><A HREF="options.html#M-takefocus">-takefocus, takeFocus, TakeFocus</A>
+<DD><A HREF="options.html#M-text">-text, text, Text</A>
+<DD><A HREF="options.html#M-textvariable">-textvariable, textVariable, Variable</A>
+<DD><A HREF="options.html#M-underline">-underline, underline, Underline</A>
+<DD><A HREF="options.html#M-wraplength">-wraplength, wrapLength, WrapLength</A>
+</DL>
+<DD><A HREF="radiobutton.html#M5" NAME="L1259">WIDGET-SPECIFIC OPTIONS</A>
+<DL>
+<DD><A HREF="radiobutton.html#M6" NAME="L1260">-command, command, Command</A>
+<DD><A HREF="radiobutton.html#M7" NAME="L1261">-height, height, Height</A>
+<DD><A HREF="radiobutton.html#M8" NAME="L1262">-indicatoron, indicatorOn, IndicatorOn</A>
+<DD><A HREF="radiobutton.html#M9" NAME="L1263">-selectcolor, selectColor, Background</A>
+<DD><A HREF="radiobutton.html#M10" NAME="L1264">-offrelief, offRelief, OffRelief</A>
+<DD><A HREF="radiobutton.html#M11" NAME="L1265">-overrelief, overRelief, OverRelief</A>
+<DD><A HREF="radiobutton.html#M12" NAME="L1266">-selectimage, selectImage, SelectImage</A>
+<DD><A HREF="radiobutton.html#M13" NAME="L1267">-state, state, State</A>
+<DD><A HREF="radiobutton.html#M14" NAME="L1268">-tristateimage, tristateImage, TristateImage</A>
+<DD><A HREF="radiobutton.html#M15" NAME="L1269">-tristatevalue, tristateValue, Value</A>
+<DD><A HREF="radiobutton.html#M16" NAME="L1270">-value, value, Value</A>
+<DD><A HREF="radiobutton.html#M17" NAME="L1271">-variable, variable, Variable</A>
+<DD><A HREF="radiobutton.html#M18" NAME="L1272">-width, width, Width</A>
+</DL>
+<DD><A HREF="radiobutton.html#M19" NAME="L1273">DESCRIPTION</A>
+<DD><A HREF="radiobutton.html#M20" NAME="L1274">WIDGET COMMAND</A>
+<DL class="widget command">
+<DD><A HREF="radiobutton.html#M21" NAME="L1275"><I>pathName </I><B>cget</B> <I>option</I></A>
+<DD><A HREF="radiobutton.html#M22" NAME="L1276"><I>pathName </I><B>configure</B> ?<I>option</I>? ?<I>value option value ...</I>?</A>
+<DD><A HREF="radiobutton.html#M23" NAME="L1277"><I>pathName </I><B>deselect</B></A>
+<DD><A HREF="radiobutton.html#M24" NAME="L1278"><I>pathName </I><B>flash</B></A>
+<DD><A HREF="radiobutton.html#M25" NAME="L1279"><I>pathName </I><B>invoke</B></A>
+<DD><A HREF="radiobutton.html#M26" NAME="L1280"><I>pathName </I><B>select</B></A>
+</DL>
+<DD><A HREF="radiobutton.html#M27" NAME="L1281">BINDINGS</A>
+<OL class="bindings">
+</OL>
+<DD><A HREF="radiobutton.html#M28" NAME="L1282">SEE ALSO</A>
+<DD><A HREF="radiobutton.html#M29" NAME="L1283">KEYWORDS</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+radiobutton &mdash; Create and manipulate 'radiobutton' pick-one widgets
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+<B>radiobutton</B> <I>pathName </I>?<I>options</I>?<BR>
+<H3><A NAME="M4">STANDARD OPTIONS</A></H3>
+<DL>
+<DT><B><A HREF="options.html#M-activebackground">-activebackground, activeBackground, Foreground</A></B>
+<DT><B><A HREF="options.html#M-activeforeground">-activeforeground, activeForeground, Background</A></B>
+<DT><B><A HREF="options.html#M-anchor">-anchor, anchor, Anchor</A></B>
+<DT><B><A HREF="options.html#M-background">-background or -bg, background, Background</A></B>
+<DT><B><A HREF="options.html#M-bitmap">-bitmap, bitmap, Bitmap</A></B>
+<DT><B><A HREF="options.html#M-borderwidth">-borderwidth or -bd, borderWidth, BorderWidth</A></B>
+<DT><B><A HREF="options.html#M-compound">-compound, compound, Compound</A></B>
+<DT><B><A HREF="options.html#M-cursor">-cursor, cursor, Cursor</A></B>
+<DT><B><A HREF="options.html#M-disabledforeground">-disabledforeground, disabledForeground, DisabledForeground</A></B>
+<DT><B><A HREF="options.html#M-font">-font, font, Font</A></B>
+<DT><B><A HREF="options.html#M-foreground">-foreground or -fg, foreground, Foreground</A></B>
+<DT><B><A HREF="options.html#M-highlightbackground">-highlightbackground, highlightBackground, HighlightBackground</A></B>
+<DT><B><A HREF="options.html#M-highlightcolor">-highlightcolor, highlightColor, HighlightColor</A></B>
+<DT><B><A HREF="options.html#M-highlightthickness">-highlightthickness, highlightThickness, HighlightThickness</A></B>
+<DT><B><A HREF="options.html#M-image">-image, image, Image</A></B>
+<DT><B><A HREF="options.html#M-justify">-justify, justify, Justify</A></B>
+<DT><B><A HREF="options.html#M-padx">-padx, padX, Pad</A></B>
+<DT><B><A HREF="options.html#M-pady">-pady, padY, Pad</A></B>
+<DT><B><A HREF="options.html#M-relief">-relief, relief, Relief</A></B>
+<DT><B><A HREF="options.html#M-takefocus">-takefocus, takeFocus, TakeFocus</A></B>
+<DT><B><A HREF="options.html#M-text">-text, text, Text</A></B>
+<DT><B><A HREF="options.html#M-textvariable">-textvariable, textVariable, Variable</A></B>
+<DT><B><A HREF="options.html#M-underline">-underline, underline, Underline</A></B>
+<DT><B><A HREF="options.html#M-wraplength">-wraplength, wrapLength, WrapLength</A></B>
+</DL>
+<H3><A NAME="M5">WIDGET-SPECIFIC OPTIONS</A></H3>
+<DL>
+<DT>Command-Line Name: <B><A NAME="M6">-command</A></B>
+<DT>Database Name: <B>command</B>
+<DT>Database Class: <B>Command</B>
+<DD>Specifies a Tcl command to associate with the button.  This command
+is typically invoked when mouse button 1 is released over the button
+window.  The button's global variable (<B>-variable</B> option) will
+be updated before the command is invoked.
+<P><DT>Command-Line Name: <B><A NAME="M7">-height</A></B>
+<DT>Database Name: <B>height</B>
+<DT>Database Class: <B>Height</B>
+<DD>Specifies a desired height for the button.
+If an image or bitmap is being displayed in the button then the value is in
+screen units (i.e. any of the forms acceptable to <B><A HREF="../TkLib/GetPixels.html">Tk_GetPixels</A></B>);
+for text it is in lines of text.
+If this option is not specified, the button's desired height is computed
+from the size of the image or bitmap or text being displayed in it.
+<P><DT>Command-Line Name: <B><A NAME="M8">-indicatoron</A></B>
+<DT>Database Name: <B>indicatorOn</B>
+<DT>Database Class: <B>IndicatorOn</B>
+<DD>Specifies whether or not the indicator should be drawn.  Must be a
+proper boolean value.  If false, the <B>-relief</B> option is
+ignored and the widget's relief is always sunken if the widget is
+selected and raised otherwise.
+<P><DT>Command-Line Name: <B><A NAME="M9">-selectcolor</A></B>
+<DT>Database Name: <B>selectColor</B>
+<DT>Database Class: <B>Background</B>
+<DD>Specifies a background color to use when the button is selected.
+If <B>-indicatoron</B> is true then the color applies to the indicator.
+Under Windows, this color is used as the background for the indicator
+regardless of the select state.
+If <B>-indicatoron</B> is false, this color is used as the background
+for the entire widget, in place of <B>-background</B> or <B>-activeBackground</B>,
+whenever the widget is selected.
+If specified as an empty string then no special color is used for
+displaying when the widget is selected.
+<P><DT>Command-Line Name: <B><A NAME="M10">-offrelief</A></B>
+<DT>Database Name: <B>offRelief</B>
+<DT>Database Class: <B>OffRelief</B>
+<DD>Specifies the relief for the checkbutton when the indicator is not drawn and
+the checkbutton is off.  The default value is
+&#8220;raised&#8221;.
+By setting this option to
+&#8220;flat&#8221;
+and setting <B>-indicatoron</B> to false and <B>-overrelief</B> to
+&#8220;raised&#8221;,
+the effect is achieved
+of having a flat button that raises on mouse-over and which is
+depressed when activated.  This is the behavior typically exhibited by
+the Align-Left, Align-Right, and Center radiobuttons on the toolbar of a
+word-processor, for example.
+<P><DT>Command-Line Name: <B><A NAME="M11">-overrelief</A></B>
+<DT>Database Name: <B>overRelief</B>
+<DT>Database Class: <B>OverRelief</B>
+<DD>Specifies an alternative relief for the radiobutton, to be used when the
+mouse cursor is over the widget.  This option can be used to make
+toolbar buttons, by configuring <B>-relief flat -overrelief
+raised</B>.  If the value of this option is the empty string, then no
+alternative relief is used when the mouse cursor is over the radiobutton.
+The empty string is the default value.
+<P><DT>Command-Line Name: <B><A NAME="M12">-selectimage</A></B>
+<DT>Database Name: <B>selectImage</B>
+<DT>Database Class: <B>SelectImage</B>
+<DD>Specifies an image to display (in place of the <B>-image</B> option)
+when the radiobutton is selected.
+This option is ignored unless the <B>-image</B> option has been
+specified.
+<P><DT>Command-Line Name: <B><A NAME="M13">-state</A></B>
+<DT>Database Name: <B>state</B>
+<DT>Database Class: <B>State</B>
+<DD>Specifies one of three states for the radiobutton:  <B>normal</B>, <B>active</B>,
+or <B>disabled</B>.  In normal state the radiobutton is displayed using the
+<B>-foreground</B> and <B>-background</B> options.  The active state is
+typically used when the pointer is over the radiobutton.  In active state
+the radiobutton is displayed using the <B>-activeforeground</B> and
+<B>-activebackground</B> options.  Disabled state means that the radiobutton
+should be insensitive:  the default bindings will refuse to activate
+the widget and will ignore mouse button presses.
+In this state the <B>-disabledforeground</B> and
+<B>-background</B> options determine how the radiobutton is displayed.
+<P><DT>Command-Line Name: <B><A NAME="M14">-tristateimage</A></B>
+<DT>Database Name: <B>tristateImage</B>
+<DT>Database Class: <B>TristateImage</B>
+<DD>Specifies an image to display (in place of the <B>-image</B> option)
+when the radiobutton is selected.
+This option is ignored unless the <B>-image</B> option has been
+specified.
+<P><DT>Command-Line Name: <B><A NAME="M15">-tristatevalue</A></B>
+<DT>Database Name: <B>tristateValue</B>
+<DT>Database Class: <B>Value</B>
+<DD>Specifies the value that causes the radiobutton to display the multi-value
+selection, also known as the tri-state mode.  Defaults to
+&#8220;&#8221;.
+<P><DT>Command-Line Name: <B><A NAME="M16">-value</A></B>
+<DT>Database Name: <B>value</B>
+<DT>Database Class: <B>Value</B>
+<DD>Specifies value to store in the button's associated variable whenever
+this button is selected.
+<P><DT>Command-Line Name: <B><A NAME="M17">-variable</A></B>
+<DT>Database Name: <B><A HREF="../TclCmd/variable.html">variable</A></B>
+<DT>Database Class: <B><A HREF="../TclCmd/variable.html">Variable</A></B>
+<DD>Specifies the name of a global variable to set whenever this button is
+selected.  Changes in this variable also cause the button to select
+or deselect itself.
+Defaults to the value <B>selectedButton</B>.
+<P><DT>Command-Line Name: <B><A NAME="M18">-width</A></B>
+<DT>Database Name: <B>width</B>
+<DT>Database Class: <B>Width</B>
+<DD>Specifies a desired width for the button.
+If an image or bitmap is being displayed in the button, the value is in
+screen units (i.e. any of the forms acceptable to <B><A HREF="../TkLib/GetPixels.html">Tk_GetPixels</A></B>);
+for text it is in characters.
+If this option is not specified, the button's desired width is computed
+from the size of the image or bitmap or text being displayed in it.
+</DL>
+<H3><A NAME="M19">DESCRIPTION</A></H3>
+The <B>radiobutton</B> command creates a new window (given by the
+<I>pathName</I> argument) and makes it into a radiobutton widget.
+Additional
+options, described above, may be specified on the command line
+or in the option database
+to configure aspects of the radiobutton such as its colors, font,
+text, and initial relief.  The <B>radiobutton</B> command returns its
+<I>pathName</I> argument.  At the time this command is invoked,
+there must not exist a window named <I>pathName</I>, but
+<I>pathName</I>'s parent must exist.
+<P>
+A radiobutton is a widget that displays a textual string, bitmap or image
+and a diamond or circle called an <I>indicator</I>.
+If text is displayed, it must all be in a single font, but it
+can occupy multiple lines on the screen (if it contains newlines
+or if wrapping occurs because of the <B>-wraplength</B> option) and
+one of the characters may optionally be underlined using the
+<B>-underline</B> option.  A radiobutton has
+all of the behavior of a simple button: it can display itself in either
+of three different ways, according to the <B>-state</B> option;
+it can be made to appear
+raised, sunken, or flat; it can be made to flash; and it invokes
+a Tcl command whenever mouse button 1 is clicked over the
+check button.
+<P>
+In addition, radiobuttons can be <I>selected</I>.
+If a radiobutton is selected, the indicator is normally
+drawn with a selected appearance, and
+a Tcl variable associated with the radiobutton is set to a particular
+value (normally 1).
+Under Unix, the indicator is drawn with a sunken relief and a special
+color.  Under Windows, the indicator is drawn with a round mark inside.
+If the radiobutton is not selected, then the indicator is drawn with a
+deselected appearance, and the associated variable is
+set to a different value (typically 0).
+The indicator is drawn without a round mark inside.
+Typically, several radiobuttons share a single variable and the
+value of the variable indicates which radiobutton is to be selected.
+When a radiobutton is selected it sets the value of the variable to
+indicate that fact;  each radiobutton also monitors the value of
+the variable and automatically selects and deselects itself when the
+variable's value changes.
+If the variable's value matches the <B>-tristatevalue</B>, then the radiobutton
+is drawn using the tri-state mode.  This mode is used to indicate mixed or
+multiple values.  (This is used when the radiobutton represents the state
+of multiple items.)
+By default the variable <B>selectedButton</B>
+is used;  its contents give the name of the button that is
+selected, or the empty string if no button associated with that
+variable is selected.
+The name of the variable for a radiobutton,
+plus the variable to be stored into it, may be modified with options
+on the command line or in the option database.
+Configuration options may also be used to modify the way the
+indicator is displayed (or whether it is displayed at all).
+By default a radiobutton is configured to select itself on button clicks.
+<H3><A NAME="M20">WIDGET COMMAND</A></H3>
+The <B>radiobutton</B> command creates a new Tcl command whose
+name is <I>pathName</I>.  This
+command may be used to invoke various
+operations on the widget.  It has the following general form:
+<PRE><I>pathName option </I>?<I>arg arg ...</I>?</PRE>
+<I>Option</I> and the <I>arg</I>s
+determine the exact behavior of the command.  The following
+commands are possible for radiobutton widgets:
+<P>
+<DL class="widget command">
+<DT><A NAME="M21"><I>pathName </I><B>cget</B> <I>option</I></A><DD>
+Returns the current value of the configuration option given
+by <I>option</I>.
+<I>Option</I> may have any of the values accepted by the <B>radiobutton</B>
+command.
+<P><DT><A NAME="M22"><I>pathName </I><B>configure</B> ?<I>option</I>? ?<I>value option value ...</I>?</A><DD>
+Query or modify the configuration options of the widget.
+If no <I>option</I> is specified, returns a list describing all of
+the available options for <I>pathName</I> (see <B><A HREF="../TkLib/ConfigWidg.html">Tk_ConfigureInfo</A></B> for
+information on the format of this list).  If <I>option</I> is specified
+with no <I>value</I>, the command returns a list describing the
+one named option (this list will be identical to the corresponding
+sublist of the value returned if no <I>option</I> is specified).  If
+one or more <I>option-value</I> pairs are specified, the command
+modifies the given widget option(s) to have the given value(s);  in
+this case the command returns an empty string.
+<I>Option</I> may have any of the values accepted by the <B>radiobutton</B>
+command.
+<P><DT><A NAME="M23"><I>pathName </I><B>deselect</B></A><DD>
+Deselects the radiobutton and sets the associated variable to an
+empty string.
+If this radiobutton was not currently selected, the command has
+no effect.
+<P><DT><A NAME="M24"><I>pathName </I><B>flash</B></A><DD>
+Flashes the radiobutton.  This is accomplished by redisplaying the radiobutton
+several times, alternating between active and normal colors.  At
+the end of the flash the radiobutton is left in the same normal/active
+state as when the command was invoked.
+This command is ignored if the radiobutton's state is <B>disabled</B>.
+<P><DT><A NAME="M25"><I>pathName </I><B>invoke</B></A><DD>
+Does just what would have happened if the user invoked the radiobutton
+with the mouse: selects the button and invokes
+its associated Tcl command, if there is one.
+The return value is the return value from the Tcl command, or an
+empty string if there is no command associated with the radiobutton.
+This command is ignored if the radiobutton's state is <B>disabled</B>.
+<P><DT><A NAME="M26"><I>pathName </I><B>select</B></A><DD>
+Selects the radiobutton and sets the associated variable to the
+value corresponding to this widget.
+<P></DL>
+<H3><A NAME="M27">BINDINGS</A></H3>
+Tk automatically creates class bindings for radiobuttons that give them
+the following default behavior:
+<P>
+<OL class="bindings">
+<LI value="1">
+On Unix systems, a radiobutton activates whenever the mouse passes
+over it and deactivates whenever the mouse leaves the radiobutton.  On
+Mac and Windows systems, when mouse button 1 is pressed over a
+radiobutton, the button activates whenever the mouse pointer is inside
+the button, and deactivates whenever the mouse pointer leaves the
+button.
+<P><LI value="2">
+When mouse button 1 is pressed over a radiobutton it is invoked (it
+becomes selected and the command associated with the button is
+invoked, if there is one).
+<P><LI value="3">
+When a radiobutton has the input focus, the space key causes the radiobutton
+to be invoked.
+<P></OL>
+<P>
+If the radiobutton's state is <B>disabled</B> then none of the above
+actions occur:  the radiobutton is completely non-responsive.
+<P>
+The behavior of radiobuttons can be changed by defining new bindings for
+individual widgets or by redefining the class bindings.
+<H3><A NAME="M28">SEE ALSO</A></H3>
+<B><A HREF="checkbutton.html">checkbutton</A></B>, <B><A HREF="labelframe.html">labelframe</A></B>, <B><A HREF="listbox.html">listbox</A></B>, <B><A HREF="options.html">options</A></B>, <B><A HREF="scale.html">scale</A></B>, <B><A HREF="ttk_radiobutton.html">ttk::radiobutton</A></B>
+<H3><A NAME="M29">KEYWORDS</A></H3>
+<A href="../Keywords/R.html#radiobutton">radiobutton</A>, <A href="../Keywords/W.html#widget">widget</A>
+<div class="copy">Copyright &copy; 1990-1994 The Regents of the University of California.
+<BR>Copyright &copy; 1994-1996 Sun Microsystems, Inc.
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="FileFormat.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org">
+<meta name='Author' content='ActiveState'>
+
+<meta http-equiv="Content-Type" content=
+"text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content=
+"Mozilla/4.72 [en] (X11; U; Linux 2.2.14-5.0 i686) [Netscape]">
+<meta name="Author" content="K&aring;re Sj&ouml;lander">
+<title>FileFormat</title>
+</head>
+<body>
+<h3>NAME</h3>
+
+Snack_CreateFileFormat - define new sound file format 
+
+<h3>SYNOPSIS</h3>
+
+#include &lt;snack.h&gt; <br>
+<b>Snack_CreateFileFormat</b>(format) 
+
+<h3>ARGUMENTS</h3>
+
+Snack_FileFormat *format 
+
+<p>typedef struct Snack_FileFormat {<br>
+&nbsp;
+char&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+*name;<br>
+&nbsp; guessFileTypeProc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+*guessProc;<br>
+&nbsp;
+getHeaderProc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+*getHeaderProc;<br>
+&nbsp; extensionFileTypeProc *extProc;<br>
+&nbsp;
+putHeaderProc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+*putHeaderProc;<br>
+&nbsp;
+openProc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+*openProc;<br>
+&nbsp;
+closeProc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+*closeProc;<br>
+&nbsp;
+readSamplesProc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+*readProc;<br>
+&nbsp;
+writeSamplesProc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+*writeProc;<br>
+&nbsp;
+seekProc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+*seekProc;<br>
+&nbsp;
+freeHeaderProc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+*freeHeaderProc;<br>
+&nbsp;
+configureProc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*configureProc;<br>
+
+ &nbsp; struct Snack_FileFormat *nextPtr;<br>
+} Snack_FileFormat;</p>
+
+<p>char *<b>name</b></p>
+
+<p>char *<b>guessFileTypeProc</b> (char *buf, int len)</p>
+
+<p>int&nbsp; <b>getHeaderProc</b> (Sound *s, Tcl_Interp *interp,
+Tcl_Channel ch, Tcl_Obj *obj, char *buf)</p>
+
+<p>char *<b>extensionFileTypeProc</b> (char *buf);</p>
+
+<p>int&nbsp; <b>putHeaderProc</b> (Sound *s, Tcl_Interp *interp,
+Tcl_Channel ch, Tcl_Obj *obj, int objc, Tcl_Obj *CONST objv[], int
+length)</p>
+
+<p>int&nbsp; <b>openProc</b> (Sound *s, Tcl_Interp
+*interp,Tcl_Channel *ch, char *mode)</p>
+
+<p>int&nbsp; <b>closeProc</b> (Sound *s, Tcl_Interp *interp,
+Tcl_Channel *ch)</p>
+
+<p>int&nbsp; <b>readSamplesProc</b> (Sound *s, Tcl_Interp *interp,
+Tcl_Channel ch, char *inBuffer, float *outBuffer, int length)</p>
+
+<p>int&nbsp; <b>writeSamplesProc</b> (Sound *s, Tcl_Channel ch,
+Tcl_Obj *obj, int start, int length)</p>
+
+<p>int&nbsp; <b>seekProc</b> (Sound *s, Tcl_Interp *interp,
+Tcl_Channel ch, int position)</p>
+
+<p>void <b>freeHeaderProc</b> (Sound *s)</p>
+
+<p>int&nbsp; <b>configureProc</b>(Sound *s, Tcl_Interp *interp, int
+objc, Tcl_Obj *CONST objv[])<br>
+&nbsp;</p>
+
+<h3>DESCRIPTION</h3>
+
+<b>Snack_CreateFileFormat</b> is used to define a new kind of sound
+file format. A number of procedures can be specified in a
+Snack_FileFormat structure to handle sound data I/O, header
+parsing, etc. The file SphereFile.c serves as good example of how
+these routines are intended to be used. 
+
+<p>The string <b>name</b> will be returned as the result of a
+successful read command.</p>
+
+<p><b>guessFileTypeProc</b> is invoked by Snack in order to find
+out if the current file is of a type which this handler recognizes.
+<b>guessFileTypeProc</b> will receive <i>buffer</i> filled with
+bytes from the header up to <i>length</i> and if it recognizes the
+format is should return <i>formatName.</i> If it can't make a
+decision after seeing only <i>length</i> bytes it should return the
+string QUE_STRING. It will subsequently be invoked again with some
+more bytes for a new try. If the file is clearly in another format
+<b>guessFileTypeProc</b> should return NULL.</p>
+
+<p><b>extensionFileTypeProc</b> takes a filename string and returns
+<i>formatName</i> if its file name extension matches its format
+else it return NULL.<i>&nbsp;</i> This is used when saving a sound
+object using a <i>filename</i> to guess which format it should be
+saved with. If no save functionality is needed and
+<b>extensionFileTypeProc</b> is specified as NULL, a raw file will
+be saved using <i>filename</i>, which could be confusing. By
+providing an <b>extensionFileTypeProc</b> for the format Snack will
+be able to report "unsupported save format".</p>
+
+<p><b>getHeaderProc</b> is invoked in order to decode a sound file
+header. If the sound file resides on disk <b>ch</b> will be a a
+channel opened for reading, otherwise it will be NULL. If the sound
+resides in memory <b>obj</b> will point to a binary Tcl variable
+containing the data of the sound file, otherwise it will be NULL.
+The procedure should use these macros to specify the properties of
+the sound file<br>
+Snack_SetSampleRate()<br>
+Snack_SetNumChannels()<br>
+Snack_SetSampleEncoding()<br>
+Snack_SetBytesPerSample()<br>
+Snack_SetHeaderSize()<br>
+Snack_SetLength()<br>
+On success <b>getHeaderProc</b> should TCL_OK, otherwise it should
+return TCL_ERROR and leave an error message in the Tcl result.</p>
+
+<p><b>putHeaderProc</b> is invoked in order to decode a sound file
+header. If the sound file is to be written to disk, <b>ch</b> will
+point to a channel opened for writing, otherwise it will be NULL.
+If the sound file is to be written to a Tcl binary variable,
+<b>obj</b> will point to a Tcl Obj, otherwise it will be NULL. The
+<b>length</b> argument will contain the length of the sound data in
+sample frames.</p>
+
+<p><b>openProc,</b> <b>closeProc,</b> <b>readSamplesProc,</b>
+<b>writeSamplesProc,</b> and <b>seekProc</b> are modelled after
+their Tcl channel equivalents. <b>readSamplesProc</b> should read
+data either from <b>ch</b> or <b>inBuffer</b> which ever is not
+equal to NULL. The <b>length</b> argument is given in samples (not
+frames) and the return value is the number of samples read (or -1
+if an error occurred). <b>seekProc</b> should seek in the sound
+file to the sample frame given by the <b>position</b> argument.</p>
+
+<p><b>freeHeaderProc</b> is called when a new file is read into a
+sound object or when it is destroyed. It is used to deallocate ant
+memory which might have been allocated earlier in, e.g.,
+<b>openProc</b>.<br>
+&nbsp;</p>
+</body>
+</html>
+
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

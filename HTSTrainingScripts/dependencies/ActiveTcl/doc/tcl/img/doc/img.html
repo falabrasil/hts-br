@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="img.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../../fonts/icon.eot');
+        src: url('../../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../../fonts/icon.woff')
+               format('woff'),
+             url('../../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../../stylesheets/as_custom.css">
+    
+    <script src="../../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org">
+<title>img-intro - Img</title>
+<meta name='Author' content='ActiveState'>
+
+</head>
+<body>
+<div class="doctools">
+
+
+<hr>
+[ <a
+href="../toc.html">Img Table Of Contents</a> | <a href=
+"../index.html">Img Index</a> ] 
+
+<hr>
+<h1 class="title">img-intro(n) 1.4 "Img"</h1>
+
+<div id="name" class="section">
+<h2><a name="name">Name</a></h2>
+
+<p>img-intro - Introduction to Img</p>
+</div>
+
+<div id="toc" class="section">
+<h2><a name="toc">Table Of Contents</a></h2>
+
+<ul class="toc">
+<li class="section"><a href="img.html#toc">Table Of Contents</a></li>
+
+<li class="section"><a href="img.html#synopsis">Synopsis</a></li>
+
+<li class="section"><a href="img.html#section1">Description</a></li>
+
+<li class="section"><a href="img.html#see-also">See Also</a></li>
+
+<li class="section"><a href="img.html#keywords">Keywords</a></li>
+
+<li class="section"><a href="img.html#copyright">Copyright</a></li>
+</ul>
+</div>
+
+<div id="synopsis" class="section">
+<h2><a name="synopsis">Synopsis</a></h2>
+
+<div class="synopsis">
+<ul class="requirements">
+<li>package require <b class="pkgname">Tk</b></li>
+
+<li>package require <b class="pkgname">Img <span class=
+"opt">?1.4?</span></b></li>
+</ul>
+</div>
+</div>
+
+<div id="section1" class="section">
+<h2><a name="section1">Description</a></h2>
+
+<p><b class="package">Img</b> is a <b class="package"><a href=
+"../index.html#key20">Tk</a></b> extension, adding support for many
+other Image formats, as listed below. The individual formats are
+described in more detail on their own pages.</p>
+
+<dl class="definitions">
+<dt><i class="term"><a href="../index.html#key0">bmp</a></i></dt>
+
+<dd>
+<p>Windows bitmap format. See <b class="cmd"><a href=
+"img-bmp.html">img-bmp</a></b>.</p>
+</dd>
+
+<dt><i class="term"><a href="../index.html#key1">dted</a></i></dt>
+
+<dd>
+<p>DTED terrain elevation data interpreted as image. See <b class=
+"cmd"><a href="img-dted.html">img-dted</a></b>.</p>
+</dd>
+
+<dt><i class="term"><a href="../index.html#key3">gif</a></i></dt>
+
+<dd>
+<p>The venerable graphics interchange format (with transparency,
+but without LZW. The latter due to patent issues). See <b class=
+"cmd"><a href="img-gif.html">img-gif</a></b>.</p>
+</dd>
+
+<dt><i class="term"><a href="../index.html#key5">ico</a></i></dt>
+
+<dd>
+<p>Windows icon files. See <b class="cmd"><a href=
+"img-ico.html">img-ico</a></b>.</p>
+</dd>
+
+<dt><i class="term"><a href="../index.html#key7">jpeg</a></i></dt>
+
+<dd>
+<p>The format for lossy compressed still pictures specified by the
+Joint Picture Experts Group. See <b class="cmd"><a href=
+"img-jpeg.html">img-jpeg</a></b>.</p>
+</dd>
+
+<dt><i class="term"><a href="../index.html#key8">pcx</a></i></dt>
+
+<dd>
+<p>Paintbrush image format. See <b class="cmd"><a href=
+"img-pcx.html">img-pcx</a></b>.</p>
+</dd>
+
+<dt><i class="term"><a href=
+"../index.html#key10">pixmap</a></i></dt>
+
+<dd>
+<p>While the other formats are handlers for the <b class=
+"package"><a href="../index.html#key20">Tk</a></b> photo image type
+this is a new image type for <b class="package"><a href=
+"../index.html#key20">Tk</a></b>. See <b class="cmd"><a href=
+"img-pixmap.html">img-pixmap</a></b>.</p>
+</dd>
+
+<dt><i class="term"><a href="../index.html#key11">png</a></i></dt>
+
+<dd>
+<p>Portable Network Graphics, successor to GIF. See <b class=
+"cmd"><a href="img-png.html">img-png</a></b>.</p>
+</dd>
+
+<dt><i class="term"><a href="../index.html#key13">ppm</a></i></dt>
+
+<dd>
+<p>Portable Pixmaps. See <b class="cmd"><a href=
+"img-ppm.html">img-ppm</a></b>.</p>
+</dd>
+
+<dt><i class="term"><a href="../index.html#key14">ps</a></i></dt>
+
+<dd>
+<p>Postscript and PDF (Portable document format). Requires an
+external application, <b class="syscmd">ghostview</b>, for its
+operation. See <b class="cmd"><a href=
+"img-ps.html">img-ps</a></b>.</p>
+</dd>
+
+<dt><i class="term"><a href="../index.html#key15">raw</a></i></dt>
+
+<dd>
+<p>Raw matrix data interpreted as image. See <b class="cmd"><a
+href="img-raw.html">img-raw</a></b>.</p>
+</dd>
+
+<dt><i class="term"><a href="../index.html#key16">sgi</a></i></dt>
+
+<dd>
+<p>Native SGI format. See <b class="cmd"><a href=
+"img-sgi.html">img-sgi</a></b>.</p>
+</dd>
+
+<dt><i class="term"><a href="../index.html#key17">sun</a></i></dt>
+
+<dd>
+<p>Sun raster images. See <b class="cmd"><a href=
+"img-sun.html">img-sun</a></b>.</p>
+</dd>
+
+<dt><i class="term"><a href="../index.html#key18">tga</a></i></dt>
+
+<dd>
+<p>Targa files. See <b class="cmd"><a href=
+"img-tga.html">img-tga</a></b>.</p>
+</dd>
+
+<dt><i class="term"><a href="../index.html#key19">tiff</a></i></dt>
+
+<dd>
+<p>Tagged Interchange File Format. See <b class="cmd"><a href=
+"img-tiff.html">img-tiff</a></b>.</p>
+</dd>
+
+<dt><i class="term"><a href=
+"../index.html#key21">window</a></i></dt>
+
+<dd>
+<p>Put the content of a Tk window into an image. See <b class=
+"cmd"><a href="img-window.html">img-window</a></b>.</p>
+</dd>
+
+<dt><i class="term"><a href="../index.html#key22">xbm</a></i></dt>
+
+<dd>
+<p>X Bitmaps. See <b class="cmd"><a href=
+"img-xbm.html">img-xbm</a></b>.</p>
+</dd>
+
+<dt><i class="term"><a href="../index.html#key23">xpm</a></i></dt>
+
+<dd>
+<p>X Pixmaps. See <b class="cmd"><a href=
+"img-xpm.html">img-xpm</a></b>.</p>
+</dd>
+</dl>
+
+<p>This version only works with Tcl/Tk 8.3 or higher. If you are
+using Tk 8.2, please use Img 1.3. If you are using Tk 8.1 or lower
+please stick with Img 1.2.4 (which is still available). And if you
+are using Tk4.2 or lower, please stick with Img 1.1.4 (which is
+also still available).</p>
+</div>
+
+<div id="see-also" class="section">
+<h2><a name="see-also">See Also</a></h2>
+
+<p><a href="img-bmp.html">img-bmp</a>, <a href=
+"img-dted.html">img-dted</a>, <a href="img-gif.html">img-gif</a>,
+<a href="img-ico.html">img-ico</a>, <a href=
+"img-jpeg.html">img-jpeg</a>, <a href="img-pcx.html">img-pcx</a>,
+<a href="img-pixmap.html">img-pixmap</a>, <a href=
+"img-png.html">img-png</a>, <a href="img-ppm.html">img-ppm</a>, <a
+href="img-ps.html">img-ps</a>, <a href="img-raw.html">img-raw</a>,
+<a href="img-sgi.html">img-sgi</a>, <a href=
+"img-sun.html">img-sun</a>, <a href="img-tga.html">img-tga</a>, <a
+href="img-tiff.html">img-tiff</a>, <a href=
+"img-window.html">img-window</a>, <a href=
+"img-xbm.html">img-xbm</a>, <a href="img-xpm.html">img-xpm</a></p>
+</div>
+
+<div id="keywords" class="section">
+<h2><a name="keywords">Keywords</a></h2>
+
+<p><a href="../index.html#key0">bmp</a>, <a href=
+"../index.html#key3">gif</a>, <a href="../index.html#key5">ico</a>,
+<a href="../index.html#key6">image handling</a>, <a href=
+"../index.html#key7">jpeg</a>, <a href=
+"../index.html#key8">pcx</a>, <a href="../index.html#key9">pdf</a>,
+<a href="../index.html#key10">pixmap</a>, <a href=
+"../index.html#key11">png</a>, <a href=
+"../index.html#key12">postscript</a>, <a href=
+"../index.html#key13">ppm</a>, <a href=
+"../index.html#key14">ps</a>, <a href=
+"../index.html#key16">sgi</a>, <a href=
+"../index.html#key17">sun</a>, <a href=
+"../index.html#key18">tga</a>, <a href=
+"../index.html#key19">tiff</a>, <a href=
+"../index.html#key20">tk</a>, <a href=
+"../index.html#key21">window</a>, <a href=
+"../index.html#key22">xbm</a>, <a href=
+"../index.html#key23">xpm</a></p>
+</div>
+
+<div id="copyright" class="section">
+<h2><a name="copyright">Copyright</a></h2>
+
+<p>Copyright &copy; 1995-2009 Jan Nijtmans
+&lt;nijtmans@users.sourceforge.net&gt;</p>
+</div>
+
+<h4>Copyright &copy; 2015 <a href="http://www.activestate.com">for
+compilation: ActiveState</a></h4>
+</div>
+<script data-no-instant>document.write('<script src="../../../livereload.js?port=1313&amp;mindelay=10"></' + 'script>')</script></body>
+</html>
+
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

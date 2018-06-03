@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="P.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>Tcl/Tk Keywords - P</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> Tcl/Tk Keywords - P</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="../TkCmd/contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<H3><A HREF="A.html">A</A> |
+<A HREF="B.html">B</A> |
+<A HREF="C.html">C</A> |
+<A HREF="D.html">D</A> |
+<A HREF="E.html">E</A> |
+<A HREF="F.html">F</A> |
+<A HREF="G.html">G</A> |
+<A HREF="H.html">H</A> |
+<A HREF="I.html">I</A> |
+<A HREF="J.html">J</A> |
+<A HREF="K.html">K</A> |
+<A HREF="L.html">L</A> |
+<A HREF="M.html">M</A> |
+<A HREF="N.html">N</A> |
+<A HREF="O.html">O</A> |
+<A HREF="P.html">P</A> |
+<A HREF="Q.html">Q</A> |
+<A HREF="R.html">R</A> |
+<A HREF="S.html">S</A> |
+<A HREF="T.html">T</A> |
+<A HREF="U.html">U</A> |
+<A HREF="V.html">V</A> |
+<A HREF="W.html">W</A> |
+<A HREF="X.html">X</A> |
+<A HREF="Y.html">Y</A> |
+<A HREF="Z.html">Z</A></H3>
+<DL class="keylist">
+<DT><A NAME="pack">pack</A></DT>
+<DD>
+<A HREF="../TkCmd/grid.html" TITLE="grid - Geometry manager that arranges widgets in a grid">grid</A></DD>
+<DT><A NAME="package">package</A></DT>
+<DD>
+<A HREF="../TclCmd/package.html" TITLE="package - Facilities for package loading and version control">package</A>, <A HREF="../TclCmd/packagens.html" TITLE="pkg::create - Construct an appropriate 'package ifneeded' command for a given package specification">packagens</A>, <A HREF="../TclCmd/pkgMkIndex.html" TITLE="pkg_mkIndex - Build an index for automatic loading of packages">pkgMkIndex</A>, <A HREF="../TclCmd/tm.html" TITLE="tm - Facilities for locating and loading of Tcl Modules">tm</A>, <A HREF="../TclLib/PkgRequire.html" TITLE="Tcl_PkgRequire, Tcl_PkgRequireEx, Tcl_PkgRequireProc, Tcl_PkgPresent, Tcl_PkgPresentEx, Tcl_PkgProvide, Tcl_PkgProvideEx - package version control">PkgRequire</A>, <A HREF="../TclLib/StaticPkg.html" TITLE="Tcl_StaticPackage - make a statically linked package available via the 'load' command">StaticPkg</A></DD>
+<DT><A NAME="packer">packer</A></DT>
+<DD>
+<A HREF="../TkCmd/pack.html" TITLE="pack - Geometry manager that packs around edges of cavity">pack</A></DD>
+<DT><A NAME="padding">padding</A></DT>
+<DD>
+<A HREF="../TkLib/ttk_Geometry.html" TITLE="Ttk_MakeBox, Ttk_PadBox, Ttk_ExpandBox, Ttk_PackBox, Ttk_StickBox, Ttk_PlaceBox, Ttk_BoxContains, Ttk_MakePadding, Ttk_UniformPadding, Ttk_AddPadding, Ttk_RelievePadding, Ttk_GetPaddingFromObj, Ttk_GetBorderFromObj, Ttk_GetStickyFromObj - Tk themed geometry utilities">ttk_Geometry</A></DD>
+<DT><A NAME="palette">palette</A></DT>
+<DD>
+<A HREF="../TkCmd/palette.html" TITLE="tk_setPalette, tk_bisque - Modify the Tk color palette">palette</A></DD>
+<DT><A NAME="pane">pane</A></DT>
+<DD>
+<A HREF="../TkCmd/ttk_notebook.html" TITLE="ttk::notebook - Multi-paned container widget">ttk_notebook</A></DD>
+<DT><A NAME="panedwindow">panedwindow</A></DT>
+<DD>
+<A HREF="../TkCmd/panedwindow.html" TITLE="panedwindow - Create and manipulate 'panedwindow' split container widgets">panedwindow</A></DD>
+<DT><A NAME="parcel">parcel</A></DT>
+<DD>
+<A HREF="../TkCmd/pack.html" TITLE="pack - Geometry manager that packs around edges of cavity">pack</A></DD>
+<DT><A NAME="parent">parent</A></DT>
+<DD>
+<A HREF="../TkCmd/winfo.html" TITLE="winfo - Return window-related information">winfo</A>, <A HREF="../TkLib/MaintGeom.html" TITLE="Tk_MaintainGeometry, Tk_UnmaintainGeometry - maintain geometry of one window relative to another">MaintGeom</A></DD>
+<DT><A NAME="parse">parse</A></DT>
+<DD>
+<A HREF="../TclCmd/scan.html" TITLE="scan - Parse string using conversion specifiers in the style of sscanf">scan</A>, <A HREF="../TclLib/Backslash.html" TITLE="Tcl_Backslash - parse a backslash sequence">Backslash</A>, <A HREF="../TclLib/ParseArgs.html" TITLE="Tcl_ParseArgsObjv - parse arguments according to a tabular description">ParseArgs</A>, <A HREF="../TclLib/ParseCmd.html" TITLE="Tcl_ParseCommand, Tcl_ParseExpr, Tcl_ParseBraces, Tcl_ParseQuotedString, Tcl_ParseVarName, Tcl_ParseVar, Tcl_FreeParse, Tcl_EvalTokens, Tcl_EvalTokensStandard - parse Tcl scripts and expressions">ParseCmd</A>, <A HREF="../TkLib/GetScroll.html" TITLE="Tk_GetScrollInfoObj, Tk_GetScrollInfo - parse arguments for scrolling commands">GetScroll</A></DD>
+<DT><A NAME="parsing">parsing</A></DT>
+<DD>
+<A HREF="../TclCmd/regexp.html" TITLE="regexp - Match a regular expression against a string">regexp</A></DD>
+<DT><A NAME="part">part</A></DT>
+<DD>
+<A HREF="../ItclCmd/ensemble.html" TITLE="itcl::ensemble - create or modify a composite command">ensemble</A></DD>
+<DT><A NAME="partial command">partial command</A></DT>
+<DD>
+<A HREF="../TclLib/CmdCmplt.html" TITLE="Tcl_CommandComplete - Check for unmatched braces in a Tcl command">CmdCmplt</A></DD>
+<DT><A NAME="patchlevel">patchlevel</A></DT>
+<DD>
+<A HREF="../TclLib/GetVersion.html" TITLE="Tcl_GetVersion - get the version of the library at runtime">GetVersion</A></DD>
+<DT><A NAME="path">path</A></DT>
+<DD>
+<A HREF="../TclLib/SplitPath.html" TITLE="Tcl_SplitPath, Tcl_JoinPath, Tcl_GetPathType - manipulate platform-dependent file paths">SplitPath</A>, <A HREF="../TkLib/CanvPsY.html" TITLE="Tk_CanvasPsY, Tk_CanvasPsBitmap, Tk_CanvasPsColor, Tk_CanvasPsFont, Tk_CanvasPsPath, Tk_CanvasPsStipple - utility procedures for generating Postscript for canvases">CanvPsY</A></DD>
+<DT><A NAME="path name">path name</A></DT>
+<DD>
+<A HREF="../TkCmd/winfo.html" TITLE="winfo - Return window-related information">winfo</A>, <A HREF="../TkLib/Name.html" TITLE="Tk_Name, Tk_PathName, Tk_NameToWindow - convert between names and window tokens">Name</A></DD>
+<DT><A NAME="pattern">pattern</A></DT>
+<DD>
+<A HREF="../TclCmd/glob.html" TITLE="glob - Return names of files that match patterns">glob</A>, <A HREF="../TclCmd/lsearch.html" TITLE="lsearch - See if a list contains a particular element">lsearch</A>, <A HREF="../TclCmd/regexp.html" TITLE="regexp - Match a regular expression against a string">regexp</A>, <A HREF="../TclCmd/regsub.html" TITLE="regsub - Perform substitutions based on regular expression pattern matching">regsub</A>, <A HREF="../TclCmd/string.html" TITLE="string - Manipulate strings">string</A>, <A HREF="../TclLib/RegExp.html" TITLE="Tcl_RegExpMatch, Tcl_RegExpCompile, Tcl_RegExpExec, Tcl_RegExpRange, Tcl_GetRegExpFromObj, Tcl_RegExpMatchObj, Tcl_RegExpExecObj, Tcl_RegExpGetInfo - Pattern matching with regular expressions">RegExp</A>, <A HREF="../TclLib/StrMatch.html" TITLE="Tcl_StringMatch, Tcl_StringCaseMatch - test whether a string matches a pattern">StrMatch</A></DD>
+<DT><A NAME="permissions">permissions</A></DT>
+<DD>
+<A HREF="../TclCmd/open.html" TITLE="open - Open a file-based or command pipeline channel">open</A>, <A HREF="../TclLib/GetOpnFl.html" TITLE="Tcl_GetOpenFile - Return a FILE* for a channel registered in the given interpreter (Unix only)">GetOpnFl</A></DD>
+<DT><A NAME="photo">photo</A></DT>
+<DD>
+<A HREF="../TkCmd/photo.html" TITLE="photo - Full-color images">photo</A>, <A HREF="../TkLib/FindPhoto.html" TITLE="Tk_FindPhoto, Tk_PhotoPutBlock, Tk_PhotoPutZoomedBlock, Tk_PhotoGetImage, Tk_PhotoBlank, Tk_PhotoExpand, Tk_PhotoGetSize, Tk_PhotoSetSize - manipulate the image data stored in a photo image.">FindPhoto</A></DD>
+<DT><A NAME="photo image">photo image</A></DT>
+<DD>
+<A HREF="../TkLib/CrtPhImgFmt.html" TITLE="Tk_CreatePhotoImageFormat - define new file format for photo images">CrtPhImgFmt</A></DD>
+<DT><A NAME="pipeline">pipeline</A></DT>
+<DD>
+<A HREF="../TclCmd/exec.html" TITLE="exec - Invoke subprocesses">exec</A>, <A HREF="../TclCmd/open.html" TITLE="open - Open a file-based or command pipeline channel">open</A>, <A HREF="../TclCmd/pid.html" TITLE="pid - Retrieve process identifiers">pid</A>, <A HREF="../TclLib/GetOpnFl.html" TITLE="Tcl_GetOpenFile - Return a FILE* for a channel registered in the given interpreter (Unix only)">GetOpnFl</A></DD>
+<DT><A NAME="pixel">pixel</A></DT>
+<DD>
+<A HREF="../TkLib/ConfigWind.html" TITLE="Tk_ConfigureWindow, Tk_MoveWindow, Tk_ResizeWindow, Tk_MoveResizeWindow, Tk_SetWindowBorderWidth, Tk_ChangeWindowAttributes, Tk_SetWindowBackground, Tk_SetWindowBackgroundPixmap, Tk_SetWindowBorder, Tk_SetWindowBorderPixmap, Tk_SetWindowColormap, Tk_DefineCursor, Tk_UndefineCursor - change window configuration or attributes">ConfigWind</A></DD>
+<DT><A NAME="pixel value">pixel value</A></DT>
+<DD>
+<A HREF="../TkLib/GetColor.html" TITLE="Tk_AllocColorFromObj, Tk_GetColor, Tk_GetColorFromObj, Tk_GetColorByValue, Tk_NameOfColor, Tk_FreeColorFromObj, Tk_FreeColor - maintain database of colors">GetColor</A></DD>
+<DT><A NAME="pixels">pixels</A></DT>
+<DD>
+<A HREF="../TkLib/ConfigWidg.html" TITLE="Tk_ConfigureWidget, Tk_ConfigureInfo, Tk_ConfigureValue, Tk_FreeOptions - process configuration options for widgets">ConfigWidg</A>, <A HREF="../TkLib/GetPixels.html" TITLE="Tk_GetPixelsFromObj, Tk_GetPixels, Tk_GetMMFromObj, Tk_GetScreenMM - translate between strings and screen units">GetPixels</A>, <A HREF="../TkLib/SetOptions.html" TITLE="Tk_CreateOptionTable, Tk_DeleteOptionTable, Tk_InitOptions, Tk_SetOptions, Tk_FreeSavedOptions, Tk_RestoreSavedOptions, Tk_GetOptionValue,  Tk_GetOptionInfo, Tk_FreeConfigOptions, Tk_Offset - process configuration options">SetOptions</A></DD>
+<DT><A NAME="pixmap">pixmap</A></DT>
+<DD>
+<A HREF="../TkLib/ConfigWind.html" TITLE="Tk_ConfigureWindow, Tk_MoveWindow, Tk_ResizeWindow, Tk_MoveResizeWindow, Tk_SetWindowBorderWidth, Tk_ChangeWindowAttributes, Tk_SetWindowBackground, Tk_SetWindowBackgroundPixmap, Tk_SetWindowBorder, Tk_SetWindowBorderPixmap, Tk_SetWindowColormap, Tk_DefineCursor, Tk_UndefineCursor - change window configuration or attributes">ConfigWind</A>, <A HREF="../TkLib/GetBitmap.html" TITLE="Tk_AllocBitmapFromObj, Tk_GetBitmap, Tk_GetBitmapFromObj, Tk_DefineBitmap, Tk_NameOfBitmap, Tk_SizeOfBitmap, Tk_FreeBitmapFromObj, Tk_FreeBitmap - maintain database of single-plane pixmaps">GetBitmap</A>, <A HREF="../TkLib/GetPixmap.html" TITLE="Tk_GetPixmap, Tk_FreePixmap - allocate and free pixmaps">GetPixmap</A></DD>
+<DT><A NAME="pixmap theme">pixmap theme</A></DT>
+<DD>
+<A HREF="../TkCmd/ttk_image.html" TITLE="ttk_image - Define an element based on an image">ttk_image</A></DD>
+<DT><A NAME="place">place</A></DT>
+<DD>
+<A HREF="../TkCmd/place.html" TITLE="place - Geometry manager for fixed or rubber-sheet placement">place</A></DD>
+<DT><A NAME="platform">platform</A></DT>
+<DD>
+<A HREF="../TclCmd/fconfigure.html" TITLE="fconfigure - Set and get options on a channel">fconfigure</A>, <A HREF="../TclCmd/platform.html" TITLE="platform - System identification support code and utilities">platform</A>, <A HREF="../TclCmd/platform_shell.html" TITLE="platform::shell - System identification support code and utilities">platform_shell</A></DD>
+<DT><A NAME="platform-specific">platform-specific</A></DT>
+<DD>
+<A HREF="../TkCmd/chooseDirectory.html" TITLE="tk_chooseDirectory - pops up a dialog box for the user to select a directory.">chooseDirectory</A></DD>
+<DT><A NAME="pointer events">pointer events</A></DT>
+<DD>
+<A HREF="../TkCmd/busy.html" TITLE="busy - confine pointer and keyboard events to a window sub-tree">busy</A>, <A HREF="../TkCmd/grab.html" TITLE="grab - Confine pointer and keyboard events to a window sub-tree">grab</A></DD>
+<DT><A NAME="points">points</A></DT>
+<DD>
+<A HREF="../TkLib/GetPixels.html" TITLE="Tk_GetPixelsFromObj, Tk_GetPixels, Tk_GetMMFromObj, Tk_GetScreenMM - translate between strings and screen units">GetPixels</A></DD>
+<DT><A NAME="polygon">polygon</A></DT>
+<DD>
+<A HREF="../TkLib/3DBorder.html" TITLE="Tk_Alloc3DBorderFromObj, Tk_Get3DBorder, Tk_Get3DBorderFromObj, Tk_Draw3DRectangle, Tk_Fill3DRectangle, Tk_Draw3DPolygon, Tk_Fill3DPolygon, Tk_3DVerticalBevel, Tk_3DHorizontalBevel, Tk_SetBackgroundFromBorder, Tk_NameOf3DBorder, Tk_3DBorderColor, Tk_3DBorderGC, Tk_Free3DBorderFromObj, Tk_Free3DBorder - draw borders with three-dimensional appearance">3DBorder</A></DD>
+<DT><A NAME="popup">popup</A></DT>
+<DD>
+<A HREF="../TkCmd/popup.html" TITLE="tk_popup - Post a popup menu">popup</A></DD>
+<DT><A NAME="portability">portability</A></DT>
+<DD>
+<A HREF="../TclCmd/filename.html" TITLE="filename - File name conventions supported by Tcl commands">filename</A></DD>
+<DT><A NAME="position">position</A></DT>
+<DD>
+<A HREF="../TkCmd/wm.html" TITLE="wm - Communicate with window manager">wm</A>, <A HREF="../TkLib/MaintGeom.html" TITLE="Tk_MaintainGeometry, Tk_UnmaintainGeometry - maintain geometry of one window relative to another">MaintGeom</A>, <A HREF="../TkLib/MoveToplev.html" TITLE="Tk_MoveToplevelWindow - Adjust the position of a top-level window">MoveToplev</A></DD>
+<DT><A NAME="POSIX">POSIX</A></DT>
+<DD>
+<A HREF="../TclCmd/tclvars.html" TITLE="argc, argv, argv0, auto_path, env, errorCode, errorInfo, tcl_interactive, tcl_library, tcl_nonwordchars, tcl_patchLevel, tcl_pkgPath, tcl_platform, tcl_precision, tcl_rcFileName, tcl_traceCompile, tcl_traceExec, tcl_wordchars, tcl_version - Variables used by Tcl">tclvars</A></DD>
+<DT><A NAME="Postgres">Postgres</A></DT>
+<DD>
+<A HREF="../TdbcpostgresCmd/tdbc_postgres.html" TITLE="tdbc::postgres - TDBC-POSTGRES bridge">tdbc_postgres</A></DD>
+<DT><A NAME="Postscript">Postscript</A></DT>
+<DD>
+<A HREF="../TkLib/CanvPsY.html" TITLE="Tk_CanvasPsY, Tk_CanvasPsBitmap, Tk_CanvasPsColor, Tk_CanvasPsFont, Tk_CanvasPsPath, Tk_CanvasPsStipple - utility procedures for generating Postscript for canvases">CanvPsY</A>, <A HREF="../TkLib/FontId.html" TITLE="Tk_FontId, Tk_GetFontMetrics, Tk_PostscriptFontName - accessor functions for
+fonts">FontId</A></DD>
+<DT><A NAME="precision">precision</A></DT>
+<DD>
+<A HREF="../TclCmd/tclvars.html" TITLE="argc, argv, argv0, auto_path, env, errorCode, errorInfo, tcl_interactive, tcl_library, tcl_nonwordchars, tcl_patchLevel, tcl_pkgPath, tcl_platform, tcl_precision, tcl_rcFileName, tcl_traceCompile, tcl_traceExec, tcl_wordchars, tcl_version - Variables used by Tcl">tclvars</A></DD>
+<DT><A NAME="prefix">prefix</A></DT>
+<DD>
+<A HREF="../TclCmd/prefix.html" TITLE="tcl::prefix - facilities for prefix matching">prefix</A>, <A HREF="../TclCmd/refchan.html" TITLE="refchan - command handler API of reflected channels">refchan</A>, <A HREF="../TclCmd/transchan.html" TITLE="transchan - command handler API of channel transforms">transchan</A></DD>
+<DT><A NAME="present">present</A></DT>
+<DD>
+<A HREF="../TclLib/PkgRequire.html" TITLE="Tcl_PkgRequire, Tcl_PkgRequireEx, Tcl_PkgRequireProc, Tcl_PkgPresent, Tcl_PkgPresentEx, Tcl_PkgProvide, Tcl_PkgProvideEx - package version control">PkgRequire</A></DD>
+<DT><A NAME="priority">priority</A></DT>
+<DD>
+<A HREF="../TkCmd/option.html" TITLE="option - Add/retrieve window options to/from the option database">option</A></DD>
+<DT><A NAME="private">private</A></DT>
+<DD>
+<A HREF="../ItclCmd/code.html" TITLE="itcl::code - capture the namespace context for a code fragment">code</A></DD>
+<DT><A NAME="private method">private method</A></DT>
+<DD>
+<A HREF="../TclCmd/my.html" TITLE="my - invoke any method of current object">my</A></DD>
+<DT><A NAME="proc">proc</A></DT>
+<DD>
+<A HREF="../ItclCmd/delete.html" TITLE="itcl::delete - delete things in the interpreter">delete</A>, <A HREF="../ItclCmd/itcldelegate.html" TITLE="itcl::delegation - delegate methods, procs or options to other objects">itcldelegate</A></DD>
+<DT><A NAME="procedure">procedure</A></DT>
+<DD>
+<A HREF="../TclCmd/apply.html" TITLE="apply - Apply an anonymous function">apply</A>, <A HREF="../TclCmd/global.html" TITLE="global - Access global variables">global</A>, <A HREF="../TclCmd/info.html" TITLE="info - Return information about the state of the Tcl interpreter">info</A>, <A HREF="../TclCmd/proc.html" TITLE="proc - Create a Tcl procedure">proc</A>, <A HREF="../TclCmd/return.html" TITLE="return - Return from a procedure, or set return code of a script">return</A>, <A HREF="../TclCmd/upvar.html" TITLE="upvar - Create link to variable in a different stack frame">upvar</A>, <A HREF="../TclCmd/variable.html" TITLE="variable - create and initialize a namespace variable">variable</A>, <A HREF="../ItclCmd/body.html" TITLE="itcl::body - change the body for a class method/proc">body</A>, <A HREF="../ItclCmd/local.html" TITLE="itcl::local - create an object local to a procedure">local</A></DD>
+<DT><A NAME="process">process</A></DT>
+<DD>
+<A HREF="../TclCmd/exit.html" TITLE="exit - End the application">exit</A>, <A HREF="../TclCmd/open.html" TITLE="open - Open a file-based or command pipeline channel">open</A>, <A HREF="../TclLib/DetachPids.html" TITLE="Tcl_DetachPids, Tcl_ReapDetachedProcs, Tcl_WaitPid - manage child processes in background">DetachPids</A></DD>
+<DT><A NAME="process identifier">process identifier</A></DT>
+<DD>
+<A HREF="../TclCmd/pid.html" TITLE="pid - Retrieve process identifiers">pid</A></DD>
+<DT><A NAME="projecting">projecting</A></DT>
+<DD>
+<A HREF="../TkLib/GetCapStyl.html" TITLE="Tk_GetCapStyle, Tk_NameOfCapStyle - translate between strings and cap styles">GetCapStyl</A></DD>
+<DT><A NAME="prompt">prompt</A></DT>
+<DD>
+<A HREF="../UserCmd/tclsh.html" TITLE="tclsh - Simple shell containing Tcl interpreter">tclsh</A>, <A HREF="../UserCmd/wish.html" TITLE="wish - Simple windowing shell">wish</A></DD>
+<DT><A NAME="propagation">propagation</A></DT>
+<DD>
+<A HREF="../TkCmd/grid.html" TITLE="grid - Geometry manager that arranges widgets in a grid">grid</A>, <A HREF="../TkCmd/pack.html" TITLE="pack - Geometry manager that packs around edges of cavity">pack</A></DD>
+<DT><A NAME="protected">protected</A></DT>
+<DD>
+<A HREF="../ItclCmd/code.html" TITLE="itcl::code - capture the namespace context for a code fragment">code</A></DD>
+<DT><A NAME="provide">provide</A></DT>
+<DD>
+<A HREF="../TclLib/PkgRequire.html" TITLE="Tcl_PkgRequire, Tcl_PkgRequireEx, Tcl_PkgRequireProc, Tcl_PkgPresent, Tcl_PkgPresentEx, Tcl_PkgProvide, Tcl_PkgProvideEx - package version control">PkgRequire</A></DD>
+<DT><A NAME="public">public</A></DT>
+<DD>
+<A HREF="../ItclCmd/code.html" TITLE="itcl::code - capture the namespace context for a code fragment">code</A></DD>
+<DT><A NAME="public method">public method</A></DT>
+<DD>
+<A HREF="../TclCmd/my.html" TITLE="my - invoke any method of current object">my</A></DD>
+<DT><A NAME="pwd">pwd</A></DT>
+<DD>
+<A HREF="../TclLib/GetCwd.html" TITLE="Tcl_GetCwd, Tcl_Chdir - manipulate the current working directory">GetCwd</A></DD>
+</DL>
+<div class="copy">Copyright &copy; 1989-1994 The Regents of the University of California
+<BR>Copyright &copy; 1992-1999 Karl Lehenbauer &amp; Mark Diekhans
+<BR>Copyright &copy; 1992-1999 Karl Lehenbauer and Mark Diekhans
+<BR>Copyright &copy; 1993-1997 Bell Labs Innovations for Lucent Technologies
+<BR>Copyright &copy; 1993-1998 Lucent Technologies, Inc
+<BR>Copyright &copy; 1994 The Australian National University
+<BR>Copyright &copy; 1994-2000 Sun Microsystems, Inc
+<BR>Copyright &copy; 1997-2000 Ajuba Solutions
+<BR>Copyright &copy; 1997-2000 Scriptics Corporation
+<BR>Copyright &copy; 1998 Mark Harrison
+<BR>Copyright &copy; 2000 Jeffrey Hobbs
+<BR>Copyright &copy; 2001 ActiveState Tool Corp
+<BR>Copyright &copy; 2001 Vincent Darley
+<BR>Copyright &copy; 2001-2004 ActiveState Corporation
+<BR>Copyright &copy; 2001-2005 Kevin B. Kenny &lt;kennykb(at)acm.org&gt;
+<BR>Copyright &copy; 2001-2012 Donal K. Fellows
+<BR>Copyright &copy; 2002-2010 Andreas Kupries &lt;andreas_kupries(at)users.sourceforge.net&gt;
+<BR>Copyright &copy; 2003 George Petasis &lt;petasis(at)iit.demokritos.gr&gt;
+<BR>Copyright &copy; 2003 Simon Geard
+<BR>Copyright &copy; 2003-2006 Joe English
+<BR>Copyright &copy; 2006 Miguel Sofer
+<BR>Copyright &copy; 2006-2008 ActiveState Software Inc
+<BR>Copyright &copy; 2006-2008 Daniel A. Steffen &lt;das(at)users.sourceforge.net&gt;
+<BR>Copyright &copy; 2006-2008 Joe Mistachkin
+<BR>Copyright &copy; 2008 Arnulf Wiedemann
+<BR>Copyright &copy; 2008 Jos Decoster
+<BR>Copyright &copy; 2008 Pat Thoyts
+<BR>Copyright &copy; 2008 Peter Spjuth &lt;pspjuth(at)users.sourceforge.net&gt;
+<BR>Copyright &copy; 2008-2010 Kevin B. Kenny
+<BR>Copyright &copy; 2011 Kevin Walzer
+<BR>Copyright &copy; 2012 Trevor Davel
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

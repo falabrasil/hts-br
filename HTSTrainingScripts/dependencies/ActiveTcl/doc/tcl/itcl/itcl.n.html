@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="itcl.n.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			---
+   
+---
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org">
+<meta name='Author' content='ActiveState'>
+
+<title>itcl - itcl (n)</title>
+</head>
+<body>
+<center>
+<h1>[incr\ Tcl]</h1>
+</center>
+
+<h3>NAME</h3>
+
+itcl - object-oriented extensions to Tcl 
+
+<h3>DESCRIPTION</h3>
+
+<p><b>[incrTcl]</b> provides object-oriented extensions to Tcl,
+much as C++ provides object-oriented extensions to C. The emphasis
+of this work, however, is not to create a whiz-bang object-oriented
+programming environment. Rather, it is to support more structured
+programming practices in Tcl without changing the flavor of the
+language. More than anything else, <b>[incrTcl]</b> provides a
+means of encapsulating related procedures together with their
+shared data in a namespace that is hidden from the outside world.
+It encourages better programming by promoting the object-oriented
+"library" mindset. It also allows for code re-use through
+inheritance.</p>
+
+<h3>CLASSES</h3>
+
+<p>The fundamental construct in <b>[incrTcl]</b> is the class
+definition. Each class acts as a template for actual objects that
+can be created. Each object has its own unique bundle of data,
+which contains instances of the "variables" defined in the class.
+Special procedures called "methods" are used to manipulate
+individual objects. Methods are just like the operations that are
+used to manipulate Tk widgets. The "<b>button</b>" widget, for
+example, has methods such as "flash" and "invoke" that cause a
+particular button to blink and invoke its command.</p>
+
+<p>Within the body of a method, the "variables" defined in the
+class are automatically available. They need not be declared with
+anything like the <b>global</b> command. Within another class
+method, a method can be invoked like any other command-simply by
+using its name. From any other context, the method name must be
+prefaced by an object name, which provides a context for the data
+that the method can access.</p>
+
+<p>Each class has its own namespace containing things that are
+common to all objects which belong to the class. For example,
+"common" data members are shared by all objects in the class. They
+are global variables that exist in the class namespace, but since
+they are included in the class definition, they need not be
+declared using the <b>global</b> command; they are automatically
+available to any code executing in the class context. A class can
+also create ordinary global variables, but these must be declared
+using the <b>global</b> command each time they are used.</p>
+
+<p>Classes can also have ordinary procedures declared as "procs".
+Within another class method or proc, a proc can be invoked like any
+other command-simply by using its name. From any other context, the
+procedure name should be qualified with the class namespace like
+"<i>className</i><b>::</b><i>proc</i>". Class procs execute in the
+class context, and therefore have automatic access to all "common"
+data members. However, they cannot access object-specific
+"variables", since they are invoked without reference to any
+specific object. They are usually used to perform generic
+operations which affect all objects belonging to the class.</p>
+
+<p>Each of the elements in a class can be declared "public",
+"protected" or "private". Public elements can be accessed by the
+class, by derived classes (other classes that inherit this class),
+and by external clients that use the class. Protected elements can
+be accessed by the class, and by derived classes. Private elements
+are only accessible in the class where they are defined.</p>
+
+<p>The "public" elements within a class define its interface to the
+external world. Public methods define the operations that can be
+used to manipulate an object. Public variables are recognized as
+configuration options by the "configure" and "cget" methods that
+are built into each class. The public interface says <i>what</i> an
+object will do but not <i>how</i> it will do it. Protected and
+private members, along with the bodies of class methods and procs,
+provide the implementation details. Insulating the application
+developer from these details leaves the class designer free to
+change them at any time, without warning, and without affecting
+programs that rely on the class. It is precisely this encapsulation
+that makes object-oriented programs easier to understand and
+maintain.</p>
+
+<p>The fact that <b>[incrTcl]</b> objects look like Tk widgets is
+no accident. <b>[incrTcl]</b> was designed this way, to blend
+naturally into a Tcl/Tk application. But <b>[incrTcl]</b> extends
+the Tk paradigm from being merely object-based to being fully
+object-oriented. An object-oriented system supports inheritance,
+allowing classes to share common behaviors by inheriting them from
+an ancestor or base class. Having a base class as a common
+abstraction allows a programmer to treat related classes in a
+similar manner. For example, a toaster and a blender perform
+different (specialized) functions, but both share the abstraction
+of being appliances. By abstracting common behaviors into a base
+class, code can be <i>shared</i> rather than <i>copied</i>. The
+resulting application is easier to understand and maintain, and
+derived classes (e.g., specialized appliances) can be added or
+removed more easily.</p>
+
+<p>This description was merely a brief overview of object-oriented
+programming and <b>[incrTcl]</b>. A more tutorial introduction is
+presented in the paper included with this distribution. See the
+<b><a href="class.n.html">class</a></b> command for more details on
+creating and using classes.</p>
+
+<h3>NAMESPACES</h3>
+
+<p><b>[incrTcl]</b> now includes a complete namespace facility. A
+namespace is a collection of commands and global variables that is
+kept apart from the usual global scope. This allows Tcl code
+libraries to be packaged in a well-defined manner, and prevents
+unwanted interactions with other libraries. A namespace can also
+have child namespaces within it, so one library can contain its own
+private copy of many other libraries. A namespace can also be used
+to wrap up a group of related classes. The global scope (named
+"::") is the root namespace for an interpreter; all other
+namespaces are contained within it.</p>
+
+<p>See the <b>namespace</b> command for details on creating and
+using namespaces.</p>
+
+<h3>MEGA-WIDGETS</h3>
+
+<p>Mega-widgets are high-level widgets that are constructed using
+Tk widgets as component parts, usually without any C code. A
+fileselectionbox, for example, may have a few listboxes, some entry
+widgets and some control buttons. These individual widgets are put
+together in a way that makes them act like one big widget.</p>
+
+<p><b>[incrTk]</b> is a framework for building mega-widgets. It
+uses <b>[incrTcl]</b> to support the object paradigm, and adds base
+classes which provide default widget behaviors. See the <b>itk</b>
+man page for more details.</p>
+
+<p><b>[incrWidgets]</b> is a library of mega-widgets built using
+<b>[incrTk]</b>. It contains more than 30 different widget classes
+that can be used right out of the box to build Tcl/Tk applications.
+Each widget class has its own man page describing the features
+available.</p>
+
+<h3>KEYWORDS</h3>
+
+class, object, object-oriented, namespace, mega-widget 
+
+<hr>
+[ <a href="contents.html">itcl</a> ] 
+
+<hr>
+<pre>
+Copyright &copy; 1989-1994 The Regents of the University of California.
+Copyright &copy; 1994-1996 Sun Microsystems, Inc.
+</pre>
+</body>
+</html>
+
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

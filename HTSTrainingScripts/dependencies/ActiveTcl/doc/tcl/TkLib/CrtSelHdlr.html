@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="CrtSelHdlr.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>Tk_CreateSelHandler manual page - Tk Library Procedures</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tk C API, version 8.6.7</a> <small>&gt;</small> CrtSelHdlr</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="../TkCmd/contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<H3><A NAME="M2">NAME</A></H3>
+Tk_CreateSelHandler, Tk_DeleteSelHandler &mdash; arrange to handle requests for a selection
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+<B>#include &lt;tk.h&gt;</B><BR>
+<B>Tk_CreateSelHandler</B>(<I>tkwin, selection, target, proc, clientData, format</I>)<BR>
+<B>Tk_DeleteSelHandler</B>(<I>tkwin, selection, target</I>)<BR>
+<H3><A NAME="M4">ARGUMENTS</A></H3>
+<DL class="arguments">
+<DT><A HREF="WindowId.html">Tk_Window</A> <B>tkwin</B> (in)<DD>
+Window for which <I>proc</I> will provide selection information.
+<P><DT>Atom <B><A HREF="../TkCmd/selection.html">selection</A></B> (in)<DD>
+The name of the selection for which <I>proc</I> will provide
+selection information.
+<P><DT>Atom <B>target</B> (in)<DD>
+Form in which <I>proc</I> can provide the selection (e.g. STRING
+or FILE_NAME).  Corresponds to <I>type</I> arguments in <B><A HREF="../TkCmd/selection.html">selection</A></B>
+commands.
+<P><DT>Tk_SelectionProc <B>*proc</B> (in)<DD>
+Procedure to invoke whenever the selection is owned by <I>tkwin</I>
+and the selection contents are requested in the format given by
+<I>target</I>.
+<P><DT>ClientData <B>clientData</B> (in)<DD>
+Arbitrary one-word value to pass to <I>proc</I>.
+<P><DT>Atom <B><A HREF="../TclCmd/format.html">format</A></B> (in)<DD>
+If the selection requestor is not in this process, <I>format</I> determines
+the representation used to transmit the selection to its
+requestor.
+<P></DL>
+<H3><A NAME="M5">DESCRIPTION</A></H3>
+<B>Tk_CreateSelHandler</B> arranges for a particular procedure
+(<I>proc</I>) to be called whenever <I>selection</I> is owned by
+<I>tkwin</I> and the selection contents are requested in the
+form given by <I>target</I>.
+<I>Target</I> should be one of
+the entries defined in the left column of Table 2 of the
+X Inter-Client Communication Conventions Manual (ICCCM) or
+any other form in which an application is willing to present
+the selection.  The most common form is STRING.
+<P>
+<I>Proc</I> should have arguments and result that match the
+type <B>Tk_SelectionProc</B>:
+<PRE>typedef int <B>Tk_SelectionProc</B>(
+        ClientData <I>clientData</I>,
+        int <I>offset</I>,
+        char *<I>buffer</I>,
+        int <I>maxBytes</I>);</PRE>
+The <I>clientData</I> parameter to <I>proc</I> is a copy of the
+<I>clientData</I> argument given to <B>Tk_CreateSelHandler</B>.
+Typically, <I>clientData</I> points to a data
+structure containing application-specific information that is
+needed to retrieve the selection.  <I>Offset</I> specifies an
+offset position into the selection, <I>buffer</I> specifies a
+location at which to copy information about the selection, and
+<I>maxBytes</I> specifies the amount of space available at
+<I>buffer</I>.  <I>Proc</I> should place a NULL-terminated string
+at <I>buffer</I> containing <I>maxBytes</I> or fewer characters
+(not including the terminating NULL), and it should return a
+count of the number of non-NULL characters stored at
+<I>buffer</I>.  If the selection no longer exists (e.g. it once
+existed but the user deleted the range of characters containing
+it), then <I>proc</I> should return -1.
+<P>
+When transferring large selections, Tk will break them up into
+smaller pieces (typically a few thousand bytes each) for more
+efficient transmission.  It will do this by calling <I>proc</I>
+one or more times, using successively higher values of <I>offset</I>
+to retrieve successive portions of the selection.  If <I>proc</I>
+returns a count less than <I>maxBytes</I> it means that the entire
+remainder of the selection has been returned.  If <I>proc</I>'s return
+value is <I>maxBytes</I> it means there may be additional information
+in the selection, so Tk must make another call to <I>proc</I> to
+retrieve the next portion.
+<P>
+<I>Proc</I> always returns selection information in the form of a
+character string.  However, the ICCCM allows for information to
+be transmitted from the selection owner to the selection requestor
+in any of several formats, such as a string, an array of atoms, an
+array of integers, etc.  The <I>format</I> argument to
+<B>Tk_CreateSelHandler</B> indicates what format should be used to
+transmit the selection to its requestor (see the middle column of
+Table 2 of the ICCCM for examples).  If <I>format</I> is not
+STRING, then Tk will take the value returned by <I>proc</I> and divided
+it into fields separated by white space.  If <I>format</I> is ATOM,
+then Tk will return the selection as an array of atoms, with each
+field in <I>proc</I>'s result treated as the name of one atom.  For
+any other value of <I>format</I>, Tk will return the selection as an
+array of 32-bit values where each field of <I>proc</I>'s result is
+treated as a number and translated to a 32-bit value.  In any event,
+the <I>format</I> atom is returned to the selection requestor along
+with the contents of the selection.
+<P>
+If <B>Tk_CreateSelHandler</B> is called when there already exists a
+handler for <I>selection</I> and <I>target</I> on <I>tkwin</I>, then the
+existing handler is replaced with a new one.
+<P>
+<B>Tk_DeleteSelHandler</B> removes the handler given by <I>tkwin</I>,
+<I>selection</I>, and <I>target</I>, if such a handler exists.
+If there is no such handler then it has no effect.
+<H3><A NAME="M6">KEYWORDS</A></H3>
+<A href="../Keywords/F.html#format">format</A>, <A href="../Keywords/H.html#handler">handler</A>, <A href="../Keywords/S.html#selection">selection</A>, <A href="../Keywords/T.html#target">target</A>
+<div class="copy">Copyright &copy; 1990-1994 The Regents of the University of California.
+<BR>Copyright &copy; 1994-1996 Sun Microsystems, Inc.
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

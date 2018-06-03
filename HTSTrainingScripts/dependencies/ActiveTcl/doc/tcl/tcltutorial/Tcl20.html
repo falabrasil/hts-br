@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="Tcl20.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org">
+<meta name='Author' content='ActiveState'>
+
+<title>Regular Expressions 101</title>
+<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+<h2 class="title">Regular Expressions 101</h2>
+
+<div class="nav"><a href="Tcl19.html">Previous lesson</a> | <a
+href="tcltutorial.html">Index</a> | <a href="Tcl20a.html">Next
+lesson</a></div>
+
+<p>Tcl also supports string operations known as <i>regular
+expressions</i> Several commands can access these methods with a
+-regexp argument, see the man pages for which commands support
+regular expressions.</p>
+
+<p>There are also two explicit commands for parsing regular
+expressions.</p>
+
+<dl>
+<dt><code class="keyword">regexp</code> <code class=
+"arg">?switches?</code> <code class="arg">exp</code> <code class=
+"arg">string</code> <code class="arg">?matchVar?</code> <code
+class="arg">?subMatch1 ... subMatchN?</code></dt>
+
+<dd>Searches <code class="arg">string</code> for the regular
+expression <code class="arg">exp</code>. If a parameter <code
+class="arg">matchVar</code> is given, then the substring that
+matches the regular expression is copied to <code class=
+"arg">matchVar</code>. If <code class="arg">subMatchN</code>
+variables exist, then the parenthetical parts of the matching
+string are copied to the <code class="arg">subMatch</code>
+variables, working from left to right.</dd>
+
+<dt><code class="keyword">regsub</code> <code class=
+"arg">?switches?</code> <code class="arg">exp</code> <code class=
+"arg">string</code> <code class="arg">subSpec</code> <code class=
+"arg">varName</code></dt>
+
+<dd>Searches <code class="arg">string</code> for substrings that
+match the regular expression <code class="arg">exp</code> and
+replaces them with <code class="arg">subSpec</code>. The resulting
+string is copied into <code class="arg">varName</code>.</dd>
+</dl>
+
+<p>Regular expressions can be expressed in just a few rules.</p>
+
+<dl>
+<dt>^</dt>
+
+<dd>Matches the beginning of a string</dd>
+
+<dt>$</dt>
+
+<dd>Matches the end of a string</dd>
+
+<dt>.</dt>
+
+<dd>Matches any single character</dd>
+
+<dt>*</dt>
+
+<dd>Matches any count (0-n) of the previous character</dd>
+
+<dt>+</dt>
+
+<dd>Matches any count, but at least 1 of the previous
+character</dd>
+
+<dt>[...]</dt>
+
+<dd>Matches any character of a set of characters</dd>
+
+<dt>[^...]</dt>
+
+<dd>Matches any character *NOT* a member of the set of characters
+following the ^.</dd>
+
+<dt>(...)</dt>
+
+<dd>Groups a set of characters into a subSpec.</dd>
+</dl>
+
+<p>Regular expressions are similar to the globbing that was
+discussed in lessons 16 and 18. The main difference is in the way
+that sets of matched characters are handled. In globbing the only
+way to select sets of unknown text is the <code class=
+"keyword">*</code> symbol. This matches to any quantity of any
+character.</p>
+
+<p>In regular expression parsing, the <code class=
+"keyword">*</code> symbol matches zero or more occurrences of the
+character immediately proceeding the <code class=
+"keyword">*</code>. For example <code class="keyword">a*</code>
+would match a, aaaaa, or a blank string. If the character directly
+before the <code class="keyword">*</code> is a set of characters
+within square brackets, then the <code class="keyword">*</code>
+will match any quantity of all of these characters. For example,
+<code class="keyword">[a-c]*</code> would match aa, abc, aabcabc,
+or again, an empty string.</p>
+
+<p>The <code class="keyword">+</code> symbol behaves roughly the
+same as the <code class="keyword">*</code>, except that it requires
+at least one character to match. For example, <code class=
+"keyword">[a-c]+</code> would match a, abc, or aabcabc, but not an
+empty string.</p>
+
+<p>Regular expression parsing is more powerful than globbing. With
+globbing you can use square brackets to enclose a set of characters
+any of which will be a match. Regular expression parsing also
+includes a method of selecting any character <i>not</i> in a set.
+If the first character after the <code class="keyword">[</code> is
+a caret (<code class="keyword">^</code>), then the regular
+expression parser will match any character not in the set of
+characters between the square brackets. A caret can be included in
+the set of characters to match (or not) by placing it in any
+position other than the first.</p>
+
+<p>The <code class="keyword">regexp</code> command is similar to
+the <code class="keyword">string match</code> command in that it
+matches an <code class="keyword">exp</code> against a string. It is
+different in that it can match a portion of a string, instead of
+the entire string, and will place the characters matched into the
+<code class="keyword">matchVar</code> variable.</p>
+
+<p>If a match is found to the portion of a regular expression
+enclosed within parentheses, <code class="keyword">regexp</code>
+will copy the subset of matching characters is to the <code class=
+"keyword">subSpec</code> argument. This can be used to parse simple
+strings.</p>
+
+<p><code class="keyword">Regsub</code> will copy the contents of
+the string to a new variable, substituting the characters that
+match <code class="keyword">exp</code> with the characters in <code
+class="keyword">subSpec</code>. If <code class="arg">subSpec</code>
+contains a <code class="keyword">&amp;</code> or <code class=
+"keyword">\0</code>, then those characters will be replaced by the
+characters that matched <code class="arg">exp</code>. If the number
+following a backslash is 1-9, then that backslash sequence will be
+replaced by the appropriate portion of <code class="arg">exp</code>
+that is enclosed within parentheses.</p>
+
+<p>Note that the <code class="keyword">exp</code> argument to <code
+class="keyword">regexp</code> or <code class=
+"keyword">regsub</code> is processed by the Tcl substitution pass.
+Therefore quite often the expression is enclosed in braces to
+prevent any special processing by Tcl.</p>
+
+<hr>
+<h3>Example</h3>
+
+<pre class="example">
+set sample "Where there is a will, There is a way."
+
+#
+# Match the first substring with lowercase letters only
+#
+set result [regexp {[a-z]+} $sample match]
+puts "Result: $result match: $match"
+
+#
+# Match the first two words, the first one allows uppercase
+set result [regexp {([A-Za-z]+) +([a-z]+)} $sample match sub1 sub2 ]
+puts "Result: $result Match: $match 1: $sub1 2: $sub2"
+
+#
+# Replace a word
+#
+regsub "way" $sample "lawsuit" sample2
+puts "New: $sample2"
+
+#
+# Use the -all option to count the number of "words"
+#
+puts "Number of words: [regexp -all {[^ ]} $sample]"
+   
+</pre>
+
+<div class="nav"><a href="Tcl19.html">Previous lesson</a> | <a
+href="tcltutorial.html">Index</a> | <a href="Tcl20a.html">Next
+lesson</a></div>
+</body>
+</html>
+
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

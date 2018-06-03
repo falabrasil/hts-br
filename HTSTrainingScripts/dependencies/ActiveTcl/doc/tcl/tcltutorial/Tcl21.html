@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="Tcl21.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org">
+<meta name='Author' content='ActiveState'>
+
+<title>More Quoting Hell - Regular Expressions 102</title>
+<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+<h2 class="title">More Quoting Hell - Regular Expressions 102</h2>
+
+<div class="nav"><a href="Tcl20a.html">Previous lesson</a> | <a
+href="tcltutorial.html">Index</a> | <a href="Tcl22.html">Next
+lesson</a></div>
+
+<dl>
+<dt><code class="keyword">regexp</code> <code class=
+"arg">?switches? exp string ?matchVar? ?subMatch1 ...
+subMatchN?</code></dt>
+
+<dd>Searches <code class="arg">string</code> for the regular
+expression <code class="arg">exp</code>. If a parameter <code
+class="arg">matchVar</code> is given, then the substring that
+matches the regular expression is copied to <code class=
+"arg">matchVar</code>. If <code class="arg">subMatchN</code>
+variables exist, then the parenthetical parts of the matching
+string are copied to the <code class="arg">subMatch</code>
+variables, working from left to right.</dd>
+
+<dt><code class="keyword">regsub</code> <code class=
+"arg">?switches? exp string subSpec varName</code></dt>
+
+<dd>Searches <code class="arg">string</code> for substrings that
+match the regular expression <code class="arg">exp</code> and
+replaces them with <code class="arg">subSpec</code>. The resulting
+string is copied into <code class="arg">varName</code>.</dd>
+</dl>
+
+<br>
+<br>
+<p>The regular expression (<code class="arg">exp</code>) in the two
+regular expression parsing commands is evaluated by the Tcl parser
+during the Tcl substitution phase. This can provide a great deal of
+power, and also requires a great deal of care.</p>
+
+<p>These examples show some of the trickier aspects of regular
+expression evaluation. The fields in each example are discussed in
+painful detail in the most verbose level.</p>
+
+<p>The points to remember as you read the examples are:</p>
+
+<ul>
+<li>A left square bracket ([) has meaning to the substitution
+phase, and to the regular expression parser.</li>
+
+<li>A set of parentheses, a plus sign, and a star have meaning to
+the regular expression parser, but not the Tcl substitution
+phase.</li>
+
+<li>A backslash sequence (\n, \t, etc) has meaning to the Tcl
+substitution phase, but not to the regular expression parser.</li>
+
+<li>A backslash escaped character (\[) has no special meaning to
+either the Tcl substitution phase or the regular expression
+parser.</li>
+</ul>
+
+<br>
+<br>
+<p>The phase at which a character has meaning affects how many
+escapes are necessary to match the character you wish to match. An
+escape can be either enclosing the phrase in braces, or placing a
+backslash before the escaped character.</p>
+
+<p>To pass a left bracket to the regular expression parser to
+evaluate as a range of characters takes 1 escape. To have the
+regular expression parser match a literal left bracket takes 2
+escapes (one to escape the bracket in the Tcl substitution phase,
+and one to escape the bracket in the regular expression parsing.).
+If you have the string placed within quotes, then a backslash that
+you wish passed to the regular expression parser must also be
+escaped with a backslash.</p>
+
+<p>Note: You can copy the code and run it in tclsh or wish to see
+the effects.</p>
+
+<hr>
+<h3>Example</h3>
+
+<pre class="example">
+#
+# Examine an overview of UNIX/Linux disks
+#
+set list1 [list \
+{/dev/wd0a        17086    10958     5272    68%    /}\
+{/dev/wd0f       179824   127798    48428    73%    /news}\
+{/dev/wd0h      1249244   967818   218962    82%    /usr}\
+{/dev/wd0g        98190    32836    60444    35%    /var}]
+
+foreach line $list1 {
+    regexp {[^ ]* *([0-9]+)[^/]*(/[a-z]*)} $line match size mounted;
+    puts "$mounted is $size blocks"
+}
+
+
+#
+# Extracting a hexadecimal value ...
+#
+set line {Interrupt Vector? [32(0x20)]}
+regexp "\[^\t]+\t\\\[\[0-9]+\\(0x(\[0-9a-fA-F]+)\\)]" $line match hexval
+puts "Hex Default is: 0x$hexval"
+
+#
+# Matching the special characters as if they were ordinary
+#
+set str2 "abc^def"
+regexp "\[^a-f]*def" $str2 match
+puts "using \[^a-f] the match is: $match"
+
+regexp "\[a-f^]*def" $str2 match
+puts "using \[a-f^] the match is: $match"
+
+regsub {\^} $str2 " is followed by: " str3
+puts "$str2 with the ^ substituted is: \"$str3\""
+
+regsub "(\[a-f]+)\\^(\[a-f]+)" $str2 "\\2 follows \\1" str3
+puts "$str2 is converted to \"$str3\""
+
+</pre>
+
+<div class="nav"><a href="Tcl20a.html">Previous lesson</a> | <a
+href="tcltutorial.html">Index</a> | <a href="Tcl22.html">Next
+lesson</a></div>
+</body>
+</html>
+
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

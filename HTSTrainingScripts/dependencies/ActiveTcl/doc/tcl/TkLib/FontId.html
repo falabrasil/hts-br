@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="FontId.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>Tk_FontId manual page - Tk Library Procedures</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tk C API, version 8.6.7</a> <small>&gt;</small> FontId</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="../TkCmd/contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="FontId.html#M2" NAME="L211">NAME</A>
+<DL><DD>Tk_FontId, Tk_GetFontMetrics, Tk_PostscriptFontName &mdash; accessor functions for fonts</DD></DL>
+<DD><A HREF="FontId.html#M3" NAME="L212">SYNOPSIS</A>
+<DL>
+<DD><B>#include &lt;tk.h&gt;</B>
+<DD>Font
+<DD><B>Tk_FontId(</B><I>tkfont</I><B>)</B>
+<DD><B>Tk_GetFontMetrics(</B><I>tkfont, fmPtr</I><B>)</B>
+<DD>int
+<DD><B>Tk_PostscriptFontName(</B><I>tkfont, dsPtr</I><B>)</B>
+</DL>
+<DD><A HREF="FontId.html#M4" NAME="L213">ARGUMENTS</A>
+<DL class="arguments">
+</DL>
+<DD><A HREF="FontId.html#M5" NAME="L214">DESCRIPTION</A>
+<DD><A HREF="FontId.html#M6" NAME="L215">DATA STRUCTURES</A>
+<DD><A HREF="FontId.html#M7" NAME="L216">SEE ALSO</A>
+<DD><A HREF="FontId.html#M8" NAME="L217">KEYWORDS</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+Tk_FontId, Tk_GetFontMetrics, Tk_PostscriptFontName &mdash; accessor functions for fonts
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+<B>#include &lt;tk.h&gt;</B><BR>
+Font<BR>
+<B>Tk_FontId(</B><I>tkfont</I><B>)</B><BR>
+<B>Tk_GetFontMetrics(</B><I>tkfont, fmPtr</I><B>)</B><BR>
+int<BR>
+<B>Tk_PostscriptFontName(</B><I>tkfont, dsPtr</I><B>)</B><BR>
+<H3><A NAME="M4">ARGUMENTS</A></H3>
+<DL class="arguments">
+<DT><A HREF="GetFont.html">Tk_Font</A> <B>tkfont</B> (in)<DD>
+Opaque font token being queried.  Must have been returned by a previous
+call to <B><A HREF="GetFont.html">Tk_GetFont</A></B>.
+<P><DT>Tk_FontMetrics <B>*fmPtr</B> (out)<DD>
+Pointer to structure in which the font metrics for <I>tkfont</I> will
+be stored. See <B><A HREF="FontId.html#M6">DATA STRUCTURES</A></B> below for details.
+<P><DT><A HREF="../TclLib/DString.html">Tcl_DString</A> <B>*dsPtr</B> (out)<DD>
+Pointer to an initialized <B><A HREF="../TclLib/DString.html">Tcl_DString</A></B> to which the name of the
+Postscript font that corresponds to <I>tkfont</I> will be appended.
+<P></DL>
+<H3><A NAME="M5">DESCRIPTION</A></H3>
+Given a <I>tkfont</I>, <B>Tk_FontId</B> returns the token that should be
+selected into an XGCValues structure in order to construct a graphics
+context that can be used to draw text in the specified font.
+<P>
+<B>Tk_GetFontMetrics</B> computes the ascent, descent, and linespace of the
+<I>tkfont</I> in pixels and stores those values in the structure pointer to by
+<I>fmPtr</I>.  These values can be used in computations such as to space
+multiple lines of text, to align the baselines of text in different
+fonts, and to vertically align text in a given region.  See the
+documentation for the <B><A HREF="../TkCmd/font.html">font</A></B> command for definitions of the terms
+ascent, descent, and linespace, used in font metrics.
+<P>
+<B>Tk_PostscriptFontName</B> maps a <I>tkfont</I> to the corresponding
+Postscript font name that should be used when printing.  The return value
+is the size in points of the <I>tkfont</I> and the Postscript font name is
+appended to <I>dsPtr</I>.  <I>DsPtr</I> must refer to an initialized
+<B><A HREF="../TclLib/DString.html">Tcl_DString</A></B>.  Given a
+&#8220;reasonable&#8221;
+Postscript printer, the
+following screen font families should print correctly:
+<DL><DD>
+<B>Avant Garde</B>, <B>Arial</B>, <B>Bookman</B>, <B>Courier</B>,
+<B>Courier New</B>, <B>Geneva</B>, <B>Helvetica</B>, <B>Monaco</B>,
+<B>New Century Schoolbook</B>, <B>New York</B>, <B>Palatino</B>, <B>Symbol</B>,
+<B>Times</B>, <B>Times New Roman</B>, <B>Zapf Chancery</B>, and
+<B>Zapf Dingbats</B>.
+</DL>
+<P>
+Any other font families may not print correctly because the computed
+Postscript font name may be incorrect or not exist on the printer.
+<H3><A NAME="M6">DATA STRUCTURES</A></H3>
+The <B>Tk_FontMetrics</B> data structure is used by <B>Tk_GetFontMetrics</B> to
+return information about a font and is defined as follows:
+<PRE>typedef struct Tk_FontMetrics {
+    int <I>ascent</I>;
+    int <I>descent</I>;
+    int <I>linespace</I>;
+} <B>Tk_FontMetrics</B>;</PRE>
+<P>
+The <I>ascent</I> field is the amount in pixels that the tallest
+letter sticks up above the baseline, plus any extra blank space added
+by the designer of the font.
+<P>
+The <I>descent</I> is the largest amount in pixels that any letter
+sticks below the baseline, plus any extra blank space added by the
+designer of the font.
+<P>
+The <I>linespace</I> is the sum of the ascent and descent.  How far
+apart two lines of text in the same font should be placed so that none
+of the characters in one line overlap any of the characters in the
+other line.
+<H3><A NAME="M7">SEE ALSO</A></H3>
+<B><A HREF="../TkCmd/font.html">font</A></B>, <B>MeasureChar</B>
+<H3><A NAME="M8">KEYWORDS</A></H3>
+<A href="../Keywords/F.html#font">font</A>, <A href="../Keywords/M.html#measurement">measurement</A>, <A href="../Keywords/P.html#Postscript">Postscript</A>
+<div class="copy">Copyright &copy; 1996 Sun Microsystems, Inc.
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

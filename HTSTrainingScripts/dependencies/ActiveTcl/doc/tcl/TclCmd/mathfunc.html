@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="mathfunc.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>mathfunc manual page - Tcl Mathematical Functions</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tcl Commands, version 8.6.7</a> <small>&gt;</small> mathfunc</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="contents.html">Tcl Commands</A> | <A HREF="../TkCmd/contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="mathfunc.html#M2" NAME="L1081">NAME</A>
+<DL><DD>mathfunc &mdash; Mathematical functions for Tcl expressions</DD></DL>
+<DD><A HREF="mathfunc.html#M3" NAME="L1082">SYNOPSIS</A>
+<DL>
+</DL>
+<DD><A HREF="mathfunc.html#M4" NAME="L1083">DESCRIPTION</A>
+<DD><A HREF="mathfunc.html#M5" NAME="L1084">DETAILED DEFINITIONS</A>
+<DL class="detailed definitions">
+<DD><A HREF="mathfunc.html#M6" NAME="L1085"><B>abs </B><I>arg</I></A>
+<DD><A HREF="mathfunc.html#M7" NAME="L1086"><B>acos </B><I>arg</I></A>
+<DD><A HREF="mathfunc.html#M8" NAME="L1087"><B>asin </B><I>arg</I></A>
+<DD><A HREF="mathfunc.html#M9" NAME="L1088"><B>atan </B><I>arg</I></A>
+<DD><A HREF="mathfunc.html#M10" NAME="L1089"><B>atan2 </B><I>y x</I></A>
+<DD><A HREF="mathfunc.html#M11" NAME="L1090"><B>bool </B><I>arg</I></A>
+<DD><A HREF="mathfunc.html#M12" NAME="L1091"><B>ceil </B><I>arg</I></A>
+<DD><A HREF="mathfunc.html#M13" NAME="L1092"><B>cos </B><I>arg</I></A>
+<DD><A HREF="mathfunc.html#M14" NAME="L1093"><B>cosh </B><I>arg</I></A>
+<DD><A HREF="mathfunc.html#M15" NAME="L1094"><B>double </B><I>arg</I></A>
+<DD><A HREF="mathfunc.html#M16" NAME="L1095"><B>entier </B><I>arg</I></A>
+<DD><A HREF="mathfunc.html#M17" NAME="L1096"><B>exp </B><I>arg</I></A>
+<DD><A HREF="mathfunc.html#M18" NAME="L1097"><B>floor </B><I>arg</I></A>
+<DD><A HREF="mathfunc.html#M19" NAME="L1098"><B>fmod </B><I>x y</I></A>
+<DD><A HREF="mathfunc.html#M20" NAME="L1099"><B>hypot </B><I>x y</I></A>
+<DD><A HREF="mathfunc.html#M21" NAME="L1100"><B>int </B><I>arg</I></A>
+<DD><A HREF="mathfunc.html#M22" NAME="L1101"><B>isqrt </B><I>arg</I></A>
+<DD><A HREF="mathfunc.html#M23" NAME="L1102"><B>log </B><I>arg</I></A>
+<DD><A HREF="mathfunc.html#M24" NAME="L1103"><B>log10 </B><I>arg</I></A>
+<DD><A HREF="mathfunc.html#M25" NAME="L1104"><B>max </B><I>arg</I><B> </B><I>...</I></A>
+<DD><A HREF="mathfunc.html#M26" NAME="L1105"><B>min </B><I>arg</I><B> </B><I>...</I></A>
+<DD><A HREF="mathfunc.html#M27" NAME="L1106"><B>pow </B><I>x y</I></A>
+<DD><A HREF="mathfunc.html#M28" NAME="L1107"><B>rand</B></A>
+<DD><A HREF="mathfunc.html#M29" NAME="L1108"><B>round </B><I>arg</I></A>
+<DD><A HREF="mathfunc.html#M30" NAME="L1109"><B>sin </B><I>arg</I></A>
+<DD><A HREF="mathfunc.html#M31" NAME="L1110"><B>sinh </B><I>arg</I></A>
+<DD><A HREF="mathfunc.html#M32" NAME="L1111"><B>sqrt </B><I>arg</I></A>
+<DD><A HREF="mathfunc.html#M33" NAME="L1112"><B>srand </B><I>arg</I></A>
+<DD><A HREF="mathfunc.html#M34" NAME="L1113"><B>tan </B><I>arg</I></A>
+<DD><A HREF="mathfunc.html#M35" NAME="L1114"><B>tanh </B><I>arg</I></A>
+<DD><A HREF="mathfunc.html#M36" NAME="L1115"><B>wide </B><I>arg</I></A>
+</DL>
+<DD><A HREF="mathfunc.html#M37" NAME="L1116">SEE ALSO</A>
+<DD><A HREF="mathfunc.html#M38" NAME="L1117">COPYRIGHT</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+mathfunc &mdash; Mathematical functions for Tcl expressions
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+package require <B>Tcl 8.5</B><BR>
+<B>::tcl::mathfunc::abs</B> <I>arg</I><BR>
+<B>::tcl::mathfunc::acos</B> <I>arg</I><BR>
+<B>::tcl::mathfunc::asin</B> <I>arg</I><BR>
+<B>::tcl::mathfunc::atan</B> <I>arg</I><BR>
+<B>::tcl::mathfunc::atan2</B> <I>y</I> <I>x</I><BR>
+<B>::tcl::mathfunc::bool</B> <I>arg</I><BR>
+<B>::tcl::mathfunc::ceil</B> <I>arg</I><BR>
+<B>::tcl::mathfunc::cos</B> <I>arg</I><BR>
+<B>::tcl::mathfunc::cosh</B> <I>arg</I><BR>
+<B>::tcl::mathfunc::double</B> <I>arg</I><BR>
+<B>::tcl::mathfunc::entier</B> <I>arg</I><BR>
+<B>::tcl::mathfunc::exp</B> <I>arg</I><BR>
+<B>::tcl::mathfunc::floor</B> <I>arg</I><BR>
+<B>::tcl::mathfunc::fmod</B> <I>x</I> <I>y</I><BR>
+<B>::tcl::mathfunc::hypot</B> <I>x</I> <I>y</I><BR>
+<B>::tcl::mathfunc::int</B> <I>arg</I><BR>
+<B>::tcl::mathfunc::isqrt</B> <I>arg</I><BR>
+<B>::tcl::mathfunc::log</B> <I>arg</I><BR>
+<B>::tcl::mathfunc::log10</B> <I>arg</I><BR>
+<B>::tcl::mathfunc::max</B> <I>arg</I> ?<I>arg</I> ...?<BR>
+<B>::tcl::mathfunc::min</B> <I>arg</I> ?<I>arg</I> ...?<BR>
+<B>::tcl::mathfunc::pow</B> <I>x</I> <I>y</I><BR>
+<B>::tcl::mathfunc::rand</B><BR>
+<B>::tcl::mathfunc::round</B> <I>arg</I><BR>
+<B>::tcl::mathfunc::sin</B> <I>arg</I><BR>
+<B>::tcl::mathfunc::sinh</B> <I>arg</I><BR>
+<B>::tcl::mathfunc::sqrt</B> <I>arg</I><BR>
+<B>::tcl::mathfunc::srand</B> <I>arg</I><BR>
+<B>::tcl::mathfunc::tan</B> <I>arg</I><BR>
+<B>::tcl::mathfunc::tanh</B> <I>arg</I><BR>
+<B>::tcl::mathfunc::wide</B> <I>arg</I><BR>
+<H3><A NAME="M4">DESCRIPTION</A></H3>
+The <B><A HREF="expr.html">expr</A></B> command handles mathematical functions of the form
+<B>sin($x)</B> or <B>atan2($y,$x)</B> by converting them to calls of the
+form <B>[tcl::mathfunc::sin [expr {$x}]]</B> or
+<B>[tcl::mathfunc::atan2 [expr {$y}] [expr {$x}]]</B>.
+A number of math functions are available by default within the
+namespace <B>::tcl::mathfunc</B>; these functions are also available
+for code apart from <B><A HREF="expr.html">expr</A></B>, by invoking the given commands
+directly.
+<P>
+Tcl supports the following mathematical functions in expressions, all
+of which work solely with floating-point numbers unless otherwise noted:
+<dl><dd><table border="0"><tr><td><p class="tablecell"><B>abs</B><td><p class="tablecell"><B>acos</B><td><p class="tablecell"><B>asin</B><td><p class="tablecell"><B>atan</B><tr><td><p class="tablecell"><B>atan2</B><td><p class="tablecell"><B>bool</B><td><p class="tablecell"><B>ceil</B><td><p class="tablecell"><B>cos</B><tr><td><p class="tablecell"><B>cosh</B><td><p class="tablecell"><B>double</B><td><p class="tablecell"><B>entier</B><td><p class="tablecell"><B>exp</B><tr><td><p class="tablecell"><B>floor</B><td><p class="tablecell"><B>fmod</B><td><p class="tablecell"><B>hypot</B><td><p class="tablecell"><B>int</B><tr><td><p class="tablecell"><B>isqrt</B><td><p class="tablecell"><B>log</B><td><p class="tablecell"><B>log10</B><td><p class="tablecell"><B>max</B><tr><td><p class="tablecell"><B>min</B><td><p class="tablecell"><B>pow</B><td><p class="tablecell"><B>rand</B><td><p class="tablecell"><B>round</B><tr><td><p class="tablecell"><B>sin</B><td><p class="tablecell"><B>sinh</B><td><p class="tablecell"><B>sqrt</B><td><p class="tablecell"><B>srand</B><tr><td><p class="tablecell"><B>tan</B><td><p class="tablecell"><B>tanh</B><td><p class="tablecell"><B>wide</B></table></dl>
+<P>
+In addition to these predefined functions, applications may
+define additional functions by using <B><A HREF="proc.html">proc</A></B> (or any other method,
+such as <B><A HREF="interp.html">interp alias</A></B> or <B><A HREF="../TclLib/CrtObjCmd.html">Tcl_CreateObjCommand</A></B>) to define
+new commands in the <B>tcl::mathfunc</B> namespace.  In addition, an
+obsolete interface named <B><A HREF="../TclLib/CrtMathFnc.html">Tcl_CreateMathFunc</A></B>() is available to
+extensions that are written in C. The latter interface is not recommended
+for new implementations.
+<H4><A NAME="M5">DETAILED DEFINITIONS</A></H4>
+<DL class="detailed definitions">
+<DT><A NAME="M6"><B>abs </B><I>arg</I></A><DD>
+Returns the absolute value of <I>arg</I>.  <I>Arg</I> may be either
+integer or floating-point, and the result is returned in the same form.
+<P><DT><A NAME="M7"><B>acos </B><I>arg</I></A><DD>
+Returns the arc cosine of <I>arg</I>, in the range [<I>0</I>,<I>pi</I>]
+radians. <I>Arg</I> should be in the range [<I>-1</I>,<I>1</I>].
+<P><DT><A NAME="M8"><B>asin </B><I>arg</I></A><DD>
+Returns the arc sine of <I>arg</I>, in the range [<I>-pi/2</I>,<I>pi/2</I>]
+radians.  <I>Arg</I> should be in the range [<I>-1</I>,<I>1</I>].
+<P><DT><A NAME="M9"><B>atan </B><I>arg</I></A><DD>
+Returns the arc tangent of <I>arg</I>, in the range [<I>-pi/2</I>,<I>pi/2</I>]
+radians.
+<P><DT><A NAME="M10"><B>atan2 </B><I>y x</I></A><DD>
+Returns the arc tangent of <I>y</I>/<I>x</I>, in the range [<I>-pi</I>,<I>pi</I>]
+radians.  <I>x</I> and <I>y</I> cannot both be 0.  If <I>x</I> is greater
+than <I>0</I>, this is equivalent to
+&#8220;<B>atan </B>[<B><A HREF="expr.html">expr</A></B> {<I>y</I><B>/</B><I>x</I>}]&#8221;.
+<P><DT><A NAME="M11"><B>bool </B><I>arg</I></A><DD>
+Accepts any numeric value, or any string acceptable to
+<B>string is boolean</B>, and returns the corresponding
+boolean value <B>0</B> or <B>1</B>.  Non-zero numbers are true.
+Other numbers are false.  Non-numeric strings produce boolean value in
+agreement with <B>string is true</B> and <B>string is false</B>.
+<P><DT><A NAME="M12"><B>ceil </B><I>arg</I></A><DD>
+Returns the smallest integral floating-point value (i.e. with a zero
+fractional part) not less than <I>arg</I>.  The argument may be any
+numeric value.
+<P><DT><A NAME="M13"><B>cos </B><I>arg</I></A><DD>
+Returns the cosine of <I>arg</I>, measured in radians.
+<P><DT><A NAME="M14"><B>cosh </B><I>arg</I></A><DD>
+Returns the hyperbolic cosine of <I>arg</I>.  If the result would cause
+an overflow, an error is returned.
+<P><DT><A NAME="M15"><B>double </B><I>arg</I></A><DD>
+The argument may be any numeric value,
+If <I>arg</I> is a floating-point value, returns <I>arg</I>, otherwise converts
+<I>arg</I> to floating-point and returns the converted value.  May return
+<B>Inf</B> or <B>-Inf</B> when the argument is a numeric value that exceeds
+the floating-point range.
+<P><DT><A NAME="M16"><B>entier </B><I>arg</I></A><DD>
+The argument may be any numeric value.  The integer part of <I>arg</I>
+is determined and returned.  The integer range returned by this function
+is unlimited, unlike <B>int</B> and <B>wide</B> which
+truncate their range to fit in particular storage widths.
+<P><DT><A NAME="M17"><B>exp </B><I>arg</I></A><DD>
+Returns the exponential of <I>arg</I>, defined as <I>e</I>**<I>arg</I>.
+If the result would cause an overflow, an error is returned.
+<P><DT><A NAME="M18"><B>floor </B><I>arg</I></A><DD>
+Returns the largest integral floating-point value (i.e. with a zero
+fractional part) not greater than <I>arg</I>.  The argument may be
+any numeric value.
+<P><DT><A NAME="M19"><B>fmod </B><I>x y</I></A><DD>
+Returns the floating-point remainder of the division of <I>x</I> by
+<I>y</I>.  If <I>y</I> is 0, an error is returned.
+<P><DT><A NAME="M20"><B>hypot </B><I>x y</I></A><DD>
+Computes the length of the hypotenuse of a right-angled triangle,
+approximately
+&#8220;<B>sqrt</B> [<B><A HREF="expr.html">expr</A></B> {<I>x</I><B>*</B><I>x</I><B>+</B><I>y</I><B>*</B><I>y</I>}]&#8221;
+except for being more numerically stable when the two arguments have
+substantially different magnitudes.
+<P><DT><A NAME="M21"><B>int </B><I>arg</I></A><DD>
+The argument may be any numeric value.  The integer part of <I>arg</I>
+is determined, and then the low order bits of that integer value up
+to the machine word size are returned as an integer value.  For reference,
+the number of bytes in the machine word are stored in the <B>wordSize</B>
+element of the <B><A HREF="tclvars.html">tcl_platform</A></B> array.
+<P><DT><A NAME="M22"><B>isqrt </B><I>arg</I></A><DD>
+Computes the integer part of the square root of <I>arg</I>.  <I>Arg</I> must be
+a positive value, either an integer or a floating point number.
+Unlike <B>sqrt</B>, which is limited to the precision of a floating point
+number, <I>isqrt</I> will return a result of arbitrary precision.
+<P><DT><A NAME="M23"><B>log </B><I>arg</I></A><DD>
+Returns the natural logarithm of <I>arg</I>.  <I>Arg</I> must be a
+positive value.
+<P><DT><A NAME="M24"><B>log10 </B><I>arg</I></A><DD>
+Returns the base 10 logarithm of <I>arg</I>.  <I>Arg</I> must be a
+positive value.
+<P><DT><A NAME="M25"><B>max </B><I>arg</I><B> </B><I>...</I></A><DD>
+Accepts one or more numeric arguments.  Returns the one argument
+with the greatest value.
+<P><DT><A NAME="M26"><B>min </B><I>arg</I><B> </B><I>...</I></A><DD>
+Accepts one or more numeric arguments.  Returns the one argument
+with the least value.
+<P><DT><A NAME="M27"><B>pow </B><I>x y</I></A><DD>
+Computes the value of <I>x</I> raised to the power <I>y</I>.  If <I>x</I>
+is negative, <I>y</I> must be an integer value.
+<P><DT><A NAME="M28"><B>rand</B></A><DD>
+Returns a pseudo-random floating-point value in the range (<I>0</I>,<I>1</I>).
+The generator algorithm is a simple linear congruential generator that
+is not cryptographically secure.  Each result from <B>rand</B> completely
+determines all future results from subsequent calls to <B>rand</B>, so
+<B>rand</B> should not be used to generate a sequence of secrets, such as
+one-time passwords.  The seed of the generator is initialized from the
+internal clock of the machine or may be set with the <B>srand</B> function.
+<P><DT><A NAME="M29"><B>round </B><I>arg</I></A><DD>
+If <I>arg</I> is an integer value, returns <I>arg</I>, otherwise converts
+<I>arg</I> to integer by rounding and returns the converted value.
+<P><DT><A NAME="M30"><B>sin </B><I>arg</I></A><DD>
+Returns the sine of <I>arg</I>, measured in radians.
+<P><DT><A NAME="M31"><B>sinh </B><I>arg</I></A><DD>
+Returns the hyperbolic sine of <I>arg</I>.  If the result would cause
+an overflow, an error is returned.
+<P><DT><A NAME="M32"><B>sqrt </B><I>arg</I></A><DD>
+The argument may be any non-negative numeric value.  Returns a floating-point
+value that is the square root of <I>arg</I>.  May return <B>Inf</B> when the
+argument is a numeric value that exceeds the square of the maximum value of
+the floating-point range.
+<P><DT><A NAME="M33"><B>srand </B><I>arg</I></A><DD>
+The <I>arg</I>, which must be an integer, is used to reset the seed for
+the random number generator of <B>rand</B>.  Returns the first random
+number (see <B>rand</B>) from that seed.  Each interpreter has its own seed.
+<P><DT><A NAME="M34"><B>tan </B><I>arg</I></A><DD>
+Returns the tangent of <I>arg</I>, measured in radians.
+<P><DT><A NAME="M35"><B>tanh </B><I>arg</I></A><DD>
+Returns the hyperbolic tangent of <I>arg</I>.
+<P><DT><A NAME="M36"><B>wide </B><I>arg</I></A><DD>
+The argument may be any numeric value.  The integer part of <I>arg</I>
+is determined, and then the low order 64 bits of that integer value
+are returned as an integer value.
+<P></DL>
+<H3><A NAME="M37">SEE ALSO</A></H3>
+<B><A HREF="expr.html">expr</A></B>, <B><A HREF="mathop.html">mathop</A></B>, <B><A HREF="namespace.html">namespace</A></B>
+<H3><A NAME="M38">COPYRIGHT</A></H3>
+Copyright (c) 1993 The Regents of the University of California.<BR>
+Copyright (c) 1994-2000 Sun Microsystems Incorporated.<BR>
+Copyright (c) 2005, 2006 by Kevin B. Kenny &lt;kennykb@acm.org&gt;.<BR>
+<div class="copy">Copyright &copy; 1993 The Regents of the University of California.
+<BR>Copyright &copy; 1994-2000 Sun Microsystems, Inc.
+<BR>Copyright &copy; 2005 by Kevin B. Kenny &lt;kennykb(at)acm.org&gt;. All rights reserved
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

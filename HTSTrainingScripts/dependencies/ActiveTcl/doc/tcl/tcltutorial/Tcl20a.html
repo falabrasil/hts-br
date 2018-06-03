@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="Tcl20a.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org">
+<meta name='Author' content='ActiveState'>
+
+<title>More Examples Of Regular Expressions</title>
+<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 class="title">More Examples Of Regular Expressions</h1>
+
+<div class="nav"><a href="Tcl20.html">Previous lesson</a> | <a
+href="tcltutorial.html">Index</a> | <a href="Tcl21.html">Next
+lesson</a></div>
+
+Regular expressions provide a very powerful method of defining a
+pattern, but they are a bit awkward to understand and to use
+properly. So let us examine some more examples in detail. <br>
+<br>
+<p>We start with a simple yet non-trivial example: finding
+<i>floating-point numbers</i> in a line of text. Do not worry: we
+will keep the problem simpler than it is in its full generality. We
+only consider numbers like <code class="arg">1.0</code> and not
+<code class="arg">1.00e+01</code>.</p>
+
+<p>How do we <i>design</i> our regular expression for this problem?
+By examining typical examples of the strings we want to match:</p>
+
+<ul>
+<li>Valid numbers are: 
+
+<pre class="example">
+1.0, .02, +0., 1, +1, -0.0120
+</pre>
+</li>
+
+<li>Invalid numbers (that is, strings we do not want to recognise
+as numbers but superficially look like them): 
+
+<pre class="example">
+-, +., 0.0.1, 0..2, ++1
+</pre>
+</li>
+
+<li>Questionable numbers are: 
+
+<pre class="example">
++0000 and 0001
+</pre>
+
+We will accept them - because they normally are accepted and
+because excluding them makes our pattern more complicated.</li>
+</ul>
+
+A pattern is beginning to emerge: 
+
+<ul>
+<li>
+<p>A number can start with a sign (- or +) or with a digit. This
+can be captured with the expression <code class=
+"keyw">[-+]?</code>, which matches a single "-", a single "+" or
+nothing.</p>
+</li>
+
+<li>
+<p>A number can have zero or more digits in front of a single
+period (.) and it can have zero or more digits following the
+period. Perhaps: <code class="keyw">[0-9]*\.[0-9]*</code> will do
+...</p>
+</li>
+
+<li>
+<p>A number may not contain a period at all. So, revise the
+previous expression to: <code class=
+"keyw">[0-9]*\.?[0-9]*</code></p>
+</li>
+</ul>
+
+The total expression is: 
+
+<pre class="example">
+[-+]?[0-9]*\.?[0-9]*
+</pre>
+
+At this point we can do three things: 
+
+<ol>
+<li>
+<p>Try the expression with a bunch of examples like the ones above
+and see if the proper ones match and the others do not.</p>
+</li>
+
+<li>
+<p>Try to make it look nicer, before we start off testing it. For
+instance the class of characters "[0-9]" is so common that it has a
+shortcut, "\d". So, we could settle for:</p>
+
+<pre class="example">
+[-+]?\d*\.?\d*
+</pre>
+
+<p>instead. Or we could decide that we want to capture the digits
+before and after the period for special processing:</p>
+
+<pre class="example">
+[-+]?([0-9])*\.?([0-9]*)
+</pre>
+</li>
+
+<li>
+<p>Or, and that may be a good strategy in general!, we can
+carefully examine the pattern before we start actually using
+it.</p>
+</li>
+</ol>
+
+<br>
+<br>
+<p>You see, there is a problem with the above pattern: all the
+parts are optional, that is, each part can match a null string - no
+sign, no digits before the period, no period, no digits after the
+period. In other words: <i>Our pattern can match an empty
+string!</i></p>
+
+<p>Our questionable numbers, like "+000" will be perfectly
+acceptable and we (grudgingly) agree. But more surprisingly, the
+strings "--1" and "A1B2" will be accepted too! Why? Because the
+pattern can start anywhere in the string, so it would match the
+substrings "-1" and "1" respectively!</p>
+
+<p>We need to reconsider our pattern - it is too simple, too
+permissive:</p>
+
+<ul>
+<li>
+<p>The character before a minus or a plus, if there is any, can not
+be another digit, a period or a minus or plus. Let us make it a
+space or a tab or the beginning of the string: <code class=
+"keyw">^|[ \t]</code></p>
+
+<p>This may look a bit strange, but what it says is:</p>
+
+<blockquote>either the beginning of the string (^ outside the
+square brackets) 
+
+<p><em>or</em> (the vertical bar)</p>
+
+<p>a space or tab (remember: the string "\t" represents the tab
+character).</p>
+</blockquote>
+
+<br>
+<br>
+</li>
+
+<li>
+<p>Any sequence of digits before the period (if there is one) is
+allowed: <code class="keyw">[0-9]+\.?</code></p>
+</li>
+
+<li>
+<p>There may be zero digits in front of the period, but then there
+must be at least one digit behind it: <code class=
+"keyw">\.[0-9]+</code></p>
+</li>
+
+<li>
+<p>And of course digits in front and behind the period: <code
+class="keyw">[0-9]+\.[0-9]+</code></p>
+</li>
+
+<li>
+<p>The character after the string (if any) can not be a "+","-" or
+"." as that would get us into the unacceptable number-like strings:
+<code class="keyw">$|[^+-.]</code> (The dollar sign signifies the
+end of the string)</p>
+</li>
+</ul>
+
+Before trying to write down the complete regular expression, let us
+see what different forms we have: 
+
+<ul>
+<li>
+<p>No period: <code class="keyw">[-+]?[0-9]+</code></p>
+</li>
+
+<li>
+<p>A period without digits before it: <code class=
+"keyw">[-+]?\.[0-9]+</code></p>
+</li>
+
+<li>
+<p>Digits before a period, and possibly digits after it: <code
+class="keyw">[-+]?[0-9]+\.[0-9]*</code></p>
+</li>
+</ul>
+
+<br>
+<br>
+<p>Now the synthesis:</p>
+
+<pre class="example">
+(^|[ \t])([-+]?([0-9]+|\.[0-9]+|[0-9]+\.[0-9]*))($|[^+-.])
+</pre>
+
+Or: 
+
+<pre class="example">
+(^|[ \t])([-+]?(\d+|\.\d+|\d+\.\d*))($|[^+-.])
+</pre>
+
+The parentheses are needed to distinguish the alternatives
+introduced by the vertical bar and to capture the substring we want
+to have. Each set of parentheses also defines a substring and this
+can be put into a separate variable: 
+
+<pre class="example">
+regexp {.....} $line whole char_before number nosign char_after
+
+#
+# Or simply only the recognised number (x's as placeholders, the
+# last can be left out
+#
+regexp {.....} $line x x number
+</pre>
+
+<br>
+<br>
+<p><i>Tip:</i> To identify these substrings: just count the opening
+parentheses from left to right.</p>
+
+<p>If we put it to the test:</p>
+
+<pre class="example">
+set pattern  {(^|[ \t])([-+]?(\d+|\.\d+|\d+\.\d*))($|[^+-.])}
+set examples {"1.0"    " .02"  "  +0."
+              "1"      "+1"    " -0.0120"
+              "+0000"  " - "   "+."
+              "0001"   "0..2"  "++1"
+              "A1.0B"  "A1"}
+foreach e $examples {
+    if { [regexp $pattern $e whole \
+              char_before number digits_before_period] } {
+        puts "&gt;&gt;$e&lt;&lt;: $number ($whole)"
+    } else {
+        puts "&gt;&gt;$e&lt;&lt;: Does not contain a valid number"
+    }
+}
+</pre>
+
+the result is: 
+
+<pre class="example">
+&gt;&gt;1.0&lt;&lt;: 1.0 (1.0)
+&gt;&gt; .02&lt;&lt;: .02 ( .02)
+&gt;&gt;  +0.&lt;&lt;: +0. ( +0.)
+&gt;&gt;1&lt;&lt;: 1 (1)
+&gt;&gt;+1&lt;&lt;: +1 (+1)
+&gt;&gt; -0.0120&lt;&lt;: -0.0120 ( -0.0120)
+&gt;&gt;+0000&lt;&lt;: +0000 (+0000)
+&gt;&gt; - &lt;&lt;: Does not contain a valid number
+&gt;&gt;+.&lt;&lt;: Does not contain a valid number
+&gt;&gt;0001&lt;&lt;: 0001 (0001)
+&gt;&gt;0..2&lt;&lt;: Does not contain a valid number
+&gt;&gt;++1&lt;&lt;: Does not contain a valid number
+&gt;&gt;A1.0B&lt;&lt;: Does not contain a valid number
+&gt;&gt;A1&lt;&lt;: Does not contain a valid number
+</pre>
+
+So our pattern correctly accepts the strings we intended to be
+recognised as numbers and rejects the others. <br>
+<br>
+<hr width="50%">
+<p>Let us turn to some other patterns now:</p>
+
+<ul>
+<li>
+<p>Text enclosed in a string: <i>This is "quoted text".</i> If we
+know the enclosing character in advance (double quotes, " in this
+case), then <code class="keyw">"([^"])*"</code> will capture the
+text inside the double quotes.</p>
+
+<p>Suppose we do not know the enclosing character (it can be " or
+'). Then:</p>
+
+<pre class="example">
+regexp {(["'])[^"']*\1} $string enclosed_string
+</pre>
+
+<p>will do it; the \1 is a so-called back-reference to the first
+captured substring.</p>
+</li>
+
+<li>
+<p>You can use this technique to see if a word occurs twice in the
+same line of text:</p>
+
+<pre class="example">
+set string "Again and again and again ..."
+if { [regexp {(\y\w+\y).+\1} $string =&gt; word] } {
+    puts "The word $word occurs at least twice"
+}
+</pre>
+
+<p>(The pattern \y matches the beginning or the end of a word and
+\w+ indicates we want at least one character).</p>
+</li>
+
+<li>
+<p>Suppose you need to check the parentheses in some mathematical
+expression: <code class="keyw">(1+a)/(1-b*x)</code> for instance. A
+simple check is counting the open and close parentheses:</p>
+
+<pre class="example">
+#
+# Use the return value of [regexp] to count the number of
+# parentheses ...
+#
+if { [regexp -all {(} $string] != [regexp -all {)} $string] } {
+    puts "Parentheses unbalanced!"
+}
+</pre>
+
+<p>Of course, this is just a rough check. A better one is to see if
+at any point while scanning the string there are more close
+parentheses than open parentheses. We can easily extract the
+parentheses and put them in a list (the <b>-inline</b> option does
+that):</p>
+
+<pre class="example">
+set parens  [regexp -inline -all {[()]} $string]
+set balance 0
+set change("(")  1   ;# This technique saves an if-block :)
+set change(")") -1
+
+foreach p $parens {
+    incr balance $change($p)
+
+    if { $balance &lt; 0 } {
+        puts "Parentheses unbalanced!"
+    }
+}
+if { $balance != 0 } {
+    puts "Parentheses unbalanced!"
+}
+</pre>
+</li>
+</ul>
+
+<i>Finally:</i> Regular expressions are very powerful, but they
+have certain theoretical limitations. One of these limitations is
+that they are not suitable for parsing arbitrarily nested text. You
+can experiment with regular expressions using the <a href=
+"http://wiki.tcl.tk/4086">VisualRegexp</a> or <a href=
+"http://wiki.tcl.tk/7992">Visual REGEXP</a> applications. More on
+the theoretical background and practical use of regular expressions
+(there is lots to cover!) can be found in the book <a href=
+"http://wiki.tcl.tk/127">Mastering Regular Expressions</a> by J.
+Friedl. 
+
+<div class="nav"><a href="Tcl20.html">Previous lesson</a> | <a
+href="tcltutorial.html">Index</a> | <a href="Tcl21.html">Next
+lesson</a></div>
+</body>
+</html>
+
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

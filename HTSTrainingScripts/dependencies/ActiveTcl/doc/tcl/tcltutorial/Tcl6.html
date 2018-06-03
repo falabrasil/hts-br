@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="Tcl6.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org">
+<meta name='Author' content='ActiveState'>
+
+<title>Results of a command - Math 101</title>
+<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 class="title">Results of a command - Math 101</h1>
+
+<div class="nav"><a href="Tcl5.html">Previous lesson</a> | <a href=
+"tcltutorial.html">Index</a> | <a href="Tcl6a.html">Next
+lesson</a></div>
+
+<p>The Tcl command for doing math type operations is <code class=
+"keyword">expr</code>. The following discussion of the <code class=
+"keyword">expr</code> command is extracted and adapted from the
+<code class="keyword">expr</code> man page. Many commands use <code
+class="keyword">expr</code> behind the scenes in order to evaluate
+test expressions, such as <code class="keyword">if</code>, <code
+class="keyword">while</code> and <code class="keyword">for</code>
+loops, discussed in later sections. All of the advice given here
+for <code class="keyword">expr</code> also holds for these other
+commands.</p>
+
+<p><code class="keyword">expr</code> takes all of its arguments ("2
++ 2" for example) and evaluates the result as a Tcl "expression"
+(rather than a normal command), and returns the value. The
+operators permitted in Tcl expressions include all the standard
+math functions, logical operators, bitwise operators, as well as
+math functions like <code class="keyword">rand()</code>, <code
+class="keyword">sqrt()</code>, <code class="keyword">cosh()</code>
+and so on. Expressions almost always yield numeric results (integer
+or floating-point values).</p>
+
+<p><strong>Performance tip:</strong> enclosing the arguments to
+<code class="keyword">expr</code> in curly braces will result in
+faster code. So do <code>expr&nbsp;{$i&nbsp;*&nbsp;10}</code>
+instead of simply <code>expr&nbsp;$i&nbsp;*&nbsp;10</code></p>
+
+<div class="warning">
+<p><strong>WARNING:</strong> You should <strong>always</strong> use
+braces when evaluating code that may contain user input, to avoid
+possible security breaches. To illustrate the danger, consider this
+interactive session:</p>
+
+<pre>
+% set userinput {[puts DANGER!]}
+[puts DANGER!]
+% expr $userinput == 1
+DANGER!
+0
+% expr {$userinput == 1}
+0
+</pre>
+
+<p>In the first example, the code contained in the user-supplied
+input is evaluated, whereas in the second the braces prevent this
+potential danger. As a general rule, always surround expressions
+with braces, whether using <code class="keyword">expr</code>
+directly or some other command that takes an expression.</p>
+</div>
+
+<h2>OPERANDS</h2>
+
+<p>A Tcl expression consists of a combination of operands,
+operators, and parentheses. White space may be used between
+operands, operators and parentheses; it is ignored by the
+expression processor. Where possible, operands are interpreted as
+integer values. Integer values may be specified in decimal (the
+normal case), in octal (if the first character of the operand is
+0), or in hexadecimal (if the first two characters of the operand
+are 0x).</p>
+
+<p>Note that the octal and hexadecimal conversion takes place
+differently in the <code class="keyword">expr</code> command than
+in the Tcl substitution phase. In the substitution phase, a
+<b>\x32</b> would be converted to an ascii "2", while <code class=
+"keyword">expr</code> would convert <b>0x32</b> to a decimal
+50.</p>
+
+<p>If an operand does not have one of the integer formats given
+above, then it is treated as a floating-point number, if that is
+possible. Floating-point numbers may be specified in any of the
+ways accepted by an ANSI-compliant C compiler. For example, all of
+the following are valid floating-point numbers:</p>
+
+<pre class="example">
+2.1
+3.
+6E4
+7.91e+16
+.000001
+</pre>
+
+<p>If no numeric interpretation is possible, then an operand is
+left as a string (and only a limited set of operators may be
+applied to it).</p>
+
+<p>Note however, that it does not support numbers of the following
+forms:</p>
+
+<pre class="example">
+2,1    - a decimal comma, instead of a decimal point
+2,100  - a thousands separator
+</pre>
+
+It is possible to deal with numbers in that form, but you will have
+to convert these "strings" to numbers in the standard form first.
+<br>
+<br>
+ 
+
+<p>Beware of leading zeros: 0700 is not interpreted as the decimal
+number 700 (seven hundred), but as the <i>octal</i> number
+700&nbsp;=&nbsp;7*8*8&nbsp;=&nbsp;448 (decimal).</p>
+
+<p>Worse, if the number contains a digit 8 or 9 an error
+results:</p>
+
+<pre class="example">
+% expr {0900+1}
+expected integer but got "0900" (looks like invalid octal number)
+</pre>
+
+Octal numbers are in fact a relic of the past, when such number
+formats were much more common. <br>
+<br>
+ 
+
+<p>Operands may be specified in any of the following ways:</p>
+
+<ul>
+<li>As an numeric value, either integer or floating-point.</li>
+
+<li>As a Tcl variable, using standard $ notation. The variable's
+value will be used as the operand.</li>
+</ul>
+
+<h2>OPERATORS</h2>
+
+<p>The valid operators are listed below, grouped in decreasing
+order of precedence:</p>
+
+<dl>
+<dt>- + ~ !</dt>
+
+<dd>Unary minus, unary plus, bit-wise NOT, logical NOT. None of
+these operators may be applied to string operands, and bit-wise NOT
+may be applied only to integers.</dd>
+
+<dt>**</dt>
+
+<dd>Exponentiation (works on both floating-point numbers and
+integers)</dd>
+
+<dt>* / %</dt>
+
+<dd>Multiply, divide, remainder. None of these operators may be
+applied to string operands, and remainder may be applied only to
+integers. The remainder will always have the same sign as the
+divisor and an absolute value smaller than the divisor.</dd>
+
+<dt>+ -</dt>
+
+<dd>Add and subtract. Valid for any numeric operands.</dd>
+
+<dt>&lt;&lt; &gt;&gt;</dt>
+
+<dd>Left and right (bit) shift. Valid for integer operands
+only.</dd>
+
+<dt>&lt; &gt; &lt;= &gt;=</dt>
+
+<dd>Relational operators: less, greater, less than or equal, and
+greater than or equal. Each operator produces 1 if the condition is
+true, 0 otherwise. These operators may be applied to numeric
+operands as well as strings, in which case string comparison is
+used.</dd>
+
+<dt>eq ne in ni</dt>
+
+<dd>compare two strings for equality (<code class=
+"keyword">eq</code>) or inequality (<code class=
+"keyword">ne</code>). and two operators for checking if a string is
+contained in a list (<code class="keyword">in</code>) or not (<code
+class="keyword">ni</code>). These operators all return 1 (true) or
+0 (false). Using these operators ensures that the operands are
+regarded exclusively as strings (and lists), not as possible
+numbers: 
+
+<pre class="example">
+% expr { "9" == "9.0"}
+1
+% expr { "9" eq "9.0"}
+0
+</pre>
+</dd>
+
+<dt>&amp;</dt>
+
+<dd>Bit-wise AND. Valid for integer operands only.</dd>
+
+<dt>^</dt>
+
+<dd>Bit-wise exclusive OR. Valid for integer operands only.</dd>
+
+<dt>|</dt>
+
+<dd>Bit-wise OR. Valid for integer operands only.</dd>
+
+<dt>&amp;&amp;</dt>
+
+<dd>Logical AND. Produces a 1 result if both operands are non-zero,
+0 otherwise. Valid for numeric operands only (integers or
+floating-point).</dd>
+
+<dt>||</dt>
+
+<dd>Logical OR. Produces a 0 result if both operands are zero, 1
+otherwise. Valid for numeric operands only (integers or
+floating-point).</dd>
+
+<dt>x?y:z</dt>
+
+<dd>If-then-else. If x evaluates to non-zero, then the result is
+the value of y. Otherwise the result is the value of z. The x
+operand must have a numeric value. 
+
+<pre class="example">
+% set x 1
+% expr { $x&gt;0? ($x+1) : ($x-1) }
+2
+</pre>
+</dd>
+</dl>
+
+<h2>MATH FUNCTIONS</h2>
+
+<p>Tcl supports the following mathematical functions in
+expressions:</p>
+
+<pre>
+abs         cosh        log        sqrt
+acos        double      log10      srand
+asin        exp         pow        tan
+atan        floor       rand       tanh
+atan2       fmod        round      wide
+ceil        hypot       sin
+cos         int         sinh
+</pre>
+
+<p>Besides these functions, you can also apply commands within an
+expression. For instance:</p>
+
+<pre class="example">
+% set x 1
+% set w "Abcdef"
+% expr { [string length $w]-2*$x }
+4
+</pre>
+
+<br>
+<br>
+ 
+
+<h2>TYPE CONVERSIONS</h2>
+
+<p>Tcl supports the following functions to convert from one
+representation of a number to another:</p>
+
+<pre>
+double int wide
+</pre>
+
+<ul>
+<li><code class="keyword">double()</code> converts a number to a
+floating-point number.</li>
+
+<li><code class="keyword">int()</code> converts a number to an
+ordinary integer number (by <i>truncating</i> the decimal
+part).</li>
+
+<li><code class="keyword">wide()</code> converts a number to a
+so-called wide integer number (these numbers have a larger
+range).</li>
+</ul>
+
+<p>The <a href="Tcl6a.html">next lesson</a> explains the various
+types of numbers in more detail.</p>
+
+<hr>
+<h2>Example</h2>
+
+<pre class="example">
+set X 100
+set Y 256
+set Z [expr {$Y + $X}]
+set Z_LABEL "$Y plus $X is "
+
+puts "$Z_LABEL $Z"
+puts "The square root of $Y is [expr { sqrt($Y) }]\n"
+
+puts "Because of the precedence rules \"5 + -3 * 4\"   is: [expr {-3 * 4 + 5}]"
+puts "Because of the parentheses      \"(5 + -3) * 4\" is: [expr {(5 + -3) * 4}]"
+
+set A 3
+set B 4
+puts "The hypotenuse of a triangle: [expr {hypot($A,$B)}]"
+
+#
+# The trigonometric functions work with radians ...
+#
+set pi6 [expr {3.1415926/6.0}]
+puts "The sine and cosine of pi/6: [expr {sin($pi6)}] [expr {cos($pi6)}]"
+
+#
+# Working with arrays
+#
+set a(1) 10
+set a(2) 7
+set a(3) 17
+set b    2
+puts "Sum: [expr {$a(1)+$a($b)}]"
+</pre>
+
+<div class="nav"><a href="Tcl5.html">Previous lesson</a> | <a href=
+"tcltutorial.html">Index</a> | <a href="Tcl6a.html">Next
+lesson</a></div>
+</body>
+</html>
+
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

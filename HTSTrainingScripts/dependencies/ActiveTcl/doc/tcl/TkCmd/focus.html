@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="focus.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>focus manual page - Tk Built-In Commands</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tk Commands, version 8.6.7</a> <small>&gt;</small> focus</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="focus.html#M2" NAME="L647">NAME</A>
+<DL><DD>focus &mdash; Manage the input focus</DD></DL>
+<DD><A HREF="focus.html#M3" NAME="L648">SYNOPSIS</A>
+<DL>
+</DL>
+<DD><A HREF="focus.html#M4" NAME="L649">DESCRIPTION</A>
+<DL class="description">
+<DD><A HREF="focus.html#M5" NAME="L650"><B>focus</B></A>
+<DD><A HREF="focus.html#M6" NAME="L651"><B>focus </B><I>window</I></A>
+<DD><A HREF="focus.html#M7" NAME="L652"><B>focus -displayof</B> <I>window</I></A>
+<DD><A HREF="focus.html#M8" NAME="L653"><B>focus -force </B><I>window</I></A>
+<DD><A HREF="focus.html#M9" NAME="L654"><B>focus -lastfor</B> <I>window</I></A>
+</DL>
+<DD><A HREF="focus.html#M10" NAME="L655">QUIRKS</A>
+<DD><A HREF="focus.html#M11" NAME="L656">EXAMPLE</A>
+<DD><A HREF="focus.html#M12" NAME="L657">KEYWORDS</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+focus &mdash; Manage the input focus
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+<B>focus</B><BR>
+<B>focus </B><I>window</I><BR>
+<B>focus </B><I>option</I> ?<I>arg arg ...</I>?<BR>
+<H3><A NAME="M4">DESCRIPTION</A></H3>
+The <B>focus</B> command is used to manage the Tk input focus.
+At any given time, one window on each display is designated as
+the <I>focus window</I>;  any key press or key release events for the
+display are sent to that window.
+It is normally up to the window manager to redirect the focus among the
+top-level windows of a display.  For example, some window managers
+automatically set the input focus to a top-level window whenever
+the mouse enters it;  others redirect the input focus only when
+the user clicks on a window.
+Usually the window manager will set the focus
+only to top-level windows, leaving it up to the application to
+redirect the focus among the children of the top-level.
+<P>
+Tk remembers one focus window for each top-level (the most recent
+descendant of that top-level to receive the focus);  when the window
+manager gives the focus
+to a top-level, Tk automatically redirects it to the remembered
+window.  Within a top-level Tk uses an <I>explicit</I> focus model
+by default.  Moving the mouse within a top-level does not normally
+change the focus;  the focus changes only when a widget
+decides explicitly to claim the focus (e.g., because of a button
+click), or when the user types a key such as Tab that moves the
+focus.
+<P>
+The Tcl procedure <B>tk_focusFollowsMouse</B> may be invoked to
+create an <I>implicit</I> focus model:  it reconfigures Tk so that
+the focus is set to a window whenever the mouse enters it.
+The Tcl procedures <B>tk_focusNext</B> and <B>tk_focusPrev</B>
+implement a focus order among the windows of a top-level;  they
+are used in the default bindings for Tab and Shift-Tab, among other
+things.
+<P>
+The <B>focus</B> command can take any of the following forms:
+<P>
+<DL class="description">
+<DT><A NAME="M5"><B>focus</B></A><DD>
+Returns the path name of the focus window on the display containing
+the application's main window,  or an empty string if no window in
+this application has the focus on that display.   Note:  it is
+better to specify the display explicitly using <B>-displayof</B>
+(see below) so that the code will work in applications using multiple
+displays.
+<P><DT><A NAME="M6"><B>focus </B><I>window</I></A><DD>
+If the application currently has the input focus on <I>window</I>'s
+display, this command resets the input focus for <I>window</I>'s display
+to <I>window</I> and returns an empty string.
+If the application does not currently have the input focus on
+<I>window</I>'s display, <I>window</I> will be remembered as the focus
+for its top-level;  the next time the focus arrives at the top-level,
+Tk will redirect it to <I>window</I>.
+If <I>window</I> is an empty string then the command does nothing.
+<P><DT><A NAME="M7"><B>focus -displayof</B> <I>window</I></A><DD>
+Returns the name of the focus window on the display containing <I>window</I>.
+If the focus window for <I>window</I>'s display is not in this
+application, the return value is an empty string.
+<P><DT><A NAME="M8"><B>focus -force </B><I>window</I></A><DD>
+Sets the focus of <I>window</I>'s display to <I>window</I>, even if
+the application does not currently have the input focus for the display.
+This command should be used sparingly, if at all.
+In normal usage, an application should not claim the focus for
+itself;  instead, it should wait for the window manager to give it
+the focus.
+If <I>window</I> is an empty string then the command does nothing.
+<P><DT><A NAME="M9"><B>focus -lastfor</B> <I>window</I></A><DD>
+Returns the name of the most recent window to have the input focus
+among all the windows in the same top-level as <I>window</I>.
+If no window in that top-level has ever had the input focus, or
+if the most recent focus window has been deleted, then the name
+of the top-level is returned.  The return value is the window that
+will receive the input focus the next time the window manager gives
+the focus to the top-level.
+<P></DL>
+<H3><A NAME="M10">QUIRKS</A></H3>
+When an internal window receives the input focus, Tk does not actually
+set the X focus to that window;  as far as X is concerned, the focus
+will stay on the top-level window containing the window with the focus.
+However, Tk generates FocusIn and FocusOut events just as if the X
+focus were on the internal window.   This approach gets around a
+number of problems that would occur if the X focus were actually moved;
+the fact that the X focus is on the top-level is invisible unless
+you use C code to query the X server directly.
+<H3><A NAME="M11">EXAMPLE</A></H3>
+To make a window that only participates in the focus traversal ring
+when a variable is set, add the following bindings to the widgets
+<I>before</I> and <I>after</I> it in that focus ring:
+<PRE>button .before -text &quot;Before&quot;
+button .middle -text &quot;Middle&quot;
+button .after  -text &quot;After&quot;
+checkbutton .flag -variable traverseToMiddle -takefocus 0
+pack .flag -side left
+pack .before .middle .after
+bind .before &lt;Tab&gt; {
+   if {!$traverseToMiddle} {
+      <B>focus</B> .after
+      break
+   }
+}
+bind .after &lt;Shift-Tab&gt; {
+   if {!$traverseToMiddle} {
+      <B>focus</B> .before
+      break
+   }
+}
+<B>focus</B> .before</PRE>
+<H3><A NAME="M12">KEYWORDS</A></H3>
+<A href="../Keywords/E.html#events">events</A>, <A href="../Keywords/F.html#focus">focus</A>, <A href="../Keywords/K.html#keyboard">keyboard</A>, <A href="../Keywords/T.html#top-level">top-level</A>, <A href="../Keywords/W.html#window manager">window manager</A>
+<div class="copy">Copyright &copy; 1990-1994 The Regents of the University of California.
+<BR>Copyright &copy; 1994-1996 Sun Microsystems, Inc.
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

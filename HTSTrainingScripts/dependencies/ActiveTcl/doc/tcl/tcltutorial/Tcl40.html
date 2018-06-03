@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="Tcl40.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org">
+<meta name='Author' content='ActiveState'>
+
+<title>Channel I/O: socket, fileevent, vwait</title>
+<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 class="title">Channel I/O: socket, fileevent, vwait</h1>
+
+<div class="nav"><a href="Tcl39.html">Previous lesson</a> | <a
+href="tcltutorial.html">Index</a> | <a href="Tcl41.html">Next
+lesson</a></div>
+
+<p>Tcl I/O is based on a the concept of channels. A channel is
+conceptually similar to a <code class="keyword">FILE *</code> in C,
+or a stream in shell programming. The difference is that a channel
+may be a either a stream device like a file, or a connection
+oriented construct like a socket.</p>
+
+<p>A stream based channel is created with the <code class=
+"keyword">open</code> command, as discussed in lesson 26. A socket
+based channel is created with a <code class="keyword">socket</code>
+command. A socket can be opened as either as a client, or as a
+server.</p>
+
+<p>If a socket channel is opened as a server, then the tcl program
+will 'listen' on that channel for another task to attempt to
+connect with it. When this happens, a new channel is created for
+that link (server-&gt; new client), and the tcl program continues
+to listen for connections on the original port number. In this way,
+a single Tcl server could be talking to several clients
+simultaneously.</p>
+
+<p>When a channel exists, a handler can be defined that will be
+invoked when the channel is available for reading or writing. This
+handler is defined with the <code class="keyword">fileevent</code>
+command. When a tcl procedure does a <code class=
+"keyword">gets</code> or <code class="keyword">puts</code> to a
+blocking device, and the device isn't ready for I/O, the program
+will block until the device is ready. This may be a long while if
+the other end of the I/O channel has gone off line. Using the <code
+class="keyword">fileevent</code> command, the program only accesses
+an I/O channel when it is ready to move data.</p>
+
+<p>Finally, there is a command to wait until an event happens. The
+<code class="keyword">vwait</code> command will wait until a
+variable is set. This can be used to create a semaphore style
+functionality for the interaction between client and server, and
+let a controlling procedure know that an event has occurred.</p>
+
+<p>Look at the example, and you'll see the <code class=
+"keyword">socket</code> command being used as both client and
+server, and the <code class="keyword">fileevent</code> and <code
+class="keyword">vwait</code> commands being used to control the I/O
+between the client and server.</p>
+
+<p>Note in particular the <code class="keyword">flush</code>
+commands being used. Just as a channel that is opened as a pipe to
+a command doesn't send data until either a <code class=
+"keyword">flush</code> is invoked, or a buffer is filled, the
+socket based channels don't automatically send data.</p>
+
+<dl>
+<dt><code class="keyword">socket -server</code> <code class=
+"arg">command</code> <code class="arg">?options?</code> <code
+class="arg">port</code></dt>
+
+<dd>The <code class="keyword">socket</code> command with the <code
+class="keyword">-server</code> flag starts a server socket listing
+on port <code class="arg">port</code>. When a connection occurs on
+<code class="arg">port</code>, the proc <code class=
+"arg">command</code> is called with the arguments: 
+
+<ul>
+<li><code class="arg">channel</code> - The channel for the new
+client</li>
+
+<li><code class="arg">address</code> - The IP Address of this
+client</li>
+
+<li><code class="arg">port</code> The port that is assigned to this
+client</li>
+</ul>
+</dd>
+
+<dt><code class="keyword">socket</code> <code class=
+"arg">?options?</code> <code class="arg">host</code> <code class=
+"arg">port</code></dt>
+
+<dd>The <code class="keyword">socket</code> command without the
+<code class="keyword">-server</code> option opens a client
+connection to the system with IP Address <code class=
+"arg">host</code> and port address <code class="arg">port</code>.
+The IP Address may be given as a numeric string, or as a fully
+qualified domain address.</dd>
+
+<dd>To connect to the local host, use the address 127.0.0.1 (the
+loopback address).</dd>
+
+<dt><code class="keyword">fileevent</code> <code class=
+"arg">channelID</code> <code class="keyword">readable</code> <code
+class="arg">?script?</code></dt>
+
+<dt><code class="keyword">fileevent</code> <code class=
+"arg">channelID</code> <code class="keyword">writeable</code> <code
+class="arg">?script?</code></dt>
+
+<dd>The <code class="keyword">fileevent</code> command defines a
+handler to be invoked when a condition occurs. The conditions are
+<code class="keyword">readable</code>, which invokes <code class=
+"arg">script</code> when data is ready to be read on <code class=
+"arg">channelID</code>, and <code class="keyword">writeable</code>,
+when <code class="arg">channelID</code> is ready to receive data.
+Note that end-of-file must be checked for by the <code class=
+"arg">script</code>.</dd>
+
+<dt><code class="keyword">vwait</code> <code class=
+"arg">varName</code></dt>
+
+<dd>The <code class="keyword">vwait</code> command pauses the
+execution of a script until some background action sets the value
+of <code class="arg">varName</code>. A background action can be a
+proc invoked by a fileevent, or a socket connection, or an event
+from a tk widget.</dd>
+</dl>
+
+<hr>
+<h2>Examples</h2>
+
+<pre class="example">
+proc serverOpen {channel addr port} {
+    global connected
+    set connected 1
+    fileevent $channel readable "readLine Server $channel"
+    puts "OPENED"
+}
+
+proc readLine {who channel} {
+    global didRead
+    if { [gets $channel line] &lt; 0} {
+    fileevent $channel readable {}
+    after idle "close $channel;set out 1"
+    } else {
+    puts "READ LINE: $line"
+    puts $channel "This is a return"
+    flush $channel;
+    set didRead 1
+    }
+}
+
+set connected 0
+# catch {socket -server serverOpen 33000} server
+set server [socket -server serverOpen 33000]
+
+after 100 update
+
+set sock [socket -async 127.0.0.1 33000]
+vwait connected
+
+puts $sock "A Test Line"
+flush $sock
+vwait didRead
+set len [gets $sock line]
+puts "Return line: $len -- $line"
+
+catch {close $sock}
+vwait out
+close $server
+</pre>
+
+<div class="nav"><a href="Tcl39.html">Previous lesson</a> | <a
+href="tcltutorial.html">Index</a> | <a href="Tcl41.html">Next
+lesson</a></div>
+</body>
+</html>
+
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

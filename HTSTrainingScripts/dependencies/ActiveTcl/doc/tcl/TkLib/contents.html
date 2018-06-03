@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="contents.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>Tk C API, version 8.6.7</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> Tk C API, version 8.6.7</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="../TkCmd/contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<table>
+<tr><td> <a href="3DBorder.html" title="Draw borders with three-dimensional appearance">Tk_3DBorderColor</a> </td><td> <a href="WindowId.html" title="Retrieve information from Tk's local data structure">Tk_DisplayName</a> </td><td> <a href="GetRelief.html" title="Translate between strings and relief values">Tk_GetReliefFromObj</a> </td><td> <a href="TextLayout.html" title="Routines to measure and display single-font, multi-line, justified text.">Tk_PointToChar</a> </td></tr>
+<tr><td> <a href="3DBorder.html" title="Draw borders with three-dimensional appearance">Tk_3DBorderGC</a> </td><td> <a href="TextLayout.html" title="Routines to measure and display single-font, multi-line, justified text.">Tk_DistanceToTextLayout</a> </td><td> <a href="GetRootCrd.html" title="Compute root-window coordinates of window">Tk_GetRootCoords</a> </td><td> <a href="FontId.html" title="Accessor functions for
+fonts">Tk_PostscriptFontName</a> </td></tr>
+<tr><td> <a href="3DBorder.html" title="Draw borders with three-dimensional appearance">Tk_3DHorizontalBevel</a> </td><td> <a href="3DBorder.html" title="Draw borders with three-dimensional appearance">Tk_Draw3DPolygon</a> </td><td> <a href="GetPixels.html" title="Translate between strings and screen units">Tk_GetScreenMM</a> </td><td> <a href="GetClrmap.html" title="Allocate and free colormaps">Tk_PreserveColormap</a> </td></tr>
+<tr><td> <a href="3DBorder.html" title="Draw borders with three-dimensional appearance">Tk_3DVerticalBevel</a> </td><td> <a href="3DBorder.html" title="Draw borders with three-dimensional appearance">Tk_Draw3DRectangle</a> </td><td> <a href="GetScroll.html" title="Parse arguments for scrolling commands">Tk_GetScrollInfo</a> </td><td> <a href="QWinEvent.html" title="Add a window event to the Tcl event queue">Tk_QueueWindowEvent</a> </td></tr>
+<tr><td> <a href="AddOption.html" title="Add an option to the option database">Tk_AddOption</a> </td><td> <a href="MeasureChar.html" title="Routines to measure and display simple single-line strings.">Tk_DrawChars</a> </td><td> <a href="GetScroll.html" title="Parse arguments for scrolling commands">Tk_GetScrollInfoObj</a> </td><td> <a href="GetImage.html" title="Use an image in a widget">Tk_RedrawImage</a> </td></tr>
+<tr><td> <a href="3DBorder.html" title="Draw borders with three-dimensional appearance">Tk_Alloc3DBorderFromObj</a> </td><td> <a href="DrawFocHlt.html" title="Draw the traversal highlight ring for a widget">Tk_DrawFocusHighlight</a> </td><td> <a href="GetSelect.html" title="Retrieve the contents of a selection">Tk_GetSelection</a> </td><td> <a href="WindowId.html" title="Retrieve information from Tk's local data structure">Tk_ReqHeight</a> </td></tr>
+<tr><td> <a href="GetBitmap.html" title="Maintain database of single-plane pixmaps">Tk_AllocBitmapFromObj</a> </td><td> <a href="TextLayout.html" title="Routines to measure and display single-font, multi-line, justified text.">Tk_DrawTextLayout</a> </td><td> <a href="GetUid.html" title="Convert from string to unique identifier">Tk_GetUid</a> </td><td> <a href="WindowId.html" title="Retrieve information from Tk's local data structure">Tk_ReqWidth</a> </td></tr>
+<tr><td> <a href="GetColor.html" title="Maintain database of colors">Tk_AllocColorFromObj</a> </td><td> <a href="3DBorder.html" title="Draw borders with three-dimensional appearance">Tk_Fill3DPolygon</a> </td><td> <a href="Inactive.html" title="Discover user inactivity time">Tk_GetUserInactiveTime</a> </td><td> <a href="Inactive.html" title="Discover user inactivity time">Tk_ResetUserInactiveTime</a> </td></tr>
+<tr><td> <a href="GetCursor.html" title="Maintain database of cursors">Tk_AllocCursorFromObj</a> </td><td> <a href="3DBorder.html" title="Draw borders with three-dimensional appearance">Tk_Fill3DRectangle</a> </td><td> <a href="GetVisual.html" title="Translate from string to visual">Tk_GetVisual</a> </td><td> <a href="ConfigWind.html" title="Change window configuration or attributes">Tk_ResizeWindow</a> </td></tr>
+<tr><td> <a href="GetFont.html" title="Maintain database of fonts">Tk_AllocFontFromObj</a> </td><td> <a href="FindPhoto.html" title="Manipulate the image data stored in a photo image.">Tk_FindPhoto</a> </td><td> <a href="GetVRoot.html" title="Get location and size of virtual root for window">Tk_GetVRootGeometry</a> </td><td> <a href="Restack.html" title="Change a window's position in the stacking order">Tk_RestackWindow</a> </td></tr>
+<tr><td> <a href="GetHWND.html" title="Manage interactions between the Windows handle and an X window">Tk_AttachHWND</a> </td><td> <a href="FontId.html" title="Accessor functions for
+fonts">Tk_FontId</a> </td><td> <a href="Grab.html" title="Manipulate grab state in an application">Tk_Grab</a> </td><td> <a href="SetOptions.html" title="Process configuration options">Tk_RestoreSavedOptions</a> </td></tr>
+<tr><td> <a href="WindowId.html" title="Retrieve information from Tk's local data structure">Tk_Attributes</a> </td><td> <a href="3DBorder.html" title="Draw borders with three-dimensional appearance">Tk_Free3DBorder</a> </td><td> <a href="HandleEvent.html" title="Invoke event handlers for window system events">Tk_HandleEvent</a> </td><td> <a href="RestrictEv.html" title="Filter and selectively delay X events">Tk_RestrictEvents</a> </td></tr>
+<tr><td> <a href="BindTable.html" title="Invoke scripts in response to X events">Tk_BindEvent</a> </td><td> <a href="3DBorder.html" title="Draw borders with three-dimensional appearance">Tk_Free3DBorderFromObj</a> </td><td> <a href="WindowId.html" title="Retrieve information from Tk's local data structure">Tk_Height</a> </td><td> <a href="Tk_Init.html" title="Add Tk to an interpreter and make a new Tk application.">Tk_SafeInit</a> </td></tr>
+<tr><td> <a href="CanvTkwin.html" title="Utility procedures for canvas type managers">Tk_CanvasDrawableCoords</a> </td><td> <a href="GetBitmap.html" title="Maintain database of single-plane pixmaps">Tk_FreeBitmap</a> </td><td> <a href="HWNDToWindow.html" title="Find Tk's window information for a Windows window">Tk_HWNDToWindow</a> </td><td> <a href="WindowId.html" title="Retrieve information from Tk's local data structure">Tk_Screen</a> </td></tr>
+<tr><td> <a href="CanvTkwin.html" title="Utility procedures for canvas type managers">Tk_CanvasEventuallyRedraw</a> </td><td> <a href="GetBitmap.html" title="Maintain database of single-plane pixmaps">Tk_FreeBitmapFromObj</a> </td><td> <a href="IdToWindow.html" title="Find Tk's window information for an X window">Tk_IdToWindow</a> </td><td> <a href="WindowId.html" title="Retrieve information from Tk's local data structure">Tk_ScreenNumber</a> </td></tr>
+<tr><td> <a href="CanvTkwin.html" title="Utility procedures for canvas type managers">Tk_CanvasGetCoord</a> </td><td> <a href="GetColor.html" title="Maintain database of colors">Tk_FreeColor</a> </td><td> <a href="ImgChanged.html" title="Notify widgets that image needs to be redrawn">Tk_ImageChanged</a> </td><td> <a href="SetAppName.html" title="Set the name of an application for 'send' commands">Tk_SetAppName</a> </td></tr>
+<tr><td> <a href="CanvPsY.html" title="Utility procedures for generating Postscript for canvases">Tk_CanvasPsBitmap</a> </td><td> <a href="GetColor.html" title="Maintain database of colors">Tk_FreeColorFromObj</a> </td><td> <a href="Tk_Init.html" title="Add Tk to an interpreter and make a new Tk application.">Tk_Init</a> </td><td> <a href="3DBorder.html" title="Draw borders with three-dimensional appearance">Tk_SetBackgroundFromBorder</a> </td></tr>
+<tr><td> <a href="CanvPsY.html" title="Utility procedures for generating Postscript for canvases">Tk_CanvasPsColor</a> </td><td> <a href="GetClrmap.html" title="Allocate and free colormaps">Tk_FreeColormap</a> </td><td> <a href="CrtConsoleChan.html" title="Install the console channels as standard channels">Tk_InitConsoleChannels</a> </td><td> <a href="SetCaret.html" title="Set the display caret location">Tk_SetCaretPos</a> </td></tr>
+<tr><td> <a href="CanvPsY.html" title="Utility procedures for generating Postscript for canvases">Tk_CanvasPsFont</a> </td><td> <a href="SetOptions.html" title="Process configuration options">Tk_FreeConfigOptions</a> </td><td> <a href="CrtImgType.html" title="Define new kind of image">Tk_InitImageArgs</a> </td><td> <a href="SetClass.html" title="Set or retrieve a window's class">Tk_SetClass</a> </td></tr>
+<tr><td> <a href="CanvPsY.html" title="Utility procedures for generating Postscript for canvases">Tk_CanvasPsPath</a> </td><td> <a href="GetCursor.html" title="Maintain database of cursors">Tk_FreeCursor</a> </td><td> <a href="SetOptions.html" title="Process configuration options">Tk_InitOptions</a> </td><td> <a href="SetClassProcs.html" title="Register widget specific procedures">Tk_SetClassProcs</a> </td></tr>
+<tr><td> <a href="CanvPsY.html" title="Utility procedures for generating Postscript for canvases">Tk_CanvasPsStipple</a> </td><td> <a href="GetCursor.html" title="Maintain database of cursors">Tk_FreeCursorFromObj</a> </td><td> <a href="TkInitStubs.html" title="Initialize the Tk stubs mechanism">Tk_InitStubs</a> </td><td> <a href="SetGrid.html" title="Control the grid for interactive resizing">Tk_SetGrid</a> </td></tr>
+<tr><td> <a href="CanvPsY.html" title="Utility procedures for generating Postscript for canvases">Tk_CanvasPsY</a> </td><td> <a href="GetFont.html" title="Maintain database of fonts">Tk_FreeFont</a> </td><td> <a href="WindowId.html" title="Retrieve information from Tk's local data structure">Tk_InternalBorderBottom</a> </td><td> <a href="GeomReq.html" title="Specify desired geometry or internal border for a window">Tk_SetInternalBorder</a> </td></tr>
+<tr><td> <a href="CanvTkwin.html" title="Utility procedures for canvas type managers">Tk_CanvasSetStippleOrigin</a> </td><td> <a href="GetFont.html" title="Maintain database of fonts">Tk_FreeFontFromObj</a> </td><td> <a href="WindowId.html" title="Retrieve information from Tk's local data structure">Tk_InternalBorderLeft</a> </td><td> <a href="GeomReq.html" title="Specify desired geometry or internal border for a window">Tk_SetInternalBorderEx</a> </td></tr>
+<tr><td> <a href="CanvTkwin.html" title="Utility procedures for canvas type managers">Tk_CanvasTagsOption</a> </td><td> <a href="GetGC.html" title="Maintain database of read-only graphics contexts">Tk_FreeGC</a> </td><td> <a href="WindowId.html" title="Retrieve information from Tk's local data structure">Tk_InternalBorderRight</a> </td><td> <a href="GeomReq.html" title="Specify desired geometry or internal border for a window">Tk_SetMinimumRequestSize</a> </td></tr>
+<tr><td> <a href="CanvTxtInfo.html" title="Additional information for managing text items in canvases">Tk_CanvasTextInfo</a> </td><td> <a href="GetImage.html" title="Use an image in a widget">Tk_FreeImage</a> </td><td> <a href="WindowId.html" title="Retrieve information from Tk's local data structure">Tk_InternalBorderTop</a> </td><td> <a href="SetOptions.html" title="Process configuration options">Tk_SetOptions</a> </td></tr>
+<tr><td> <a href="CanvTkwin.html" title="Utility procedures for canvas type managers">Tk_CanvasTkwin</a> </td><td> <a href="ConfigWidg.html" title="Process configuration options for widgets">Tk_FreeOptions</a> </td><td> <a href="InternAtom.html" title="Manage cache of X atoms">Tk_InternAtom</a> </td><td> <a href="ConfigWind.html" title="Change window configuration or attributes">Tk_SetWindowBackground</a> </td></tr>
+<tr><td> <a href="CanvTkwin.html" title="Utility procedures for canvas type managers">Tk_CanvasWindowCoords</a> </td><td> <a href="GetPixmap.html" title="Allocate and free pixmaps">Tk_FreePixmap</a> </td><td> <a href="WindowId.html" title="Retrieve information from Tk's local data structure">Tk_Interp</a> </td><td> <a href="ConfigWind.html" title="Change window configuration or attributes">Tk_SetWindowBackgroundPixmap</a> </td></tr>
+<tr><td> <a href="WindowId.html" title="Retrieve information from Tk's local data structure">Tk_Changes</a> </td><td> <a href="SetOptions.html" title="Process configuration options">Tk_FreeSavedOptions</a> </td><td> <a href="TextLayout.html" title="Routines to measure and display single-font, multi-line, justified text.">Tk_IntersectTextLayout</a> </td><td> <a href="ConfigWind.html" title="Change window configuration or attributes">Tk_SetWindowBorder</a> </td></tr>
+<tr><td> <a href="ConfigWind.html" title="Change window configuration or attributes">Tk_ChangeWindowAttributes</a> </td><td> <a href="TextLayout.html" title="Routines to measure and display single-font, multi-line, justified text.">Tk_FreeTextLayout</a> </td><td> <a href="WindowId.html" title="Retrieve information from Tk's local data structure">Tk_IsContainer</a> </td><td> <a href="ConfigWind.html" title="Change window configuration or attributes">Tk_SetWindowBorderPixmap</a> </td></tr>
+<tr><td> <a href="TextLayout.html" title="Routines to measure and display single-font, multi-line, justified text.">Tk_CharBbox</a> </td><td> <a href="FreeXId.html" title="Make X resource identifier available for reuse">Tk_FreeXId</a> </td><td> <a href="WindowId.html" title="Retrieve information from Tk's local data structure">Tk_IsEmbedded</a> </td><td> <a href="ConfigWind.html" title="Change window configuration or attributes">Tk_SetWindowBorderWidth</a> </td></tr>
+<tr><td> <a href="SetClass.html" title="Set or retrieve a window's class">Tk_Class</a> </td><td> <a href="GeomReq.html" title="Specify desired geometry or internal border for a window">Tk_GeometryRequest</a> </td><td> <a href="WindowId.html" title="Retrieve information from Tk's local data structure">Tk_IsMapped</a> </td><td> <a href="ConfigWind.html" title="Change window configuration or attributes">Tk_SetWindowColormap</a> </td></tr>
+<tr><td> <a href="ClrSelect.html" title="Deselect a selection">Tk_ClearSelection</a> </td><td> <a href="3DBorder.html" title="Draw borders with three-dimensional appearance">Tk_Get3DBorder</a> </td><td> <a href="WindowId.html" title="Retrieve information from Tk's local data structure">Tk_IsTopLevel</a> </td><td> <a href="SetVisual.html" title="Change visual characteristics of window">Tk_SetWindowVisual</a> </td></tr>
+<tr><td> <a href="Clipboard.html" title="Manage the clipboard">Tk_ClipboardAppend</a> </td><td> <a href="3DBorder.html" title="Draw borders with three-dimensional appearance">Tk_Get3DBorderFromObj</a> </td><td> <a href="Tk_Main.html" title="Main program for Tk-based applications">Tk_Main</a> </td><td> <a href="GetBitmap.html" title="Maintain database of single-plane pixmaps">Tk_SizeOfBitmap</a> </td></tr>
+<tr><td> <a href="Clipboard.html" title="Manage the clipboard">Tk_ClipboardClear</a> </td><td> <a href="BindTable.html" title="Invoke scripts in response to X events">Tk_GetAllBindings</a> </td><td> <a href="MainLoop.html" title="Loop for events until all windows are deleted">Tk_MainLoop</a> </td><td> <a href="GetImage.html" title="Use an image in a widget">Tk_SizeOfImage</a> </td></tr>
+<tr><td> <a href="QWinEvent.html" title="Add a window event to the Tcl event queue">Tk_CollapseMotionEvents</a> </td><td> <a href="GetAnchor.html" title="Translate between strings and anchor positions">Tk_GetAnchor</a> </td><td> <a href="MaintGeom.html" title="Maintain geometry of one window relative to another">Tk_MaintainGeometry</a> </td><td> <a href="StrictMotif.html" title="Return value of tk_strictMotif variable">Tk_StrictMotif</a> </td></tr>
+<tr><td> <a href="WindowId.html" title="Retrieve information from Tk's local data structure">Tk_Colormap</a> </td><td> <a href="GetAnchor.html" title="Translate between strings and anchor positions">Tk_GetAnchorFromObj</a> </td><td> <a href="MainWin.html" title="Functions for querying main window information">Tk_MainWindow</a> </td><td> <a href="TextLayout.html" title="Routines to measure and display single-font, multi-line, justified text.">Tk_TextLayoutToPostscript</a> </td></tr>
+<tr><td> <a href="TextLayout.html" title="Routines to measure and display single-font, multi-line, justified text.">Tk_ComputeTextLayout</a> </td><td> <a href="InternAtom.html" title="Manage cache of X atoms">Tk_GetAtomName</a> </td><td> <a href="CrtWindow.html" title="Create or delete window">Tk_MakeWindowExist</a> </td><td> <a href="MeasureChar.html" title="Routines to measure and display simple single-line strings.">Tk_TextWidth</a> </td></tr>
+<tr><td> <a href="ConfigWidg.html" title="Process configuration options for widgets">Tk_ConfigureInfo</a> </td><td> <a href="BindTable.html" title="Invoke scripts in response to X events">Tk_GetBinding</a> </td><td> <a href="ManageGeom.html" title="Arrange to handle geometry requests for a window">Tk_ManageGeometry</a> </td><td> <a href="GetUid.html" title="Convert from string to unique identifier">Tk_Uid</a> </td></tr>
+<tr><td> <a href="ConfigWidg.html" title="Process configuration options for widgets">Tk_ConfigureValue</a> </td><td> <a href="GetBitmap.html" title="Maintain database of single-plane pixmaps">Tk_GetBitmap</a> </td><td> <a href="MapWindow.html" title="Map or unmap a window">Tk_MapWindow</a> </td><td> <a href="ConfigWind.html" title="Change window configuration or attributes">Tk_UndefineCursor</a> </td></tr>
+<tr><td> <a href="ConfigWidg.html" title="Process configuration options for widgets">Tk_ConfigureWidget</a> </td><td> <a href="GetBitmap.html" title="Maintain database of single-plane pixmaps">Tk_GetBitmapFromObj</a> </td><td> <a href="MeasureChar.html" title="Routines to measure and display simple single-line strings.">Tk_MeasureChars</a> </td><td> <a href="MeasureChar.html" title="Routines to measure and display simple single-line strings.">Tk_UnderlineChars</a> </td></tr>
+<tr><td> <a href="ConfigWind.html" title="Change window configuration or attributes">Tk_ConfigureWindow</a> </td><td> <a href="GetCapStyl.html" title="Translate between strings and cap styles">Tk_GetCapStyle</a> </td><td> <a href="WindowId.html" title="Retrieve information from Tk's local data structure">Tk_MinReqHeight</a> </td><td> <a href="TextLayout.html" title="Routines to measure and display single-font, multi-line, justified text.">Tk_UnderlineTextLayout</a> </td></tr>
+<tr><td> <a href="CoordToWin.html" title="Find window containing a point">Tk_CoordsToWindow</a> </td><td> <a href="GetColor.html" title="Maintain database of colors">Tk_GetColor</a> </td><td> <a href="WindowId.html" title="Retrieve information from Tk's local data structure">Tk_MinReqWidth</a> </td><td> <a href="Grab.html" title="Manipulate grab state in an application">Tk_Ungrab</a> </td></tr>
+<tr><td> <a href="BindTable.html" title="Invoke scripts in response to X events">Tk_CreateBinding</a> </td><td> <a href="GetColor.html" title="Maintain database of colors">Tk_GetColorByValue</a> </td><td> <a href="ConfigWind.html" title="Change window configuration or attributes">Tk_MoveResizeWindow</a> </td><td> <a href="MaintGeom.html" title="Maintain geometry of one window relative to another">Tk_UnmaintainGeometry</a> </td></tr>
+<tr><td> <a href="BindTable.html" title="Invoke scripts in response to X events">Tk_CreateBindingTable</a> </td><td> <a href="GetColor.html" title="Maintain database of colors">Tk_GetColorFromObj</a> </td><td> <a href="MoveToplev.html" title="Adjust the position of a top-level window">Tk_MoveToplevelWindow</a> </td><td> <a href="MapWindow.html" title="Map or unmap a window">Tk_UnmapWindow</a> </td></tr>
+<tr><td> <a href="CrtCmHdlr.html" title="Associate procedure callback with ClientMessage type X events">Tk_CreateClientMessageHandler</a> </td><td> <a href="GetClrmap.html" title="Allocate and free colormaps">Tk_GetColormap</a> </td><td> <a href="ConfigWind.html" title="Change window configuration or attributes">Tk_MoveWindow</a> </td><td> <a href="SetGrid.html" title="Control the grid for interactive resizing">Tk_UnsetGrid</a> </td></tr>
+<tr><td> <a href="CrtErrHdlr.html" title="Handle X protocol errors">Tk_CreateErrorHandler</a> </td><td> <a href="GetCursor.html" title="Maintain database of cursors">Tk_GetCursor</a> </td><td> <a href="Name.html" title="Convert between names and window tokens">Tk_Name</a> </td><td> <a href="WindowId.html" title="Retrieve information from Tk's local data structure">Tk_Visual</a> </td></tr>
+<tr><td> <a href="EventHndlr.html" title="Associate procedure callback with an X event">Tk_CreateEventHandler</a> </td><td> <a href="GetCursor.html" title="Maintain database of cursors">Tk_GetCursorFromData</a> </td><td> <a href="3DBorder.html" title="Draw borders with three-dimensional appearance">Tk_NameOf3DBorder</a> </td><td> <a href="WindowId.html" title="Retrieve information from Tk's local data structure">Tk_Width</a> </td></tr>
+<tr><td> <a href="CrtGenHdlr.html" title="Associate procedure callback with all X events">Tk_CreateGenericHandler</a> </td><td> <a href="GetCursor.html" title="Maintain database of cursors">Tk_GetCursorFromObj</a> </td><td> <a href="GetAnchor.html" title="Translate between strings and anchor positions">Tk_NameOfAnchor</a> </td><td> <a href="WindowId.html" title="Retrieve information from Tk's local data structure">Tk_WindowId</a> </td></tr>
+<tr><td> <a href="CrtImgType.html" title="Define new kind of image">Tk_CreateImageType</a> </td><td> <a href="GetDash.html" title="Convert from string to valid dash structure.">Tk_GetDash</a> </td><td> <a href="GetBitmap.html" title="Maintain database of single-plane pixmaps">Tk_NameOfBitmap</a> </td><td> <a href="WindowId.html" title="Retrieve information from Tk's local data structure">Tk_X</a> </td></tr>
+<tr><td> <a href="CrtItemType.html" title="Define new kind of canvas item">Tk_CreateItemType</a> </td><td> <a href="GetFont.html" title="Maintain database of fonts">Tk_GetFont</a> </td><td> <a href="GetCapStyl.html" title="Translate between strings and cap styles">Tk_NameOfCapStyle</a> </td><td> <a href="WindowId.html" title="Retrieve information from Tk's local data structure">Tk_Y</a> </td></tr>
+<tr><td> <a href="SetOptions.html" title="Process configuration options">Tk_CreateOptionTable</a> </td><td> <a href="GetFont.html" title="Maintain database of fonts">Tk_GetFontFromObj</a> </td><td> <a href="GetColor.html" title="Maintain database of colors">Tk_NameOfColor</a> </td><td> <a href="ttk_Geometry.html" title="Tk themed geometry utilities">Ttk_AddPadding</a> </td></tr>
+<tr><td> <a href="CrtPhImgFmt.html" title="Define new file format for photo images">Tk_CreatePhotoImageFormat</a> </td><td> <a href="FontId.html" title="Accessor functions for
+fonts">Tk_GetFontMetrics</a> </td><td> <a href="GetCursor.html" title="Maintain database of cursors">Tk_NameOfCursor</a> </td><td> <a href="ttk_Geometry.html" title="Tk themed geometry utilities">Ttk_BoxContains</a> </td></tr>
+<tr><td> <a href="CrtSelHdlr.html" title="Arrange to handle requests for a selection">Tk_CreateSelHandler</a> </td><td> <a href="GetGC.html" title="Maintain database of read-only graphics contexts">Tk_GetGC</a> </td><td> <a href="GetFont.html" title="Maintain database of fonts">Tk_NameOfFont</a> </td><td> <a href="ttk_Theme.html" title="Create and use Tk themes.">Ttk_CreateTheme</a> </td></tr>
+<tr><td> <a href="CrtWindow.html" title="Create or delete window">Tk_CreateWindow</a> </td><td> <a href="GetHINSTANCE.html" title="Retrieve the global application instance handle">Tk_GetHINSTANCE</a> </td><td> <a href="NameOfImg.html" title="Return name of image.">Tk_NameOfImage</a> </td><td> <a href="ttk_Geometry.html" title="Tk themed geometry utilities">Ttk_ExpandBox</a> </td></tr>
+<tr><td> <a href="CrtWindow.html" title="Create or delete window">Tk_CreateWindowFromPath</a> </td><td> <a href="GetHWND.html" title="Manage interactions between the Windows handle and an X window">Tk_GetHWND</a> </td><td> <a href="GetJoinStl.html" title="Translate between strings and join styles">Tk_NameOfJoinStyle</a> </td><td> <a href="ttk_Geometry.html" title="Tk themed geometry utilities">Ttk_GetBorderFromObj</a> </td></tr>
+<tr><td> <a href="GetBitmap.html" title="Maintain database of single-plane pixmaps">Tk_DefineBitmap</a> </td><td> <a href="GetImage.html" title="Use an image in a widget">Tk_GetImage</a> </td><td> <a href="GetJustify.html" title="Translate between strings and justification styles">Tk_NameOfJustify</a> </td><td> <a href="ttk_Theme.html" title="Create and use Tk themes.">Ttk_GetCurrentTheme</a> </td></tr>
+<tr><td> <a href="ConfigWind.html" title="Change window configuration or attributes">Tk_DefineCursor</a> </td><td> <a href="CrtImgType.html" title="Define new kind of image">Tk_GetImageMasterData</a> </td><td> <a href="GetRelief.html" title="Translate between strings and relief values">Tk_NameOfRelief</a> </td><td> <a href="ttk_Theme.html" title="Create and use Tk themes.">Ttk_GetDefaultTheme</a> </td></tr>
+<tr><td> <a href="BindTable.html" title="Invoke scripts in response to X events">Tk_DeleteAllBindings</a> </td><td> <a href="CrtItemType.html" title="Define new kind of canvas item">Tk_GetItemTypes</a> </td><td> <a href="Name.html" title="Convert between names and window tokens">Tk_NameToWindow</a> </td><td> <a href="ttk_Geometry.html" title="Tk themed geometry utilities">Ttk_GetPaddingFromObj</a> </td></tr>
+<tr><td> <a href="BindTable.html" title="Invoke scripts in response to X events">Tk_DeleteBinding</a> </td><td> <a href="GetJoinStl.html" title="Translate between strings and join styles">Tk_GetJoinStyle</a> </td><td> <a href="SetOptions.html" title="Process configuration options">Tk_Offset</a> </td><td> <a href="ttk_Geometry.html" title="Tk themed geometry utilities">Ttk_GetStickyFromObj</a> </td></tr>
+<tr><td> <a href="BindTable.html" title="Invoke scripts in response to X events">Tk_DeleteBindingTable</a> </td><td> <a href="GetJustify.html" title="Translate between strings and justification styles">Tk_GetJustify</a> </td><td> <a href="OwnSelect.html" title="Make a window the owner of the primary selection">Tk_OwnSelection</a> </td><td> <a href="ttk_Theme.html" title="Create and use Tk themes.">Ttk_GetTheme</a> </td></tr>
+<tr><td> <a href="CrtCmHdlr.html" title="Associate procedure callback with ClientMessage type X events">Tk_DeleteClientMessageHandler</a> </td><td> <a href="GetJustify.html" title="Translate between strings and justification styles">Tk_GetJustifyFromObj</a> </td><td> <a href="WindowId.html" title="Retrieve information from Tk's local data structure">Tk_Parent</a> </td><td> <a href="ttk_Geometry.html" title="Tk themed geometry utilities">Ttk_MakeBox</a> </td></tr>
+<tr><td> <a href="CrtErrHdlr.html" title="Handle X protocol errors">Tk_DeleteErrorHandler</a> </td><td> <a href="GetPixels.html" title="Translate between strings and screen units">Tk_GetMMFromObj</a> </td><td> <a href="ParseArgv.html" title="Process command-line options">Tk_ParseArgv</a> </td><td> <a href="ttk_Geometry.html" title="Tk themed geometry utilities">Ttk_MakePadding</a> </td></tr>
+<tr><td> <a href="EventHndlr.html" title="Associate procedure callback with an X event">Tk_DeleteEventHandler</a> </td><td> <a href="MainWin.html" title="Functions for querying main window information">Tk_GetNumMainWindows</a> </td><td> <a href="Name.html" title="Convert between names and window tokens">Tk_PathName</a> </td><td> <a href="ttk_Geometry.html" title="Tk themed geometry utilities">Ttk_PackBox</a> </td></tr>
+<tr><td> <a href="CrtGenHdlr.html" title="Associate procedure callback with all X events">Tk_DeleteGenericHandler</a> </td><td> <a href="GetOption.html" title="Retrieve an option from the option database">Tk_GetOption</a> </td><td> <a href="FindPhoto.html" title="Manipulate the image data stored in a photo image.">Tk_PhotoBlank</a> </td><td> <a href="ttk_Geometry.html" title="Tk themed geometry utilities">Ttk_PadBox</a> </td></tr>
+<tr><td> <a href="DeleteImg.html" title="Destroy an image.">Tk_DeleteImage</a> </td><td> <a href="SetOptions.html" title="Process configuration options">Tk_GetOptionInfo</a> </td><td> <a href="FindPhoto.html" title="Manipulate the image data stored in a photo image.">Tk_PhotoExpand</a> </td><td> <a href="ttk_Geometry.html" title="Tk themed geometry utilities">Ttk_PlaceBox</a> </td></tr>
+<tr><td> <a href="SetOptions.html" title="Process configuration options">Tk_DeleteOptionTable</a> </td><td> <a href="SetOptions.html" title="Process configuration options">Tk_GetOptionValue</a> </td><td> <a href="FindPhoto.html" title="Manipulate the image data stored in a photo image.">Tk_PhotoGetImage</a> </td><td> <a href="ttk_Geometry.html" title="Tk themed geometry utilities">Ttk_RelievePadding</a> </td></tr>
+<tr><td> <a href="CrtSelHdlr.html" title="Arrange to handle requests for a selection">Tk_DeleteSelHandler</a> </td><td> <a href="GetPixels.html" title="Translate between strings and screen units">Tk_GetPixels</a> </td><td> <a href="FindPhoto.html" title="Manipulate the image data stored in a photo image.">Tk_PhotoGetSize</a> </td><td> <a href="ttk_Geometry.html" title="Tk themed geometry utilities">Ttk_StickBox</a> </td></tr>
+<tr><td> <a href="WindowId.html" title="Retrieve information from Tk's local data structure">Tk_Depth</a> </td><td> <a href="GetPixels.html" title="Translate between strings and screen units">Tk_GetPixelsFromObj</a> </td><td> <a href="FindPhoto.html" title="Manipulate the image data stored in a photo image.">Tk_PhotoPutBlock</a> </td><td> <a href="ttk_Geometry.html" title="Tk themed geometry utilities">Ttk_UniformPadding</a> </td></tr>
+<tr><td> <a href="CrtWindow.html" title="Create or delete window">Tk_DestroyWindow</a> </td><td> <a href="GetPixmap.html" title="Allocate and free pixmaps">Tk_GetPixmap</a> </td><td> <a href="FindPhoto.html" title="Manipulate the image data stored in a photo image.">Tk_PhotoPutZoomedBlock</a> </td></tr>
+<tr><td> <a href="WindowId.html" title="Retrieve information from Tk's local data structure">Tk_Display</a> </td><td> <a href="GetRelief.html" title="Translate between strings and relief values">Tk_GetRelief</a> </td><td> <a href="FindPhoto.html" title="Manipulate the image data stored in a photo image.">Tk_PhotoSetSize</a> </td></tr>
+</table>
+<div class="copy">Copyright &copy; 1989-1994 The Regents of the University of California
+<BR>Copyright &copy; 1994 The Australian National University
+<BR>Copyright &copy; 1994-1998 Sun Microsystems, Inc
+<BR>Copyright &copy; 1998-2000 Scriptics Corporation
+<BR>Copyright &copy; 2000 Ajuba Solutions
+<BR>Copyright &copy; 2002 ActiveState Corporation
+<BR>Copyright &copy; 2003-2004 Joe English
+<BR>Copyright &copy; 2007 ActiveState Software Inc
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="menubutton.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>menubutton manual page - Tk Built-In Commands</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tk Commands, version 8.6.7</a> <small>&gt;</small> menubutton</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="menubutton.html#M2" NAME="L1017">NAME</A>
+<DL><DD>menubutton &mdash; Create and manipulate 'menubutton' pop-up menu indicator widgets</DD></DL>
+<DD><A HREF="menubutton.html#M3" NAME="L1018">SYNOPSIS</A>
+<DL>
+</DL>
+<DD><A HREF="menubutton.html#M4" NAME="L1019">STANDARD OPTIONS</A>
+<DL>
+<DD><A HREF="options.html#M-activebackground">-activebackground, activeBackground, Foreground</A>
+<DD><A HREF="options.html#M-activeforeground">-activeforeground, activeForeground, Background</A>
+<DD><A HREF="options.html#M-anchor">-anchor, anchor, Anchor</A>
+<DD><A HREF="options.html#M-background">-background or -bg, background, Background</A>
+<DD><A HREF="options.html#M-bitmap">-bitmap, bitmap, Bitmap</A>
+<DD><A HREF="options.html#M-borderwidth">-borderwidth or -bd, borderWidth, BorderWidth</A>
+<DD><A HREF="options.html#M-compound">-compound, compound, Compound</A>
+<DD><A HREF="options.html#M-cursor">-cursor, cursor, Cursor</A>
+<DD><A HREF="options.html#M-disabledforeground">-disabledforeground, disabledForeground, DisabledForeground</A>
+<DD><A HREF="options.html#M-font">-font, font, Font</A>
+<DD><A HREF="options.html#M-foreground">-foreground or -fg, foreground, Foreground</A>
+<DD><A HREF="options.html#M-highlightbackground">-highlightbackground, highlightBackground, HighlightBackground</A>
+<DD><A HREF="options.html#M-highlightcolor">-highlightcolor, highlightColor, HighlightColor</A>
+<DD><A HREF="options.html#M-highlightthickness">-highlightthickness, highlightThickness, HighlightThickness</A>
+<DD><A HREF="options.html#M-image">-image, image, Image</A>
+<DD><A HREF="options.html#M-justify">-justify, justify, Justify</A>
+<DD><A HREF="options.html#M-padx">-padx, padX, Pad</A>
+<DD><A HREF="options.html#M-pady">-pady, padY, Pad</A>
+<DD><A HREF="options.html#M-relief">-relief, relief, Relief</A>
+<DD><A HREF="options.html#M-takefocus">-takefocus, takeFocus, TakeFocus</A>
+<DD><A HREF="options.html#M-text">-text, text, Text</A>
+<DD><A HREF="options.html#M-textvariable">-textvariable, textVariable, Variable</A>
+<DD><A HREF="options.html#M-underline">-underline, underline, Underline</A>
+<DD><A HREF="options.html#M-wraplength">-wraplength, wrapLength, WrapLength</A>
+</DL>
+<DD><A HREF="menubutton.html#M5" NAME="L1020">WIDGET-SPECIFIC OPTIONS</A>
+<DL>
+<DD><A HREF="menubutton.html#M6" NAME="L1021">-direction, direction, Height</A>
+<DD><A HREF="menubutton.html#M7" NAME="L1022">-height, height, Height</A>
+<DD><A HREF="menubutton.html#M8" NAME="L1023">-indicatoron, indicatorOn, IndicatorOn</A>
+<DD><A HREF="menubutton.html#M9" NAME="L1024">-menu, menu, MenuName</A>
+<DD><A HREF="menubutton.html#M10" NAME="L1025">-state, state, State</A>
+<DD><A HREF="menubutton.html#M11" NAME="L1026">-width, width, Width</A>
+</DL>
+<DD><A HREF="menubutton.html#M12" NAME="L1027">INTRODUCTION</A>
+<DD><A HREF="menubutton.html#M13" NAME="L1028">WIDGET COMMAND</A>
+<DL class="widget command">
+<DD><A HREF="menubutton.html#M14" NAME="L1029"><I>pathName </I><B>cget </B><I>option</I></A>
+<DD><A HREF="menubutton.html#M15" NAME="L1030"><I>pathName </I><B>configure</B> ?<I>option</I>? ?<I>value option value ...</I>?</A>
+</DL>
+<DD><A HREF="menubutton.html#M16" NAME="L1031">DEFAULT BINDINGS</A>
+<OL class="default bindings">
+</OL>
+<DD><A HREF="menubutton.html#M17" NAME="L1032">SEE ALSO</A>
+<DD><A HREF="menubutton.html#M18" NAME="L1033">KEYWORDS</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+menubutton &mdash; Create and manipulate 'menubutton' pop-up menu indicator widgets
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+<B>menubutton</B> <I>pathName </I>?<I>options</I>?<BR>
+<H3><A NAME="M4">STANDARD OPTIONS</A></H3>
+<DL>
+<DT><B><A HREF="options.html#M-activebackground">-activebackground, activeBackground, Foreground</A></B>
+<DT><B><A HREF="options.html#M-activeforeground">-activeforeground, activeForeground, Background</A></B>
+<DT><B><A HREF="options.html#M-anchor">-anchor, anchor, Anchor</A></B>
+<DT><B><A HREF="options.html#M-background">-background or -bg, background, Background</A></B>
+<DT><B><A HREF="options.html#M-bitmap">-bitmap, bitmap, Bitmap</A></B>
+<DT><B><A HREF="options.html#M-borderwidth">-borderwidth or -bd, borderWidth, BorderWidth</A></B>
+<DT><B><A HREF="options.html#M-compound">-compound, compound, Compound</A></B>
+<DT><B><A HREF="options.html#M-cursor">-cursor, cursor, Cursor</A></B>
+<DT><B><A HREF="options.html#M-disabledforeground">-disabledforeground, disabledForeground, DisabledForeground</A></B>
+<DT><B><A HREF="options.html#M-font">-font, font, Font</A></B>
+<DT><B><A HREF="options.html#M-foreground">-foreground or -fg, foreground, Foreground</A></B>
+<DT><B><A HREF="options.html#M-highlightbackground">-highlightbackground, highlightBackground, HighlightBackground</A></B>
+<DT><B><A HREF="options.html#M-highlightcolor">-highlightcolor, highlightColor, HighlightColor</A></B>
+<DT><B><A HREF="options.html#M-highlightthickness">-highlightthickness, highlightThickness, HighlightThickness</A></B>
+<DT><B><A HREF="options.html#M-image">-image, image, Image</A></B>
+<DT><B><A HREF="options.html#M-justify">-justify, justify, Justify</A></B>
+<DT><B><A HREF="options.html#M-padx">-padx, padX, Pad</A></B>
+<DT><B><A HREF="options.html#M-pady">-pady, padY, Pad</A></B>
+<DT><B><A HREF="options.html#M-relief">-relief, relief, Relief</A></B>
+<DT><B><A HREF="options.html#M-takefocus">-takefocus, takeFocus, TakeFocus</A></B>
+<DT><B><A HREF="options.html#M-text">-text, text, Text</A></B>
+<DT><B><A HREF="options.html#M-textvariable">-textvariable, textVariable, Variable</A></B>
+<DT><B><A HREF="options.html#M-underline">-underline, underline, Underline</A></B>
+<DT><B><A HREF="options.html#M-wraplength">-wraplength, wrapLength, WrapLength</A></B>
+</DL>
+<H3><A NAME="M5">WIDGET-SPECIFIC OPTIONS</A></H3>
+<DL>
+<DT>Command-Line Name: <B><A NAME="M6">-direction</A></B>
+<DT>Database Name: <B>direction</B>
+<DT>Database Class: <B>Height</B>
+<DD>Specifies where the menu is going to be popup up. <B>above</B> tries to
+pop the menu above the menubutton. <B>below</B> tries to pop the menu
+below the menubutton. <B>left</B> tries to pop the menu to the left of
+the menubutton. <B>right</B> tries to pop the menu to the right of the
+menu button. <B><A HREF="../TclCmd/flush.html">flush</A></B> pops the menu directly over the menubutton.
+In the case of <B>above</B> or <B>below</B>, the direction will be
+reversed if the menu would show offscreen.
+<P><DT>Command-Line Name: <B><A NAME="M7">-height</A></B>
+<DT>Database Name: <B>height</B>
+<DT>Database Class: <B>Height</B>
+<DD>Specifies a desired height for the menubutton.
+If an image or bitmap is being displayed in the menubutton then the value is in
+screen units (i.e. any of the forms acceptable to <B><A HREF="../TkLib/GetPixels.html">Tk_GetPixels</A></B>);
+for text it is in lines of text.
+If this option is not specified, the menubutton's desired height is computed
+from the size of the image or bitmap or text being displayed in it.
+<P><DT>Command-Line Name: <B><A NAME="M8">-indicatoron</A></B>
+<DT>Database Name: <B>indicatorOn</B>
+<DT>Database Class: <B>IndicatorOn</B>
+<DD>The value must be a proper boolean value.  If it is true then
+a small indicator rectangle will be displayed on the right side
+of the menubutton and the default menu bindings will treat this
+as an option menubutton.  If false then no indicator will be
+displayed.
+<P><DT>Command-Line Name: <B><A NAME="M9">-menu</A></B>
+<DT>Database Name: <B><A HREF="menu.html">menu</A></B>
+<DT>Database Class: <B>MenuName</B>
+<DD>Specifies the path name of the menu associated with this menubutton.
+The menu must be a child of the menubutton.
+<P><DT>Command-Line Name: <B><A NAME="M10">-state</A></B>
+<DT>Database Name: <B>state</B>
+<DT>Database Class: <B>State</B>
+<DD>Specifies one of three states for the menubutton:  <B>normal</B>, <B>active</B>,
+or <B>disabled</B>.  In normal state the menubutton is displayed using the
+<B>foreground</B> and <B>background</B> options.  The active state is
+typically used when the pointer is over the menubutton.  In active state
+the menubutton is displayed using the <B>-activeforeground</B> and
+<B>-activebackground</B> options.  Disabled state means that the menubutton
+should be insensitive:  the default bindings will refuse to activate
+the widget and will ignore mouse button presses.
+In this state the <B>-disabledforeground</B> and
+<B>-background</B> options determine how the button is displayed.
+<P><DT>Command-Line Name: <B><A NAME="M11">-width</A></B>
+<DT>Database Name: <B>width</B>
+<DT>Database Class: <B>Width</B>
+<DD>Specifies a desired width for the menubutton.
+If an image or bitmap is being displayed in the menubutton then the value is in
+screen units (i.e. any of the forms acceptable to <B><A HREF="../TkLib/GetPixels.html">Tk_GetPixels</A></B>);
+for text it is in characters.
+If this option is not specified, the menubutton's desired width is computed
+from the size of the image or bitmap or text being displayed in it.
+</DL>
+<H3><A NAME="M12">INTRODUCTION</A></H3>
+The <B>menubutton</B> command creates a new window (given by the
+<I>pathName</I> argument) and makes it into a menubutton widget.
+Additional
+options, described above, may be specified on the command line
+or in the option database
+to configure aspects of the menubutton such as its colors, font,
+text, and initial relief.  The <B>menubutton</B> command returns its
+<I>pathName</I> argument.  At the time this command is invoked,
+there must not exist a window named <I>pathName</I>, but
+<I>pathName</I>'s parent must exist.
+<P>
+A menubutton is a widget that displays a textual string, bitmap, or image
+and is associated with a menu widget.
+If text is displayed, it must all be in a single font, but it
+can occupy multiple lines on the screen (if it contains newlines
+or if wrapping occurs because of the <B>-wraplength</B> option) and
+one of the characters may optionally be underlined using the
+<B>-underline</B> option.  In normal usage, pressing
+mouse button 1 over the menubutton causes the associated menu to
+be posted just underneath the menubutton.  If the mouse is moved over
+the menu before releasing the mouse button, the button release
+causes the underlying menu entry to be invoked.  When the button
+is released, the menu is unposted.
+<P>
+Menubuttons are used to construct a <B>tk_optionMenu</B>, which is the
+preferred mechanism for allowing a user to select one item from a list
+on Mac OS X.
+<P>
+Menubuttons were also typically organized into groups called menu bars
+that allow scanning:
+if the mouse button is pressed over one menubutton (causing it
+to post its menu) and the mouse is moved over another menubutton
+in the same menu bar without releasing the mouse button, then the
+menu of the first menubutton is unposted and the menu of the
+new menubutton is posted instead.
+<I>This use is deprecated</I> in favor of setting a <B><A HREF="menu.html">menu</A></B> directly as a
+menubar; see the <B><A HREF="toplevel.html">toplevel</A></B>'s <B>-menu</B> option for how to do that.
+<P>
+There are several interactions between menubuttons and menus;  see
+the <B><A HREF="menu.html">menu</A></B> manual entry for information on various menu configurations,
+such as pulldown menus and option menus.
+<H3><A NAME="M13">WIDGET COMMAND</A></H3>
+The <B>menubutton</B> command creates a new Tcl command whose
+name is <I>pathName</I>.  This
+command may be used to invoke various
+operations on the widget.  It has the following general form:
+<PRE><I>pathName option </I>?<I>arg arg ...</I>?</PRE>
+<I>Option</I> and the <I>arg</I>s
+determine the exact behavior of the command.  The following
+commands are possible for menubutton widgets:
+<P>
+<DL class="widget command">
+<DT><A NAME="M14"><I>pathName </I><B>cget </B><I>option</I></A><DD>
+Returns the current value of the configuration option given
+by <I>option</I>.
+<I>Option</I> may have any of the values accepted by the <B>menubutton</B>
+command.
+<P><DT><A NAME="M15"><I>pathName </I><B>configure</B> ?<I>option</I>? ?<I>value option value ...</I>?</A><DD>
+Query or modify the configuration options of the widget.
+If no <I>option</I> is specified, returns a list describing all of
+the available options for <I>pathName</I> (see <B><A HREF="../TkLib/ConfigWidg.html">Tk_ConfigureInfo</A></B> for
+information on the format of this list).  If <I>option</I> is specified
+with no <I>value</I>, then the command returns a list describing the
+one named option (this list will be identical to the corresponding
+sublist of the value returned if no <I>option</I> is specified).  If
+one or more <I>option-value</I> pairs are specified, then the command
+modifies the given widget option(s) to have the given value(s);  in
+this case the command returns an empty string.
+<I>Option</I> may have any of the values accepted by the <B>menubutton</B>
+command.
+<P></DL>
+<H3><A NAME="M16">DEFAULT BINDINGS</A></H3>
+Tk automatically creates class bindings for menubuttons that give them
+the following default behavior:
+<P>
+<OL class="default bindings">
+<LI value="1">
+A menubutton activates whenever the mouse passes over it and deactivates
+whenever the mouse leaves it.
+<P><LI value="2">
+Pressing mouse button 1 over a menubutton posts the menubutton:
+its relief changes to raised and its associated menu is posted
+under the menubutton.  If the mouse is dragged down into the menu
+with the button still down, and if the mouse button is then
+released over an entry in the menu, the menubutton is unposted
+and the menu entry is invoked.
+<P><LI value="3">
+If button 1 is pressed over a menubutton and then released over that
+menubutton, the menubutton stays posted: you can still move the mouse
+over the menu and click button 1 on an entry to invoke it.
+Once a menu entry has been invoked, the menubutton unposts itself.
+<P><LI value="4">
+If button 1 is pressed over a menubutton and then dragged over some
+other menubutton, the original menubutton unposts itself and the
+new menubutton posts.
+<P><LI value="5">
+If button 1 is pressed over a menubutton and released outside
+any menubutton or menu, the menubutton unposts without invoking
+any menu entry.
+<P><LI value="6">
+When a menubutton is posted, its associated menu claims the input
+focus to allow keyboard traversal of the menu and its submenus.
+See the <B><A HREF="menu.html">menu</A></B> manual entry for details on these bindings.
+<P><LI value="7">
+If the <B>-underline</B> option has been specified for a menubutton
+then keyboard traversal may be used to post the menubutton:
+Alt+<I>x</I>, where <I>x</I> is the underlined character (or its
+lower-case or upper-case equivalent), may be typed in any window
+under the menubutton's toplevel to post the menubutton.
+<P><LI value="8">
+The F10 key may be typed in any window to post the first menubutton
+under its toplevel window that is not disabled.
+<P><LI value="9">
+If a menubutton has the input focus, the space and return keys
+post the menubutton.
+<P></OL>
+<P>
+If the menubutton's state is <B>disabled</B> then none of the above
+actions occur:  the menubutton is completely non-responsive.
+<P>
+The behavior of menubuttons can be changed by defining new bindings for
+individual widgets or by redefining the class bindings.
+<H3><A NAME="M17">SEE ALSO</A></H3>
+<B><A HREF="ttk_menubutton.html">ttk::menubutton</A></B>, <B><A HREF="menu.html">menu</A></B>
+<H3><A NAME="M18">KEYWORDS</A></H3>
+<A href="../Keywords/M.html#menubutton">menubutton</A>, <A href="../Keywords/W.html#widget">widget</A>
+<div class="copy">Copyright &copy; 1990-1994 The Regents of the University of California.
+<BR>Copyright &copy; 1994-1997 Sun Microsystems, Inc.
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

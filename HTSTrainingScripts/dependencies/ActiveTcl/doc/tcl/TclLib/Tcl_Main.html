@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="Tcl_Main.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>Tcl_Main manual page - Tcl Library Procedures</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tcl C API, version 8.6.7</a> <small>&gt;</small> Tcl_Main</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="../TkCmd/contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="Tcl_Main.html#M2" NAME="L792">NAME</A>
+<DL><DD>Tcl_Main, Tcl_SetStartupScript, Tcl_GetStartupScript, Tcl_SetMainLoop &mdash; main program, startup script, and event loop definition for Tcl-based applications</DD></DL>
+<DD><A HREF="Tcl_Main.html#M3" NAME="L793">SYNOPSIS</A>
+<DL>
+<DD><B>#include &lt;tcl.h&gt;</B>
+<DD><B>Tcl_Main</B>(<I>argc, argv, appInitProc</I>)
+<DD><B>Tcl_SetStartupScript</B>(<I>path, encoding</I>)
+<DD>Tcl_Obj *
+<DD><B>Tcl_GetStartupScript</B>(<I>encodingPtr</I>)
+<DD><B>Tcl_SetMainLoop</B>(<I>mainLoopProc</I>)
+</DL>
+<DD><A HREF="Tcl_Main.html#M4" NAME="L794">ARGUMENTS</A>
+<DL class="arguments">
+</DL>
+<DD><A HREF="Tcl_Main.html#M5" NAME="L795">DESCRIPTION</A>
+<DD><A HREF="Tcl_Main.html#M6" NAME="L796">SEE ALSO</A>
+<DD><A HREF="Tcl_Main.html#M7" NAME="L797">KEYWORDS</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+Tcl_Main, Tcl_SetStartupScript, Tcl_GetStartupScript, Tcl_SetMainLoop &mdash; main program, startup script, and event loop definition for Tcl-based applications
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+<B>#include &lt;tcl.h&gt;</B><BR>
+<B>Tcl_Main</B>(<I>argc, argv, appInitProc</I>)<BR>
+<B>Tcl_SetStartupScript</B>(<I>path, encoding</I>)<BR>
+<A HREF="Object.html">Tcl_Obj</A> *<BR>
+<B>Tcl_GetStartupScript</B>(<I>encodingPtr</I>)<BR>
+<B>Tcl_SetMainLoop</B>(<I>mainLoopProc</I>)<BR>
+<H3><A NAME="M4">ARGUMENTS</A></H3>
+<DL class="arguments">
+<DT>int <B><A HREF="../TclCmd/tclvars.html">argc</A></B> (in)<DD>
+Number of elements in <I>argv</I>.
+<P><DT>char <B>*argv[]</B> (in)<DD>
+Array of strings containing command-line arguments. On Windows, when
+using -DUNICODE, the parameter type changes to wchar_t *.
+<P><DT>Tcl_AppInitProc <B>*appInitProc</B> (in)<DD>
+Address of an application-specific initialization procedure.
+The value for this argument is usually <B><A HREF="AppInit.html">Tcl_AppInit</A></B>.
+<P><DT><A HREF="Object.html">Tcl_Obj</A> <B>*path</B> (in)<DD>
+Name of file to use as startup script, or NULL.
+<P><DT>const char <B>*encoding</B> (in)<DD>
+Encoding of file to use as startup script, or NULL.
+<P><DT>const char <B>**encodingPtr</B> (out)<DD>
+If non-NULL, location to write a copy of the (const char *)
+pointing to the encoding name.
+<P><DT>Tcl_MainLoopProc <B>*mainLoopProc</B> (in)<DD>
+Address of an application-specific event loop procedure.
+<P></DL>
+<H3><A NAME="M5">DESCRIPTION</A></H3>
+<B>Tcl_Main</B> can serve as the main program for Tcl-based shell
+applications.  A
+&#8220;shell application&#8221;
+is a program
+like tclsh or wish that supports both interactive interpretation
+of Tcl and evaluation of a script contained in a file given as
+a command line argument.  <B>Tcl_Main</B> is offered as a convenience
+to developers of shell applications, so they do not have to
+reproduce all of the code for proper initialization of the Tcl
+library and interactive shell operation.  Other styles of embedding
+Tcl in an application are not supported by <B>Tcl_Main</B>.  Those
+must be achieved by calling lower level functions in the Tcl library
+directly.
+<P>
+The <B>Tcl_Main</B> function has been offered by the Tcl library
+since release Tcl 7.4.  In older releases of Tcl, the Tcl library
+itself defined a function <B>main</B>, but that lacks flexibility
+of embedding style and having a function <B>main</B> in a library
+(particularly a shared library) causes problems on many systems.
+Having <B>main</B> in the Tcl library would also make it hard to use
+Tcl in C++ programs, since C++ programs must have special C++
+<B>main</B> functions.
+<P>
+Normally each shell application contains a small <B>main</B> function
+that does nothing but invoke <B>Tcl_Main</B>.
+<B>Tcl_Main</B> then does all the work of creating and running a
+<B><A HREF="../UserCmd/tclsh.html">tclsh</A></B>-like application.
+<P>
+<B>Tcl_Main</B> is not provided by the public interface of Tcl's
+stub library.  Programs that call <B>Tcl_Main</B> must be linked
+against the standard Tcl library.  Extensions (stub-enabled or
+not) are not intended to call <B>Tcl_Main</B>.
+<P>
+<B>Tcl_Main</B> is not thread-safe.  It should only be called by
+a single master thread of a multi-threaded application.  This
+restriction is not a problem with normal use described above.
+<P>
+<B>Tcl_Main</B> and therefore all applications based upon it, like
+<B><A HREF="../UserCmd/tclsh.html">tclsh</A></B>, use <B><A HREF="GetStdChan.html">Tcl_GetStdChannel</A></B> to initialize the standard
+channels to their default values. See <B><A HREF="StdChannels.html">Tcl_StandardChannels</A></B> for
+more information.
+<P>
+<B>Tcl_Main</B> supports two modes of operation, depending on
+whether the filename and encoding of a startup script has been
+established.  The routines <B>Tcl_SetStartupScript</B> and
+<B>Tcl_GetStartupScript</B> are the tools for controlling this
+configuration of <B>Tcl_Main</B>.
+<P>
+<B>Tcl_SetStartupScript</B> registers the value <I>path</I>
+as the name of the file for <B>Tcl_Main</B> to evaluate as
+its startup script.  The value <I>encoding</I> is Tcl's name
+for the encoding used to store the text in that file.  A
+value of <B>NULL</B> for <I>encoding</I> is a signal to use
+the system encoding.  A value of <B>NULL</B> for <I>path</I>
+erases any existing registration so that <B>Tcl_Main</B>
+will not evaluate any startup script.
+<P>
+<B>Tcl_GetStartupScript</B> queries the registered file name
+and encoding set by the most recent <B>Tcl_SetStartupScript</B>
+call in the same thread.  The stored file name is returned,
+and the stored encoding name is written to space pointed to
+by <I>encodingPtr</I>, when that is not NULL.
+<P>
+The file name and encoding values managed by the routines
+<B>Tcl_SetStartupScript</B> and <B>Tcl_GetStartupScript</B>
+are stored per-thread.  Although the storage and retrieval
+functions of these routines work in any thread, only those
+calls in the same master thread as <B>Tcl_Main</B> can have
+any influence on it.
+<P>
+The caller of <B>Tcl_Main</B> may call <B>Tcl_SetStartupScript</B>
+first to establish its desired startup script.  If <B>Tcl_Main</B>
+finds that no such startup script has been established, it consults
+the first few arguments in <I>argv</I>.  If they match
+?<B>-encoding </B><I>name</I>? <I>fileName</I>,
+where <I>fileName</I> does not begin with the character <I>-</I>,
+then <I>fileName</I> is taken to be the name of a file containing
+a <I>startup script</I>, and <I>name</I> is taken to be the name
+of the encoding of the contents of that file.  <B>Tcl_Main</B>
+then calls <B>Tcl_SetStartupScript</B> with these values.
+<P>
+<B>Tcl_Main</B> then defines in its master interpreter
+the Tcl variables <I>argc</I>, <I>argv</I>, <I>argv0</I>, and
+<I>tcl_interactive</I>, as described in the documentation for <B><A HREF="../UserCmd/tclsh.html">tclsh</A></B>.
+<P>
+When it has finished its own initialization, but before it processes
+commands, <B>Tcl_Main</B> calls the procedure given by the
+<I>appInitProc</I> argument.  This procedure provides a
+&#8220;hook&#8221;
+for the application to perform its own initialization of the interpreter
+created by <B>Tcl_Main</B>, such as defining application-specific
+commands.  The application initialization routine might also
+call <B>Tcl_SetStartupScript</B> to (re-)set the file and encoding
+to be used as a startup script.  The procedure must have an interface
+that matches the type <B>Tcl_AppInitProc</B>:
+<P>
+<PRE>typedef int <B>Tcl_AppInitProc</B>(
+        <A HREF="Interp.html">Tcl_Interp</A> *<I>interp</I>);</PRE>
+<P>
+<I>AppInitProc</I> is almost always a pointer to <B><A HREF="AppInit.html">Tcl_AppInit</A></B>; for more
+details on this procedure, see the documentation for <B><A HREF="AppInit.html">Tcl_AppInit</A></B>.
+<P>
+When the <I>appInitProc</I> is finished, <B>Tcl_Main</B> calls
+<B>Tcl_GetStartupScript</B> to determine what startup script has
+been requested, if any.  If a startup script has been provided,
+<B>Tcl_Main</B> attempts to evaluate it.  Otherwise, interactive
+mode begins with examination of the variable <I>tcl_rcFileName</I>
+in the master interpreter.  If that variable exists and holds the
+name of a readable file, the contents of that file are evaluated
+in the master interpreter.  Then interactive operations begin,
+with prompts and command evaluation results written to the standard
+output channel, and commands read from the standard input channel
+and then evaluated.  The prompts written to the standard output
+channel may be customized by defining the Tcl variables <I>tcl_prompt1</I>
+and <I>tcl_prompt2</I> as described in the documentation for <B><A HREF="../UserCmd/tclsh.html">tclsh</A></B>.
+The prompts and command evaluation results are written to the standard
+output channel only if the Tcl variable <I>tcl_interactive</I> in the
+master interpreter holds a non-zero integer value.
+<P>
+<B>Tcl_SetMainLoop</B> allows setting an event loop procedure to be run.
+This allows, for example, Tk to be dynamically loaded and set its event
+loop.  The event loop will run following the startup script.  If you
+are in interactive mode, setting the main loop procedure will cause the
+prompt to become fileevent based and then the loop procedure is called.
+When the loop procedure returns in interactive mode, interactive operation
+will continue.
+The main loop procedure must have an interface that matches the type
+<B>Tcl_MainLoopProc</B>:
+<P>
+<PRE>typedef void <B>Tcl_MainLoopProc</B>(void);</PRE>
+<P>
+<B>Tcl_Main</B> does not return.  Normally a program based on
+<B>Tcl_Main</B> will terminate when the <B><A HREF="../TclCmd/exit.html">exit</A></B> command is
+evaluated.  In interactive mode, if an EOF or channel error
+is encountered on the standard input channel, then <B>Tcl_Main</B>
+itself will evaluate the <B><A HREF="../TclCmd/exit.html">exit</A></B> command after the main loop
+procedure (if any) returns.  In non-interactive mode, after
+<B>Tcl_Main</B> evaluates the startup script, and the main loop
+procedure (if any) returns, <B>Tcl_Main</B> will also evaluate
+the <B><A HREF="../TclCmd/exit.html">exit</A></B> command.
+<H3><A NAME="M6">SEE ALSO</A></H3>
+<B><A HREF="../UserCmd/tclsh.html">tclsh</A></B>, <B><A HREF="GetStdChan.html">Tcl_GetStdChannel</A></B>, <B><A HREF="StdChannels.html">Tcl_StandardChannels</A></B>, <B><A HREF="AppInit.html">Tcl_AppInit</A></B>, <B><A HREF="../TclCmd/exit.html">exit</A></B>, <B><A HREF="../TclCmd/encoding.html">encoding</A></B>
+<H3><A NAME="M7">KEYWORDS</A></H3>
+<A href="../Keywords/A.html#application-specific initialization">application-specific initialization</A>, <A href="../Keywords/C.html#command-line arguments">command-line arguments</A>, <A href="../Keywords/M.html#main program">main program</A>
+<div class="copy">Copyright &copy; 1994 The Regents of the University of California.
+<BR>Copyright &copy; 1994-1996 Sun Microsystems, Inc.
+<BR>Copyright &copy; 2000 Ajuba Solutions.
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

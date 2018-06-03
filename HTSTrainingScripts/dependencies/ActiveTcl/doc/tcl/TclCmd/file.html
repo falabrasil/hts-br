@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="file.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>file manual page - Tcl Built-In Commands</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tcl Commands, version 8.6.7</a> <small>&gt;</small> file</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="contents.html">Tcl Commands</A> | <A HREF="../TkCmd/contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="file.html#M2" NAME="L527">NAME</A>
+<DL><DD>file &mdash; Manipulate file names and attributes</DD></DL>
+<DD><A HREF="file.html#M3" NAME="L528">SYNOPSIS</A>
+<DL>
+</DL>
+<DD><A HREF="file.html#M4" NAME="L529">DESCRIPTION</A>
+<DL class="description">
+<DD><A HREF="file.html#M5" NAME="L530"><B>file atime </B><I>name</I> ?<I>time</I>?</A>
+<DD><A HREF="file.html#M6" NAME="L531"><B>file attributes </B><I>name</I></A>
+<DD><A HREF="file.html#M7" NAME="L532"><B>file attributes </B><I>name</I> ?<I>option</I>?</A>
+<DD><A HREF="file.html#M8" NAME="L533"><B>file attributes </B><I>name</I> ?<I>option value option value...</I>?</A>
+<DD><A HREF="file.html#M9" NAME="L534"><B>file channels</B> ?<I>pattern</I>?</A>
+<DD><A HREF="file.html#M10" NAME="L535"><B>file copy </B>?<B>-force</B>? ?<B>--</B>? <I>source</I> <I>target</I></A>
+<DD><A HREF="file.html#M11" NAME="L536"><B>file copy </B>?<B>-force</B>? ?<B>--</B>? <I>source</I> ?<I>source</I> ...? <I>targetDir</I></A>
+<DD><A HREF="file.html#M12" NAME="L537"><B>file delete </B>?<B>-force</B>? ?<B>--</B>? ?<I>pathname</I> ... ?</A>
+<DD><A HREF="file.html#M13" NAME="L538"><B>file dirname </B><I>name</I></A>
+<DD><A HREF="file.html#M14" NAME="L539"><B>file executable </B><I>name</I></A>
+<DD><A HREF="file.html#M15" NAME="L540"><B>file exists </B><I>name</I></A>
+<DD><A HREF="file.html#M16" NAME="L541"><B>file extension </B><I>name</I></A>
+<DD><A HREF="file.html#M17" NAME="L542"><B>file isdirectory </B><I>name</I></A>
+<DD><A HREF="file.html#M18" NAME="L543"><B>file isfile </B><I>name</I></A>
+<DD><A HREF="file.html#M19" NAME="L544"><B>file join </B><I>name</I> ?<I>name ...</I>?</A>
+<DD><A HREF="file.html#M20" NAME="L545"><B>file link</B> ?<I>-linktype</I>? <I>linkName</I> ?<I>target</I>?</A>
+<DD><A HREF="file.html#M21" NAME="L546"><B>file lstat </B><I>name varName</I></A>
+<DD><A HREF="file.html#M22" NAME="L547"><B>file mkdir</B> ?<I>dir</I> ...?</A>
+<DD><A HREF="file.html#M23" NAME="L548"><B>file mtime </B><I>name</I> ?<I>time</I>?</A>
+<DD><A HREF="file.html#M24" NAME="L549"><B>file nativename </B><I>name</I></A>
+<DD><A HREF="file.html#M25" NAME="L550"><B>file normalize </B><I>name</I></A>
+<DD><A HREF="file.html#M26" NAME="L551"><B>file owned </B><I>name</I></A>
+<DD><A HREF="file.html#M27" NAME="L552"><B>file pathtype </B><I>name</I></A>
+<DD><A HREF="file.html#M28" NAME="L553"><B>file readable </B><I>name</I></A>
+<DD><A HREF="file.html#M29" NAME="L554"><B>file readlink </B><I>name</I></A>
+<DD><A HREF="file.html#M30" NAME="L555"><B>file rename </B>?<B>-force</B>? ?<B>--</B>? <I>source</I> <I>target</I></A>
+<DD><A HREF="file.html#M31" NAME="L556"><B>file rename </B>?<B>-force</B>? ?<B>--</B>? <I>source</I> ?<I>source</I> ...? <I>targetDir</I></A>
+<DD><A HREF="file.html#M32" NAME="L557"><B>file rootname </B><I>name</I></A>
+<DD><A HREF="file.html#M33" NAME="L558"><B>file separator</B> ?<I>name</I>?</A>
+<DD><A HREF="file.html#M34" NAME="L559"><B>file size </B><I>name</I></A>
+<DD><A HREF="file.html#M35" NAME="L560"><B>file split </B><I>name</I></A>
+<DD><A HREF="file.html#M36" NAME="L561"><B>file stat  </B><I>name varName</I></A>
+<DD><A HREF="file.html#M37" NAME="L562"><B>file system </B><I>name</I></A>
+<DD><A HREF="file.html#M38" NAME="L563"><B>file tail </B><I>name</I></A>
+<DD><A HREF="file.html#M39" NAME="L564"><B>file tempfile</B> ?<I>nameVar</I>? ?<I>template</I>?</A>
+<DD><A HREF="file.html#M40" NAME="L565"><B>file type </B><I>name</I></A>
+<DD><A HREF="file.html#M41" NAME="L566"><B>file volumes</B></A>
+<DD><A HREF="file.html#M42" NAME="L567"><B>file writable </B><I>name</I></A>
+</DL>
+<DD><A HREF="file.html#M43" NAME="L568">PORTABILITY ISSUES</A>
+<DL class="portability issues">
+<DD><A HREF="file.html#M44" NAME="L569"><B>Unix</B></A>
+<DD><A HREF="file.html#M45" NAME="L570"><B>Windows</B></A>
+</DL>
+<DD><A HREF="file.html#M46" NAME="L571">EXAMPLES</A>
+<DD><A HREF="file.html#M47" NAME="L572">SEE ALSO</A>
+<DD><A HREF="file.html#M48" NAME="L573">KEYWORDS</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+file &mdash; Manipulate file names and attributes
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+<B>file </B><I>option</I> <I>name</I> ?<I>arg arg ...</I>?<BR>
+<H3><A NAME="M4">DESCRIPTION</A></H3>
+This command provides several operations on a file's name or attributes.
+<I>Name</I> is the name of a file; if it starts with a tilde, then tilde
+substitution is done before executing the command (see the manual entry for
+<B><A HREF="filename.html">filename</A></B> for details).  <I>Option</I> indicates what to do with the
+file name.  Any unique abbreviation for <I>option</I> is acceptable.  The
+valid options are:
+<P>
+<DL class="description">
+<DT><A NAME="M5"><B>file atime </B><I>name</I> ?<I>time</I>?</A><DD>
+Returns a decimal string giving the time at which file <I>name</I> was last
+accessed.  If <I>time</I> is specified, it is an access time to set
+for the file.  The time is measured in the standard POSIX fashion as
+seconds from a fixed starting time (often January 1, 1970).  If the file
+does not exist or its access time cannot be queried or set then an error is
+generated.  On Windows, FAT file systems do not support access time.
+<P><DT><A NAME="M6"><B>file attributes </B><I>name</I></A><DD>
+<P><DT><A NAME="M7"><B>file attributes </B><I>name</I> ?<I>option</I>?</A><DD>
+<P><DT><A NAME="M8"><B>file attributes </B><I>name</I> ?<I>option value option value...</I>?</A><DD>
+This subcommand returns or sets platform specific values associated
+with a file. The first form returns a list of the platform specific
+flags and their values. The second form returns the value for the
+specific option. The third form sets one or more of the values. The
+values are as follows:
+<P>
+On Unix, <B>-group</B> gets or sets the group name for the file. A group id
+can be given to the command, but it returns a group name. <B>-owner</B> gets
+or sets the user name of the owner of the file. The command returns the
+owner name, but the numerical id can be passed when setting the
+owner. <B>-permissions</B> sets or retrieves the octal code that chmod(1)
+uses.  This command does also has limited support for setting using the
+symbolic attributes for chmod(1), of the form [ugo]?[[+-=][rwxst],[...]],
+where multiple symbolic attributes can be separated by commas (example:
+<B>u+s,go-rw</B> add sticky bit for user, remove read and write
+permissions for group and other).  A simplified <B>ls</B> style string,
+of the form rwxrwxrwx (must be 9 characters), is also supported
+(example: <B>rwxr-xr-t</B> is equivalent to 01755).
+On versions of Unix supporting file flags, <B>-readonly</B> gives the
+value or sets or clears the readonly attribute of the file,
+i.e. the user immutable flag <B>uchg</B> to chflags(1).
+<P>
+On Windows, <B>-archive</B> gives the value or sets or clears the
+archive attribute of the file. <B>-hidden</B> gives the value or sets
+or clears the hidden attribute of the file. <B>-longname</B> will
+expand each path element to its long version. This attribute cannot be
+set. <B>-readonly</B> gives the value or sets or clears the readonly
+attribute of the file. <B>-shortname</B> gives a string where every
+path element is replaced with its short (8.3) version of the
+name. This attribute cannot be set. <B>-system</B> gives or sets or
+clears the value of the system attribute of the file.
+<P>On Mac OS X and Darwin, <B>-creator</B> gives or sets the
+Finder creator type of the file. <B>-hidden</B> gives or sets or clears
+the hidden attribute of the file. <B>-readonly</B> gives or sets or
+clears the readonly attribute of the file. <B>-rsrclength</B> gives
+the length of the resource fork of the file, this attribute can only be
+set to the value 0, which results in the resource fork being stripped
+off the file.
+<P><DT><A NAME="M9"><B>file channels</B> ?<I>pattern</I>?</A><DD>
+If <I>pattern</I> is not specified, returns a list of names of all
+registered open channels in this interpreter.  If <I>pattern</I> is
+specified, only those names matching <I>pattern</I> are returned.  Matching
+is determined using the same rules as for <B><A HREF="string.html">string match</A></B>.
+<P><DT><A NAME="M10"><B>file copy </B>?<B>-force</B>? ?<B>--</B>? <I>source</I> <I>target</I></A><DD>
+<P><DT><A NAME="M11"><B>file copy </B>?<B>-force</B>? ?<B>--</B>? <I>source</I> ?<I>source</I> ...? <I>targetDir</I></A><DD>
+The first form makes a copy of the file or directory <I>source</I> under
+the pathname <I>target</I>. If <I>target</I> is an existing directory,
+then the second form is used.  The second form makes a copy inside
+<I>targetDir</I> of each <I>source</I> file listed.  If a directory is
+specified as a <I>source</I>, then the contents of the directory will be
+recursively copied into <I>targetDir</I>. Existing files will not be
+overwritten unless the <B>-force</B> option is specified (when Tcl will
+also attempt to adjust permissions on the destination file or directory
+if that is necessary to allow the copy to proceed).  When copying
+within a single filesystem, <I>file copy</I> will copy soft links (i.e.
+the links themselves are copied, not the things they point to).  Trying
+to overwrite a non-empty directory, overwrite a directory with a file,
+or overwrite a file with a directory will all result in errors even if
+<B>-force</B> was specified.  Arguments are processed in the order
+specified, halting at the first error, if any.  A <B>--</B> marks
+the end of switches; the argument following the <B>--</B> will be
+treated as a <I>source</I> even if it starts with a <B>-</B>.
+<P><DT><A NAME="M12"><B>file delete </B>?<B>-force</B>? ?<B>--</B>? ?<I>pathname</I> ... ?</A><DD>
+Removes the file or directory specified by each <I>pathname</I>
+argument.  Non-empty directories will be removed only if the
+<B>-force</B> option is specified.  When operating on symbolic links,
+the links themselves will be deleted, not the objects they point to.
+Trying to delete a non-existent file is not considered an error.
+Trying to delete a read-only file will cause the file to be deleted,
+even if the <B>-force</B> flags is not specified.  If the <B>-force</B>
+option is specified on a directory, Tcl will attempt both to change
+permissions and move the current directory
+&#8220;pwd&#8221;
+out of the given path if that is necessary to allow the deletion to
+proceed.  Arguments are processed in the order specified, halting at
+the first error, if any.
+A <B>--</B> marks the end of switches; the argument following the
+<B>--</B> will be treated as a <I>pathname</I> even if it starts with
+a <B>-</B>.
+<P><DT><A NAME="M13"><B>file dirname </B><I>name</I></A><DD>
+Returns a name comprised of all of the path components in <I>name</I>
+excluding the last element.  If <I>name</I> is a relative file name and
+only contains one path element, then returns
+&#8220;<B>.</B>&#8221;.
+If <I>name</I> refers to a root directory, then the root directory is
+returned.  For example,
+<P>
+<PRE><B>file dirname</B> c:/</PRE>
+<P>
+returns <B>c:/</B>.
+<P>
+Note that tilde substitution will only be
+performed if it is necessary to complete the command. For example,
+<P>
+<PRE><B>file dirname</B> ~/src/foo.c</PRE>
+<P>
+returns <B>~/src</B>, whereas
+<P>
+<PRE><B>file dirname</B> ~</PRE>
+<P>returns <B>/home</B> (or something similar).
+<P><DT><A NAME="M14"><B>file executable </B><I>name</I></A><DD>
+Returns <B>1</B> if file <I>name</I> is executable by the current user,
+<B>0</B> otherwise. On Windows, which does not have an executable attribute,
+the command treats all directories and any files with extensions
+<B>exe</B>, <B>com</B>, <B>cmd</B> or <B>bat</B> as executable.
+<P><DT><A NAME="M15"><B>file exists </B><I>name</I></A><DD>
+Returns <B>1</B> if file <I>name</I> exists and the current user has
+search privileges for the directories leading to it, <B>0</B> otherwise.
+<P><DT><A NAME="M16"><B>file extension </B><I>name</I></A><DD>
+Returns all of the characters in <I>name</I> after and including the last
+dot in the last element of <I>name</I>.  If there is no dot in the last
+element of <I>name</I> then returns the empty string.
+<P><DT><A NAME="M17"><B>file isdirectory </B><I>name</I></A><DD>
+Returns <B>1</B> if file <I>name</I> is a directory, <B>0</B> otherwise.
+<P><DT><A NAME="M18"><B>file isfile </B><I>name</I></A><DD>
+Returns <B>1</B> if file <I>name</I> is a regular file, <B>0</B> otherwise.
+<P><DT><A NAME="M19"><B>file join </B><I>name</I> ?<I>name ...</I>?</A><DD>
+Takes one or more file names and combines them, using the correct path
+separator for the current platform.  If a particular <I>name</I> is
+relative, then it will be joined to the previous file name argument.
+Otherwise, any earlier arguments will be discarded, and joining will
+proceed from the current argument.  For example,
+<P>
+<PRE><B>file join</B> a b /foo bar</PRE>
+<P>
+returns <B>/foo/bar</B>.
+<P>Note that any of the names can contain separators, and that the result
+is always canonical for the current platform: <B>/</B> for Unix and
+Windows.
+<P><DT><A NAME="M20"><B>file link</B> ?<I>-linktype</I>? <I>linkName</I> ?<I>target</I>?</A><DD>
+If only one argument is given, that argument is assumed to be
+<I>linkName</I>, and this command returns the value of the link given by
+<I>linkName</I> (i.e. the name of the file it points to).  If
+<I>linkName</I> is not a link or its value cannot be read (as, for example,
+seems to be the case with hard links, which look just like ordinary
+files), then an error is returned.
+<P>
+If 2 arguments are given, then these are assumed to be <I>linkName</I>
+and <I>target</I>. If <I>linkName</I> already exists, or if <I>target</I>
+does not exist, an error will be returned.  Otherwise, Tcl creates a new
+link called <I>linkName</I> which points to the existing filesystem
+object at <I>target</I> (which is also the returned value), where the
+type of the link is platform-specific (on Unix a symbolic link will be
+the default).  This is useful for the case where the user wishes to
+create a link in a cross-platform way, and does not care what type of
+link is created.
+<P>
+If the user wishes to make a link of a specific type only, (and signal an
+error if for some reason that is not possible), then the optional
+<I>-linktype</I> argument should be given.  Accepted values for
+<I>-linktype</I> are
+&#8220;<B>-symbolic</B>&#8221;
+and
+&#8220;<B>-hard</B>&#8221;.
+<P>On Unix, symbolic links can be made to relative paths, and those paths
+must be relative to the actual <I>linkName</I>'s location (not to the
+cwd), but on all other platforms where relative links are not supported,
+target paths will always be converted to absolute, normalized form
+before the link is created (and therefore relative paths are interpreted
+as relative to the cwd).  Furthermore,
+&#8220;~user&#8221;
+paths are always expanded
+to absolute form.  When creating links on filesystems that either do not
+support any links, or do not support the specific type requested, an
+error message will be returned.  Most Unix platforms support both
+symbolic and hard links (the latter for files only). Windows
+supports symbolic directory links and hard file links on NTFS drives.
+<P><DT><A NAME="M21"><B>file lstat </B><I>name varName</I></A><DD>
+Same as <B>stat</B> option (see below) except uses the <I>lstat</I>
+kernel call instead of <I>stat</I>.  This means that if <I>name</I>
+refers to a symbolic link the information returned in <I>varName</I>
+is for the link rather than the file it refers to.  On systems that
+do not support symbolic links this option behaves exactly the same
+as the <B>stat</B> option.
+<P><DT><A NAME="M22"><B>file mkdir</B> ?<I>dir</I> ...?</A><DD>
+Creates each directory specified.  For each pathname <I>dir</I> specified,
+this command will create all non-existing parent directories as
+well as <I>dir</I> itself.  If an existing directory is specified, then
+no action is taken and no error is returned.  Trying to overwrite an existing
+file with a directory will result in an error.  Arguments are processed in
+the order specified, halting at the first error, if any.
+<P><DT><A NAME="M23"><B>file mtime </B><I>name</I> ?<I>time</I>?</A><DD>
+Returns a decimal string giving the time at which file <I>name</I> was last
+modified.  If <I>time</I> is specified, it is a modification time to set for
+the file (equivalent to Unix <B>touch</B>).  The time is measured in the
+standard POSIX fashion as seconds from a fixed starting time (often January
+1, 1970).  If the file does not exist or its modified time cannot be queried
+or set then an error is generated.
+<P><DT><A NAME="M24"><B>file nativename </B><I>name</I></A><DD>
+Returns the platform-specific name of the file. This is useful if the
+filename is needed to pass to a platform-specific call, such as to a
+subprocess via <B><A HREF="exec.html">exec</A></B> under Windows (see <B><A HREF="file.html#M46">EXAMPLES</A></B> below).
+<P><DT><A NAME="M25"><B>file normalize </B><I>name</I></A><DD>
+Returns a unique normalized path representation for the file-system
+object (file, directory, link, etc), whose string value can be used as a
+unique identifier for it.  A normalized path is an absolute path which has
+all
+&#8220;../&#8221;
+and
+&#8220;./&#8221;
+removed.  Also it is one which is in the
+&#8220;standard&#8221;
+format for the native platform.  On Unix, this means the segments
+leading up to the path must be free of symbolic links/aliases (but the
+very last path component may be a symbolic link), and on Windows it also
+means we want the long form with that form's case-dependence (which
+gives us a unique, case-dependent path).  The one exception concerning the
+last link in the path is necessary, because Tcl or the user may wish to
+operate on the actual symbolic link itself (for example <B>file delete</B>,
+<B>file rename</B>, <B>file copy</B> are defined to operate on symbolic
+links, not on the things that they point to).
+<P><DT><A NAME="M26"><B>file owned </B><I>name</I></A><DD>
+Returns <B>1</B> if file <I>name</I> is owned by the current user, <B>0</B>
+otherwise.
+<P><DT><A NAME="M27"><B>file pathtype </B><I>name</I></A><DD>
+Returns one of <B>absolute</B>, <B>relative</B>, <B>volumerelative</B>. If
+<I>name</I> refers to a specific file on a specific volume, the path type will
+be <B>absolute</B>. If <I>name</I> refers to a file relative to the current
+working directory, then the path type will be <B>relative</B>. If <I>name</I>
+refers to a file relative to the current working directory on a specified
+volume, or to a specific file on the current working volume, then the path
+type is <B>volumerelative</B>.
+<P><DT><A NAME="M28"><B>file readable </B><I>name</I></A><DD>
+Returns <B>1</B> if file <I>name</I> is readable by the current user,
+<B>0</B> otherwise.
+<P><DT><A NAME="M29"><B>file readlink </B><I>name</I></A><DD>
+Returns the value of the symbolic link given by <I>name</I> (i.e. the name
+of the file it points to).  If <I>name</I> is not a symbolic link or its
+value cannot be read, then an error is returned.  On systems that do not
+support symbolic links this option is undefined.
+<P><DT><A NAME="M30"><B>file rename </B>?<B>-force</B>? ?<B>--</B>? <I>source</I> <I>target</I></A><DD>
+<P><DT><A NAME="M31"><B>file rename </B>?<B>-force</B>? ?<B>--</B>? <I>source</I> ?<I>source</I> ...? <I>targetDir</I></A><DD>
+The first form takes the file or directory specified by pathname
+<I>source</I> and renames it to <I>target</I>, moving the file if the
+pathname <I>target</I> specifies a name in a different directory.  If
+<I>target</I> is an existing directory, then the second form is used.
+The second form moves each <I>source</I> file or directory into the
+directory <I>targetDir</I>. Existing files will not be overwritten
+unless the <B>-force</B> option is specified.  When operating inside a
+single filesystem, Tcl will rename symbolic links rather than the
+things that they point to.  Trying to overwrite a non-empty directory,
+overwrite a directory with a file, or a file with a directory will all
+result in errors.  Arguments are processed in the order specified,
+halting at the first error, if any.  A <B>--</B> marks the end of
+switches; the argument following the <B>--</B> will be treated as a
+<I>source</I> even if it starts with a <B>-</B>.
+<P><DT><A NAME="M32"><B>file rootname </B><I>name</I></A><DD>
+Returns all of the characters in <I>name</I> up to but not including the
+last
+&#8220;.&#8221;
+character in the last component of name.  If the last
+component of <I>name</I> does not contain a dot, then returns <I>name</I>.
+<P><DT><A NAME="M33"><B>file separator</B> ?<I>name</I>?</A><DD>
+If no argument is given, returns the character which is used to separate
+path segments for native files on this platform.  If a path is given,
+the filesystem responsible for that path is asked to return its
+separator character.  If no file system accepts <I>name</I>, an error
+is generated.
+<P><DT><A NAME="M34"><B>file size </B><I>name</I></A><DD>
+Returns a decimal string giving the size of file <I>name</I> in bytes.  If
+the file does not exist or its size cannot be queried then an error is
+generated.
+<P><DT><A NAME="M35"><B>file split </B><I>name</I></A><DD>
+Returns a list whose elements are the path components in <I>name</I>.  The
+first element of the list will have the same path type as <I>name</I>.
+All other elements will be relative.  Path separators will be discarded
+unless they are needed to ensure that an element is unambiguously relative.
+For example, under Unix
+<P>
+<PRE><B>file split</B> /foo/~bar/baz</PRE>
+<P>returns
+&#8220;<B>/  foo  ./~bar  baz</B>&#8221;
+to ensure that later commands
+that use the third component do not attempt to perform tilde
+substitution.
+<P><DT><A NAME="M36"><B>file stat  </B><I>name varName</I></A><DD>
+Invokes the <B>stat</B> kernel call on <I>name</I>, and uses the variable
+given by <I>varName</I> to hold information returned from the kernel call.
+<I>VarName</I> is treated as an array variable, and the following elements
+of that variable are set: <B>atime</B>, <B>ctime</B>, <B>dev</B>, <B>gid</B>,
+<B>ino</B>, <B>mode</B>, <B>mtime</B>, <B>nlink</B>, <B>size</B>, <B>type</B>,
+<B>uid</B>.  Each element except <B>type</B> is a decimal string with the
+value of the corresponding field from the <B>stat</B> return structure;
+see the manual entry for <B>stat</B> for details on the meanings of the
+values.  The <B>type</B> element gives the type of the file in the same
+form returned by the command <B>file type</B>.  This command returns an
+empty string.
+<P><DT><A NAME="M37"><B>file system </B><I>name</I></A><DD>
+Returns a list of one or two elements, the first of which is the name of
+the filesystem to use for the file, and the second, if given, an
+arbitrary string representing the filesystem-specific nature or type of
+the location within that filesystem.  If a filesystem only supports one
+type of file, the second element may not be supplied.  For example the
+native files have a first element
+&#8220;native&#8221;,
+and a second element which when given is a platform-specific type name
+for the file's system (e.g.
+&#8220;NTFS&#8221;,
+&#8220;FAT&#8221;,
+on Windows).  A generic virtual file system might return
+the list
+&#8220;vfs ftp&#8221;
+to represent a file on a remote ftp site mounted as a
+virtual filesystem through an extension called
+&#8220;vfs&#8221;.
+If the file does not belong to any filesystem, an error is generated.
+<P><DT><A NAME="M38"><B>file tail </B><I>name</I></A><DD>
+Returns all of the characters in the last filesystem component of
+<I>name</I>.  Any trailing directory separator in <I>name</I> is ignored.
+If <I>name</I> contains no separators then returns <I>name</I>.  So,
+<B>file tail a/b</B>, <B>file tail a/b/</B> and <B>file tail b</B> all
+return <B>b</B>.
+<P><DT><A NAME="M39"><B>file tempfile</B> ?<I>nameVar</I>? ?<I>template</I>?</A><DD>
+Creates a temporary file and returns a read-write channel opened on that file.
+If the <I>nameVar</I> is given, it specifies a variable that the name of the
+temporary file will be written into; if absent, Tcl will attempt to arrange
+for the temporary file to be deleted once it is no longer required. If the
+<I>template</I> is present, it specifies parts of the template of the filename
+to use when creating it (such as the directory, base-name or extension) though
+some platforms may ignore some or all of these parts and use a built-in
+default instead.
+<P>
+Note that temporary files are <I>only</I> ever created on the native
+filesystem. As such, they can be relied upon to be used with operating-system
+native APIs and external programs that require a filename.
+<P><DT><A NAME="M40"><B>file type </B><I>name</I></A><DD>
+Returns a string giving the type of file <I>name</I>, which will be one of
+<B>file</B>, <B>directory</B>, <B>characterSpecial</B>, <B>blockSpecial</B>,
+<B>fifo</B>, <B>link</B>, or <B><A HREF="socket.html">socket</A></B>.
+<P><DT><A NAME="M41"><B>file volumes</B></A><DD>
+Returns the absolute paths to the volumes mounted on the system, as a
+proper Tcl list.  Without any virtual filesystems mounted as root
+volumes, on UNIX, the command will always return
+&#8220;/&#8221;,
+since all filesystems are locally mounted.
+On Windows, it will return a list of the available local drives
+(e.g.
+&#8220;a:/ c:/&#8221;).
+If any virtual filesystem has mounted additional
+volumes, they will be in the returned list.
+<P><DT><A NAME="M42"><B>file writable </B><I>name</I></A><DD>
+Returns <B>1</B> if file <I>name</I> is writable by the current user,
+<B>0</B> otherwise.
+<P></DL>
+<H3><A NAME="M43">PORTABILITY ISSUES</A></H3>
+<DL class="portability issues">
+<DT><A NAME="M44"><B>Unix</B></A><DD>
+These commands always operate using the real user and group identifiers,
+not the effective ones.
+<P><DT><A NAME="M45"><B>Windows</B></A><DD>
+The <B>file owned</B> subcommand uses the user identifier (SID) of
+the process token, not the thread token which may be impersonating
+some other user.
+<P></DL>
+<H3><A NAME="M46">EXAMPLES</A></H3>
+This procedure shows how to search for C files in a given directory
+that have a correspondingly-named object file in the current
+directory:
+<P>
+<PRE>proc findMatchingCFiles {dir} {
+    set files {}
+    switch $::tcl_platform(platform) {
+        windows {
+            set ext .obj
+        }
+        unix {
+           set ext .o
+        }
+    }
+    foreach file [glob -nocomplain -directory $dir *.c] {
+        set objectFile [<B>file tail</B> [<B>file rootname</B> $file]]$ext
+        if {[<B>file exists</B> $objectFile]} {
+            lappend files $file
+        }
+    }
+    return $files
+}</PRE>
+<P>
+Rename a file and leave a symbolic link pointing from the old location
+to the new place:
+<P>
+<PRE>set oldName foobar.txt
+set newName foo/bar.txt
+# Make sure that where we're going to move to exists...
+if {![<B>file isdirectory</B> [<B>file dirname</B> $newName]]} {
+    <B>file mkdir</B> [<B>file dirname</B> $newName]
+}
+<B>file rename</B> $oldName $newName
+<B>file link</B> -symbolic $oldName $newName</PRE>
+<P>
+On Windows, a file can be
+&#8220;started&#8221;
+easily enough (equivalent to double-clicking on it in the Explorer
+interface) but the name passed to the operating system must be in
+native format:
+<P>
+<PRE>exec {*}[auto_execok start] {} [<B>file nativename</B> ~/example.txt]</PRE>
+<H3><A NAME="M47">SEE ALSO</A></H3>
+<B><A HREF="filename.html">filename</A></B>, <B><A HREF="open.html">open</A></B>, <B><A HREF="close.html">close</A></B>, <B><A HREF="eof.html">eof</A></B>, <B><A HREF="gets.html">gets</A></B>, <B><A HREF="tell.html">tell</A></B>, <B><A HREF="seek.html">seek</A></B>, <B><A HREF="fblocked.html">fblocked</A></B>, <B><A HREF="flush.html">flush</A></B>
+<H3><A NAME="M48">KEYWORDS</A></H3>
+<A href="../Keywords/A.html#attributes">attributes</A>, <A href="../Keywords/C.html#copy files">copy files</A>, <A href="../Keywords/D.html#delete files">delete files</A>, <A href="../Keywords/D.html#directory">directory</A>, <A href="../Keywords/F.html#file">file</A>, <A href="../Keywords/M.html#move files">move files</A>, <A href="../Keywords/N.html#name">name</A>, <A href="../Keywords/R.html#rename files">rename files</A>, <A href="../Keywords/S.html#stat">stat</A>, <A href="../Keywords/U.html#user">user</A>
+<div class="copy">Copyright &copy; 1993 The Regents of the University of California.
+<BR>Copyright &copy; 1994-1996 Sun Microsystems, Inc.
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

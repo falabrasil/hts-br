@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="Tcl13.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org">
+<meta name='Author' content='ActiveState'>
+
+<title>Variable scope - global, upvar, and unset</title>
+<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 class="title">Variable scope - global and upvar</h1>
+
+<div class="nav"><a href="Tcl12.html">Previous lesson</a> | <a
+href="tcltutorial.html">Index</a> | <a href="Tcl14.html">Next
+lesson</a></div>
+
+<p>Tcl evaluates variables within a <i>scope</i> delineated by
+procs, namespaces (see <a href="Tcl31.html">Building reusable
+libraries - packages and namespaces</a>), and at the topmost level,
+the <code class="keyword">global</code> scope.</p>
+
+<p>The scope in which a variable will be evaluated can be changed
+with the <code class="keyword">global</code> and <code class=
+"keyword">upvar</code> commands.</p>
+
+<p>The <code class="keyword">global</code> command will cause a
+variable in a local scope (inside a procedure) to refer to the
+global variable of that name.</p>
+
+<p>The <code class="keyword">upvar</code> command is similar. It
+"ties" the name of a variable in the current scope to a variable in
+a different scope. This is commonly used to simulate
+pass-by-reference to procs.</p>
+
+<p>You might also encounter the <code class=
+"keyword">variable</code> command in others' Tcl code. It is part
+of the namespace system and is discussed in detail in that
+chapter.</p>
+
+<p>Normally, Tcl uses a type of "garbage collection" called
+reference counting in order to automatically clean up variables
+when they are not used anymore, such as when they go "out of scope"
+at the end of a procedure, so that you don't have to keep track of
+them yourself. It is also possible to explicitly unset them with
+the aptly named <code class="keyword">unset</code> command.</p>
+
+<p>The syntax for <code class="keyword">upvar</code> is:</p>
+
+<ul>
+<li><code class="keyword">upvar</code> <code class=
+"arg">?level?</code> <code class="arg">otherVar1</code> <code
+class="arg">myVar1</code> <code class="arg">?otherVar2</code> <code
+class="arg">myVar2?</code> <code class="arg">...</code> <code
+class="arg">?otherVarN</code> <code class="arg">myVarN?</code></li>
+</ul>
+
+<p>The <code class="keyword">upvar</code> command causes <code
+class="arg">myVar1</code> to become a reference to <code class=
+"arg">otherVar1</code>, and <code class="arg">myVar2</code> to
+become a reference to <code class="arg">otherVar2</code>, etc. The
+<code class="arg">otherVar</code> variable is declared to be at
+<code class="arg">level</code> relative to the current procedure.
+By default <code class="arg">level</code> is 1, the next level
+up.</p>
+
+<p>If a number is used for the <code class="arg">level</code>, then
+level references that many levels up the stack from the current
+level.</p>
+
+<p>If the <code class="keyword">level</code> number is preceded by
+a <code class="keyword">#</code> symbol, then it references that
+many levels down from the global scope. If <code class=
+"arg">level</code> is <code class="keyword">#0</code>, then the
+reference is to a variable at the global level.</p>
+
+<p>If you are using upvar with anything except #0 or 1, you are
+most likely asking for trouble, unless you really know what you're
+doing.</p>
+
+<p>You should avoid using global variables if possible. If you have
+a lot of globals, you should reconsider the design of your
+program.</p>
+
+<p>Note that since there is only one global space it is
+surprisingly easy to have name conflicts if you are importing other
+peoples code and aren't careful. It is recommended that you start
+global variables with an identifiable prefix to help avoid
+unexpected conflicts.</p>
+
+<hr>
+<h2>Example</h2>
+
+<pre class="example">
+proc SetPositive {variable value } {
+    upvar $variable myvar
+    if {$value &lt; 0} {
+        set myvar [expr {-$value}]
+    } else {
+        set myvar $value
+    }
+    return $myvar
+}
+
+SetPositive x 5
+SetPositive y -5
+
+puts "X : $x    Y: $y\n"
+
+proc two {y} {
+    upvar 1 $y z                    ;# tie the calling value to variable z
+    upvar 2 x a                     ;# Tie variable x two levels up  to a
+    puts "two: Z: $z A: $a"         ;# Output the values, just to confirm
+    set z 1                         ;# Set z, the passed variable to 1;
+    set a 2                         ;# Set x, two layers up to 2;
+}
+
+proc one {y} {
+    upvar $y z                      ;# This ties the calling value to variable z 
+    puts "one: Z: $z"               ;# Output that value, to check it is 5
+    two z                           ;# call proc two, which will change the value
+}
+
+one y                               ;# Call one, and output X and Y after the call.
+puts "\nX: $x  Y: $y"
+
+
+proc existence {variable} {
+    upvar $variable testVar
+    if { [info exists testVar] } {
+        puts "$variable Exists"
+    } else {
+        puts "$variable Does Not Exist"
+    }
+}
+
+set x 1
+set y 2
+for {set i 0} {$i &lt; 5} {incr i} {
+    set a($i) $i;
+}
+
+puts "\ntesting unsetting a simple variable"
+# Confirm that x exists.
+existence x
+# Unset x
+unset x
+puts "x has been unset"
+# Confirm that x no longer exists.
+existence x
+</pre>
+
+<div class="nav"><a href="Tcl12.html">Previous lesson</a> | <a
+href="tcltutorial.html">Index</a> | <a href="Tcl14.html">Next
+lesson</a></div>
+</body>
+</html>
+
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

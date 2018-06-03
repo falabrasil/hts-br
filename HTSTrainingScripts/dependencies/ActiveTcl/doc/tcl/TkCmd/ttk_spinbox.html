@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="ttk_spinbox.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>ttk::spinbox manual page - Tk Themed Widget</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tk Commands, version 8.6.7</a> <small>&gt;</small> ttk_spinbox</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="ttk_spinbox.html#M2" NAME="L2090">NAME</A>
+<DL><DD>ttk::spinbox &mdash; Selecting text field widget</DD></DL>
+<DD><A HREF="ttk_spinbox.html#M3" NAME="L2091">SYNOPSIS</A>
+<DL>
+</DL>
+<DD><A HREF="ttk_spinbox.html#M4" NAME="L2092">DESCRIPTION</A>
+<DD><A HREF="ttk_spinbox.html#M5" NAME="L2093">STANDARD OPTIONS</A>
+<DL>
+<DD><A HREF="ttk_widget.html#M-class">-class, undefined, undefined</A>
+<DD><A HREF="ttk_widget.html#M-cursor">-cursor, cursor, Cursor</A>
+<DD><A HREF="ttk_widget.html#M-style">-style, style, Style</A>
+<DD><A HREF="ttk_widget.html#M-takefocus">-takefocus, takeFocus, TakeFocus</A>
+<DD><A HREF="ttk_entry.html#M-validate">-validate, validate, Validate</A>
+<DD><A HREF="ttk_entry.html#M-validatecommand">-validatecommand, validateCommand, ValidateCommand</A>
+<DD><A HREF="ttk_widget.html#M-xscrollcommand">-xscrollcommand, xScrollCommand, ScrollCommand</A>
+</DL>
+<DD><A HREF="ttk_spinbox.html#M6" NAME="L2094">WIDGET-SPECIFIC OPTIONS</A>
+<DL>
+<DD><A HREF="ttk_spinbox.html#M7" NAME="L2095">-from, from, From</A>
+<DD><A HREF="ttk_spinbox.html#M8" NAME="L2096">-to, to, To</A>
+<DD><A HREF="ttk_spinbox.html#M9" NAME="L2097">-increment, increment, Increment</A>
+<DD><A HREF="ttk_spinbox.html#M10" NAME="L2098">-values, values, Values</A>
+<DD><A HREF="ttk_spinbox.html#M11" NAME="L2099">-wrap, wrap, Wrap</A>
+<DD><A HREF="ttk_spinbox.html#M12" NAME="L2100">-format, format, Format</A>
+<DD><A HREF="ttk_spinbox.html#M13" NAME="L2101">-command, command, Command</A>
+</DL>
+<DD><A HREF="ttk_spinbox.html#M14" NAME="L2102">INDICES</A>
+<DD><A HREF="ttk_spinbox.html#M15" NAME="L2103">VALIDATION</A>
+<DD><A HREF="ttk_spinbox.html#M16" NAME="L2104">WIDGET COMMAND</A>
+<DL class="widget command">
+<DD><A HREF="ttk_spinbox.html#M17" NAME="L2105"><I>pathName </I><B>current </B><I>index</I></A>
+<DD><A HREF="ttk_spinbox.html#M18" NAME="L2106"><I>pathName </I><B>get</B></A>
+<DD><A HREF="ttk_spinbox.html#M19" NAME="L2107"><I>pathName </I><B>set </B><I>value</I></A>
+</DL>
+<DD><A HREF="ttk_spinbox.html#M20" NAME="L2108">VIRTUAL EVENTS</A>
+<DD><A HREF="ttk_spinbox.html#M21" NAME="L2109">SEE ALSO</A>
+<DD><A HREF="ttk_spinbox.html#M22" NAME="L2110">KEYWORDS</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+ttk::spinbox &mdash; Selecting text field widget
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+<B>ttk::spinbox</B> <I>pathName </I>?<I>options</I>?<BR>
+<H3><A NAME="M4">DESCRIPTION</A></H3>
+A <B>ttk::spinbox</B> widget is a <B><A HREF="ttk_entry.html">ttk::entry</A></B> widget with built-in
+up and down buttons that are used to either modify a numeric value or
+to select among a set of values. The widget implements all the features
+of the <B><A HREF="ttk_entry.html">ttk::entry</A></B> widget including support of the
+<B>-textvariable</B> option to link the value displayed by the widget
+to a Tcl variable.
+<H3><A NAME="M5">STANDARD OPTIONS</A></H3>
+<DL>
+<DT><B><A HREF="ttk_widget.html#M-class">-class, undefined, undefined</A></B>
+<DT><B><A HREF="ttk_widget.html#M-cursor">-cursor, cursor, Cursor</A></B>
+<DT><B><A HREF="ttk_widget.html#M-style">-style, style, Style</A></B>
+<DT><B><A HREF="ttk_widget.html#M-takefocus">-takefocus, takeFocus, TakeFocus</A></B>
+<DT><B><A HREF="ttk_entry.html#M-validate">-validate, validate, Validate</A></B>
+<DT><B><A HREF="ttk_entry.html#M-validatecommand">-validatecommand, validateCommand, ValidateCommand</A></B>
+<DT><B><A HREF="ttk_widget.html#M-xscrollcommand">-xscrollcommand, xScrollCommand, ScrollCommand</A></B>
+</DL>
+<H3><A NAME="M6">WIDGET-SPECIFIC OPTIONS</A></H3>
+<DL>
+<DT>Command-Line Name: <B><A NAME="M7">-from</A></B>
+<DT>Database Name: <B>from</B>
+<DT>Database Class: <B>From</B>
+<DD>A floating-point value specifying the lowest value for the spinbox. This is
+used in conjunction with <B>-to</B> and <B>-increment</B> to set a numerical
+range.
+<P><DT>Command-Line Name: <B><A NAME="M8">-to</A></B>
+<DT>Database Name: <B>to</B>
+<DT>Database Class: <B>To</B>
+<DD>A floating-point value specifying the highest permissible value for the
+widget. See also <B>-from</B> and <B>-increment</B>.
+range.
+<P><DT>Command-Line Name: <B><A NAME="M9">-increment</A></B>
+<DT>Database Name: <B>increment</B>
+<DT>Database Class: <B>Increment</B>
+<DD>A floating-point value specifying the change in value to be applied each
+time one of the widget spin buttons is pressed. The up button applies a
+positive increment, the down button applies a negative increment.
+<P><DT>Command-Line Name: <B><A NAME="M10">-values</A></B>
+<DT>Database Name: <B>values</B>
+<DT>Database Class: <B>Values</B>
+<DD>This must be a Tcl list of values. If this option is set then this will
+override any range set using the <B>-from</B>, <B>-to</B> and
+<B>-increment</B> options. The widget will instead use the values
+specified beginning with the first value.
+<P><DT>Command-Line Name: <B><A NAME="M11">-wrap</A></B>
+<DT>Database Name: <B>wrap</B>
+<DT>Database Class: <B>Wrap</B>
+<DD>Must be a proper boolean value.  If on, the spinbox will wrap around the
+values of data in the widget.
+<P><DT>Command-Line Name: <B><A NAME="M12">-format</A></B>
+<DT>Database Name: <B>format</B>
+<DT>Database Class: <B>Format</B>
+<DD>Specifies an alternate format to use when setting the string value
+when using the <B>-from</B> and <B>-to</B> range.
+This must be a format specifier of the form <B>%&lt;pad&gt;.&lt;pad&gt;f</B>,
+as it will format a floating-point number.
+<P><DT>Command-Line Name: <B><A NAME="M13">-command</A></B>
+<DT>Database Name: <B>command</B>
+<DT>Database Class: <B>Command</B>
+<DD>Specifies a Tcl command to be invoked whenever a spinbutton is invoked.
+</DL>
+<H3><A NAME="M14">INDICES</A></H3>
+See the <B><A HREF="ttk_entry.html">ttk::entry</A></B> manual for information about indexing characters.
+<H3><A NAME="M15">VALIDATION</A></H3>
+See the <B><A HREF="ttk_entry.html">ttk::entry</A></B> manual for information about using the
+<B>-validate</B> and <B>-validatecommand</B> options.
+<H3><A NAME="M16">WIDGET COMMAND</A></H3>
+The following subcommands are possible for spinbox widgets in addition to
+the commands described for the <B><A HREF="ttk_entry.html">ttk::entry</A></B> widget:
+<P>
+<DL class="widget command">
+<DT><A NAME="M17"><I>pathName </I><B>current </B><I>index</I></A><DD>
+<P><DT><A NAME="M18"><I>pathName </I><B>get</B></A><DD>
+Returns the spinbox's current value.
+<P><DT><A NAME="M19"><I>pathName </I><B>set </B><I>value</I></A><DD>
+Set the spinbox string to <I>value</I>. If a <B>-format</B> option has
+been configured then this format will be applied. If formatting fails
+or is not set or the <B>-values</B> option has been used then the value
+is set directly.
+<P></DL>
+<H3><A NAME="M20">VIRTUAL EVENTS</A></H3>
+The spinbox widget generates a <B>&lt;&lt;Increment&gt;&gt;</B> virtual event when
+the user presses &lt;Up&gt;, and a <B>&lt;&lt;Decrement&gt;&gt;</B> virtual event when the
+user presses &lt;Down&gt;.
+<H3><A NAME="M21">SEE ALSO</A></H3>
+<B><A HREF="ttk_widget.html">ttk::widget</A></B>, <B><A HREF="ttk_entry.html">ttk::entry</A></B>, <B><A HREF="spinbox.html">spinbox</A></B>
+<H3><A NAME="M22">KEYWORDS</A></H3>
+<A href="../Keywords/E.html#entry">entry</A>, <A href="../Keywords/S.html#spinbox">spinbox</A>, <A href="../Keywords/W.html#widget">widget</A>, <A href="../Keywords/T.html#text field">text field</A>
+<div class="copy">Copyright &copy; 2008 Pat Thoyts
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

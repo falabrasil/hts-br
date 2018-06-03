@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="grab.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>grab manual page - Built-In Commands</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tk Commands, version 8.6.7</a> <small>&gt;</small> grab</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="grab.html#M2" NAME="L763">NAME</A>
+<DL><DD>grab &mdash; Confine pointer and keyboard events to a window sub-tree</DD></DL>
+<DD><A HREF="grab.html#M3" NAME="L764">SYNOPSIS</A>
+<DL>
+</DL>
+<DD><A HREF="grab.html#M4" NAME="L765">DESCRIPTION</A>
+<DL class="description">
+<DD><A HREF="grab.html#M5" NAME="L766"><B>grab </B>?<B>-global</B>? <I>window</I></A>
+<DD><A HREF="grab.html#M6" NAME="L767"><B>grab current </B>?<I>window</I>?</A>
+<DD><A HREF="grab.html#M7" NAME="L768"><B>grab release </B><I>window</I></A>
+<DD><A HREF="grab.html#M8" NAME="L769"><B>grab set </B>?<B>-global</B>? <I>window</I></A>
+<DD><A HREF="grab.html#M9" NAME="L770"><B>grab status </B><I>window</I></A>
+</DL>
+<DD><A HREF="grab.html#M10" NAME="L771">WARNING</A>
+<DD><A HREF="grab.html#M11" NAME="L772">BUGS</A>
+<DD><A HREF="grab.html#M12" NAME="L773">EXAMPLE</A>
+<DD><A HREF="grab.html#M13" NAME="L774">SEE ALSO</A>
+<DD><A HREF="grab.html#M14" NAME="L775">KEYWORDS</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+grab &mdash; Confine pointer and keyboard events to a window sub-tree
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+<B>grab </B>?<B>-global</B>? <I>window</I><BR>
+<B>grab </B><I>option </I>?<I>arg arg </I>...?<BR>
+<H3><A NAME="M4">DESCRIPTION</A></H3>
+This command implements simple pointer and keyboard grabs for Tk.
+Tk's grabs are different than the grabs
+described in the Xlib documentation.
+When a grab is set for a particular window, Tk restricts all pointer
+events to the grab window and its descendants in Tk's window hierarchy.
+Whenever the pointer is within the grab window's subtree, the pointer
+will behave exactly the same as if there had been no grab at all
+and all events will be reported in the normal fashion.
+When the pointer is outside <I>window</I>'s tree, button presses and
+releases and
+mouse motion events are reported to <I>window</I>, and window entry
+and window exit events are ignored. The grab subtree
+&#8220;owns&#8221;
+the pointer:
+windows outside the grab subtree will be visible on the screen
+but they will be insensitive until the grab is released.
+The tree of windows underneath the grab window can include top-level
+windows, in which case all of those top-level windows
+and their descendants will continue to receive mouse events
+during the grab.
+<P>
+Two forms of grabs are possible:  local and global.
+A local grab affects only the grabbing application:  events will
+be reported to other applications as if the grab had never occurred.
+Grabs are local by default.
+A global grab locks out all applications on the screen,
+so that only the given subtree of the grabbing application will be
+sensitive to pointer events (mouse button presses, mouse button releases,
+pointer motions, window entries, and window exits).
+During global grabs the window manager will not receive pointer
+events either.
+<P>
+During local grabs, keyboard events (key presses and key releases)
+are delivered as usual:  the window
+manager controls which application receives keyboard events, and
+if they are sent to any window in the grabbing application then they are
+redirected to the focus window.
+During a global grab Tk grabs the keyboard so that all keyboard events
+are always sent to the grabbing application.
+The <B><A HREF="focus.html">focus</A></B> command is still used to determine which window in the
+application receives the keyboard events.
+The keyboard grab is released when the grab is released.
+<P>
+Grabs apply to particular displays.  If an application has windows
+on multiple displays then it can establish a separate grab on each
+display.
+The grab on a particular display affects only the windows on
+that display.
+It is possible for different applications on a single display to have
+simultaneous local grabs, but only one application can have a global
+grab on a given display at once.
+<P>
+The <B>grab</B> command can take any of the following forms:
+<P>
+<DL class="description">
+<DT><A NAME="M5"><B>grab </B>?<B>-global</B>? <I>window</I></A><DD>
+Same as <B>grab set</B>, described below.
+<P><DT><A NAME="M6"><B>grab current </B>?<I>window</I>?</A><DD>
+If <I>window</I> is specified, returns the name of the current grab
+window in this application for <I>window</I>'s display, or an empty
+string if there is no such window.
+If <I>window</I> is omitted, the command returns a list whose elements
+are all of the windows grabbed by this application for all displays,
+or an empty string if the application has no grabs.
+<P><DT><A NAME="M7"><B>grab release </B><I>window</I></A><DD>
+Releases the grab on <I>window</I> if there is one, otherwise does
+nothing.  Returns an empty string.
+<P><DT><A NAME="M8"><B>grab set </B>?<B>-global</B>? <I>window</I></A><DD>
+Sets a grab on <I>window</I>.  If <B>-global</B> is specified then the
+grab is global, otherwise it is local.
+If a grab was already in effect for this application on
+<I>window</I>'s display then it is automatically released.
+If there is already a grab on <I>window</I> and it has the same
+global/local form as the requested grab, then the command
+does nothing.  Returns an empty string.
+<P><DT><A NAME="M9"><B>grab status </B><I>window</I></A><DD>
+Returns <B>none</B> if no grab is currently set on <I>window</I>,
+<B>local</B> if a local grab is set on <I>window</I>, and
+<B>global</B> if a global grab is set.
+<P></DL>
+<H3><A NAME="M10">WARNING</A></H3>
+It is very easy to use global grabs to render a display completely
+unusable (e.g. by setting a grab on a widget which does not respond to
+events and not providing any mechanism for releasing the grab).  Take
+<I>extreme</I> care when using them!
+<H3><A NAME="M11">BUGS</A></H3>
+It took an incredibly complex and gross implementation to produce
+the simple grab effect described above.
+Given the current implementation, it is not safe for applications
+to use the Xlib grab facilities at all except through the Tk grab
+procedures.
+If applications try to manipulate X's grab mechanisms directly,
+things will probably break.
+<P>
+If a single process is managing several different Tk applications,
+only one of those applications can have a local grab for a given
+display at any given time.  If the applications are in different
+processes, this restriction does not exist.
+<H3><A NAME="M12">EXAMPLE</A></H3>
+Set a grab so that only one button may be clicked out of a group.  The
+other buttons are unresponsive to the mouse until the middle button is
+clicked.
+<PRE>pack [button .b1 -text &quot;Click me! #1&quot; -command {destroy .b1}]
+pack [button .b2 -text &quot;Click me! #2&quot; -command {destroy .b2}]
+pack [button .b3 -text &quot;Click me! #3&quot; -command {destroy .b3}]
+<B>grab</B> .b2</PRE>
+<H3><A NAME="M13">SEE ALSO</A></H3>
+<B><A HREF="busy.html">busy</A></B>
+<H3><A NAME="M14">KEYWORDS</A></H3>
+<A href="../Keywords/G.html#grab">grab</A>, <A href="../Keywords/K.html#keyboard events">keyboard events</A>, <A href="../Keywords/P.html#pointer events">pointer events</A>, <A href="../Keywords/W.html#window">window</A>
+<div class="copy">Copyright &copy; 1992 The Regents of the University of California.
+<BR>Copyright &copy; 1994-1996 Sun Microsystems, Inc.
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

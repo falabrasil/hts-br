@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="Label.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<HTML>
+<HEAD><TITLE>Label</TITLE></HEAD>
+<BODY BGCOLOR=white>
+<DL><DT><I><A HREF="Label.html#descr">NAME</A></I></DT>
+<DD><B>Label</B>
+ - Label widget with <B>state</B> option, dynamic help and drag and drop facilities
+</DD></DL>
+<DL>
+<DT><I>CREATION</I></DT>
+<DD><A HREF="Label.html#descr"><B>Label</B></A> <I>pathName</I> ?<I>option value...</I>?</DD>
+</DL>
+<DL>
+<DT><I>STANDARD OPTIONS</I></DT>
+<DT><I>Not themed</I></DT>
+<DD><TABLE CELLSPACING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD>&nbsp;&nbsp;<A HREF="http://localhost:1313/tcl/bwidget/options.htm#M-anchor">-anchor</A></TR>
+<TD>&nbsp;&nbsp;<A HREF="http://localhost:1313/tcl/bwidget/options.htm#M-background">-background or -bg</A></TD>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;<A HREF="http://localhost:1313/tcl/bwidget/options.htm#M-bitmap">-bitmap</A></TR>
+<TD>&nbsp;&nbsp;<A HREF="http://localhost:1313/tcl/bwidget/options.htm#M-borderwidth">-borderwidth or -bd</A></TD>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;<A HREF="http://localhost:1313/tcl/bwidget/options.htm#M-cursor">-cursor</A></TR>
+<TD>&nbsp;&nbsp;<A HREF="http://localhost:1313/tcl/bwidget/options.htm#M-disabledforeground">-disabledforeground</A></TR>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;<A HREF="http://localhost:1313/tcl/bwidget/options.htm#M-font">-font</A></TR>
+<TD>&nbsp;&nbsp;<A HREF="http://localhost:1313/tcl/bwidget/options.htm#M-foreground">-foreground or -fg</A></TD>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;<A HREF="http://localhost:1313/tcl/bwidget/options.htm#M-highlightbackground">-highlightbackground</A></TR>
+<TD>&nbsp;&nbsp;<A HREF="http://localhost:1313/tcl/bwidget/options.htm#M-highlightcolor">-highlightcolor</A></TR>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;<A HREF="http://localhost:1313/tcl/bwidget/options.htm#M-highlightthickness">-highlightthickness</A></TR>
+<TD>&nbsp;&nbsp;<A HREF="http://localhost:1313/tcl/bwidget/options.htm#M-image">-image</A></TR>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;<A HREF="http://localhost:1313/tcl/bwidget/options.htm#M-justify">-justify</A></TR>
+<TD>&nbsp;&nbsp;<A HREF="http://localhost:1313/tcl/bwidget/options.htm#M-padx">-padx</A></TR>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;<A HREF="http://localhost:1313/tcl/bwidget/options.htm#M-pady">-pady</A></TR>
+<TD>&nbsp;&nbsp;<A HREF="http://localhost:1313/tcl/bwidget/options.htm#M-relief">-relief</A></TR>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;<A HREF="http://localhost:1313/tcl/bwidget/options.htm#M-takefocus">-takefocus</A></TR>
+<TD>&nbsp;&nbsp;<A HREF="http://localhost:1313/tcl/bwidget/options.htm#M-text">-text</A></TR>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;<A HREF="http://localhost:1313/tcl/bwidget/options.htm#M-textvariable">-textvariable</A></TR>
+<TD>&nbsp;&nbsp;<A HREF="http://localhost:1313/tcl/bwidget/options.htm#M-wraplength">-wraplength</A></TR>
+</TR>
+</TABLE></DD>
+<DT><I>Themed</I></DT>
+<DD><TABLE CELLSPACING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD>&nbsp;&nbsp;<A HREF="http://localhost:1313/tcl/bwidget/options.htm#M-anchor">-anchor</A></TR>
+<TD>&nbsp;&nbsp;<A HREF="http://localhost:1313/tcl/bwidget/options.htm#M-background">-background or -bg</A></TD>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;<A HREF="http://localhost:1313/tcl/bwidget/options.htm#M-cursor">-cursor</A></TD></TR>
+<TR>
+<TD>&nbsp;&nbsp;<A HREF="http://localhost:1313/tcl/bwidget/options.htm#M-font">-font</A></TR>
+<TD>&nbsp;&nbsp;<A HREF="http://localhost:1313/tcl/bwidget/options.htm#M-foreground">-foreground or -fg</A></TD>
+</TR>
+<TD>&nbsp;&nbsp;<A HREF="http://localhost:1313/tcl/bwidget/options.htm#M-image">-image</A></TR>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;<A HREF="http://localhost:1313/tcl/bwidget/options.htm#M-justify">-justify</A></TD>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;<A HREF="http://localhost:1313/tcl/bwidget/options.htm#M-relief">-relief</A></TD>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;<A HREF="http://localhost:1313/tcl/bwidget/options.htm#M-takefocus">-takefocus</A></TR>
+<TD>&nbsp;&nbsp;<A HREF="http://localhost:1313/tcl/bwidget/options.htm#M-text">-text</A></TR>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;<A HREF="http://localhost:1313/tcl/bwidget/options.htm#M-textvariable">-textvariable</A></TR>
+<TD>&nbsp;&nbsp;<A HREF="http://localhost:1313/tcl/bwidget/options.htm#M-wraplength">-wraplength</A></TR>
+</TR>
+</TABLE></DD>
+</DL>
+<DL>
+<DT><I><A HREF="Label.html#wso">WIDGET-SPECIFIC OPTIONS</A></I></DT>
+<DD><TABLE CELLSPACING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD>&nbsp;&nbsp;<A HREF="Label.html#-dragenabled">-dragenabled</A></TR>
+<TD>&nbsp;&nbsp;<A HREF="Label.html#-dragendcmd">-dragendcmd</A></TR>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;<A HREF="Label.html#-dragevent">-dragevent</A></TR>
+<TD>&nbsp;&nbsp;<A HREF="Label.html#-draginitcmd">-draginitcmd</A></TR>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;<A HREF="Label.html#-dragtype">-dragtype</A></TR>
+<TD>&nbsp;&nbsp;<A HREF="Label.html#-dropcmd">-dropcmd</A></TR>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;<A HREF="Label.html#-dropenabled">-dropenabled</A></TR>
+<TD>&nbsp;&nbsp;<A HREF="Label.html#-dropovercmd">-dropovercmd</A></TR>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;<A HREF="Label.html#-droptypes">-droptypes</A></TR>
+<TD>&nbsp;&nbsp;<A HREF="Label.html#-focus">-focus</A></TR>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;<A HREF="Label.html#-height">-height</A></TR>
+<TD>&nbsp;&nbsp;<A HREF="Label.html#-helptext">-helptext</A></TR>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;<A HREF="Label.html#-helptype">-helptype</A></TR>
+<TD>&nbsp;&nbsp;<A HREF="Label.html#-helpvar">-helpvar</A></TR>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;<A HREF="Label.html#-name">-name</A></TR>
+<TD>&nbsp;&nbsp;<A HREF="Label.html#-state">-state</A></TR>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;<A HREF="Label.html#-underline">-underline</A></TR>
+<TD>&nbsp;&nbsp;<A HREF="Label.html#-width">-width</A></TR>
+</TR>
+</TABLE></DD>
+</DL>
+<DL>
+<DT><I><A HREF="Label.html#wc">WIDGET COMMAND</A></I></DT>
+<DD><I>pathName</I> <A HREF="Label.html#cget"><B>cget</B></A>
+ <I>option</I>
+</DD>
+<DD><I>pathName</I> <A HREF="Label.html#configure"><B>configure</B></A>
+ ?<I>option</I>? ?<I>value</I> <I>option</I> <I>value</I> ...?
+</DD>
+<DD><I>pathName</I> <A HREF="Label.html#setfocus"><B>setfocus</B></A>
+</DD>
+</DL>
+<BR><HR WIDTH="100%"><BR>
+<B><A NAME="descr"></A>DESCRIPTION</B><BR>
+<P>
+
+The <B>Label</B> widget extends the default Tk label. Options have been added to provide
+visual effect depending on the state of the Label, <A HREF="DynamicHelp.html">DynamicHelp</A> options, and <A HREF="DragSite.html">Drag
+</A> and <A HREF="DropSite.html">Drop</A>.
+</P>
+<BR><HR WIDTH="50%"><BR>
+<B><A NAME="wso">WIDGET-SPECIFIC OPTIONS</A></B><BR>
+<DL><DT><A NAME="-dragenabled"><B>-dragenabled</B></A></DT>
+<DD>
+A boolean specifying if drag is enabled.
+</DD>
+</DL>
+<DL><DT><A NAME="-dragendcmd"><B>-dragendcmd</B></A></DT>
+<DD>
+
+Specifies a command to be called when drag ended.
+<B>dragendcmd</B> must be a command conforming to the description of the
+option <B>dragendcmd</B> of <B>DragSite::<A HREF="DragSite.html#register">register</A></B>.
+
+</DD>
+</DL>
+<DL><DT><A NAME="-dragevent"><B>-dragevent</B></A></DT>
+<DD>
+
+Specifies the number of the mouse button associated to the drag.
+Must be <B>1</B>, <B>2</B> or <B>3</B>.
+
+</DD>
+</DL>
+<DL><DT><A NAME="-draginitcmd"><B>-draginitcmd</B></A></DT>
+<DD>
+
+Specifies a command to be called when <B>dragevent</B> occurs on widget.
+<B>draginitcmd</B> must be a command conforming to the description of the
+option <B>draginitcmd</B> of <B>DragSite::<A HREF="DragSite.html#register">register</A></B>.
+
+<BR>If <B>draginitcmd</B> is empty, the internal <B>draginitcmd</B> command is used instead
+and returns:
+<DL><DD><TABLE BORDER=0 CELLSPACING=1>
+<TR><TD valign=top><I>IMAGE&nbsp;{copy}&nbsp;&lt;image&nbsp;name&gt;</I>
+<TD>if an image is displayed.
+<TR><TD valign=top><I>BITMAP&nbsp;{copy}&nbsp;&lt;bitmap&nbsp;name&gt;</I>
+<TD>if a bitmap is displayed.
+<TR><TD valign=top><I>TEXT&nbsp;{copy}&nbsp;&lt;text&gt;</I>
+<TD>if a text is displayed.
+</TABLE></DL>
+Note that if <B>dragtype</B> option is not empty, its value is used instead of those above.
+
+</DD>
+</DL>
+<DL><DT><A NAME="-dragtype"><B>-dragtype</B></A></DT>
+<DD>
+
+Specifies an alternate type of dragged object.
+
+</DD>
+</DL>
+<DL><DT><A NAME="-dropcmd"><B>-dropcmd</B></A></DT>
+<DD>
+
+Specifies a command to be called when drop occurs on the widget.
+<B>dropcmd</B> must be a command conforming to the description of the
+option <B>dropcmd</B> of <B>DropSite::<A HREF="DropSite.html#register">register</A></B>.
+
+<BR>If <B>dropcmd</B> is empty, the command updates the label following the type of the data:
+<DL><DD><TABLE BORDER=0 CELLSPACING=1>
+<TR><TD><I>COLOR</I> or <I>FGCOLOR</I></TD>
+<TD>reconfigure the <B>foreground</B> of the Label.</TD>
+<TR><TD><I>BGCOLOR</I></TD>
+<TD>reconfigure the <B>background</B> of the Label.</TD>
+<TR><TD><I>IMAGE</I></TD>
+<TD>reconfigure the Label to display the associated image.</TD>
+<TR><TD><I>BITMAP</I></TD>
+<TD>reconfigure the Label to display the associated bitmap.
+<B>image</B> option is set to empty.</TD>
+<TR><TD><I>TEXT</I>,<BR>or any other tag</TD>
+<TD>reconfigure the Label to display the associated string.
+<B>image</B> and <B>bitmap</B> options are set to empty.</TD>
+</TABLE></DL>
+and returns 1.
+
+</DD>
+</DL>
+<DL><DT><A NAME="-dropenabled"><B>-dropenabled</B></A></DT>
+<DD>
+A boolean specifying if drop is enabled.
+</DD>
+</DL>
+<DL><DT><A NAME="-dropovercmd"><B>-dropovercmd</B></A></DT>
+<DD>
+
+Specifies a command to be called when drag icon is over the widget.
+<B>dropovercmd</B> must be a command conforming to the description of the
+option <B>dropovercmd</B> of <B>DropSite::<A HREF="DropSite.html#register">register</A></B>.
+
+<BR>If <B>dropovercmd</B> is empty, Label always accepts the drop if data type is
+<I>FGCOLOR</I>, <I>COLOR</I>, <I>BGCOLOR</I>, and accepts all other data type only if
+<B>state</B> is normal.
+
+</DD>
+</DL>
+<DL><DT><A NAME="-droptypes"><B>-droptypes</B></A></DT>
+<DD>
+
+Specifies a list of accepted dropped object/operation.
+See option <B>droptypes</B> of
+<B>DropSite::<A HREF="DropSite.html#register">register</A></B>.
+for more infromation.
+
+Default accepts <I>FGCOLOR</I>, <I>COLOR</I>, <I>BGCOLOR</I>, <I>TEXT</I>, <I>BITMAP</I>
+and <I>IMAGE</I>, all with <B>copy</B> and <B>move</B> operations.
+
+</DD>
+</DL>
+<DL><DT><A NAME="-focus"><B>-focus</B></A></DT>
+<DD>
+
+Specifies a pathname to set the focus on for Label::<B>setfocus</B> command.
+
+</DD>
+</DL>
+<DL><DT><A NAME="-height"><B>-height</B></A></DT>
+<DD>
+
+Specifies a desired height for the label.
+If an image or bitmap is being displayed in the label then the value is in
+screen units, for text it is in lines of text.
+If this option isn't specified, the label's desired height is computed
+from the size of the image or bitmap or text being displayed in it.<BR>
+Option not available for <I>themed</I> widgets.
+</DD>
+</DL>
+<DL><DT><A NAME="-helptext"><B>-helptext</B></A></DT>
+<DD>
+
+Text for dynamic help. If empty, no help is available for this widget.
+See also <A HREF="DynamicHelp.html">DynamicHelp</A>.
+</DD>
+</DL>
+<DL><DT><A NAME="-helptype"><B>-helptype</B></A></DT>
+<DD>
+Type of dynamic help. Use <I>balloon</I> or <I>variable</I>.
+See also <A HREF="DynamicHelp.html">DynamicHelp</A>.
+</DD>
+</DL>
+<DL><DT><A NAME="-helpvar"><B>-helpvar</B></A></DT>
+<DD>
+Variable to use when <B>helptype</B> option is <I>variable</I>.
+See also <A HREF="DynamicHelp.html">DynamicHelp</A>.
+</DD>
+</DL>
+<DL><DT><A NAME="-name"><B>-name</B></A></DT>
+<DD>
+
+Specifies a standard name for the label. If the option <B>*<I>name</I>Name</B> is
+found in the resource database, then <B>text</B> and <B>underline</B> options
+are extracted from its value.
+
+</DD>
+</DL>
+<DL><DT><A NAME="-state"><B>-state</B></A></DT>
+<DD>
+
+Specifies one of two states for the Label:  <B>normal</B> or <B>disabled</B>.
+In normal state the text of the Label is displayed using the <B>foreground</B> option.
+In disabled state the text of the Label is displayed using the <B>disabledforeground</B> option.
+</DD>
+</DL>
+<DL><DT><A NAME="-underline"><B>-underline</B></A></DT>
+<DD>
+
+Specifies the integer index of a character to underline in the label.
+0 corresponds to the first character of the text displayed, 1 to the next character,
+and so on.
+<BR>The binding <B>&lt;Alt-<I>char</I>&gt;</B> is automatically set on the toplevel
+of the Label to call Label::<B>setfocus</B>.
+
+</DD>
+</DL>
+<DL><DT><A NAME="-width"><B>-width</B></A></DT>
+<DD>
+
+Specifies a desired width for the label.
+If an image or bitmap is being displayed in the label then the value is in
+screen units, for text it is in characters.
+If this option isn't specified, the label's desired width is computed
+from the size of the image or bitmap or text being displayed in it.
+
+</DD>
+</DL>
+<HR WIDTH="50%"><BR>
+<B><A NAME="wc">WIDGET COMMAND</A></B><BR>
+<DL><DT><A NAME="cget"><I>pathName</I> <B>cget</B></A>
+ <I>option</I>
+</DT><DD>
+
+Returns the current value of the configuration option given by <I>option</I>.
+<I>Option</I> may have any of the values accepted by the creation command.
+</DD></DL>
+<DL><DT><A NAME="configure"><I>pathName</I> <B>configure</B></A>
+ ?<I>option</I>? ?<I>value</I> <I>option</I> <I>value</I> ...?
+</DT><DD>
+
+Query or modify the configuration options of the widget. If no <I>option</I> is specified,
+returns a list describing all of the available options for <I>pathName</I>.
+If <I>option</I> is specified with no <I>value</I>, then the command returns a list
+describing the one named <I>option</I> (this list will be identical to the corresponding
+sublist of the value returned if no <I>option</I> is specified). If one or
+more <I>option-value</I> pairs are specified, then the command modifies the given widget
+option(s) to have the given value(s); in this case the command returns an empty string.
+<I>Option</I> may have any of the values accepted by the creation command.
+Read-only options are not be modified.
+
+</DD></DL>
+<DL><DT><A NAME="setfocus"><I>pathName</I> <B>setfocus</B></A>
+</DT><DD>
+
+Set the focus on the pathname given by <B>-focus</B> option if <B>-state</B> is <I>normal</I>.
+
+</DD></DL>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

@@ -1,0 +1,24 @@
+#! /bin/sh
+# Lookup a Tcl interpreter \
+    INTERP="tclsh8.6"; \
+    for interp in $INTERPS; \
+    do if [ -x $interp ]; then INTERP=$interp; break; \
+    fi;  done; \
+    exec $INTERP "$0" ${1+"$@"}
+
+# -*- tcl -*-
+#
+# Tiny scripted replacement of a binary nxwish (former xowish). This
+# script can be used as interactive shell for testing or like a
+# regular shell with the #! markup in the first line of a script. It
+# is designed to work with multiple installed Tcl shells during
+# development.
+#
+
+package require Tk
+package require nx::shell 1.1
+
+namespace import -force ::nx::*
+
+set exitCode [nx::shell run $argc $argv]
+exit $exitCode

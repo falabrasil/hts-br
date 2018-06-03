@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="Tcl36.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org">
+<meta name='Author' content='ActiveState'>
+
+<title>Debugging &amp; Errors - errorInfo errorCode catch error
+return</title>
+<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 class="title">Debugging and Errors - errorInfo errorCode catch
+error return</h1>
+
+<div class="nav"><a href="Tcl35.html">Previous lesson</a> | <a
+href="tcltutorial.html">Index</a> | <a href="Tcl37.html">Next
+lesson</a></div>
+
+<p>In previous lessons we discussed how the <code class=
+"keyword">return</code> command could be used to return a value
+from a proc. In Tcl, a proc may return a value, but it always
+returns a status.</p>
+
+<p>When a Tcl command or procedure encounters an error during its
+execution, the global variable <code class=
+"keyword">errorInfo</code> is set, and an error condition is
+generated. If you have proc <code class="keyword">a</code> that
+called proc <code class="keyword">b</code> that called <code class=
+"keyword">c</code> that called <code class="keyword">d</code> , if
+<code class="keyword">d</code> generates an error, the "call stack"
+will unwind. Since d generates an error, <code class=
+"keyword">c</code> will not complete execution cleanly, and will
+have to pass the error up to <code class="keyword">b</code> , and
+in turn on to <code class="keyword">a</code>. Each procedure adds
+some information about the problem to the report. For instance:</p>
+
+<pre class="example">
+proc a {} {
+    b
+}
+proc b {} {
+    c
+}
+proc c {} {
+    d
+}
+proc d {} {
+    some_command
+}
+
+a
+</pre>
+
+<p>Produces the following output:</p>
+
+<pre class="example">
+invalid command name "some_command"
+    while executing
+"some_command"
+    (procedure "d" line 2)
+    invoked from within
+"d"
+    (procedure "c" line 2)
+    invoked from within
+"c"
+    (procedure "b" line 2)
+    invoked from within
+"b"
+    (procedure "a" line 2)
+    invoked from within
+"a"
+    (file "errors.tcl" line 16)
+   
+</pre>
+
+<p>This actually occurs when any exception condition occurs,
+including <code class="keyword">break</code> and <code class=
+"keyword">continue</code>. The <code class="keyword">break</code>
+and <code class="keyword">continue</code> commands normally occur
+within a loop of some sort, and the loop command catches the
+exception and processes it properly, meaning that it either stops
+executing the loop, or continues on to the next instance of the
+loop without executing the rest of the loop body.</p>
+
+<p>It is possible to "catch" errors and exceptions with the <code
+class="keyword">catch</code> command, which runs some code, and
+catches any errors that code happens to generate. The programmer
+can then decide what to do about those errors and act accordingly,
+instead of having the whole application come to a halt.</p>
+
+<p>For example, if an <code class="keyword">open</code> call
+returns an error, the user could be prompted to provide another
+file name.</p>
+
+<p>A Tcl proc can also generate an error status condition. This can
+be done by specifying an error return with an option to the <code
+class="keyword">return</code> command, or by using the <code class=
+"keyword">error</code> command. In either case, a message will be
+placed in <code class="keyword">errorInfo</code>, and the proc will
+generate an error.</p>
+
+<dl>
+<dt><code class="keyword">error</code> <code class=
+"arg">message</code> <code class="arg">?info?</code> <code class=
+"arg">?code?</code></dt>
+
+<dd>
+<p>Generates an error condition and forces the Tcl call stack to
+unwind, with error information being added at each step.</p>
+
+<p>If <code class="arg">info</code> or <code class=
+"arg">code</code> are provided, the errorInfo and errorCode
+variables are initialized with these values.</p>
+</dd>
+
+<dt><code class="keyword">catch</code> <code class=
+"arg">script</code> <code class="arg">?varName?</code></dt>
+
+<dd>
+<p>Evaluates and executes <code class="arg">script</code>. The
+return value of catch is the status return of the Tcl interpreter
+after it executes <code class="arg">script</code> If there are no
+errors in <code class="arg">script</code>, this value is 0.
+Otherwise it is 1.</p>
+
+<p>If <code class="arg">varName</code> is supplied, the value
+returned by <code class="arg">script</code> is placed in <code
+class="arg">varName</code> if the script successfully executes. If
+not, the error is placed in <code class="arg">varName</code>.</p>
+</dd>
+
+<dt><code class="keyword">return</code> <code class="arg">?-code
+code?</code> <code class="arg">?-errorinfo info?</code> <code
+class="arg">?-errorcode errorcode?</code> <code class=
+"arg">?value?</code></dt>
+
+<dd>Generates a return exception condition. The possible arguments
+are: 
+
+<dl>
+<dt><code class="keyword">-code</code> <code class=
+"arg">code</code></dt>
+
+<dd>The next value specifies the return status. <code class=
+"arg">code</code> must be one of: 
+
+<ul>
+<li><code class="keyword">ok</code> - Normal status return</li>
+
+<li><code class="keyword">error</code> - Proc returns error
+status</li>
+
+<li><code class="keyword">return</code> - Normal return</li>
+
+<li><code class="keyword">break</code> - Proc returns break
+status</li>
+
+<li><code class="keyword">continue</code> - Proc returns continue
+status</li>
+</ul>
+
+These allow you to write procedures that behave like the built in
+commands <code class="keyword">break</code>, <code class=
+"keyword">error</code>, and <code class=
+"keyword">continue</code>.</dd>
+
+<dt><code class="keyword">-errorinfo</code> <code class=
+"arg">info</code></dt>
+
+<dd><code class="arg">info</code> will be the first string in the
+<code class="keyword">errorInfo</code> variable.</dd>
+
+<dt><code class="keyword">-errorcode</code> <code class=
+"arg">errorcode</code></dt>
+
+<dd>The proc will set <code class="keyword">errorCode</code> to
+<code class="arg">errorcode</code>.</dd>
+
+<dt><code class="arg">value</code></dt>
+
+<dd>The string <code class="arg">value</code> will be the value
+returned by this proc.</dd>
+</dl>
+</dd>
+
+<dt><code class="keyword">errorInfo</code></dt>
+
+<dd><code class="keyword">errorInfo</code> is a global variable
+that contains the error information from commands that have
+failed.</dd>
+
+<dt><code class="keyword">errorCode</code></dt>
+
+<dd><code class="keyword">errorCode</code> is a global variable
+that contains the error code from command that failed. This is
+meant to be in a format that is easy to parse with a script, so
+that Tcl scripts can examine the contents of this variable, and
+decide what to do accordingly.</dd>
+</dl>
+
+<hr>
+<h2>Example</h2>
+
+<pre class="example">
+proc errorproc {x} {
+    if {$x &gt; 0} {
+    error "Error generated by error" "Info String for error" $x
+    }
+}
+
+catch errorproc
+puts "after bad proc call: ErrorCode: $errorCode"
+puts "ERRORINFO:\n$errorInfo\n"
+
+set errorInfo "";
+catch {errorproc 0}
+puts "after proc call with no error: ErrorCode: $errorCode"
+puts "ERRORINFO:\n$errorInfo\n"
+
+catch {errorproc 2}
+puts "after error generated in proc: ErrorCode: $errorCode"
+puts "ERRORINFO:\n$errorInfo\n"
+
+
+proc returnErr { x } {
+    return -code error -errorinfo "Return Generates This" -errorcode "-999"
+}
+
+catch {returnErr 2}
+puts "after proc that uses return to generate an error: ErrorCode: $errorCode"
+puts "ERRORINFO:\n$errorInfo\n"
+
+proc withError {x} {
+    set x $a
+}
+
+catch {withError 2}
+puts "after proc with an error: ErrorCode: $errorCode"
+puts "ERRORINFO:\n$errorInfo\n"
+
+catch {open [file join no_such_directory no_such_file] r}
+puts "after an error call to a nonexistent file:"
+puts "ErrorCode: $errorCode"
+puts "ERRORINFO:\n$errorInfo\n"
+   
+</pre>
+
+<div class="nav"><a href="Tcl35.html">Previous lesson</a> | <a
+href="tcltutorial.html">Index</a> | <a href="Tcl37.html">Next
+lesson</a></div>
+</body>
+</html>
+
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

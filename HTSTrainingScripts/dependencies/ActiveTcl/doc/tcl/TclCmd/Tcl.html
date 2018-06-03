@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="Tcl.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>Tcl manual page - Tcl Built-In Commands</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tcl Commands, version 8.6.7</a> <small>&gt;</small> Tcl</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="contents.html">Tcl Commands</A> | <A HREF="../TkCmd/contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="Tcl.html#M2" NAME="L1852">NAME</A>
+<DL><DD>Tcl &mdash; Tool Command Language</DD></DL>
+<DD><A HREF="Tcl.html#M3" NAME="L1853">SYNOPSIS</A>
+<DL>
+</DL>
+<DD><A HREF="Tcl.html#M4" NAME="L1854">DESCRIPTION</A>
+<OL class="description">
+<DD><A HREF="Tcl.html#M5" NAME="L1855">[1] <B>Commands.</B></A>
+<DD><A HREF="Tcl.html#M6" NAME="L1856">[2] <B>Evaluation.</B></A>
+<DD><A HREF="Tcl.html#M7" NAME="L1857">[3] <B>Words.</B></A>
+<DD><A HREF="Tcl.html#M8" NAME="L1858">[4] <B>Double quotes.</B></A>
+<DD><A HREF="Tcl.html#M9" NAME="L1859">[5] <B>Argument expansion.</B></A>
+<DD><A HREF="Tcl.html#M10" NAME="L1860">[6] <B>Braces.</B></A>
+<DD><A HREF="Tcl.html#M11" NAME="L1861">[7] <B>Command substitution.</B></A>
+<DD><A HREF="Tcl.html#M12" NAME="L1862">[8] <B>Variable substitution.</B></A>
+<DL class="description">
+<DD><A HREF="Tcl.html#M13" NAME="L1863"><B>$</B><I>name</I></A>
+<DD><A HREF="Tcl.html#M14" NAME="L1864"><B>$</B><I>name</I><B>(</B><I>index</I><B>)</B></A>
+<DD><A HREF="Tcl.html#M15" NAME="L1865"><B>${</B><I>name</I><B>}</B></A>
+</DL>
+<DD><A HREF="Tcl.html#M16" NAME="L1866">[9] <B>Backslash substitution.</B></A>
+<DL class="description">
+<DD><A HREF="Tcl.html#M17" NAME="L1867">&#92;<B>a</B></A>
+<DD><A HREF="Tcl.html#M18" NAME="L1868">&#92;<B>b</B></A>
+<DD><A HREF="Tcl.html#M19" NAME="L1869">&#92;<B>f</B></A>
+<DD><A HREF="Tcl.html#M20" NAME="L1870">&#92;<B>n</B></A>
+<DD><A HREF="Tcl.html#M21" NAME="L1871">&#92;<B>r</B></A>
+<DD><A HREF="Tcl.html#M22" NAME="L1872">&#92;<B>t</B></A>
+<DD><A HREF="Tcl.html#M23" NAME="L1873">&#92;<B>v</B></A>
+<DD><A HREF="Tcl.html#M24" NAME="L1874">&#92;<B>&lt;newline&gt;</B><I>whiteSpace</I></A>
+<DD><A HREF="Tcl.html#M25" NAME="L1875">&#92;&#92;</A>
+<DD><A HREF="Tcl.html#M26" NAME="L1876">&#92;<I>ooo</I></A>
+<DD><A HREF="Tcl.html#M27" NAME="L1877">&#92;<B>x</B><I>hh</I></A>
+<DD><A HREF="Tcl.html#M28" NAME="L1878">&#92;<B>u</B><I>hhhh</I></A>
+<DD><A HREF="Tcl.html#M29" NAME="L1879">&#92;<B>U</B><I>hhhhhhhh</I></A>
+</DL>
+<DD><A HREF="Tcl.html#M30" NAME="L1880">[10] <B>Comments.</B></A>
+<DD><A HREF="Tcl.html#M31" NAME="L1881">[11] <B>Order of substitution.</B></A>
+<DD><A HREF="Tcl.html#M32" NAME="L1882">[12] <B>Substitution and word boundaries.</B></A>
+</OL>
+<DD><A HREF="Tcl.html#M33" NAME="L1883">KEYWORDS</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+Tcl &mdash; Tool Command Language
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+Summary of Tcl language syntax.<BR>
+<H3><A NAME="M4">DESCRIPTION</A></H3>
+The following rules define the syntax and semantics of the Tcl language:
+<P>
+<OL class="description">
+<DT><A NAME="M5">[1] <B>Commands.</B></A><DD>
+A Tcl script is a string containing one or more commands.
+Semi-colons and newlines are command separators unless quoted as
+described below.
+Close brackets are command terminators during command substitution
+(see below) unless quoted.
+<P><DT><A NAME="M6">[2] <B>Evaluation.</B></A><DD>
+A command is evaluated in two steps.
+First, the Tcl interpreter breaks the command into <I>words</I>
+and performs substitutions as described below.
+These substitutions are performed in the same way for all
+commands.
+Secondly, the first word is used to locate a command procedure to
+carry out the command, then all of the words of the command are
+passed to the command procedure.
+The command procedure is free to interpret each of its words
+in any way it likes, such as an integer, variable name, list,
+or Tcl script.
+Different commands interpret their words differently.
+<P><DT><A NAME="M7">[3] <B>Words.</B></A><DD>
+Words of a command are separated by white space (except for
+newlines, which are command separators).
+<P><DT><A NAME="M8">[4] <B>Double quotes.</B></A><DD>
+If the first character of a word is double-quote
+(&#8220;&#34;&#8221;)
+then the word is terminated by the next double-quote character.
+If semi-colons, close brackets, or white space characters
+(including newlines) appear between the quotes then they are treated
+as ordinary characters and included in the word.
+Command substitution, variable substitution, and backslash substitution
+are performed on the characters between the quotes as described below.
+The double-quotes are not retained as part of the word.
+<P><DT><A NAME="M9">[5] <B>Argument expansion.</B></A><DD>
+If a word starts with the string
+&#8220;{*}&#8221;
+followed by a non-whitespace character, then the leading
+&#8220;{*}&#8221;
+is removed and the rest of the word is parsed and substituted as any other
+word. After substitution, the word is parsed as a list (without command or
+variable substitutions; backslash substitutions are performed as is normal for
+a list and individual internal words may be surrounded by either braces or
+double-quote characters), and its words are added to the command being
+substituted. For instance,
+&#8220;cmd a {*}{b [c]} d {*}{$e f {g h}}&#8221;
+is equivalent to
+&#8220;cmd a b {[c]} d {$e} f {g h}&#8221;.
+<P><DT><A NAME="M10">[6] <B>Braces.</B></A><DD>
+If the first character of a word is an open brace
+(&#8220;{&#8221;)
+and rule [5] does not apply, then
+the word is terminated by the matching close brace
+(&#8220;}&#8221;).
+Braces nest within the word: for each additional open
+brace there must be an additional close brace (however,
+if an open brace or close brace within the word is
+quoted with a backslash then it is not counted in locating the
+matching close brace).
+No substitutions are performed on the characters between the
+braces except for backslash-newline substitutions described
+below, nor do semi-colons, newlines, close brackets,
+or white space receive any special interpretation.
+The word will consist of exactly the characters between the
+outer braces, not including the braces themselves.
+<P><DT><A NAME="M11">[7] <B>Command substitution.</B></A><DD>
+If a word contains an open bracket
+(&#8220;[&#8221;)
+then Tcl performs <I>command substitution</I>.
+To do this it invokes the Tcl interpreter recursively to process
+the characters following the open bracket as a Tcl script.
+The script may contain any number of commands and must be terminated
+by a close bracket
+(&#8220;]&#8221;).
+The result of the script (i.e. the result of its last command) is
+substituted into the word in place of the brackets and all of the
+characters between them.
+There may be any number of command substitutions in a single word.
+Command substitution is not performed on words enclosed in braces.
+<P><DT><A NAME="M12">[8] <B>Variable substitution.</B></A><DD>
+If a word contains a dollar-sign
+(&#8220;$&#8221;)
+followed by one of the forms
+described below, then Tcl performs <I>variable
+substitution</I>:  the dollar-sign and the following characters are
+replaced in the word by the value of a variable.
+Variable substitution may take any of the following forms:
+<P>
+<DL class="description">
+<DT><A NAME="M13"><B>$</B><I>name</I></A><DD>
+<I>Name</I> is the name of a scalar variable;  the name is a sequence
+of one or more characters that are a letter, digit, underscore,
+or namespace separators (two or more colons).
+Letters and digits are <I>only</I> the standard ASCII ones (<B>0</B>&#8211;<B>9</B>,
+<B>A</B>&#8211;<B>Z</B> and <B>a</B>&#8211;<B>z</B>).
+<P><DT><A NAME="M14"><B>$</B><I>name</I><B>(</B><I>index</I><B>)</B></A><DD>
+<I>Name</I> gives the name of an array variable and <I>index</I> gives
+the name of an element within that array.
+<I>Name</I> must contain only letters, digits, underscores, and
+namespace separators, and may be an empty string.
+Letters and digits are <I>only</I> the standard ASCII ones (<B>0</B>&#8211;<B>9</B>,
+<B>A</B>&#8211;<B>Z</B> and <B>a</B>&#8211;<B>z</B>).
+Command substitutions, variable substitutions, and backslash
+substitutions are performed on the characters of <I>index</I>.
+<P><DT><A NAME="M15"><B>${</B><I>name</I><B>}</B></A><DD>
+<I>Name</I> is the name of a scalar variable or array element.  It may contain
+any characters whatsoever except for close braces.  It indicates an array
+element if <I>name</I> is in the form
+&#8220;<I>arrayName</I><B>(</B><I>index</I><B>)</B>&#8221;
+where <I>arrayName</I> does not contain any open parenthesis characters,
+&#8220;<B>(</B>&#8221;,
+or close brace characters,
+&#8220;<B>}</B>&#8221;,
+and <I>index</I> can be any sequence of characters except for close brace
+characters.  No further
+substitutions are performed during the parsing of <I>name</I>.
+<P></DL>
+<DL><DD>
+<P>
+There may be any number of variable substitutions in a single word.
+Variable substitution is not performed on words enclosed in braces.
+<P>
+Note that variables may contain character sequences other than those listed
+above, but in that case other mechanisms must be used to access them (e.g.,
+via the <B><A HREF="set.html">set</A></B> command's single-argument form).
+</DL>
+<P><DT><A NAME="M16">[9] <B>Backslash substitution.</B></A><DD>
+If a backslash
+(&#8220;&#92;&#8221;)
+appears within a word then <I>backslash substitution</I> occurs.
+In all cases but those described below the backslash is dropped and
+the following character is treated as an ordinary
+character and included in the word.
+This allows characters such as double quotes, close brackets,
+and dollar signs to be included in words without triggering
+special processing.
+The following table lists the backslash sequences that are
+handled specially, along with the value that replaces each sequence.
+<P>
+<DL class="description">
+<DT><A NAME="M17">&#92;<B>a</B></A><DD>
+Audible alert (bell) (Unicode U+000007).
+<P><DT><A NAME="M18">&#92;<B>b</B></A><DD>
+Backspace (Unicode U+000008).
+<P><DT><A NAME="M19">&#92;<B>f</B></A><DD>
+Form feed (Unicode U+00000C).
+<P><DT><A NAME="M20">&#92;<B>n</B></A><DD>
+Newline (Unicode U+00000A).
+<P><DT><A NAME="M21">&#92;<B>r</B></A><DD>
+Carriage-return (Unicode U+00000D).
+<P><DT><A NAME="M22">&#92;<B>t</B></A><DD>
+Tab (Unicode U+000009).
+<P><DT><A NAME="M23">&#92;<B>v</B></A><DD>
+Vertical tab (Unicode U+00000B).
+<P><DT><A NAME="M24">&#92;<B>&lt;newline&gt;</B><I>whiteSpace</I></A><DD>
+A single space character replaces the backslash, newline, and all spaces
+and tabs after the newline.  This backslash sequence is unique in that it
+is replaced in a separate pre-pass before the command is actually parsed.
+This means that it will be replaced even when it occurs between braces,
+and the resulting space will be treated as a word separator if it is not
+in braces or quotes.
+<P><DT><A NAME="M25">&#92;&#92;</A><DD>
+Backslash
+(&#8220;&#92;&#8221;).
+<P><DT><A NAME="M26">&#92;<I>ooo</I></A><DD>
+The digits <I>ooo</I> (one, two, or three of them) give a eight-bit octal
+value for the Unicode character that will be inserted, in the range
+<I>000</I>&#8211;<I>377</I> (i.e., the range U+000000&#8211;U+0000FF).
+The parser will stop just before this range overflows, or when
+the maximum of three digits is reached.  The upper bits of the Unicode
+character will be 0.
+<P><DT><A NAME="M27">&#92;<B>x</B><I>hh</I></A><DD>
+The hexadecimal digits <I>hh</I> (one or two of them) give an eight-bit
+hexadecimal value for the Unicode character that will be inserted.  The upper
+bits of the Unicode character will be 0 (i.e., the character will be in the
+range U+000000&#8211;U+0000FF).
+<P><DT><A NAME="M28">&#92;<B>u</B><I>hhhh</I></A><DD>
+The hexadecimal digits <I>hhhh</I> (one, two, three, or four of them) give a
+sixteen-bit hexadecimal value for the Unicode character that will be
+inserted.  The upper bits of the Unicode character will be 0 (i.e., the
+character will be in the range U+000000&#8211;U+00FFFF).
+<P><DT><A NAME="M29">&#92;<B>U</B><I>hhhhhhhh</I></A><DD>
+The hexadecimal digits <I>hhhhhhhh</I> (one up to eight of them) give a
+twenty-one-bit hexadecimal value for the Unicode character that will be
+inserted, in the range U+000000&#8211;U+10FFFF.  The parser will stop just
+before this range overflows, or when the maximum of eight digits
+is reached.  The upper bits of the Unicode character will be 0.
+<P>
+The range U+010000&#8211;U+10FFFD is reserved for the future.
+</DL><P>Backslash substitution is not performed on words enclosed in braces,
+except for backslash-newline as described above.<DL class="description">
+</DL>
+<P><DT><A NAME="M30">[10] <B>Comments.</B></A><DD>
+If a hash character
+(&#8220;#&#8221;)
+appears at a point where Tcl is
+expecting the first character of the first word of a command,
+then the hash character and the characters that follow it, up
+through the next newline, are treated as a comment and ignored.
+The comment character only has significance when it appears
+at the beginning of a command.
+<P><DT><A NAME="M31">[11] <B>Order of substitution.</B></A><DD>
+Each character is processed exactly once by the Tcl interpreter
+as part of creating the words of a command.
+For example, if variable substitution occurs then no further
+substitutions are performed on the value of the variable;  the
+value is inserted into the word verbatim.
+If command substitution occurs then the nested command is
+processed entirely by the recursive call to the Tcl interpreter;
+no substitutions are performed before making the recursive
+call and no additional substitutions are performed on the result
+of the nested script.
+<P>
+Substitutions take place from left to right, and each substitution is
+evaluated completely before attempting to evaluate the next.  Thus, a
+sequence like
+<P>
+<PRE>set y [set x 0][incr x][incr x]</PRE>
+<P>will always set the variable <I>y</I> to the value, <I>012</I>.
+<P><DT><A NAME="M32">[12] <B>Substitution and word boundaries.</B></A><DD>
+Substitutions do not affect the word boundaries of a command,
+except for argument expansion as specified in rule [5].
+For example, during variable substitution the entire value of
+the variable becomes part of a single word, even if the variable's
+value contains spaces.
+<P></OL>
+<H3><A NAME="M33">KEYWORDS</A></H3>
+<A href="../Keywords/B.html#backslash">backslash</A>, <A href="../Keywords/C.html#command">command</A>, <A href="../Keywords/C.html#comment">comment</A>, <A href="../Keywords/S.html#script">script</A>, <A href="../Keywords/S.html#substitution">substitution</A>, <A href="../Keywords/V.html#variable">variable</A>
+<div class="copy">Copyright &copy; 1993 The Regents of the University of California.
+<BR>Copyright &copy; 1994-1996 Sun Microsystems, Inc.
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

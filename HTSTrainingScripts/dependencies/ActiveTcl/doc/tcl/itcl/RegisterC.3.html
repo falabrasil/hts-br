@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="RegisterC.3.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			---
+   
+---
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org">
+<meta name='Author' content='ActiveState'>
+
+<title>itcl - Itcl_RegisterC (3)</title>
+</head>
+<body>
+<center>
+<h1>[incr\ Tcl] Library Procedures</h1>
+</center>
+
+<h3>NAME</h3>
+
+Itcl_RegisterC, Itcl_RegisterObjC, Itcl_FindC - Associate a
+symbolic name with a C procedure. 
+
+<h3>SYNOPSIS</h3>
+
+<b>#include &lt;itcl.h&gt;</b><br>
+<br>
+int<br>
+<b>Itcl_RegisterC</b>(<i>interp, cmdName, argProc, clientData,
+deleteProc</i>)<br>
+<br>
+int<br>
+<b>Itcl_RegisterObjC</b>(<i>interp, cmdName, objProc, clientData,
+deleteProc</i>)<br>
+<br>
+int<br>
+<b>Itcl_FindC</b>(<i>interp, cmdName, argProcPtr, objProcPtr,
+cDataPtr</i>)<br>
+<h3>ARGUMENTS</h3>
+
+<dl>
+<dt><b>Tcl_Interp</b> <i>*interp</i> (in)</dt>
+
+<dd>Interpreter in which to create new command.</dd>
+
+<dt><b>CONST char</b> <i>*cmdName</i> (in)</dt>
+
+<dd>Name of command.</dd>
+
+<dt><b>Tcl_CmdProc</b> <i>*argProc</i> (in)</dt>
+
+<dd>Implementation of new command: <i>argProc</i> will be called
+whenever</dd>
+
+<dt><b>Tcl_CmdProc</b> <i>**argProcPtr</i> (in/out)</dt>
+
+<dd>The Tcl_CmdProc * to receive the pointer.</dd>
+
+<dt><b>Tcl_ObjCmdProc</b> <i>*objProc</i> (in)</dt>
+
+<dd>Implementation of the new command: <i>objProc</i> will be
+called whenever</dd>
+
+<dt><b>Tcl_ObjCmdProc</b> <i>**objProcPtr</i> (in/out)</dt>
+
+<dd>The Tcl_ObjCmdProc * to receive the pointer.</dd>
+
+<dt><b>ClientData</b> <i>clientData</i> (in)</dt>
+
+<dd>Arbitrary one-word value to pass to <i>proc</i> and
+<i>deleteProc</i>.</dd>
+
+<dt><b>ClientData</b> <i>*cDataPtr</i> (in/out)</dt>
+
+<dd>The ClientData to receive the pointer.</dd>
+
+<dt><b>Tcl_CmdDeleteProc</b> <i>*deleteProc</i> (in)</dt>
+
+<dd>Procedure to call before <i>cmdName</i> is deleted from the
+interpreter; allows for command-specific cleanup. If NULL, then no
+procedure is called before the command is deleted.</dd>
+</dl>
+
+<h3>DESCRIPTION</h3>
+
+<p>Used to associate a symbolic name with an (argc,argv) C
+procedure that handles a Tcl command. Procedures that are
+registered in this manner can be referenced in the body of an [incr
+Tcl] class definition to specify C procedures to acting as
+methods/procs. Usually invoked in an initialization routine for an
+extension, called out in Tcl_AppInit() at the start of an
+application.</p>
+
+<p>Each symbolic procedure can have an arbitrary client data value
+associated with it. This value is passed into the command handler
+whenever it is invoked.</p>
+
+<p>A symbolic procedure name can be used only once for a given
+style (arg/obj) handler. If the name is defined with an arg-style
+handler, it can be redefined with an obj-style handler; or if the
+name is defined with an obj-style handler, it can be redefined with
+an arg-style handler. In either case, any previous client data is
+discarded and the new client data is remembered. However, if a name
+is redefined to a different handler of the same style, this
+procedure returns an error.</p>
+
+<p>Returns TCL_OK on success, or TCL_ERROR (along with an error
+message in interp-&gt;result) if anything goes wrong.</p>
+
+<p>C procedures can be integrated into an <b>[incrTcl]</b> class
+definition to implement methods, procs, and the "config" code for
+public variables. Any body that starts with "<b>@</b>" is treated
+as the symbolic name for a C procedure.</p>
+
+<p>Symbolic names are established by registering procedures via
+<b>Itcl_RegisterC()</b>. This is usually done in the
+<b>Tcl_AppInit()</b> procedure, which is automatically called when
+the interpreter starts up. In the following example, the procedure
+My_FooCmd() is registered with the symbolic name "foo". This
+procedure can be referenced in the <b><a href=
+"body.n.html">body</a></b> command as "@foo".</p>
+
+<blockquote>
+<pre>
+int
+Tcl_AppInit(interp)
+    Tcl_Interp *interp;     /* Interpreter for application. */
+{
+    if (Itcl_Init(interp) == TCL_ERROR) {
+        return TCL_ERROR;
+    }
+
+    if (Itcl_RegisterC(interp, "foo", My_FooCmd) != TCL_OK) {
+        return TCL_ERROR;
+    }
+}
+</pre>
+</blockquote>
+
+C procedures are implemented just like ordinary Tcl commands. See
+the <b>CrtCommand</b> man page for details. Within the procedure,
+class data members can be accessed like ordinary variables using
+<b>Tcl_SetVar()</b>, <b>Tcl_GetVar()</b>, <b>Tcl_TraceVar()</b>,
+etc. Class methods and procs can be executed like ordinary commands
+using <b>Tcl_Eval()</b>. <b>[incrTcl]</b> makes this possible by
+automatically setting up the context before executing the C
+procedure. 
+
+<p>This scheme provides a natural migration path for code
+development. Classes can be developed quickly using Tcl code to
+implement the bodies. An entire application can be built and
+tested. When necessary, individual bodies can be implemented with C
+code to improve performance.</p>
+
+<p>See the Archetype class in <b>[incrTk]</b> for an example of how
+this C linking method is used.</p>
+
+<h3>SEE ALSO</h3>
+
+Tcl_CreateCommand, Tcl_CreateObjCommand 
+
+<h3>KEYWORDS</h3>
+
+class, object 
+
+<hr>
+[ <a href="contents.html">itcl</a> ] 
+
+<hr>
+<pre>
+Copyright &copy; 1989-1994 The Regents of the University of California.
+Copyright &copy; 1994-1996 Sun Microsystems, Inc.
+</pre>
+</body>
+</html>
+
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

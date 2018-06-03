@@ -1,0 +1,109 @@
+/*
+body {
+    color: #000;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-family: Verdana, Arial, "Lucida Sans", sans-serif;
+}
+
+h1.title {
+    color: #000066;
+    font-size: x-large;
+    text-align: center;
+}
+
+h2 {
+    font-size: large;
+}
+*/
+code.keyword {
+    /* font-family: monospace; */
+    font-weight: normal;
+}
+
+code.command {
+    /* font-family: monospace; */
+    font-weight: bold;
+}
+
+code.arg {
+     /* font-family: monospace; */
+    font-style: italic;
+}
+
+code.optarg:before {
+    content: "?";
+}
+code.optarg:after {
+    content: "?";
+}
+code.optarg {
+    /* font-family: monospace; */
+    font-style: italic;
+}
+
+code.reqarg {
+    /* font-family: monospace; */
+    font-style: italic;
+}
+
+
+pre.example {
+    padding: 1%;
+    margin: 1%;
+    /*
+    background-color: #eeeeff;
+    border: 1px solid #ccccff;
+    font-family: monospace;
+    */
+    display: block;
+    white-space: pre;
+}
+
+div.nav {
+    text-align: center;
+    /*
+    background-color: #eeeeff;
+    border: 1px solid #ccccff;
+    */
+    padding: 1%;
+    margin: 3%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+/*
+
+a {
+    color: #000066;
+}
+a:hover { color: #990000; }
+div.nav a {
+    color: #000066;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 1em;
+}
+
+div.nav a:hover {
+    text-decoration: underline;
+}
+
+table {
+    background-color: #fff;
+    margin: 1%;
+    padding: 1%;
+}
+
+th { text-align: left; }
+td { padding-right: 1em; }
+
+dt { font-weight: bold; }
+*/
+div.warning {
+    padding-left: 1%;
+    padding-right: 1%;
+    margin: 1%;
+    background-color: #ffeeee;
+    border: 1px solid #ffcccc;
+}

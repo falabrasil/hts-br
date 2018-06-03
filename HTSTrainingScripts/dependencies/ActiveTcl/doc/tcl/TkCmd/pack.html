@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="pack.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>pack manual page - Tk Built-In Commands</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tk Commands, version 8.6.7</a> <small>&gt;</small> pack</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="pack.html#M2" NAME="L1083">NAME</A>
+<DL><DD>pack &mdash; Geometry manager that packs around edges of cavity</DD></DL>
+<DD><A HREF="pack.html#M3" NAME="L1084">SYNOPSIS</A>
+<DL>
+</DL>
+<DD><A HREF="pack.html#M4" NAME="L1085">DESCRIPTION</A>
+<DL class="description">
+<DD><A HREF="pack.html#M5" NAME="L1086"><B>pack </B><I>slave </I>?<I>slave ...</I>? ?<I>options</I>?</A>
+<DD><A HREF="pack.html#M6" NAME="L1087"><B>pack configure </B><I>slave </I>?<I>slave ...</I>? ?<I>options</I>?</A>
+<DL class="description">
+<DD><A HREF="pack.html#M7" NAME="L1088"><B>-after </B><I>other</I></A>
+<DD><A HREF="pack.html#M8" NAME="L1089"><B>-anchor </B><I>anchor</I></A>
+<DD><A HREF="pack.html#M9" NAME="L1090"><B>-before </B><I>other</I></A>
+<DD><A HREF="pack.html#M10" NAME="L1091"><B>-expand </B><I>boolean</I></A>
+<DD><A HREF="pack.html#M11" NAME="L1092"><B>-fill </B><I>style</I></A>
+<DL class="description">
+<DD><A HREF="pack.html#M12" NAME="L1093"><B>none</B></A>
+<DD><A HREF="pack.html#M13" NAME="L1094"><B>x</B></A>
+<DD><A HREF="pack.html#M14" NAME="L1095"><B>y</B></A>
+<DD><A HREF="pack.html#M15" NAME="L1096"><B>both</B></A>
+</DL>
+<DD><A HREF="pack.html#M16" NAME="L1097"><B>-in </B><I>other</I></A>
+<DD><A HREF="pack.html#M17" NAME="L1098"><B>-ipadx </B><I>amount</I></A>
+<DD><A HREF="pack.html#M18" NAME="L1099"><B>-ipady </B><I>amount</I></A>
+<DD><A HREF="pack.html#M19" NAME="L1100"><B>-padx </B><I>amount</I></A>
+<DD><A HREF="pack.html#M20" NAME="L1101"><B>-pady </B><I>amount</I></A>
+<DD><A HREF="pack.html#M21" NAME="L1102"><B>-side </B><I>side</I></A>
+</DL>
+<DD><A HREF="pack.html#M22" NAME="L1103"><B>pack forget </B><I>slave </I>?<I>slave ...</I>?</A>
+<DD><A HREF="pack.html#M23" NAME="L1104"><B>pack info </B><I>slave</I></A>
+<DD><A HREF="pack.html#M24" NAME="L1105"><B>pack propagate </B><I>master</I> ?<I>boolean</I>?</A>
+<DD><A HREF="pack.html#M25" NAME="L1106"><B>pack slaves </B><I>master</I></A>
+</DL>
+<DD><A HREF="pack.html#M26" NAME="L1107">THE PACKER ALGORITHM</A>
+<OL class="the packer algorithm">
+</OL>
+<DD><A HREF="pack.html#M27" NAME="L1108">EXPANSION</A>
+<DD><A HREF="pack.html#M28" NAME="L1109">GEOMETRY PROPAGATION</A>
+<DD><A HREF="pack.html#M29" NAME="L1110">RESTRICTIONS ON MASTER WINDOWS</A>
+<DD><A HREF="pack.html#M30" NAME="L1111">PACKING ORDER</A>
+<DD><A HREF="pack.html#M31" NAME="L1112">EXAMPLE</A>
+<DD><A HREF="pack.html#M32" NAME="L1113">SEE ALSO</A>
+<DD><A HREF="pack.html#M33" NAME="L1114">KEYWORDS</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+pack &mdash; Geometry manager that packs around edges of cavity
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+<B>pack </B><I>option arg </I>?<I>arg ...</I>?<BR>
+<H3><A NAME="M4">DESCRIPTION</A></H3>
+The <B>pack</B> command is used to communicate with the packer,
+a geometry manager that arranges the children of a parent by
+packing them in order around the edges of the parent.
+The <B>pack</B> command can have any of several forms, depending
+on the <I>option</I> argument:
+<P>
+<DL class="description">
+<DT><A NAME="M5"><B>pack </B><I>slave </I>?<I>slave ...</I>? ?<I>options</I>?</A><DD>
+If the first argument to <B>pack</B> is a window name (any value
+starting with
+&#8220;.&#8221;),
+then the command is processed in the same way as <B>pack configure</B>.
+<P><DT><A NAME="M6"><B>pack configure </B><I>slave </I>?<I>slave ...</I>? ?<I>options</I>?</A><DD>
+The arguments consist of the names of one or more slave windows
+followed by pairs of arguments that specify how
+to manage the slaves.
+See <B><A HREF="pack.html#M26">THE PACKER ALGORITHM</A></B> below for details on how the options
+are used by the packer.
+The following options are supported:
+<P>
+<DL class="description">
+<DT><A NAME="M7"><B>-after </B><I>other</I></A><DD>
+<I>Other</I> must the name of another window.
+Use its master as the master for the slaves, and insert
+the slaves just after <I>other</I> in the packing order.
+<P><DT><A NAME="M8"><B>-anchor </B><I>anchor</I></A><DD>
+<I>Anchor</I> must be a valid anchor position such as <B>n</B>
+or <B>sw</B>; it specifies where to position each slave in its
+parcel.
+Defaults to <B>center</B>.
+<P><DT><A NAME="M9"><B>-before </B><I>other</I></A><DD>
+<I>Other</I> must the name of another window.
+Use its master as the master for the slaves, and insert
+the slaves just before <I>other</I> in the packing order.
+<P><DT><A NAME="M10"><B>-expand </B><I>boolean</I></A><DD>
+Specifies whether the slaves should be expanded to consume
+extra space in their master.
+<I>Boolean</I> may have any proper boolean value, such as <B>1</B>
+or <B>no</B>.
+Defaults to 0.
+<P><DT><A NAME="M11"><B>-fill </B><I>style</I></A><DD>
+If a slave's parcel is larger than its requested dimensions, this
+option may be used to stretch the slave.
+<I>Style</I> must have one of the following values:
+<P>
+<DL class="description">
+<DT><A NAME="M12"><B>none</B></A><DD>
+Give the slave its requested dimensions plus any internal padding
+requested with <B>-ipadx</B> or <B>-ipady</B>.  This is the default.
+<P><DT><A NAME="M13"><B>x</B></A><DD>
+Stretch the slave horizontally to fill the entire width of its
+parcel (except leave external padding as specified by <B>-padx</B>).
+<P><DT><A NAME="M14"><B>y</B></A><DD>
+Stretch the slave vertically to fill the entire height of its
+parcel (except leave external padding as specified by <B>-pady</B>).
+<P><DT><A NAME="M15"><B>both</B></A><DD>
+Stretch the slave both horizontally and vertically.
+<P></DL>
+<P><DT><A NAME="M16"><B>-in </B><I>other</I></A><DD>
+Insert the slave(s) at the end of the packing order for the master
+window given by <I>other</I>.
+<P><DT><A NAME="M17"><B>-ipadx </B><I>amount</I></A><DD>
+<I>Amount</I> specifies how much horizontal internal padding to
+leave on each side of the slave(s).
+<I>Amount</I> must be a valid screen distance, such as <B>2</B> or <B>.5c</B>.
+It defaults to 0.
+<P><DT><A NAME="M18"><B>-ipady </B><I>amount</I></A><DD>
+<I>Amount</I> specifies how much vertical internal padding to
+leave on each side of the slave(s).
+<I>Amount</I>  defaults to 0.
+<P><DT><A NAME="M19"><B>-padx </B><I>amount</I></A><DD>
+<I>Amount</I> specifies how much horizontal external padding to
+leave on each side of the slave(s).  <I>Amount</I> may be a list
+of two values to specify padding for left and right separately.
+<I>Amount</I> defaults to 0.
+<P><DT><A NAME="M20"><B>-pady </B><I>amount</I></A><DD>
+<I>Amount</I> specifies how much vertical external padding to
+leave on each side of the slave(s).  <I>Amount</I> may be a list
+of two values to specify padding for top and bottom separately.
+<I>Amount</I> defaults to 0.
+<P><DT><A NAME="M21"><B>-side </B><I>side</I></A><DD>
+Specifies which side of the master the slave(s) will be packed against.
+Must be <B>left</B>, <B>right</B>, <B>top</B>, or <B>bottom</B>.
+Defaults to <B>top</B>.
+</DL><P>If no <B>-in</B>, <B>-after</B> or <B>-before</B> option is specified
+then each of the slaves will be inserted at the end of the packing list
+for its parent unless it is already managed by the packer (in which
+case it will be left where it is).
+If one of these options is specified then all the slaves will be
+inserted at the specified point.
+If any of the slaves are already managed by the geometry manager
+then any unspecified options for them retain their previous values rather
+than receiving default values.<DL class="description">
+</DL>
+<P><DT><A NAME="M22"><B>pack forget </B><I>slave </I>?<I>slave ...</I>?</A><DD>
+Removes each of the <I>slave</I>s from the packing order for its
+master and unmaps their windows.
+The slaves will no longer be managed by the packer.
+<P><DT><A NAME="M23"><B>pack info </B><I>slave</I></A><DD>
+Returns a list whose elements are the current configuration state of
+the slave given by <I>slave</I> in the same option-value form that
+might be specified to <B>pack configure</B>.
+The first two elements of the list are
+&#8220;<B>-in </B><I>master</I>&#8221;
+where <I>master</I> is the slave's master.
+<P><DT><A NAME="M24"><B>pack propagate </B><I>master</I> ?<I>boolean</I>?</A><DD>
+If <I>boolean</I> has a true boolean value such as <B>1</B> or <B>on</B>
+then propagation is enabled for <I>master</I>, which must be a window
+name (see <B><A HREF="pack.html#M28">GEOMETRY PROPAGATION</A></B> below).
+If <I>boolean</I> has a false boolean value then propagation is
+disabled for <I>master</I>.
+In either of these cases an empty string is returned.
+If <I>boolean</I> is omitted then the command returns <B>0</B> or
+<B>1</B> to indicate whether propagation is currently enabled
+for <I>master</I>.
+Propagation is enabled by default.
+<P><DT><A NAME="M25"><B>pack slaves </B><I>master</I></A><DD>
+Returns a list of all of the slaves in the packing order for <I>master</I>.
+The order of the slaves in the list is the same as their order in
+the packing order.
+If <I>master</I> has no slaves then an empty string is returned.
+<P></DL>
+<H3><A NAME="M26">THE PACKER ALGORITHM</A></H3>
+For each master the packer maintains an ordered list of slaves
+called the <I>packing list</I>.
+The <B>-in</B>, <B>-after</B>, and <B>-before</B> configuration
+options are used to specify the master for each slave and the slave's
+position in the packing list.
+If none of these options is given for a slave then the slave
+is added to the end of the packing list for its parent.
+<P>
+The packer arranges the slaves for a master by scanning the
+packing list in order.
+At the time it processes each slave, a rectangular area within
+the master is still unallocated.
+This area is called the <I>cavity</I>;  for the first slave it
+is the entire area of the master.
+<P>
+For each slave the packer carries out the following steps:
+<P>
+<OL class="the packer algorithm">
+<LI value="1">
+The packer allocates a rectangular <I>parcel</I> for the slave
+along the side of the cavity given by the slave's <B>-side</B> option.
+If the side is top or bottom then the width of the parcel is
+the width of the cavity and its height is the requested height
+of the slave plus the <B>-ipady</B> and <B>-pady</B> options.
+For the left or right side the height of the parcel is
+the height of the cavity and the width is the requested width
+of the slave plus the <B>-ipadx</B> and <B>-padx</B> options.
+The parcel may be enlarged further because of the <B>-expand</B>
+option (see <B><A HREF="pack.html#M27">EXPANSION</A></B> below)
+<P><LI value="2">
+The packer chooses the dimensions of the slave.
+The width will normally be the slave's requested width plus
+twice its <B>-ipadx</B> option and the height will normally be
+the slave's requested height plus twice its <B>-ipady</B>
+option.
+However, if the <B>-fill</B> option is <B>x</B> or <B>both</B>
+then the width of the slave is expanded to fill the width of the parcel,
+minus twice the <B>-padx</B> option.
+If the <B>-fill</B> option is <B>y</B> or <B>both</B>
+then the height of the slave is expanded to fill the width of the parcel,
+minus twice the <B>-pady</B> option.
+<P><LI value="3">
+The packer positions the slave over its parcel.
+If the slave is smaller than the parcel then the <B>-anchor</B>
+option determines where in the parcel the slave will be placed.
+If <B>-padx</B> or <B>-pady</B> is non-zero, then the given
+amount of external padding will always be left between the
+slave and the edges of the parcel.
+<P></OL>
+<P>
+Once a given slave has been packed, the area of its parcel
+is subtracted from the cavity, leaving a smaller rectangular
+cavity for the next slave.
+If a slave does not use all of its parcel, the unused space
+in the parcel will not be used by subsequent slaves.
+If the cavity should become too small to meet the needs of
+a slave then the slave will be given whatever space is
+left in the cavity.
+If the cavity shrinks to zero size, then all remaining slaves
+on the packing list will be unmapped from the screen until
+the master window becomes large enough to hold them again.
+<H4><A NAME="M27">EXPANSION</A></H4>
+If a master window is so large that there will be extra space
+left over after all of its slaves have been packed, then the
+extra space is distributed uniformly among all of the slaves
+for which the <B>-expand</B> option is set.
+Extra horizontal space is distributed among the expandable
+slaves whose <B>-side</B> is <B>left</B> or <B>right</B>,
+and extra vertical space is distributed among the expandable
+slaves whose <B>-side</B> is <B>top</B> or <B>bottom</B>.
+<H4><A NAME="M28">GEOMETRY PROPAGATION</A></H4>
+The packer normally computes how large a master must be to
+just exactly meet the needs of its slaves, and it sets the
+requested width and height of the master to these dimensions.
+This causes geometry information to propagate up through a
+window hierarchy to a top-level window so that the entire
+sub-tree sizes itself to fit the needs of the leaf windows.
+However, the <B>pack propagate</B> command may be used to
+turn off propagation for one or more masters.
+If propagation is disabled then the packer will not set
+the requested width and height of the packer.
+This may be useful if, for example, you wish for a master
+window to have a fixed size that you specify.
+<H3><A NAME="M29">RESTRICTIONS ON MASTER WINDOWS</A></H3>
+The master for each slave must either be the slave's parent
+(the default) or a descendant of the slave's parent.
+This restriction is necessary to guarantee that the
+slave can be placed over any part of its master that is
+visible without danger of the slave being clipped by its parent.
+<H3><A NAME="M30">PACKING ORDER</A></H3>
+If the master for a slave is not its parent then you must make sure
+that the slave is higher in the stacking order than the master.
+Otherwise the master will obscure the slave and it will appear as
+if the slave has not been packed correctly.
+The easiest way to make sure the slave is higher than the master is
+to create the master window first:  the most recently created window
+will be highest in the stacking order.
+Or, you can use the <B><A HREF="raise.html">raise</A></B> and <B><A HREF="lower.html">lower</A></B> commands to change
+the stacking order of either the master or the slave.
+<H3><A NAME="M31">EXAMPLE</A></H3>
+<PRE># Make the widgets
+label .t -text &quot;This widget is at the top&quot;    -bg red
+label .b -text &quot;This widget is at the bottom&quot; -bg green
+label .l -text &quot;Left&#92;nHand&#92;nSide&quot;
+label .r -text &quot;Right&#92;nHand&#92;nSide&quot;
+text .mid
+	.mid insert end &quot;This layout is like Java's BorderLayout&quot;
+# Lay them out
+<B>pack</B> .t   -side top    -fill x
+<B>pack</B> .b   -side bottom -fill x
+<B>pack</B> .l   -side left   -fill y
+<B>pack</B> .r   -side right  -fill y
+<B>pack</B> .mid -expand 1    -fill both</PRE>
+<H3><A NAME="M32">SEE ALSO</A></H3>
+<B><A HREF="grid.html">grid</A></B>, <B><A HREF="place.html">place</A></B>
+<H3><A NAME="M33">KEYWORDS</A></H3>
+<A href="../Keywords/G.html#geometry manager">geometry manager</A>, <A href="../Keywords/L.html#location">location</A>, <A href="../Keywords/P.html#packer">packer</A>, <A href="../Keywords/P.html#parcel">parcel</A>, <A href="../Keywords/P.html#propagation">propagation</A>, <A href="../Keywords/S.html#size">size</A>
+<div class="copy">Copyright &copy; 1990-1994 The Regents of the University of California.
+<BR>Copyright &copy; 1994-1996 Sun Microsystems, Inc.
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

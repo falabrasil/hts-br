@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="Tcl6a.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org">
+<meta name='Author' content='ActiveState'>
+
+<title>Computers and numbers</title>
+<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 class="title">Computers and numbers</h1>
+
+<div class="nav"><a href="Tcl6.html">Previous lesson</a> | <a href=
+"tcltutorial.html">Index</a> | <a href="Tcl7.html">Next
+lesson</a></div>
+
+<p>If you are new to programming, then this lesson may contain some
+surprising information. But even if you are used to writing
+programs, computers can do unexpected things with numbers. The
+purpose of this lesson is to shed some light on some of the
+mysteries and quirks you can encounter.</p>
+
+<p>These mysteries exist independently of the programming language,
+though one programming language may be better at isolating you from
+them than another. The problem is that computers can not deal with
+the numbers <i>we</i> are used and in the way we are used to.</p>
+
+<p>For instance (*):</p>
+
+<pre class="example">
+# Compute 1 million times 1 million
+% puts [expr {1000000*1000000}]
+-727379968
+</pre>
+
+To most people's surprise, the result is negative! Instead of
+1000000000000, a negative number is returned. <br>
+<br>
+<p><i>Important note: I used Tcl 8.4.1 for all examples. In Tcl 8.5
+the results will hopefully be more intuitive, as a result of adding
+so-called</i> big integers. Nevertheless, the general theme remains
+the same.</p>
+
+<p>Now consider the following example, it is almost the same, with
+the exception of a decimal dot:</p>
+
+<pre class="example">
+# Compute 1 million times 1 million
+% puts [expr {1000000*1000000.}]
+1e+012
+</pre>
+
+The reason is simple, well if you know more about the background of
+computer arithmetic: 
+
+<ul>
+<li>In the first example we multiplied two <i>integer numbers</i>,
+or short integers. While we are used to these numbers ranging from
+<i>-infinity</i> to <i>+infinity</i>, computers can not deal with
+that range (at least not that easily). So, instead, computers deal
+with a subset of the actual mathematical integer numbers. They deal
+with numbers from -2<sup>31</sup> to 2<sup>31</sup>-1 (in general)
+- that is, with numbers from -2147483648 to 2147483647.<br>
+<br>
+<p>Numbers outside that range can not be dealt with that easily.
+This is also true of the results of a computation (or the
+intermediate results of a computation, even if the final result
+does fit).</p>
+</li>
+
+<li>In the second example we multiplied an integer with a
+<i>floating-point number</i>, in common parlance: a real number or
+real (though there are very significant differences between the
+mathematical real numbers and the computer's real numbers that are
+at the heart of another group of mysteries and quirks).
+Floating-point numbers have a much larger range and they can be
+used to deal with such numbers as <i>1.2</i> and
+<i>3.1415026</i>.<br>
+<br>
+<p>The typical range for floating-point numbers is roughly:
+<i>-1.0e+300</i> to <i>-1.0e-300</i>, 0.0 and <i>1.0e-300</i> to
+<i>1.0e+300</i>. Floating-point numbers have a limited precision:
+usually about 12 decimals.</p>
+
+<p>What this means in practical terms, is that a floating-point
+number can be as a 1 followed by 300 zeros or as small as
+0.0000...1 (where "..." stands for 295 zeros).</p>
+
+<p>Because the range is so much bigger, in the second example the
+result falls within the limits and we get the answer we
+expected.</p>
+</li>
+</ul>
+
+<h3>Tcl's strategy</h3>
+
+<p>Tcl uses a simple but efficient strategy to decide what kind of
+numbers to use for the computations:</p>
+
+<ul>
+<li>If you add, subtract, multiply and divide two <i>integer
+numbers</i>, then the result is an integer. If the result fits
+within the range you have the exact answer. If not, you end up with
+something that appears to be completely wrong. (<i>Note:</i> not
+too long ago, floating-point computations were much more
+time-consuming than integer computations. And most computers do not
+warn about integer results outside the range, because that is too
+time-consuming too: a computer typically uses lots of such
+operations, most of which do fit into the designated range.)</li>
+
+<li>If you add, subtract, multiply and divide an integer number and
+a <i>floating-point number</i>, then the integer number is first
+converted to a floating-point number with the same value and then
+the computation is done, resulting in a floating-point number.<br>
+<br>
+<p>Floating-point computations are quite complex, and the current
+(IEEE) standard prescribes what should happen in minute detail. One
+such detail is that results outside the proper ranges are reported.
+Tcl catches these and displays a warning:</p>
+
+<pre class="example">
+# Compute 1.0e+300/1.0-300
+% puts [expr {1.0e300/1.0e-300}]
+floating-point value too large to represent
+</pre>
+</li>
+</ul>
+
+<h3>What are those mysteries and quirks?</h3>
+
+<p>Now some of the mysteries you can find yourself involved in. Run
+the following scripts:</p>
+
+<pre class="example">
+#
+# Division
+#
+puts "1/2 is [expr {1/2}]"
+puts "-1/2 is [expr {-1/2}]"
+puts "1/2 is [expr {1./2}]"
+puts "1/3 is [expr {1./3}]"
+puts "1/3 is [expr {double(1)/3}]"
+</pre>
+
+<p>The first two computations have the surprising result: 0 and -1.
+That is because the result is an <i>integer number</i> and the
+mathematically exact results 1/2 and -1/2 are not.</p>
+
+<p>If you interested in the details of how Tcl works, the outcome
+<i>q</i> is determined as follows:</p>
+
+<pre class="example">
+a = q * b + r
+0 &lt;= |r| &lt; |b|
+r has the same sign as q
+</pre>
+
+<p>Here are some examples with floating-point numbers:</p>
+
+<pre class="example">
+set tcl_precision 17  ;# One of Tcl's few magic variables:
+                      ;# Show all decimals needed to exactly
+                      ;# reproduce a particular number
+puts "1/2 is [expr {1./2}]"
+puts "1/3 is [expr {1./3}]"
+
+set a [expr {1.0/3.0}]
+puts "3*(1/3) is [expr {3.0*$a}]"
+
+set b [expr {10.0/3.0}]
+puts "3*(10/3) is [expr {3.0*$b}]"
+
+set c [expr {10.0/3.0}]
+set d [expr {2.0/3.0}]
+puts "(10.0/3.0) / (2.0/3.0) is [expr {$c/$d}]"
+
+set e [expr {1.0/10.0}]
+puts "1.2 / 0.1 is [expr {1.2/$e}]"
+</pre>
+
+<p>While many of the above computations give the result you would
+expect, note however the last decimals, the last two do not give
+exactly 5 and 12! This is because computers can only deal with
+numbers with a limited precision: floating-point numbers are
+<i>not</i> our mathematical real numbers.</p>
+
+<p>Somewhat unexpectedly, <i>1/10</i> also gives problems. 1.2/0.1
+results in 11.999999999999998, not 12. That is an example of a very
+nasty aspect of most computers and programming languages today:
+they do not work with ordinary decimal fractions, but with binary
+fractions. So, 0.5 can be represented exactly, but 0.1 can not.</p>
+
+<h3>Some practical consequences</h3>
+
+<p>The fact that floating-point numbers are not ordinary decimal or
+real numbers and the actual way computers deal with floating-point
+numbers, has a number of consequences:</p>
+
+<ul>
+<li>Results obtained on one computer may not <i>exactly</i> match
+the results on another computer. Usually the differences are small,
+but if you have a lot of computations, they can add up!</li>
+
+<li>Whenever you convert from floating-point numbers to integer
+numbers, for instance when determining the labels for a graph (the
+range is 0 to 1.2 and you want a stepsize of 0.1), you need to be
+careful:<br>
+<br>
+ 
+
+<pre class="example">
+#
+# The wrong way
+#
+set number [expr {int(1.2/0.1)}]  ;# Force an integer -
+                                  ;# accidentally number = 11
+
+for { set i 0 } { $i &lt;= $number } { incr i } {
+   set x [expr {$i*0.1}]
+   ... create label $x
+}
+
+
+#
+# A right way - note the limit
+#
+set x     0.0
+set delta 0.1
+while { $x &lt; 1.2+0.5*$delta } {
+   ... create label $x
+   set x [expr {$x + $delta}]
+}
+</pre>
+</li>
+
+<li>If you want to do <i>financial</i> computations, take care:
+there are specific standards for doing such computations that
+unfortunately depend on the country where they are used - the US
+standard is slightly different from the European standard.</li>
+
+<li>Transcendental functions, like sin() and exp() are not
+standardised at all. The outcome could differ in one or more
+decimals from one computer to the next. So, if you want to be
+absolutely certain that <i>&pi;</i> (pi) is a specific value, use
+that value and do not rely on formulae like these: 
+
+<pre class="example">
+#
+# Two different estimates of "pi" - on Windows 98
+#
+set pi1 [expr {4.0*atan(1.0)}]
+set pi2 [expr {6.0*asin(0.5)}]
+puts [expr {$pi1-$pi2}]
+-4.4408920985006262e-016
+</pre>
+</li>
+</ul>
+
+<div class="nav"><a href="Tcl6.html">Previous lesson</a> | <a href=
+"tcltutorial.html">Index</a> | <a href="Tcl7.html">Next
+lesson</a></div>
+</body>
+</html>
+
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

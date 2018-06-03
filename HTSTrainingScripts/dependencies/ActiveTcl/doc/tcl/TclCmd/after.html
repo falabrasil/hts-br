@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="after.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>after manual page - Tcl Built-In Commands</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tcl Commands, version 8.6.7</a> <small>&gt;</small> after</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="contents.html">Tcl Commands</A> | <A HREF="../TkCmd/contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="after.html#M2" NAME="L2">NAME</A>
+<DL><DD>after &mdash; Execute a command after a time delay</DD></DL>
+<DD><A HREF="after.html#M3" NAME="L3">SYNOPSIS</A>
+<DL>
+</DL>
+<DD><A HREF="after.html#M4" NAME="L4">DESCRIPTION</A>
+<DL class="description">
+<DD><A HREF="after.html#M5" NAME="L5"><B>after </B><I>ms</I></A>
+<DD><A HREF="after.html#M6" NAME="L6"><B>after </B><I>ms </I>?<I>script script script ...</I>?</A>
+<DD><A HREF="after.html#M7" NAME="L7"><B>after cancel </B><I>id</I></A>
+<DD><A HREF="after.html#M8" NAME="L8"><B>after cancel </B><I>script script ...</I></A>
+<DD><A HREF="after.html#M9" NAME="L9"><B>after idle </B><I>script </I>?<I>script script ...</I>?</A>
+<DD><A HREF="after.html#M10" NAME="L10"><B>after info </B>?<I>id</I>?</A>
+</DL>
+<DD><A HREF="after.html#M11" NAME="L11">EXAMPLES</A>
+<DD><A HREF="after.html#M12" NAME="L12">SEE ALSO</A>
+<DD><A HREF="after.html#M13" NAME="L13">KEYWORDS</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+after &mdash; Execute a command after a time delay
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+<B>after </B><I>ms</I><BR>
+<B>after </B><I>ms </I>?<I>script script script ...</I>?<BR>
+<B>after cancel </B><I>id</I><BR>
+<B>after cancel </B><I>script script script ...</I><BR>
+<B>after idle </B>?<I>script script script ...</I>?<BR>
+<B>after info </B>?<I>id</I>?<BR>
+<H3><A NAME="M4">DESCRIPTION</A></H3>
+This command is used to delay execution of the program or to execute
+a command in background sometime in the future.  It has several forms,
+depending on the first argument to the command:
+<P>
+<DL class="description">
+<DT><A NAME="M5"><B>after </B><I>ms</I></A><DD>
+<I>Ms</I> must be an integer giving a time in milliseconds.
+The command sleeps for <I>ms</I> milliseconds and then returns.
+While the command is sleeping the application does not respond to
+events.
+<P><DT><A NAME="M6"><B>after </B><I>ms </I>?<I>script script script ...</I>?</A><DD>
+In this form the command returns immediately, but it arranges
+for a Tcl command to be executed <I>ms</I> milliseconds later as an
+event handler.
+The command will be executed exactly once, at the given time.
+The delayed command is formed by concatenating all the <I>script</I>
+arguments in the same fashion as the <B><A HREF="concat.html">concat</A></B> command.
+The command will be executed at global level (outside the context
+of any Tcl procedure).
+If an error occurs while executing the delayed command then
+the background error will be reported by the command
+registered with <B><A HREF="interp.html">interp bgerror</A></B>.
+The <B>after</B> command returns an identifier that can be used
+to cancel the delayed command using <B>after cancel</B>.
+<P><DT><A NAME="M7"><B>after cancel </B><I>id</I></A><DD>
+Cancels the execution of a delayed command that
+was previously scheduled.
+<I>Id</I> indicates which command should be canceled;  it must have
+been the return value from a previous <B>after</B> command.
+If the command given by <I>id</I> has already been executed then
+the <B>after cancel</B> command has no effect.
+<P><DT><A NAME="M8"><B>after cancel </B><I>script script ...</I></A><DD>
+This command also cancels the execution of a delayed command.
+The <I>script</I> arguments are concatenated together with space
+separators (just as in the <B><A HREF="concat.html">concat</A></B> command).
+If there is a pending command that matches the string, it is
+canceled and will never be executed;  if no such command is
+currently pending then the <B>after cancel</B> command has no effect.
+<P><DT><A NAME="M9"><B>after idle </B><I>script </I>?<I>script script ...</I>?</A><DD>
+Concatenates the <I>script</I> arguments together with space
+separators (just as in the <B><A HREF="concat.html">concat</A></B> command), and arranges
+for the resulting script to be evaluated later as an idle callback.
+The script will be run exactly once, the next time the event
+loop is entered and there are no events to process.
+The command returns an identifier that can be used
+to cancel the delayed command using <B>after cancel</B>.
+If an error occurs while executing the script then the
+background error will be reported by the command
+registered with <B><A HREF="interp.html">interp bgerror</A></B>.
+<P><DT><A NAME="M10"><B>after info </B>?<I>id</I>?</A><DD>
+This command returns information about existing event handlers.
+If no <I>id</I> argument is supplied, the command returns
+a list of the identifiers for all existing
+event handlers created by the <B>after</B> command for this
+interpreter.
+If <I>id</I> is supplied, it specifies an existing handler;
+<I>id</I> must have been the return value from some previous call
+to <B>after</B> and it must not have triggered yet or been canceled.
+In this case the command returns a list with two elements.
+The first element of the list is the script associated
+with <I>id</I>, and the second element is either
+<B>idle</B> or <B>timer</B> to indicate what kind of event
+handler it is.
+<P></DL>
+<P>
+The <B>after </B><I>ms</I> and <B>after idle</B> forms of the command
+assume that the application is event driven:  the delayed commands
+will not be executed unless the application enters the event loop.
+In applications that are not normally event-driven, such as
+<B><A HREF="../UserCmd/tclsh.html">tclsh</A></B>, the event loop can be entered with the <B><A HREF="vwait.html">vwait</A></B>
+and <B><A HREF="update.html">update</A></B> commands.
+<H3><A NAME="M11">EXAMPLES</A></H3>
+This defines a command to make Tcl do nothing at all for <I>N</I>
+seconds:
+<P>
+<PRE>proc sleep {N} {
+    <B>after</B> [expr {int($N * 1000)}]
+}</PRE>
+<P>
+This arranges for the command <I>wake_up</I> to be run in eight hours
+(providing the event loop is active at that time):
+<P>
+<PRE><B>after</B> [expr {1000 * 60 * 60 * 8}] wake_up</PRE>
+<P>
+The following command can be used to do long-running calculations (as
+represented here by <I>::my_calc::one_step</I>, which is assumed to
+return a boolean indicating whether another step should be performed)
+in a step-by-step fashion, though the calculation itself needs to be
+arranged so it can work step-wise.  This technique is extra careful to
+ensure that the event loop is not starved by the rescheduling of
+processing steps (arranging for the next step to be done using an
+already-triggered timer event only when the event queue has been
+drained) and is useful when you want to ensure that a Tk GUI remains
+responsive during a slow task.
+<P>
+<PRE>proc doOneStep {} {
+    if {[::my_calc::one_step]} {
+        <B>after idle</B> [list <B>after</B> 0 doOneStep]
+    }
+}
+doOneStep</PRE>
+<H3><A NAME="M12">SEE ALSO</A></H3>
+<B><A HREF="concat.html">concat</A></B>, <B><A HREF="interp.html">interp</A></B>, <B><A HREF="update.html">update</A></B>, <B><A HREF="vwait.html">vwait</A></B>
+<H3><A NAME="M13">KEYWORDS</A></H3>
+<A href="../Keywords/C.html#cancel">cancel</A>, <A href="../Keywords/D.html#delay">delay</A>, <A href="../Keywords/I.html#idle callback">idle callback</A>, <A href="../Keywords/S.html#sleep">sleep</A>, <A href="../Keywords/T.html#time">time</A>
+<div class="copy">Copyright &copy; 1990-1994 The Regents of the University of California.
+<BR>Copyright &copy; 1994-1996 Sun Microsystems, Inc.
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

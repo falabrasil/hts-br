@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="CmdWrite.3.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- manual page source format generated by PolyglotMan v3.0.8+X.Org, -->
+<!-- available at http://polyglotman.sourceforge.net/ -->
+<html>
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org">
+<meta name='Author' content='ActiveState'>
+
+<title>TclX CmdWrite</title>
+</head>
+<body>
+<a href='CmdWrite.3.html#toc'>Table of Contents</a> 
+
+<h2><a name='sect0' href='CmdWrite.3.html#toc0'>Name</a></h2>
+
+<p>TclCommandWriting - Writing C language extensions to Tcl.</p>
+
+<h2><a name='sect1' href='CmdWrite.3.html#toc1'><b>Overview</b></a></h2>
+
+<p>This document is intended to help the programmer who wishes to
+extend Tcl with C language routines. It should also be useful to
+someone wishing to add Tcl to an existing editor, communications
+program, win-dow manager, etc. C programming information can also
+be found in the <i>*.3</i> manual pages in the <i>doc</i> directory
+of the Berkeley distribution, and in the <i>*.3</i> manpages in the
+<i>man</i> directory of Extended Tcl.</p>
+
+<h2><a name='sect2' href='CmdWrite.3.html#toc2'><b>Writing</b> <b>Tcl</b>
+<b>Extensions</b> <b>in</b> <b>C</b></a></h2>
+
+<p>All C-based Tcl commands are called with four arguments: a
+client data pointer, an interpreter pointer, an argument count and
+a pointer to an array of pointers to character strings containing
+the Tcl arguments to the command.</p>
+
+<p>A simple Tcl extension in C is now presented, and described
+below:</p>
+
+<p>#include tcl.h"</p>
+
+<p>int App_EchoCmd(clientData, interp, argc, argv)</p>
+
+<dl>
+<dt>void</dt>
+
+<dd>*clientData; Tcl_Interp *interp;</dd>
+
+<dt>int</dt>
+
+<dd>argc;</dd>
+
+<dt>char</dt>
+
+<dd>**argv; { int i;</dd>
+</dl>
+
+<p>for (i = 1; i &lt; argc; i++) { printf("%s",argv[i]);<br>
+ if (i &lt; argc - 1) printf( ); }<br>
+ printf("\n");<br>
+ return TCL_OK;<br>
+ }</p>
+
+<p>The client data pointer will be described later.</p>
+
+<p>The interpreter pointer is the
+&acirc;&euro;&tilde;&acirc;&euro;&tilde;key&acirc;&euro;&trade;&acirc;&euro;&trade;
+to an interpreter. It is returned by <b>Tcl_CreateInterp</b> and is
+used extensively within Tcl, and will be by your C extensions. The
+data structure pointed to by the interpreter pointer, and all of
+the subordinate structures that branch off of it, make up a Tcl
+interpreter, which includes all of the cur-rently defined
+procedures, commands, variables, arrays and the execu-tion state of
+that interpreter. (For more information on creating and deleting
+interpreters, please examine the <a href=
+'http://localhost:1313/tcl/tclx/CrtInterp.3.html'>CrtInterp(3)</a> manpage in the Berkeley Tcl
+distribution. For information on creating interpreters that include
+the commands provided by Extended Tcl, check out the <a href=
+'http://localhost:1313/tcl/tclx/TclX_Init.3.html'>TclX_Init(3)</a> manpage of Extended Tcl. For a
+manual page describing the user-visible fields of a Tcl
+interpreter, please look at <a href='http://localhost:1313/tcl/tclx/Interp.3.html'>Interp(3)</a>
+in Berkeley Tcl.)</p>
+
+<p>The argument count and pointer to an array of pointers to
+textual argu-ments is handled by your C code in the same manner
+that you would use in writing a C <i>main</i> function -- the
+argument count and array of point-ers works the same as in a C
+<i>main</i> call; pointers to the arguments to the function are
+contained in the <i>argv</i> array. Similar to a C main, the first
+argument (<i>argv[0]</i>) is the name the routine was called as (in
+a main, the name the program was invoked as).</p>
+
+<p>In the above example, all of the arguments are output with a
+space between each one by looping through <i>argv</i> from one to
+the argument count, <i>argc</i>, and a newline is output to
+terminate the line -- an
+&acirc;&euro;&tilde;&acirc;&euro;&tilde;echo&acirc;&euro;&trade;&acirc;&euro;&trade;
+command.</p>
+
+<p>All arguments from a Tcl call to a Tcl C extension are passed as
+strings. If your C routine expects certain numeric arguments, your
+routine must first convert them using the <b>Tcl_GetInt</b> or
+<b>Tcl_GetDouble</b> function, Extended Tcl&acirc;&euro;&trade;s
+<b>Tcl_GetLong</b> or <b>Tcl_GetUnsigned</b>, or some other method
+of your own devising. Likewise for converting boolean values,
+<b>Tcl_GetBoolean</b> should be used. These routines automatically
+leave an appropriate error message in the Tcl
+interpreter&acirc;&euro;&trade;s result buffer and return
+<b>TCL_ERROR</b> if a conversion error occurs. (For more
+information on these routines, please look at the <a href=
+'http://localhost:1313/tcl/tclx/GetInt.3.html'>GetInt(3)</a> manpage in the Berkeley Tcl
+distribution.)</p>
+
+<p>Likewise, if you program produces a numeric result, it should
+return a string equivalent to that numeric value. A common way of
+doing this is something like...</p>
+
+<p>sprintf(interp-&gt;result, %ld", result);</p>
+
+<p>Writing results directly into the
+interpreter&acirc;&euro;&trade;s result buffer is only good for
+relatively short results. Tcl has a function, <b>Tcl_SetResult</b>,
+which provides the ability for your C extensions to return very
+large strings to Tcl, with the ability to tell the interpreter
+whether it
+&acirc;&euro;&tilde;&acirc;&euro;&tilde;owns&acirc;&euro;&trade;&acirc;&euro;&trade;
+the string (meaning that Tcl should delete the string when
+it&acirc;&euro;&trade;s done with it), that the string is likely to
+be changed or over-written soon (meaning that Tcl should make a
+copy of the string right away), or that the string
+won&acirc;&euro;&trade;t change (so Tcl can use the string as is
+and not worry about it). Understanding how results are passed back
+to Tcl is essential to the C extension writer. Please study the <a
+href='http://localhost:1313/tcl/tclx/SetRe-sult.3.html'>SetRe-sult(3)</a> manual page in the Tcl
+distribution.</p>
+
+<p>Sophisticated commands should verify their arguments whenever
+possible, both by examining the argument count, by verifying that
+numeric fields are really numeric, that values are in range (when
+their ranges are known), and so forth.</p>
+
+<p>Tcl is designed to be as bullet-proof as possible, in the sense
+that no Tcl program should be able to cause Tcl to dump core.
+Please carry this notion forward with your C extensions by
+validating arguments as above.</p>
+
+<h2><a name='sect3' href='CmdWrite.3.html#toc3'><b>Another</b> <b>C</b>
+<b>Extension</b> <b>-</b> <b>the</b> <b>Max</b>
+<b>Command</b></a></h2>
+
+<p>In the command below, two or more arguments are compared and the
+one with the maximum value is returned, if all goes well. It is an
+error if there are fewer than three arguments (the pointer to the
+&acirc;&euro;&tilde;&acirc;&euro;&tilde;max&acirc;&euro;&trade;&acirc;&euro;&trade;
+command text itself, <i>argv[0]</i>, and pointers to at least two
+arguments to compare the values of).</p>
+
+<p>This routine also shows the use of the programmer labor-saving
+<b>Tcl_AppendResult</b> routine. See the Tcl manual page, <a href=
+'http://localhost:1313/tcl/tclx/SetResult.3.html'>SetResult(3)</a> , for details. Also examine the
+calls <b>Tcl_AddErrorInfo</b>, <b>Tcl_SetErrorCode</b> and
+<b>Tcl_PosixError</b> documented in the Tcl manual page <a href=
+'http://localhost:1313/tcl/tclx/AddErrInfo.3.html'>AddErrInfo(3)</a> .</p>
+
+<p>int<br>
+ Tcl_MaxCmd (clientData, interp, argc, argv)</p>
+
+<dl>
+<dt>char</dt>
+
+<dd>*clientData; Tcl_Interp *interp;</dd>
+
+<dt>int</dt>
+
+<dd>argc;</dd>
+
+<dt>char</dt>
+
+<dd>**argv; { int maxVal = MININT; int maxIdx = 1; int value,
+idx;</dd>
+</dl>
+
+<p>if (argc &lt; 3) {<br>
+ Tcl_AppendResult (interp, bad # arg: , argv[0], num1 num2
+[..numN]", (char *)NULL); return TCL_ERROR;<br>
+ }</p>
+
+<p>for (idx = 1; idx &lt; argc; idx++) { if (Tcl_GetInt (argv[idx],
+10, &amp;Value) != TCL_OK) return TCL_ERROR;</p>
+
+<p>if (value &gt; maxVal) {<br>
+ maxVal = value;<br>
+ maxIdx = idx;<br>
+ }<br>
+ }<br>
+ Tcl_SetResult (interp, argv [maxIdx], TCL_VOLATILE); return
+TCL_OK;<br>
+ }</p>
+
+<p>When Tcl-callable functions complete, they should normally
+return <b>TCL_OK</b> or <b>TCL_ERROR</b>. <b>TCL_OK</b> is returned
+when the command succeeded and <b>TCL_ERROR</b> is returned when
+the command has failed in some abnormal way. <b>TCL_ERROR</b>
+should be returned for all syntax errors, non-numeric values (when
+numeric ones were expected), and so forth. Less clear in some cases
+is whether Tcl errors should be returned or whether a function
+should just return a status value. For example, end-of-file during
+a <i>gets</i> returns a status, but <i>open</i> returns an error if
+the open fails. Errors can be caught from Tcl programs using the
+<i>catch</i> command. (See Tcl&acirc;&euro;&trade;s <a href=
+'http://localhost:1313/tcl/tclx/catch.n.html'>catch(n)</a> and <a href='http://localhost:1313/tcl/tclx/error.n.html'>error(n)</a>
+manual pages.)</p>
+
+<p>Less common return values are <b>TCL_RETURN</b>,
+<b>TCL_BREAK</b> and <b>TCL_CONTINUE</b>. These are used if you are
+adding new control and/or looping structures to Tcl. To see these
+values in action, examine the source code to
+Tcl&acirc;&euro;&trade;s <i>while</i>, <i>for</i> and <i>if</i>,
+and Extended Tcl&acirc;&euro;&trade;s <i>loop</i> commands.</p>
+
+<p>Note the call to <i>Tcl</i><b>_</b><i>SetResult</i> in the above
+command to set the return value to Tcl. <b>TCL_VOLATILE</b> is used
+because the memory containing the result will be freed upon the
+function&acirc;&euro;&trade;s return.</p>
+
+<h2><a name='sect4' href='CmdWrite.3.html#toc4'><b>Another</b> <b>C</b>
+<b>Extension</b> <b>-</b> <b>the</b> <b>Lreverse</b>
+<b>Command</b></a></h2>
+
+<p>In the command below, one list is passed as an argument, and a
+list containing all of the elements of the list in reverse order is
+returned. It is an error if anything other than two arguments are
+passed (the pointer to the
+&acirc;&euro;&tilde;&acirc;&euro;&tilde;lreverse&acirc;&euro;&trade;&acirc;&euro;&trade;
+command text itself, <i>argv[0]</i>, and a pointer to the list to
+reverse.</p>
+
+<p>Once <i>lreverse</i> has determined that it has received the
+correct number of arguments, <b>Tcl_SplitList</b> is called to
+break the list into an <i>argc</i> and <i>argv</i> array of
+pointers.</p>
+
+<p><i>lreverse</i> then operates on the array of pointers, swapping
+them from lowest to highest, second-lowest to second-highest, and
+so forth.</p>
+
+<p>Finally <b>Tcl_Merge</b> is calleds to create a single new
+string containing the reversed list and it is set as the result via
+<b>Tcl_SetResult</b>. Note that <b>TCL_DYNAMIC</b> is used to tell
+<b>Tcl_SetResult</b> that it now owns the string and it is up to
+Tcl to free the string when it is done with it.</p>
+
+<p>Note that it <i>is</i> safe to play around with the <i>argv</i>
+list like this, and that a single call to <b>ckfree</b> can be made
+to free all the data returned by <b>Tcl_SplitList</b> in this
+manner.</p>
+
+<p>int<br>
+ Tcl_LreverseCmd(notUsed, interp, argc, argv)</p>
+
+<dl>
+<dt>ClientData notUsed;</dt>
+
+<dd>/* Not used. */</dd>
+
+<dt>Tcl_Interp *interp;</dt>
+
+<dd>/* Current interpreter. */</dd>
+
+<dt>int argc;</dt>
+
+<dd>/* Number of arguments. */</dd>
+
+<dt>char **argv;</dt>
+
+<dd>/* Argument strings. */ { int listArgc, lowListIndex,
+hiListIndex; char **listArgv; char *temp, *resultList;</dd>
+</dl>
+
+<p>if (argc != 2) {<br>
+ Tcl_AppendResult(interp, wrong # args: should be list<br>
+ return TCL_ERROR;<br>
+ }</p>
+
+<p>if (Tcl_SplitList(interp, argv[1], &amp;listArgc, &amp;listArgv)
+!= TCL_OK) { return TCL_ERROR;<br>
+ }<br>
+ for (lowListIndex = 0, hiListIndex = listArgc; --hiListIndex &gt;
+lowListIndex; lowListIndex++) { temp = listArgv[lowListIndex];<br>
+ listArgv[lowListIndex] = listArgv[hiListIndex];
+listArgv[hiListIndex] = temp;<br>
+ }<br>
+ resultList = Tcl_Merge (listArgc, listArgv); ckfree
+(listArgv);<br>
+ Tcl_SetResult (interp, resultList, TCL_DYNAMIC); return
+TCL_OK;<br>
+ }</p>
+
+<h2><a name='sect5' href='CmdWrite.3.html#toc5'><b>Installing</b> <b>Your</b>
+<b>Command</b></a></h2>
+
+<p>To install your command into Tcl you must call
+<b>Tcl_CreateCommand</b>, pass-ing it the pointer to the
+interpreter you want to install the command into, the name of the
+command, a pointer to the C function that imple-ments the command,
+a client data pointer, and a pointer to an optional callback
+routine.</p>
+
+<p>The client data pointer and the callback routine will be
+described later.</p>
+
+<p>For example, for the max function above (which, incidentally,
+comes from TclX&acirc;&euro;&trade;s tclXmath.c in the
+<i>TclX7.4/src</i> directory):</p>
+
+<p>Tcl_CreateCommand (interp, max", Tcl_MaxCmd, (ClientData)NULL,
+(void (*)())NULL);</p>
+
+<p>In the above example, the max function is added to the specified
+inter-preter. The client data pointer and callback function pointer
+are NULL. (For complete information on <b>Tcl_CreateCommand</b> and
+its companion routine, <b>Tcl_CommandInfo</b>, please examine the
+<a href='http://localhost:1313/tcl/tclx/CrtCommand.3.html'>CrtCommand(3)</a> command page in the
+Berkeley Tcl distribution.)</p>
+
+<h2><a name='sect6' href='CmdWrite.3.html#toc6'><b>Dynamic</b>
+<b>Strings</b></a></h2>
+
+<p><i>Dynamic</i> <i>strings</i> are an important abstraction that
+first became avail-able with Tcl 7.0. Dynamic strings, or
+<i>DStrings</i>, provide a way to build up arbitrarily long strings
+through a repeated process of append-ing information to them.
+DStrings reduce the amount of allocating and copying required to
+add information to a string. Further, they sim-plify the process of
+doing so. For complete information on dynamic strings, please
+examine the <a href='http://localhost:1313/tcl/tclx/DString.3.html'>DString(3)</a> manual page in
+the Berkeley Tcl distribution.</p>
+
+<h2><a name='sect7' href='CmdWrite.3.html#toc7'><b>Client</b> <b>Data</b></a></h2>
+
+<p>The client data pointer provides a means for Tcl commands to
+have data associated with them that is not global to the C program
+nor included in the Tcl core. Client data is essential in a
+multi-interpreter envi-ronment (where a single program has created
+and is making use of multi-ple Tcl interpreters) for the C routines
+to maintain any permanent data they need on a per-interpreter
+basis. Otherwise there would be reen-trancy problems. Tcl solves
+this through the client data mechanism. When you are about to call
+<b>Tcl_CreateCommand</b> to add a new command to an interpreter, if
+that command needs to keep some read/write data across invocations,
+you should allocate the space, preferably using <b>ckalloc</b>,
+then pass the address of that space as the ClientData pointer to
+<b>Tcl_CreateCommand</b>.</p>
+
+<p>When your command is called from Tcl, the ClientData pointer you
+gave to <b>Tcl_CreateCommand</b> when you added the command to that
+interpreter is passed to your C routine through the ClientData
+pointer calling argu-ment.</p>
+
+<p>Commands that need to share this data with one another can do so
+by using the same ClientData pointer when the commands are
+added.</p>
+
+<p>It is important to note that the Tcl extensions in the
+<i>tclX7.4/src</i> directory have had all of their data set up in
+this way. Since release 6.2, Extended Tcl has supported multiple
+interpreters within one invo-cation of Tcl.</p>
+
+<h2><a name='sect8' href='CmdWrite.3.html#toc8'><b>Theory</b> <b>of</b>
+<b>Handles</b></a></h2>
+
+<p>Sometimes you need to have a data element that
+isn&acirc;&euro;&trade;t readily repre-sentable as a string within
+Tcl, for example a pointer to a complex C data structure. It is not
+a good idea to try to pass pointers around within Tcl as strings by
+converting them to and from hex or integer representations, for
+example. It is too easy to mess one up, and the likely outcome of
+doing that is a core dump.</p>
+
+<p>Instead we have developed and made use of the concept of
+<i>handles</i>. Han-dles are identifiers a C extension can pass to,
+and accept from, Tcl to make the transition between what your C
+code knows something as and what name Tcl knows it by to be as safe
+and painless as possible. For example, the stdio package included
+in Tcl uses file handles. When you open a file from Tcl, a handle
+is returned of the form <b>file</b><i>n</i> where <i>n</i> is a
+file number. When you pass the file handle back to <i>puts</i>,
+<i>gets</i>, <i>seek</i>, <i>flush</i> and so forth, they validate
+the file handle by checking the the <b>file</b> text is present,
+then converting the file number to an integer that they use to look
+into a data structure of pointers to Tcl open file structures,
+which contain a Unix file descriptor, flags indicating whether or
+not the file is currently open, whether the file is a file or a
+pipe and so forth.</p>
+
+<p>Handles have proven so useful that, as of release 6.1a, general
+support has been added for them. If you need a similar capability,
+it would be best to use the handle routines, documented in <a href=
+'Handles.3.html'>Handles(3)</a> in Extended Tcl. We recommend that
+you use a unique-to-your-package textual handle coupled with a
+specific identifier and let the handle management rou-tines
+validate it when it&acirc;&euro;&trade;s passed back. It is much
+easier to track down a bug with an implicated handle named
+something like <b>file4</b> or <b>bitmap6</b> than just
+<b>6</b>.</p>
+
+<h2><a name='sect9' href='CmdWrite.3.html#toc9'><b>Tracking</b> <b>Memory</b>
+<b>Corruption</b> <b>Problems</b></a></h2>
+
+<p>Occasionally you may write code that scribbles past the end of
+an allo-cated piece of memory. The memory debugging routines
+included in Tcl can help find these problems. See
+<i>Memory(TCL)</i> for details.</p>
+
+<h2><a name='sect10' href='CmdWrite.3.html#toc10'><b>Installing</b> <b>Your</b>
+<b>Extensions</b> <b>into</b> <b>Extended</b> <b>Tcl</b></a></h2>
+
+<p>To add your extensions to Extended Tcl, you must compile them
+and cause them to be linked with TclX. For the routines to be
+linked into the <b>tcl</b> and <b>wishx</b> executables, they must
+be referenced (directly or indi-rectly) from TclX. For these
+extensions to be visible as Tcl commands, they must be installed
+into Tcl with <b>Tcl_CreateCommand</b>.</p>
+
+<p>Application-specific startup is accomplished by creating or
+editing the <i>Tcl</i><b>_</b><i>AppInit</i> function. In
+<i>Tcl</i><b>_</b><i>AppInit</i> you should add a call to an
+application-specific init function which you create. This function
+should take the address of the interpreter it should install its
+com-mands into, and it should install those commands with
+<b>Tcl_CreateCommand</b> and do any other application-specific
+startup that is necessary.</p>
+
+<p>The naming convention for application startup routines is
+<b>App_Init</b>, where <i>App</i> is the name of your application.
+For example, to add an application named <i>cute</i> one would
+create a <i>Cute</i><b>_</b><i>Init</i> routine that expected a
+<b>Tcl_Interp</b> pointer as an argument, and add the following
+code to <i>Tcl</i><b>_</b><i>AppInit</i>:</p>
+
+<p>if (Cute_Init (interp) == TCL_ERROR) { return TCL_ERROR;<br>
+ }</p>
+
+<p>As you can guess from the above example, if your init routine is
+unable to initialize, it should use <b>Tcl_AppendResult</b> to
+provide some kind of useful error message back to TclX, then return
+<b>TCL_ERROR</b> to indicate that an error occurred. If the routine
+executed successfully, it should return <b>TCL_OK</b>.</p>
+
+<p>When you examine <i>Tcl</i><b>_</b><i>AppInit</i>, note that
+there is one call already there to install an application -- the
+call to <i>TclX</i><b>_</b><i>Init</i> installs Extended Tcl into
+the Tcl core.</p>
+
+<h2><a name='sect11' href='CmdWrite.3.html#toc11'><b>Making</b> <b>Application</b>
+<b>Information</b> <b>Visible</b> <b>from</b> <b>Extended</b>
+<b>Tcl</b></a></h2>
+
+<p>TclX&acirc;&euro;&trade;s <b>infox</b> command can return
+several pieces of information relevant to Extended Tcl, including
+the application&acirc;&euro;&trade;s name, descriptive name, patch
+level and version. Your application&acirc;&euro;&trade;s startup
+can set these variables to application-specific values. If it
+doesn&acirc;&euro;&trade;t, they are given default values for
+Extended Tcl.</p>
+
+<p>To set these values, first be sure that you include either
+<b>tclExtend.h</b> or <b>tclExtdInt.h</b> from the source file that
+defines your init routine. This will create external declarations
+for the variables. Then, set the variables in your init route, for
+example:</p>
+
+<p>tclAppName = cute";<br>
+ tclAppLongName = Call Unix/Tcl Environment"; tclAppVersion =
+2.1";</p>
+
+<p>Note that the default values are set by
+<i>TclX</i><b>_</b><i>Init</i>, so if you wish to override them,
+you must call your init routine in <i>Tcl</i><b>_</b><i>AppInit</i>
+after its call to <i>TclX</i><b>_</b><i>Init</i>.</p>
+
+<h2><a name='sect12' href='CmdWrite.3.html#toc12'><b>Extended</b> <b>Tcl</b>
+<b>Exit</b></a></h2>
+
+<p>When Extended Tcl exits, <b>Tcl_DeleteInterp</b> may be called
+to free memory used by Tcl -- normally, this is only called if
+<b>TCL_MEM_DEBUG</b> was defined, since Unix will return all of the
+allocated memory back to the system, anyway. If
+<b>TCL_MEM_DEBUG</b> was defined, it is called so that any memory
+that was allocated without ever being freed can be detected. This
+greatly reduces the amount of work to detect and track down memory
+leaks, a situation where some piece of your code allocates memory
+repeatedly without ever freeing it, or without always freeing
+it.</p>
+
+<p>It is often necessary for an application to perform special
+cleanup functions upon the deletion of an interpreter as well. To
+facilitate this activity, Tcl provides the ability to perform a
+function callback when an interpreter is deleted. To arrange for a
+C function to be called when the interpreter is deleted, call
+<b>Tcl_CallWhenDeleted</b> from your application initialization
+routine. For details on how to use this function, read the <a href=
+'http://localhost:1313/tcl/tclx/CallDel.3.html'>CallDel(3)</a> manual page that ships with
+Berkeley Tcl.</p>
+
+<h2><a name='sect13' href='CmdWrite.3.html#toc13'><b>Executing</b> <b>Tcl</b>
+<b>Code</b> <b>from</b> <b>Your</b> <b>C</b>
+<b>Extension</b></a></h2>
+
+<p>Suppose you are in the middle of coding a C extension and you
+realize that you need some operation performed, one that would be
+simple from Tcl but possibly excruciating to do directly in C. Tcl
+provides the <b>Tcl_Eval</b>, <b>Tcl_VarEval</b>,
+<b>Tcl_EvalFile</b> and <b>Tcl_GlobalEval</b> functions for the
+purpose of executing Tcl code from within a C extension. The
+results of the call will be in <b>interp-&gt;result</b>. For more
+information please consult the <a href='http://localhost:1313/tcl/tclx/Eval.3.html'>Eval(3)</a>
+manual page within the Tcl distribution.</p>
+
+<h2><a name='sect14' href='CmdWrite.3.html#toc14'><b>Accessing</b> <b>Tcl</b>
+<b>Variables</b> <b>and</b> <b>Arrays</b> <b>from</b> <b>Your</b>
+<b>C</b> <b>Extensions</b></a></h2>
+
+<p>Tcl variables and arrays can be read from a C extension through
+the <b>Tcl_GetVar</b> and <b>Tcl_GetVar2</b> functions, and set
+from C extensions through the <b>Tcl_SetVar</b> and
+<b>Tcl_SetVar2</b> functions. They can also be unset via the
+<b>Tcl_UnsetVar</b> and <b>Tcl_UnsetVar2</b> functions. For
+complete information on these functions, please refer to the <a
+href='http://localhost:1313/tcl/tclx/SetVar.3.html'>SetVar(3)</a> manual page in the <i>doc</i>
+directory of the Berkeley Tcl distribution.</p>
+
+<h2><a name='sect15' href='CmdWrite.3.html#toc15'><b>Linking</b> <b>Tcl</b>
+<b>Variables</b> <b>to</b> <b>C</b> <b>Variables</b></a></h2>
+
+<p><b>Tcl_LinkVar</b> and <b>Tcl_UnlinkVar</b> can be used to
+automatically keep Tcl variables synchronized with corresponding C
+variables. Once a Tcl variable has been linked to a C variable with
+<b>Tcl_LinkVar</b>, anytime the Tcl variable is read the value of
+the C variable will be returned, and when the Tcl variable is
+written, the C variable will be updated with the new value.</p>
+
+<p><b>Tcl_LinkVar</b> uses variable traces to keep the Tcl variable
+named by <i>var-Name</i> in sync with the C variable at the address
+given by <i>addr</i>.</p>
+
+<p>Whenever the Tcl variable is read the value of the C variable
+will be returned, and whenever the Tcl variable is written the C
+variable will be updated to have the same value.</p>
+
+<p><i>Int</i>, <i>double</i>, <i>boolean</i> and <i>char</i>
+<i>*</i> variables are supported. For more information, please
+examine the <a href='http://localhost:1313/tcl/tclx/LinkVar.3.html'>LinkVar(3)</a> manual page in
+the Berkeley Tcl distribution.</p>
+
+<h2><a name='sect16' href='CmdWrite.3.html#toc16'><b>Adding</b> <b>New</b>
+<b>Math</b> <b>Functions</b> <b>to</b> <b>Tcl</b></a></h2>
+
+<p>As of Tcl version 7.0, math functions such as <i>sin</i>,
+<i>cos</i>, etc, are directly supported within Tcl expressions.
+These obsolete the Extended Tcl commands that provided explicit
+calls for these functions for many releases.</p>
+
+<p>New math functions can be added to Tcl, or existing math
+functions can be replaced, by calling
+<b>Tcl_CreateMathFunc</b>.</p>
+
+<p>For more information on adding math functions, please examine
+the <a href='http://localhost:1313/tcl/tclx/Crt-MathFnc.3.html'>Crt-MathFnc(3)</a> manual page in
+the Berkeley Tcl distribution.</p>
+
+<h2><a name='sect17' href='CmdWrite.3.html#toc17'><b>Performing</b> <b>Tilde</b>
+<b>Substitutions</b> <b>on</b> <b>Filenames</b></a></h2>
+
+<p>The <b>Tcl_TildeSubst</b> function is available to C extension
+writers to per-form tilde substitutions on filenames. If the name
+starts with a
+&acirc;&euro;&tilde;&acirc;&euro;&tilde;~&acirc;&euro;&trade;&acirc;&euro;&trade;
+character, the function returns a new string where the name is
+replaced with the home directory of the given user. For more
+information please consult the <a href=
+'http://localhost:1313/tcl/tclx/TildeSubst.3.html'>TildeSubst(3)</a> manual page in the Berkeley
+Tcl distribution.</p>
+
+<h2><a name='sect18' href='CmdWrite.3.html#toc18'><b>Setting</b> <b>the</b>
+<b>Recursion</b> <b>Limit</b></a></h2>
+
+<p>Tcl has a preset recursion limit that limits the maximum
+allowable nesting depth of calls within an interpreter. This is
+useful for detecting infinite recursions before other limits such
+as the process memory limit or, worse, available swap space on the
+system, are exceeded.</p>
+
+<p>The default limit is just a guess, however, and applications
+that make heavy use of recursion may need to call
+<b>Tcl_SetRecursionLimit</b> to raise this limit. For more
+information, please consult the <a href=
+'http://localhost:1313/tcl/tclx/SetRecLmt.3.html'>SetRecLmt(3)</a> man-ual page in the Berkeley
+Tcl distribution.</p>
+
+<h2><a name='sect19' href='CmdWrite.3.html#toc19'><b>Handling</b> <b>Signals</b>
+<b>from</b> <b>Tcl</b> <b>Extensions</b></a></h2>
+
+<p>If an event such as a signal occurs while a Tcl script is being
+exe-cuted, it isn&acirc;&euro;&trade;t safe to do much in the
+signal handling routine -- the Tcl environment cannot be safely
+manipulated at this point because it could be in the middle of some
+operation, such as updating pointers, leaving the interpreter in an
+unreliable state.</p>
+
+<p>The only safe approach is to set a flag indicating that the
+event occurred, then handle the event later when the interpreter
+has returned to a safe state, such as after the current Tcl command
+completes.</p>
+
+<p>The <b>Tcl_AsyncCreate</b>, <b>Tcl_AsyncMark</b>,
+<b>Tcl_AsyncInvoke</b>, and <b>Tcl_AsyncDelete</b> functions
+provide a safe mechanism for dealing with signals and other
+asynchronous events. For more information on how to use this
+capability, please refer to the <a href='http://localhost:1313/tcl/tclx/Async.3.html'>Async(3)</a>
+manual page in the Berkeley Tcl distribution.</p>
+
+<h2><a name='sect20' href='CmdWrite.3.html#toc20'><b>Parsing</b> <b>Backslash</b>
+<b>Sequences</b></a></h2>
+
+<p>The <b>Tcl_Backslash</b> function is called to parse Tcl
+backslash sequences. These backslash sequences are the usual sort
+that you see in the C pro-gramming language, such as <b>\n</b> for
+newline, <b>\r</b> for return, and so forth. <b>Tcl_Backslash</b>
+parses a single backslash sequence and returns a single character
+corresponding to the backslash sequence.</p>
+
+<p>For more info on this call, look at the <a href=
+'http://localhost:1313/tcl/tclx/Backslash.3.html'>Backslash(3)</a> manual page in the Berkeley Tcl
+distribution. For information on the valid backslash sequences,
+consult the summary of Tcl language syntax, <a href=
+'http://localhost:1313/tcl/tclx/Tcl.n.html'>Tcl(n)</a> in the same distribution.</p>
+
+<h2><a name='sect21' href='CmdWrite.3.html#toc21'><b>Hash</b>
+<b>Tables</b></a></h2>
+
+<p><i>Hash</i> <i>tables</i> provide Tcl with a high-performance
+facility for looking up and managing key-value pairs located and
+maintained in memory. Tcl uses hash tables internally to locate
+procedure definitions, Tcl vari-ables, array elements, file handles
+and so forth. Tcl makes the hash table functions accessible to C
+extension writers as well.</p>
+
+<p>Hash tables grow automatically to maintain efficiency, rather
+than exposing the table size to the programmer at allocation time,
+which would needlessly add complexity to Tcl and would be prone to
+ineffi-ciency due to the need to guess the number of items that
+will go into the table, and the seemingly inevitable growth in
+amount of data pro-cessed per run over the life of the program.</p>
+
+<p>For more information on hash tables, please consult the <a href=
+'http://localhost:1313/tcl/tclx/Hash.3.html'>Hash(3)</a> manual page in the Berkeley Tcl
+distribution.</p>
+
+<h2><a name='sect22' href='CmdWrite.3.html#toc22'><b>Tracing</b> <b>Variable</b>
+<b>Accesses</b></a></h2>
+
+<p>The C extension writer can arrange to have a C routine called
+whenever a Tcl variable is read, written, or unset. Variable traces
+are the mechanism by which Tk toolkit widgets such as radio and
+checkbuttons, messages and so forth update without Tcl programmer
+intervention when their data variables are changed. They are also
+used by the routine that links Tcl and C variables,
+<b>Tcl_LinkVar</b>, described above.</p>
+
+<p><b>Tcl_TraceVar</b> is called to establish a variable trace.
+Entire arrays and individual array elements can be traced as well.
+If the programmer already has an array name in one string and a
+variable name in another, <b>Tcl_TraceVar2</b> can be called. Calls
+are also available to request information about traces and to
+delete them.</p>
+
+<p>For more information on variable traces, consult the <a href=
+'http://localhost:1313/tcl/tclx/TraceVar.3.html'>TraceVar(3)</a> manual page in the Berkeley Tcl
+distribution.</p>
+
+<h2><a name='sect23' href='CmdWrite.3.html#toc23'><b>Tracing</b>
+<b>Execution</b></a></h2>
+
+<p>Tcl has the ability to call C routines for every command it
+executes, up to a specified depth of nesting levels. The command
+<b>Tcl_CreateTrace</b> creates an execution trace;
+<b>Tcl_DeleteTrace</b> deletes it.</p>
+
+<p>Command tracing is used in Extended Tcl to implement the
+<i>cmdtrace</i> Tcl command, a useful command for debugging Tcl
+applications.</p>
+
+<p>For complete information on execution tracing, please look at
+the <a href='http://localhost:1313/tcl/tclx/Crt-Trace.3.html'>Crt-Trace(3)</a> manual pages in the
+Berkeley Tcl distribution.</p>
+
+<h2><a name='sect24' href='CmdWrite.3.html#toc24'><b>Evaluating</b> <b>Tcl</b>
+<b>Expressions</b> <b>from</b> <b>C</b></a></h2>
+
+<p><b>Tcl_ExprLong</b>, <b>Tcl_ExprDouble</b>, <b>Tcl_ExprBool</b>,
+and <b>Tcl_ExprString</b> can be called to evaluate Tcl expressions
+from within a C routine. Depending on the routine called, the
+result is either a C <i>long</i>, a <i>double</i>, a boolean
+(<i>int</i> with a value of <b>0</b> or <i>1</i>), or a <i>char</i>
+<i>*</i> (pointed to by <i>interp-&gt;result</i>).</p>
+
+<p>For complete information on evaluating Tcl expressions from C,
+you are invited to examine the <a href=
+'http://localhost:1313/tcl/tclx/ExprLong.3.html'>ExprLong(3)</a> manpage in the Berkeley Tcl
+distri-bution.</p>
+
+<h2><a name='sect25' href='CmdWrite.3.html#toc25'><b>Pattern</b>
+<b>Matching</b></a></h2>
+
+<p>The <b>Tcl_StringMatch</b> function can be called to see if a
+string matches a specified pattern. <b>Tcl_StringMatch</b> is
+called by the Tcl <i>string</i> <i>match</i> command, so the format
+for patterns is identical. The pattern format is similar to the one
+used by the C-shell; <a href='http://localhost:1313/tcl/tclx/string.n.html'>string(n)</a>
+describes this format.</p>
+
+<p>More information about <b>Tcl_StringMatch</b> is available in
+the <a href='http://localhost:1313/tcl/tclx/StrMatch.3.html'>StrMatch(3)</a> manpage in the
+Berkeley Tcl distribution.</p>
+
+<h2><a name='sect26' href='CmdWrite.3.html#toc26'><b>Regular</b> <b>Expression</b>
+<b>Pattern</b> <b>Matching</b></a></h2>
+
+<p><b>Tcl_RegExpMatch</b> can be called to determine whether a
+string matches a regular expression. <b>Tcl_RegExpMatch</b> is used
+internally by the <i>regexp</i> Tcl command.</p>
+
+<p>For more information on this function, please consult the <a
+href='http://localhost:1313/tcl/tclx/RegExp.3.html'>RegExp(3)</a> manpage in the Berkeley Tcl
+distribution.</p>
+
+<h2><a name='sect27' href='CmdWrite.3.html#toc27'><b>Manipulating</b> <b>Tcl</b>
+<b>Lists</b> <b>from</b> <b>C</b> <b>Extensions</b></a></h2>
+
+<p>The C extension writer often needs to create, manipulate and
+decompose Tcl lists. <b>Tcl_SplitList</b> parses a list into an
+<i>argv</i> and <i>argc</i> like to the way command-line arguments
+are passed to a Tcl extension. <b>Tcl_Merge</b>, likewise, creates
+a single string (pointer to a <i>char</i> <i>*</i>) from an
+<i>argv</i> and <i>argc</i>.</p>
+
+<p>Two routines, <b>Tcl_ScanElement</b> and
+<b>Tcl_ConvertElement</b>, do most of the work of <b>Tcl_Merge</b>,
+and may also be of use to the C programmer.</p>
+
+<p>For more information on these commands, please consult the <a
+href='http://localhost:1313/tcl/tclx/SplitList.3.html'>SplitList(3)</a> manual page in the
+Berkeley Tcl distribution.</p>
+
+<h2><a name='sect28' href='CmdWrite.3.html#toc28'><b>Concatenating</b>
+<b>Strings</b></a></h2>
+
+<p><b>Tcl_Concat</b> concatenates zero or more strings into a
+single string. The strings are space-separated. <b>Tcl_Concat</b>
+works like <i>Tcl</i><b>_</b><i>Merge</i>, except that
+<b>Tcl_Concat</b> does not attempt to make the resulting string
+into a valid Tcl list.</p>
+
+<p><b>Tcl_Concat</b> is documented in the <a href=
+'http://localhost:1313/tcl/tclx/Concat.3.html'>Concat(3)</a> manpage in the Berkeley Tcl
+distribution.</p>
+
+<h2><a name='sect29' href='CmdWrite.3.html#toc29'><b>Detecting</b> <b>Whether</b>
+<b>or</b> <b>Not</b> <b>You</b> <b>Have</b> <b>a</b>
+<b>Complete</b> <b>Command</b></a></h2>
+
+<p>C routines that collect data to form a command to be passed to
+<i>Tcl</i><b>_</b><i>Eval</i> often need a way to tell whether they
+have a complete command already or whether they need more data.
+(Programs that read typed-in Tcl input such as Tcl shells need this
+capability.) <b>Tcl_CommandComplete</b> can be used to tell whether
+or not you have a complete command.</p>
+
+<p>For more information examine <a href=
+'http://localhost:1313/tcl/tclx/CmdCmplt.3.html'>CmdCmplt(3)</a> in the Berkeley Tcl
+distribu-tion.</p>
+
+<h2><a name='sect30' href='CmdWrite.3.html#toc30'><b>Recording</b> <b>Commands</b>
+<b>for</b> <b>Command</b> <b>History</b></a></h2>
+
+<p>Tcl has a history mechanism that is accessed from Tcl through
+the <i>his-tory</i> command. To propagate commands into the command
+history, your extension should call
+<i>Tcl</i><b>_</b><i>RecordAndEval</i>. This command works just
+like <i>Tcl</i><b>_</b><i>Eval</i>, except that it records the
+command as well as executing it.</p>
+
+<p><i>Tcl</i><b>_</b><i>RecordAndEval</i> should only be called
+with user-entered top-level commands, since the history mechanism
+exists to allow the user to eas-ily access, edit and reissue
+previously issued commands.</p>
+
+<p>For complete information on this function, please examine the
+<b>RecordE-val</b>.3 manual page in the Berkeley Tcl
+distribution.</p>
+
+<h2><a name='sect31' href='CmdWrite.3.html#toc31'><b>Converting</b>
+<b>Floating</b> <b>Point</b> <b>Values</b> <b>to</b>
+<b>Strings</b></a></h2>
+
+<p><b>Tcl_PrintDouble</b> converts a C <i>double</i> into an ASCII
+string. It ensures that the string output will continue to be
+interpreted as a floating point number, rather than an integer, by
+always putting a
+&acirc;&euro;&tilde;&acirc;&euro;&tilde;.&acirc;&euro;&trade;&acirc;&euro;&trade;
+or
+&acirc;&euro;&tilde;&acirc;&euro;&tilde;e&acirc;&euro;&trade;&acirc;&euro;&trade;
+into the string representing the number. The precision of the
+output string is controlled by the Tcl <b>tcl_precision</b>
+variable.</p>
+
+<p>For complete information on
+<i>Tcl</i><b>_</b><i>PrintDouble</i>, examine <a href=
+'http://localhost:1313/tcl/tclx/PrintDbl.3.html'>PrintDbl(3)</a> in the Berkeley Tcl
+distribution.</p>
+
+<h2><a name='sect32' href='CmdWrite.3.html#toc32'><b>Creating</b> <b>Child</b>
+<b>Processes</b> <b>and</b> <b>Pipelines</b> <b>from</b>
+<b>C</b></a></h2>
+
+<p><b>Tcl_CreatePipeline</b> is a useful procedure for spawning
+child processes. The child (or pipeline of children) can have its
+standard input, output and error redirected from files, variables
+or pipes. To understand the meaning of the redirection symbols
+understood by this function, look at the <a href=
+'http://localhost:1313/tcl/tclx/exec.n.html'>exec(n)</a> Tcl command. For complete information on
+<b>Tcl_Cre-atePipeline</b>, please examine <a href=
+'http://localhost:1313/tcl/tclx/CrtPipelin.3.html'>CrtPipelin(3)</a> .</p>
+
+<h2><a name='sect33' href='CmdWrite.3.html#toc33'><b>Accessing</b> <b>Tcl</b>
+<b>Filehandles</b> <b>from</b> <b>C</b></a></h2>
+
+<p>Files opened from your C code can be made visible to Tcl code
+via the <b>Tcl_EnterFile</b> function. Likewise, Tcl filehandles
+passed to your C extension can be translated to a Posix <i>FILE</i>
+<i>*</i> structure using the <b>Tcl_GetOpenFile</b> function.</p>
+
+<p>For complete explanations of these commands, please look at <a
+href='http://localhost:1313/tcl/tclx/Enter-File.3.html'>Enter-File(3)</a> in the Berkeley Tcl
+distribution.</p>
+
+<h2><a name='sect34' href='CmdWrite.3.html#toc34'><b>Managing</b>
+<b>Background</b> <b>Process</b> <b>Termination</b> <b>and</b>
+<b>Cleanup</b></a></h2>
+
+<p>When a Posix system does a <i>fork</i> to create a new process,
+the process ID of the child is returned to the caller. After the
+child process exits, its process table entry (and some other data
+associated with the pro-cess) cannot be reclaimed by the operating
+system until a call to <i>wait-pid</i>, or one of a couple of
+other, similar system calls, has been made by the parent
+process.</p>
+
+<p>The C extension writer who has created a subprocess, by whatever
+mecha-nism, can turn over responsibility for detecting the
+processes&acirc;&euro;&trade; termi-nation and calling
+<i>waitpid</i> to obtain its exit status by calling
+<b>Tcl_DetachPids</b>.</p>
+
+<p><b>Tcl_ReapDetachedProcs</b> is the C routine that will detect
+the termination of any processes turned over to Tcl, permitting the
+processes to be fully reclaimed by the operating system.</p>
+
+<p>For complete information on these routines, please look at
+<i>Detach-Pids(3)</i> in the Berkeley Tcl distribution.</p>
+
+<h2><a name='sect35' href='CmdWrite.3.html#toc35'><b>for</b> <b>More</b>
+<b>Information</b></a></h2>
+
+<p>In addition to the documentation referenced above, you can learn
+a lot by studying the source code of the commands added by Tcl, Tk
+and Extended Tcl. The <i>comp.lang.tcl</i> Usenet newsgroup is read
+by tens of thousands of Tcl people, and is a good place to ask
+questions. Finally, if you have interactive Internet access, you
+can ftp to <i>ftp.aud.alcatel.com</i>, the site for contributed Tcl
+sources. This site contains quite a few extensions, applications,
+and so forth, including several object-oriented extension
+packages.</p>
+
+<h2><a name='sect36' href='CmdWrite.3.html#toc36'><b>Authors</b></a></h2>
+
+<p>Extended Tcl was created by Karl Lehenbauer (karl@neosoft.com)
+and Mark Diekhans (markd@grizzly.com).</p>
+
+<h2><a name='sect37' href='CmdWrite.3.html#toc37'>Tcl Command
+Writing(TCL)</a></h2>
+
+<hr>
+<p><a name='toc'><b>Table of Contents</b></a></p>
+
+<ul>
+<li><a name='toc0' href='CmdWrite.3.html#sect0'>Name</a></li>
+
+<li><a name='toc1' href='CmdWrite.3.html#sect1'>Overview</a></li>
+
+<li><a name='toc2' href='CmdWrite.3.html#sect2'>Writing Tcl Extensions in
+C</a></li>
+
+<li><a name='toc3' href='CmdWrite.3.html#sect3'>Another C Extension - the Max
+Command</a></li>
+
+<li><a name='toc4' href='CmdWrite.3.html#sect4'>Another C Extension - the Lreverse
+Command</a></li>
+
+<li><a name='toc5' href='CmdWrite.3.html#sect5'>Installing Your Command</a></li>
+
+<li><a name='toc6' href='CmdWrite.3.html#sect6'>Dynamic Strings</a></li>
+
+<li><a name='toc7' href='CmdWrite.3.html#sect7'>Client Data</a></li>
+
+<li><a name='toc8' href='CmdWrite.3.html#sect8'>Theory of Handles</a></li>
+
+<li><a name='toc9' href='CmdWrite.3.html#sect9'>Tracking Memory Corruption
+Problems</a></li>
+
+<li><a name='toc10' href='CmdWrite.3.html#sect10'>Installing Your Extensions into
+Extended Tcl</a></li>
+
+<li><a name='toc11' href='CmdWrite.3.html#sect11'>Making Application Information
+Visible from Extended Tcl</a></li>
+
+<li><a name='toc12' href='CmdWrite.3.html#sect12'>Extended Tcl Exit</a></li>
+
+<li><a name='toc13' href='CmdWrite.3.html#sect13'>Executing Tcl Code from Your C
+Extension</a></li>
+
+<li><a name='toc14' href='CmdWrite.3.html#sect14'>Accessing Tcl Variables and
+Arrays from Your C Extensions</a></li>
+
+<li><a name='toc15' href='CmdWrite.3.html#sect15'>Linking Tcl Variables to C
+Variables</a></li>
+
+<li><a name='toc16' href='CmdWrite.3.html#sect16'>Adding New Math Functions to
+Tcl</a></li>
+
+<li><a name='toc17' href='CmdWrite.3.html#sect17'>Performing Tilde Substitutions
+on Filenames</a></li>
+
+<li><a name='toc18' href='CmdWrite.3.html#sect18'>Setting the Recursion
+Limit</a></li>
+
+<li><a name='toc19' href='CmdWrite.3.html#sect19'>Handling Signals from Tcl
+Extensions</a></li>
+
+<li><a name='toc20' href='CmdWrite.3.html#sect20'>Parsing Backslash
+Sequences</a></li>
+
+<li><a name='toc21' href='CmdWrite.3.html#sect21'>Hash Tables</a></li>
+
+<li><a name='toc22' href='CmdWrite.3.html#sect22'>Tracing Variable
+Accesses</a></li>
+
+<li><a name='toc23' href='CmdWrite.3.html#sect23'>Tracing Execution</a></li>
+
+<li><a name='toc24' href='CmdWrite.3.html#sect24'>Evaluating Tcl Expressions from
+C</a></li>
+
+<li><a name='toc25' href='CmdWrite.3.html#sect25'>Pattern Matching</a></li>
+
+<li><a name='toc26' href='CmdWrite.3.html#sect26'>Regular Expression Pattern
+Matching</a></li>
+
+<li><a name='toc27' href='CmdWrite.3.html#sect27'>Manipulating Tcl Lists from C
+Extensions</a></li>
+
+<li><a name='toc28' href='CmdWrite.3.html#sect28'>Concatenating Strings</a></li>
+
+<li><a name='toc29' href='CmdWrite.3.html#sect29'>Detecting Whether or Not You
+Have a Complete Command</a></li>
+
+<li><a name='toc30' href='CmdWrite.3.html#sect30'>Recording Commands for Command
+History</a></li>
+
+<li><a name='toc31' href='CmdWrite.3.html#sect31'>Converting Floating Point Values
+to Strings</a></li>
+
+<li><a name='toc32' href='CmdWrite.3.html#sect32'>Creating Child Processes and
+Pipelines from C</a></li>
+
+<li><a name='toc33' href='CmdWrite.3.html#sect33'>Accessing Tcl Filehandles from
+C</a></li>
+
+<li><a name='toc34' href='CmdWrite.3.html#sect34'>Managing Background Process
+Termination and Cleanup</a></li>
+
+<li><a name='toc35' href='CmdWrite.3.html#sect35'>for More Information</a></li>
+
+<li><a name='toc36' href='CmdWrite.3.html#sect36'>Authors</a></li>
+
+<li><a name='toc37' href='CmdWrite.3.html#sect37'>Tcl Command
+Writing(TCL)</a></li>
+</ul>
+</body>
+</html>
+
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

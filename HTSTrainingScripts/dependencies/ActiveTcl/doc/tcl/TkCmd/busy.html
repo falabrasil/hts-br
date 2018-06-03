@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="busy.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>busy manual page - Built-In Commands</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tk Commands, version 8.6.7</a> <small>&gt;</small> busy</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="busy.html#M2" NAME="L179">NAME</A>
+<DL><DD>busy &mdash; confine pointer and keyboard events to a window sub-tree</DD></DL>
+<DD><A HREF="busy.html#M3" NAME="L180">SYNOPSIS</A>
+<DL>
+</DL>
+<DD><A HREF="busy.html#M4" NAME="L181">DESCRIPTION</A>
+<DD><A HREF="busy.html#M5" NAME="L182">INTRODUCTION</A>
+<DD><A HREF="busy.html#M6" NAME="L183">EXAMPLE</A>
+<DD><A HREF="busy.html#M7" NAME="L184">OPERATIONS</A>
+<DL class="operations">
+<DD><A HREF="busy.html#M8" NAME="L185"><B>tk busy </B><I>window</I> ?<I>option value</I>?...</A>
+<DD><A HREF="busy.html#M9" NAME="L186"><B>tk busy hold </B><I>window</I> ?<I>option value</I>?...</A>
+<DL class="operations">
+<DD><A HREF="busy.html#M10" NAME="L187"><B>-cursor </B><I>cursorName</I></A>
+</DL>
+<DD><A HREF="busy.html#M11" NAME="L188"><B>tk busy cget </B><I>window</I> <I>option</I></A>
+<DD><A HREF="busy.html#M12" NAME="L189"><B>tk busy configure </B><I>window</I> ?<I>option value</I>?...</A>
+<DD><A HREF="busy.html#M13" NAME="L190"><B>tk busy forget </B><I>window</I> ?<I>window</I>?...</A>
+<DD><A HREF="busy.html#M14" NAME="L191"><B>tk busy current </B>?<I>pattern</I>?</A>
+<DD><A HREF="busy.html#M15" NAME="L192"><B>tk busy status </B><I>window</I></A>
+</DL>
+<DD><A HREF="busy.html#M16" NAME="L193">EVENT HANDLING</A>
+<DD><A HREF="busy.html#M17" NAME="L194">BINDINGS</A>
+<DD><A HREF="busy.html#M18" NAME="L195">ENTER/LEAVE EVENTS</A>
+<DD><A HREF="busy.html#M19" NAME="L196">KEYBOARD EVENTS</A>
+<DD><A HREF="busy.html#M20" NAME="L197">PORTABILITY</A>
+<DD><A HREF="busy.html#M21" NAME="L198">SEE ALSO</A>
+<DD><A HREF="busy.html#M22" NAME="L199">KEYWORDS</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+busy &mdash; confine pointer and keyboard events to a window sub-tree
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+<B>tk busy</B> <I>window </I>?<I>options</I>?<BR>
+<B>tk busy hold</B> <I>window </I>?<I>options</I>?<BR>
+<B>tk busy configure </B><I>window</I> ?<I>option value</I>?...<BR>
+<B>tk busy forget</B> <I>window </I>?<I>window </I>?...<BR>
+<B>tk busy current</B> ?<I>pattern</I>?<BR>
+<B>tk busy status </B><I>window</I><BR>
+<H3><A NAME="M4">DESCRIPTION</A></H3>
+The <B>tk busy</B> command provides a simple means to block keyboard, button,
+and pointer events from Tk widgets, while overriding the widget's cursor with
+a configurable busy cursor.
+<H3><A NAME="M5">INTRODUCTION</A></H3>
+There are many times in applications where you want to temporarily restrict
+what actions the user can take. For example, an application could have a
+&#8220;Run&#8221;
+button that when pressed causes some processing to occur. However, while the
+application is busy processing, you probably don't want the user to be
+able to click the
+&#8220;Run&#8221;
+button again. You may also want restrict the user from other tasks such as
+clicking a
+&#8220;Print&#8221;
+button.
+<P>
+The <B>tk busy</B> command lets you make Tk widgets busy. This means that user
+interactions such as button clicks, moving the mouse, typing at the keyboard,
+etc. are ignored by the widget. You can set a special cursor (like a watch)
+that overrides the widget's normal cursor, providing feedback that the
+application (widget) is temporarily busy.
+<P>
+When a widget is made busy, the widget and all of its descendants will ignore
+events. It's easy to make an entire panel of widgets busy. You can simply make
+the toplevel widget (such as
+&#8220;.&#8221;)
+busy. This is easier and far much more efficient than recursively traversing
+the widget hierarchy, disabling each widget and re-configuring its cursor.
+<P>
+Often, the <B>tk busy</B> command can be used instead of Tk's <B><A HREF="grab.html">grab</A></B>
+command. Unlike <B><A HREF="grab.html">grab</A></B> which restricts all user interactions to one
+widget, with the <B>tk busy</B> command you can have more than one widget
+active (for example, a
+&#8220;Cancel&#8221;
+dialog and a
+&#8220;Help&#8221;
+button).
+<H4><A NAME="M6">EXAMPLE</A></H4>
+You can make several widgets busy by simply making its ancestor widget busy
+using the <B>hold</B> operation.
+<P>
+<PRE>frame .top
+button .top.button; canvas .top.canvas
+pack .top.button .top.canvas
+pack .top
+# . . .
+<B>tk busy</B> hold .top
+update</PRE>
+<P>
+All the widgets within <B>.top</B> (including <B>.top</B>) are now busy. Using
+<B><A HREF="../TclCmd/update.html">update</A></B> insures that <B>tk busy</B> command will take effect before any
+other user events can occur.
+<P>
+When the application is no longer busy processing, you can allow user
+interactions again and free any resources it allocated by the <B>forget</B>
+operation.
+<P>
+<PRE><B>tk busy</B> forget .top</PRE>
+<P>
+The busy window has a configurable cursor. You can change the busy cursor
+using the <B>configure</B> operation.
+<P>
+<PRE><B>tk busy</B> configure .top -cursor &quot;watch&quot;</PRE>
+<P>
+Destroying the widget will also clean up any resources allocated by the <B>tk
+busy</B> command.
+<P>
+<H3><A NAME="M7">OPERATIONS</A></H3>
+The following operations are available for the <B>tk busy</B> command:
+<P>
+<DL class="operations">
+<DT><A NAME="M8"><B>tk busy </B><I>window</I> ?<I>option value</I>?...</A><DD>
+Shortcut for <B>tk busy hold</B> command.
+<P><DT><A NAME="M9"><B>tk busy hold </B><I>window</I> ?<I>option value</I>?...</A><DD>
+Makes the specified <I>window</I> (and its descendants in the Tk window
+hierarchy) appear busy. <I>Window</I> must be a valid path name of a Tk widget.
+A transparent window is put in front of the specified window. This transparent
+window is mapped the next time idle tasks are processed, and the specified
+window and its descendants will be blocked from user interactions. Normally
+<B><A HREF="../TclCmd/update.html">update</A></B> should be called immediately afterward to insure that the hold
+operation is in effect before the application starts its processing. The
+following configuration options are valid:
+<P>
+<DL class="operations">
+<DT><A NAME="M10"><B>-cursor </B><I>cursorName</I></A><DD>
+Specifies the cursor to be displayed when the widget is made busy.
+<I>CursorName</I> can be in any form accepted by <B><A HREF="../TkLib/GetCursor.html">Tk_GetCursor</A></B>. The
+default cursor is <B>wait</B> on Windows and <B>watch</B> on other platforms.
+<P></DL>
+<P><DT><A NAME="M11"><B>tk busy cget </B><I>window</I> <I>option</I></A><DD>
+Queries the <B>tk busy</B> command configuration options for <I>window</I>.
+<I>Window</I> must be the path name of a widget previously made busy by the
+<B>hold</B> operation. The command returns the present value of the specified
+<I>option</I>. <I>Option</I> may have any of the values accepted by the
+<B>hold</B> operation.
+<P><DT><A NAME="M12"><B>tk busy configure </B><I>window</I> ?<I>option value</I>?...</A><DD>
+Queries or modifies the <B>tk busy</B> command configuration options for
+<I>window</I>. <I>Window</I> must be the path name of a widget previously made
+busy by the <B>hold</B> operation.  If no options are specified, a list
+describing all of the available options for <I>window</I> (see
+<B><A HREF="../TkLib/ConfigWidg.html">Tk_ConfigureInfo</A></B> for information on the format of this list) is
+returned. If <I>option</I> is specified with no <I>value</I>, then the command
+returns a list describing the one named option (this list will be identical to
+the corresponding sublist of the value returned if no <I>option</I> is
+specified). If one or more <I>option-value</I> pairs are specified, then the
+command modifies the given widget option(s) to have the given value(s); in
+this case the command returns the empty string. <I>Option</I> may have any of
+the values accepted by the <B>hold</B> operation.
+<P>
+Please note that the option database is referenced through <I>window</I>. For
+example, if the widget <B>.frame</B> is to be made busy, the busy cursor can be
+specified for it by either <B><A HREF="option.html">option</A></B> command:
+<P>
+<PRE>option add *frame.busyCursor gumby
+option add *Frame.BusyCursor gumby</PRE>
+<P><DT><A NAME="M13"><B>tk busy forget </B><I>window</I> ?<I>window</I>?...</A><DD>
+Releases resources allocated by the <B>tk busy</B> command for <I>window</I>,
+including the transparent window. User events will again be received by
+<I>window</I>. Resources are also released when <I>window</I> is destroyed.
+<I>Window</I> must be the name of a widget specified in the <B>hold</B>
+operation, otherwise an error is reported.
+<P><DT><A NAME="M14"><B>tk busy current </B>?<I>pattern</I>?</A><DD>
+Returns the pathnames of all widgets that are currently busy. If a
+<I>pattern</I> is given, only the path names of busy widgets matching
+<I>pattern</I> are returned.
+<P><DT><A NAME="M15"><B>tk busy status </B><I>window</I></A><DD>
+Returns the status of a widget <I>window</I>. If <I>window</I> presently can not
+receive user interactions, <B>1</B> is returned, otherwise <B>0</B>.
+<P></DL>
+<H3><A NAME="M16">EVENT HANDLING</A></H3>
+<H4><A NAME="M17">BINDINGS</A></H4>
+The event blocking feature is implemented by creating and mapping a
+transparent window that completely covers the widget. When the busy window is
+mapped, it invisibly shields the widget and its hierarchy from all events that
+may be sent. Like Tk widgets, busy windows have widget names in the Tk window
+hierarchy. This means that you can use the <B><A HREF="bind.html">bind</A></B> command, to handle
+events in the busy window.
+<P>
+<PRE><B>tk busy</B> hold .frame.canvas
+bind .frame.canvas_Busy &lt;Enter&gt; { ... }</PRE>
+<P>
+Normally the busy window is a sibling of the widget. The name of the busy
+window is
+&#8220;<I>widget</I><B>_Busy</B>&#8221;
+where <I>widget</I> is the name of the widget to be made busy. In the previous
+example, the pathname of the busy window is
+&#8220;<B>.frame.canvas_Busy</B>&#8221;.
+The exception is when the widget is a toplevel widget (such as
+&#8220;.&#8221;)
+where the busy window can't be made a sibling. The busy window is then a child
+of the widget named
+&#8220;<I>widget</I><B>._Busy</B>&#8221;
+where <I>widget</I> is the name of the toplevel widget. In the following
+example, the pathname of the busy window is
+&#8220;<B>._Busy</B>&#8221;.
+<P>
+<PRE><B>tk busy</B> hold .
+bind ._Busy &lt;Enter&gt; { ... }</PRE>
+<H4><A NAME="M18">ENTER/LEAVE EVENTS</A></H4>
+Mapping and unmapping busy windows generates Enter/Leave events for all
+widgets they cover. Please note this if you are tracking Enter/Leave events in
+widgets.
+<H4><A NAME="M19">KEYBOARD EVENTS</A></H4>
+When a widget is made busy, the widget is prevented from gaining the keyboard
+focus by the busy window. But if the widget already had focus, it still may
+received keyboard events. To prevent this, you must move focus to another
+window.
+<P>
+<PRE><B>tk busy</B> hold .frame
+label .dummy
+focus .dummy
+update</PRE>
+<P>
+The above example moves the focus from .frame immediately after invoking the
+<B>hold</B> so that no keyboard events will be sent to <B>.frame</B> or any of
+its descendants.
+<H3><A NAME="M20">PORTABILITY</A></H3>
+Note that the <B>tk busy</B> command does not currently have any effect on OSX
+when Tk is built using Aqua support.
+<H3><A NAME="M21">SEE ALSO</A></H3>
+<B><A HREF="grab.html">grab</A></B>
+<H3><A NAME="M22">KEYWORDS</A></H3>
+<A href="../Keywords/B.html#busy">busy</A>, <A href="../Keywords/K.html#keyboard events">keyboard events</A>, <A href="../Keywords/P.html#pointer events">pointer events</A>, <A href="../Keywords/W.html#window">window</A>
+<div class="copy">Copyright &copy; 1993-1998 Lucent Technologies, Inc.
+<BR>Copyright &copy; 2008 Jos Decoster
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

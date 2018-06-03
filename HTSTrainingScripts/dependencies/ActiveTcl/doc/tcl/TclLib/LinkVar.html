@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="LinkVar.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>Tcl_LinkVar manual page - Tcl Library Procedures</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tcl C API, version 8.6.7</a> <small>&gt;</small> LinkVar</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="../TkCmd/contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="LinkVar.html#M2" NAME="L444">NAME</A>
+<DL><DD>Tcl_LinkVar, Tcl_UnlinkVar, Tcl_UpdateLinkedVar &mdash; link Tcl variable to C variable</DD></DL>
+<DD><A HREF="LinkVar.html#M3" NAME="L445">SYNOPSIS</A>
+<DL>
+<DD><B>#include &lt;tcl.h&gt;</B>
+<DD>int
+<DD><B>Tcl_LinkVar</B>(<I>interp, varName, addr, type</I>)
+<DD><B>Tcl_UnlinkVar</B>(<I>interp, varName</I>)
+<DD><B>Tcl_UpdateLinkedVar</B>(<I>interp, varName</I>)
+</DL>
+<DD><A HREF="LinkVar.html#M4" NAME="L446">ARGUMENTS</A>
+<DL class="arguments">
+</DL>
+<DD><A HREF="LinkVar.html#M5" NAME="L447">DESCRIPTION</A>
+<DL class="description">
+<DD><A HREF="LinkVar.html#M6" NAME="L448"><B>TCL_LINK_INT</B></A>
+<DD><A HREF="LinkVar.html#M7" NAME="L449"><B>TCL_LINK_UINT</B></A>
+<DD><A HREF="LinkVar.html#M8" NAME="L450"><B>TCL_LINK_CHAR</B></A>
+<DD><A HREF="LinkVar.html#M9" NAME="L451"><B>TCL_LINK_UCHAR</B></A>
+<DD><A HREF="LinkVar.html#M10" NAME="L452"><B>TCL_LINK_SHORT</B></A>
+<DD><A HREF="LinkVar.html#M11" NAME="L453"><B>TCL_LINK_USHORT</B></A>
+<DD><A HREF="LinkVar.html#M12" NAME="L454"><B>TCL_LINK_LONG</B></A>
+<DD><A HREF="LinkVar.html#M13" NAME="L455"><B>TCL_LINK_ULONG</B></A>
+<DD><A HREF="LinkVar.html#M14" NAME="L456"><B>TCL_LINK_DOUBLE</B></A>
+<DD><A HREF="LinkVar.html#M15" NAME="L457"><B>TCL_LINK_FLOAT</B></A>
+<DD><A HREF="LinkVar.html#M16" NAME="L458"><B>TCL_LINK_WIDE_INT</B></A>
+<DD><A HREF="LinkVar.html#M17" NAME="L459"><B>TCL_LINK_WIDE_UINT</B></A>
+<DD><A HREF="LinkVar.html#M18" NAME="L460"><B>TCL_LINK_BOOLEAN</B></A>
+<DD><A HREF="LinkVar.html#M19" NAME="L461"><B>TCL_LINK_STRING</B></A>
+</DL>
+<DD><A HREF="LinkVar.html#M20" NAME="L462">SEE ALSO</A>
+<DD><A HREF="LinkVar.html#M21" NAME="L463">KEYWORDS</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+Tcl_LinkVar, Tcl_UnlinkVar, Tcl_UpdateLinkedVar &mdash; link Tcl variable to C variable
+<H3><A NAME="M3">SYNOPSIS</A></H3>
+<B>#include &lt;tcl.h&gt;</B><BR>
+int<BR>
+<B>Tcl_LinkVar</B>(<I>interp, varName, addr, type</I>)<BR>
+<B>Tcl_UnlinkVar</B>(<I>interp, varName</I>)<BR>
+<B>Tcl_UpdateLinkedVar</B>(<I>interp, varName</I>)<BR>
+<H3><A NAME="M4">ARGUMENTS</A></H3>
+<DL class="arguments">
+<DT><A HREF="Interp.html">Tcl_Interp</A> <B>*interp</B> (in)<DD>
+Interpreter that contains <I>varName</I>.
+Also used by <B>Tcl_LinkVar</B> to return error messages.
+<P><DT>const char <B>*varName</B> (in)<DD>
+Name of global variable.
+<P><DT>char <B>*addr</B> (in)<DD>
+Address of C variable that is to be linked to <I>varName</I>.
+<P><DT>int <B>type</B> (in)<DD>
+Type of C variable.  Must be one of <B>TCL_LINK_INT</B>,
+<B>TCL_LINK_UINT</B>, <B>TCL_LINK_CHAR</B>, <B>TCL_LINK_UCHAR</B>,
+<B>TCL_LINK_SHORT</B>, <B>TCL_LINK_USHORT</B>, <B>TCL_LINK_LONG</B>,
+<B>TCL_LINK_ULONG</B>, <B>TCL_LINK_WIDE_INT</B>,
+<B>TCL_LINK_WIDE_UINT</B>, <B>TCL_LINK_FLOAT</B>,
+<B>TCL_LINK_DOUBLE</B>, <B>TCL_LINK_BOOLEAN</B>, or
+<B>TCL_LINK_STRING</B>, optionally OR'ed with <B>TCL_LINK_READ_ONLY</B>
+to make Tcl variable read-only.
+<P></DL>
+<H3><A NAME="M5">DESCRIPTION</A></H3>
+<B>Tcl_LinkVar</B> uses variable traces to keep the Tcl variable
+named by <I>varName</I> in sync with the C variable at the address
+given by <I>addr</I>.
+Whenever the Tcl variable is read the value of the C variable will
+be returned, and whenever the Tcl variable is written the C
+variable will be updated to have the same value.
+<B>Tcl_LinkVar</B> normally returns <B><A HREF="../TclCmd/catch.html">TCL_OK</A></B>;  if an error occurs
+while setting up the link (e.g. because <I>varName</I> is the
+name of array) then <B><A HREF="../TclCmd/catch.html">TCL_ERROR</A></B> is returned and the interpreter's result
+contains an error message.
+<P>
+The <I>type</I> argument specifies the type of the C variable,
+and must have one of the following values, optionally OR'ed with
+<B>TCL_LINK_READ_ONLY</B>:
+<P>
+<DL class="description">
+<DT><A NAME="M6"><B>TCL_LINK_INT</B></A><DD>
+The C variable is of type <B>int</B>.
+Any value written into the Tcl variable must have a proper integer
+form acceptable to <B><A HREF="IntObj.html">Tcl_GetIntFromObj</A></B>;  attempts to write
+non-integer values into <I>varName</I> will be rejected with
+Tcl errors. Incomplete integer representations (like the empty
+string, '+', '-' or the hex/octal/binary prefix) are accepted
+as if they are valid too.
+<P><DT><A NAME="M7"><B>TCL_LINK_UINT</B></A><DD>
+The C variable is of type <B>unsigned int</B>.
+Any value written into the Tcl variable must have a proper unsigned
+integer form acceptable to <B><A HREF="IntObj.html">Tcl_GetWideIntFromObj</A></B> and in the
+platform's defined range for the <B>unsigned int</B> type; attempts to
+write non-integer values (or values outside the range) into
+<I>varName</I> will be rejected with Tcl errors. Incomplete integer
+representations (like the empty string, '+', '-' or the hex/octal/binary
+prefix) are accepted as if they are valid too.
+<P><DT><A NAME="M8"><B>TCL_LINK_CHAR</B></A><DD>
+The C variable is of type <B>char</B>.
+Any value written into the Tcl variable must have a proper integer
+form acceptable to <B><A HREF="IntObj.html">Tcl_GetIntFromObj</A></B> and be in the range of the
+<B>char</B> datatype; attempts to write non-integer or out-of-range
+values into <I>varName</I> will be rejected with Tcl errors. Incomplete
+integer representations (like the empty string, '+', '-' or the
+hex/octal/binary prefix) are accepted as if they are valid too.
+<P><DT><A NAME="M9"><B>TCL_LINK_UCHAR</B></A><DD>
+The C variable is of type <B>unsigned char</B>.
+Any value written into the Tcl variable must have a proper unsigned
+integer form acceptable to <B><A HREF="IntObj.html">Tcl_GetIntFromObj</A></B> and in the
+platform's defined range for the <B>unsigned char</B> type; attempts to
+write non-integer values (or values outside the range) into
+<I>varName</I> will be rejected with Tcl errors. Incomplete integer
+representations (like the empty string, '+', '-' or the hex/octal/binary
+prefix) are accepted as if they are valid too.
+<P><DT><A NAME="M10"><B>TCL_LINK_SHORT</B></A><DD>
+The C variable is of type <B>short</B>.
+Any value written into the Tcl variable must have a proper integer
+form acceptable to <B><A HREF="IntObj.html">Tcl_GetIntFromObj</A></B> and be in the range of the
+<B>short</B> datatype; attempts to write non-integer or out-of-range
+values into <I>varName</I> will be rejected with Tcl errors. Incomplete
+integer representations (like the empty string, '+', '-' or the
+hex/octal/binary prefix) are accepted as if they are valid too.
+<P><DT><A NAME="M11"><B>TCL_LINK_USHORT</B></A><DD>
+The C variable is of type <B>unsigned short</B>.
+Any value written into the Tcl variable must have a proper unsigned
+integer form acceptable to <B><A HREF="IntObj.html">Tcl_GetIntFromObj</A></B> and in the
+platform's defined range for the <B>unsigned short</B> type; attempts to
+write non-integer values (or values outside the range) into
+<I>varName</I> will be rejected with Tcl errors. Incomplete integer
+representations (like the empty string, '+', '-' or the hex/octal/binary
+prefix) are accepted as if they are valid too.
+<P><DT><A NAME="M12"><B>TCL_LINK_LONG</B></A><DD>
+The C variable is of type <B>long</B>.
+Any value written into the Tcl variable must have a proper integer
+form acceptable to <B><A HREF="IntObj.html">Tcl_GetLongFromObj</A></B>; attempts to write
+non-integer or out-of-range
+values into <I>varName</I> will be rejected with Tcl errors. Incomplete
+integer representations (like the empty string, '+', '-' or the
+hex/octal/binary prefix) are accepted as if they are valid too.
+<P><DT><A NAME="M13"><B>TCL_LINK_ULONG</B></A><DD>
+The C variable is of type <B>unsigned long</B>.
+Any value written into the Tcl variable must have a proper unsigned
+integer form acceptable to <B><A HREF="IntObj.html">Tcl_GetWideIntFromObj</A></B> and in the
+platform's defined range for the <B>unsigned long</B> type; attempts to
+write non-integer values (or values outside the range) into
+<I>varName</I> will be rejected with Tcl errors. Incomplete integer
+representations (like the empty string, '+', '-' or the hex/octal/binary
+prefix) are accepted as if they are valid too.
+<P><DT><A NAME="M14"><B>TCL_LINK_DOUBLE</B></A><DD>
+The C variable is of type <B>double</B>.
+Any value written into the Tcl variable must have a proper real
+form acceptable to <B><A HREF="DoubleObj.html">Tcl_GetDoubleFromObj</A></B>;  attempts to write
+non-real values into <I>varName</I> will be rejected with
+Tcl errors. Incomplete integer or real representations (like the
+empty string, '.', '+', '-' or the hex/octal/binary prefix) are
+accepted as if they are valid too.
+<P><DT><A NAME="M15"><B>TCL_LINK_FLOAT</B></A><DD>
+The C variable is of type <B>float</B>.
+Any value written into the Tcl variable must have a proper real
+form acceptable to <B><A HREF="DoubleObj.html">Tcl_GetDoubleFromObj</A></B> and must be within the
+range acceptable for a <B>float</B>; attempts to
+write non-real values (or values outside the range) into
+<I>varName</I> will be rejected with Tcl errors. Incomplete integer
+or real representations (like the empty string, '.', '+', '-' or
+the hex/octal/binary prefix) are accepted as if they are valid too.
+<P><DT><A NAME="M16"><B>TCL_LINK_WIDE_INT</B></A><DD>
+The C variable is of type <B><A HREF="IntObj.html">Tcl_WideInt</A></B> (which is an integer type
+at least 64-bits wide on all platforms that can support it.)
+Any value written into the Tcl variable must have a proper integer
+form acceptable to <B><A HREF="IntObj.html">Tcl_GetWideIntFromObj</A></B>;  attempts to write
+non-integer values into <I>varName</I> will be rejected with
+Tcl errors. Incomplete integer representations (like the empty
+string, '+', '-' or the hex/octal/binary prefix) are accepted
+as if they are valid too.
+<P><DT><A NAME="M17"><B>TCL_LINK_WIDE_UINT</B></A><DD>
+The C variable is of type <B>Tcl_WideUInt</B> (which is an unsigned
+integer type at least 64-bits wide on all platforms that can support
+it.)
+Any value written into the Tcl variable must have a proper unsigned
+integer form acceptable to <B><A HREF="IntObj.html">Tcl_GetWideIntFromObj</A></B> (it will be
+cast to unsigned);
+attempts to write non-integer values into <I>varName</I> will be
+rejected with Tcl errors. Incomplete integer representations (like
+the empty string, '+', '-' or the hex/octal/binary prefix) are accepted
+as if they are valid too.
+<P><DT><A NAME="M18"><B>TCL_LINK_BOOLEAN</B></A><DD>
+The C variable is of type <B>int</B>.
+If its value is zero then it will read from Tcl as
+&#8220;0&#8221;;
+otherwise it will read from Tcl as
+&#8220;1&#8221;.
+Whenever <I>varName</I> is
+modified, the C variable will be set to a 0 or 1 value.
+Any value written into the Tcl variable must have a proper boolean
+form acceptable to <B><A HREF="BoolObj.html">Tcl_GetBooleanFromObj</A></B>;  attempts to write
+non-boolean values into <I>varName</I> will be rejected with
+Tcl errors.
+<P><DT><A NAME="M19"><B>TCL_LINK_STRING</B></A><DD>
+The C variable is of type <B>char *</B>.
+If its value is not NULL then it must be a pointer to a string
+allocated with <B><A HREF="Alloc.html">Tcl_Alloc</A></B> or <B><A HREF="Alloc.html">ckalloc</A></B>.
+Whenever the Tcl variable is modified the current C string will be
+freed and new memory will be allocated to hold a copy of the variable's
+new value.
+If the C variable contains a NULL pointer then the Tcl variable
+will read as
+&#8220;NULL&#8221;.
+<P></DL>
+<P>
+If the <B>TCL_LINK_READ_ONLY</B> flag is present in <I>type</I> then the
+variable will be read-only from Tcl, so that its value can only be
+changed by modifying the C variable.
+Attempts to write the variable from Tcl will be rejected with errors.
+<P>
+<B>Tcl_UnlinkVar</B> removes the link previously set up for the
+variable given by <I>varName</I>.  If there does not exist a link
+for <I>varName</I> then the procedure has no effect.
+<P>
+<B>Tcl_UpdateLinkedVar</B> may be invoked after the C variable has
+changed to force the Tcl variable to be updated immediately.
+In many cases this procedure is not needed, since any attempt to
+read the Tcl variable will return the latest value of the C variable.
+However, if a trace has been set on the Tcl variable (such as a
+Tk widget that wishes to display the value of the variable), the
+trace will not trigger when the C variable has changed.
+<B>Tcl_UpdateLinkedVar</B> ensures that any traces on the Tcl
+variable are invoked.
+<P>
+Note that, as with any call to a Tcl interpreter, <B>Tcl_UpdateLinkedVar</B>
+must be called from the same thread that created the interpreter. The safest
+mechanism is to ensure that the C variable is only ever updated from the same
+thread that created the interpreter (possibly in response to an event posted
+with <B><A HREF="Notifier.html">Tcl_ThreadQueueEvent</A></B>), but when it is necessary to update the
+variable in a separate thread, it is advised that <B><A HREF="Async.html">Tcl_AsyncMark</A></B> be used
+to indicate to the thread hosting the interpreter that it is ready to run
+<B>Tcl_UpdateLinkedVar</B>.
+<H3><A NAME="M20">SEE ALSO</A></H3>
+<B><A HREF="TraceVar.html">Tcl_TraceVar</A></B>
+<H3><A NAME="M21">KEYWORDS</A></H3>
+<A href="../Keywords/B.html#boolean">boolean</A>, <A href="../Keywords/I.html#integer">integer</A>, <A href="../Keywords/L.html#link">link</A>, <A href="../Keywords/R.html#read-only">read-only</A>, <A href="../Keywords/R.html#real">real</A>, <A href="../Keywords/S.html#string">string</A>, <A href="../Keywords/T.html#trace">trace</A>, <A href="../Keywords/V.html#variable">variable</A>
+<div class="copy">Copyright &copy; 1993 The Regents of the University of California.
+<BR>Copyright &copy; 1994-1996 Sun Microsystems, Inc.
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

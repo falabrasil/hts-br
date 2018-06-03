@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="A.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>Tcl/Tk Keywords - A</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> Tcl/Tk Keywords - A</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="../TkCmd/contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="../TclLib/contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<H3><A HREF="A.html">A</A> |
+<A HREF="B.html">B</A> |
+<A HREF="C.html">C</A> |
+<A HREF="D.html">D</A> |
+<A HREF="E.html">E</A> |
+<A HREF="F.html">F</A> |
+<A HREF="G.html">G</A> |
+<A HREF="H.html">H</A> |
+<A HREF="I.html">I</A> |
+<A HREF="J.html">J</A> |
+<A HREF="K.html">K</A> |
+<A HREF="L.html">L</A> |
+<A HREF="M.html">M</A> |
+<A HREF="N.html">N</A> |
+<A HREF="O.html">O</A> |
+<A HREF="P.html">P</A> |
+<A HREF="Q.html">Q</A> |
+<A HREF="R.html">R</A> |
+<A HREF="S.html">S</A> |
+<A HREF="T.html">T</A> |
+<A HREF="U.html">U</A> |
+<A HREF="V.html">V</A> |
+<A HREF="W.html">W</A> |
+<A HREF="X.html">X</A> |
+<A HREF="Y.html">Y</A> |
+<A HREF="Z.html">Z</A></H3>
+<DL class="keylist">
+<DT><A NAME="abort">abort</A></DT>
+<DD>
+<A HREF="../TclCmd/break.html" TITLE="break - Abort looping command">break</A>, <A HREF="../TclCmd/exit.html" TITLE="exit - End the application">exit</A>, <A HREF="../TclLib/Exit.html" TITLE="Tcl_Exit, Tcl_Finalize, Tcl_CreateExitHandler, Tcl_DeleteExitHandler, Tcl_ExitThread, Tcl_FinalizeThread, Tcl_CreateThreadExitHandler, Tcl_DeleteThreadExitHandler, Tcl_SetExitProc - end the application or thread (and invoke exit handlers)">Exit</A>, <A HREF="../TclLib/Panic.html" TITLE="Tcl_Panic, Tcl_PanicVA, Tcl_SetPanicProc - report fatal error and abort">Panic</A></DD>
+<DT><A NAME="about dialog">about dialog</A></DT>
+<DD>
+<A HREF="../TkCmd/tk_mac.html" TITLE="tk::mac - Access Mac-Specific Functionality on OS X from Tk">tk_mac</A></DD>
+<DT><A NAME="above">above</A></DT>
+<DD>
+<A HREF="../TkLib/Restack.html" TITLE="Tk_RestackWindow - Change a window's position in the stacking order">Restack</A></DD>
+<DT><A NAME="absolute file name">absolute file name</A></DT>
+<DD>
+<A HREF="../TclCmd/filename.html" TITLE="filename - File name conventions supported by Tcl commands">filename</A></DD>
+<DT><A NAME="access">access</A></DT>
+<DD>
+<A HREF="../TclLib/Access.html" TITLE="Tcl_Access, Tcl_Stat - check file permissions and other attributes">Access</A>, <A HREF="../TclLib/FileSystem.html" TITLE="Tcl_FSRegister, Tcl_FSUnregister, Tcl_FSData, Tcl_FSMountsChanged, Tcl_FSGetFileSystemForPath, Tcl_FSGetPathType, Tcl_FSCopyFile, Tcl_FSCopyDirectory, Tcl_FSCreateDirectory, Tcl_FSDeleteFile, Tcl_FSRemoveDirectory, Tcl_FSRenameFile, Tcl_FSListVolumes, Tcl_FSEvalFile, Tcl_FSEvalFileEx, Tcl_FSLoadFile, Tcl_FSUnloadFile, Tcl_FSMatchInDirectory, Tcl_FSLink, Tcl_FSLstat, Tcl_FSUtime, Tcl_FSFileAttrsGet, Tcl_FSFileAttrsSet, Tcl_FSFileAttrStrings, Tcl_FSStat, Tcl_FSAccess, Tcl_FSOpenFileChannel, Tcl_FSGetCwd, Tcl_FSChdir, Tcl_FSPathSeparator, Tcl_FSJoinPath, Tcl_FSSplitPath, Tcl_FSEqualPaths, Tcl_FSGetNormalizedPath, Tcl_FSJoinToPath, Tcl_FSConvertToPathType, Tcl_FSGetInternalRep, Tcl_FSGetTranslatedPath, Tcl_FSGetTranslatedStringPath, Tcl_FSNewNativePath, Tcl_FSGetNativePath, Tcl_FSFileSystemInfo, Tcl_GetAccessTimeFromStat, Tcl_GetBlockSizeFromStat, Tcl_GetBlocksFromStat, Tcl_GetChangeTimeFromStat, Tcl_GetDeviceTypeFromStat, Tcl_GetFSDeviceFromStat, Tcl_GetFSInodeFromStat, Tcl_GetGroupIdFromStat, Tcl_GetLinkCountFromStat, Tcl_GetModeFromStat, Tcl_GetModificationTimeFromStat, Tcl_GetSizeFromStat, Tcl_GetUserIdFromStat, Tcl_AllocStatBuf - procedures to interact with any filesystem">FileSystem</A></DD>
+<DT><A NAME="access mode">access mode</A></DT>
+<DD>
+<A HREF="../TclCmd/open.html" TITLE="open - Open a file-based or command pipeline channel">open</A></DD>
+<DT><A NAME="access point">access point</A></DT>
+<DD>
+<A HREF="../TclLib/OpenFileChnl.html" TITLE="Tcl_OpenFileChannel, Tcl_OpenCommandChannel, Tcl_MakeFileChannel, Tcl_GetChannel, Tcl_GetChannelNames, Tcl_GetChannelNamesEx, Tcl_RegisterChannel, Tcl_UnregisterChannel, Tcl_DetachChannel, Tcl_IsStandardChannel, Tcl_Close, Tcl_ReadChars, Tcl_Read, Tcl_GetsObj, Tcl_Gets, Tcl_WriteObj, Tcl_WriteChars, Tcl_Write, Tcl_Flush, Tcl_Seek, Tcl_Tell, Tcl_TruncateChannel, Tcl_GetChannelOption, Tcl_SetChannelOption, Tcl_Eof, Tcl_InputBlocked, Tcl_InputBuffered, Tcl_OutputBuffered, Tcl_Ungets, Tcl_ReadRaw, Tcl_WriteRaw - buffered I/O facilities using channels">OpenFileChnl</A></DD>
+<DT><A NAME="access position">access position</A></DT>
+<DD>
+<A HREF="../TclCmd/seek.html" TITLE="seek - Change the access position for an open channel">seek</A>, <A HREF="../TclCmd/tell.html" TITLE="tell - Return current access position for an open channel">tell</A></DD>
+<DT><A NAME="add">add</A></DT>
+<DD>
+<A HREF="../TclCmd/incr.html" TITLE="incr - Increment the value of a variable">incr</A>, <A HREF="../TkLib/AddOption.html" TITLE="Tk_AddOption - Add an option to the option database">AddOption</A></DD>
+<DT><A NAME="alias">alias</A></DT>
+<DD>
+<A HREF="../TclCmd/interp.html" TITLE="interp - Create and manipulate Tcl interpreters">interp</A>, <A HREF="../TclCmd/safe.html" TITLE="safe - Creating and manipulating safe interpreters">safe</A>, <A HREF="../TkCmd/loadTk.html" TITLE="safe::loadTk - Load Tk into a safe interpreter.">loadTk</A>, <A HREF="../TclLib/CrtSlave.html" TITLE="Tcl_IsSafe, Tcl_MakeSafe, Tcl_CreateSlave, Tcl_GetSlave, Tcl_GetMaster, Tcl_GetInterpPath, Tcl_CreateAlias, Tcl_CreateAliasObj, Tcl_GetAlias, Tcl_GetAliasObj, Tcl_ExposeCommand, Tcl_HideCommand - manage multiple Tcl interpreters, aliases and hidden commands">CrtSlave</A></DD>
+<DT><A NAME="alloc">alloc</A></DT>
+<DD>
+<A HREF="../TclLib/Alloc.html" TITLE="Tcl_Alloc, Tcl_Free, Tcl_Realloc, Tcl_AttemptAlloc, Tcl_AttemptRealloc, ckalloc, ckfree, ckrealloc, attemptckalloc, attemptckrealloc - allocate or free heap memory">Alloc</A></DD>
+<DT><A NAME="allocation">allocation</A></DT>
+<DD>
+<A HREF="../TclLib/Alloc.html" TITLE="Tcl_Alloc, Tcl_Free, Tcl_Realloc, Tcl_AttemptAlloc, Tcl_AttemptRealloc, ckalloc, ckfree, ckrealloc, attemptckalloc, attemptckrealloc - allocate or free heap memory">Alloc</A></DD>
+<DT><A NAME="alpha">alpha</A></DT>
+<DD>
+<A HREF="../TclLib/GetVersion.html" TITLE="Tcl_GetVersion - get the version of the library at runtime">GetVersion</A></DD>
+<DT><A NAME="anchor">anchor</A></DT>
+<DD>
+<A HREF="../TkLib/ConfigWidg.html" TITLE="Tk_ConfigureWidget, Tk_ConfigureInfo, Tk_ConfigureValue, Tk_FreeOptions - process configuration options for widgets">ConfigWidg</A>, <A HREF="../TkLib/SetOptions.html" TITLE="Tk_CreateOptionTable, Tk_DeleteOptionTable, Tk_InitOptions, Tk_SetOptions, Tk_FreeSavedOptions, Tk_RestoreSavedOptions, Tk_GetOptionValue,  Tk_GetOptionInfo, Tk_FreeConfigOptions, Tk_Offset - process configuration options">SetOptions</A></DD>
+<DT><A NAME="anchor position">anchor position</A></DT>
+<DD>
+<A HREF="../TkLib/GetAnchor.html" TITLE="Tk_GetAnchorFromObj, Tk_GetAnchor, Tk_NameOfAnchor - translate between strings and anchor positions">GetAnchor</A></DD>
+<DT><A NAME="anonymous function">anonymous function</A></DT>
+<DD>
+<A HREF="../TclCmd/apply.html" TITLE="apply - Apply an anonymous function">apply</A></DD>
+<DT><A NAME="antialiasing">antialiasing</A></DT>
+<DD>
+<A HREF="../TkCmd/tk_mac.html" TITLE="tk::mac - Access Mac-Specific Functionality on OS X from Tk">tk_mac</A></DD>
+<DT><A NAME="API">API</A></DT>
+<DD>
+<A HREF="../TclCmd/refchan.html" TITLE="refchan - command handler API of reflected channels">refchan</A>, <A HREF="../TclCmd/transchan.html" TITLE="transchan - command handler API of channel transforms">transchan</A></DD>
+<DT><A NAME="appearance">appearance</A></DT>
+<DD>
+<A HREF="../TkCmd/ttk_image.html" TITLE="ttk_image - Define an element based on an image">ttk_image</A>, <A HREF="../TkCmd/ttk_style.html" TITLE="ttk::style - Manipulate style database">ttk_style</A>, <A HREF="../TkCmd/ttk_vsapi.html" TITLE="ttk_vsapi - Define a Microsoft Visual Styles element">ttk_vsapi</A></DD>
+<DT><A NAME="append">append</A></DT>
+<DD>
+<A HREF="../TclCmd/append.html" TITLE="append - Append to variable">append</A>, <A HREF="../TclCmd/lappend.html" TITLE="lappend - Append list elements onto a variable">lappend</A>, <A HREF="../TclCmd/open.html" TITLE="open - Open a file-based or command pipeline channel">open</A>, <A HREF="../TkCmd/clipboard.html" TITLE="clipboard - Manipulate Tk clipboard">clipboard</A>, <A HREF="../TclLib/DString.html" TITLE="Tcl_DStringInit, Tcl_DStringAppend, Tcl_DStringAppendElement, Tcl_DStringStartSublist, Tcl_DStringEndSublist, Tcl_DStringLength, Tcl_DStringValue, Tcl_DStringSetLength, Tcl_DStringTrunc, Tcl_DStringFree, Tcl_DStringResult, Tcl_DStringGetResult - manipulate dynamic strings">DString</A>, <A HREF="../TclLib/ListObj.html" TITLE="Tcl_ListObjAppendList, Tcl_ListObjAppendElement, Tcl_NewListObj, Tcl_SetListObj, Tcl_ListObjGetElements, Tcl_ListObjLength, Tcl_ListObjIndex, Tcl_ListObjReplace - manipulate Tcl values as lists">ListObj</A>, <A HREF="../TclLib/SetResult.html" TITLE="Tcl_SetObjResult, Tcl_GetObjResult, Tcl_SetResult, Tcl_GetStringResult, Tcl_AppendResult, Tcl_AppendResultVA, Tcl_AppendElement, Tcl_ResetResult, Tcl_TransferResult, Tcl_FreeResult - manipulate Tcl result">SetResult</A>, <A HREF="../TclLib/StringObj.html" TITLE="Tcl_NewStringObj, Tcl_NewUnicodeObj, Tcl_SetStringObj, Tcl_SetUnicodeObj, Tcl_GetStringFromObj, Tcl_GetString, Tcl_GetUnicodeFromObj, Tcl_GetUnicode, Tcl_GetUniChar, Tcl_GetCharLength, Tcl_GetRange, Tcl_AppendToObj, Tcl_AppendUnicodeToObj, Tcl_AppendObjToObj, Tcl_AppendStringsToObj, Tcl_AppendStringsToObjVA, Tcl_AppendLimitedToObj, Tcl_Format, Tcl_AppendFormatToObj, Tcl_ObjPrintf, Tcl_AppendPrintfToObj, Tcl_SetObjLength, Tcl_AttemptSetObjLength, Tcl_ConcatObj - manipulate Tcl values as strings">StringObj</A>, <A HREF="../TkLib/Clipboard.html" TITLE="Tk_ClipboardClear, Tk_ClipboardAppend - Manage the clipboard">Clipboard</A></DD>
+<DT><A NAME="Apple event">Apple event</A></DT>
+<DD>
+<A HREF="../TkCmd/tk_mac.html" TITLE="tk::mac - Access Mac-Specific Functionality on OS X from Tk">tk_mac</A></DD>
+<DT><A NAME="application">application</A></DT>
+<DD>
+<A HREF="../UserCmd/tclsh.html" TITLE="tclsh - Simple shell containing Tcl interpreter">tclsh</A>, <A HREF="../UserCmd/wish.html" TITLE="wish - Simple windowing shell">wish</A>, <A HREF="../TclCmd/dde.html" TITLE="dde - Execute a Dynamic Data Exchange command">dde</A>, <A HREF="../TkCmd/destroy.html" TITLE="destroy - Destroy one or more windows">destroy</A>, <A HREF="../TkCmd/send.html" TITLE="send - Execute a command in a different application">send</A>, <A HREF="../TclLib/AppInit.html" TITLE="Tcl_AppInit - perform application-specific initialization">AppInit</A>, <A HREF="../TclLib/Init.html" TITLE="Tcl_Init - find and source initialization script">Init</A>, <A HREF="../TkLib/MainLoop.html" TITLE="Tk_MainLoop - loop for events until all windows are deleted">MainLoop</A>, <A HREF="../TkLib/MainWin.html" TITLE="Tk_MainWindow, Tk_GetNumMainWindows - functions for querying main window information">MainWin</A>, <A HREF="../TkLib/SetAppName.html" TITLE="Tk_SetAppName - Set the name of an application for 'send' commands">SetAppName</A>, <A HREF="../TkLib/Tk_Init.html" TITLE="Tk_Init, Tk_SafeInit - add Tk to an interpreter and make a new Tk application.">Tk_Init</A></DD>
+<DT><A NAME="application name">application name</A></DT>
+<DD>
+<A HREF="../TkCmd/tk.html" TITLE="tk - Manipulate Tk internal state">tk</A></DD>
+<DT><A NAME="application-specific initialization">application-specific initialization</A></DT>
+<DD>
+<A HREF="../TclLib/SourceRCFile.html" TITLE="Tcl_SourceRCFile - source the Tcl rc file">SourceRCFile</A>, <A HREF="../TclLib/Tcl_Main.html" TITLE="Tcl_Main, Tcl_SetStartupScript, Tcl_GetStartupScript, Tcl_SetMainLoop - main program, startup script, and event loop definition for Tcl-based applications">Tcl_Main</A>, <A HREF="../TkLib/Tk_Main.html" TITLE="Tk_Main - main program for Tk-based applications">Tk_Main</A></DD>
+<DT><A NAME="architecture">architecture</A></DT>
+<DD>
+<A HREF="../TclCmd/platform.html" TITLE="platform - System identification support code and utilities">platform</A>, <A HREF="../TclCmd/platform_shell.html" TITLE="platform::shell - System identification support code and utilities">platform_shell</A></DD>
+<DT><A NAME="argument">argument</A></DT>
+<DD>
+<A HREF="../UserCmd/tclsh.html" TITLE="tclsh - Simple shell containing Tcl interpreter">tclsh</A>, <A HREF="../UserCmd/wish.html" TITLE="wish - Simple windowing shell">wish</A>, <A HREF="../TclCmd/apply.html" TITLE="apply - Apply an anonymous function">apply</A>, <A HREF="../TclCmd/proc.html" TITLE="proc - Create a Tcl procedure">proc</A>, <A HREF="../TclLib/AppInit.html" TITLE="Tcl_AppInit - perform application-specific initialization">AppInit</A>, <A HREF="../TclLib/ParseArgs.html" TITLE="Tcl_ParseArgsObjv - parse arguments according to a tabular description">ParseArgs</A></DD>
+<DT><A NAME="arguments">arguments</A></DT>
+<DD>
+<A HREF="../TkLib/ParseArgv.html" TITLE="Tk_ParseArgv - process command-line options">ParseArgv</A></DD>
+<DT><A NAME="arithmetic">arithmetic</A></DT>
+<DD>
+<A HREF="../TclCmd/expr.html" TITLE="expr - Evaluate an expression">expr</A>, <A HREF="../TclCmd/tclvars.html" TITLE="argc, argv, argv0, auto_path, env, errorCode, errorInfo, tcl_interactive, tcl_library, tcl_nonwordchars, tcl_patchLevel, tcl_pkgPath, tcl_platform, tcl_precision, tcl_rcFileName, tcl_traceCompile, tcl_traceExec, tcl_wordchars, tcl_version - Variables used by Tcl">tclvars</A></DD>
+<DT><A NAME="array">array</A></DT>
+<DD>
+<A HREF="../TclCmd/array.html" TITLE="array - Manipulate array variables">array</A>, <A HREF="../TclLib/SetVar.html" TITLE="Tcl_SetVar2Ex, Tcl_SetVar, Tcl_SetVar2, Tcl_ObjSetVar2, Tcl_GetVar2Ex, Tcl_GetVar, Tcl_GetVar2, Tcl_ObjGetVar2, Tcl_UnsetVar, Tcl_UnsetVar2 - manipulate Tcl variables">SetVar</A></DD>
+<DT><A NAME="aspect ratio">aspect ratio</A></DT>
+<DD>
+<A HREF="../TkCmd/wm.html" TITLE="wm - Communicate with window manager">wm</A></DD>
+<DT><A NAME="assign">assign</A></DT>
+<DD>
+<A HREF="../TclCmd/lassign.html" TITLE="lassign - Assign list elements to variables">lassign</A></DD>
+<DT><A NAME="association">association</A></DT>
+<DD>
+<A HREF="../TclLib/AssocData.html" TITLE="Tcl_GetAssocData, Tcl_SetAssocData, Tcl_DeleteAssocData - manage associations of string keys and user specified data with Tcl interpreters">AssocData</A></DD>
+<DT><A NAME="asynchronous event">asynchronous event</A></DT>
+<DD>
+<A HREF="../TclLib/Async.html" TITLE="Tcl_AsyncCreate, Tcl_AsyncMark, Tcl_AsyncInvoke, Tcl_AsyncDelete, Tcl_AsyncReady - handle asynchronous events">Async</A></DD>
+<DT><A NAME="asynchronous I/O">asynchronous I/O</A></DT>
+<DD>
+<A HREF="../TclCmd/fileevent.html" TITLE="fileevent - Execute a script when a channel becomes readable or writable">fileevent</A>, <A HREF="../TclCmd/socket.html" TITLE="socket - Open a TCP network connection">socket</A>, <A HREF="../TclCmd/update.html" TITLE="update - Process pending events and idle callbacks">update</A>, <A HREF="../TclCmd/vwait.html" TITLE="vwait - Process events until a variable is written">vwait</A></DD>
+<DT><A NAME="atom">atom</A></DT>
+<DD>
+<A HREF="../TkCmd/winfo.html" TITLE="winfo - Return window-related information">winfo</A>, <A HREF="../TkLib/GetUid.html" TITLE="Tk_GetUid, Tk_Uid - convert from string to unique identifier">GetUid</A>, <A HREF="../TkLib/InternAtom.html" TITLE="Tk_InternAtom, Tk_GetAtomName - manage cache of X atoms">InternAtom</A></DD>
+<DT><A NAME="attributes">attributes</A></DT>
+<DD>
+<A HREF="../TclCmd/file.html" TITLE="file - Manipulate file names and attributes">file</A>, <A HREF="../TkLib/ConfigWind.html" TITLE="Tk_ConfigureWindow, Tk_MoveWindow, Tk_ResizeWindow, Tk_MoveResizeWindow, Tk_SetWindowBorderWidth, Tk_ChangeWindowAttributes, Tk_SetWindowBackground, Tk_SetWindowBackgroundPixmap, Tk_SetWindowBorder, Tk_SetWindowBorderPixmap, Tk_SetWindowColormap, Tk_DefineCursor, Tk_UndefineCursor - change window configuration or attributes">ConfigWind</A>, <A HREF="../TkLib/WindowId.html" TITLE="Tk_WindowId, Tk_Parent, Tk_Display, Tk_DisplayName, Tk_ScreenNumber, Tk_Screen, Tk_X, Tk_Y, Tk_Width, Tk_Height, Tk_Changes, Tk_Attributes, Tk_IsContainer, Tk_IsEmbedded, Tk_IsMapped, Tk_IsTopLevel, Tk_ReqWidth, Tk_ReqHeight, Tk_MinReqWidth, Tk_MinReqHeight, Tk_InternalBorderLeft, Tk_InternalBorderRight, Tk_InternalBorderTop, Tk_InternalBorderBottom, Tk_Visual, Tk_Depth, Tk_Colormap, Tk_Interp  - retrieve information from Tk's local data structure">WindowId</A></DD>
+<DT><A NAME="auto-exec">auto-exec</A></DT>
+<DD>
+<A HREF="../TclCmd/library.html" TITLE="auto_execok, auto_import, auto_load, auto_mkindex, auto_qualify, auto_reset, tcl_findLibrary, parray, tcl_endOfWord, tcl_startOfNextWord, tcl_startOfPreviousWord, tcl_wordBreakAfter, tcl_wordBreakBefore - standard library of Tcl procedures">library</A></DD>
+<DT><A NAME="auto-load">auto-load</A></DT>
+<DD>
+<A HREF="../TclCmd/library.html" TITLE="auto_execok, auto_import, auto_load, auto_mkindex, auto_qualify, auto_reset, tcl_findLibrary, parray, tcl_endOfWord, tcl_startOfNextWord, tcl_startOfPreviousWord, tcl_wordBreakAfter, tcl_wordBreakBefore - standard library of Tcl procedures">library</A>, <A HREF="../TclCmd/packagens.html" TITLE="pkg::create - Construct an appropriate 'package ifneeded' command for a given package specification">packagens</A>, <A HREF="../TclCmd/pkgMkIndex.html" TITLE="pkg_mkIndex - Build an index for automatic loading of packages">pkgMkIndex</A></DD>
+<DT><A NAME="auto-loading">auto-loading</A></DT>
+<DD>
+<A HREF="../TclCmd/safe.html" TITLE="safe - Creating and manipulating safe interpreters">safe</A>, <A HREF="../TkCmd/loadTk.html" TITLE="safe::loadTk - Load Tk into a safe interpreter.">loadTk</A></DD>
+<DT><A NAME="auto_mkindex">auto_mkindex</A></DT>
+<DD>
+<A HREF="../TclCmd/safe.html" TITLE="safe - Creating and manipulating safe interpreters">safe</A>, <A HREF="../TkCmd/loadTk.html" TITLE="safe::loadTk - Load Tk into a safe interpreter.">loadTk</A></DD>
+</DL>
+<div class="copy">Copyright &copy; 1989-1994 The Regents of the University of California
+<BR>Copyright &copy; 1992-1999 Karl Lehenbauer &amp; Mark Diekhans
+<BR>Copyright &copy; 1992-1999 Karl Lehenbauer and Mark Diekhans
+<BR>Copyright &copy; 1993-1997 Bell Labs Innovations for Lucent Technologies
+<BR>Copyright &copy; 1993-1998 Lucent Technologies, Inc
+<BR>Copyright &copy; 1994 The Australian National University
+<BR>Copyright &copy; 1994-2000 Sun Microsystems, Inc
+<BR>Copyright &copy; 1997-2000 Ajuba Solutions
+<BR>Copyright &copy; 1997-2000 Scriptics Corporation
+<BR>Copyright &copy; 1998 Mark Harrison
+<BR>Copyright &copy; 2000 Jeffrey Hobbs
+<BR>Copyright &copy; 2001 ActiveState Tool Corp
+<BR>Copyright &copy; 2001 Vincent Darley
+<BR>Copyright &copy; 2001-2004 ActiveState Corporation
+<BR>Copyright &copy; 2001-2005 Kevin B. Kenny &lt;kennykb(at)acm.org&gt;
+<BR>Copyright &copy; 2001-2012 Donal K. Fellows
+<BR>Copyright &copy; 2002-2010 Andreas Kupries &lt;andreas_kupries(at)users.sourceforge.net&gt;
+<BR>Copyright &copy; 2003 George Petasis &lt;petasis(at)iit.demokritos.gr&gt;
+<BR>Copyright &copy; 2003 Simon Geard
+<BR>Copyright &copy; 2003-2006 Joe English
+<BR>Copyright &copy; 2006 Miguel Sofer
+<BR>Copyright &copy; 2006-2008 ActiveState Software Inc
+<BR>Copyright &copy; 2006-2008 Daniel A. Steffen &lt;das(at)users.sourceforge.net&gt;
+<BR>Copyright &copy; 2006-2008 Joe Mistachkin
+<BR>Copyright &copy; 2008 Arnulf Wiedemann
+<BR>Copyright &copy; 2008 Jos Decoster
+<BR>Copyright &copy; 2008 Pat Thoyts
+<BR>Copyright &copy; 2008 Peter Spjuth &lt;pspjuth(at)users.sourceforge.net&gt;
+<BR>Copyright &copy; 2008-2010 Kevin B. Kenny
+<BR>Copyright &copy; 2011 Kevin Walzer
+<BR>Copyright &copy; 2012 Trevor Davel
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

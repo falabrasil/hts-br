@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="CrtMathFnc.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>Tcl_CreateMathFunc manual page - Tcl Library Procedures</TITLE>
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all">
+</HEAD>
+<BODY><H2><a href="../contents.html">Tcl8.6.7/Tk8.6.7 Documentation</a> <small>&gt;</small> <a href="contents.html">Tcl C API, version 8.6.7</a> <small>&gt;</small> CrtMathFnc</H2>
+<H3><A HREF="../UserCmd/contents.html">Tcl/Tk Applications</A> | <A HREF="../TclCmd/contents.html">Tcl Commands</A> | <A HREF="../TkCmd/contents.html">Tk Commands</A> | <A HREF="../ItclCmd/contents.html">[incr Tcl] Package Commands</A> | <A HREF="../SqliteCmd/contents.html">SQLite3 Package Commands</A> | <A HREF="../TdbcCmd/contents.html">TDBC Package Commands</A> | <A HREF="../TdbcmysqlCmd/contents.html">tdbc::mysql Package Commands</A> | <A HREF="../TdbcodbcCmd/contents.html">tdbc::odbc Package Commands</A> | <A HREF="../TdbcpostgresCmd/contents.html">tdbc::postgres Package Commands</A> | <A HREF="../TdbcsqliteCmd/contents.html">tdbc::sqlite3 Package Commands</A> | <A HREF="../ThreadCmd/contents.html">Thread Package Commands</A> | <A HREF="contents.html">Tcl C API</A> | <A HREF="../TkLib/contents.html">Tk C API</A> | <A HREF="../ItclLib/contents.html">[incr Tcl] Package C API</A> | <A HREF="../TdbcLib/contents.html">TDBC Package C API</A></H3>
+<DL>
+<DD><A HREF="CrtMathFnc.html#M2" NAME="L167">NAME</A>
+<DL><DD>Tcl_CreateMathFunc, Tcl_GetMathFuncInfo, Tcl_ListMathFuncs &mdash; Define, query and enumerate math functions for expressions</DD></DL>
+<DD><A HREF="CrtMathFnc.html#M3" NAME="L168">NOTICE OF EVENTUAL DEPRECATION</A>
+<DD><A HREF="CrtMathFnc.html#M4" NAME="L169">SYNOPSIS</A>
+<DL>
+<DD><B>#include &lt;tcl.h&gt;</B>
+<DD>void
+<DD><B>Tcl_CreateMathFunc</B>(<I>interp, name, numArgs, argTypes, proc, clientData</I>)
+<DD>int
+<DD><B>Tcl_GetMathFuncInfo</B>(<I>interp, name, numArgsPtr, argTypesPtr, procPtr,
+<DD>clientDataPtr</I>)
+<DD>Tcl_Obj *
+<DD><B>Tcl_ListMathFuncs</B>(<I>interp, pattern</I>)
+</DL>
+<DD><A HREF="CrtMathFnc.html#M5" NAME="L170">ARGUMENTS</A>
+<DL class="arguments">
+</DL>
+<DD><A HREF="CrtMathFnc.html#M6" NAME="L171">DESCRIPTION</A>
+<DD><A HREF="CrtMathFnc.html#M7" NAME="L172">SEE ALSO</A>
+<DD><A HREF="CrtMathFnc.html#M8" NAME="L173">KEYWORDS</A>
+</DL>
+<H3><A NAME="M2">NAME</A></H3>
+Tcl_CreateMathFunc, Tcl_GetMathFuncInfo, Tcl_ListMathFuncs &mdash; Define, query and enumerate math functions for expressions
+<H3><A NAME="M3">NOTICE OF EVENTUAL DEPRECATION</A></H3>
+The <B>Tcl_CreateMathFunc</B> and <B>Tcl_GetMathFuncInfo</B> functions
+are rendered somewhat obsolete by the ability to create functions for
+expressions by placing commands in the <B>tcl::mathfunc</B> namespace,
+as described in the <B><A HREF="../TclCmd/mathfunc.html">mathfunc</A></B> manual page; the API described on
+this page is not expected to be maintained indefinitely.
+<H3><A NAME="M4">SYNOPSIS</A></H3>
+<B>#include &lt;tcl.h&gt;</B><BR>
+void<BR>
+<B>Tcl_CreateMathFunc</B>(<I>interp, name, numArgs, argTypes, proc, clientData</I>)<BR>
+int<BR>
+<B>Tcl_GetMathFuncInfo</B>(<I>interp, name, numArgsPtr, argTypesPtr, procPtr,<BR>
+<TT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TT>clientDataPtr</I>)<BR>
+<A HREF="Object.html">Tcl_Obj</A> *<BR>
+<B>Tcl_ListMathFuncs</B>(<I>interp, pattern</I>)<BR>
+<H3><A NAME="M5">ARGUMENTS</A></H3>
+<DL class="arguments">
+<DT><A HREF="Interp.html">Tcl_Interp</A> <B>*interp</B> (in)<DD>
+Interpreter in which new function will be defined.
+<P><DT>const char <B>*name</B> (in)<DD>
+Name for new function.
+<P><DT>int <B>numArgs</B> (in)<DD>
+Number of arguments to new function;  also gives size of <I>argTypes</I> array.
+<P><DT>Tcl_ValueType <B>*argTypes</B> (in)<DD>
+Points to an array giving the permissible types for each argument to
+function.
+<P><DT>Tcl_MathProc <B>*proc</B> (in)<DD>
+Procedure that implements the function.
+<P><DT>ClientData <B>clientData</B> (in)<DD>
+Arbitrary one-word value to pass to <I>proc</I> when it is invoked.
+<P><DT>int <B>*numArgsPtr</B> (out)<DD>
+Points to a variable that will be set to contain the number of
+arguments to the function.
+<P><DT>Tcl_ValueType <B>**argTypesPtr</B> (out)<DD>
+Points to a variable that will be set to contain a pointer to an array
+giving the permissible types for each argument to the function which
+will need to be freed up using <I><A HREF="Alloc.html">Tcl_Free</A></I>.
+<P><DT>Tcl_MathProc <B>**procPtr</B> (out)<DD>
+Points to a variable that will be set to contain a pointer to the
+implementation code for the function (or NULL if the function is
+implemented directly in bytecode).
+<P><DT>ClientData <B>*clientDataPtr</B> (out)<DD>
+Points to a variable that will be set to contain the clientData
+argument passed to <I>Tcl_CreateMathFunc</I> when the function was
+created if the function is not implemented directly in bytecode.
+<P><DT>const char <B>*pattern</B> (in)<DD>
+Pattern to match against function names so as to filter them (by
+passing to <I><A HREF="StrMatch.html">Tcl_StringMatch</A></I>), or NULL to not apply any filter.
+<P></DL>
+<H3><A NAME="M6">DESCRIPTION</A></H3>
+Tcl allows a number of mathematical functions to be used in
+expressions, such as <B>sin</B>, <B>cos</B>, and <B>hypot</B>.
+These functions are represented by commands in the namespace,
+<B>tcl::mathfunc</B>.  The <B>Tcl_CreateMathFunc</B> function is
+an obsolete way for applications to add additional functions
+to those already provided by Tcl or to replace existing functions.
+It should not be used by new applications, which should create
+math functions using <B><A HREF="CrtObjCmd.html">Tcl_CreateObjCommand</A></B> to create a command
+in the <B>tcl::mathfunc</B> namespace.
+<P>
+In the <B>Tcl_CreateMathFunc</B> interface,
+<I>Name</I> is the name of the function as it will appear in expressions.
+If <I>name</I> does not already exist in the <B>::tcl::mathfunc</B>
+namespace, then a new command is created in that namespace.
+If <I>name</I> does exist, then the existing function is replaced.
+<I>NumArgs</I> and <I>argTypes</I> describe the arguments to the function.
+Each entry in the <I>argTypes</I> array must be
+one of <B>TCL_INT</B>, <B>TCL_DOUBLE</B>, <B>TCL_WIDE_INT</B>,
+or <B>TCL_EITHER</B> to indicate whether the corresponding argument must be an
+integer, a double-precision floating value, a wide (64-bit) integer,
+or any, respectively.
+<P>
+Whenever the function is invoked in an expression Tcl will invoke
+<I>proc</I>.  <I>Proc</I> should have arguments and result that match
+the type <B>Tcl_MathProc</B>:
+<P>
+<PRE>typedef int <B>Tcl_MathProc</B>(
+        ClientData <I>clientData</I>,
+        <A HREF="Interp.html">Tcl_Interp</A> *<I>interp</I>,
+        Tcl_Value *<I>args</I>,
+        Tcl_Value *<I>resultPtr</I>);</PRE>
+<P>
+When <I>proc</I> is invoked the <I>clientData</I> and <I>interp</I>
+arguments will be the same as those passed to <B>Tcl_CreateMathFunc</B>.
+<I>Args</I> will point to an array of <I>numArgs</I> Tcl_Value structures,
+which describe the actual arguments to the function:
+<P>
+<PRE>typedef struct Tcl_Value {
+    Tcl_ValueType <I>type</I>;
+    long <I>intValue</I>;
+    double <I>doubleValue</I>;
+    <A HREF="IntObj.html">Tcl_WideInt</A> <I>wideValue</I>;
+} <B>Tcl_Value</B>;</PRE>
+<P>
+The <I>type</I> field indicates the type of the argument and is
+one of <B>TCL_INT</B>, <B>TCL_DOUBLE</B> or <B>TCL_WIDE_INT</B>.
+It will match the <I>argTypes</I> value specified for the function unless
+the <I>argTypes</I> value was <B>TCL_EITHER</B>. Tcl converts
+the argument supplied in the expression to the type requested in
+<I>argTypes</I>, if that is necessary.
+Depending on the value of the <I>type</I> field, the <I>intValue</I>,
+<I>doubleValue</I> or <I>wideValue</I>
+field will contain the actual value of the argument.
+<P>
+<I>Proc</I> should compute its result and store it either as an integer
+in <I>resultPtr-&gt;intValue</I> or as a floating value in
+<I>resultPtr-&gt;doubleValue</I>.
+It should set also <I>resultPtr-&gt;type</I> to one of
+<B>TCL_INT</B>, <B>TCL_DOUBLE</B> or <B>TCL_WIDE_INT</B>
+to indicate which value was set.
+Under normal circumstances <I>proc</I> should return <B><A HREF="../TclCmd/catch.html">TCL_OK</A></B>.
+If an error occurs while executing the function, <I>proc</I> should
+return <B><A HREF="../TclCmd/catch.html">TCL_ERROR</A></B> and leave an error message in the interpreter's result.
+<P>
+<B>Tcl_GetMathFuncInfo</B> retrieves the values associated with
+function <I>name</I> that were passed to a preceding
+<B>Tcl_CreateMathFunc</B> call.  Normally, the return code is
+<B><A HREF="../TclCmd/catch.html">TCL_OK</A></B> but if the named function does not exist, <B><A HREF="../TclCmd/catch.html">TCL_ERROR</A></B>
+is returned and an error message is placed in the interpreter's
+result.
+<P>
+If an error did not occur, the array reference placed in the variable
+pointed to by <I>argTypesPtr</I> is newly allocated, and should be
+released by passing it to <B><A HREF="Alloc.html">Tcl_Free</A></B>.  Some functions (the
+standard set implemented in the core, and those defined by placing
+commands in the <B>tcl::mathfunc</B> namespace) do not have
+argument type information; attempting to retrieve values for
+them causes a NULL to be stored in the variable pointed to by
+<I>procPtr</I> and the variable pointed to by <I>clientDataPtr</I>
+will not be modified.  The variable pointed to by <I>numArgsPointer</I>
+will contain -1, and no argument types will be stored in the variable
+pointed to by <I>argTypesPointer</I>.
+<P>
+<B>Tcl_ListMathFuncs</B> returns a Tcl value containing a list of all
+the math functions defined in the interpreter whose name matches
+<I>pattern</I>.  The returned value has a reference count of zero.
+<H3><A NAME="M7">SEE ALSO</A></H3>
+<B><A HREF="../TclCmd/expr.html">expr</A></B>, <B><A HREF="../TclCmd/info.html">info</A></B>, <B><A HREF="CrtObjCmd.html">Tcl_CreateObjCommand</A></B>, <B><A HREF="Alloc.html">Tcl_Free</A></B>, <B><A HREF="ListObj.html">Tcl_NewListObj</A></B>
+<H3><A NAME="M8">KEYWORDS</A></H3>
+<A href="../Keywords/E.html#expression">expression</A>, <A href="../Keywords/M.html#mathematical function">mathematical function</A>
+<div class="copy">Copyright &copy; 1989-1993 The Regents of the University of California.
+<BR>Copyright &copy; 1994-1996 Sun Microsystems, Inc.
+</div>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+

@@ -1,0 +1,10 @@
+#!/bin/sh
+# -*- tcl -*- \
+exec "/home/ericson/Downloads/1_Projects_on_GIT/CURICA_FRAMEWORK/TrainingScripts/HTSTrainingScripts/dependencies/newActiveTcl/bin/tclsh" "$0" ${1+"$@"}
+
+set libpath [file normalize [file join [file dirname [info script]] .. lib]]
+set libpath [file join $libpath {tcl8.6}]
+if {[lsearch -exact $auto_path $libpath] < 0} {lappend auto_path $libpath}
+
+package require critcl::app
+critcl::app::main $argv

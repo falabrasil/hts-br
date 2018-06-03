@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>ActiveTcl 8.6.7 Documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Complete documentation for ActiveTcl 8.6.7">
+    
+    <link rel="canonical" href="DropSite.html">
+    
+
+    
+    <meta name="apple-mobile-web-app-title" content="ActiveTcl 8.6.7 Documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('../../fonts/icon.eot');
+        src: url('../../fonts/icon.eot')
+               format('embedded-opentype'),
+             url('../../fonts/icon.woff')
+               format('woff'),
+             url('../../fonts/icon.ttf')
+               format('truetype'),
+             url('../../fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../stylesheets/application.css">
+    <link rel="stylesheet" href="../../stylesheets/temporary.css">
+    <link rel="stylesheet" href="../../stylesheets/palettes.css">
+    <link rel="stylesheet" href="../../stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open%20Sans:400,700|Source+Code+Pro">
+    <style>
+      body, input {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="../../stylesheets/as_common.css">
+    
+    <link rel="stylesheet" href="../../stylesheets/as_custom.css">
+    
+    <script src="../../javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-grey palette-accent-red">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="logo">
+        <a href="http://www.activestate.com/">
+          <img src="../../images/logo.png" alt="ActiveState homepage">
+        </a>
+      </div>
+      <div class="title">
+        
+        
+        
+        
+        <a href="http://docs.activestate.com/">docs.activestate.com</a>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="../../index.html" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/as_tcl.png">
+        </div>
+      
+      <div class="name">
+        <strong>ActiveTcl 8.6.7 Documentation </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+
+
+
+<a  title="Get ActiveTcl" href="../../get/index.html">
+	
+	Get ActiveTcl
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Release notes" href="../../get/relnotes/index.html">
+	
+	Release notes
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Windows installation" href="../../get/windows/index.html">
+	
+	Windows installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Linux/Unix Installaton" href="../../get/linux/index.html">
+	
+	Linux/Unix Installaton
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="macOS Installation" href="../../get/macos/index.html">
+	
+	macOS Installation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="License" href="../../get/license/index.html">
+	
+	License
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Get Started" href="../../start/index.html">
+	
+	Get Started
+</a>
+
+
+
+  
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Package Reference" href="../../pkg/index.html">
+	
+	Package Reference
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Tcl 8.6.7 docs" href="../contents.html">
+	
+	Tcl 8.6.7 docs
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+
+
+
+<a  title="Contact Us" href="../../contact/index.html">
+	
+	Contact Us
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			<HTML>
+<HEAD><TITLE>DropSite</TITLE></HEAD>
+<BODY BGCOLOR=white>
+<DL><DT><I><A HREF="DropSite.html#descr">NAME</A></I></DT>
+<DD><B>DropSite</B>
+ - Commands set for Drop facilities
+</DD></DL>
+<DL>
+<DT><I><A HREF="DropSite.html#wc">COMMAND</A></I></DT>
+<DD>DropSite::<A HREF="DropSite.html#include"><B>include</B></A>
+ <I>class</I>
+ <I>types</I>
+</DD>
+<DD>DropSite::<A HREF="DropSite.html#register"><B>register</B></A>
+ <I>path</I>
+ ?<I>option value...</I>?
+</DD>
+<DD>DropSite::<A HREF="DropSite.html#setcursor"><B>setcursor</B></A>
+ <I>cursor</I>
+</DD>
+<DD>DropSite::<A HREF="DropSite.html#setdrop"><B>setdrop</B></A>
+ <I>path</I>
+ <I>subpath</I>
+ <I>dropover</I>
+ <I>drop</I>
+ ?<I>force</I>?
+</DD>
+<DD>DropSite::<A HREF="DropSite.html#setoperation"><B>setoperation</B></A>
+ <I>op</I>
+</DD>
+</DL>
+<BR><HR WIDTH="100%"><BR>
+<B><A NAME="descr"></A>DESCRIPTION</B><BR>
+<P>
+
+Commands of this namespace enable user to define a BWidget or a Tk widget as a drop site.
+A drop site is composed of the type of object that can be dropped and associated operation,
+a command called when drop occurs, and a command when an object is dragged over the widget.
+A drop site must have at least one type of acceptable object and a drop command.
+
+</P>
+<HR WIDTH="50%"><BR>
+<B><A NAME="wc">COMMAND</A></B><BR>
+<DL><DT><A NAME="include">DropSite::<B>include</B></A>
+ <I>class</I>
+ <I>types</I>
+</DT><DD>
+
+This command provides a simple way to include options relatives to a drop site into
+BWidget resources definition.
+It includes the options needed for <B>register</B>, <I>-dropovercmd</I> and <I>-dropcmd</I>,
+initialized to empty string, and <I>-droptypes</I>, initialized to <I>types</I>,
+and one new option:
+<TABLE BORDER=0 CELLSPACING=1>
+<TR><TD><I>-dropenabled</I><TD>Specifies wether or not drop is active (initialized to 0)
+</TABLE>
+
+</DD></DL>
+<DL><DT><A NAME="register">DropSite::<B>register</B></A>
+ <I>path</I>
+ ?<I>option value...</I>?
+</DT><DD>
+
+This command is used to declare <I>path</I> as a drop site. Options are:
+
+<P>
+<DL><DT><A NAME="DropSite-dropcmd"><B>-dropcmd</B></A></DT>
+<DD>
+
+This command is called when user release the drag icon over a valid
+drop target widget.  Arguments passed to the command are:
+
+<UL>
+<LI>pathname of the drop target (the widget itself),
+<LI>pathname of the drag source,
+<LI>root x-coordinate of the pointer,
+<LI>root y-coordinate of the pointer,
+<LI>operation,
+<LI>type of the dragged data,
+<LI>dragged data.
+</UL>
+
+Its return values is passed as a result to the <B>-dragendcmd</B>
+command of the drag source widget.
+
+</DD>
+</DL>
+<DL><DT><A NAME="DropSite-dropovercmd"><B>-dropovercmd</B></A></DT>
+<DD>
+
+This command can be used to provide a dynamic drag while <I>drag-over</I> events.
+While a drag occurs, events &lt;Enter&gt;, &lt;Motion&gt; and &lt;Leave&gt; are catched.
+Arguments passed to the command are:
+<UL>
+<LI>pathname of the drop target (the widget itself),
+<LI>pathname of the drag source,
+<LI>event over the drop target: <I>enter</I>, <I>motion</I> or <I>leave</I>,
+<LI>root x-coordinate of the pointer,
+<LI>root y-coordinate of the pointer,
+<LI>operation,
+<LI>type of the dragged data,
+<LI>dragged data.
+</UL>
+Command must the new status of the drag:
+<UL>
+<LI>0  if widget refuse this drag. Command will not be recalled on motion/leave event.
+<LI>1  if widget accept this drag. Command will not be recalled on motion/leave event.
+<LI>2  if widget refuse this drag. Command will be recalled on each motion event to reevaluate.
+<LI>3  if widget accept this drag. Command will be recalled on each motion event to reevaluate.
+
+</UL>
+Here is a list of events and associated actions on a DropSite widget. This example
+assumes that dragged data type is valid for the drop target.
+<B>status</B> is the status of the drag on a DropSite. Its value is:
+<BR><BR>
+
+<TABLE BORDER CELLSPACING=1 CELLPADDING=4>
+<TR>
+<TD WIDTH="18%" VALIGN="TOP" ALIGN="CENTER">Event</TD>
+<TD WIDTH="10%" VALIGN="TOP" ALIGN="CENTER">Old status</TD>
+<TD WIDTH="48%" VALIGN="TOP" ALIGN="CENTER">Action</TD>
+<TD WIDTH="24%" VALIGN="TOP" ALIGN="CENTER">New status</TD>
+</TR>
+<TR><TD WIDTH="18%" VALIGN="TOP" ROWSPAN=2>
+<FONT SIZE=2>&lt;Enter&gt;</FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP" ROWSPAN=2>
+<FONT SIZE=2>-</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2>if DropSite has <B>dropovercmd</B>, call it with <I>enter</I></FONT></TD>
+<TD WIDTH="24%" VALIGN="TOP">
+<FONT SIZE=2>result of <B>dropovercmd</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2>else</FONT></TD>
+<TD WIDTH="24%" VALIGN="TOP">
+<FONT SIZE=2>1</FONT></TD>
+</TR>
+<TR><TD WIDTH="18%" VALIGN="TOP" ROWSPAN=2>
+<FONT SIZE=2>&lt;Motion&gt;</FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<FONT SIZE=2>0 or 1</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="24%" VALIGN="TOP">
+<FONT SIZE=2>unchanged</FONT></TD>
+</TR>
+<TR><TD WIDTH="10%" VALIGN="TOP">
+<FONT SIZE=2>2 or 3</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2>call <B>dropovercmd</B> with <I>motion</I></FONT></TD>
+<TD WIDTH="24%" VALIGN="TOP">
+<FONT SIZE=2>result of <B>dropovercmd</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="18%" VALIGN="TOP" ROWSPAN=2>
+<FONT SIZE=2>&lt;Leave&gt;</FONT>&nbsp;</TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<FONT SIZE=2>0 or 1</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="24%" VALIGN="TOP">
+<FONT SIZE=2>-</FONT></TD>
+</TR>
+<TR><TD WIDTH="10%" VALIGN="TOP">
+<FONT SIZE=2>2 or 3</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2>call <B>dropovercmd</B> with <I>leave</I></FONT></TD>
+<TD WIDTH="24%" VALIGN="TOP">
+<FONT SIZE=2>-</FONT></TD>
+</TR>
+<TR><TD WIDTH="18%" VALIGN="TOP" ROWSPAN=4>
+<FONT SIZE=2>&lt;Drop&gt;</FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<FONT SIZE=2>0</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2>call <B>dragendcmd</B> of drag source</FONT></TD>
+<TD WIDTH="24%" VALIGN="TOP" ROWSPAN=4>
+<FONT SIZE=2>-</FONT></TD>
+</TR>
+<TR><TD WIDTH="10%" VALIGN="TOP">
+<FONT SIZE=2>1</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2>call <B>dropcmd</B> and call <B>dragendcmd</B> of drag source</FONT></TD>
+</TR>
+<TR><TD WIDTH="10%" VALIGN="TOP">
+<FONT SIZE=2>2</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2>call <B>dropovercmd</B> with <I>leave</I> and call <B>dragendcmd</B> of drag source</FONT></TD>
+</TR>
+<TR><TD WIDTH="10%" VALIGN="TOP">
+<FONT SIZE=2>3</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2>call <B>dropcmd</B> and call <B>dragendcmd</B> of drag source</FONT></TD>
+</TR>
+</TABLE>
+<BR>
+
+</DD>
+</DL>
+<DL><DT><A NAME="DropSite-droptypes"><B>-droptypes</B></A></DT>
+<DD>
+
+Specifies a list {<I>type</I> <I>oplist</I> ?<I>type</I> <I>oplist</I>? ...} of acceptable
+types and associated operations for the drop target.
+For each type, <I>oplist</I> is a list
+{<I>descops</I> <I>mod</I> ?<I>descops</I> <I>mod</I>? ...} describing operations and
+modifier keys for these operations.
+<I>descops</I> describe an operation. It can be a predefined operations (<B>copy</B>,
+<B>move</B> or <B>link</B>) or a new user defined operation, of the form {<I>subop</I>
+<B>baseop</B> ?<I>bitmap</I>?}.
+<I>subop</I> is the name given to the sub operation, <I>baseop</I> is the name of the
+base operation (<B>copy</B>, <B>move</B> or <B>link</B>) and <I>bitmap</I> is a bitmap
+to display for the operation.
+<BR>If <I>bitmap</I> is empty, the default bitmap of the base operation is used for the
+sub operation.
+<BR><I>subop</I> can be a base operation, in order to change the bitmap of a base operation.
+In this case, <I>baseop</I> must be empty or equal to <I>subop</I>.
+<BR><I>mod</I> is the modifer key for the operation. It can be:
+<UL>
+<LI><B>none</B> to specify that no modifier key is pressed. This modifier can only be used
+with a sub operation named <B>default</B> (and vice versa), which has the behaviour of not
+display any bitmap operation. For all type, if the modifier <B>none</B> is not given, it is
+automatically associated to the <B>default</B> sub operation of a <B>copy</B> base operation.
+<LI><B>program</B> to specifies a sub operation accessible only by <B>DropSite::setoperation</B>.
+<LI>A list combining <B>shift</B>, <B>control</B> and <B>alt</B>, which means their 
+corresponding key.
+</UL>
+
+</DD>
+</DL>
+</DD></DL>
+<DL><DT><A NAME="setcursor">DropSite::<B>setcursor</B></A>
+ <I>cursor</I>
+</DT><DD>
+
+This command can be used within the script <B>dragovercmd</B>. It is usefull to provide
+visual effect about the state of the drag.
+</DD></DL>
+<DL><DT><A NAME="setdrop">DropSite::<B>setdrop</B></A>
+ <I>path</I>
+ <I>subpath</I>
+ <I>dropover</I>
+ <I>drop</I>
+ ?<I>force</I>?
+</DT><DD>
+
+This command provides a simple way to call <B>register</B> during a BWidget creation or
+configuration.
+<UL>
+<LI><I>path</I> is the pathname of the BWidget,
+<LI><I>subpath</I> is the pathname of the tk widget where drag event occurs,
+<LI><I>dropover</I> is a command for <I>drag-over</I> event,
+<LI><I>drop</I> is a command for <I>drop</I> event,
+<LI><I>force</I> specifies wether or not to call <B>register</B> whenever no option value
+has changed (0 by default - for BWidget configuration, use 1 for BWidget creation).
+</UL>
+<B>setdrop</B> verifies the modification flag of options <B>dropenabled</B> and
+<B>droptypes</B> and calls <B>register</B> if needed according to the options values and
+<I>dropover</I> and <I>drop</I> arguments. <B>dropovercmd</B> and <B>dropcmd</B> are not
+taken from options of widget because they are considered as user command, called by
+BWidget implementation of <I>drag-over</I> and <I>drop</I> events.
+
+</DD></DL>
+<DL><DT><A NAME="setoperation">DropSite::<B>setoperation</B></A>
+ <I>op</I>
+</DT><DD>
+Description text
+</DD></DL>
+</BODY></HTML>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				<div class="as_footer">
+  
+  <div class="prod_links">
+    <strong>
+    <a href="http://www.activestate.com/downloads" target="_blank">Downloads</a>&nbsp;&nbsp;
+    <a href="http://store.activestate.com" target="_blank">Store</a>&nbsp;&nbsp;
+    <a href="http://community.activestate.com" target="_blank">Community</a>&nbsp;&nbsp;
+    <a href="http://code.activestate.com" target="_blank">Code</a>&nbsp;&nbsp;
+    <a href="http://bugs.activestate.com" target="_blank">Bugzilla</a>
+  </strong>
+  </div>
+  <div class="as_copyright"> 
+    &copy; 2017 ActiveState Software Inc. All rights reserved. <strong><a href="../../trademarks/index.html">Trademarks</a></strong>.
+  </div>
+</div>
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="../../javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
+
